@@ -68,7 +68,7 @@
 <!-- ============================================================
      1. NAVIGATION
      ============================================================ -->
-<nav class="navbar" id="navbar">
+<nav class="navbar" id="navbar" aria-label="Main Navigation">
     <div class="nav-content">
         <div class="nav-left">
             <a href="index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 0.75rem;">
@@ -89,7 +89,7 @@
         <div class="nav-cta" style="display: flex; align-items: center; gap: 1rem;">
             <div class="lang-selector">
                 <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 16px; height: 16px;"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-                <select id="customLangSelect" onchange="changeLanguage(this.value)">
+                <select id="customLangSelect" aria-label="Select Language" onchange="changeLanguage(this.value)">
                     <option value="en">English</option>
                     <option value="fr">Français</option>
                     <option value="es">Español</option>
@@ -112,6 +112,9 @@
         </button>
     </div>
 </nav>
+
+<main id="main-content">
+
 
 
 <!-- ============================================================
@@ -160,7 +163,7 @@
     </div>
 
     <div class="hero-image-container">
-        <img src="Screenshots/dashboard-preview.png" alt="LoungeOS Dashboard Screenshot" class="hero-image">
+        <img src="Screenshots/dashboard-preview.webp" alt="LoungeOS Dashboard Screenshot" class="hero-image" width="1920" height="1033">
     </div>
 </header>
 
@@ -168,7 +171,7 @@
 <!-- ============================================================
      2.1. WHO IS IT FOR?
      ============================================================ -->
-<section class="target-audience" id="audience" style="padding: 4rem 0 2rem; background: var(--bg-primary);">
+<section class="target-audience" id="audience" aria-label="Who is LoungeOS For?" style="padding: 4rem 0 2rem; background: var(--bg-primary);">
     <div class="container">
         <p class="section-label" style="text-align: center;">Built for Hospitality</p>
         <h2 class="section-title" style="text-align: center; margin-bottom: 2.5rem;">Who is LoungeOS For?</h2>
@@ -204,11 +207,11 @@
 <!-- ============================================================
      2.5. THE PROBLEM
      ============================================================ -->
-<section class="problem-statement" id="problem" style="background-color: var(--bg-dark); color: var(--text-on-dark); padding: 5rem 0;">
+<section class="problem-statement" id="problem" aria-label="Traditional Ways Are Costing You" style="background-color: var(--bg-dark); color: var(--text-on-dark); padding: 5rem 0;">
     <div class="container">
-        <p class="section-label" style="color: rgba(255,255,255,0.5);">The Reality</p>
+        <p class="section-label" style="color: rgba(255,255,255,0.7);">The Reality</p>
         <h2 class="section-title" style="color: #fff;">Traditional Ways Are Costing You</h2>
-        <p class="section-subtitle" style="color: rgba(255,255,255,0.8);">Running a business with the wrong tools leads to invisible losses, lack of traceability, and zero insights into what’s actually happening.</p>
+        <p class="section-subtitle" style="color: rgba(255,255,255,0.9);">Running a business with the wrong tools leads to invisible losses, lack of traceability, and zero insights into what’s actually happening.</p>
         
         <div class="problem-grid">
             <div class="problem-card animate-on-scroll">
@@ -244,7 +247,7 @@
 <!-- ============================================================
      3. PRODUCT ECOSYSTEM
      ============================================================ -->
-<section class="ecosystem" id="ecosystem">
+<section class="ecosystem" id="ecosystem" aria-label="From table to kitchen. Instantly.">
     <div class="container">
         <p class="section-label">How It Works</p>
         <h2 class="section-title">From table to kitchen. Instantly.</h2>
@@ -351,7 +354,7 @@
 <!-- ============================================================
      5. KEY FEATURES & DEEP DIVE
      ============================================================ -->
-<section class="features" id="features">
+<section class="features" id="features" aria-label="The Full Arsenal: Built for Operators Who Mean Business">
     <div class="container">
         <p class="section-label" style="color: rgba(255,255,255,0.4);">Key Features</p>
         <h2 class="section-title">The Full Arsenal: Built for Operators Who Mean Business</h2>
@@ -562,7 +565,7 @@
 
 
 <!-- Screenshot Carousel -->
-<section class="carousel-section" id="gallery">
+<section class="carousel-section" id="gallery" aria-label="See LoungeOS in Action">
     <div class="container">
         <p class="section-label">Gallery</p>
         <h2 class="section-title">See LoungeOS in Action</h2>
@@ -630,7 +633,7 @@
 <!-- ============================================================
      6. PRICING
      ============================================================ -->
-<section class="pricing" id="pricing">
+<section class="pricing" id="pricing" aria-label="One Investment. Unlimited Returns.">
     <div class="container">
         <p class="section-label">Simple Pricing</p>
         <h2 class="section-title">One Investment. Unlimited Returns.</h2>
@@ -718,7 +721,7 @@
 <!-- ============================================================
      7. DOWNLOADS
      ============================================================ -->
-<section class="downloads" id="downloads">
+<section class="downloads" id="downloads" aria-label="Get Your Restaurant POS System Today">
     <div class="container">
         <p class="section-label">Download</p>
         <h2 class="section-title">Get Your Restaurant POS System Today</h2>
@@ -731,7 +734,7 @@
                 <!-- Apple icon -->
                 <svg class="os-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
                 <h3>macOS</h3>
-                <p>Apple Silicon & Intel <br><span style="color: #ff3b30; font-size: 0.85rem; font-weight: 500;">(Version under development)</span></p>
+                <p>Apple Silicon & Intel <br><span style="color: #d32f2f; font-size: 0.85rem; font-weight: 500;">(Version under development)</span></p>
                 <a href="https://drive.google.com/drive/folders/1j5ggnLB0d-j-RQUQOk0hDmwLhpRvts2s" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="downloadMacBtn" style="opacity: 0.6; pointer-events: none;">
                     <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                     Coming Soon
@@ -891,7 +894,7 @@
      ============================================================ -->
 
 <!-- FAQ -->
-<section class="faq" id="faq">
+<section class="faq" id="faq" aria-label="Common questions">
     <div class="container">
         <p class="section-label">FAQ</p>
         <h2 class="section-title">Common questions</h2>
@@ -983,6 +986,9 @@
 </section>
 
 
+
+</main>
+
 <!-- Footer -->
 <footer class="footer">
     <div class="footer-grid">
@@ -1006,7 +1012,7 @@
         </div>
 
         <div class="footer-col">
-            <h5>Product</h5>
+            <h3>Product</h3>
             <a href="#features">Features</a>
             <a href="#pricing">Pricing</a>
             <a href="#downloads">Download</a>
@@ -1014,14 +1020,14 @@
         </div>
 
         <div class="footer-col">
-            <h5>Company</h5>
+            <h3>Company</h3>
             <a href="#ecosystem">About LoungeOS</a>
             <a href="https://wa.me/237679690703" target="_blank" rel="noopener noreferrer">Contact</a>
             <a href="#faq">FAQ</a>
         </div>
 
         <div class="footer-col">
-            <h5>Legal</h5>
+            <h3>Legal</h3>
             <a href="privacy.html">Privacy Policy</a>
             <a href="terms.html">Terms of Service</a>
             <a href="accessibility.html">Accessibility</a>
@@ -1044,7 +1050,7 @@ function googleTranslateElementInit() {
   new google.translate.TranslateElement({pageLanguage: 'en', autoDisplay: false}, 'google_translate_element');
 }
 </script>
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script defer type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 <script src="app.js"></script>
 </body>
