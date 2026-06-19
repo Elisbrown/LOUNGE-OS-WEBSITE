@@ -2023,7 +2023,7 @@ html.translated-rtl {
 
 .problem-card p {
     font-size: 0.9375rem;
-    color: var(--text-secondary);
+    color: #f0f0f0;
     line-height: 1.6;
 }
 
