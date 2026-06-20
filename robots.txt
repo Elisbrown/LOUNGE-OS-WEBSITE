@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://lounge-os.onrender.com/sitemap.xml
+h this 
