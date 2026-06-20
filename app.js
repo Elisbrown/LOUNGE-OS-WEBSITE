@@ -84,11 +84,7 @@
 
 
   /* ---------- 3. PRICING & LOCALIZATION ---------- */
-  var billingToggle = document.getElementById('billingToggle');
-  var monthlyLabel = document.getElementById('monthlyLabel');
-  var yearlyLabel = document.getElementById('yearlyLabel');
-  var yearlyBadge = document.getElementById('yearlyBadge');
-  var isYearly = false;
+
 
   var userCurrency = 'XAF';
   var exchangeRate = 1;
@@ -99,34 +95,34 @@
   }
 
   function updatePricing() {
-    if (billingToggle) {
-        billingToggle.classList.toggle('active', isYearly);
-        monthlyLabel.classList.toggle('active', !isYearly);
-        yearlyLabel.classList.toggle('active', isYearly);
-        yearlyBadge.style.opacity = isYearly ? '1' : '0';
-    }
-
     // Update price displays
-    document.querySelectorAll('.price[data-base-monthly]').forEach(function (el) {
-      var basePrice = isYearly ? parseInt(el.dataset.baseYearly) : parseInt(el.dataset.baseMonthly);
+    document.querySelectorAll('.price[data-base-price]').forEach(function (el) {
+      var basePrice = parseInt(el.dataset.basePrice);
       el.textContent = formatPrice(basePrice);
     });
 
     // Update total displays
-    document.querySelectorAll('.price-total[data-base-yearly-total]').forEach(function (el) {
-      if (isYearly) {
-          var baseTotal = parseInt(el.dataset.baseYearlyTotal);
-          el.textContent = formatPrice(baseTotal) + ' / year';
-      } else {
-          el.textContent = '';
-      }
+    document.querySelectorAll('.price-total[data-base-total]').forEach(function (el) {
+      var baseTotal = parseInt(el.dataset.baseTotal);
+      el.textContent = formatPrice(baseTotal) + ' total';
     });
-  }
 
-  if (billingToggle) {
-    billingToggle.addEventListener('click', function () {
-      isYearly = !isYearly;
-      updatePricing();
+    // Update savings displays
+    document.querySelectorAll('.price-savings[data-base-savings]').forEach(function (el) {
+      var baseSavings = parseInt(el.dataset.baseSavings);
+      var freeMonthsText = el.dataset.freeMonths || '';
+      el.textContent = 'You save ' + formatPrice(baseSavings) + ' (' + freeMonthsText + ')';
+    });
+
+    // Update WhatsApp Button Links dynamically
+    document.querySelectorAll('.wa-pricing-btn').forEach(function (btn) {
+      var basePrice = parseInt(btn.dataset.planPrice);
+      var planName = btn.dataset.planName;
+      var period = btn.dataset.planPeriod || '';
+      var formattedPrice = formatPrice(basePrice);
+      
+      var message = "Hello Elisbrown, I want to subscribe to the LoungeOS " + planName + " (" + formattedPrice + period + ")";
+      btn.href = "https://wa.me/237679690703?text=" + encodeURIComponent(message);
     });
   }
 
