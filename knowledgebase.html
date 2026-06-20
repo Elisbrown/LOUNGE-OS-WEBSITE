@@ -1,0 +1,933 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Knowledge Base - LoungeOS</title>
+    <meta
+      name="description"
+      content="LoungeOS Knowledge Base. Find answers to your questions and learn how to use the best offline-first Restaurant POS system."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "x9n1mwb8c5");
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J2CFW8B0P1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-J2CFW8B0P1');
+</script>
+<script id="usercentrics-cmp" src="https://app.usercentrics.eu/browser-ui/latest/loader.js" data-settings-id="SSwfY4ZtHuL22V" async></script>
+
+    <style>
+        .kb-header-area {
+            text-align: center;
+            padding: 4rem 1.5rem 2rem;
+            background: var(--bg-secondary);
+        }
+        
+        .kb-container {
+            display: flex;
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 2rem 1.5rem 6rem;
+            gap: 3rem;
+            align-items: flex-start;
+        }
+
+        .kb-sidebar {
+            width: 280px;
+            flex-shrink: 0;
+            position: sticky;
+            top: 100px;
+            max-height: calc(100vh - 120px);
+            overflow-y: auto;
+            background: var(--bg-primary);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-card);
+            padding: 1.5rem;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.04);
+        }
+
+        .kb-main {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .kb-search-container {
+            position: relative;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .kb-search-container svg {
+            position: absolute;
+            left: 1.25rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-secondary);
+            width: 20px;
+            height: 20px;
+        }
+
+        .kb-search {
+            width: 100%;
+            padding: 1rem 1.5rem 1rem 3rem;
+            border-radius: var(--radius-pill);
+            border: 1px solid var(--border-medium);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: inherit;
+            font-size: 1rem;
+            outline: none;
+            transition: all var(--transition-base);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+        }
+        
+        .kb-search:focus {
+            border-color: var(--accent-blue);
+            box-shadow: 0 0 0 3px rgba(0, 113, 227, 0.2);
+        }
+
+        .kb-nav-menu {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+
+        .kb-nav-item {
+            display: block;
+            padding: 0.75rem 1rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            border-radius: var(--radius-sm);
+            transition: all var(--transition-fast);
+            font-weight: 500;
+            cursor: pointer;
+            font-size: 0.9375rem;
+        }
+        
+        .kb-nav-item:hover {
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+        }
+        
+        .kb-nav-item.active {
+            background: rgba(0, 113, 227, 0.08);
+            color: var(--accent-blue);
+            font-weight: 600;
+        }
+
+        .kb-category {
+            margin-bottom: 3.5rem;
+            scroll-margin-top: 100px;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .kb-category-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+            padding-bottom: 0.75rem;
+            border-bottom: 2px solid var(--bg-secondary);
+        }
+
+        .kb-article {
+            background: var(--bg-primary);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-sm);
+            margin-bottom: 1rem;
+            overflow: hidden;
+            transition: all var(--transition-base);
+        }
+
+        .kb-article:hover {
+            border-color: var(--border-medium);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        .kb-article-header {
+            padding: 1.25rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+            font-weight: 600;
+            color: var(--text-primary);
+            background: var(--bg-secondary);
+            transition: background var(--transition-fast);
+        }
+        
+        .kb-article-header:hover {
+            background: rgba(0, 0, 0, 0.03);
+        }
+
+        .kb-article-icon {
+            color: var(--text-secondary);
+            transition: transform var(--transition-base);
+        }
+
+        .kb-article.open .kb-article-icon {
+            transform: rotate(180deg);
+            color: var(--accent-blue);
+        }
+        
+        .kb-article.open {
+            border-color: var(--accent-blue);
+        }
+        
+        .kb-article.open .kb-article-header {
+            background: var(--bg-primary);
+        }
+
+        .kb-article-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s cubic-bezier(0, 1, 0, 1), opacity 0.4s ease, padding 0.4s ease;
+            color: var(--text-secondary);
+            white-space: pre-wrap;
+            padding: 0 1.5rem;
+            opacity: 0;
+            line-height: 1.7;
+            font-size: 0.9375rem;
+        }
+
+        .kb-article.open .kb-article-content {
+            padding: 0 1.5rem 1.5rem 1.5rem;
+            max-height: 2000px;
+            opacity: 1;
+            transition: max-height 0.4s ease-in-out, opacity 0.4s ease, padding 0.4s ease;
+        }
+
+        
+        .kb-article-content p {
+            margin-bottom: 1rem;
+        }
+
+        .kb-article-content ul, .kb-article-content ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .kb-article-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .kb-article-content code {
+            background: var(--bg-secondary);
+            padding: 0.2rem 0.4rem;
+            border-radius: var(--radius-sm);
+            font-family: monospace;
+            color: var(--text-primary);
+            font-size: 0.9em;
+            border: 1px solid var(--border-light);
+        }
+
+        .kb-hidden { display: none !important; }
+
+
+        .kb-no-results {
+            text-align: center;
+            padding: 4rem 0;
+            color: var(--text-secondary);
+        }
+
+        .kb-no-results svg {
+            width: 48px;
+            height: 48px;
+            margin-bottom: 1rem;
+            opacity: 0.5;
+        }
+
+        .kb-mobile-toggle {
+            display: none;
+            width: 100%;
+            padding: 1rem;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-medium);
+            border-radius: var(--radius-sm);
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            text-align: left;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        @media (max-width: 768px) {
+            .kb-container {
+                flex-direction: column;
+                gap: 1.5rem;
+                padding-top: 1.5rem;
+            }
+            .kb-sidebar {
+                width: 100%;
+                position: static;
+                height: auto;
+                max-height: none;
+                display: none;
+                margin-bottom: 1rem;
+            }
+            .kb-sidebar.open {
+                display: block;
+            }
+            .kb-mobile-toggle {
+                display: flex;
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <nav class="navbar" id="navbar" aria-label="Main Navigation">
+      <div class="nav-content">
+        <div class="nav-left">
+          <a href="index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 0.75rem;">
+            <span class="logo">LoungeOS</span>
+            <span class="nav-badge">Restaurant POS</span>
+          </a>
+        </div>
+
+        <div class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="index.html#ecosystem">Product</a>
+          <a href="index.html#features">Features</a>
+          <a href="index.html#pricing">Pricing</a>
+          <a href="index.html#downloads">Download</a>
+          <div class="nav-dropdown">
+            <span class="nav-dropdown-toggle">Resources <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+            <div class="nav-dropdown-menu">
+              <a href="index.html#faq">FAQ</a>
+              <a href="knowledgebase.html">Knowledge Base</a>
+              <a href="documentation.html">Documentation</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-cta" style="display: flex; align-items: center; gap: 1rem">
+          <div class="lang-selector">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 16px; height: 16px"><circle cx="12" cy="12" r="10" /><line x1="2" y1="12" x2="22" y2="12" /><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" /></svg>
+            <select id="customLangSelect" onchange="changeLanguage(this.value)">
+              <option value="en">English</option>
+              <option value="fr">Français</option>
+              <option value="es">Español</option>
+              <option value="de">Deutsch</option>
+              <option value="zh-CN">中文</option>
+              <option value="ar">العربية</option>
+              <option value="hi">हिन्दी</option>
+              <option value="pt">Português</option>
+              <option value="ru">Русский</option>
+              <option value="ja">日本語</option>
+            </select>
+          </div>
+          <a href="https://wa.me/237679690703?text=Hello%20Elisbrown%2C%20please%20i%20want%20to%20activate%20my%20copy%20of%20the%20Lounge%20OS%20software" class="btn btn-primary btn-sm" id="navCtaBtn">Start Free Trial</a>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <main id="main-content">
+        <div class="kb-header-area">
+            <h1 class="section-title">How can we help you?</h1>
+            <p class="section-subtitle">Find answers to your questions and learn how to use the system.</p>
+            
+            <div class="kb-search-container">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                <input type="text" id="searchInput" class="kb-search" placeholder="Search for articles...">
+            </div>
+        </div>
+
+        <div class="kb-container">
+            <div>
+                <button class="kb-mobile-toggle" id="mobileToggle">
+                    Browse Categories
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+                <aside class="kb-sidebar" id="sidebar">
+                    <nav class="kb-nav-menu" id="navMenu">
+                        <!-- Navigation items will be injected here -->
+                    </nav>
+                </aside>
+            </div>
+
+            <div class="kb-main">
+                <div id="contentArea">
+                    <!-- Categories and articles will be injected here -->
+                </div>
+
+                <div id="noResults" class="kb-no-results kb-hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    <h2>No articles found.</h2>
+                    <p>Try searching with different keywords.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="logo" style="color: #fff; font-size: 1.375rem">LoungeOS</span>
+          <p>
+            The best offline-first Restaurant POS system. Streamline operations,
+            protect revenue, and boost profits.
+          </p>
+          <div class="footer-worldwide">
+            <span>
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              All Currencies
+            </span>
+            <span>
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              All Languages
+            </span>
+            <span>
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              24/7 Support
+            </span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Product</h3>
+          <a href="index.html#features">Features</a>
+          <a href="index.html#pricing">Pricing</a>
+          <a href="index.html#downloads">Download</a>
+          <a href="index.html#activation">Activation</a>
+        </div>
+
+        <div class="footer-col">
+          <h3>Company</h3>
+          <a href="index.html#ecosystem">About LoungeOS</a>
+          <a href="https://wa.me/237679690703" target="_blank" rel="noopener noreferrer">Contact</a>
+          <a href="index.html#faq">FAQ</a>
+          <a href="knowledgebase.html">Knowledge Base</a>
+          <a href="documentation.html">Documentation</a>
+        </div>
+
+        <div class="footer-col">
+          <h3>Legal</h3>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="accessibility.html">Accessibility</a>
+          <a href="legal.html">Legal</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 LoungeOS. All rights reserved.</p>
+        <a href="https://wa.me/237679690703?text=Hello%20Elisbrown%2C%20please%20i%20want%20to%20activate%20my%20copy%20of%20the%20Lounge%20OS%20software" class="btn btn-outline-light btn-sm" id="footerCtaBtn">
+          Start Free Trial Now
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12 5 19 12 12 19" />
+          </svg>
+        </a>
+      </div>
+    </footer>
+
+    <script>
+        const kbData = [
+    {
+        "id": "1-application-overview-version-details",
+        "title": "1. Application Overview & Version Details",
+        "articles": [
+            {
+                "title": "Overview",
+                "content": "<p>LoungeOS is a premium, all-in-one management platform designed for restaurants, bars, and VIP lounges. By combining order placement, display systems, inventory control, and double-entry accounting into one environment, it replaces multiple disjointed pieces of software.</p>"
+            },
+            {
+                "title": "Platform Availability & App Versions",
+                "content": "<ul><li><strong>Current Version</strong>: v1.3.6 (Latest Stable Release)</li><li><strong>Windows Version</strong>: Fully supported native installer (Installer size: 383 MB)</li><li><strong>macOS Version</strong>: Universal bundle (Apple Silicon M-series &amp; Intel processors) - under active development</li><li><strong>Language Support</strong>: English and French (stored persistently in the application settings)</li><li><strong>Download Link</strong>: You can download the client executable directly from the <a href=\"https://drive.usercontent.google.com/download?id=1eW9bjs97fR2k-I7_yu_kj1p_76zUc3xc&amp;export=download&amp;authuser=1&amp;confirm=t&amp;uuid=ac0c36a6-25cf-46ae-89d9-da18ead345ca&amp;at=AAINaIKicemCbcjo6MrGDzpDD21K%3A1781889497574\">Official Download Drive Link</a></li></ul>"
+            },
+            {
+                "title": "What's New in Version 1.3.6",
+                "content": "<ul><li>Performance optimizations for high-volume transactions.</li><li>Enhanced security and audit logging features.</li><li>Coming soon in v1.3.7: Expanded language support (currently English and French).</li></ul><hr />"
+            }
+        ]
+    },
+    {
+        "id": "2-system-requirements",
+        "title": "2. System Requirements",
+        "articles": [
+            {
+                "title": "Overview",
+                "content": "<p>Ensure the desktop system hosting LoungeOS meets the minimum requirements below:</p>"
+            },
+            {
+                "title": "Windows Systems",
+                "content": "<ul><li><strong>Operating System</strong>: Windows 10 or Windows 11 (64-bit)</li><li><strong>Processor</strong>: Intel or AMD multi-core processor</li><li><strong>Memory</strong>: 4 GB RAM minimum</li><li><strong>Storage</strong>: 2 GB free local storage space (to accommodate SQLite database growth and locally saved menu images)</li></ul>"
+            },
+            {
+                "title": "macOS Systems",
+                "content": "<ul><li><strong>Operating System</strong>: macOS 10.15 (Catalina) or later</li><li><strong>Processor</strong>: Intel Core or Apple Silicon (M1, M2, M3, M4) processor</li><li><strong>Memory</strong>: 4 GB RAM minimum</li><li><strong>Storage</strong>: 200 MB free local storage space</li></ul><hr />"
+            }
+        ]
+    },
+    {
+        "id": "3-app-installation-guide",
+        "title": "3. App Installation Guide",
+        "articles": [
+            {
+                "title": "Windows Installation",
+                "content": "<ol><li>Download the executable installer: <code>LoungeOS Setup 1.3.6.exe</code>.</li><li>Double-click the installer file to start the installation setup.</li><li>Follow the installation wizard steps. Once finished, a shortcut named <strong>LoungeOS</strong> will be added to your Desktop and Start Menu.</li><li>Launch the application.</li></ol>"
+            },
+            {
+                "title": "macOS Installation",
+                "content": "<ol><li>Download the macOS package: <code>LoungeOS-1.3.6-universal.dmg</code>.</li><li>Double-click the <code>.dmg</code> file to mount it.</li><li>Drag the <strong>LoungeOS</strong> icon into your <strong>Applications</strong> folder.</li><li><strong>Bypassing macOS Developer ID Gatekeeper warnings</strong>:</li><li>If macOS blocks the app, right-click the app icon in the Applications folder and click <strong>Open</strong>, then click <strong>Open</strong> again to authorize the launch.</li><li>Alternatively, open a terminal window and clear the quarantine file attributes:     <code>bash     xattr -cr /Applications/LoungeOS.app</code></li></ol><hr />"
+            }
+        ]
+    },
+    {
+        "id": "4-license-activation-5-minute-setup",
+        "title": "4. License Activation (5-Minute Setup)",
+        "articles": [
+            {
+                "title": "Overview",
+                "content": "<p>LoungeOS uses a machine-locked activation system. To configure the app, follow these five activation steps:</p><pre><code class=\"language-mermaid\">graph TD    A[01. Launch LoungeOS] --&gt; B[02. Copy Machine ID]    B --&gt; C[03. Send Activation Request]    C --&gt; D[04. Select Your Tier]    D --&gt; E[05. Apply License Key]    E --&gt; F[Ready to Run]</code></pre>"
+            },
+            {
+                "title": "01. Launch LoungeOS",
+                "content": "<p>Open the LoungeOS application on your host computer. The launch window will present a screen showing a unique alphanumeric <strong>Machine ID</strong>.</p>"
+            },
+            {
+                "title": "02. Copy Machine ID",
+                "content": "<p>Click the <strong>Copy</strong> button to copy the system identifier to your clipboard.</p>"
+            },
+            {
+                "title": "03. Send Activation Request",
+                "content": "<p>Text the copied Machine ID to technical supervisor <strong>Sunyin Elisbrown Sigala</strong> at <strong>+237 679 690 703</strong>.</p>"
+            },
+            {
+                "title": "04. Select Your Tier",
+                "content": "<p>In your activation message, specify the tier you wish to set up:- <strong>90-Day Free Trial</strong>: Full access to all features for evaluation.- <strong>Premium Commercial License</strong>: Long-term commercial licensing.</p>"
+            },
+            {
+                "title": "05. Apply License Key",
+                "content": "<p>Once the activation is processed, you will receive a unique license key block. Copy this key, paste it into the activation field in the LoungeOS interface, and click <strong>Activate</strong>. Your system is now active and ready for use.</p><hr />"
+            }
+        ]
+    },
+    {
+        "id": "5-default-administration-login",
+        "title": "5. Default Administration Login",
+        "articles": [
+            {
+                "title": "Overview",
+                "content": "<p>Once your license is active, use the following default credentials to sign in and set up your business profile:</p><blockquote><p>[!IMPORTANT]<strong>Default Super Admin Credentials</strong>- <strong>Email</strong>: <code>sunyinelisbrown@gmail.com</code>- <strong>Password</strong>: <code>12345678</code></p></blockquote><p><em>Note: For security purposes, change this default password immediately after your first successful login. You can modify it under your user profile settings.</em></p><hr />"
+            }
+        ]
+    },
+    {
+        "id": "6-user-roles-permissions-matrix",
+        "title": "6. User Roles & Permissions Matrix",
+        "articles": [
+            {
+                "title": "Overview",
+                "content": "<p>LoungeOS enforces access control through predefined roles:</p><table><thead><tr><th style=\"text-align: left;\">Role</th><th style=\"text-align: center;\">Primary Dashboard Access</th><th style=\"text-align: center;\">POS Operations</th><th style=\"text-align: center;\">Prep Screens (KDS/BDS)</th><th style=\"text-align: center;\">Stock Management</th><th style=\"text-align: center;\">Accounting Control</th><th style=\"text-align: center;\">Configuration &amp; System</th></tr></thead><tbody><tr><td style=\"text-align: left;\"><strong>Super Admin</strong></td><td style=\"text-align: center;\">Full</td><td style=\"text-align: center;\">View Only</td><td style=\"text-align: center;\">View Only</td><td style=\"text-align: center;\">View Only</td><td style=\"text-align: center;\">View Only</td><td style=\"text-align: center;\">Full Admin</td></tr><tr><td style=\"text-align: left;\"><strong>Manager</strong></td><td style=\"text-align: center;\">Full</td><td style=\"text-align: center;\">Full</td><td style=\"text-align: center;\">Full</td><td style=\"text-align: center;\">Full</td><td style=\"text-align: center;\">Sync &amp; View</td><td style=\"text-align: center;\">Visual &amp; Layout</td></tr><tr><td style=\"text-align: left;\"><strong>Accountant</strong></td><td style=\"text-align: center;\">Financial</td><td style=\"text-align: center;\">View Only</td><td style=\"text-align: center;\">None</td><td style=\"text-align: center;\">View Only</td><td style=\"text-align: center;\">Full</td><td style=\"text-align: center;\">None</td></tr><tr><td style=\"text-align: left;\"><strong>Stock Manager</strong></td><td style=\"text-align: center;\">Stock Stats</td><td style=\"text-align: center;\">None</td><td style=\"text-align: center;\">None</td><td style=\"text-align: center;\">Full</td><td style=\"text-align: center;\">None</td><td style=\"text-align: center;\">None</td></tr><tr><td style=\"text-align: left;\"><strong>Chef</strong></td><td style=\"text-align: center;\">None</td><td style=\"text-align: center;\">None</td><td style=\"text-align: center;\">Kitchen Display</td><td style=\"text-align: center;\">Menu Catalog</td><td style=\"text-align: center;\">None</td><td style=\"text-align: center;\">None</td></tr><tr><td style=\"text-align: left;\"><strong>Waiter</strong></td><td style=\"text-align: center;\">Tables Floor</td><td style=\"text-align: center;\">Order Taking</td><td style=\"text-align: center;\">None</td><td style=\"text-align: center;\">None</td><td style=\"text-align: center;\">None</td><td style=\"text-align: center;\">None</td></tr><tr><td style=\"text-align: left;\"><strong>Cashier</strong></td><td style=\"text-align: center;\">POS / Bill</td><td style=\"text-align: center;\">Payment Processing</td><td style=\"text-align: center;\">Bar Display</td><td style=\"text-align: center;\">None</td><td style=\"text-align: center;\">None</td><td style=\"text-align: center;\">None</td></tr><tr><td style=\"text-align: left;\"><strong>Bartender</strong></td><td style=\"text-align: center;\">None</td><td style=\"text-align: center;\">None</td><td style=\"text-align: center;\">Bar Display</td><td style=\"text-align: center;\">None</td><td style=\"text-align: center;\">None</td><td style=\"text-align: center;\">None</td></tr></tbody></table><ul><li><strong>Floor Assignments</strong>: Waiters are assigned to specific service floors. They can only view tables and process orders for tables that reside on their assigned floors.</li><li><strong>Session Auto-Timeout</strong>: Inactive sessions expire after <strong>2 hours</strong>, protecting terminal screens left unattended.</li></ul><hr />"
+            }
+        ]
+    },
+    {
+        "id": "7-step-by-step-initial-setup-workflow",
+        "title": "7. Step-by-Step Initial Setup Workflow",
+        "articles": [
+            {
+                "title": "Overview",
+                "content": "<p>To ensure smooth operations, configure the system in the following order.</p><pre><code class=\"language-mermaid\">graph TD    A[Step 1: Setup Categories] --&gt; B[Step 2: Add Menu Items &amp; Meals]    B --&gt; C[Step 3: Setup Floors &amp; Tables]    C --&gt; D[Step 4: Create Staff Accounts]    D --&gt; E[Ready for Daily Operations]</code></pre>"
+            },
+            {
+                "title": "Step 1: Menu Categories Configuration",
+                "content": "<p>Categories group items on the Point of Sale grid and dictate how orders route to preparation screens.1. Log in as a <strong>Manager</strong> or <strong>Super Admin</strong> and select <strong>Categories</strong> from the sidebar.2. Click <strong>Add Category</strong> (e.g., \"Main Dishes\", \"Desserts\", \"Cocktails\", \"Soft Drinks\", \"Wines\").3. Select an icon for the category card.4. <strong>Routing Selector (Food vs. Drink)</strong>:   - Check the <strong>\"This is a food category\"</strong> box if the items are prepared in the kitchen.   - Leave it unchecked for beverage and drink items.   - <em>How it works</em>: Items marked as food route to the Kitchen Display (KDS). Unmarked items (drinks) route to the Bar Display (BDS).</p>"
+            },
+            {
+                "title": "Step 2: Add Menu Items & Meals",
+                "content": "<p>Set up the catalog of products ready for sale.1. Navigate to <strong>Menu</strong> or <strong>Meals</strong> in the sidebar.2. Click <strong>Add Menu Item</strong>.3. Fill in the details:   - <strong>Name</strong>: (e.g., \"Beef Burger\" or \"Club Sandwich\")   - <strong>Category</strong>: Assign it to a category configured in Step 1.   - <strong>Price</strong>: Set the sales price (formatted in your base currency).   - <strong>Available Quantity</strong>: Enter the initial quantity available on hand. If this drops to zero, the item displays as \"Out of Stock\" in the POS grid and cannot be selected.   - <strong>Image Upload</strong>: Upload a clear photo. Files are limited to 5MB and are cropped into a square for the POS grid.4. <strong>Variations</strong>: Add sizes or options (e.g., \"Single\" vs \"Double\" portion) with custom price additions.</p>"
+            },
+            {
+                "title": "Step 3: Establish Floors & Tables",
+                "content": "<p>Configure the physical layout of your restaurant or lounge.1. Navigate to <strong>Floor Management</strong> in the sidebar.2. Click <strong>Manage Floors</strong> and define your main seating zones (e.g., \"Main Dining Room\", \"VIP Mezzanine\", \"Poolside Bar\").3. Navigate to the <strong>Tables</strong> page and click <strong>Add Table</strong>.4. Assign the table a name or number (e.g., \"Table 5\"), seat capacity, and link it to a Floor created in the previous step.5. In the Floor Management view, you can drag and drop tables to reorder their layout or assign waitstaff to specific floors.</p>"
+            },
+            {
+                "title": "Step 4: Add Staff Accounts",
+                "content": "<p>Create credentials for the team members operating the system.1. Navigate to <strong>Staff</strong> in the sidebar and click <strong>Add Staff Member</strong>.2. Input their name, email (which acts as their login username), and phone number.3. Select their structural <strong>Role</strong> (e.g., Waiter, Cashier, Chef, Bartender, Accountant).4. If the role is <strong>Waiter</strong>, select their assigned <strong>Floor</strong>. This focuses their terminal view to only show tables on that floor.5. Save the profile. Instruct the new staff member to sign in using their email and the temporary password, which they will be immediately prompted to replace.</p><hr />"
+            }
+        ]
+    },
+    {
+        "id": "8-daily-operations-interactive-workflows",
+        "title": "8. Daily Operations & Interactive Workflows",
+        "articles": [
+            {
+                "title": "Overview",
+                "content": "<p>This section outlines the operational loops executed by waitstaff, preparation staff, cashiers, and managers during a shift.</p>"
+            },
+            {
+                "title": "Workflow A: Order Placement (Waitstaff)",
+                "content": "<ol><li>The Waiter opens the <strong>Tables</strong> dashboard. They will see tables color-coded by status:</li><li><strong>Green</strong>: Available.</li><li><strong>Red</strong>: Occupied (has an active order).</li><li><strong>Orange</strong>: Reserved or needs cleaning.</li><li>Click on a <strong>Green (Available)</strong> table. The interface opens the POS screen with that table locked in.</li><li>Select products from the categorized grid on the left. Selected items populate the order ledger on the right.</li><li>Adjust quantities, tap item listings to add special cooking instructions or preparation notes (e.g., \"Medium-rare\", \"No ice\"), or apply discounts.</li><li>Tap <strong>Place Order</strong>.</li><li>The order status switches to \"Pending\".</li><li>The table card turns <strong>Red</strong> (Occupied).</li><li>The kitchen items route to the KDS, and drink items route to the BDS.</li></ol>"
+            },
+            {
+                "title": "Workflow B: Order Preparation (Kitchen & Bar Staff)",
+                "content": "<ol><li>Chefs open the <strong>Kitchen Display</strong> (KDS) and Bartenders open the <strong>Bar Display</strong> (BDS).</li><li>New tickets appear in the <strong>Pending</strong> column, sorting oldest-first to prevent long wait times. An audio notification plays when a new order arrives.</li><li>When preparation begins, drag the ticket card to <strong>In Progress</strong> (or click the \"Start\" action on the card).</li><li>Once preparation is complete:</li><li>Move the card to <strong>Ready</strong> (or click \"Mark Ready\").</li><li>An audio alert triggers at the cashier/waiter station, alerting them that items are ready for pickup.</li><li>The items remain in the \"Ready\" column until the checkout payment is complete.</li></ol>"
+            },
+            {
+                "title": "Workflow C: Billing & Checkout (Cashier)",
+                "content": "<ol><li>When a table requests their check, the cashier or waiter clicks on the <strong>Red (Occupied)</strong> table in the Tables view.</li><li>Verify all ordered items in the billing summary. If needed, click <strong>Modify Order</strong> (requires Manager credentials if items are being removed).</li><li>Click <strong>Charge Order</strong> to open the payment processor.</li><li>Select the payment method:</li><li><strong>Cash</strong>: Enter the cash received. The system displays the change amount due.</li><li><strong>Card / Bank Transfer</strong>: For card machine transactions.</li><li><strong>Mobile Money</strong>: Select Orange Money or MTN Mobile Money and document the transaction reference.</li><li>Apply split payments if a group wants to split the bill between cash and card.</li><li>Click <strong>Confirm Payment</strong>.</li><li>The transaction is recorded in the local database.</li><li>The table status resets to <strong>Green (Available)</strong>.</li><li>The receipt PDF renders and prints to the thermal receipt printer.</li></ol>"
+            },
+            {
+                "title": "Workflow D: Splitting & Merging Bills (Manager Only)",
+                "content": "<p>Managers can split or merge tables to accommodate changing guest arrangements.1. Navigate to the <strong>Orders</strong> screen to view all active, unpaid tickets.2. <strong>To Split an Order</strong>:   - Select the target order and click <strong>Split Order</strong>.   - A modal displays the list of ordered items. Check the boxes next to the items to split.   - Select a destination table. Click <strong>Confirm Split</strong>. The selected items will be moved to a new order under the target table.3. <strong>To Merge Orders</strong>:   - Click <strong>Merge Orders</strong>.   - Select the source table and the destination table.   - Click <strong>Confirm Merge</strong>. The orders are combined, and the source table is cleared and marked as available.</p>"
+            },
+            {
+                "title": "Workflow E: Cancellations & Reactivations (Manager Only)",
+                "content": "<ol><li>To cancel an active order, a chef or bartender can drag the order ticket to the <strong>Cancel Drop Zone</strong> at the bottom of the KDS/BDS screen. Waiters can also cancel orders from the active POS view.</li><li>Cancellations require a reason for audit tracking (e.g., \"Customer left\", \"Input error\").</li><li>All details are saved to the <strong>Activity Log</strong> for auditing.</li><li><strong>Reactivating Orders</strong>: If an order was canceled in error, a Manager can navigate to the <strong>Orders</strong> tab, locate the canceled order, and click <strong>Reactivate</strong> within a 24-hour window. This returns the ticket to \"Pending\" and restores the table's occupied status.</li></ol><hr />"
+            }
+        ]
+    },
+    {
+        "id": "9-stock-supplier-management",
+        "title": "9. Stock & Supplier Management",
+        "articles": [
+            {
+                "title": "Overview",
+                "content": "<p>LoungeOS provides tools to manage stock items (such as bottled sodas, wines, beers, and finished packaging) and trace operational stock movements.</p>"
+            },
+            {
+                "title": "Inventory Dashboard",
+                "content": "<p>Navigate to <strong>Inventory</strong> in the sidebar to review:- <strong>Total Stock Value</strong>: Calculations based on current quantities on hand multiplied by unit costs.- <strong>Low Stock Warnings</strong>: Automatically lists items that have dropped below their defined minimum alert thresholds.- <strong>Out of Stock Lists</strong>: High-priority red alerts for items with zero stock remaining.- <strong>Stock Movement Timeline</strong>: Charts showing historical stock inputs (receivals) and outputs (sales/damage).</p>"
+            },
+            {
+                "title": "Creating Stock Items",
+                "content": "<ol><li>From the Inventory page, click <strong>Add Stock Item</strong>.</li><li>Configure the parameters:</li><li><strong>SKU</strong>: Input a unique stock-keeping identifier (or auto-generate one).</li><li><strong>Name &amp; Description</strong>: (e.g., \"Heineken Bottle 33cl\")</li><li><strong>Category</strong>: (e.g., \"Beverages\", \"Spirits\", \"Containers\")</li><li><strong>Unit of Measurement</strong>: (e.g., \"Bottles\", \"Boxes\", \"Liters\")</li><li><strong>Current Stock Level</strong>: The physical count currently in the building.</li><li><strong>Min/Max Stock Levels</strong>: Set the minimum threshold to trigger low-stock alerts.</li><li><strong>Cost Per Unit</strong>: The wholesale acquisition price paid to the supplier.</li><li><strong>Supplier</strong>: Map the item to one of your configured suppliers.</li></ol>"
+            },
+            {
+                "title": "Stock Movement Transactions",
+                "content": "<p>To adjust stock manually due to reasons other than standard sales:1. Select one or more items using the table checkboxes and click <strong>Bulk Move</strong> (or select <strong>Adjust Stock</strong> on an individual item).2. Select the transaction type:   - <strong>Stock In</strong>: Record incoming stock from a supplier delivery. Enter the quantity and unit cost.   - <strong>Stock Out (Damage/Waste/Loss)</strong>: Document inventory that is broken, spoiled, or stolen. This decreases the stock level and logs the cost as an operational expense.   - <strong>Cost Correction</strong>: Correct pricing records without altering quantity counts.3. Save the entry. The system updates the stock quantities and logs the movement in the audit ledger.</p>"
+            },
+            {
+                "title": "Supplier Registry",
+                "content": "<p>Keep a directory of partners for stock replenishment:1. Navigate to <strong>Suppliers</strong> in the sidebar.2. Click <strong>Add Supplier</strong> and input their details: Business name, Contact person, phone number, email address, and physical location.3. Click <strong>View Items</strong> on any supplier card to see the catalog of stock items mapped to them.</p>"
+            },
+            {
+                "title": "Bulk File Actions",
+                "content": "<p>Under the <strong>File Actions</strong> dropdown menu on the Inventory page:- <strong>Download Template</strong>: Get a blank CSV template pre-configured with headers.- <strong>Import from CSV</strong>: Upload a populated CSV spreadsheet. The importer validates columns and creates categories automatically if they do not exist.- <strong>Export Movement Ledger</strong>: Export inventory logs within a custom date range as a PDF or CSV spreadsheet, featuring your company logo and header.</p><hr />"
+            }
+        ]
+    },
+    {
+        "id": "10-accounting-financial-integration",
+        "title": "10. Accounting & Financial Integration",
+        "articles": [
+            {
+                "title": "Overview",
+                "content": "<p>LoungeOS uses a double-entry ledger system. This converts daily operational sales and stock expenses into financial journals.</p><pre><code>       [POS Sales Transaction]                 [Stock-In Purchase]                 \u2502                                      \u2502                 \u25bc                                      \u25bc     [Sales Accounts Revenue]               [Inventory Asset/Expense]                 \u2502                                      \u2502                 \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u25ba \u2500\u2500\u2500 \u25c4\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518                                    \u2502                                    \u25bc                       [Sync Accounting Data Action]                                    \u2502                                    \u25bc                       [Double-Entry Balanced Journals]                        (Debits == Credits Verification)                                    \u2502                                    \u25bc                       [Automated Financial Reports]                       (P&amp;L, Balance Sheet, Cash Flow)</code></pre>"
+            },
+            {
+                "title": "Double-Entry Validation",
+                "content": "<p>Every transaction in the financial ledger is recorded using balanced accounts. Manual journal adjustments validate that the sum of debit lines equals the sum of credit lines. The system will prevent you from saving unbalanced manual journal entries.</p>"
+            },
+            {
+                "title": "Chart of Accounts (COA)",
+                "content": "<p>The Chart of Accounts organizes all financial records into five categories:1. <strong>Assets</strong>: Cash on Hand, Bank Accounts, Inventory Assets.2. <strong>Liabilities</strong>: Supplier Payables, Accrued Taxes.3. <strong>Equity</strong>: Owner's Capital, Retained Earnings.4. <strong>Revenue</strong>: Food Sales, Beverage Sales, Event Services.5. <strong>Expenses</strong>: Inventory Costs, Rent, Utilities, Staff Wages, Waste/Loss Expenses.</p><p>You can create custom child accounts under parent accounts to structure your ledger.</p>"
+            },
+            {
+                "title": "The Synchronized Entry System (POS & Inventory Sync)",
+                "content": "<p>Instead of entering sales and expenses manually, LoungeOS automates ledger entries:1. Navigate to the <strong>Reports</strong> or <strong>Accounting</strong> screen.2. Click <strong>Sync Accounting Data</strong> and select the target date range.3. The system scans all paid POS orders and recorded Stock-In purchases.4. It creates balanced journal entries automatically:   - <em>For Sales</em>: Debits <strong>Cash/Bank Account</strong> and credits <strong>Sales Revenue</strong>.   - <em>For Purchases</em>: Debits <strong>Inventory Asset / Cost of Goods Sold</strong> and credits <strong>Cash/Accounts Payable</strong>.5. Once synced, these transactions populate your financial reports in real-time.</p>"
+            },
+            {
+                "title": "Financial Statements",
+                "content": "<p>LoungeOS generates three key financial statements, filterable by custom date ranges and exportable to CSV or PDF:- <strong>Income Statement (Profit &amp; Loss)</strong>: Compiles all sales revenues, subtracts Cost of Goods Sold (COGS) and operational expenses, and displays Net Profit and Profit Margins.- <strong>Balance Sheet</strong>: Compiles assets, liabilities, and equity, confirming that $Assets = Liabilities + Equity$.- <strong>Cash Flow Statement</strong>: Tracks cash inflows and outflows across operating, investing, and financing activities.</p><hr />"
+            }
+        ]
+    },
+    {
+        "id": "11-system-customization-settings",
+        "title": "11. System Customization & Settings",
+        "articles": [
+            {
+                "title": "Overview",
+                "content": "<p>Authorize system parameters through the <strong>Configuration</strong> dashboard. Access is restricted to Managers and Super Admins.</p>"
+            },
+            {
+                "title": "Financial Configurations",
+                "content": "<ul><li><strong>Currency Manager</strong>: Set your default operating currency (default is <strong>XAF - Central African CFA Franc</strong>). You can select from pre-configured options (XAF, USD, EUR, GBP, NGN, GHS) or add custom currencies. You can also configure the currency symbol position (before or after the number).</li><li><strong>Tax Rules</strong>: Toggle tax calculations on or off. You can define multiple tax rates (e.g., VAT 19%, GST 10%, PST 5%) and set a default rate for POS billing checkout.</li><li><strong>Discounts</strong>: Enable or disable discount codes. Pre-configure discount rules (percentage-based or fixed amounts) that cashiers can apply to bills.</li></ul>"
+            },
+            {
+                "title": "Branding Customization",
+                "content": "<ul><li><strong>Business Profile</strong>: Edit your business name, address, phone number, and operating hours. This information is dynamically pulled into receipt headers and financial reports.</li><li><strong>Receipt Layouts</strong>: Add custom header greetings, thank-you messages, and upload a version of your logo to print on thermal receipts.</li><li><strong>Login Customization</strong>: Upload background photos to cycle as a slideshow on the login screen.</li></ul>"
+            },
+            {
+                "title": "Security Auditing & Logs",
+                "content": "<p>Select <strong>Activity Log</strong> in the sidebar to review all system modifications. The log records:- User logins, logouts, and failed authentication attempts.- Created, modified, or deleted staff accounts.- Transaction creations, manual stock adjustments, and order cancellations (including the input reason).- Database backup actions and configuration changes.</p><p>Logs can be searched by keyword or filtered by date range and user account.</p>"
+            },
+            {
+                "title": "Backup & Disaster Recovery",
+                "content": "<ul><li><strong>Manual Backups</strong>: Click <strong>Backup Database</strong> to download an encrypted <code>.db</code> file containing your entire setup. Save this to an external drive or secure cloud storage.</li><li><strong>Restoring Data</strong>: If a hardware failure occurs, install LoungeOS on a new computer, navigate to the restore panel, upload your backup file, and click <strong>Restore</strong>.<blockquote><p>[!CAUTION]Restoring database snapshots completely overwrites the existing database. This action cannot be undone.</p></blockquote></li></ul>"
+            },
+            {
+                "title": "Internal Support Tickets",
+                "content": "<p>If staff encounter hardware or software issues, they can use the ticketing system:1. Navigate to <strong>Support</strong> and click <strong>Create Ticket</strong>.2. Assign a priority (Low, Medium, High, Urgent) and category (e.g., \"IT Support\", \"Kitchen Equipment\", \"Facility Maintenance\").3. Managers can assign tickets to specific team members, update their status (Open \u2192 In Progress \u2192 Resolved), and add comments to track progress.</p><hr />"
+            }
+        ]
+    },
+    {
+        "id": "12-troubleshooting-frequently-asked-questions-faq",
+        "title": "12. Troubleshooting & Frequently Asked Questions (FAQ)",
+        "articles": [
+            {
+                "title": "Q: The application shows a \"Database Locked\" (SQLITE_BUSY) warning. How do I fix it?",
+                "content": "<p><strong>A</strong>: This happens if multiple processes attempt to write to the SQLite database file simultaneously. Ensure that you are running only one instance of the LoungeOS application at a time. If the app freezes, open the Task Manager (Windows) or Activity Monitor (macOS) and end any duplicate background LoungeOS processes.</p>"
+            },
+            {
+                "title": "Q: Why aren't beverage orders appearing on the Kitchen KDS screen?",
+                "content": "<p><strong>A</strong>: LoungeOS uses smart routing. Verify the category configuration under the <strong>Categories</strong> tab. Drink categories (such as Wine, Soft Drinks, or Cocktails) should have the <strong>\"This is a food category\"</strong> checkbox unchecked. This routes them to the Bar Display System (BDS) instead of the Kitchen Display (KDS).</p>"
+            },
+            {
+                "title": "Q: How can multiple tablets connect to the same server?",
+                "content": "<p><strong>A</strong>: Ensure the host computer is connected to your local Wi-Fi router. Find the host computer's local IP address (e.g., <code>192.168.1.15</code>). Verify that the host's firewall allows incoming connections on port <strong>2304</strong>. On your tablets, open the web browser and navigate to: <code>http://192.168.1.15:2304</code>.</p>"
+            },
+            {
+                "title": "Q: An uploaded image is not displaying on the POS product grid.",
+                "content": "<p><strong>A</strong>: Verify that the image file size is under <strong>5MB</strong> and is in a standard format (<code>.png</code>, <code>.jpg</code>, <code>.jpeg</code>, or <code>.webp</code>). Also check that the server process has read/write permissions for the <code>uploads/</code> directory inside the project root folder.</p>"
+            },
+            {
+                "title": "Q: How do I change the default currency symbol?",
+                "content": "<p><strong>A</strong>: Log in as a Super Admin, navigate to <strong>Configuration</strong>, click the <strong>Financial</strong> settings tab, and look for the Currency section. Select your currency from the dropdown or click \"Add Custom Currency\". Once set as the default, all menus, reports, and receipts will display the new symbol.</p>"
+            },
+            {
+                "title": "Q: Why are my financial statements showing zero values after processing sales?",
+                "content": "<p><strong>A</strong>: POS transactions do not write directly to the accounting ledger to prevent performance lags. To populate your financial statements, go to <strong>Reports</strong> or <strong>Accounting</strong> and click <strong>Sync Accounting Data</strong>. Once the sync completes, all sales and purchase records are processed into journal entries, and your financial statements will update.</p><hr /><p><em>LoungeOS \u2014 Offline-First Lounge &amp; Restaurant Management. Manufactured for speed, reliability, and precision.</em></p>"
+            }
+        ]
+    }
+]
+;
+
+        const navMenu = document.getElementById('navMenu');
+        const contentArea = document.getElementById('contentArea');
+        const searchInput = document.getElementById('searchInput');
+        const noResults = document.getElementById('noResults');
+        const mobileToggle = document.getElementById('mobileToggle');
+        const sidebar = document.getElementById('sidebar');
+
+        // Toggle mobile sidebar
+        mobileToggle.addEventListener('click', () => {
+            sidebar.classList.toggle('open');
+            const icon = mobileToggle.querySelector('svg');
+            if (sidebar.classList.contains('open')) {
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                icon.style.transform = 'rotate(0)';
+            }
+        });
+
+        function renderKnowledgeBase() {
+            navMenu.innerHTML = '';
+            contentArea.innerHTML = '';
+
+            kbData.forEach((category, index) => {
+                // Nav Item
+                const navItem = document.createElement('a');
+                navItem.href = `#${category.id}`;
+                navItem.className = `kb-nav-item ${index === 0 ? 'active' : ''}`;
+                navItem.textContent = category.title;
+                navItem.dataset.id = category.id;
+                
+                navItem.addEventListener('click', (e) => {
+                    document.querySelectorAll('.kb-nav-item').forEach(el => el.classList.remove('active'));
+                    navItem.classList.add('active');
+                    if (window.innerWidth <= 768) {
+                        sidebar.classList.remove('open');
+                        mobileToggle.querySelector('svg').style.transform = 'rotate(0)';
+                    }
+                });
+
+                navMenu.appendChild(navItem);
+
+                // Content Section
+                const section = document.createElement('section');
+                section.id = category.id;
+                section.className = 'kb-category';
+                section.dataset.title = category.title.toLowerCase();
+                
+                const sectionTitle = document.createElement('h2');
+                sectionTitle.className = 'kb-category-title';
+                sectionTitle.textContent = category.title;
+                section.appendChild(sectionTitle);
+
+                category.articles.forEach(article => {
+                    const articleDiv = document.createElement('div');
+                    articleDiv.className = 'kb-article';
+                    articleDiv.dataset.search = `${article.title} ${article.content}`.toLowerCase();
+
+                    const header = document.createElement('div');
+                    header.className = 'kb-article-header';
+                    
+                    const title = document.createElement('div');
+                    title.className = 'kb-article-title';
+                    title.textContent = article.title;
+
+                    const icon = document.createElement('div');
+                    icon.className = 'kb-article-icon';
+                    icon.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>';
+
+                    header.appendChild(title);
+                    header.appendChild(icon);
+
+                    const content = document.createElement('div');
+                    content.className = 'kb-article-content';
+                    content.innerHTML = article.content;
+
+                    header.addEventListener('click', () => {
+                        const isOpen = articleDiv.classList.contains('open');
+                        // Close all others
+                        document.querySelectorAll('.kb-article').forEach(a => a.classList.remove('open'));
+                        
+                        if (!isOpen) {
+                            articleDiv.classList.add('open');
+                        }
+                    });
+
+                    articleDiv.appendChild(header);
+                    articleDiv.appendChild(content);
+                    section.appendChild(articleDiv);
+                });
+
+                contentArea.appendChild(section);
+            });
+        }
+
+        function filterKnowledgeBase(searchTerm) {
+            const term = searchTerm.toLowerCase();
+            let hasResults = false;
+
+            document.querySelectorAll('.kb-category').forEach(section => {
+                let sectionHasMatch = false;
+                
+                // Check title
+                if (section.dataset.title.includes(term)) {
+                    sectionHasMatch = true;
+                    section.querySelectorAll('.kb-article').forEach(article => {
+                        article.classList.remove('kb-hidden');
+                    });
+                } else {
+                    // Check articles
+                    section.querySelectorAll('.kb-article').forEach(article => {
+                        if (article.dataset.search.includes(term)) {
+                            article.classList.remove('kb-hidden');
+                            sectionHasMatch = true;
+                            
+                            // Highlight term (basic implementation)
+                            if (term.length > 2) {
+                                article.classList.add('open');
+                            }
+                        } else {
+                            article.classList.add('kb-hidden');
+                            article.classList.remove('open');
+                        }
+                    });
+                }
+
+                if (sectionHasMatch) {
+                    section.classList.remove('kb-hidden');
+                    hasResults = true;
+                } else {
+                    section.classList.add('kb-hidden');
+                }
+            });
+
+            if (hasResults) {
+                noResults.classList.add('kb-hidden');
+            } else {
+                noResults.classList.remove('kb-hidden');
+            }
+        }
+
+        // Initialize
+        renderKnowledgeBase();
+
+        // Search listener
+        searchInput.addEventListener('input', (e) => {
+            filterKnowledgeBase(e.target.value);
+        });
+
+        // Intersection Observer for scroll spy
+        const observerOptions = {
+            root: null,
+            rootMargin: '-20% 0px -60% 0px',
+            threshold: 0
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.id;
+                    document.querySelectorAll('.kb-nav-item').forEach(el => {
+                        el.classList.toggle('active', el.dataset.id === id);
+                    });
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.kb-category').forEach(section => {
+            observer.observe(section);
+        });
+        
+        // Mobile menu toggle
+        document.getElementById('menuToggle').addEventListener('click', function() {
+          this.classList.toggle('active');
+          document.getElementById('navLinks').classList.toggle('active');
+        });
+    </script>
+    <div id="google_translate_element" style="display: none"></div>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: "en", autoDisplay: false },
+          "google_translate_element",
+        );
+      }
+    </script>
+    <script
+      type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
+
+    <script src="app.js"></script>
+    <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
+    <script src="https://files.bpcontent.cloud/2026/06/19/19/20260619193215-LONFMDIT.js" defer></script>
+  </body>
+</html>

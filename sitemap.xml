@@ -85,4 +85,38 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://lounge-os.onrender.com/legal.html?lang=ja"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://lounge-os.onrender.com/legal.html"/>
   </url>
+  <url>
+    <loc>https://lounge-os.onrender.com/documentation.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lounge-os.onrender.com/documentation.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lounge-os.onrender.com/documentation.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lounge-os.onrender.com/documentation.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lounge-os.onrender.com/documentation.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://lounge-os.onrender.com/documentation.html?lang=zh-CN"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://lounge-os.onrender.com/documentation.html?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://lounge-os.onrender.com/documentation.html?lang=hi"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://lounge-os.onrender.com/documentation.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lounge-os.onrender.com/documentation.html?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lounge-os.onrender.com/documentation.html?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lounge-os.onrender.com/documentation.html"/>
+  </url>
+  <url>
+    <loc>https://lounge-os.onrender.com/knowledgebase.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lounge-os.onrender.com/knowledgebase.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lounge-os.onrender.com/knowledgebase.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lounge-os.onrender.com/knowledgebase.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lounge-os.onrender.com/knowledgebase.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://lounge-os.onrender.com/knowledgebase.html?lang=zh-CN"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://lounge-os.onrender.com/knowledgebase.html?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://lounge-os.onrender.com/knowledgebase.html?lang=hi"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://lounge-os.onrender.com/knowledgebase.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lounge-os.onrender.com/knowledgebase.html?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lounge-os.onrender.com/knowledgebase.html?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lounge-os.onrender.com/knowledgebase.html"/>
+  </url>
 </urlset>
