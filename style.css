@@ -37,6 +37,7 @@
 html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -1363,7 +1364,7 @@ button {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   /* Nav Mobile Open State */
   body.menu-open {
     overflow: hidden;
@@ -1978,9 +1979,20 @@ html.translated-rtl {
 .full-features-details summary {
     list-style: none; /* Hide default arrow */
     margin: 0 auto 3rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 .full-features-details summary::-webkit-details-marker {
     display: none;
+}
+.full-features-details .dropdown-arrow {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+}
+.full-features-details[open] .dropdown-arrow {
+    transform: rotate(180deg);
 }
 
 /* White btn with black text */

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://lounge-os.onrender.com/sitemap.xml
+Sitemap: https://loungeos.app/sitemap.xml
