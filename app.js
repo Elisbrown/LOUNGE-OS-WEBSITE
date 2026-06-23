@@ -19,11 +19,22 @@
     });
 
     // Close menu when a link is clicked
-    navLinks.querySelectorAll('a').forEach(function (link) {
+    navLinks.querySelectorAll('a:not(.nav-dropdown-menu a)').forEach(function (link) {
       link.addEventListener('click', function () {
         menuToggle.classList.remove('active');
         navLinks.classList.remove('open');
         document.body.classList.remove('menu-open');
+      });
+    });
+
+    // Mobile Dropdown toggle
+    const dropdownToggles = document.querySelectorAll('.nav-dropdown-toggle');
+    dropdownToggles.forEach(function(dt) {
+      dt.addEventListener('click', function(e) {
+        if (window.innerWidth <= 1024) {
+          e.preventDefault();
+          this.parentElement.classList.toggle('active');
+        }
       });
     });
   }
