@@ -436,3 +436,42 @@ var gtBannerObserver = new MutationObserver(function() {
     hideGoogleTranslateBanner();
 });
 gtBannerObserver.observe(document.documentElement, { childList: true, subtree: true, attributes: true, attributeFilter: ['class', 'style'] });
+
+// --- Clerk Authentication Session Management ---
+(function() {
+  const clerkPubKey = 'pk_test_cmlnaHQtbWFybW9zZXQtMjYuY2xlcmsuYWNjb3VudHMuZGV2JA';
+  
+  const script = document.createElement('script');
+  script.setAttribute('data-clerk-publishable-key', clerkPubKey);
+  script.async = true;
+  script.src = 'https://cdn.jsdelivr.net/npm/@clerk/clerk-js@latest/dist/clerk.browser.js';
+  script.crossOrigin = 'anonymous';
+  
+  script.onload = async () => {
+    try {
+      await window.Clerk.load();
+      if (window.Clerk.user) {
+        // User is signed in, update all CTA buttons to "Go to Dashboard"
+        const ctas = document.querySelectorAll('a.btn, button.btn, a#navCtaBtn, a#heroCtaBtn, a#footerCtaBtn');
+        ctas.forEach(btn => {
+          const text = btn.innerText.toLowerCase();
+          if (text.includes('start free trial') || text.includes('get started') || text.includes('sign up')) {
+            // Keep the icon if it exists
+            const icon = btn.querySelector('svg');
+            btn.innerText = 'Go to Dashboard';
+            if (icon) btn.appendChild(icon);
+            
+            // Only update href if it's an anchor
+            if (btn.tagName === 'A') {
+              btn.href = 'https://account.loungeos.app/dashboard';
+            }
+          }
+        });
+      }
+    } catch (err) {
+      console.error('Error loading Clerk:', err);
+    }
+  };
+  
+  document.head.appendChild(script);
+})();
