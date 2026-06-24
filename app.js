@@ -125,16 +125,7 @@
       el.textContent = 'You save ' + formatPrice(baseSavings) + ' (' + freeMonthsText + ')';
     });
 
-    // Update WhatsApp Button Links dynamically
-    document.querySelectorAll('.wa-pricing-btn').forEach(function (btn) {
-      var basePrice = parseInt(btn.dataset.planPrice);
-      var planName = btn.dataset.planName;
-      var period = btn.dataset.planPeriod || '';
-      var formattedPrice = formatPrice(basePrice);
-      
-      var message = "Hello Elisbrown, I want to subscribe to the LoungeOS " + planName + " (" + formattedPrice + period + ")";
-      btn.href = "https://wa.me/237679690703?text=" + encodeURIComponent(message);
-    });
+
   }
 
   // Initialize Pricing formatting
@@ -143,43 +134,43 @@
   // Multilingual Dynamic SEO Dictionary
   const seoData = {
       'en': {
-          desc: "LoungeOS is the best offline-first Restaurant POS system. Streamline operations, protect revenue, and boost profits. Free 90-day trial — no credit card required.",
+          desc: "LoungeOS is the best offline-first Restaurant POS system. Streamline operations, protect revenue, and boost profits. Free 30-day trial — no credit card required.",
           keys: "Restaurant POS, Point of Sale, Restaurant Management Software, Offline POS, KDS, Kitchen Display System, Bar POS, Cafe Management, LoungeOS"
       },
       'fr': {
-          desc: "LoungeOS est le meilleur système de caisse (POS) pour restaurant fonctionnant hors ligne. Optimisez vos opérations et augmentez vos profits. Essai gratuit de 90 jours.",
+          desc: "LoungeOS est le meilleur système de caisse (POS) pour restaurant fonctionnant hors ligne. Optimisez vos opérations et augmentez vos profits. Essai gratuit de 30 jours.",
           keys: "Caisse Restaurant, Logiciel de Caisse, POS Hors Ligne, Gestion de Restaurant, Logiciel Bar, TPV Restaurant, Système d'affichage cuisine, LoungeOS"
       },
       'es': {
-          desc: "LoungeOS es el mejor sistema POS para restaurantes con funcionamiento sin conexión. Optimice operaciones y proteja sus ingresos. Prueba gratuita de 90 días.",
+          desc: "LoungeOS es el mejor sistema POS para restaurantes con funcionamiento sin conexión. Optimice operaciones y proteja sus ingresos. Prueba gratuita de 30 días.",
           keys: "Punto de Venta Restaurante, Sistema POS, Software de Gestión de Restaurantes, POS Offline, Sistema de Pantalla de Cocina, KDS, LoungeOS"
       },
       'de': {
-          desc: "LoungeOS ist das beste Offline-First-Kassensystem für Restaurants. Optimieren Sie Abläufe und steigern Sie Gewinne. 90 Tage kostenlos testen.",
+          desc: "LoungeOS ist das beste Offline-First-Kassensystem für Restaurants. Optimieren Sie Abläufe und steigern Sie Gewinne. 30 Tage kostenlos testen.",
           keys: "Kassensystem Gastronomie, Restaurant POS, Offline Kasse, Bar Management Software, Küchenanzeigesystem, LoungeOS"
       },
       'zh-CN': {
-          desc: "LoungeOS是最佳的离线优先餐厅POS系统。简化运营，保护收入并提高利润。提供90天免费试用。",
+          desc: "LoungeOS是最佳的离线优先餐厅POS系统。简化运营，保护收入并提高利润。提供30天免费试用。",
           keys: "餐厅POS, 销售点系统, 离线POS, 餐厅管理软件, 酒吧管理, 厨房显示系统, LoungeOS"
       },
       'ar': {
-          desc: "LoungeOS هو أفضل نظام نقاط بيع (POS) للمطاعم يعمل بدون إنترنت. قم بتبسيط العمليات وزيادة الأرباح. تجربة مجانية لمدة 90 يومًا.",
+          desc: "LoungeOS هو أفضل نظام نقاط بيع (POS) للمطاعم يعمل بدون إنترنت. قم بتبسيط العمليات وزيادة الأرباح. تجربة مجانية لمدة 30 يومًا.",
           keys: "نظام نقاط البيع, POS مطعم, برنامج إدارة المطاعم, نقاط البيع بدون إنترنت, نظام عرض المطبخ, LoungeOS"
       },
       'hi': {
-          desc: "LoungeOS रेस्तरां के लिए सबसे अच्छा ऑफलाइन-फर्स्ट POS सिस्टम है। संचालन को सुव्यवस्थित करें और मुनाफा बढ़ाएं। 90 दिन का मुफ्त ट्रायल।",
+          desc: "LoungeOS रेस्तरां के लिए सबसे अच्छा ऑफलाइन-फर्स्ट POS सिस्टम है। संचालन को सुव्यवस्थित करें और मुनाफा बढ़ाएं। 30 दिन का मुफ्त ट्रायल।",
           keys: "रेस्तरां पीओएस, पॉइंट ऑफ़ सेल, रेस्तरां प्रबंधन सॉफ्टवेयर, ऑफलाइन पीओएस, बार प्रबंधन, किचन डिस्प्ले सिस्टम, LoungeOS"
       },
       'pt': {
-          desc: "LoungeOS é o melhor sistema PDV para restaurantes offline-first. Simplifique operações e aumente lucros. Teste grátis de 90 dias.",
+          desc: "LoungeOS é o melhor sistema PDV para restaurantes offline-first. Simplifique operações e aumente lucros. Teste grátis de 30 dias.",
           keys: "PDV Restaurante, Ponto de Venda, Sistema de Gestão de Restaurante, PDV Offline, Sistema de Exibição de Cozinha, LoungeOS"
       },
       'ru': {
-          desc: "LoungeOS — лучшая POS-система для ресторанов, работающая в офлайн-режиме. Оптимизируйте работу и увеличьте прибыль. Бесплатная 90-дневная версия.",
+          desc: "LoungeOS — лучшая POS-система для ресторанов, работающая в офлайн-режиме. Оптимизируйте работу и увеличьте прибыль. Бесплатная 30-дневная версия.",
           keys: "POS-система для ресторана, Автоматизация ресторана, Офлайн POS, Программа для бара, Система кухонных экранов, LoungeOS"
       },
       'ja': {
-          desc: "LoungeOSは、最高のオフラインファースト・レストランPOSシステムです。業務を効率化し、利益を向上させます。90日間の無料トライアル。",
+          desc: "LoungeOSは、最高のオフラインファースト・レストランPOSシステムです。業務を効率化し、利益を向上させます。30日間の無料トライアル。",
           keys: "レストランPOS, 販売時点情報管理, オフラインPOS, 飲食店管理システム, バー管理, キッチンディスプレイシステム, LoungeOS"
       }
   };
