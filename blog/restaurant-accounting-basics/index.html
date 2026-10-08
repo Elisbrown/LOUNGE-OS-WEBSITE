@@ -1,0 +1,707 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Accounting Basics: P&amp;L, Balance Sheet &amp; Cash Flow</title>
+    <meta name="description" content="Restaurant accounting for owners: the P&amp;L, COGS and prime cost, balance sheet, cash flow, double-entry basics, chart of accounts and a monthly close." />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <link rel="canonical" href="https://loungeos.app/blog/restaurant-accounting-basics/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="LoungeOS" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="Restaurant Accounting Basics: P&amp;L, Balance Sheet &amp; Cash Flow" />
+    <meta property="og:description" content="Restaurant accounting for owners: the P&amp;L, COGS and prime cost, balance sheet, cash flow, double-entry basics, chart of accounts and a monthly close." />
+    <meta property="og:url" content="https://loungeos.app/blog/restaurant-accounting-basics/" />
+    <meta property="og:image" content="https://loungeos.app/images/og-loungeos.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="LoungeOS: offline POS for restaurants, bars and lounges" />
+    <meta property="article:published_time" content="2026-10-08" />
+    <meta property="article:modified_time" content="2026-10-08" data-auto="modified" />
+    <meta property="article:section" content="Inventory &amp; finance" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Restaurant Accounting Basics: P&amp;L, Balance Sheet &amp; Cash Flow" />
+    <meta name="twitter:description" content="Restaurant accounting for owners: the P&amp;L, COGS and prime cost, balance sheet, cash flow, double-entry basics, chart of accounts and a monthly close." />
+    <meta name="twitter:image" content="https://loungeos.app/images/og-loungeos.jpg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="alternate" type="application/rss+xml" title="LoungeOS Blog" href="https://loungeos.app/blog/feed.xml" />
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://loungeos.app/#organization",
+      "name": "LoungeOS",
+      "url": "https://loungeos.app/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://loungeos.app/images/logo/loungeos-icon-512.png",
+        "width": 512,
+        "height": 512
+      },
+      "image": "https://loungeos.app/images/og-loungeos.jpg",
+      "description": "LoungeOS develops offline-first point of sale (POS) and management software for restaurants, bars, lounges, nightclubs and hotels.",
+      "email": "hello@loungeos.app",
+      "telephone": "+237679690703",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CM"
+      },
+      "areaServed": [
+        "CM",
+        "Africa",
+        "Worldwide"
+      ],
+      "knowsLanguage": [
+        "en",
+        "fr"
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "email": "support@loungeos.app",
+          "telephone": "+237679690703",
+          "availableLanguage": [
+            "English",
+            "French"
+          ]
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "email": "hello@loungeos.app",
+          "telephone": "+237689699688",
+          "availableLanguage": [
+            "English",
+            "French"
+          ]
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "billing support",
+          "email": "billing@loungeos.app"
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://loungeos.app/#website",
+      "url": "https://loungeos.app/",
+      "name": "LoungeOS",
+      "publisher": {
+        "@id": "https://loungeos.app/#organization"
+      },
+      "inLanguage": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://loungeos.app/blog/restaurant-accounting-basics/#webpage",
+      "url": "https://loungeos.app/blog/restaurant-accounting-basics/",
+      "name": "Restaurant Accounting Basics: P&L, Balance Sheet & Cash Flow",
+      "description": "Restaurant accounting for owners: the P&L, COGS and prime cost, balance sheet, cash flow, double-entry basics, chart of accounts and a monthly close.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://loungeos.app/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://loungeos.app/blog/restaurant-accounting-basics/#breadcrumb"
+      },
+      "dateModified": "2026-10-08",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://loungeos.app/images/screens/loungeos-accounting-dashboard.webp"
+      }
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://loungeos.app/blog/restaurant-accounting-basics/#article",
+      "headline": "Restaurant accounting basics: the three statements every owner should read",
+      "description": "Restaurant accounting for owners: the P&L, COGS and prime cost, balance sheet, cash flow, double-entry basics, chart of accounts and a monthly close.",
+      "image": [
+        "https://loungeos.app/images/screens/loungeos-accounting-dashboard.webp",
+        "https://loungeos.app/images/og-loungeos.jpg"
+      ],
+      "datePublished": "2026-10-08",
+      "dateModified": "2026-10-08",
+      "author": {
+        "@type": "Organization",
+        "@id": "https://loungeos.app/#organization",
+        "name": "LoungeOS",
+        "url": "https://loungeos.app/about/"
+      },
+      "publisher": {
+        "@id": "https://loungeos.app/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://loungeos.app/blog/restaurant-accounting-basics/#webpage"
+      },
+      "inLanguage": "en",
+      "articleSection": "Inventory & finance",
+      "wordCount": 853,
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Restaurant accounting"
+        },
+        {
+          "@type": "Thing",
+          "name": "Profit and loss statement"
+        },
+        {
+          "@type": "Thing",
+          "name": "Balance sheet"
+        },
+        {
+          "@type": "Thing",
+          "name": "Cash flow statement"
+        }
+      ],
+      "mentions": {
+        "@id": "https://loungeos.app/#software"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://loungeos.app/blog/restaurant-accounting-basics/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://loungeos.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://loungeos.app/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Restaurant accounting basics",
+          "item": "https://loungeos.app/blog/restaurant-accounting-basics/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://loungeos.app/blog/restaurant-accounting-basics/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What financial statements does a restaurant need?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>An income statement (P&amp;L), a balance sheet and a cash-flow statement. Together they show profit, financial position and cash movements.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is COGS in a restaurant?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Cost of goods sold: the cost of the food and drinks used to make what you sold in the period, calculated as opening inventory + purchases − closing inventory.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a good net profit margin for a restaurant?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Full-service restaurants often report net margins of about 3–6%, and quick-service restaurants somewhat higher. Bars with strong beverage sales can do better. Compare with your own history and track prime cost.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I still need an accountant if my POS does accounting?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Yes, for tax filings, statutory accounts (for example SYSCOHADA in OHADA countries) and advice. A POS with accounting gives your accountant accurate, balanced data instead of a box of receipts.<\/p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+    </script>
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+      (function (c, l, a, r, i, t, y) {
+        c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
+        t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", "x9n1mwb8c5");
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TNP53ZZW7K"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag("js", new Date());
+      gtag("config", "G-TNP53ZZW7K");
+    </script>
+    <!-- Usercentrics CMP -->
+    <script id="usercentrics-cmp" src="https://app.usercentrics.eu/browser-ui/latest/loader.js" data-settings-id="SSwfY4ZtHuL22V" async></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <nav class="navbar" id="navbar" aria-label="Main Navigation">
+      <div class="nav-content">
+        <div class="nav-left">
+          <a href="/" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 0.75rem;">
+            <img src="/images/logo/loungeos-logo.svg" alt="LoungeOS" width="148" height="26" class="nav-logo" />
+            <span class="nav-badge">Restaurant POS</span>
+          </a>
+        </div>
+
+        <div class="nav-links" id="navLinks">
+          <a href="/">Home</a>
+          <a href="/features/">Features</a>
+          <div class="nav-dropdown">
+            <button type="button" class="nav-dropdown-toggle" aria-haspopup="true">Solutions <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+            <div class="nav-dropdown-menu">
+              <a href="/restaurant-pos/">Restaurants</a>
+              <a href="/bar-pos/">Bars</a>
+              <a href="/lounge-pos/">Lounges</a>
+              <a href="/nightclub-pos/">Nightclubs</a>
+              <a href="/hotel-pos/">Hotels</a>
+              <a href="/cafe-pos/">Cafés &amp; Fast Food</a>
+              <a href="/cameroon/">Cameroon</a>
+              <a href="/africa/">Africa</a>
+            </div>
+          </div>
+          <a href="/pricing/">Pricing</a>
+          <a href="/download/">Download</a>
+          <div class="nav-dropdown">
+            <button type="button" class="nav-dropdown-toggle" aria-haspopup="true">Resources <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+            <div class="nav-dropdown-menu">
+              <a href="/blog/">Blog</a>
+              <a href="/faq/">FAQ</a>
+              <a href="/knowledgebase.html">Knowledge Base</a>
+              <a href="/documentation.html">Documentation</a>
+              <a href="/about/">About</a>
+              <a href="/contact/">Contact</a>
+              <a href="/fr/">Français</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-cta" style="display: flex; align-items: center; gap: 1rem">
+          <div class="lang-selector">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 16px; height: 16px" aria-hidden="true"><circle cx="12" cy="12" r="10" /><line x1="2" y1="12" x2="22" y2="12" /><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" /></svg>
+            <select id="customLangSelect" aria-label="Select Language" onchange="changeLanguage(this.value)">
+              <option value="en" selected>English</option>
+              <option value="fr">Français</option>
+              <option value="es">Español</option>
+              <option value="de">Deutsch</option>
+              <option value="zh-CN">中文</option>
+              <option value="ar">العربية</option>
+              <option value="hi">हिन्दी</option>
+              <option value="pt">Português</option>
+              <option value="ru">Русский</option>
+              <option value="ja">日本語</option>
+            </select>
+          </div>
+          <a href="https://account.loungeos.app/sign-up" class="btn btn-primary btn-sm" id="navCtaBtn">Start Free Trial</a>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+    <main id="main-content">
+      <header class="page-hero">
+        <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">›</span> <a href="/blog/">Blog</a> <span aria-hidden="true">›</span> <span aria-current="page">Restaurant accounting basics</span></nav>
+        <p class="section-label">Inventory & finance</p>
+        <h1>Restaurant accounting basics: the three statements every owner should read</h1>
+        <p class="lead">You don't need to become an accountant. But you need to read three statements, understand five numbers, and keep your books in a way that makes those numbers true.</p>
+        <div class="article-meta"><span>By <a href="/about/">LoungeOS Team</a></span><span>Published <time datetime="2026-10-08">October 8, 2026</time></span><span>Updated <time datetime="2026-10-08" data-auto="modified">October 8, 2026</time></span><span>4 min read</span></div>
+        
+        
+      </header>
+      <article class="content-section">
+        <div class="prose">
+<figure><img src="/images/screens/loungeos-accounting-dashboard.webp" srcset="/images/screens/loungeos-accounting-dashboard-800.webp 800w, /images/screens/loungeos-accounting-dashboard.webp 1600w" sizes="(max-width: 800px) 100vw, 760px" width="1600" height="861" alt="LoungeOS accounting dashboard with net profit, revenue, expenses and profit margin" fetchpriority="high" decoding="async" /></figure>
+<aside class="key-takeaways"><h2>Key takeaways</h2><ul>
+<li>The <strong>P&amp;L</strong> tells you if you made money. The <strong>balance sheet</strong> tells you what you own and owe. The <strong>cash-flow statement</strong> tells you where the cash went.</li>
+<li>Watch five numbers: sales, COGS %, labour %, prime cost % and net profit %.</li>
+<li>Double-entry bookkeeping keeps the books honest: every transaction has equal debits and credits.</li>
+<li>Close the books monthly: sync sales, record expenses, count inventory, reconcile cash and wallets, then read the statements.</li>
+</ul></aside>
+<details class="toc" open><summary>In this guide</summary><ol>
+<li><a href="#the-restaurant-pl-income-statement">The restaurant P&amp;L (income statement)</a></li>
+<li><a href="#the-balance-sheet">The balance sheet</a></li>
+<li><a href="#the-cash-flow-statement">The cash-flow statement</a></li>
+<li><a href="#double-entry-bookkeeping-in-two-minutes">Double-entry bookkeeping in two minutes</a></li>
+<li><a href="#a-simple-chart-of-accounts-for-a-restaurant">A simple chart of accounts for a restaurant</a></li>
+<li><a href="#the-monthly-close-a-one-day-routine">The monthly close: a one-day routine</a></li>
+<li><a href="#how-loungeos-handles-this">How LoungeOS handles this</a></li>
+<li><a href="#frequently-asked-questions">Frequently asked questions</a></li>
+</ol></details>
+<p>Many restaurants run for years knowing only “how much came in today”. That’s sales, not profit. Restaurants can be busy and still lose money, especially with full-service net margins often reported in the low single digits (around 3–6%). This guide covers the accounting every owner should understand, in plain language.</p>
+<h2 id="the-restaurant-pl-income-statement">The restaurant P&amp;L (income statement)</h2>
+<p>The <strong>profit and loss statement</strong> covers a period, usually a month, and answers: <em>did we make money?</em></p>
+<table>
+<thead>
+<tr>
+<th>Line</th>
+<th>Example (FCFA)</th>
+<th>% of sales</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Food sales</td>
+<td>14,500,000</td>
+<td></td>
+</tr>
+<tr>
+<td>Beverage sales</td>
+<td>9,500,000</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Total sales</strong></td>
+<td><strong>24,000,000</strong></td>
+<td>100%</td>
+</tr>
+<tr>
+<td>Cost of food sold</td>
+<td>4,900,000</td>
+<td></td>
+</tr>
+<tr>
+<td>Cost of beverages sold</td>
+<td>2,400,000</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Cost of goods sold (COGS)</strong></td>
+<td><strong>7,300,000</strong></td>
+<td>30.4%</td>
+</tr>
+<tr>
+<td><strong>Gross profit</strong></td>
+<td><strong>16,700,000</strong></td>
+<td>69.6%</td>
+</tr>
+<tr>
+<td>Salaries and wages</td>
+<td>6,200,000</td>
+<td>25.8%</td>
+</tr>
+<tr>
+<td>Rent</td>
+<td>1,800,000</td>
+<td>7.5%</td>
+</tr>
+<tr>
+<td>Utilities (power, water, fuel)</td>
+<td>1,400,000</td>
+<td>5.8%</td>
+</tr>
+<tr>
+<td>Marketing</td>
+<td>400,000</td>
+<td>1.7%</td>
+</tr>
+<tr>
+<td>Repairs and maintenance</td>
+<td>350,000</td>
+<td>1.5%</td>
+</tr>
+<tr>
+<td>Waste and losses</td>
+<td>300,000</td>
+<td>1.3%</td>
+</tr>
+<tr>
+<td>Other operating expenses</td>
+<td>900,000</td>
+<td>3.8%</td>
+</tr>
+<tr>
+<td><strong>Operating profit</strong></td>
+<td><strong>5,350,000</strong></td>
+<td>22.3%</td>
+</tr>
+<tr>
+<td>Depreciation, interest, tax</td>
+<td>3,600,000</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Net profit</strong></td>
+<td><strong>1,750,000</strong></td>
+<td>7.3%</td>
+</tr>
+</tbody>
+</table>
+<h3 id="the-key-ratio-prime-cost">The key ratio: prime cost</h3>
+<blockquote>
+<p><strong>Prime cost = COGS + total labour</strong></p>
+</blockquote>
+<p>Here: 7,300,000 + 6,200,000 = 13,500,000 = <strong>56% of sales</strong>. Many operators aim for <strong>60–65% or below</strong>, so this example is healthy.</p>
+<h2 id="the-balance-sheet">The balance sheet</h2>
+<p>The <strong>balance sheet</strong> is a snapshot on one date: what the business <strong>owns</strong> (assets), what it <strong>owes</strong> (liabilities) and what belongs to the owners (equity). It always balances:</p>
+<blockquote>
+<p><strong>Assets = Liabilities + Equity</strong></p>
+</blockquote>
+<p>Typical restaurant entries:</p>
+<ul>
+<li><strong>Assets:</strong> cash in the till and safe, bank accounts, mobile money wallets, inventory, equipment, deposits</li>
+<li><strong>Liabilities:</strong> supplier invoices not yet paid, taxes owed, salaries owed, loans</li>
+<li><strong>Equity:</strong> capital invested by the owners plus profits kept in the business</li>
+</ul>
+<p>The balance sheet tells you if you can pay your suppliers next month, and whether profits are piling up as stock instead of cash.</p>
+<h2 id="the-cash-flow-statement">The cash-flow statement</h2>
+<p>Profit isn’t cash. You can be profitable on paper and still short of cash, because you bought a lot of stock, repaid a loan or bought a new freezer. The <strong>cash-flow statement</strong> splits cash movements into:</p>
+<ul>
+<li><strong>Operating:</strong> cash from sales minus cash paid for stock, wages and expenses</li>
+<li><strong>Investing:</strong> equipment and renovations</li>
+<li><strong>Financing:</strong> loans, repayments, owner contributions and withdrawals</li>
+</ul>
+<h2 id="double-entry-bookkeeping-in-two-minutes">Double-entry bookkeeping in two minutes</h2>
+<p>Every transaction affects at least two accounts, with <strong>debits = credits</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Transaction</th>
+<th>Debit</th>
+<th>Credit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sale paid in cash, 10,000</td>
+<td>Cash 10,000</td>
+<td>Sales revenue 10,000</td>
+</tr>
+<tr>
+<td>Sale paid by MoMo, 8,000</td>
+<td>MoMo wallet 8,000</td>
+<td>Sales revenue 8,000</td>
+</tr>
+<tr>
+<td>Stock delivered on credit, 150,000</td>
+<td>Inventory 150,000</td>
+<td>Supplier payable 150,000</td>
+</tr>
+<tr>
+<td>Supplier paid by bank, 150,000</td>
+<td>Supplier payable 150,000</td>
+<td>Bank 150,000</td>
+</tr>
+<tr>
+<td>Broken bottles written off, 6,000</td>
+<td>Waste &amp; loss expense 6,000</td>
+<td>Inventory 6,000</td>
+</tr>
+</tbody>
+</table>
+<p>This structure catches errors, because unbalanced entries are impossible, and it is what lets software produce a balance sheet automatically.</p>
+<h2 id="a-simple-chart-of-accounts-for-a-restaurant">A simple chart of accounts for a restaurant</h2>
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Accounts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Assets</td>
+<td>Cash on hand, bank, mobile money wallets (one per operator), inventory, equipment</td>
+</tr>
+<tr>
+<td>Liabilities</td>
+<td>Supplier payables, taxes owed, salaries owed, loans</td>
+</tr>
+<tr>
+<td>Equity</td>
+<td>Owner’s capital, retained earnings</td>
+</tr>
+<tr>
+<td>Revenue</td>
+<td>Food sales, beverage sales, event services</td>
+</tr>
+<tr>
+<td>Expenses</td>
+<td>Cost of goods sold, wages, rent, utilities, marketing, repairs, waste &amp; loss</td>
+</tr>
+</tbody>
+</table>
+<p>In OHADA countries (Cameroon, Côte d’Ivoire, Senegal and others), statutory accounts follow <strong>SYSCOHADA</strong>. Your accountant maps your management accounts to the SYSCOHADA chart for official filings.</p>
+<h2 id="the-monthly-close-a-one-day-routine">The monthly close: a one-day routine</h2>
+<ol>
+<li><strong>Sync sales</strong> from the POS for the month.</li>
+<li><strong>Record all expenses:</strong> rent, salaries, utilities, repairs, marketing.</li>
+<li><strong>Enter supplier invoices</strong> and payments.</li>
+<li><strong>Count inventory</strong> and value it at cost.</li>
+<li><strong>Reconcile cash, bank and mobile money</strong> against statements.</li>
+<li><strong>Read the P&amp;L:</strong> compare COGS %, labour %, prime cost % and net profit % with last month.</li>
+<li><strong>Read the balance sheet and cash flow:</strong> can you pay next month’s bills?</li>
+</ol>
+<h2 id="how-loungeos-handles-this">How LoungeOS handles this</h2>
+<p>LoungeOS keeps a <a href="/features/restaurant-accounting/">double-entry ledger</a> with a five-class chart of accounts. Clicking <strong>Sync Accounting Data</strong> for a date range turns paid POS orders and stock purchases into balanced journal entries. Expenses are recorded in the expense screen, and stock losses flow in as expenses. You get the <strong>income statement, balance sheet and cash-flow statement</strong> for any period, exportable to PDF or CSV for your accountant.</p>
+<div class="cta-box">
+<h2>Run your next service on LoungeOS</h2>
+<p>Install LoungeOS on a Windows computer, connect your tablets and phones over Wi-Fi, and run real service for 30 days. Free, no credit card.</p>
+<div class="cta-actions">
+<a class="btn btn-primary btn-lg" href="https://account.loungeos.app/sign-up">Start Free Trial</a>
+<a class="btn btn-secondary btn-lg" href="/download/">Download for Windows</a>
+</div>
+</div>
+<h2 id="frequently-asked-questions">Frequently asked questions</h2>
+<h3 id="what-financial-statements-does-a-restaurant-need">What financial statements does a restaurant need?</h3>
+<p>An income statement (P&amp;L), a balance sheet and a cash-flow statement. Together they show profit, financial position and cash movements.</p>
+<h3 id="what-is-cogs-in-a-restaurant">What is COGS in a restaurant?</h3>
+<p>Cost of goods sold: the cost of the food and drinks used to make what you sold in the period, calculated as opening inventory + purchases − closing inventory.</p>
+<h3 id="what-is-a-good-net-profit-margin-for-a-restaurant">What is a good net profit margin for a restaurant?</h3>
+<p>Full-service restaurants often report net margins of about 3–6%, and quick-service restaurants somewhat higher. Bars with strong beverage sales can do better. Compare with your own history and track prime cost.</p>
+<h3 id="do-i-still-need-an-accountant-if-my-pos-does-accounting">Do I still need an accountant if my POS does accounting?</h3>
+<p>Yes, for tax filings, statutory accounts (for example SYSCOHADA in OHADA countries) and advice. A POS with accounting gives your accountant accurate, balanced data instead of a box of receipts.</p>
+<div class="cta-box">
+  <h2>Run your next service on LoungeOS</h2>
+  <p>Install LoungeOS on a Windows computer, connect your tablets and phones over Wi-Fi, and run real service for 30 days. Free, no credit card.</p>
+  <div class="cta-actions">
+    <a class="btn btn-primary btn-lg" href="https://account.loungeos.app/sign-up">Start Free Trial</a>
+    <a class="btn btn-secondary btn-lg" href="/download/">Download for Windows</a>
+  </div>
+</div>
+        </div>
+      </article>
+      <section class="related-section">
+        <h2 class="section-title">Keep reading</h2>
+        <div class="card-grid">
+<a class="post-card" href="/features/restaurant-accounting/">
+  <img src="/images/screens/loungeos-accounting-dashboard-800.webp" width="800" height="430" alt="LoungeOS accounting dashboard with net profit, total revenue, total expenses, profit margin and a revenue versus expenses chart" loading="lazy" decoding="async" />
+  <div class="post-card-body">
+    <span class="tag">Accounting</span>
+    <h3>Restaurant Accounting</h3>
+    <p>Double-entry journals, P&amp;L, balance sheet and cash flow, generated from your POS and stock data.</p>
+    <span class="read-more">Learn more →</span>
+  </div>
+</a>
+<a class="post-card" href="/blog/food-cost-percentage-formula/">
+  <img src="/images/screens/loungeos-financial-reports-800.webp" width="800" height="430" alt="LoungeOS financial reports with profit and loss statement" loading="lazy" decoding="async" />
+  <div class="post-card-body">
+    <span class="tag">Inventory &amp; finance</span>
+    <h3>Food cost percentage: formula and benchmarks</h3>
+    <p>Calculate food cost and plate cost, compare benchmarks and lower yours.</p>
+    <span class="read-more">Read guide →</span>
+  </div>
+</a>
+<a class="post-card" href="/blog/restaurant-kpis-metrics/">
+  <img src="/images/screens/loungeos-sales-reports-800.webp" width="800" height="430" alt="LoungeOS reports and analytics with sales over time and sales by category" loading="lazy" decoding="async" />
+  <div class="post-card-body">
+    <span class="tag">Inventory &amp; finance</span>
+    <h3>15 restaurant KPIs with formulas</h3>
+    <p>Sales, costs, speed and control metrics, and where to find them.</p>
+    <span class="read-more">Read guide →</span>
+  </div>
+</a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-grid footer-grid-wide">
+        <div class="footer-brand">
+          <img src="/images/logo/loungeos-logo-white.svg" alt="LoungeOS" width="159" height="28" class="footer-logo" />
+          <p>Offline-first POS and management system for restaurants, bars, lounges and hotels. Built in Cameroon, used across Africa and beyond.</p>
+          <div class="footer-worldwide">
+            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> All currencies</span>
+            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> English &amp; French</span>
+            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Works offline</span>
+          </div>
+          <p class="footer-contact">
+            <a href="mailto:support@loungeos.app">support@loungeos.app</a><br />
+            <a href="mailto:hello@loungeos.app">hello@loungeos.app</a><br />
+            <a href="tel:+237679690703">+237 679 690 703</a>
+          </p>
+        </div>
+        <div class="footer-col">
+          <h3>Product</h3>
+          <a href="/features/">Features</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/download/">Download</a>
+          <a href="/features/offline-pos/">Offline POS</a>
+          <a href="/features/kitchen-display-system/">Kitchen Display System</a>
+          <a href="/features/inventory-management/">Inventory</a>
+          <a href="/features/restaurant-accounting/">Accounting</a>
+        </div>
+        <div class="footer-col">
+          <h3>Solutions</h3>
+          <a href="/restaurant-pos/">Restaurant POS</a>
+          <a href="/bar-pos/">Bar POS</a>
+          <a href="/lounge-pos/">Lounge POS</a>
+          <a href="/nightclub-pos/">Nightclub POS</a>
+          <a href="/hotel-pos/">Hotel POS</a>
+          <a href="/cafe-pos/">Café &amp; Fast Food POS</a>
+        </div>
+        <div class="footer-col">
+          <h3>Countries</h3>
+          <a href="/cameroon/">Cameroon</a>
+          <a href="/nigeria/">Nigeria</a>
+          <a href="/ghana/">Ghana</a>
+          <a href="/south-africa/">South Africa</a>
+          <a href="/africa/">Africa</a>
+          <a href="/fr/cameroun/">Cameroun (FR)</a>
+          <a href="/fr/cote-divoire/">Côte d'Ivoire (FR)</a>
+          <a href="/fr/senegal/">Sénégal (FR)</a>
+        </div>
+        <div class="footer-col">
+          <h3>Resources</h3>
+          <a href="/blog/">Blog</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/knowledgebase.html">Knowledge Base</a>
+          <a href="/documentation.html">Documentation</a>
+          <a href="/about/">About</a>
+          <a href="/contact/">Contact</a>
+          <a href="/privacy.html">Privacy Policy</a>
+          <a href="/terms.html">Terms of Service</a>
+          <a href="/accessibility.html">Accessibility</a>
+          <a href="/legal.html">Legal</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 LoungeOS. All rights reserved.</p>
+        <a href="https://account.loungeos.app/sign-up" class="btn btn-outline-light btn-sm" id="footerCtaBtn">Start Free Trial <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg></a>
+      </div>
+    </footer>
+    <div id="google_translate_element" style="display: none"></div>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: "en", autoDisplay: false },
+          "google_translate_element",
+        );
+      }
+    </script>
+    <script defer type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script defer src="/app.js"></script>
+    <!-- Botpress Webchat -->
+    <script defer src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
+    <script defer src="https://files.bpcontent.cloud/2026/06/19/19/20260619193215-LONFMDIT.js"></script>
+  </body>
+</html>

@@ -1,0 +1,596 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Inventory Management: A Step-by-Step System That Works</title>
+    <meta name="description" content="Set up restaurant inventory management in 8 steps: item list, units, par levels, receiving, FIFO, waste logging, counts and variance, with examples." />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <link rel="canonical" href="https://loungeos.app/blog/restaurant-inventory-management-guide/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="LoungeOS" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="Restaurant Inventory Management: A Step-by-Step System That Works" />
+    <meta property="og:description" content="Set up restaurant inventory management in 8 steps: item list, units, par levels, receiving, FIFO, waste logging, counts and variance, with examples." />
+    <meta property="og:url" content="https://loungeos.app/blog/restaurant-inventory-management-guide/" />
+    <meta property="og:image" content="https://loungeos.app/images/og-loungeos.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="LoungeOS: offline POS for restaurants, bars and lounges" />
+    <meta property="article:published_time" content="2026-10-08" />
+    <meta property="article:modified_time" content="2026-10-08" data-auto="modified" />
+    <meta property="article:section" content="Inventory &amp; finance" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Restaurant Inventory Management: A Step-by-Step System That Works" />
+    <meta name="twitter:description" content="Set up restaurant inventory management in 8 steps: item list, units, par levels, receiving, FIFO, waste logging, counts and variance, with examples." />
+    <meta name="twitter:image" content="https://loungeos.app/images/og-loungeos.jpg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="alternate" type="application/rss+xml" title="LoungeOS Blog" href="https://loungeos.app/blog/feed.xml" />
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://loungeos.app/#organization",
+      "name": "LoungeOS",
+      "url": "https://loungeos.app/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://loungeos.app/images/logo/loungeos-icon-512.png",
+        "width": 512,
+        "height": 512
+      },
+      "image": "https://loungeos.app/images/og-loungeos.jpg",
+      "description": "LoungeOS develops offline-first point of sale (POS) and management software for restaurants, bars, lounges, nightclubs and hotels.",
+      "email": "hello@loungeos.app",
+      "telephone": "+237679690703",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CM"
+      },
+      "areaServed": [
+        "CM",
+        "Africa",
+        "Worldwide"
+      ],
+      "knowsLanguage": [
+        "en",
+        "fr"
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "email": "support@loungeos.app",
+          "telephone": "+237679690703",
+          "availableLanguage": [
+            "English",
+            "French"
+          ]
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "email": "hello@loungeos.app",
+          "telephone": "+237689699688",
+          "availableLanguage": [
+            "English",
+            "French"
+          ]
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "billing support",
+          "email": "billing@loungeos.app"
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://loungeos.app/#website",
+      "url": "https://loungeos.app/",
+      "name": "LoungeOS",
+      "publisher": {
+        "@id": "https://loungeos.app/#organization"
+      },
+      "inLanguage": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://loungeos.app/blog/restaurant-inventory-management-guide/#webpage",
+      "url": "https://loungeos.app/blog/restaurant-inventory-management-guide/",
+      "name": "Restaurant Inventory Management: A Step-by-Step System That Works",
+      "description": "Set up restaurant inventory management in 8 steps: item list, units, par levels, receiving, FIFO, waste logging, counts and variance, with examples.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://loungeos.app/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://loungeos.app/blog/restaurant-inventory-management-guide/#breadcrumb"
+      },
+      "dateModified": "2026-10-08",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://loungeos.app/images/screens/loungeos-inventory-dashboard.webp"
+      }
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://loungeos.app/blog/restaurant-inventory-management-guide/#article",
+      "headline": "Restaurant inventory management: a step-by-step system that actually works",
+      "description": "Set up restaurant inventory management in 8 steps: item list, units, par levels, receiving, FIFO, waste logging, counts and variance, with examples.",
+      "image": [
+        "https://loungeos.app/images/screens/loungeos-inventory-dashboard.webp",
+        "https://loungeos.app/images/og-loungeos.jpg"
+      ],
+      "datePublished": "2026-10-08",
+      "dateModified": "2026-10-08",
+      "author": {
+        "@type": "Organization",
+        "@id": "https://loungeos.app/#organization",
+        "name": "LoungeOS",
+        "url": "https://loungeos.app/about/"
+      },
+      "publisher": {
+        "@id": "https://loungeos.app/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://loungeos.app/blog/restaurant-inventory-management-guide/#webpage"
+      },
+      "inLanguage": "en",
+      "articleSection": "Inventory & finance",
+      "wordCount": 805,
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Restaurant inventory management"
+        },
+        {
+          "@type": "Thing",
+          "name": "Stock control"
+        },
+        {
+          "@type": "Thing",
+          "name": "Par levels"
+        }
+      ],
+      "mentions": {
+        "@id": "https://loungeos.app/#software"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://loungeos.app/blog/restaurant-inventory-management-guide/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://loungeos.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://loungeos.app/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Inventory management guide",
+          "item": "https://loungeos.app/blog/restaurant-inventory-management-guide/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://loungeos.app/blog/restaurant-inventory-management-guide/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How often should a restaurant do inventory?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Count high-value items weekly and do a full count monthly. Many restaurants also spot-check their most valuable items daily.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a par level in a restaurant?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>A par level is the minimum quantity of an item you want on hand before the next delivery, based on average usage, delivery frequency and a safety margin.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the FIFO method in restaurants?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>First in, first out: older stock is used before newer stock, to reduce spoilage. New deliveries go behind existing stock.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What’s the difference between inventory and stock movement?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Inventory is what you have at a point in time. Stock movements are the changes, such as deliveries, sales, waste and adjustments, that explain how you got there.<\/p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+    </script>
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+      (function (c, l, a, r, i, t, y) {
+        c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
+        t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", "x9n1mwb8c5");
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TNP53ZZW7K"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag("js", new Date());
+      gtag("config", "G-TNP53ZZW7K");
+    </script>
+    <!-- Usercentrics CMP -->
+    <script id="usercentrics-cmp" src="https://app.usercentrics.eu/browser-ui/latest/loader.js" data-settings-id="SSwfY4ZtHuL22V" async></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <nav class="navbar" id="navbar" aria-label="Main Navigation">
+      <div class="nav-content">
+        <div class="nav-left">
+          <a href="/" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 0.75rem;">
+            <img src="/images/logo/loungeos-logo.svg" alt="LoungeOS" width="148" height="26" class="nav-logo" />
+            <span class="nav-badge">Restaurant POS</span>
+          </a>
+        </div>
+
+        <div class="nav-links" id="navLinks">
+          <a href="/">Home</a>
+          <a href="/features/">Features</a>
+          <div class="nav-dropdown">
+            <button type="button" class="nav-dropdown-toggle" aria-haspopup="true">Solutions <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+            <div class="nav-dropdown-menu">
+              <a href="/restaurant-pos/">Restaurants</a>
+              <a href="/bar-pos/">Bars</a>
+              <a href="/lounge-pos/">Lounges</a>
+              <a href="/nightclub-pos/">Nightclubs</a>
+              <a href="/hotel-pos/">Hotels</a>
+              <a href="/cafe-pos/">Cafés &amp; Fast Food</a>
+              <a href="/cameroon/">Cameroon</a>
+              <a href="/africa/">Africa</a>
+            </div>
+          </div>
+          <a href="/pricing/">Pricing</a>
+          <a href="/download/">Download</a>
+          <div class="nav-dropdown">
+            <button type="button" class="nav-dropdown-toggle" aria-haspopup="true">Resources <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+            <div class="nav-dropdown-menu">
+              <a href="/blog/">Blog</a>
+              <a href="/faq/">FAQ</a>
+              <a href="/knowledgebase.html">Knowledge Base</a>
+              <a href="/documentation.html">Documentation</a>
+              <a href="/about/">About</a>
+              <a href="/contact/">Contact</a>
+              <a href="/fr/">Français</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-cta" style="display: flex; align-items: center; gap: 1rem">
+          <div class="lang-selector">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 16px; height: 16px" aria-hidden="true"><circle cx="12" cy="12" r="10" /><line x1="2" y1="12" x2="22" y2="12" /><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" /></svg>
+            <select id="customLangSelect" aria-label="Select Language" onchange="changeLanguage(this.value)">
+              <option value="en" selected>English</option>
+              <option value="fr">Français</option>
+              <option value="es">Español</option>
+              <option value="de">Deutsch</option>
+              <option value="zh-CN">中文</option>
+              <option value="ar">العربية</option>
+              <option value="hi">हिन्दी</option>
+              <option value="pt">Português</option>
+              <option value="ru">Русский</option>
+              <option value="ja">日本語</option>
+            </select>
+          </div>
+          <a href="https://account.loungeos.app/sign-up" class="btn btn-primary btn-sm" id="navCtaBtn">Start Free Trial</a>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+    <main id="main-content">
+      <header class="page-hero">
+        <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">›</span> <a href="/blog/">Blog</a> <span aria-hidden="true">›</span> <span aria-current="page">Inventory management guide</span></nav>
+        <p class="section-label">Inventory & finance</p>
+        <h1>Restaurant inventory management: a step-by-step system that actually works</h1>
+        <p class="lead">Inventory is cash sitting on shelves. Manage it well and you cut waste, theft and stock-outs. Manage it badly and you only find the problem when the month's numbers don't add up.</p>
+        <div class="article-meta"><span>By <a href="/about/">LoungeOS Team</a></span><span>Published <time datetime="2026-10-08">October 8, 2026</time></span><span>Updated <time datetime="2026-10-08" data-auto="modified">October 8, 2026</time></span><span>4 min read</span></div>
+        
+        
+      </header>
+      <article class="content-section">
+        <div class="prose">
+<figure><img src="/images/screens/loungeos-inventory-dashboard.webp" srcset="/images/screens/loungeos-inventory-dashboard-800.webp 800w, /images/screens/loungeos-inventory-dashboard.webp 1600w" sizes="(max-width: 800px) 100vw, 760px" width="1600" height="861" alt="LoungeOS inventory dashboard with stock value, low stock alerts and stock movement chart" fetchpriority="high" decoding="async" /></figure>
+<aside class="key-takeaways"><h2>Key takeaways</h2><ul>
+<li>Start with a clean item list: one item, one unit, one cost, one supplier.</li>
+<li>Set <strong>par levels</strong> (minimums) so reorders happen before you run out, not after.</li>
+<li>Record <strong>every</strong> movement: deliveries in, and damage, waste and loss out, each with a name.</li>
+<li>Count high-value items weekly, everything monthly, and investigate variance by value.</li>
+</ul></aside>
+<details class="toc" open><summary>In this guide</summary><ol>
+<li><a href="#step-1-build-a-clean-item-list">Step 1: Build a clean item list</a></li>
+<li><a href="#step-2-choose-the-right-unit-for-each-item">Step 2: Choose the right unit for each item</a></li>
+<li><a href="#step-3-set-par-levels-minimums">Step 3: Set par levels (minimums)</a></li>
+<li><a href="#step-4-receive-deliveries-properly">Step 4: Receive deliveries properly</a></li>
+<li><a href="#step-5-store-with-fifo">Step 5: Store with FIFO</a></li>
+<li><a href="#step-6-record-every-loss-with-a-name">Step 6: Record every loss, with a name</a></li>
+<li><a href="#step-7-count-on-a-schedule">Step 7: Count on a schedule</a></li>
+<li><a href="#step-8-investigate-variance">Step 8: Investigate variance</a></li>
+<li><a href="#what-good-inventory-gives-you">What good inventory gives you</a></li>
+<li><a href="#frequently-asked-questions">Frequently asked questions</a></li>
+</ol></details>
+<p>Restaurant inventory management is the routine of knowing <strong>what you have, what it cost, what you used and what went missing</strong>. You don’t need complex software to start, but you do need discipline, and a system that makes the discipline easy.</p>
+<h2 id="step-1-build-a-clean-item-list">Step 1: Build a clean item list</h2>
+<p>List everything you buy and want to control. Group it into categories:</p>
+<ul>
+<li><strong>Beverages:</strong> beers, spirits, wines, soft drinks, water</li>
+<li><strong>Proteins:</strong> meat, fish, poultry</li>
+<li><strong>Produce:</strong> vegetables, fruit, herbs</li>
+<li><strong>Dry goods:</strong> rice, flour, oil, spices</li>
+<li><strong>Dairy and eggs</strong></li>
+<li><strong>Packaging:</strong> takeaway boxes, cups, bags, straws</li>
+<li><strong>Cleaning and consumables</strong></li>
+</ul>
+<p>For each item record: <strong>name, category, unit, cost per unit, supplier</strong>, and a <strong>SKU</strong> or code if you have one. In LoungeOS you can import the list from a CSV template.</p>
+<p><strong>Tip:</strong> don’t track everything on day one. Start with the 30–50 items that make up most of your spending. Usually that’s drinks, proteins and packaging.</p>
+<h2 id="step-2-choose-the-right-unit-for-each-item">Step 2: Choose the right unit for each item</h2>
+<p>The unit must match how you <strong>count</strong> and how you <strong>sell</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Buy in</th>
+<th>Count and track in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Beer</td>
+<td>Crates of 12 or 24</td>
+<td>Bottles</td>
+</tr>
+<tr>
+<td>Whisky</td>
+<td>Bottles</td>
+<td>Bottles (and part-bottles at month end)</td>
+</tr>
+<tr>
+<td>Rice</td>
+<td>25 kg / 50 kg bags</td>
+<td>Kilograms</td>
+</tr>
+<tr>
+<td>Cooking oil</td>
+<td>Jerrycans</td>
+<td>Litres</td>
+</tr>
+<tr>
+<td>Takeaway boxes</td>
+<td>Cartons of 100</td>
+<td>Pieces</td>
+</tr>
+</tbody>
+</table>
+<h2 id="step-3-set-par-levels-minimums">Step 3: Set par levels (minimums)</h2>
+<p>A <strong>par level</strong> is the minimum stock you want on hand before the next delivery. A simple formula:</p>
+<blockquote>
+<p><strong>Par level = average daily usage × days until next delivery + safety stock</strong></p>
+</blockquote>
+<p>Example: you use 40 bottles of a beer per day, the supplier delivers every 3 days, and you want one day of safety → 40 × 3 + 40 = <strong>160 bottles</strong>.</p>
+<p>In LoungeOS, set this as the item’s <strong>minimum level</strong>. When stock falls below it, the item appears in <strong>low-stock warnings</strong> on the inventory dashboard.</p>
+<h2 id="step-4-receive-deliveries-properly">Step 4: Receive deliveries properly</h2>
+<p>Receiving is where many losses start.</p>
+<ol>
+<li><strong>Count and weigh</strong> against the delivery note before signing.</li>
+<li><strong>Check quality and dates.</strong> Refuse damaged or short-dated goods.</li>
+<li><strong>Record stock in immediately</strong>, with the actual unit cost on the invoice.</li>
+<li><strong>File the invoice</strong> and record unpaid invoices as supplier payables.</li>
+</ol>
+<h2 id="step-5-store-with-fifo">Step 5: Store with FIFO</h2>
+<p><strong>First in, first out:</strong> older stock is used before newer stock. Put new deliveries behind existing stock, label opened containers with dates, and keep storage organised so counts are fast.</p>
+<h2 id="step-6-record-every-loss-with-a-name">Step 6: Record every loss, with a name</h2>
+<p>The single biggest improvement most venues can make is to <strong>record waste, breakage and loss as it happens</strong>:</p>
+<ul>
+<li>Broken bottles, spoiled produce, dropped plates of food, staff meals (if not sold)</li>
+<li>Each entry: item, quantity, reason, person</li>
+</ul>
+<p>In LoungeOS this is a <strong>Stock out (damage/waste/loss)</strong> movement. It reduces stock, logs the cost as an expense and shows who recorded it. Without it, every loss looks like theft. With it, real theft stands out.</p>
+<h2 id="step-7-count-on-a-schedule">Step 7: Count on a schedule</h2>
+<ul>
+<li><strong>Daily:</strong> spot-check your 5 most valuable or most stolen items.</li>
+<li><strong>Weekly:</strong> count the top 20–30 items by value.</li>
+<li><strong>Monthly:</strong> full count of everything, for the food cost and P&amp;L.</li>
+</ul>
+<p>Count <strong>at the same time</strong> (before opening is best), with <strong>two people</strong> for high-value stock, and record counts directly in the system.</p>
+<h2 id="step-8-investigate-variance">Step 8: Investigate variance</h2>
+<p>For each item:</p>
+<blockquote>
+<p><strong>Expected = opening + received − used (sold) − recorded losses</strong>
+<strong>Variance = expected − counted</strong></p>
+</blockquote>
+<p>Sort variances <strong>by value</strong>, and investigate the top five. Common causes: unrecorded waste, receiving errors, wrong units, portioning that’s too generous, and theft. Fix the process, then watch the next count.</p>
+<h2 id="what-good-inventory-gives-you">What good inventory gives you</h2>
+<ul>
+<li><strong>Food cost and pour cost</strong> you can trust. See <a href="/blog/food-cost-percentage-formula/">food cost percentage</a>.</li>
+<li><strong>Fewer stock-outs</strong>: menu items that run out are blocked on the POS in LoungeOS, so waiters can’t sell what you don’t have.</li>
+<li><strong>Less cash tied up</strong> in slow-moving stock.</li>
+<li><strong>Early warning of theft.</strong></li>
+</ul>
+<div class="cta-box">
+<h2>Run your next service on LoungeOS</h2>
+<p>Install LoungeOS on a Windows computer, connect your tablets and phones over Wi-Fi, and run real service for 30 days. Free, no credit card.</p>
+<div class="cta-actions">
+<a class="btn btn-primary btn-lg" href="https://account.loungeos.app/sign-up">Start Free Trial</a>
+<a class="btn btn-secondary btn-lg" href="/download/">Download for Windows</a>
+</div>
+</div>
+<h2 id="frequently-asked-questions">Frequently asked questions</h2>
+<h3 id="how-often-should-a-restaurant-do-inventory">How often should a restaurant do inventory?</h3>
+<p>Count high-value items weekly and do a full count monthly. Many restaurants also spot-check their most valuable items daily.</p>
+<h3 id="what-is-a-par-level-in-a-restaurant">What is a par level in a restaurant?</h3>
+<p>A par level is the minimum quantity of an item you want on hand before the next delivery, based on average usage, delivery frequency and a safety margin.</p>
+<h3 id="what-is-the-fifo-method-in-restaurants">What is the FIFO method in restaurants?</h3>
+<p>First in, first out: older stock is used before newer stock, to reduce spoilage. New deliveries go behind existing stock.</p>
+<h3 id="whats-the-difference-between-inventory-and-stock-movement">What’s the difference between inventory and stock movement?</h3>
+<p>Inventory is what you have at a point in time. Stock movements are the changes, such as deliveries, sales, waste and adjustments, that explain how you got there.</p>
+<div class="cta-box">
+  <h2>Run your next service on LoungeOS</h2>
+  <p>Install LoungeOS on a Windows computer, connect your tablets and phones over Wi-Fi, and run real service for 30 days. Free, no credit card.</p>
+  <div class="cta-actions">
+    <a class="btn btn-primary btn-lg" href="https://account.loungeos.app/sign-up">Start Free Trial</a>
+    <a class="btn btn-secondary btn-lg" href="/download/">Download for Windows</a>
+  </div>
+</div>
+        </div>
+      </article>
+      <section class="related-section">
+        <h2 class="section-title">Keep reading</h2>
+        <div class="card-grid">
+<a class="post-card" href="/features/inventory-management/">
+  <img src="/images/screens/loungeos-inventory-dashboard-800.webp" width="800" height="430" alt="LoungeOS inventory dashboard showing total items, low stock, out of stock, total stock value and stock movements chart" loading="lazy" decoding="async" />
+  <div class="post-card-body">
+    <span class="tag">Inventory Management</span>
+    <h3>Inventory Management</h3>
+    <p>Stock levels, low-stock alerts, suppliers, waste and damage logging, CSV import and export.</p>
+    <span class="read-more">Learn more →</span>
+  </div>
+</a>
+<a class="post-card" href="/blog/food-cost-percentage-formula/">
+  <img src="/images/screens/loungeos-financial-reports-800.webp" width="800" height="430" alt="LoungeOS financial reports with profit and loss statement" loading="lazy" decoding="async" />
+  <div class="post-card-body">
+    <span class="tag">Inventory &amp; finance</span>
+    <h3>Food cost percentage: formula and benchmarks</h3>
+    <p>Calculate food cost and plate cost, compare benchmarks and lower yours.</p>
+    <span class="read-more">Read guide →</span>
+  </div>
+</a>
+<a class="post-card" href="/blog/bar-inventory-shrinkage-pour-cost/">
+  <img src="/images/screens/loungeos-stock-movement-history-800.webp" width="800" height="430" alt="LoungeOS stock movement history for an item showing a damage entry with date, quantity and user" loading="lazy" decoding="async" />
+  <div class="post-card-body">
+    <span class="tag">Loss prevention</span>
+    <h3>Bar inventory shrinkage and pour cost</h3>
+    <p>Formulas, benchmarks and a weekly count routine to find and stop bar losses.</p>
+    <span class="read-more">Read guide →</span>
+  </div>
+</a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-grid footer-grid-wide">
+        <div class="footer-brand">
+          <img src="/images/logo/loungeos-logo-white.svg" alt="LoungeOS" width="159" height="28" class="footer-logo" />
+          <p>Offline-first POS and management system for restaurants, bars, lounges and hotels. Built in Cameroon, used across Africa and beyond.</p>
+          <div class="footer-worldwide">
+            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> All currencies</span>
+            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> English &amp; French</span>
+            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Works offline</span>
+          </div>
+          <p class="footer-contact">
+            <a href="mailto:support@loungeos.app">support@loungeos.app</a><br />
+            <a href="mailto:hello@loungeos.app">hello@loungeos.app</a><br />
+            <a href="tel:+237679690703">+237 679 690 703</a>
+          </p>
+        </div>
+        <div class="footer-col">
+          <h3>Product</h3>
+          <a href="/features/">Features</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/download/">Download</a>
+          <a href="/features/offline-pos/">Offline POS</a>
+          <a href="/features/kitchen-display-system/">Kitchen Display System</a>
+          <a href="/features/inventory-management/">Inventory</a>
+          <a href="/features/restaurant-accounting/">Accounting</a>
+        </div>
+        <div class="footer-col">
+          <h3>Solutions</h3>
+          <a href="/restaurant-pos/">Restaurant POS</a>
+          <a href="/bar-pos/">Bar POS</a>
+          <a href="/lounge-pos/">Lounge POS</a>
+          <a href="/nightclub-pos/">Nightclub POS</a>
+          <a href="/hotel-pos/">Hotel POS</a>
+          <a href="/cafe-pos/">Café &amp; Fast Food POS</a>
+        </div>
+        <div class="footer-col">
+          <h3>Countries</h3>
+          <a href="/cameroon/">Cameroon</a>
+          <a href="/nigeria/">Nigeria</a>
+          <a href="/ghana/">Ghana</a>
+          <a href="/south-africa/">South Africa</a>
+          <a href="/africa/">Africa</a>
+          <a href="/fr/cameroun/">Cameroun (FR)</a>
+          <a href="/fr/cote-divoire/">Côte d'Ivoire (FR)</a>
+          <a href="/fr/senegal/">Sénégal (FR)</a>
+        </div>
+        <div class="footer-col">
+          <h3>Resources</h3>
+          <a href="/blog/">Blog</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/knowledgebase.html">Knowledge Base</a>
+          <a href="/documentation.html">Documentation</a>
+          <a href="/about/">About</a>
+          <a href="/contact/">Contact</a>
+          <a href="/privacy.html">Privacy Policy</a>
+          <a href="/terms.html">Terms of Service</a>
+          <a href="/accessibility.html">Accessibility</a>
+          <a href="/legal.html">Legal</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 LoungeOS. All rights reserved.</p>
+        <a href="https://account.loungeos.app/sign-up" class="btn btn-outline-light btn-sm" id="footerCtaBtn">Start Free Trial <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg></a>
+      </div>
+    </footer>
+    <div id="google_translate_element" style="display: none"></div>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: "en", autoDisplay: false },
+          "google_translate_element",
+        );
+      }
+    </script>
+    <script defer type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script defer src="/app.js"></script>
+    <!-- Botpress Webchat -->
+    <script defer src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
+    <script defer src="https://files.bpcontent.cloud/2026/06/19/19/20260619193215-LONFMDIT.js"></script>
+  </body>
+</html>
