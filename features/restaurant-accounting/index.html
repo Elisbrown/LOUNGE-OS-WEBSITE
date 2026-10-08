@@ -1,0 +1,637 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Accounting Software: P&amp;L &amp; Balance Sheet | LoungeOS</title>
+    <meta name="description" content="Turn POS sales and stock purchases into balanced double-entry journals, then get a P&amp;L, balance sheet and cash-flow statement as PDF or CSV." />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <link rel="canonical" href="https://loungeos.app/features/restaurant-accounting/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="LoungeOS" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="Restaurant Accounting Software: P&amp;L &amp; Balance Sheet" />
+    <meta property="og:description" content="Turn POS sales and stock purchases into balanced double-entry journals, then get a P&amp;L, balance sheet and cash-flow statement as PDF or CSV." />
+    <meta property="og:url" content="https://loungeos.app/features/restaurant-accounting/" />
+    <meta property="og:image" content="https://loungeos.app/images/og-loungeos.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="LoungeOS: offline POS for restaurants, bars and lounges" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Restaurant Accounting Software: P&amp;L &amp; Balance Sheet" />
+    <meta name="twitter:description" content="Turn POS sales and stock purchases into balanced double-entry journals, then get a P&amp;L, balance sheet and cash-flow statement as PDF or CSV." />
+    <meta name="twitter:image" content="https://loungeos.app/images/og-loungeos.jpg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="alternate" type="application/rss+xml" title="LoungeOS Blog" href="https://loungeos.app/blog/feed.xml" />
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://loungeos.app/#organization",
+      "name": "LoungeOS",
+      "url": "https://loungeos.app/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://loungeos.app/images/logo/loungeos-icon-512.png",
+        "width": 512,
+        "height": 512
+      },
+      "image": "https://loungeos.app/images/og-loungeos.jpg",
+      "description": "LoungeOS develops offline-first point of sale (POS) and management software for restaurants, bars, lounges, nightclubs and hotels.",
+      "email": "hello@loungeos.app",
+      "telephone": "+237679690703",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CM"
+      },
+      "areaServed": [
+        "CM",
+        "Africa",
+        "Worldwide"
+      ],
+      "knowsLanguage": [
+        "en",
+        "fr"
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "email": "support@loungeos.app",
+          "telephone": "+237679690703",
+          "availableLanguage": [
+            "English",
+            "French"
+          ]
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "email": "hello@loungeos.app",
+          "telephone": "+237689699688",
+          "availableLanguage": [
+            "English",
+            "French"
+          ]
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "billing support",
+          "email": "billing@loungeos.app"
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://loungeos.app/#website",
+      "url": "https://loungeos.app/",
+      "name": "LoungeOS",
+      "publisher": {
+        "@id": "https://loungeos.app/#organization"
+      },
+      "inLanguage": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://loungeos.app/#software",
+      "name": "LoungeOS",
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "Restaurant point of sale (POS) and management software",
+      "operatingSystem": "Windows 10, Windows 11 (host computer); any modern web browser on the local network for tablets and phones",
+      "softwareVersion": "1.3.6",
+      "fileSize": "383MB",
+      "downloadUrl": "https://loungeos.app/download/",
+      "installUrl": "https://loungeos.app/download/",
+      "url": "https://loungeos.app/",
+      "inLanguage": [
+        "en",
+        "fr"
+      ],
+      "publisher": {
+        "@id": "https://loungeos.app/#organization"
+      },
+      "description": "Offline-first restaurant, bar and lounge POS with kitchen and bar display screens, table and floor management, inventory, role-based permissions with audit logs, and double-entry accounting. Runs on your own Windows computer and local Wi-Fi network without internet.",
+      "featureList": [
+        "Works without internet on the local network",
+        "Point of sale with table and floor management",
+        "Kitchen Display System (KDS) and Bar Display System (BDS) with automatic food/drink routing",
+        "Split and merge bills; split payments across cash, card and mobile money",
+        "Mobile money payment recording (MTN Mobile Money, Orange Money)",
+        "Inventory and stock movements with low-stock alerts, suppliers and CSV import/export",
+        "Role-based permissions for 8 roles and a searchable activity log",
+        "Double-entry accounting: journals, profit & loss, balance sheet, cash flow",
+        "Multi-currency (XAF, USD, EUR, GBP, NGN, GHS and custom) and multiple tax rates",
+        "Thermal receipt printing with logo and custom messages",
+        "Encrypted database backups and restore",
+        "English and French interface"
+      ],
+      "screenshot": [
+        "https://loungeos.app/images/screens/loungeos-pos-order-screen.webp",
+        "https://loungeos.app/images/screens/loungeos-kitchen-display-system.webp",
+        "https://loungeos.app/images/screens/loungeos-inventory-dashboard.webp"
+      ],
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "30-day free trial",
+          "price": "0",
+          "priceCurrency": "XAF",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/"
+        },
+        {
+          "@type": "Offer",
+          "name": "Monthly plan (FCFA zone)",
+          "price": "30000",
+          "priceCurrency": "XAF",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "30000",
+            "priceCurrency": "XAF",
+            "billingDuration": "P1M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 1,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "6-month plan (FCFA zone)",
+          "price": "150000",
+          "priceCurrency": "XAF",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "150000",
+            "priceCurrency": "XAF",
+            "billingDuration": "P6M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 6,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "12-month plan (FCFA zone)",
+          "price": "240000",
+          "priceCurrency": "XAF",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "240000",
+            "priceCurrency": "XAF",
+            "billingDuration": "P12M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 12,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Monthly plan (international)",
+          "price": "49",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "49",
+            "priceCurrency": "USD",
+            "billingDuration": "P1M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 1,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "12-month plan (international)",
+          "price": "468",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "468",
+            "priceCurrency": "USD",
+            "billingDuration": "P12M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 12,
+              "unitCode": "MON"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://loungeos.app/features/restaurant-accounting/#webpage",
+      "url": "https://loungeos.app/features/restaurant-accounting/",
+      "name": "Restaurant Accounting Software: P&L & Balance Sheet | LoungeOS",
+      "description": "Turn POS sales and stock purchases into balanced double-entry journals, then get a P&L, balance sheet and cash-flow statement as PDF or CSV.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://loungeos.app/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://loungeos.app/features/restaurant-accounting/#breadcrumb"
+      },
+      "dateModified": "2026-10-08",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://loungeos.app/images/screens/loungeos-accounting-dashboard.webp"
+      },
+      "about": {
+        "@id": "https://loungeos.app/#software"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://loungeos.app/features/restaurant-accounting/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://loungeos.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Features",
+          "item": "https://loungeos.app/features/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Accounting",
+          "item": "https://loungeos.app/features/restaurant-accounting/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://loungeos.app/features/restaurant-accounting/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why are my financial statements empty after a busy day?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Sales are posted to the ledger when you click <strong>Sync Accounting Data<\/strong>, not one by one during service. Sync the date range and the statements update.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I record expenses that don’t come from stock?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Yes. Use <strong>Record expense<\/strong> for rent, salaries, utilities, marketing, maintenance and other costs, with payee, date, payment account and category.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I export statements for my accountant or bank?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Yes. The income statement, balance sheet, cash-flow statement and journal can be downloaded as PDF or CSV for any date range.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does LoungeOS file my taxes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>No. LoungeOS calculates taxes on bills using the rates you configure and gives you accurate records. Filing remains with you or your accountant.<\/p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+    </script>
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+      (function (c, l, a, r, i, t, y) {
+        c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
+        t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", "x9n1mwb8c5");
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TNP53ZZW7K"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag("js", new Date());
+      gtag("config", "G-TNP53ZZW7K");
+    </script>
+    <!-- Usercentrics CMP -->
+    <script id="usercentrics-cmp" src="https://app.usercentrics.eu/browser-ui/latest/loader.js" data-settings-id="SSwfY4ZtHuL22V" async></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <nav class="navbar" id="navbar" aria-label="Main Navigation">
+      <div class="nav-content">
+        <div class="nav-left">
+          <a href="/" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 0.75rem;">
+            <img src="/images/logo/loungeos-logo.svg" alt="LoungeOS" width="148" height="26" class="nav-logo" />
+            <span class="nav-badge">Restaurant POS</span>
+          </a>
+        </div>
+
+        <div class="nav-links" id="navLinks">
+          <a href="/">Home</a>
+          <a href="/features/">Features</a>
+          <div class="nav-dropdown">
+            <button type="button" class="nav-dropdown-toggle" aria-haspopup="true">Solutions <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+            <div class="nav-dropdown-menu">
+              <a href="/restaurant-pos/">Restaurants</a>
+              <a href="/bar-pos/">Bars</a>
+              <a href="/lounge-pos/">Lounges</a>
+              <a href="/nightclub-pos/">Nightclubs</a>
+              <a href="/hotel-pos/">Hotels</a>
+              <a href="/cafe-pos/">Cafés &amp; Fast Food</a>
+              <a href="/cameroon/">Cameroon</a>
+              <a href="/africa/">Africa</a>
+            </div>
+          </div>
+          <a href="/pricing/">Pricing</a>
+          <a href="/download/">Download</a>
+          <div class="nav-dropdown">
+            <button type="button" class="nav-dropdown-toggle" aria-haspopup="true">Resources <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+            <div class="nav-dropdown-menu">
+              <a href="/blog/">Blog</a>
+              <a href="/faq/">FAQ</a>
+              <a href="/knowledgebase.html">Knowledge Base</a>
+              <a href="/documentation.html">Documentation</a>
+              <a href="/about/">About</a>
+              <a href="/contact/">Contact</a>
+              <a href="/fr/">Français</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-cta" style="display: flex; align-items: center; gap: 1rem">
+          <div class="lang-selector">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 16px; height: 16px" aria-hidden="true"><circle cx="12" cy="12" r="10" /><line x1="2" y1="12" x2="22" y2="12" /><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" /></svg>
+            <select id="customLangSelect" aria-label="Select Language" onchange="changeLanguage(this.value)">
+              <option value="en" selected>English</option>
+              <option value="fr">Français</option>
+              <option value="es">Español</option>
+              <option value="de">Deutsch</option>
+              <option value="zh-CN">中文</option>
+              <option value="ar">العربية</option>
+              <option value="hi">हिन्दी</option>
+              <option value="pt">Português</option>
+              <option value="ru">Русский</option>
+              <option value="ja">日本語</option>
+            </select>
+          </div>
+          <a href="https://account.loungeos.app/sign-up" class="btn btn-primary btn-sm" id="navCtaBtn">Start Free Trial</a>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+    <main id="main-content">
+      <header class="page-hero">
+        <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">›</span> <a href="/features/">Features</a> <span aria-hidden="true">›</span> <span aria-current="page">Accounting</span></nav>
+        <p class="section-label">Accounting</p>
+        <h1>Restaurant accounting built into your POS: P&L, balance sheet and cash flow</h1>
+        <p class="lead">Stop rebuilding your books from receipts at the end of the month. LoungeOS turns every paid order and every stock purchase into balanced journal entries, then produces the three statements your accountant and your bank ask for.</p>
+        
+        <div class="hero-actions">
+          <a href="https://account.loungeos.app/sign-up" class="btn btn-primary btn-lg">Start Free Trial <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg></a>
+          <a href="/pricing/" class="btn btn-secondary btn-lg">See pricing</a>
+        </div>
+        <p class="trust-line">30-day free trial · No credit card · Works without internet</p>
+        <div class="page-hero-media"><img src="/images/screens/loungeos-accounting-dashboard.webp" srcset="/images/screens/loungeos-accounting-dashboard-800.webp 800w, /images/screens/loungeos-accounting-dashboard.webp 1600w" sizes="(max-width: 1100px) 100vw, 1100px" width="1600" height="861" alt="LoungeOS accounting dashboard with net profit, total revenue, total expenses, profit margin and a revenue versus expenses chart" fetchpriority="high" decoding="async" /></div>
+      </header>
+      <section class="content-section">
+        <div class="prose prose-wide">
+<p>Most restaurants run two disconnected systems: a till that knows what was sold, and an accountant who rebuilds the month from receipts, bank statements and notebooks. LoungeOS includes a <strong>double-entry accounting ledger</strong> fed directly by your POS and inventory. Your sales, purchases, expenses and profit are always one click away from being up to date.</p>
+<h2 id="whats-included">What’s included</h2>
+<ul>
+<li><strong>Accounting dashboard</strong> with net profit, total revenue, total expenses, profit margin and a revenue-vs-expenses chart</li>
+<li><strong>Chart of accounts</strong> in five classes (assets, liabilities, equity, revenue, expenses), with your own sub-accounts</li>
+<li><strong>Financial journals</strong> listing every entry with reference, date and amount</li>
+<li><strong>Expense recording</strong> for rent, salaries, utilities, marketing, maintenance and other running costs</li>
+<li><strong>Three financial statements</strong>: income statement (P&amp;L), balance sheet and cash-flow statement, for any date range, exported to PDF or CSV</li>
+</ul>
+<h2 id="from-sale-to-statement-in-one-click">From sale to statement in one click</h2>
+<p>LoungeOS deliberately does not post every sale to the ledger in real time, because that would slow the POS during a rush. Instead, the owner or accountant clicks <strong>Sync Accounting Data</strong> and picks a date range. LoungeOS then:</p>
+<ol>
+<li>Reads every <strong>paid POS order</strong> and every recorded <strong>stock-in purchase</strong> in that period.</li>
+<li>Creates balanced journal entries automatically:
+   - <em>Sales:</em> debit Cash or Bank, credit Sales Revenue
+   - <em>Purchases:</em> debit Inventory or Cost of Goods Sold, credit Cash or Accounts Payable</li>
+<li>Updates the financial statements immediately.</li>
+</ol>
+<p>Stock written off as damage, waste or loss in <a href="/features/inventory-management/">inventory</a> is recorded as an expense, so your P&amp;L reflects real losses instead of hiding them.</p>
+<figure><img alt="LoungeOS financial reports page with profit and loss statement and balance sheet date filters and PDF download" decoding="async" height="861" loading="lazy" sizes="(max-width: 800px) 100vw, 960px" src="/images/screens/loungeos-financial-reports.webp" srcset="/images/screens/loungeos-financial-reports-800.webp 800w, /images/screens/loungeos-financial-reports.webp 1600w" width="1600"/><figcaption>Profit &amp; loss, balance sheet and cash flow for any date range, downloadable as PDF.</figcaption></figure>
+<h2 id="built-in-safeguards">Built-in safeguards</h2>
+<ul>
+<li><strong>Debits must equal credits.</strong> LoungeOS will not save a manual journal entry that does not balance.</li>
+<li><strong>Balance sheet check.</strong> The balance sheet confirms that Assets = Liabilities + Equity.</li>
+<li><strong>Separation of duties.</strong> The Accountant role has full access to accounting but cannot take orders. Managers can sync and view. See <a href="/features/loss-prevention/">roles and permissions</a>.</li>
+</ul>
+<h2 id="the-default-chart-of-accounts">The default chart of accounts</h2>
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Example accounts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Assets</td>
+<td>Cash on hand, bank accounts, inventory</td>
+</tr>
+<tr>
+<td>Liabilities</td>
+<td>Supplier payables, taxes owed</td>
+</tr>
+<tr>
+<td>Equity</td>
+<td>Owner’s capital, retained earnings</td>
+</tr>
+<tr>
+<td>Revenue</td>
+<td>Food sales, beverage sales, event services</td>
+</tr>
+<tr>
+<td>Expenses</td>
+<td>Cost of goods, rent, utilities, staff wages, waste and loss</td>
+</tr>
+</tbody>
+</table>
+<p>You can add child accounts under any parent, for example separate accounts for MTN MoMo and Orange Money balances, or for each bank.</p>
+<h2 id="who-its-for">Who it’s for</h2>
+<p>LoungeOS accounting is designed for owners and managers who want to see whether the business makes money, and for accountants who want clean, balanced data instead of a shoebox of receipts. It does not replace your accountant or your local tax filings. It gives them accurate numbers to work from. In OHADA countries, your accountant can map LoungeOS accounts to the SYSCOHADA chart when preparing statutory accounts.</p>
+<h2 id="frequently-asked-questions">Frequently asked questions</h2>
+<h3 id="why-are-my-financial-statements-empty-after-a-busy-day">Why are my financial statements empty after a busy day?</h3>
+<p>Sales are posted to the ledger when you click <strong>Sync Accounting Data</strong>, not one by one during service. Sync the date range and the statements update.</p>
+<h3 id="can-i-record-expenses-that-dont-come-from-stock">Can I record expenses that don’t come from stock?</h3>
+<p>Yes. Use <strong>Record expense</strong> for rent, salaries, utilities, marketing, maintenance and other costs, with payee, date, payment account and category.</p>
+<h3 id="can-i-export-statements-for-my-accountant-or-bank">Can I export statements for my accountant or bank?</h3>
+<p>Yes. The income statement, balance sheet, cash-flow statement and journal can be downloaded as PDF or CSV for any date range.</p>
+<h3 id="does-loungeos-file-my-taxes">Does LoungeOS file my taxes?</h3>
+<p>No. LoungeOS calculates taxes on bills using the rates you configure and gives you accurate records. Filing remains with you or your accountant.</p>
+        </div>
+      </section>
+      <section style="padding: 0 1.5rem 1rem"><div class="cta-box">
+  <h2>Run your next service on LoungeOS</h2>
+  <p>Install LoungeOS on a Windows computer, connect your tablets and phones over Wi-Fi, and run real service for 30 days. Free, no credit card.</p>
+  <div class="cta-actions">
+    <a class="btn btn-primary btn-lg" href="https://account.loungeos.app/sign-up">Start Free Trial</a>
+    <a class="btn btn-secondary btn-lg" href="/download/">Download for Windows</a>
+  </div>
+</div></section>
+      <section class="related-section">
+        <h2 class="section-title">Explore more</h2>
+        <div class="card-grid">
+<a class="post-card" href="/blog/restaurant-accounting-basics/">
+  <img src="/images/screens/loungeos-accounting-dashboard-800.webp" width="800" height="430" alt="LoungeOS accounting dashboard with net profit, revenue, expenses and profit margin" loading="lazy" decoding="async" />
+  <div class="post-card-body">
+    <span class="tag">Inventory &amp; finance</span>
+    <h3>Restaurant accounting basics</h3>
+    <p>P&amp;L, balance sheet, cash flow, COGS and a monthly routine for owners.</p>
+    <span class="read-more">Read guide →</span>
+  </div>
+</a>
+<a class="post-card" href="/blog/food-cost-percentage-formula/">
+  <img src="/images/screens/loungeos-financial-reports-800.webp" width="800" height="430" alt="LoungeOS financial reports with profit and loss statement" loading="lazy" decoding="async" />
+  <div class="post-card-body">
+    <span class="tag">Inventory &amp; finance</span>
+    <h3>Food cost percentage: formula and benchmarks</h3>
+    <p>Calculate food cost and plate cost, compare benchmarks and lower yours.</p>
+    <span class="read-more">Read guide →</span>
+  </div>
+</a>
+<a class="post-card" href="/blog/restaurant-kpis-metrics/">
+  <img src="/images/screens/loungeos-sales-reports-800.webp" width="800" height="430" alt="LoungeOS reports and analytics with sales over time and sales by category" loading="lazy" decoding="async" />
+  <div class="post-card-body">
+    <span class="tag">Inventory &amp; finance</span>
+    <h3>15 restaurant KPIs with formulas</h3>
+    <p>Sales, costs, speed and control metrics, and where to find them.</p>
+    <span class="read-more">Read guide →</span>
+  </div>
+</a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-grid footer-grid-wide">
+        <div class="footer-brand">
+          <img src="/images/logo/loungeos-logo-white.svg" alt="LoungeOS" width="159" height="28" class="footer-logo" />
+          <p>Offline-first POS and management system for restaurants, bars, lounges and hotels. Built in Cameroon, used across Africa and beyond.</p>
+          <div class="footer-worldwide">
+            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> All currencies</span>
+            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> English &amp; French</span>
+            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Works offline</span>
+          </div>
+          <p class="footer-contact">
+            <a href="mailto:support@loungeos.app">support@loungeos.app</a><br />
+            <a href="mailto:hello@loungeos.app">hello@loungeos.app</a><br />
+            <a href="tel:+237679690703">+237 679 690 703</a>
+          </p>
+        </div>
+        <div class="footer-col">
+          <h3>Product</h3>
+          <a href="/features/">Features</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/download/">Download</a>
+          <a href="/features/offline-pos/">Offline POS</a>
+          <a href="/features/kitchen-display-system/">Kitchen Display System</a>
+          <a href="/features/inventory-management/">Inventory</a>
+          <a href="/features/restaurant-accounting/">Accounting</a>
+        </div>
+        <div class="footer-col">
+          <h3>Solutions</h3>
+          <a href="/restaurant-pos/">Restaurant POS</a>
+          <a href="/bar-pos/">Bar POS</a>
+          <a href="/lounge-pos/">Lounge POS</a>
+          <a href="/nightclub-pos/">Nightclub POS</a>
+          <a href="/hotel-pos/">Hotel POS</a>
+          <a href="/cafe-pos/">Café &amp; Fast Food POS</a>
+        </div>
+        <div class="footer-col">
+          <h3>Countries</h3>
+          <a href="/cameroon/">Cameroon</a>
+          <a href="/nigeria/">Nigeria</a>
+          <a href="/ghana/">Ghana</a>
+          <a href="/south-africa/">South Africa</a>
+          <a href="/africa/">Africa</a>
+          <a href="/fr/cameroun/">Cameroun (FR)</a>
+          <a href="/fr/cote-divoire/">Côte d'Ivoire (FR)</a>
+          <a href="/fr/senegal/">Sénégal (FR)</a>
+        </div>
+        <div class="footer-col">
+          <h3>Resources</h3>
+          <a href="/blog/">Blog</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/knowledgebase.html">Knowledge Base</a>
+          <a href="/documentation.html">Documentation</a>
+          <a href="/about/">About</a>
+          <a href="/contact/">Contact</a>
+          <a href="/privacy.html">Privacy Policy</a>
+          <a href="/terms.html">Terms of Service</a>
+          <a href="/accessibility.html">Accessibility</a>
+          <a href="/legal.html">Legal</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 LoungeOS. All rights reserved.</p>
+        <a href="https://account.loungeos.app/sign-up" class="btn btn-outline-light btn-sm" id="footerCtaBtn">Start Free Trial <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg></a>
+      </div>
+    </footer>
+    <div id="google_translate_element" style="display: none"></div>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: "en", autoDisplay: false },
+          "google_translate_element",
+        );
+      }
+    </script>
+    <script defer type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script defer src="/app.js"></script>
+    <!-- Botpress Webchat -->
+    <script defer src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
+    <script defer src="https://files.bpcontent.cloud/2026/06/19/19/20260619193215-LONFMDIT.js"></script>
+  </body>
+</html>
