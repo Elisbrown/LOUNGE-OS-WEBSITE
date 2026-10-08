@@ -96,161 +96,263 @@
 
   /* ---------- 3. PRICING & LOCALIZATION ---------- */
 
+  // Regional pricing. Per-month prices for the monthly, 6-month and 12-month
+  // plans, set by market rather than converted from FCFA. Keep in sync with the
+  // price tables on /pricing/, /fr/tarifs/ and the country pages, and with the
+  // amounts charged at account.loungeos.app/checkout.
+  var REGIONAL_PRICING = {
+    XAF: { monthly: 30000, six: 25000, yearly: 20000, region: 'fcfa' },
+    XOF: { monthly: 30000, six: 25000, yearly: 20000, region: 'fcfa' },
+    NGN: { monthly: 35000, six: 30000, yearly: 25000, region: 'ng' },
+    GHS: { monthly: 299, six: 249, yearly: 199, region: 'gh' },
+    ZAR: { monthly: 599, six: 499, yearly: 449, region: 'za' },
+    EUR: { monthly: 45, six: 40, yearly: 35, region: 'eu' },
+    GBP: { monthly: 39, six: 35, yearly: 31, region: 'uk' },
+    USD: { monthly: 49, six: 44, yearly: 39, region: 'global' },
+    CAD: { monthly: 65, six: 59, yearly: 52, region: 'global' },
+    AUD: { monthly: 75, six: 67, yearly: 59, region: 'global' },
+    AED: { monthly: 179, six: 159, yearly: 139, region: 'global' }
+  };
+  // Countries without a fixed local table: priced from a US$ tier, shown in the
+  // visitor's currency at the day's exchange rate.
+  var USD_TIERS = {
+    global: { monthly: 49, six: 44, yearly: 39 },
+    emerging: { monthly: 25, six: 21, yearly: 17 }
+  };
+  var GLOBAL_TIER_COUNTRIES = ['US', 'CA', 'GB', 'IE', 'FR', 'DE', 'NL', 'BE', 'LU', 'AT', 'CH', 'IT', 'ES', 'PT',
+    'GR', 'CY', 'MT', 'SI', 'SK', 'CZ', 'PL', 'HR', 'EE', 'LV', 'LT', 'FI', 'SE', 'NO', 'DK', 'IS', 'AU', 'NZ',
+    'JP', 'KR', 'SG', 'HK', 'TW', 'IL', 'AE', 'SA', 'QA', 'KW', 'BH', 'OM'];
 
-  var userCurrency = 'XAF';
-  var exchangeRate = 1;
+  var isBot = /bot|crawl|spider|slurp|bingpreview|mediapartners|facebookexternalhit|embedly|lighthouse|headless|gptbot|claude|perplexity|chatgpt/i.test(navigator.userAgent);
+  var pagePath = window.location.pathname;
+  var pageLang = (document.documentElement.getAttribute('lang') || 'en').toLowerCase();
   var currencyFormatter = new Intl.NumberFormat('fr-FR', { style: 'currency', currency: 'XAF', maximumFractionDigits: 0 });
+  var activePrices = { monthly: 30000, six: 25000, yearly: 20000 };
+  var activeRegion = 'fcfa';
+  var activeCurrency = 'XAF';
+
+  function niceRound(v) {
+    if (v < 100) return Math.round(v);
+    var step = Math.pow(10, Math.floor(Math.log10(v)) - 1) / 2;
+    return Math.round(v / step) * step;
+  }
 
   function formatPrice(amount) {
-      return currencyFormatter.format(amount * exchangeRate);
+    return currencyFormatter.format(amount);
+  }
+
+  function planOf(el, fallbackByBase) {
+    return el.dataset.plan || fallbackByBase[el.dataset.basePrice || el.dataset.baseTotal || el.dataset.baseSavings];
   }
 
   function updatePricing() {
-    // Update price displays
+    var p = activePrices;
+    var totals = { six: p.six * 6, yearly: p.yearly * 12 };
+    var savings = { six: p.monthly * 6 - totals.six, yearly: p.monthly * 12 - totals.yearly };
+
     document.querySelectorAll('.price[data-base-price]').forEach(function (el) {
-      var basePrice = parseInt(el.dataset.basePrice);
-      el.textContent = formatPrice(basePrice);
+      var plan = planOf(el, { '30000': 'monthly', '25000': 'six', '20000': 'yearly' });
+      if (p[plan] !== undefined) el.textContent = formatPrice(p[plan]);
     });
-
-    // Update total displays
     document.querySelectorAll('.price-total[data-base-total]').forEach(function (el) {
-      var baseTotal = parseInt(el.dataset.baseTotal);
-      el.textContent = formatPrice(baseTotal) + ' total';
+      var plan = planOf(el, { '150000': 'six', '240000': 'yearly' });
+      if (totals[plan] !== undefined) el.textContent = formatPrice(totals[plan]) + ' ' + (el.dataset.totalLabel || 'total');
     });
-
-    // Update savings displays
     document.querySelectorAll('.price-savings[data-base-savings]').forEach(function (el) {
-      var baseSavings = parseInt(el.dataset.baseSavings);
+      var plan = planOf(el, { '30000': 'six', '120000': 'yearly' });
+      if (savings[plan] === undefined) return;
       var freeMonthsText = el.dataset.freeMonths || '';
-      el.textContent = 'You save ' + formatPrice(baseSavings) + ' (' + freeMonthsText + ')';
+      el.textContent = (el.dataset.saveLabel || 'You save') + ' ' + formatPrice(savings[plan]) + (freeMonthsText ? ' (' + freeMonthsText + ')' : '');
     });
-
-
+    // Pass the visitor's region to checkout so it can charge the matching price.
+    document.querySelectorAll('a[data-checkout]').forEach(function (a) {
+      try {
+        var u = new URL(a.href);
+        u.searchParams.set('region', activeRegion);
+        u.searchParams.set('currency', activeCurrency);
+        a.href = u.toString();
+      } catch (e) {}
+    });
   }
 
-  // Initialize Pricing formatting
+  function applyRegionalPricing(geo) {
+    var cur = geo.currency;
+    var country = geo.country_code;
+    if (!cur) return;
+    var locale = navigator.language || 'en-US';
+    var table = REGIONAL_PRICING[cur];
+    function setFormatter(c) {
+      try {
+        currencyFormatter = new Intl.NumberFormat(c === 'XAF' || c === 'XOF' ? 'fr-FR' : locale, { style: 'currency', currency: c, maximumFractionDigits: 0 });
+      } catch (e) {}
+    }
+    if (table) {
+      activePrices = table; activeRegion = table.region; activeCurrency = cur;
+      setFormatter(cur);
+      updatePricing();
+      return;
+    }
+    var tierName = GLOBAL_TIER_COUNTRIES.indexOf(country) > -1 ? 'global' : 'emerging';
+    var tier = USD_TIERS[tierName];
+    fetch('https://open.er-api.com/v6/latest/USD')
+      .then(function (res) { return res.json(); })
+      .then(function (rates) {
+        var r = rates && rates.rates && rates.rates[cur];
+        if (!r) { cur = 'USD'; r = 1; }
+        activePrices = { monthly: niceRound(tier.monthly * r), six: niceRound(tier.six * r), yearly: niceRound(tier.yearly * r) };
+        activeRegion = tierName; activeCurrency = cur;
+        setFormatter(cur);
+        updatePricing();
+      })
+      .catch(function (e) { console.error('Exchange rate error:', e); });
+  }
+
+  // Initialize pricing formatting (FCFA until the visitor's region is known)
   updatePricing();
 
-  // Multilingual Dynamic SEO Dictionary
+  // Multilingual meta descriptions for the machine-translated homepage only
   const seoData = {
-      'en': {
-          desc: "LoungeOS is the best offline-first Restaurant POS system. Streamline operations, protect revenue, and boost profits. Free 30-day trial — no credit card required.",
-          keys: "Restaurant POS, Point of Sale, Restaurant Management Software, Offline POS, KDS, Kitchen Display System, Bar POS, Cafe Management, LoungeOS"
-      },
-      'fr': {
-          desc: "LoungeOS est le meilleur système de caisse (POS) pour restaurant fonctionnant hors ligne. Optimisez vos opérations et augmentez vos profits. Essai gratuit de 30 jours.",
-          keys: "Caisse Restaurant, Logiciel de Caisse, POS Hors Ligne, Gestion de Restaurant, Logiciel Bar, TPV Restaurant, Système d'affichage cuisine, LoungeOS"
-      },
-      'es': {
-          desc: "LoungeOS es el mejor sistema POS para restaurantes con funcionamiento sin conexión. Optimice operaciones y proteja sus ingresos. Prueba gratuita de 30 días.",
-          keys: "Punto de Venta Restaurante, Sistema POS, Software de Gestión de Restaurantes, POS Offline, Sistema de Pantalla de Cocina, KDS, LoungeOS"
-      },
-      'de': {
-          desc: "LoungeOS ist das beste Offline-First-Kassensystem für Restaurants. Optimieren Sie Abläufe und steigern Sie Gewinne. 30 Tage kostenlos testen.",
-          keys: "Kassensystem Gastronomie, Restaurant POS, Offline Kasse, Bar Management Software, Küchenanzeigesystem, LoungeOS"
-      },
-      'zh-CN': {
-          desc: "LoungeOS是最佳的离线优先餐厅POS系统。简化运营，保护收入并提高利润。提供30天免费试用。",
-          keys: "餐厅POS, 销售点系统, 离线POS, 餐厅管理软件, 酒吧管理, 厨房显示系统, LoungeOS"
-      },
-      'ar': {
-          desc: "LoungeOS هو أفضل نظام نقاط بيع (POS) للمطاعم يعمل بدون إنترنت. قم بتبسيط العمليات وزيادة الأرباح. تجربة مجانية لمدة 30 يومًا.",
-          keys: "نظام نقاط البيع, POS مطعم, برنامج إدارة المطاعم, نقاط البيع بدون إنترنت, نظام عرض المطبخ, LoungeOS"
-      },
-      'hi': {
-          desc: "LoungeOS रेस्तरां के लिए सबसे अच्छा ऑफलाइन-फर्स्ट POS सिस्टम है। संचालन को सुव्यवस्थित करें और मुनाफा बढ़ाएं। 30 दिन का मुफ्त ट्रायल।",
-          keys: "रेस्तरां पीओएस, पॉइंट ऑफ़ सेल, रेस्तरां प्रबंधन सॉफ्टवेयर, ऑफलाइन पीओएस, बार प्रबंधन, किचन डिस्प्ले सिस्टम, LoungeOS"
-      },
-      'pt': {
-          desc: "LoungeOS é o melhor sistema PDV para restaurantes offline-first. Simplifique operações e aumente lucros. Teste grátis de 30 dias.",
-          keys: "PDV Restaurante, Ponto de Venda, Sistema de Gestão de Restaurante, PDV Offline, Sistema de Exibição de Cozinha, LoungeOS"
-      },
-      'ru': {
-          desc: "LoungeOS — лучшая POS-система для ресторанов, работающая в офлайн-режиме. Оптимизируйте работу и увеличьте прибыль. Бесплатная 30-дневная версия.",
-          keys: "POS-система для ресторана, Автоматизация ресторана, Офлайн POS, Программа для бара, Система кухонных экранов, LoungeOS"
-      },
-      'ja': {
-          desc: "LoungeOSは、最高のオフラインファースト・レストランPOSシステムです。業務を効率化し、利益を向上させます。30日間の無料トライアル。",
-          keys: "レストランPOS, 販売時点情報管理, オフラインPOS, 飲食店管理システム, バー管理, キッチンディスプレイシステム, LoungeOS"
-      }
+      'fr': { desc: "LoungeOS est un logiciel de caisse hors ligne pour restaurants, bars et lounges : commandes, écrans cuisine, stocks, Mobile Money et comptabilité. Essai gratuit de 30 jours." },
+      'es': { desc: "LoungeOS es un sistema POS sin conexión para restaurantes, bares y lounges: pedidos, pantallas de cocina, inventario y contabilidad. Prueba gratuita de 30 días." },
+      'de': { desc: "LoungeOS ist ein Offline-Kassensystem für Restaurants, Bars und Lounges: Bestellungen, Küchendisplays, Lager und Buchhaltung. 30 Tage kostenlos testen." },
+      'zh-CN': { desc: "LoungeOS是适用于餐厅、酒吧和休闲吧的离线POS系统：点餐、厨房显示屏、库存和会计。30天免费试用。" },
+      'ar': { desc: "LoungeOS نظام نقاط بيع يعمل بدون إنترنت للمطاعم والحانات: الطلبات وشاشات المطبخ والمخزون والمحاسبة. تجربة مجانية لمدة 30 يومًا." },
+      'hi': { desc: "LoungeOS रेस्तरां, बार और लाउंज के लिए ऑफ़लाइन POS है: ऑर्डर, किचन डिस्प्ले, इन्वेंट्री और अकाउंटिंग। 30 दिन का मुफ्त ट्रायल।" },
+      'pt': { desc: "LoungeOS é um PDV offline para restaurantes, bares e lounges: pedidos, telas de cozinha, estoque e contabilidade. Teste grátis de 30 dias." },
+      'ru': { desc: "LoungeOS — офлайн POS-система для ресторанов, баров и лаунжей: заказы, кухонные экраны, склад и учёт. 30 дней бесплатно." },
+      'ja': { desc: "LoungeOSはレストラン、バー、ラウンジ向けのオフラインPOSです。注文、キッチンディスプレイ、在庫、会計。30日間無料トライアル。" }
   };
 
   function updateDynamicSEO(lang) {
-      if (seoData[lang]) {
-          document.documentElement.lang = lang;
-          
-          let metaDesc = document.querySelector('meta[name="description"]');
-          if(metaDesc) metaDesc.content = seoData[lang].desc;
-          
-          let metaKeys = document.querySelector('meta[name="keywords"]');
-          if(metaKeys) metaKeys.content = seoData[lang].keys;
-          
-          let ogDesc = document.querySelector('meta[property="og:description"]');
-          if(ogDesc) ogDesc.content = seoData[lang].desc;
-      }
+      if (pagePath !== '/' && pagePath !== '/index.html') return;
+      if (!seoData[lang]) return;
+      document.documentElement.lang = lang;
+      var metaDesc = document.querySelector('meta[name="description"]');
+      if (metaDesc) metaDesc.content = seoData[lang].desc;
+      var ogDesc = document.querySelector('meta[property="og:description"]');
+      if (ogDesc) ogDesc.content = seoData[lang].desc;
   }
 
-  // Auto-detect location for Currency and Language
-  // Also check URL params for targeted language indexing
+  /* ---------- 3b. LOCATION & LANGUAGE SUGGESTIONS ---------- */
+  var COUNTRY_BANNERS = {
+    CM: { en: ['Running a venue in Cameroon? FCFA prices, MTN MoMo & Orange Money setup', '/cameroon/'],
+          fr: ['Vous êtes au Cameroun ? Tarifs en FCFA, MTN MoMo et Orange Money', '/fr/cameroun/'] },
+    NG: { en: ['In Nigeria? See naira pricing and local setup', '/nigeria/'] },
+    GH: { en: ['In Ghana? See cedi pricing and MoMo setup', '/ghana/'] },
+    ZA: { en: ['In South Africa? See rand pricing and load-shedding setup', '/south-africa/'] },
+    CI: { fr: ["Vous êtes en Côte d'Ivoire ? LoungeOS pour maquis, restaurants et lounges", '/fr/cote-divoire/'] },
+    SN: { fr: ['Vous êtes au Sénégal ? LoungeOS pour restaurants et lounges', '/fr/senegal/'] }
+  };
+  var FRANCOPHONE = ['CM', 'CI', 'SN', 'GA', 'CG', 'CD', 'TD', 'CF', 'GQ', 'BJ', 'TG', 'BF', 'ML', 'NE', 'GN',
+    'MG', 'DJ', 'KM', 'BI', 'RW', 'MR', 'FR', 'BE', 'CH', 'LU', 'MC', 'HT'];
+
+  function storageGet(store, key) { try { return window[store].getItem(key); } catch (e) { return null; } }
+  function storageSet(store, key, val) { try { window[store].setItem(key, val); } catch (e) {} }
+
+  function showBanner(text, href, linkText) {
+    if (document.querySelector('.locale-banner')) return;
+    var b = document.createElement('div');
+    b.className = 'locale-banner';
+    b.setAttribute('role', 'region');
+    b.setAttribute('aria-label', pageLang === 'fr' ? 'Suggestion' : 'Suggestion for your location');
+    var span = document.createElement('span');
+    span.textContent = text;
+    var a = document.createElement('a');
+    a.href = href;
+    a.textContent = linkText;
+    var close = document.createElement('button');
+    close.type = 'button';
+    close.setAttribute('aria-label', pageLang === 'fr' ? 'Fermer' : 'Close');
+    close.textContent = '×';
+    close.addEventListener('click', function () {
+      b.remove();
+      storageSet('localStorage', 'loBannerDismissed', String(Date.now()));
+    });
+    b.appendChild(span); b.appendChild(a); b.appendChild(close);
+    document.body.appendChild(b);
+  }
+
+  function suggestLocale(geo) {
+    var dismissed = parseInt(storageGet('localStorage', 'loBannerDismissed') || '0', 10);
+    if (dismissed && Date.now() - dismissed < 7 * 864e5) return false;
+    var country = geo.country_code;
+    var browserLang = (navigator.language || '').slice(0, 2).toLowerCase();
+    var wantsFr = browserLang === 'fr' || (FRANCOPHONE.indexOf(country) > -1 && browserLang !== 'en');
+    var frAlt = document.querySelector('link[rel="alternate"][hreflang="fr"]');
+    if (pageLang === 'en' && wantsFr && frAlt) {
+      showBanner('Ce site existe en français.', frAlt.getAttribute('href'), 'Voir la version française');
+      return true;
+    }
+    var landing = /^\/(index\.html)?$|^\/fr\/$|^\/pricing\/|^\/fr\/tarifs\/|^\/features\/$|^\/fr\/fonctionnalites\/|^\/download\/|^\/fr\/telecharger\//.test(pagePath);
+    if (!landing) return false;
+    var cfg = COUNTRY_BANNERS[country];
+    var pick = cfg && (pageLang === 'fr' ? (cfg.fr || cfg.en) : (cfg.en || cfg.fr));
+    if (!pick && geo.continent_code === 'AF') {
+      pick = pageLang === 'fr' ? ["En Afrique ? Tarifs locaux et Mobile Money", '/fr/afrique/'] : ['In Africa? See local pricing and mobile money setup', '/africa/'];
+    }
+    if (pick && pick[1] !== pagePath) {
+      showBanner(pick[0], pick[1], pageLang === 'fr' ? 'Voir →' : 'See →');
+      return true;
+    }
+    return false;
+  }
+
+  function onGeo(data) {
+    applyRegionalPricing(data);
+
+    // Auto-language: real French pages first, machine translation otherwise
+    // (always overridden by an explicit ?lang= parameter).
+    var primaryLang = paramLang;
+    if (!primaryLang && data.languages) {
+      primaryLang = data.languages.split(',')[0].split('-')[0];
+      if (primaryLang === 'zh') primaryLang = 'zh-CN';
+    }
+    var suggested = suggestLocale(data);
+    var hasRealFrench = !!document.querySelector('link[rel="alternate"][hreflang="fr"]');
+    var autoAllowed = paramLang || (!document.documentElement.hasAttribute('data-no-autolang') &&
+      !(primaryLang === 'fr' && (hasRealFrench || suggested)));
+
+    var supportedLangs = ['en', 'fr', 'es', 'de', 'zh-CN', 'ar', 'hi', 'pt', 'ru', 'ja'];
+    if (autoAllowed && primaryLang && primaryLang !== pageLang && supportedLangs.includes(primaryLang)) {
+      var selectField = document.getElementById("customLangSelect");
+      if (selectField && selectField.value !== primaryLang && (!storageGet('sessionStorage', 'langAutoSet') || paramLang)) {
+        selectField.value = primaryLang;
+        storageSet('sessionStorage', 'langAutoSet', 'true');
+        // Wait for Google Translate script to be ready
+        setTimeout(function() {
+          if (typeof changeLanguage === 'function') {
+            changeLanguage(primaryLang);
+            updateDynamicSEO(primaryLang);
+          }
+        }, 1000);
+      }
+    }
+  }
+
+  // Auto-detect location for currency, language and local pages.
+  // Skipped for crawlers so search engines index each page as published.
   var urlParams = new URLSearchParams(window.location.search);
   var paramLang = urlParams.get('lang');
 
-  fetch('https://ipapi.co/json/')
-    .then(function(response) { return response.json(); })
-    .then(function(data) {
-        if (data.currency) {
-            userCurrency = data.currency;
-            
-            // Set up formatter for user's locale and currency
-            currencyFormatter = new Intl.NumberFormat(navigator.language || 'en-US', { 
-                style: 'currency', 
-                currency: userCurrency, 
-                maximumFractionDigits: userCurrency === 'XAF' || userCurrency === 'JPY' ? 0 : 2 
-            });
-
-            // Fetch exchange rate from XAF to user's currency
-            if (userCurrency !== 'XAF') {
-                fetch('https://open.er-api.com/v6/latest/XAF')
-                    .then(function(res) { return res.json(); })
-                    .then(function(ratesData) {
-                        if (ratesData && ratesData.rates && ratesData.rates[userCurrency]) {
-                            exchangeRate = ratesData.rates[userCurrency];
-                            updatePricing(); // Re-render with new currency
-                        }
-                    })
-                    .catch(function(e) { console.error("Exchange rate error:", e); });
-            } else {
-                updatePricing();
-            }
-        }
-        
-        // Auto-Language selection based on location languages (overridden by URL param)
-        var primaryLang = paramLang;
-        if (!primaryLang && data.languages) {
-            primaryLang = data.languages.split(',')[0].split('-')[0];
-            if (primaryLang === 'zh') primaryLang = 'zh-CN';
-        }
-        
-        var supportedLangs = ['en', 'fr', 'es', 'de', 'zh-CN', 'ar', 'hi', 'pt', 'ru', 'ja'];
-        if (primaryLang && supportedLangs.includes(primaryLang)) {
-            // Check if user has already manually selected a language
-            var selectField = document.getElementById("customLangSelect");
-            if (selectField && selectField.value !== primaryLang && (!sessionStorage.getItem('langAutoSet') || paramLang)) {
-                selectField.value = primaryLang;
-                sessionStorage.setItem('langAutoSet', 'true');
-                // Wait for Google Translate script to be ready
-                setTimeout(function() {
-                    if(typeof changeLanguage === 'function') {
-                        changeLanguage(primaryLang);
-                        updateDynamicSEO(primaryLang);
-                    }
-                }, 1000);
-            } else {
-                updateDynamicSEO(primaryLang); // Just update SEO even if not changing visual lang automatically
-            }
-        }
-    })
-    .catch(function(e) { console.error("Location detection error:", e); });
+  if (!isBot) {
+    var cachedGeo = storageGet('sessionStorage', 'loGeo');
+    if (cachedGeo) {
+      try { onGeo(JSON.parse(cachedGeo)); } catch (e) {}
+    } else {
+      fetch('https://ipapi.co/json/')
+        .then(function(response) { return response.json(); })
+        .then(function(data) {
+          if (data && !data.error) {
+            storageSet('sessionStorage', 'loGeo', JSON.stringify({
+              currency: data.currency, country_code: data.country_code,
+              continent_code: data.continent_code, languages: data.languages
+            }));
+            onGeo(data);
+          }
+        })
+        .catch(function(e) { console.error("Location detection error:", e); });
+    }
+  }
 
 
   /* ---------- 4. FAQ ACCORDION ---------- */
@@ -327,7 +429,7 @@
     const images = Array.from(document.querySelectorAll('.carousel-track .carousel-img'));
     
     // We only need the first half (since we duplicated them for the infinite loop)
-    const uniqueImages = images.slice(0, images.length / 2).map(img => img.src);
+    const uniqueImages = images.slice(0, images.length / 2).map(img => img.dataset.full || img.src);
     let currentIndex = 0;
 
     function openModal(index) {
@@ -423,8 +525,14 @@ function hideGoogleTranslateBanner() {
 }
 
 // Run banner cleanup on page load and continuously watch for it
+var gtCleanupScheduled = false;
 var gtBannerObserver = new MutationObserver(function() {
-    hideGoogleTranslateBanner();
+    if (gtCleanupScheduled) return;
+    gtCleanupScheduled = true;
+    requestAnimationFrame(function() {
+        gtCleanupScheduled = false;
+        hideGoogleTranslateBanner();
+    });
 });
 gtBannerObserver.observe(document.documentElement, { childList: true, subtree: true, attributes: true, attributeFilter: ['class', 'style'] });
 
@@ -464,5 +572,10 @@ gtBannerObserver.observe(document.documentElement, { childList: true, subtree: t
     }
   };
   
-  document.head.appendChild(script);
+  function loadClerk() { document.head.appendChild(script); }
+  if (document.readyState === 'complete') {
+    setTimeout(loadClerk, 1500);
+  } else {
+    window.addEventListener('load', function () { setTimeout(loadClerk, 1500); });
+  }
 })();
