@@ -653,14 +653,28 @@
         }
       }
 
-      table thead tr,
-      table tbody tr,
-      table thead th,
-      table tbody td {
+      /* Tables inside articles scroll horizontally instead of widening the page */
+      .kb-article-content table {
         border-collapse: collapse;
         width: 100%;
+        display: block;
+        overflow-x: auto;
+        white-space: normal;
+      }
+      .kb-article-content th,
+      .kb-article-content td {
         border: 0.5px solid black;
-        padding: 5px;
+        padding: 6px 8px;
+        text-align: left;
+        vertical-align: top;
+      }
+      @media (max-width: 1024px) {
+        .kb-container {
+          align-items: stretch;
+        }
+        .kb-main {
+          width: 100%;
+        }
       }
     </style>
   </head>

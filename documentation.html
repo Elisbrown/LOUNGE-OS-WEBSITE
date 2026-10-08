@@ -659,14 +659,28 @@
           transform: translateY(0);
         }
       }
-      table thead tr,
-      table tbody tr,
-      table thead th,
-      table tbody td {
+      /* Tables inside articles scroll horizontally instead of widening the page */
+      .doc-article-content table {
         border-collapse: collapse;
         width: 100%;
+        display: block;
+        overflow-x: auto;
+        white-space: normal;
+      }
+      .doc-article-content th,
+      .doc-article-content td {
         border: 0.5px solid black;
-        padding: 5px;
+        padding: 6px 8px;
+        text-align: left;
+        vertical-align: top;
+      }
+      @media (max-width: 1024px) {
+        .doc-container {
+          align-items: stretch;
+        }
+        .doc-main {
+          width: 100%;
+        }
       }
     </style>
   </head>
