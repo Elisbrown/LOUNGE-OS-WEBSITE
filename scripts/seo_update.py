@@ -17,6 +17,9 @@ What it does
 - blog/feed.xml: RSS feed of blog posts, newest first.
 - robots.txt: allow search engines and AI assistants, point to the sitemaps.
 - llms.txt: a plain-text map of the site for AI assistants.
+- Asset versions: links to /style.css and /app.js carry ?v=<content hash>, so
+  browsers and CDNs fetch the new file as soon as it changes instead of pairing
+  new HTML with a stale cached stylesheet.
 
 Dates only change when a page's content changes. Search engines ignore (and can
 distrust) lastmod values that move without real edits, so nothing here fakes
@@ -26,6 +29,8 @@ Standard library only.
 """
 import argparse
 import datetime as dt
+import functools
+import hashlib
 import html
 import json
 import os
@@ -41,6 +46,7 @@ BOT_MARK = "[seo-bot]"
 INDEXNOW_KEY = "8391080daa0a00470dfef794afac6a58"
 EXCLUDE_DIRS = {".git", ".github", "scripts", "Screenshots", "images", "node_modules"}
 EXCLUDE_FILES = {"404.html"}
+VERSIONED_ASSETS = ("style.css", "app.js")
 FR_MONTHS = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet",
              "août", "septembre", "octobre", "novembre", "décembre"]
 EN_MONTHS = ["January", "February", "March", "April", "May", "June", "July",
@@ -60,6 +66,38 @@ def last_modified(rel):
         return dt.date.today()
     out = git("log", "-1", "--format=%cs", "--invert-grep", f"--grep={re.escape(BOT_MARK)}", "--", rel)
     return dt.date.fromisoformat(out) if out else dt.date.today()
+
+
+@functools.lru_cache(maxsize=None)
+def asset_version(name, root=ROOT):
+    with open(os.path.join(root, name), "rb") as f:
+        return hashlib.sha256(f.read()).hexdigest()[:10]
+
+
+def version_links(src, root=ROOT):
+    """Rewrite href="/style.css" and src="/app.js" (with or without an old ?v=)
+    to carry the current content hash of the file."""
+    for name in VERSIONED_ASSETS:
+        src = re.sub(r'((?:href|src)=")/?%s(?:\?v=[0-9a-f]*)?"' % re.escape(name),
+                     rf'\g<1>/{name}?v={asset_version(name, root)}"', src)
+    return src
+
+
+def version_all_pages():
+    """Apply version_links to every HTML page, including noindex ones. Returns the number changed."""
+    changed = 0
+    for dirpath, dirnames, filenames in os.walk(ROOT):
+        dirnames[:] = [d for d in dirnames if d not in EXCLUDE_DIRS and not d.startswith(".")]
+        for f in filenames:
+            if not f.endswith(".html"):
+                continue
+            path = os.path.join(dirpath, f)
+            src = open(path, encoding="utf-8").read()
+            new = version_links(src)
+            if new != src:
+                open(path, "w", encoding="utf-8").write(new)
+                changed += 1
+    return changed
 
 
 def url_for(rel):
@@ -284,9 +322,12 @@ def main():
     write_feed(pages)
     write_robots()
     write_llms(pages)
+    # After discover(): lastmod is already read from git, so these edits don't move it.
+    versioned = version_all_pages()
 
     changed_urls = [p["url"] for p in pages if before.get(p["url"]) != p["lastmod"].isoformat()]
-    print(f"{len(pages)} pages in sitemap; {len(changed_files)} page date(s) synced; {len(changed_urls)} URL(s) new or updated")
+    print(f"{len(pages)} pages in sitemap; {len(changed_files)} page date(s) synced; "
+          f"{versioned} page(s) re-versioned; {len(changed_urls)} URL(s) new or updated")
     if args.indexnow_file:
         with open(args.indexnow_file, "w") as f:
             f.write("\n".join(changed_urls))

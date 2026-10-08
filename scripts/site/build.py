@@ -21,6 +21,8 @@ import yaml
 from bs4 import BeautifulSoup
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, os.path.dirname(HERE))
+from seo_update import version_links  # noqa: E402
 CONTENT = os.path.join(HERE, "content")
 SITE = "https://loungeos.app"
 TODAY = dt.date(2026, 10, 8)
@@ -930,6 +932,7 @@ def main():
     report = []
     for p in pages:
         html_out, words = build_page(p, by_url, pages)
+        html_out = version_links(html_out, repo)
         path = os.path.join(repo, p["output"]) if p.get("output") else os.path.join(repo, p["url"].strip("/"), "index.html")
         os.makedirs(os.path.dirname(path), exist_ok=True)
         open(path, "w", encoding="utf-8").write(html_out)
@@ -937,7 +940,7 @@ def main():
     if any(p["type"] == "blog" for p in pages):
         path = os.path.join(repo, "blog", "index.html")
         os.makedirs(os.path.dirname(path), exist_ok=True)
-        open(path, "w", encoding="utf-8").write(blog_index(pages, by_url))
+        open(path, "w", encoding="utf-8").write(version_links(blog_index(pages, by_url), repo))
     for r in sorted(report):
         flag = ""
         if r[4] > 65:
