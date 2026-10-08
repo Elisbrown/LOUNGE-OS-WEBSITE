@@ -1,0 +1,56 @@
+name: SEO refresh
+
+# Regenerates sitemap.xml (lastmod from git history), blog/feed.xml, robots.txt,
+# llms.txt and on-page "updated" dates, commits them, then notifies IndexNow
+# (Bing, Yandex and others; Bing's index also feeds ChatGPT and Copilot search).
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "17 4 * * *" # daily safety net
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: seo-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # full history: lastmod comes from each page's last commit
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Regenerate sitemap, feed, robots.txt, llms.txt and page dates
+        run: python3 scripts/seo_update.py --indexnow-file "$RUNNER_TEMP/indexnow-urls.txt"
+
+      - name: Commit and push changes
+        id: commit
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "Nothing changed."
+            echo "pushed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "chore(seo): refresh sitemap, feed and modified dates [seo-bot]"
+          git push
+          echo "pushed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Wait for the site to redeploy
+        if: steps.commit.outputs.pushed == 'true'
+        run: sleep 240
+
+      - name: Notify IndexNow of new and updated pages
+        if: steps.commit.outputs.pushed == 'true'
+        run: python3 scripts/seo_update.py --ping "$RUNNER_TEMP/indexnow-urls.txt"
