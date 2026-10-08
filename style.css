@@ -2791,3 +2791,51 @@ button.nav-dropdown-toggle {
     display: none;
   }
 }
+
+/* Mobile menu dropdowns expand inline. This block must stay after the desktop
+   .nav-dropdown-menu rules, which otherwise win the cascade on small screens. */
+@media (max-width: 1024px) {
+  .nav-links .nav-dropdown-menu {
+    position: static;
+    left: auto;
+    transform: none;
+    min-width: 100%;
+    padding: 0;
+    margin-top: 0;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-links .nav-dropdown:hover .nav-dropdown-menu,
+  .nav-links .nav-dropdown:focus-within .nav-dropdown-menu,
+  .nav-links .nav-dropdown.active .nav-dropdown-menu {
+    display: flex;
+    transform: none;
+  }
+}
+
+/* Location banner: full-width bar on phones instead of a squeezed centred box */
+@media (max-width: 600px) {
+  .locale-banner {
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    transform: none;
+    max-width: none;
+    justify-content: space-between;
+    padding: 0.75rem 0.5rem 0.75rem 1rem;
+  }
+
+  .locale-banner span {
+    flex: 1 1 100%;
+  }
+}
+
+/* Don't let the location banner cover the open mobile menu */
+body.menu-open .locale-banner {
+  display: none;
+}

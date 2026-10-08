@@ -182,9 +182,14 @@
     var locale = navigator.language || 'en-US';
     var table = REGIONAL_PRICING[cur];
     function setFormatter(c) {
+      var loc = c === 'XAF' || c === 'XOF' ? 'fr-FR' : locale;
+      // narrowSymbol shows ₦, GH₵, R, € instead of NGN, GHS, ZAR when the browser
+      // language doesn't match the currency's country; older browsers fall back.
       try {
-        currencyFormatter = new Intl.NumberFormat(c === 'XAF' || c === 'XOF' ? 'fr-FR' : locale, { style: 'currency', currency: c, maximumFractionDigits: 0 });
-      } catch (e) {}
+        currencyFormatter = new Intl.NumberFormat(loc, { style: 'currency', currency: c, currencyDisplay: 'narrowSymbol', maximumFractionDigits: 0 });
+      } catch (e) {
+        try { currencyFormatter = new Intl.NumberFormat(loc, { style: 'currency', currency: c, maximumFractionDigits: 0 }); } catch (e2) {}
+      }
     }
     if (table) {
       activePrices = table; activeRegion = table.region; activeCurrency = cur;
