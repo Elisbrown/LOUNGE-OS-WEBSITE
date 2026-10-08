@@ -1,0 +1,785 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LoungeOS FAQ: Offline POS, Pricing, Setup, Hardware &amp; Data</title>
+    <meta name="description" content="Answers to common questions about LoungeOS: how it works offline, what hardware you need, pricing by country, activation, mobile money, security and backups." />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <link rel="canonical" href="https://loungeos.app/faq/" />
+    <link rel="alternate" hreflang="en" href="https://loungeos.app/faq/" />
+    <link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/faq/" />
+    <link rel="alternate" hreflang="x-default" href="https://loungeos.app/faq/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="LoungeOS" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="LoungeOS FAQ: Offline POS, Pricing, Setup, Hardware &amp; Data" />
+    <meta property="og:description" content="Answers to common questions about LoungeOS: how it works offline, what hardware you need, pricing by country, activation, mobile money, security and backups." />
+    <meta property="og:url" content="https://loungeos.app/faq/" />
+    <meta property="og:image" content="https://loungeos.app/images/og-loungeos.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="LoungeOS: offline POS for restaurants, bars and lounges" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="LoungeOS FAQ: Offline POS, Pricing, Setup, Hardware &amp; Data" />
+    <meta name="twitter:description" content="Answers to common questions about LoungeOS: how it works offline, what hardware you need, pricing by country, activation, mobile money, security and backups." />
+    <meta name="twitter:image" content="https://loungeos.app/images/og-loungeos.jpg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="alternate" type="application/rss+xml" title="LoungeOS Blog" href="https://loungeos.app/blog/feed.xml" />
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://loungeos.app/#organization",
+      "name": "LoungeOS",
+      "url": "https://loungeos.app/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://loungeos.app/images/logo/loungeos-icon-512.png",
+        "width": 512,
+        "height": 512
+      },
+      "image": "https://loungeos.app/images/og-loungeos.jpg",
+      "description": "LoungeOS develops offline-first point of sale (POS) and management software for restaurants, bars, lounges, nightclubs and hotels.",
+      "email": "hello@loungeos.app",
+      "telephone": "+237679690703",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CM"
+      },
+      "areaServed": [
+        "CM",
+        "Africa",
+        "Worldwide"
+      ],
+      "knowsLanguage": [
+        "en",
+        "fr"
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "email": "support@loungeos.app",
+          "telephone": "+237679690703",
+          "availableLanguage": [
+            "English",
+            "French"
+          ]
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "email": "hello@loungeos.app",
+          "telephone": "+237689699688",
+          "availableLanguage": [
+            "English",
+            "French"
+          ]
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "billing support",
+          "email": "billing@loungeos.app"
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://loungeos.app/#website",
+      "url": "https://loungeos.app/",
+      "name": "LoungeOS",
+      "publisher": {
+        "@id": "https://loungeos.app/#organization"
+      },
+      "inLanguage": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://loungeos.app/#software",
+      "name": "LoungeOS",
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "Restaurant point of sale (POS) and management software",
+      "operatingSystem": "Windows 10, Windows 11 (host computer); any modern web browser on the local network for tablets and phones",
+      "softwareVersion": "1.3.6",
+      "fileSize": "383MB",
+      "downloadUrl": "https://loungeos.app/download/",
+      "installUrl": "https://loungeos.app/download/",
+      "url": "https://loungeos.app/",
+      "inLanguage": [
+        "en",
+        "fr"
+      ],
+      "publisher": {
+        "@id": "https://loungeos.app/#organization"
+      },
+      "description": "Offline-first restaurant, bar and lounge POS with kitchen and bar display screens, table and floor management, inventory, role-based permissions with audit logs, and double-entry accounting. Runs on your own Windows computer and local Wi-Fi network without internet.",
+      "featureList": [
+        "Works without internet on the local network",
+        "Point of sale with table and floor management",
+        "Kitchen Display System (KDS) and Bar Display System (BDS) with automatic food/drink routing",
+        "Split and merge bills; split payments across cash, card and mobile money",
+        "Mobile money payment recording (MTN Mobile Money, Orange Money)",
+        "Inventory and stock movements with low-stock alerts, suppliers and CSV import/export",
+        "Role-based permissions for 8 roles and a searchable activity log",
+        "Double-entry accounting: journals, profit & loss, balance sheet, cash flow",
+        "Multi-currency (XAF, USD, EUR, GBP, NGN, GHS and custom) and multiple tax rates",
+        "Thermal receipt printing with logo and custom messages",
+        "Encrypted database backups and restore",
+        "English and French interface"
+      ],
+      "screenshot": [
+        "https://loungeos.app/images/screens/loungeos-pos-order-screen.webp",
+        "https://loungeos.app/images/screens/loungeos-kitchen-display-system.webp",
+        "https://loungeos.app/images/screens/loungeos-inventory-dashboard.webp"
+      ],
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "30-day free trial",
+          "price": "0",
+          "priceCurrency": "XAF",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/"
+        },
+        {
+          "@type": "Offer",
+          "name": "Monthly plan (FCFA zone)",
+          "price": "30000",
+          "priceCurrency": "XAF",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "30000",
+            "priceCurrency": "XAF",
+            "billingDuration": "P1M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 1,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "6-month plan (FCFA zone)",
+          "price": "150000",
+          "priceCurrency": "XAF",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "150000",
+            "priceCurrency": "XAF",
+            "billingDuration": "P6M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 6,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "12-month plan (FCFA zone)",
+          "price": "240000",
+          "priceCurrency": "XAF",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "240000",
+            "priceCurrency": "XAF",
+            "billingDuration": "P12M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 12,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Monthly plan (international)",
+          "price": "49",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "49",
+            "priceCurrency": "USD",
+            "billingDuration": "P1M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 1,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "12-month plan (international)",
+          "price": "468",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "468",
+            "priceCurrency": "USD",
+            "billingDuration": "P12M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 12,
+              "unitCode": "MON"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://loungeos.app/faq/#webpage",
+      "url": "https://loungeos.app/faq/",
+      "name": "LoungeOS FAQ: Offline POS, Pricing, Setup, Hardware & Data",
+      "description": "Answers to common questions about LoungeOS: how it works offline, what hardware you need, pricing by country, activation, mobile money, security and backups.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://loungeos.app/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://loungeos.app/faq/#breadcrumb"
+      },
+      "dateModified": "2026-10-08",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://loungeos.app/images/screens/loungeos-pos-menu-grid.webp"
+      },
+      "about": {
+        "@id": "https://loungeos.app/#software"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://loungeos.app/faq/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://loungeos.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "LoungeOS FAQ",
+          "item": "https://loungeos.app/faq/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://loungeos.app/faq/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is LoungeOS?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>LoungeOS is an offline-first point of sale (POS) and management system for restaurants, bars, lounges, nightclubs, cafés and hotels. It handles table ordering, kitchen and bar display screens, payments including mobile money, inventory, staff permissions with an activity log, and double-entry accounting. It runs on a Windows computer in your venue and works without internet.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who is LoungeOS for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Any business that serves food or drinks: restaurants, bars, snack bars, lounges, nightclubs, cafés, fast-food outlets and hotel restaurants and bars. It is especially useful where the internet or power is unreliable, and where owners need tight control over cash and stock.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is LoungeOS made?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>LoungeOS is developed in Cameroon and used across Africa and internationally. Support is available in English and French. See <a href=\"https://loungeos.app/about/\">About LoungeOS<\/a>.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What languages does LoungeOS support?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>The application interface is available in English and French, with more languages planned for version 1.3.7. The website can be read in ten languages.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does LoungeOS work without internet?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Yes. LoungeOS runs on your own computer and local Wi-Fi network, so orders, kitchen and bar screens, payments, stock and reports all keep working during an internet outage. You need internet only to activate or renew your licence. See <a href=\"https://loungeos.app/features/offline-pos/\">offline POS<\/a>.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What hardware do I need?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>One Windows 10 or 11 computer (64-bit, 4 GB RAM, 2 GB free storage) as the host, a Wi-Fi router, and any phones, tablets or computers with a web browser as terminals. A thermal receipt printer is optional but recommended. See the <a href=\"https://loungeos.app/blog/restaurant-pos-hardware-guide/\">hardware guide<\/a>.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many devices can I connect?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>As many as you need. Every plan includes unlimited terminals, with no per-device fee.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there a mobile app?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Phones and tablets use LoungeOS in their web browser, connected to the host computer on your Wi-Fi. There is nothing to install on them. The host application runs on Windows, and a macOS version is in development.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens during a power cut?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Phones and tablets run on battery. Put the host computer and the Wi-Fi router on a small UPS, or use a laptop as the host, and service continues. See <a href=\"https://loungeos.app/blog/run-a-restaurant-during-power-and-internet-outages/\">running a restaurant during power and internet outages<\/a>.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do tablets connect to LoungeOS?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Connect them to the same Wi-Fi as the host computer, then open <code>http://&lt;host-IP&gt;:2304<\/code> in the browser, for example <code>http://192.168.1.15:2304<\/code>. Allow port 2304 in the Windows firewall on the host.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does LoungeOS cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>In the FCFA zone, LoungeOS costs 30,000 FCFA per month, 25,000 FCFA per month on a 6-month plan, or 20,000 FCFA per month on a yearly plan. Prices are set by region, for example ₦35,000 a month in Nigeria and US$49 a month in the US. Every plan includes every feature and unlimited terminals. See <a href=\"https://loungeos.app/pricing/\">pricing<\/a>.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there a free trial?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Yes. 30 days, every feature, unlimited terminals, and no credit card required.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you charge per device or take a percentage of sales?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>No. LoungeOS is a flat subscription with unlimited terminals, and we take no percentage of your sales.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I cancel at any time?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Yes. Monthly plans can be cancelled at any time. 6-month and yearly plans are paid upfront at a lower monthly price.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does setup take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Installation and licence activation take about five minutes. Entering your menu, tables and staff typically takes an hour or two, depending on menu size. You can import stock lists from CSV.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I activate LoungeOS?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Create an account at account.loungeos.app, choose the trial or a plan, open LoungeOS and copy your Machine ID. Paste it in your account dashboard to generate a licence key, then paste the key into LoungeOS and click Activate. Full steps are on the <a href=\"https://loungeos.app/download/\">download page<\/a>.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I move LoungeOS to a new computer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Yes. Back up your database, install LoungeOS on the new computer, restore the backup and activate the licence on the new machine. Contact <a href=\"https://loungeos.app/contact/\">support<\/a> if your licence needs to be moved.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does LoungeOS have a kitchen display system?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Yes. Food items go to the kitchen display and drinks to the bar display automatically, with Pending, In progress and Ready columns and audio alerts. See <a href=\"https://loungeos.app/features/kitchen-display-system/\">kitchen display system<\/a>.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can LoungeOS prevent employee theft?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>It removes the most common opportunities. There are eight roles with limited permissions, and manager approval is required to remove items from sent orders or to split and merge bills. Every cancellation needs a reason, and every action goes into a searchable activity log. See <a href=\"https://loungeos.app/features/loss-prevention/\">loss prevention<\/a>.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does LoungeOS support mobile money?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Yes. Cashiers can record MTN Mobile Money and Orange Money payments with the transaction reference, as well as cash and card, and split one bill across methods. See <a href=\"https://loungeos.app/features/mobile-money-pos/\">mobile money payments<\/a>.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does LoungeOS include accounting?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Yes. LoungeOS keeps a double-entry ledger and produces a profit and loss statement, balance sheet and cash-flow statement from your sales, purchases and expenses. See <a href=\"https://loungeos.app/features/restaurant-accounting/\">restaurant accounting<\/a>.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I manage several restaurants?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Each venue runs its own LoungeOS installation. For groups and multi-site operations, the Enterprise plan adds setup, training and custom integrations. <a href=\"https://loungeos.app/contact/\">Contact sales<\/a>.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is my data stored?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>On your host computer, in a local database. Sales and stock data are not sent to external servers during operation.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I back up my data?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Click Backup Database to download an encrypted backup file, or enable automatic backups. Keep copies on a USB drive and in cloud storage. If your computer fails, install LoungeOS on another one and restore the backup.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should I do after the first login?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Change the default Super Admin password immediately, then create a personal account for each staff member with the right role. Never share the Super Admin login.<\/p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+    </script>
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+      (function (c, l, a, r, i, t, y) {
+        c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
+        t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", "x9n1mwb8c5");
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TNP53ZZW7K"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag("js", new Date());
+      gtag("config", "G-TNP53ZZW7K");
+    </script>
+    <!-- Usercentrics CMP -->
+    <script id="usercentrics-cmp" src="https://app.usercentrics.eu/browser-ui/latest/loader.js" data-settings-id="SSwfY4ZtHuL22V" async></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <nav class="navbar" id="navbar" aria-label="Main Navigation">
+      <div class="nav-content">
+        <div class="nav-left">
+          <a href="/" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 0.75rem;">
+            <img src="/images/logo/loungeos-logo.svg" alt="LoungeOS" width="148" height="26" class="nav-logo" />
+            <span class="nav-badge">Restaurant POS</span>
+          </a>
+        </div>
+
+        <div class="nav-links" id="navLinks">
+          <a href="/">Home</a>
+          <a href="/features/">Features</a>
+          <div class="nav-dropdown">
+            <button type="button" class="nav-dropdown-toggle" aria-haspopup="true">Solutions <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+            <div class="nav-dropdown-menu">
+              <a href="/restaurant-pos/">Restaurants</a>
+              <a href="/bar-pos/">Bars</a>
+              <a href="/lounge-pos/">Lounges</a>
+              <a href="/nightclub-pos/">Nightclubs</a>
+              <a href="/hotel-pos/">Hotels</a>
+              <a href="/cafe-pos/">Cafés &amp; Fast Food</a>
+              <a href="/cameroon/">Cameroon</a>
+              <a href="/africa/">Africa</a>
+            </div>
+          </div>
+          <a href="/pricing/">Pricing</a>
+          <a href="/download/">Download</a>
+          <div class="nav-dropdown">
+            <button type="button" class="nav-dropdown-toggle" aria-haspopup="true">Resources <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+            <div class="nav-dropdown-menu">
+              <a href="/blog/">Blog</a>
+              <a href="/faq/">FAQ</a>
+              <a href="/knowledgebase.html">Knowledge Base</a>
+              <a href="/documentation.html">Documentation</a>
+              <a href="/about/">About</a>
+              <a href="/contact/">Contact</a>
+              <a href="/fr/">Français</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-cta" style="display: flex; align-items: center; gap: 1rem">
+          <div class="lang-selector">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 16px; height: 16px" aria-hidden="true"><circle cx="12" cy="12" r="10" /><line x1="2" y1="12" x2="22" y2="12" /><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" /></svg>
+            <select id="customLangSelect" aria-label="Select Language" onchange="changeLanguage(this.value)">
+              <option value="en" selected>English</option>
+              <option value="fr">Français</option>
+              <option value="es">Español</option>
+              <option value="de">Deutsch</option>
+              <option value="zh-CN">中文</option>
+              <option value="ar">العربية</option>
+              <option value="hi">हिन्दी</option>
+              <option value="pt">Português</option>
+              <option value="ru">Русский</option>
+              <option value="ja">日本語</option>
+            </select>
+          </div>
+          <a href="https://account.loungeos.app/sign-up" class="btn btn-primary btn-sm" id="navCtaBtn">Start Free Trial</a>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+    <main id="main-content">
+      <header class="page-hero">
+        <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">›</span> <span aria-current="page">LoungeOS FAQ</span></nav>
+        <p class="section-label">FAQ</p>
+        <h1>Frequently asked questions</h1>
+        <p class="lead">Straight answers about how LoungeOS works, what it costs, what you need to run it and how your data is protected.</p>
+        
+        
+        
+      </header>
+      <section class="content-section">
+        <div class="prose prose-wide">
+<h2 id="about-loungeos">About LoungeOS</h2>
+<h3 id="what-is-loungeos">What is LoungeOS?</h3>
+<p>LoungeOS is an offline-first point of sale (POS) and management system for restaurants, bars, lounges, nightclubs, cafés and hotels. It handles table ordering, kitchen and bar display screens, payments including mobile money, inventory, staff permissions with an activity log, and double-entry accounting. It runs on a Windows computer in your venue and works without internet.</p>
+<h3 id="who-is-loungeos-for">Who is LoungeOS for?</h3>
+<p>Any business that serves food or drinks: restaurants, bars, snack bars, lounges, nightclubs, cafés, fast-food outlets and hotel restaurants and bars. It is especially useful where the internet or power is unreliable, and where owners need tight control over cash and stock.</p>
+<h3 id="where-is-loungeos-made">Where is LoungeOS made?</h3>
+<p>LoungeOS is developed in Cameroon and used across Africa and internationally. Support is available in English and French. See <a href="/about/">About LoungeOS</a>.</p>
+<h3 id="what-languages-does-loungeos-support">What languages does LoungeOS support?</h3>
+<p>The application interface is available in English and French, with more languages planned for version 1.3.7. The website can be read in ten languages.</p>
+<h2 id="offline-use-and-hardware">Offline use and hardware</h2>
+<h3 id="does-loungeos-work-without-internet">Does LoungeOS work without internet?</h3>
+<p>Yes. LoungeOS runs on your own computer and local Wi-Fi network, so orders, kitchen and bar screens, payments, stock and reports all keep working during an internet outage. You need internet only to activate or renew your licence. See <a href="/features/offline-pos/">offline POS</a>.</p>
+<h3 id="what-hardware-do-i-need">What hardware do I need?</h3>
+<p>One Windows 10 or 11 computer (64-bit, 4 GB RAM, 2 GB free storage) as the host, a Wi-Fi router, and any phones, tablets or computers with a web browser as terminals. A thermal receipt printer is optional but recommended. See the <a href="/blog/restaurant-pos-hardware-guide/">hardware guide</a>.</p>
+<h3 id="how-many-devices-can-i-connect">How many devices can I connect?</h3>
+<p>As many as you need. Every plan includes unlimited terminals, with no per-device fee.</p>
+<h3 id="is-there-a-mobile-app">Is there a mobile app?</h3>
+<p>Phones and tablets use LoungeOS in their web browser, connected to the host computer on your Wi-Fi. There is nothing to install on them. The host application runs on Windows, and a macOS version is in development.</p>
+<h3 id="what-happens-during-a-power-cut">What happens during a power cut?</h3>
+<p>Phones and tablets run on battery. Put the host computer and the Wi-Fi router on a small UPS, or use a laptop as the host, and service continues. See <a href="/blog/run-a-restaurant-during-power-and-internet-outages/">running a restaurant during power and internet outages</a>.</p>
+<h3 id="how-do-tablets-connect-to-loungeos">How do tablets connect to LoungeOS?</h3>
+<p>Connect them to the same Wi-Fi as the host computer, then open <code>http://&lt;host-IP&gt;:2304</code> in the browser, for example <code>http://192.168.1.15:2304</code>. Allow port 2304 in the Windows firewall on the host.</p>
+<h2 id="pricing-and-billing">Pricing and billing</h2>
+<h3 id="how-much-does-loungeos-cost">How much does LoungeOS cost?</h3>
+<p>In the FCFA zone, LoungeOS costs 30,000 FCFA per month, 25,000 FCFA per month on a 6-month plan, or 20,000 FCFA per month on a yearly plan. Prices are set by region, for example ₦35,000 a month in Nigeria and US$49 a month in the US. Every plan includes every feature and unlimited terminals. See <a href="/pricing/">pricing</a>.</p>
+<h3 id="is-there-a-free-trial">Is there a free trial?</h3>
+<p>Yes. 30 days, every feature, unlimited terminals, and no credit card required.</p>
+<h3 id="do-you-charge-per-device-or-take-a-percentage-of-sales">Do you charge per device or take a percentage of sales?</h3>
+<p>No. LoungeOS is a flat subscription with unlimited terminals, and we take no percentage of your sales.</p>
+<h3 id="can-i-cancel-at-any-time">Can I cancel at any time?</h3>
+<p>Yes. Monthly plans can be cancelled at any time. 6-month and yearly plans are paid upfront at a lower monthly price.</p>
+<h2 id="setup-and-activation">Setup and activation</h2>
+<h3 id="how-long-does-setup-take">How long does setup take?</h3>
+<p>Installation and licence activation take about five minutes. Entering your menu, tables and staff typically takes an hour or two, depending on menu size. You can import stock lists from CSV.</p>
+<h3 id="how-do-i-activate-loungeos">How do I activate LoungeOS?</h3>
+<p>Create an account at account.loungeos.app, choose the trial or a plan, open LoungeOS and copy your Machine ID. Paste it in your account dashboard to generate a licence key, then paste the key into LoungeOS and click Activate. Full steps are on the <a href="/download/">download page</a>.</p>
+<h3 id="can-i-move-loungeos-to-a-new-computer">Can I move LoungeOS to a new computer?</h3>
+<p>Yes. Back up your database, install LoungeOS on the new computer, restore the backup and activate the licence on the new machine. Contact <a href="/contact/">support</a> if your licence needs to be moved.</p>
+<h2 id="features">Features</h2>
+<h3 id="does-loungeos-have-a-kitchen-display-system">Does LoungeOS have a kitchen display system?</h3>
+<p>Yes. Food items go to the kitchen display and drinks to the bar display automatically, with Pending, In progress and Ready columns and audio alerts. See <a href="/features/kitchen-display-system/">kitchen display system</a>.</p>
+<h3 id="can-loungeos-prevent-employee-theft">Can LoungeOS prevent employee theft?</h3>
+<p>It removes the most common opportunities. There are eight roles with limited permissions, and manager approval is required to remove items from sent orders or to split and merge bills. Every cancellation needs a reason, and every action goes into a searchable activity log. See <a href="/features/loss-prevention/">loss prevention</a>.</p>
+<h3 id="does-loungeos-support-mobile-money">Does LoungeOS support mobile money?</h3>
+<p>Yes. Cashiers can record MTN Mobile Money and Orange Money payments with the transaction reference, as well as cash and card, and split one bill across methods. See <a href="/features/mobile-money-pos/">mobile money payments</a>.</p>
+<h3 id="does-loungeos-include-accounting">Does LoungeOS include accounting?</h3>
+<p>Yes. LoungeOS keeps a double-entry ledger and produces a profit and loss statement, balance sheet and cash-flow statement from your sales, purchases and expenses. See <a href="/features/restaurant-accounting/">restaurant accounting</a>.</p>
+<h3 id="can-i-manage-several-restaurants">Can I manage several restaurants?</h3>
+<p>Each venue runs its own LoungeOS installation. For groups and multi-site operations, the Enterprise plan adds setup, training and custom integrations. <a href="/contact/">Contact sales</a>.</p>
+<h2 id="security-and-data">Security and data</h2>
+<h3 id="where-is-my-data-stored">Where is my data stored?</h3>
+<p>On your host computer, in a local database. Sales and stock data are not sent to external servers during operation.</p>
+<h3 id="how-do-i-back-up-my-data">How do I back up my data?</h3>
+<p>Click Backup Database to download an encrypted backup file, or enable automatic backups. Keep copies on a USB drive and in cloud storage. If your computer fails, install LoungeOS on another one and restore the backup.</p>
+<h3 id="what-should-i-do-after-the-first-login">What should I do after the first login?</h3>
+<p>Change the default Super Admin password immediately, then create a personal account for each staff member with the right role. Never share the Super Admin login.</p>
+        </div>
+      </section>
+      <section style="padding: 0 1.5rem 1rem"><div class="cta-box">
+  <h2>Run your next service on LoungeOS</h2>
+  <p>Install LoungeOS on a Windows computer, connect your tablets and phones over Wi-Fi, and run real service for 30 days. Free, no credit card.</p>
+  <div class="cta-actions">
+    <a class="btn btn-primary btn-lg" href="https://account.loungeos.app/sign-up">Start Free Trial</a>
+    <a class="btn btn-secondary btn-lg" href="/download/">Download for Windows</a>
+  </div>
+</div></section>
+      <section class="related-section">
+        <h2 class="section-title">Explore more</h2>
+        <div class="card-grid">
+<a class="post-card" href="/pricing/">
+  <img src="/images/screens/loungeos-pos-order-screen-800.webp" width="800" height="430" alt="LoungeOS POS order screen" loading="lazy" decoding="async" />
+  <div class="post-card-body">
+    <span class="tag">Pricing</span>
+    <h3>Pricing</h3>
+    <p>One plan with every feature and unlimited terminals, priced for your region. 30-day free trial.</p>
+    <span class="read-more">Learn more →</span>
+  </div>
+</a>
+<a class="post-card" href="/download/">
+  <img src="/images/screens/loungeos-login-screen-800.webp" width="800" height="430" alt="LoungeOS login screen on a Windows computer" loading="lazy" decoding="async" />
+  <div class="post-card-body">
+    <span class="tag">Download · Version 1.3.6</span>
+    <h3>Download LoungeOS</h3>
+    <p>Windows 10 &amp; 11 installer, requirements, activation steps and network setup.</p>
+    <span class="read-more">Learn more →</span>
+  </div>
+</a>
+<a class="post-card" href="/features/">
+  <img src="/images/screens/loungeos-dashboard-sales-analytics-800.webp" width="800" height="430" alt="LoungeOS dashboard showing total revenue, daily sales, open orders, active tables and sales by category" loading="lazy" decoding="async" />
+  <div class="post-card-body">
+    <span class="tag">Features</span>
+    <h3>All LoungeOS features</h3>
+    <p>Every LoungeOS feature in one place: offline POS, table management, kitchen and bar displays, inventory, staff permissions, audit logs, mobile money and accounting.</p>
+    <span class="read-more">Learn more →</span>
+  </div>
+</a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-grid footer-grid-wide">
+        <div class="footer-brand">
+          <img src="/images/logo/loungeos-logo-white.svg" alt="LoungeOS" width="159" height="28" class="footer-logo" />
+          <p>Offline-first POS and management system for restaurants, bars, lounges and hotels. Built in Cameroon, used across Africa and beyond.</p>
+          <div class="footer-worldwide">
+            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> All currencies</span>
+            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> English &amp; French</span>
+            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Works offline</span>
+          </div>
+          <p class="footer-contact">
+            <a href="mailto:support@loungeos.app">support@loungeos.app</a><br />
+            <a href="mailto:hello@loungeos.app">hello@loungeos.app</a><br />
+            <a href="tel:+237679690703">+237 679 690 703</a>
+          </p>
+        </div>
+        <div class="footer-col">
+          <h3>Product</h3>
+          <a href="/features/">Features</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/download/">Download</a>
+          <a href="/features/offline-pos/">Offline POS</a>
+          <a href="/features/kitchen-display-system/">Kitchen Display System</a>
+          <a href="/features/inventory-management/">Inventory</a>
+          <a href="/features/restaurant-accounting/">Accounting</a>
+        </div>
+        <div class="footer-col">
+          <h3>Solutions</h3>
+          <a href="/restaurant-pos/">Restaurant POS</a>
+          <a href="/bar-pos/">Bar POS</a>
+          <a href="/lounge-pos/">Lounge POS</a>
+          <a href="/nightclub-pos/">Nightclub POS</a>
+          <a href="/hotel-pos/">Hotel POS</a>
+          <a href="/cafe-pos/">Café &amp; Fast Food POS</a>
+        </div>
+        <div class="footer-col">
+          <h3>Countries</h3>
+          <a href="/cameroon/">Cameroon</a>
+          <a href="/nigeria/">Nigeria</a>
+          <a href="/ghana/">Ghana</a>
+          <a href="/south-africa/">South Africa</a>
+          <a href="/africa/">Africa</a>
+          <a href="/fr/cameroun/">Cameroun (FR)</a>
+          <a href="/fr/cote-divoire/">Côte d'Ivoire (FR)</a>
+          <a href="/fr/senegal/">Sénégal (FR)</a>
+        </div>
+        <div class="footer-col">
+          <h3>Resources</h3>
+          <a href="/blog/">Blog</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/knowledgebase.html">Knowledge Base</a>
+          <a href="/documentation.html">Documentation</a>
+          <a href="/about/">About</a>
+          <a href="/contact/">Contact</a>
+          <a href="/privacy.html">Privacy Policy</a>
+          <a href="/terms.html">Terms of Service</a>
+          <a href="/accessibility.html">Accessibility</a>
+          <a href="/legal.html">Legal</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 LoungeOS. All rights reserved.</p>
+        <a href="https://account.loungeos.app/sign-up" class="btn btn-outline-light btn-sm" id="footerCtaBtn">Start Free Trial <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg></a>
+      </div>
+    </footer>
+    <div id="google_translate_element" style="display: none"></div>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: "en", autoDisplay: false },
+          "google_translate_element",
+        );
+      }
+    </script>
+    <script defer type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script defer src="/app.js"></script>
+    <!-- Botpress Webchat -->
+    <script defer src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
+    <script defer src="https://files.bpcontent.cloud/2026/06/19/19/20260619193215-LONFMDIT.js"></script>
+  </body>
+</html>

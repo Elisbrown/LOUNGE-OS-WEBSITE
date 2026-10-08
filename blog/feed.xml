@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>LoungeOS Blog</title>
+    <link>https://loungeos.app/blog/</link>
+    <atom:link href="https://loungeos.app/blog/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>Guides on restaurant, bar and lounge POS systems, loss prevention, inventory, accounting and running hospitality businesses in Africa.</description>
+    <language>en</language>
+    <lastBuildDate>Thu, 08 Oct 2026 08:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Vols des employés au bar ou au restaurant : 10 techniques et parades</title>
+      <link>https://loungeos.app/fr/blog/vols-employes-bar-restaurant/</link>
+      <guid isPermaLink="true">https://loungeos.app/fr/blog/vols-employes-bar-restaurant/</guid>
+      <description>Comment les employés volent dans les bars, restaurants et lounges (annulations, sous-facturation, tournées offertes, faux Mobile Money) et comment l'empêcher.</description>
+      <pubDate>Thu, 08 Oct 2026 08:00:00 +0000</pubDate>
+      <dc:language>fr</dc:language>
+    </item>
+    <item>
+      <title>Logiciel de caisse restaurant en Afrique : bien choisir en 2026</title>
+      <link>https://loungeos.app/fr/blog/logiciel-caisse-restaurant-afrique/</link>
+      <guid isPermaLink="true">https://loungeos.app/fr/blog/logiciel-caisse-restaurant-afrique/</guid>
+      <description>Choisir un logiciel de caisse pour restaurant, bar ou lounge en Afrique : fonctionnement hors ligne, Mobile Money, contrôle du personnel, prix en FCFA.</description>
+      <pubDate>Thu, 08 Oct 2026 08:00:00 +0000</pubDate>
+      <dc:language>fr</dc:language>
+    </item>
+    <item>
+      <title>Coupures de courant et d'internet : garder son restaurant ouvert</title>
+      <link>https://loungeos.app/fr/blog/coupures-courant-internet-restaurant/</link>
+      <guid isPermaLink="true">https://loungeos.app/fr/blog/coupures-courant-internet-restaurant/</guid>
+      <description>Délestages et coupures d'internet : continuer à servir dans un restaurant, bar ou lounge. Onduleur, caisse hors ligne, paiements, cuisine, chaîne du froid.</description>
+      <pubDate>Thu, 08 Oct 2026 08:00:00 +0000</pubDate>
+      <dc:language>fr</dc:language>
+    </item>
+    <item>
+      <title>What Is a Kitchen Display System (KDS)? Benefits, Setup &amp; Costs</title>
+      <link>https://loungeos.app/blog/what-is-a-kitchen-display-system/</link>
+      <guid isPermaLink="true">https://loungeos.app/blog/what-is-a-kitchen-display-system/</guid>
+      <description>A kitchen display system replaces paper tickets with screens. Learn how a KDS works, its benefits, what hardware it needs, how routing works and how to set one up.</description>
+      <pubDate>Thu, 08 Oct 2026 08:00:00 +0000</pubDate>
+      <dc:language>en</dc:language>
+    </item>
+    <item>
+      <title>How to Run a Restaurant During Power Cuts &amp; Internet Outages</title>
+      <link>https://loungeos.app/blog/run-a-restaurant-during-power-and-internet-outages/</link>
+      <guid isPermaLink="true">https://loungeos.app/blog/run-a-restaurant-during-power-and-internet-outages/</guid>
+      <description>A checklist for keeping a restaurant, bar or lounge running through power cuts and internet outages: backup power, POS, payments, kitchen and cold chain.</description>
+      <pubDate>Thu, 08 Oct 2026 08:00:00 +0000</pubDate>
+      <dc:language>en</dc:language>
+    </item>
+    <item>
+      <title>Restaurant Table Management: Floor Plans, Sections &amp; Table Turns</title>
+      <link>https://loungeos.app/blog/restaurant-table-management/</link>
+      <guid isPermaLink="true">https://loungeos.app/blog/restaurant-table-management/</guid>
+      <description>How to manage restaurant tables: floor plans, waiter sections, table status, turn times, reservations, splitting and merging bills, and key metrics.</description>
+      <pubDate>Thu, 08 Oct 2026 08:00:00 +0000</pubDate>
+      <dc:language>en</dc:language>
+    </item>
+    <item>
+      <title>Restaurant POS Hardware Guide: PC, Tablets, Printer, Wi-Fi, UPS</title>
+      <link>https://loungeos.app/blog/restaurant-pos-hardware-guide/</link>
+      <guid isPermaLink="true">https://loungeos.app/blog/restaurant-pos-hardware-guide/</guid>
+      <description>What hardware does a restaurant POS need? Host computer specs, tablets, thermal printers, Wi-Fi routers, kitchen screens and UPS sizing, with budget setups.</description>
+      <pubDate>Thu, 08 Oct 2026 08:00:00 +0000</pubDate>
+      <dc:language>en</dc:language>
+    </item>
+    <item>
+      <title>15 Restaurant KPIs Every Owner Should Track (With Formulas)</title>
+      <link>https://loungeos.app/blog/restaurant-kpis-metrics/</link>
+      <guid isPermaLink="true">https://loungeos.app/blog/restaurant-kpis-metrics/</guid>
+      <description>The 15 restaurant and bar KPIs that matter: sales, average check, table turnover, food and pour cost, prime cost, labour, voids, discounts and inventory.</description>
+      <pubDate>Thu, 08 Oct 2026 08:00:00 +0000</pubDate>
+      <dc:language>en</dc:language>
+    </item>
+    <item>
+      <title>Restaurant Inventory Management: A Step-by-Step System That Works</title>
+      <link>https://loungeos.app/blog/restaurant-inventory-management-guide/</link>
+      <guid isPermaLink="true">https://loungeos.app/blog/restaurant-inventory-management-guide/</guid>
+      <description>Set up restaurant inventory management in 8 steps: item list, units, par levels, receiving, FIFO, waste logging, counts and variance, with examples.</description>
+      <pubDate>Thu, 08 Oct 2026 08:00:00 +0000</pubDate>
+      <dc:language>en</dc:language>
+    </item>
+    <item>
+      <title>Restaurant Employee Theft: 12 Common Schemes &amp; How to Stop Them</title>
+      <link>https://loungeos.app/blog/restaurant-employee-theft-prevention/</link>
+      <guid isPermaLink="true">https://loungeos.app/blog/restaurant-employee-theft-prevention/</guid>
+      <description>How restaurant and bar staff steal (voids, under-ringing, fake comps, sweethearting, fake mobile money) and the controls that stop each scheme.</description>
+      <pubDate>Thu, 08 Oct 2026 08:00:00 +0000</pubDate>
+      <dc:language>en</dc:language>
+    </item>
+    <item>
+      <title>Restaurant Accounting Basics: P&amp;L, Balance Sheet &amp; Cash Flow</title>
+      <link>https://loungeos.app/blog/restaurant-accounting-basics/</link>
+      <guid isPermaLink="true">https://loungeos.app/blog/restaurant-accounting-basics/</guid>
+      <description>Restaurant accounting for owners: the P&amp;L, COGS and prime cost, balance sheet, cash flow, double-entry basics, chart of accounts and a monthly close.</description>
+      <pubDate>Thu, 08 Oct 2026 08:00:00 +0000</pubDate>
+      <dc:language>en</dc:language>
+    </item>
+    <item>
+      <title>POS Permissions for Restaurants: Voids, Discounts &amp; Staff Roles</title>
+      <link>https://loungeos.app/blog/pos-user-permissions-voids-discounts/</link>
+      <guid isPermaLink="true">https://loungeos.app/blog/pos-user-permissions-voids-discounts/</guid>
+      <description>How to set POS user permissions in a restaurant or bar: role design, who can void or discount, approval workflows, reason codes and the reports to review weekly.</description>
+      <pubDate>Thu, 08 Oct 2026 08:00:00 +0000</pubDate>
+      <dc:language>en</dc:language>
+    </item>
+    <item>
+      <title>Loyverse Alternatives for Restaurants &amp; Bars (2026 Guide)</title>
+      <link>https://loungeos.app/blog/loyverse-alternatives/</link>
+      <guid isPermaLink="true">https://loungeos.app/blog/loyverse-alternatives/</guid>
+      <description>Outgrowing Loyverse? Learn the signs, Loyverse's real offline limits and add-on costs, and the best alternatives for table service, bars and unreliable internet.</description>
+      <pubDate>Thu, 08 Oct 2026 08:00:00 +0000</pubDate>
+      <dc:language>en</dc:language>
+    </item>
+    <item>
+      <title>How to Manage a Lounge or Nightclub: VIP, Bottles, Staff &amp; Cash</title>
+      <link>https://loungeos.app/blog/lounge-nightclub-management/</link>
+      <guid isPermaLink="true">https://loungeos.app/blog/lounge-nightclub-management/</guid>
+      <description>How to run or open a lounge or nightclub: zones and VIP tables, bottle service, events, staffing, late-night cash control, stock and the KPIs to watch.</description>
+      <pubDate>Thu, 08 Oct 2026 08:00:00 +0000</pubDate>
+      <dc:language>en</dc:language>
+    </item>
+    <item>
+      <title>How to Choose a Restaurant POS System: 2026 Buyer's Checklist</title>
+      <link>https://loungeos.app/blog/how-to-choose-a-restaurant-pos-system/</link>
+      <guid isPermaLink="true">https://loungeos.app/blog/how-to-choose-a-restaurant-pos-system/</guid>
+      <description>A practical checklist for choosing a restaurant POS: 12 questions to ask, how to calculate total cost of ownership, red flags in contracts, and a 2-week trial plan.</description>
+      <pubDate>Thu, 08 Oct 2026 08:00:00 +0000</pubDate>
+      <dc:language>en</dc:language>
+    </item>
+    <item>
+      <title>Food Cost Percentage: Formula, Benchmarks &amp; How to Lower It</title>
+      <link>https://loungeos.app/blog/food-cost-percentage-formula/</link>
+      <guid isPermaLink="true">https://loungeos.app/blog/food-cost-percentage-formula/</guid>
+      <description>Calculate restaurant food cost percentage and plate cost with worked examples, typical benchmarks (28–35%), actual vs ideal food cost, and ways to lower it.</description>
+      <pubDate>Thu, 08 Oct 2026 08:00:00 +0000</pubDate>
+      <dc:language>en</dc:language>
+    </item>
+    <item>
+      <title>Cloud vs Offline (Local) POS: Which Is Right for Your Restaurant?</title>
+      <link>https://loungeos.app/blog/cloud-vs-offline-pos/</link>
+      <guid isPermaLink="true">https://loungeos.app/blog/cloud-vs-offline-pos/</guid>
+      <description>Cloud POS or local, offline-first POS? Compare how they handle outages, data ownership, cost, security, updates and remote access, with a simple decision guide.</description>
+      <pubDate>Thu, 08 Oct 2026 08:00:00 +0000</pubDate>
+      <dc:language>en</dc:language>
+    </item>
+    <item>
+      <title>Best Offline Restaurant POS Systems in 2026 (Compared)</title>
+      <link>https://loungeos.app/blog/best-offline-restaurant-pos-systems/</link>
+      <guid isPermaLink="true">https://loungeos.app/blog/best-offline-restaurant-pos-systems/</guid>
+      <description>Which restaurant POS systems really work without internet? We compare LoungeOS, SambaPOS, Toast, Square and Loyverse on what keeps working, and what doesn't.</description>
+      <pubDate>Thu, 08 Oct 2026 08:00:00 +0000</pubDate>
+      <dc:language>en</dc:language>
+    </item>
+    <item>
+      <title>Bar Inventory Shrinkage &amp; Pour Cost: Measure and Cut Losses</title>
+      <link>https://loungeos.app/blog/bar-inventory-shrinkage-pour-cost/</link>
+      <guid isPermaLink="true">https://loungeos.app/blog/bar-inventory-shrinkage-pour-cost/</guid>
+      <description>Calculate pour cost and bar shrinkage step by step, compare with industry benchmarks, find where bottles disappear, and set up a weekly count that stops the leak.</description>
+      <pubDate>Thu, 08 Oct 2026 08:00:00 +0000</pubDate>
+      <dc:language>en</dc:language>
+    </item>
+    <item>
+      <title>How to Accept Mobile Money in a Restaurant (MoMo &amp; Orange Money)</title>
+      <link>https://loungeos.app/blog/accept-mobile-money-in-your-restaurant/</link>
+      <guid isPermaLink="true">https://loungeos.app/blog/accept-mobile-money-in-your-restaurant/</guid>
+      <description>Accept MTN MoMo and Orange Money in your restaurant or bar safely: merchant accounts, a fraud-proof checkout routine, fake SMS scams and daily reconciliation.</description>
+      <pubDate>Thu, 08 Oct 2026 08:00:00 +0000</pubDate>
+      <dc:language>en</dc:language>
+    </item>
+  </channel>
+</rss>

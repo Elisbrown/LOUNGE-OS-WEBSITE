@@ -1,0 +1,637 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kitchen Display System (KDS) for Restaurants &amp; Bars | LoungeOS</title>
+    <meta name="description" content="Replace paper tickets with a kitchen display system that works offline. Food goes to the kitchen screen, drinks to the bar screen, with alerts when orders are ready." />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <link rel="canonical" href="https://loungeos.app/features/kitchen-display-system/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="LoungeOS" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="Kitchen Display System (KDS) for Restaurants &amp; Bars" />
+    <meta property="og:description" content="Replace paper tickets with a kitchen display system that works offline. Food goes to the kitchen screen, drinks to the bar screen, with alerts when orders are ready." />
+    <meta property="og:url" content="https://loungeos.app/features/kitchen-display-system/" />
+    <meta property="og:image" content="https://loungeos.app/images/og-loungeos.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="LoungeOS: offline POS for restaurants, bars and lounges" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Kitchen Display System (KDS) for Restaurants &amp; Bars" />
+    <meta name="twitter:description" content="Replace paper tickets with a kitchen display system that works offline. Food goes to the kitchen screen, drinks to the bar screen, with alerts when orders are ready." />
+    <meta name="twitter:image" content="https://loungeos.app/images/og-loungeos.jpg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="alternate" type="application/rss+xml" title="LoungeOS Blog" href="https://loungeos.app/blog/feed.xml" />
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://loungeos.app/#organization",
+      "name": "LoungeOS",
+      "url": "https://loungeos.app/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://loungeos.app/images/logo/loungeos-icon-512.png",
+        "width": 512,
+        "height": 512
+      },
+      "image": "https://loungeos.app/images/og-loungeos.jpg",
+      "description": "LoungeOS develops offline-first point of sale (POS) and management software for restaurants, bars, lounges, nightclubs and hotels.",
+      "email": "hello@loungeos.app",
+      "telephone": "+237679690703",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CM"
+      },
+      "areaServed": [
+        "CM",
+        "Africa",
+        "Worldwide"
+      ],
+      "knowsLanguage": [
+        "en",
+        "fr"
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "email": "support@loungeos.app",
+          "telephone": "+237679690703",
+          "availableLanguage": [
+            "English",
+            "French"
+          ]
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "email": "hello@loungeos.app",
+          "telephone": "+237689699688",
+          "availableLanguage": [
+            "English",
+            "French"
+          ]
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "billing support",
+          "email": "billing@loungeos.app"
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://loungeos.app/#website",
+      "url": "https://loungeos.app/",
+      "name": "LoungeOS",
+      "publisher": {
+        "@id": "https://loungeos.app/#organization"
+      },
+      "inLanguage": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://loungeos.app/#software",
+      "name": "LoungeOS",
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "Restaurant point of sale (POS) and management software",
+      "operatingSystem": "Windows 10, Windows 11 (host computer); any modern web browser on the local network for tablets and phones",
+      "softwareVersion": "1.3.6",
+      "fileSize": "383MB",
+      "downloadUrl": "https://loungeos.app/download/",
+      "installUrl": "https://loungeos.app/download/",
+      "url": "https://loungeos.app/",
+      "inLanguage": [
+        "en",
+        "fr"
+      ],
+      "publisher": {
+        "@id": "https://loungeos.app/#organization"
+      },
+      "description": "Offline-first restaurant, bar and lounge POS with kitchen and bar display screens, table and floor management, inventory, role-based permissions with audit logs, and double-entry accounting. Runs on your own Windows computer and local Wi-Fi network without internet.",
+      "featureList": [
+        "Works without internet on the local network",
+        "Point of sale with table and floor management",
+        "Kitchen Display System (KDS) and Bar Display System (BDS) with automatic food/drink routing",
+        "Split and merge bills; split payments across cash, card and mobile money",
+        "Mobile money payment recording (MTN Mobile Money, Orange Money)",
+        "Inventory and stock movements with low-stock alerts, suppliers and CSV import/export",
+        "Role-based permissions for 8 roles and a searchable activity log",
+        "Double-entry accounting: journals, profit & loss, balance sheet, cash flow",
+        "Multi-currency (XAF, USD, EUR, GBP, NGN, GHS and custom) and multiple tax rates",
+        "Thermal receipt printing with logo and custom messages",
+        "Encrypted database backups and restore",
+        "English and French interface"
+      ],
+      "screenshot": [
+        "https://loungeos.app/images/screens/loungeos-pos-order-screen.webp",
+        "https://loungeos.app/images/screens/loungeos-kitchen-display-system.webp",
+        "https://loungeos.app/images/screens/loungeos-inventory-dashboard.webp"
+      ],
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "30-day free trial",
+          "price": "0",
+          "priceCurrency": "XAF",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/"
+        },
+        {
+          "@type": "Offer",
+          "name": "Monthly plan (FCFA zone)",
+          "price": "30000",
+          "priceCurrency": "XAF",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "30000",
+            "priceCurrency": "XAF",
+            "billingDuration": "P1M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 1,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "6-month plan (FCFA zone)",
+          "price": "150000",
+          "priceCurrency": "XAF",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "150000",
+            "priceCurrency": "XAF",
+            "billingDuration": "P6M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 6,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "12-month plan (FCFA zone)",
+          "price": "240000",
+          "priceCurrency": "XAF",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "240000",
+            "priceCurrency": "XAF",
+            "billingDuration": "P12M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 12,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Monthly plan (international)",
+          "price": "49",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "49",
+            "priceCurrency": "USD",
+            "billingDuration": "P1M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 1,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "12-month plan (international)",
+          "price": "468",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "468",
+            "priceCurrency": "USD",
+            "billingDuration": "P12M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 12,
+              "unitCode": "MON"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://loungeos.app/features/kitchen-display-system/#webpage",
+      "url": "https://loungeos.app/features/kitchen-display-system/",
+      "name": "Kitchen Display System (KDS) for Restaurants & Bars | LoungeOS",
+      "description": "Replace paper tickets with a kitchen display system that works offline. Food goes to the kitchen screen, drinks to the bar screen, with alerts when orders are ready.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://loungeos.app/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://loungeos.app/features/kitchen-display-system/#breadcrumb"
+      },
+      "dateModified": "2026-10-08",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://loungeos.app/images/screens/loungeos-kitchen-display-system.webp"
+      },
+      "about": {
+        "@id": "https://loungeos.app/#software"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://loungeos.app/features/kitchen-display-system/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://loungeos.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Features",
+          "item": "https://loungeos.app/features/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Kitchen Display System",
+          "item": "https://loungeos.app/features/kitchen-display-system/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://loungeos.app/features/kitchen-display-system/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do I need separate screens for the kitchen and the bar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>If you have a separate bar, yes. That is where the BDS earns its keep. Small venues where the same person makes food and drinks can open both views on one screen.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the KDS still work if the internet is down?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Yes. The KDS talks to the LoungeOS host computer over your Wi-Fi, not over the internet.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why don’t drinks show on my kitchen screen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>That is by design. Drink categories should have “This is a food category” unticked, so their items go to the bar display. If a drink appears in the kitchen, check that box on its category.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I still print kitchen tickets?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>LoungeOS prints customer receipts on thermal printers. Most venues that adopt the KDS stop printing kitchen tickets entirely, which also saves paper.<\/p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+    </script>
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+      (function (c, l, a, r, i, t, y) {
+        c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
+        t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", "x9n1mwb8c5");
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TNP53ZZW7K"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag("js", new Date());
+      gtag("config", "G-TNP53ZZW7K");
+    </script>
+    <!-- Usercentrics CMP -->
+    <script id="usercentrics-cmp" src="https://app.usercentrics.eu/browser-ui/latest/loader.js" data-settings-id="SSwfY4ZtHuL22V" async></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <nav class="navbar" id="navbar" aria-label="Main Navigation">
+      <div class="nav-content">
+        <div class="nav-left">
+          <a href="/" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 0.75rem;">
+            <img src="/images/logo/loungeos-logo.svg" alt="LoungeOS" width="148" height="26" class="nav-logo" />
+            <span class="nav-badge">Restaurant POS</span>
+          </a>
+        </div>
+
+        <div class="nav-links" id="navLinks">
+          <a href="/">Home</a>
+          <a href="/features/">Features</a>
+          <div class="nav-dropdown">
+            <button type="button" class="nav-dropdown-toggle" aria-haspopup="true">Solutions <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+            <div class="nav-dropdown-menu">
+              <a href="/restaurant-pos/">Restaurants</a>
+              <a href="/bar-pos/">Bars</a>
+              <a href="/lounge-pos/">Lounges</a>
+              <a href="/nightclub-pos/">Nightclubs</a>
+              <a href="/hotel-pos/">Hotels</a>
+              <a href="/cafe-pos/">Cafés &amp; Fast Food</a>
+              <a href="/cameroon/">Cameroon</a>
+              <a href="/africa/">Africa</a>
+            </div>
+          </div>
+          <a href="/pricing/">Pricing</a>
+          <a href="/download/">Download</a>
+          <div class="nav-dropdown">
+            <button type="button" class="nav-dropdown-toggle" aria-haspopup="true">Resources <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+            <div class="nav-dropdown-menu">
+              <a href="/blog/">Blog</a>
+              <a href="/faq/">FAQ</a>
+              <a href="/knowledgebase.html">Knowledge Base</a>
+              <a href="/documentation.html">Documentation</a>
+              <a href="/about/">About</a>
+              <a href="/contact/">Contact</a>
+              <a href="/fr/">Français</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-cta" style="display: flex; align-items: center; gap: 1rem">
+          <div class="lang-selector">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 16px; height: 16px" aria-hidden="true"><circle cx="12" cy="12" r="10" /><line x1="2" y1="12" x2="22" y2="12" /><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" /></svg>
+            <select id="customLangSelect" aria-label="Select Language" onchange="changeLanguage(this.value)">
+              <option value="en" selected>English</option>
+              <option value="fr">Français</option>
+              <option value="es">Español</option>
+              <option value="de">Deutsch</option>
+              <option value="zh-CN">中文</option>
+              <option value="ar">العربية</option>
+              <option value="hi">हिन्दी</option>
+              <option value="pt">Português</option>
+              <option value="ru">Русский</option>
+              <option value="ja">日本語</option>
+            </select>
+          </div>
+          <a href="https://account.loungeos.app/sign-up" class="btn btn-primary btn-sm" id="navCtaBtn">Start Free Trial</a>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+    <main id="main-content">
+      <header class="page-hero">
+        <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">›</span> <a href="/features/">Features</a> <span aria-hidden="true">›</span> <span aria-current="page">Kitchen Display System</span></nav>
+        <p class="section-label">Kitchen Display System</p>
+        <h1>Kitchen and bar display screens that end lost tickets</h1>
+        <p class="lead">Every order splits itself in two. Food goes to the kitchen screen, drinks go to the bar screen, and the waiter hears when it's ready. No handwriting, no running, no lost paper.</p>
+        
+        <div class="hero-actions">
+          <a href="https://account.loungeos.app/sign-up" class="btn btn-primary btn-lg">Start Free Trial <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg></a>
+          <a href="/pricing/" class="btn btn-secondary btn-lg">See pricing</a>
+        </div>
+        <p class="trust-line">30-day free trial · No credit card · Works without internet</p>
+        <div class="page-hero-media"><img src="/images/screens/loungeos-kitchen-display-system.webp" srcset="/images/screens/loungeos-kitchen-display-system-800.webp 800w, /images/screens/loungeos-kitchen-display-system.webp 1600w" sizes="(max-width: 1100px) 100vw, 1100px" width="1600" height="861" alt="LoungeOS kitchen display system with Pending, In Progress and Ready columns" fetchpriority="high" decoding="async" /></div>
+      </header>
+      <section class="content-section">
+        <div class="prose prose-wide">
+<p>A <strong>kitchen display system (KDS)</strong> is a screen in the kitchen that shows orders as soon as waiters enter them, replacing printed or handwritten tickets. LoungeOS includes a KDS for food and a separate <strong>Bar Display System (BDS)</strong> for drinks. Both are included in every plan and both run on your local network without internet.</p>
+<h2 id="how-orders-reach-the-right-screen">How orders reach the right screen</h2>
+<p>Routing is set once, at the category level. When you create a menu category such as <em>Main dishes</em>, <em>Grills</em> or <em>Desserts</em>, you tick <strong>“This is a food category”</strong>. Leave it unticked for <em>Beers</em>, <em>Cocktails</em>, <em>Wines</em> or <em>Soft drinks</em>. From then on:</p>
+<ol>
+<li>A waiter places an order for table 7: two grilled fish and three beers.</li>
+<li>The two fish appear on the <strong>kitchen screen</strong> with any notes (“well done, no pepper”).</li>
+<li>The three beers appear on the <strong>bar screen</strong> at the same moment.</li>
+<li>Both screens play a sound when the ticket arrives.</li>
+</ol>
+<p>There is no re-typing and no walking back and forth between kitchen and bar.</p>
+<figure><img alt="LoungeOS kitchen display with a pending order for table VIP 2 and a Start button" decoding="async" height="861" loading="lazy" sizes="(max-width: 800px) 100vw, 960px" src="/images/screens/loungeos-kds-pending-orders.webp" srcset="/images/screens/loungeos-kds-pending-orders-800.webp 800w, /images/screens/loungeos-kds-pending-orders.webp 1600w" width="1600"/><figcaption>A new ticket arrives in the Pending column, oldest first.</figcaption></figure>
+<h2 id="the-three-columns-pending-in-progress-ready">The three columns: Pending, In progress, Ready</h2>
+<ul>
+<li><strong>Pending.</strong> New tickets, sorted oldest first so nobody’s order is forgotten.</li>
+<li><strong>In progress.</strong> The cook drags the ticket here, or taps <em>Start</em>, when preparation begins.</li>
+<li><strong>Ready.</strong> When the dish is done the cook taps <em>Mark ready</em>. An audio alert sounds at the waiter and cashier station so the food goes out hot.</li>
+</ul>
+<p>Tickets stay in <em>Ready</em> until the bill is paid. Managers can see at a glance where service is getting stuck.</p>
+<h2 id="cancelling-from-the-kitchen-with-accountability">Cancelling from the kitchen, with accountability</h2>
+<p>Sometimes an order must be cancelled: the customer left, or the item was entered by mistake. On LoungeOS the chef or bartender drags the ticket to the <strong>cancel zone</strong> at the bottom of the screen and must <strong>choose a reason</strong>. The cancellation and its reason are written to the <a href="/features/loss-prevention/">activity log</a>. If it was a mistake, a manager can reactivate the order within 24 hours.</p>
+<p>This matters for loss prevention. A common way to steal in restaurants is to cancel an item <em>after</em> it was served and keep the cash. When every cancellation has a name, a time and a reason, that pattern becomes visible.</p>
+<h2 id="what-hardware-do-you-need">What hardware do you need?</h2>
+<p>Any screen with a modern web browser works as a kitchen or bar display:</p>
+<ul>
+<li>A cheap Android tablet on a wall mount (the most common setup)</li>
+<li>An old laptop</li>
+<li>A smart TV or monitor with a small PC attached</li>
+</ul>
+<p>It only needs to be on the same Wi-Fi network as the LoungeOS host computer. Our <a href="/blog/restaurant-pos-hardware-guide/">POS hardware guide</a> covers mounting, grease and heat in more detail.</p>
+<h2 id="why-kitchens-switch-from-paper">Why kitchens switch from paper</h2>
+<table>
+<thead>
+<tr>
+<th>Problem with paper tickets</th>
+<th>What the KDS changes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Illegible handwriting, wrong dishes</td>
+<td>Orders arrive exactly as entered</td>
+</tr>
+<tr>
+<td>Tickets lost, burnt or stuck on the wrong rail</td>
+<td>Tickets cannot be lost, oldest shown first</td>
+</tr>
+<tr>
+<td>Waiters walk to the kitchen to check</td>
+<td>Audio alert when the order is ready</td>
+</tr>
+<tr>
+<td>No record of cancellations</td>
+<td>Every cancellation logged with a reason</td>
+</tr>
+<tr>
+<td>No idea how long dishes take</td>
+<td>Clear Pending → In progress → Ready flow</td>
+</tr>
+</tbody>
+</table>
+<h2 id="frequently-asked-questions">Frequently asked questions</h2>
+<h3 id="do-i-need-separate-screens-for-the-kitchen-and-the-bar">Do I need separate screens for the kitchen and the bar?</h3>
+<p>If you have a separate bar, yes. That is where the BDS earns its keep. Small venues where the same person makes food and drinks can open both views on one screen.</p>
+<h3 id="does-the-kds-still-work-if-the-internet-is-down">Does the KDS still work if the internet is down?</h3>
+<p>Yes. The KDS talks to the LoungeOS host computer over your Wi-Fi, not over the internet.</p>
+<h3 id="why-dont-drinks-show-on-my-kitchen-screen">Why don’t drinks show on my kitchen screen?</h3>
+<p>That is by design. Drink categories should have “This is a food category” unticked, so their items go to the bar display. If a drink appears in the kitchen, check that box on its category.</p>
+<h3 id="can-i-still-print-kitchen-tickets">Can I still print kitchen tickets?</h3>
+<p>LoungeOS prints customer receipts on thermal printers. Most venues that adopt the KDS stop printing kitchen tickets entirely, which also saves paper.</p>
+        </div>
+      </section>
+      <section style="padding: 0 1.5rem 1rem"><div class="cta-box">
+  <h2>Run your next service on LoungeOS</h2>
+  <p>Install LoungeOS on a Windows computer, connect your tablets and phones over Wi-Fi, and run real service for 30 days. Free, no credit card.</p>
+  <div class="cta-actions">
+    <a class="btn btn-primary btn-lg" href="https://account.loungeos.app/sign-up">Start Free Trial</a>
+    <a class="btn btn-secondary btn-lg" href="/download/">Download for Windows</a>
+  </div>
+</div></section>
+      <section class="related-section">
+        <h2 class="section-title">Explore more</h2>
+        <div class="card-grid">
+<a class="post-card" href="/blog/what-is-a-kitchen-display-system/">
+  <img src="/images/screens/loungeos-kitchen-display-system-800.webp" width="800" height="430" alt="LoungeOS kitchen display system with Pending, In Progress and Ready columns" loading="lazy" decoding="async" />
+  <div class="post-card-body">
+    <span class="tag">Operations</span>
+    <h3>What is a kitchen display system (KDS)?</h3>
+    <p>How a KDS works, its benefits, hardware, routing and setup.</p>
+    <span class="read-more">Read guide →</span>
+  </div>
+</a>
+<a class="post-card" href="/features/table-management/">
+  <img src="/images/screens/loungeos-table-management-800.webp" width="800" height="430" alt="LoungeOS table layout with tables marked available, guest capacity and floor names" loading="lazy" decoding="async" />
+  <div class="post-card-body">
+    <span class="tag">Table Management</span>
+    <h3>Table &amp; Floor Management</h3>
+    <p>Live table status by colour, floors and VIP areas, waiter sections, split and merge bills.</p>
+    <span class="read-more">Learn more →</span>
+  </div>
+</a>
+<a class="post-card" href="/restaurant-pos/">
+  <img src="/images/screens/loungeos-pos-order-screen-800.webp" width="800" height="430" alt="LoungeOS restaurant POS screen with food categories, dish photos and an open order for a table" loading="lazy" decoding="async" />
+  <div class="post-card-body">
+    <span class="tag">Restaurant POS</span>
+    <h3>Restaurant POS</h3>
+    <p>Table ordering, kitchen display, inventory and accounting for sit-down restaurants.</p>
+    <span class="read-more">Learn more →</span>
+  </div>
+</a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-grid footer-grid-wide">
+        <div class="footer-brand">
+          <img src="/images/logo/loungeos-logo-white.svg" alt="LoungeOS" width="159" height="28" class="footer-logo" />
+          <p>Offline-first POS and management system for restaurants, bars, lounges and hotels. Built in Cameroon, used across Africa and beyond.</p>
+          <div class="footer-worldwide">
+            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> All currencies</span>
+            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> English &amp; French</span>
+            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Works offline</span>
+          </div>
+          <p class="footer-contact">
+            <a href="mailto:support@loungeos.app">support@loungeos.app</a><br />
+            <a href="mailto:hello@loungeos.app">hello@loungeos.app</a><br />
+            <a href="tel:+237679690703">+237 679 690 703</a>
+          </p>
+        </div>
+        <div class="footer-col">
+          <h3>Product</h3>
+          <a href="/features/">Features</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/download/">Download</a>
+          <a href="/features/offline-pos/">Offline POS</a>
+          <a href="/features/kitchen-display-system/">Kitchen Display System</a>
+          <a href="/features/inventory-management/">Inventory</a>
+          <a href="/features/restaurant-accounting/">Accounting</a>
+        </div>
+        <div class="footer-col">
+          <h3>Solutions</h3>
+          <a href="/restaurant-pos/">Restaurant POS</a>
+          <a href="/bar-pos/">Bar POS</a>
+          <a href="/lounge-pos/">Lounge POS</a>
+          <a href="/nightclub-pos/">Nightclub POS</a>
+          <a href="/hotel-pos/">Hotel POS</a>
+          <a href="/cafe-pos/">Café &amp; Fast Food POS</a>
+        </div>
+        <div class="footer-col">
+          <h3>Countries</h3>
+          <a href="/cameroon/">Cameroon</a>
+          <a href="/nigeria/">Nigeria</a>
+          <a href="/ghana/">Ghana</a>
+          <a href="/south-africa/">South Africa</a>
+          <a href="/africa/">Africa</a>
+          <a href="/fr/cameroun/">Cameroun (FR)</a>
+          <a href="/fr/cote-divoire/">Côte d'Ivoire (FR)</a>
+          <a href="/fr/senegal/">Sénégal (FR)</a>
+        </div>
+        <div class="footer-col">
+          <h3>Resources</h3>
+          <a href="/blog/">Blog</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/knowledgebase.html">Knowledge Base</a>
+          <a href="/documentation.html">Documentation</a>
+          <a href="/about/">About</a>
+          <a href="/contact/">Contact</a>
+          <a href="/privacy.html">Privacy Policy</a>
+          <a href="/terms.html">Terms of Service</a>
+          <a href="/accessibility.html">Accessibility</a>
+          <a href="/legal.html">Legal</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 LoungeOS. All rights reserved.</p>
+        <a href="https://account.loungeos.app/sign-up" class="btn btn-outline-light btn-sm" id="footerCtaBtn">Start Free Trial <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg></a>
+      </div>
+    </footer>
+    <div id="google_translate_element" style="display: none"></div>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: "en", autoDisplay: false },
+          "google_translate_element",
+        );
+      }
+    </script>
+    <script defer type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script defer src="/app.js"></script>
+    <!-- Botpress Webchat -->
+    <script defer src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
+    <script defer src="https://files.bpcontent.cloud/2026/06/19/19/20260619193215-LONFMDIT.js"></script>
+  </body>
+</html>

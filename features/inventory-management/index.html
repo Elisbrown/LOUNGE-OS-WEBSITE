@@ -1,0 +1,636 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant &amp; Bar Inventory Management Software | LoungeOS</title>
+    <meta name="description" content="Track drinks, ingredients and packaging with stock levels, low-stock alerts, supplier records, waste and damage logging, and CSV import. Works offline." />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <link rel="canonical" href="https://loungeos.app/features/inventory-management/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="LoungeOS" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="Restaurant &amp; Bar Inventory Management Software" />
+    <meta property="og:description" content="Track drinks, ingredients and packaging with stock levels, low-stock alerts, supplier records, waste and damage logging, and CSV import. Works offline." />
+    <meta property="og:url" content="https://loungeos.app/features/inventory-management/" />
+    <meta property="og:image" content="https://loungeos.app/images/og-loungeos.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="LoungeOS: offline POS for restaurants, bars and lounges" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Restaurant &amp; Bar Inventory Management Software" />
+    <meta name="twitter:description" content="Track drinks, ingredients and packaging with stock levels, low-stock alerts, supplier records, waste and damage logging, and CSV import. Works offline." />
+    <meta name="twitter:image" content="https://loungeos.app/images/og-loungeos.jpg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="alternate" type="application/rss+xml" title="LoungeOS Blog" href="https://loungeos.app/blog/feed.xml" />
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://loungeos.app/#organization",
+      "name": "LoungeOS",
+      "url": "https://loungeos.app/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://loungeos.app/images/logo/loungeos-icon-512.png",
+        "width": 512,
+        "height": 512
+      },
+      "image": "https://loungeos.app/images/og-loungeos.jpg",
+      "description": "LoungeOS develops offline-first point of sale (POS) and management software for restaurants, bars, lounges, nightclubs and hotels.",
+      "email": "hello@loungeos.app",
+      "telephone": "+237679690703",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CM"
+      },
+      "areaServed": [
+        "CM",
+        "Africa",
+        "Worldwide"
+      ],
+      "knowsLanguage": [
+        "en",
+        "fr"
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "email": "support@loungeos.app",
+          "telephone": "+237679690703",
+          "availableLanguage": [
+            "English",
+            "French"
+          ]
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "email": "hello@loungeos.app",
+          "telephone": "+237689699688",
+          "availableLanguage": [
+            "English",
+            "French"
+          ]
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "billing support",
+          "email": "billing@loungeos.app"
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://loungeos.app/#website",
+      "url": "https://loungeos.app/",
+      "name": "LoungeOS",
+      "publisher": {
+        "@id": "https://loungeos.app/#organization"
+      },
+      "inLanguage": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://loungeos.app/#software",
+      "name": "LoungeOS",
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "Restaurant point of sale (POS) and management software",
+      "operatingSystem": "Windows 10, Windows 11 (host computer); any modern web browser on the local network for tablets and phones",
+      "softwareVersion": "1.3.6",
+      "fileSize": "383MB",
+      "downloadUrl": "https://loungeos.app/download/",
+      "installUrl": "https://loungeos.app/download/",
+      "url": "https://loungeos.app/",
+      "inLanguage": [
+        "en",
+        "fr"
+      ],
+      "publisher": {
+        "@id": "https://loungeos.app/#organization"
+      },
+      "description": "Offline-first restaurant, bar and lounge POS with kitchen and bar display screens, table and floor management, inventory, role-based permissions with audit logs, and double-entry accounting. Runs on your own Windows computer and local Wi-Fi network without internet.",
+      "featureList": [
+        "Works without internet on the local network",
+        "Point of sale with table and floor management",
+        "Kitchen Display System (KDS) and Bar Display System (BDS) with automatic food/drink routing",
+        "Split and merge bills; split payments across cash, card and mobile money",
+        "Mobile money payment recording (MTN Mobile Money, Orange Money)",
+        "Inventory and stock movements with low-stock alerts, suppliers and CSV import/export",
+        "Role-based permissions for 8 roles and a searchable activity log",
+        "Double-entry accounting: journals, profit & loss, balance sheet, cash flow",
+        "Multi-currency (XAF, USD, EUR, GBP, NGN, GHS and custom) and multiple tax rates",
+        "Thermal receipt printing with logo and custom messages",
+        "Encrypted database backups and restore",
+        "English and French interface"
+      ],
+      "screenshot": [
+        "https://loungeos.app/images/screens/loungeos-pos-order-screen.webp",
+        "https://loungeos.app/images/screens/loungeos-kitchen-display-system.webp",
+        "https://loungeos.app/images/screens/loungeos-inventory-dashboard.webp"
+      ],
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "30-day free trial",
+          "price": "0",
+          "priceCurrency": "XAF",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/"
+        },
+        {
+          "@type": "Offer",
+          "name": "Monthly plan (FCFA zone)",
+          "price": "30000",
+          "priceCurrency": "XAF",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "30000",
+            "priceCurrency": "XAF",
+            "billingDuration": "P1M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 1,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "6-month plan (FCFA zone)",
+          "price": "150000",
+          "priceCurrency": "XAF",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "150000",
+            "priceCurrency": "XAF",
+            "billingDuration": "P6M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 6,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "12-month plan (FCFA zone)",
+          "price": "240000",
+          "priceCurrency": "XAF",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "240000",
+            "priceCurrency": "XAF",
+            "billingDuration": "P12M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 12,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Monthly plan (international)",
+          "price": "49",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "49",
+            "priceCurrency": "USD",
+            "billingDuration": "P1M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 1,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "12-month plan (international)",
+          "price": "468",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "468",
+            "priceCurrency": "USD",
+            "billingDuration": "P12M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 12,
+              "unitCode": "MON"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://loungeos.app/features/inventory-management/#webpage",
+      "url": "https://loungeos.app/features/inventory-management/",
+      "name": "Restaurant & Bar Inventory Management Software | LoungeOS",
+      "description": "Track drinks, ingredients and packaging with stock levels, low-stock alerts, supplier records, waste and damage logging, and CSV import. Works offline.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://loungeos.app/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://loungeos.app/features/inventory-management/#breadcrumb"
+      },
+      "dateModified": "2026-10-08",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://loungeos.app/images/screens/loungeos-inventory-dashboard.webp"
+      },
+      "about": {
+        "@id": "https://loungeos.app/#software"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://loungeos.app/features/inventory-management/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://loungeos.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Features",
+          "item": "https://loungeos.app/features/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Inventory Management",
+          "item": "https://loungeos.app/features/inventory-management/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://loungeos.app/features/inventory-management/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can LoungeOS stop staff from selling items that are out of stock?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Yes. When a menu item’s available quantity reaches zero it is greyed out on the POS and cannot be added to an order.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I record breakages or theft?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Use <strong>Stock out (damage/waste/loss)<\/strong> on the item, enter the quantity and a note. The cost is logged as an operational expense and the movement appears in the stock ledger and activity log.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I manage bar stock like crates and bottles?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Yes. Choose the unit that matches how you count, for example bottles for beer sold by the bottle, and set minimum levels so you reorder before a busy weekend.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does inventory work offline?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Yes. Like everything in LoungeOS, inventory runs on your local computer and does not need internet.<\/p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+    </script>
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+      (function (c, l, a, r, i, t, y) {
+        c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
+        t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", "x9n1mwb8c5");
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TNP53ZZW7K"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag("js", new Date());
+      gtag("config", "G-TNP53ZZW7K");
+    </script>
+    <!-- Usercentrics CMP -->
+    <script id="usercentrics-cmp" src="https://app.usercentrics.eu/browser-ui/latest/loader.js" data-settings-id="SSwfY4ZtHuL22V" async></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <nav class="navbar" id="navbar" aria-label="Main Navigation">
+      <div class="nav-content">
+        <div class="nav-left">
+          <a href="/" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 0.75rem;">
+            <img src="/images/logo/loungeos-logo.svg" alt="LoungeOS" width="148" height="26" class="nav-logo" />
+            <span class="nav-badge">Restaurant POS</span>
+          </a>
+        </div>
+
+        <div class="nav-links" id="navLinks">
+          <a href="/">Home</a>
+          <a href="/features/">Features</a>
+          <div class="nav-dropdown">
+            <button type="button" class="nav-dropdown-toggle" aria-haspopup="true">Solutions <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+            <div class="nav-dropdown-menu">
+              <a href="/restaurant-pos/">Restaurants</a>
+              <a href="/bar-pos/">Bars</a>
+              <a href="/lounge-pos/">Lounges</a>
+              <a href="/nightclub-pos/">Nightclubs</a>
+              <a href="/hotel-pos/">Hotels</a>
+              <a href="/cafe-pos/">Cafés &amp; Fast Food</a>
+              <a href="/cameroon/">Cameroon</a>
+              <a href="/africa/">Africa</a>
+            </div>
+          </div>
+          <a href="/pricing/">Pricing</a>
+          <a href="/download/">Download</a>
+          <div class="nav-dropdown">
+            <button type="button" class="nav-dropdown-toggle" aria-haspopup="true">Resources <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+            <div class="nav-dropdown-menu">
+              <a href="/blog/">Blog</a>
+              <a href="/faq/">FAQ</a>
+              <a href="/knowledgebase.html">Knowledge Base</a>
+              <a href="/documentation.html">Documentation</a>
+              <a href="/about/">About</a>
+              <a href="/contact/">Contact</a>
+              <a href="/fr/">Français</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-cta" style="display: flex; align-items: center; gap: 1rem">
+          <div class="lang-selector">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 16px; height: 16px" aria-hidden="true"><circle cx="12" cy="12" r="10" /><line x1="2" y1="12" x2="22" y2="12" /><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" /></svg>
+            <select id="customLangSelect" aria-label="Select Language" onchange="changeLanguage(this.value)">
+              <option value="en" selected>English</option>
+              <option value="fr">Français</option>
+              <option value="es">Español</option>
+              <option value="de">Deutsch</option>
+              <option value="zh-CN">中文</option>
+              <option value="ar">العربية</option>
+              <option value="hi">हिन्दी</option>
+              <option value="pt">Português</option>
+              <option value="ru">Русский</option>
+              <option value="ja">日本語</option>
+            </select>
+          </div>
+          <a href="https://account.loungeos.app/sign-up" class="btn btn-primary btn-sm" id="navCtaBtn">Start Free Trial</a>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+    <main id="main-content">
+      <header class="page-hero">
+        <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">›</span> <a href="/features/">Features</a> <span aria-hidden="true">›</span> <span aria-current="page">Inventory Management</span></nav>
+        <p class="section-label">Inventory Management</p>
+        <h1>Inventory management that shows where your stock actually goes</h1>
+        <p class="lead">Know what you have, what it cost, what was sold and what disappeared. LoungeOS tracks every bottle, crate and takeaway box from delivery to sale, and records every loss.</p>
+        
+        <div class="hero-actions">
+          <a href="https://account.loungeos.app/sign-up" class="btn btn-primary btn-lg">Start Free Trial <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg></a>
+          <a href="/pricing/" class="btn btn-secondary btn-lg">See pricing</a>
+        </div>
+        <p class="trust-line">30-day free trial · No credit card · Works without internet</p>
+        <div class="page-hero-media"><img src="/images/screens/loungeos-inventory-dashboard.webp" srcset="/images/screens/loungeos-inventory-dashboard-800.webp 800w, /images/screens/loungeos-inventory-dashboard.webp 1600w" sizes="(max-width: 1100px) 100vw, 1100px" width="1600" height="861" alt="LoungeOS inventory dashboard showing total items, low stock, out of stock, total stock value and stock movements chart" fetchpriority="high" decoding="async" /></div>
+      </header>
+      <section class="content-section">
+        <div class="prose prose-wide">
+<p><strong>Restaurant inventory management</strong> means knowing at any moment how much stock you have, what it is worth and where the difference went when the count does not match. LoungeOS combines a stock register, supplier directory and movement ledger with your point of sale. Sales and losses are both recorded in the same place.</p>
+<h2 id="what-you-can-track">What you can track</h2>
+<p>Each stock item in LoungeOS has:</p>
+<ul>
+<li><strong>SKU</strong> (enter your own or let LoungeOS generate one)</li>
+<li><strong>Name and description</strong>, for example <em>Heineken bottle 33 cl</em></li>
+<li><strong>Category</strong>, such as Beverages, Spirits or Containers</li>
+<li><strong>Unit of measurement</strong>: bottles, crates, litres, kilograms or boxes</li>
+<li><strong>Current stock level</strong> from your physical count</li>
+<li><strong>Minimum and maximum levels</strong>. Falling below the minimum triggers a low-stock alert.</li>
+<li><strong>Cost per unit</strong>, the price you pay your supplier</li>
+<li><strong>Supplier</strong>, linked to your supplier directory</li>
+</ul>
+<p>Menu items also carry an <strong>available quantity</strong>. When it reaches zero the item shows as <em>Out of stock</em> on the POS grid and cannot be ordered. No more promising a dish the kitchen has run out of.</p>
+<figure><img alt="LoungeOS stock items list with SKU, category, stock level, cost and status" decoding="async" height="861" loading="lazy" sizes="(max-width: 800px) 100vw, 960px" src="/images/screens/loungeos-stock-items.webp" srcset="/images/screens/loungeos-stock-items-800.webp 800w, /images/screens/loungeos-stock-items.webp 1600w" width="1600"/><figcaption>Stock items with SKU, units, minimum/maximum levels, cost and status.</figcaption></figure>
+<h2 id="every-movement-has-a-type-and-a-trace">Every movement has a type and a trace</h2>
+<p>Stock does not only leave through sales. LoungeOS makes you record <em>why</em> stock changed:</p>
+<table>
+<thead>
+<tr>
+<th>Movement</th>
+<th>When to use it</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Stock in</strong></td>
+<td>Supplier delivery</td>
+<td>Adds quantity at the unit cost you paid</td>
+</tr>
+<tr>
+<td><strong>Stock out: damage, waste or loss</strong></td>
+<td>Broken bottle, spoiled food, theft</td>
+<td>Removes quantity and records the cost as an expense</td>
+</tr>
+<tr>
+<td><strong>Cost correction</strong></td>
+<td>Supplier changed price</td>
+<td>Fixes cost without changing quantity</td>
+</tr>
+</tbody>
+</table>
+<p>Each movement is saved in the stock ledger with date, user and reason. You can select several items and move them at once (bulk move), and export the movement ledger for any date range to PDF or CSV, with your logo.</p>
+<h2 id="the-inventory-dashboard">The inventory dashboard</h2>
+<p>Open <strong>Inventory</strong> to see:</p>
+<ul>
+<li><strong>Total stock value</strong>: quantity on hand × unit cost</li>
+<li><strong>Low-stock warnings</strong>: items below their minimum</li>
+<li><strong>Out-of-stock list</strong>: shown as high-priority alerts</li>
+<li><strong>Stock movement timeline</strong>: deliveries against sales, damage and losses over time</li>
+<li><strong>Category breakdown</strong>: where your money is sitting</li>
+</ul>
+<h2 id="suppliers-in-one-place">Suppliers in one place</h2>
+<p>Keep a supplier directory with business name, contact person, phone, email and location. Open any supplier to see the stock items you buy from them. When a low-stock alert fires you know exactly who to call.</p>
+<h2 id="import-your-existing-list-in-minutes">Import your existing list in minutes</h2>
+<p>Already have your stock in Excel? Download the CSV template, paste your list and import it. LoungeOS checks the columns and creates missing categories automatically.</p>
+<h2 id="how-inventory-connects-to-accounting">How inventory connects to accounting</h2>
+<p>Stock purchases and stock losses flow into the <a href="/features/restaurant-accounting/">accounting module</a>. When you sync accounting data, purchases are recorded against inventory and cost of goods sold, and damage and waste are recorded as expenses. Your profit and loss statement then reflects real losses, not just sales.</p>
+<h2 id="frequently-asked-questions">Frequently asked questions</h2>
+<h3 id="can-loungeos-stop-staff-from-selling-items-that-are-out-of-stock">Can LoungeOS stop staff from selling items that are out of stock?</h3>
+<p>Yes. When a menu item’s available quantity reaches zero it is greyed out on the POS and cannot be added to an order.</p>
+<h3 id="how-do-i-record-breakages-or-theft">How do I record breakages or theft?</h3>
+<p>Use <strong>Stock out (damage/waste/loss)</strong> on the item, enter the quantity and a note. The cost is logged as an operational expense and the movement appears in the stock ledger and activity log.</p>
+<h3 id="can-i-manage-bar-stock-like-crates-and-bottles">Can I manage bar stock like crates and bottles?</h3>
+<p>Yes. Choose the unit that matches how you count, for example bottles for beer sold by the bottle, and set minimum levels so you reorder before a busy weekend.</p>
+<h3 id="does-inventory-work-offline">Does inventory work offline?</h3>
+<p>Yes. Like everything in LoungeOS, inventory runs on your local computer and does not need internet.</p>
+        </div>
+      </section>
+      <section style="padding: 0 1.5rem 1rem"><div class="cta-box">
+  <h2>Run your next service on LoungeOS</h2>
+  <p>Install LoungeOS on a Windows computer, connect your tablets and phones over Wi-Fi, and run real service for 30 days. Free, no credit card.</p>
+  <div class="cta-actions">
+    <a class="btn btn-primary btn-lg" href="https://account.loungeos.app/sign-up">Start Free Trial</a>
+    <a class="btn btn-secondary btn-lg" href="/download/">Download for Windows</a>
+  </div>
+</div></section>
+      <section class="related-section">
+        <h2 class="section-title">Explore more</h2>
+        <div class="card-grid">
+<a class="post-card" href="/blog/restaurant-inventory-management-guide/">
+  <img src="/images/screens/loungeos-inventory-dashboard-800.webp" width="800" height="430" alt="LoungeOS inventory dashboard with stock value, low stock alerts and stock movement chart" loading="lazy" decoding="async" />
+  <div class="post-card-body">
+    <span class="tag">Inventory &amp; finance</span>
+    <h3>Restaurant inventory management, step by step</h3>
+    <p>Item list, units, par levels, receiving, FIFO, waste and variance in 8 steps.</p>
+    <span class="read-more">Read guide →</span>
+  </div>
+</a>
+<a class="post-card" href="/blog/bar-inventory-shrinkage-pour-cost/">
+  <img src="/images/screens/loungeos-stock-movement-history-800.webp" width="800" height="430" alt="LoungeOS stock movement history for an item showing a damage entry with date, quantity and user" loading="lazy" decoding="async" />
+  <div class="post-card-body">
+    <span class="tag">Loss prevention</span>
+    <h3>Bar inventory shrinkage and pour cost</h3>
+    <p>Formulas, benchmarks and a weekly count routine to find and stop bar losses.</p>
+    <span class="read-more">Read guide →</span>
+  </div>
+</a>
+<a class="post-card" href="/blog/food-cost-percentage-formula/">
+  <img src="/images/screens/loungeos-financial-reports-800.webp" width="800" height="430" alt="LoungeOS financial reports with profit and loss statement" loading="lazy" decoding="async" />
+  <div class="post-card-body">
+    <span class="tag">Inventory &amp; finance</span>
+    <h3>Food cost percentage: formula and benchmarks</h3>
+    <p>Calculate food cost and plate cost, compare benchmarks and lower yours.</p>
+    <span class="read-more">Read guide →</span>
+  </div>
+</a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-grid footer-grid-wide">
+        <div class="footer-brand">
+          <img src="/images/logo/loungeos-logo-white.svg" alt="LoungeOS" width="159" height="28" class="footer-logo" />
+          <p>Offline-first POS and management system for restaurants, bars, lounges and hotels. Built in Cameroon, used across Africa and beyond.</p>
+          <div class="footer-worldwide">
+            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> All currencies</span>
+            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> English &amp; French</span>
+            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Works offline</span>
+          </div>
+          <p class="footer-contact">
+            <a href="mailto:support@loungeos.app">support@loungeos.app</a><br />
+            <a href="mailto:hello@loungeos.app">hello@loungeos.app</a><br />
+            <a href="tel:+237679690703">+237 679 690 703</a>
+          </p>
+        </div>
+        <div class="footer-col">
+          <h3>Product</h3>
+          <a href="/features/">Features</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/download/">Download</a>
+          <a href="/features/offline-pos/">Offline POS</a>
+          <a href="/features/kitchen-display-system/">Kitchen Display System</a>
+          <a href="/features/inventory-management/">Inventory</a>
+          <a href="/features/restaurant-accounting/">Accounting</a>
+        </div>
+        <div class="footer-col">
+          <h3>Solutions</h3>
+          <a href="/restaurant-pos/">Restaurant POS</a>
+          <a href="/bar-pos/">Bar POS</a>
+          <a href="/lounge-pos/">Lounge POS</a>
+          <a href="/nightclub-pos/">Nightclub POS</a>
+          <a href="/hotel-pos/">Hotel POS</a>
+          <a href="/cafe-pos/">Café &amp; Fast Food POS</a>
+        </div>
+        <div class="footer-col">
+          <h3>Countries</h3>
+          <a href="/cameroon/">Cameroon</a>
+          <a href="/nigeria/">Nigeria</a>
+          <a href="/ghana/">Ghana</a>
+          <a href="/south-africa/">South Africa</a>
+          <a href="/africa/">Africa</a>
+          <a href="/fr/cameroun/">Cameroun (FR)</a>
+          <a href="/fr/cote-divoire/">Côte d'Ivoire (FR)</a>
+          <a href="/fr/senegal/">Sénégal (FR)</a>
+        </div>
+        <div class="footer-col">
+          <h3>Resources</h3>
+          <a href="/blog/">Blog</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/knowledgebase.html">Knowledge Base</a>
+          <a href="/documentation.html">Documentation</a>
+          <a href="/about/">About</a>
+          <a href="/contact/">Contact</a>
+          <a href="/privacy.html">Privacy Policy</a>
+          <a href="/terms.html">Terms of Service</a>
+          <a href="/accessibility.html">Accessibility</a>
+          <a href="/legal.html">Legal</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 LoungeOS. All rights reserved.</p>
+        <a href="https://account.loungeos.app/sign-up" class="btn btn-outline-light btn-sm" id="footerCtaBtn">Start Free Trial <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg></a>
+      </div>
+    </footer>
+    <div id="google_translate_element" style="display: none"></div>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: "en", autoDisplay: false },
+          "google_translate_element",
+        );
+      }
+    </script>
+    <script defer type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script defer src="/app.js"></script>
+    <!-- Botpress Webchat -->
+    <script defer src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
+    <script defer src="https://files.bpcontent.cloud/2026/06/19/19/20260619193215-LONFMDIT.js"></script>
+  </body>
+</html>

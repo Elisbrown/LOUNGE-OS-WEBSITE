@@ -1,0 +1,689 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POS Permissions for Restaurants: Voids, Discounts &amp; Staff Roles</title>
+    <meta name="description" content="How to set POS user permissions in a restaurant or bar: role design, who can void or discount, approval workflows, reason codes and the reports to review weekly." />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <link rel="canonical" href="https://loungeos.app/blog/pos-user-permissions-voids-discounts/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="LoungeOS" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="POS Permissions for Restaurants: Voids, Discounts &amp; Staff Roles" />
+    <meta property="og:description" content="How to set POS user permissions in a restaurant or bar: role design, who can void or discount, approval workflows, reason codes and the reports to review weekly." />
+    <meta property="og:url" content="https://loungeos.app/blog/pos-user-permissions-voids-discounts/" />
+    <meta property="og:image" content="https://loungeos.app/images/og-loungeos.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="LoungeOS: offline POS for restaurants, bars and lounges" />
+    <meta property="article:published_time" content="2026-10-08" />
+    <meta property="article:modified_time" content="2026-10-08" data-auto="modified" />
+    <meta property="article:section" content="Loss prevention" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="POS Permissions for Restaurants: Voids, Discounts &amp; Staff Roles" />
+    <meta name="twitter:description" content="How to set POS user permissions in a restaurant or bar: role design, who can void or discount, approval workflows, reason codes and the reports to review weekly." />
+    <meta name="twitter:image" content="https://loungeos.app/images/og-loungeos.jpg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="alternate" type="application/rss+xml" title="LoungeOS Blog" href="https://loungeos.app/blog/feed.xml" />
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://loungeos.app/#organization",
+      "name": "LoungeOS",
+      "url": "https://loungeos.app/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://loungeos.app/images/logo/loungeos-icon-512.png",
+        "width": 512,
+        "height": 512
+      },
+      "image": "https://loungeos.app/images/og-loungeos.jpg",
+      "description": "LoungeOS develops offline-first point of sale (POS) and management software for restaurants, bars, lounges, nightclubs and hotels.",
+      "email": "hello@loungeos.app",
+      "telephone": "+237679690703",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CM"
+      },
+      "areaServed": [
+        "CM",
+        "Africa",
+        "Worldwide"
+      ],
+      "knowsLanguage": [
+        "en",
+        "fr"
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "email": "support@loungeos.app",
+          "telephone": "+237679690703",
+          "availableLanguage": [
+            "English",
+            "French"
+          ]
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "email": "hello@loungeos.app",
+          "telephone": "+237689699688",
+          "availableLanguage": [
+            "English",
+            "French"
+          ]
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "billing support",
+          "email": "billing@loungeos.app"
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://loungeos.app/#website",
+      "url": "https://loungeos.app/",
+      "name": "LoungeOS",
+      "publisher": {
+        "@id": "https://loungeos.app/#organization"
+      },
+      "inLanguage": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://loungeos.app/blog/pos-user-permissions-voids-discounts/#webpage",
+      "url": "https://loungeos.app/blog/pos-user-permissions-voids-discounts/",
+      "name": "POS Permissions for Restaurants: Voids, Discounts & Staff Roles",
+      "description": "How to set POS user permissions in a restaurant or bar: role design, who can void or discount, approval workflows, reason codes and the reports to review weekly.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://loungeos.app/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://loungeos.app/blog/pos-user-permissions-voids-discounts/#breadcrumb"
+      },
+      "dateModified": "2026-10-08",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://loungeos.app/images/screens/loungeos-staff-management.webp"
+      }
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://loungeos.app/blog/pos-user-permissions-voids-discounts/#article",
+      "headline": "Setting up POS permissions: who should be allowed to void, discount and refund?",
+      "description": "How to set POS user permissions in a restaurant or bar: role design, who can void or discount, approval workflows, reason codes and the reports to review weekly.",
+      "image": [
+        "https://loungeos.app/images/screens/loungeos-staff-management.webp",
+        "https://loungeos.app/images/og-loungeos.jpg"
+      ],
+      "datePublished": "2026-10-08",
+      "dateModified": "2026-10-08",
+      "author": {
+        "@type": "Organization",
+        "@id": "https://loungeos.app/#organization",
+        "name": "LoungeOS",
+        "url": "https://loungeos.app/about/"
+      },
+      "publisher": {
+        "@id": "https://loungeos.app/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://loungeos.app/blog/pos-user-permissions-voids-discounts/#webpage"
+      },
+      "inLanguage": "en",
+      "articleSection": "Loss prevention",
+      "wordCount": 884,
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "POS permissions"
+        },
+        {
+          "@type": "Thing",
+          "name": "Role-based access control"
+        },
+        {
+          "@type": "Thing",
+          "name": "Voids"
+        },
+        {
+          "@type": "Thing",
+          "name": "Discounts"
+        }
+      ],
+      "mentions": {
+        "@id": "https://loungeos.app/#software"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://loungeos.app/blog/pos-user-permissions-voids-discounts/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://loungeos.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://loungeos.app/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "POS permissions",
+          "item": "https://loungeos.app/blog/pos-user-permissions-voids-discounts/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://loungeos.app/blog/pos-user-permissions-voids-discounts/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Who should be allowed to void items in a restaurant POS?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Waiters can remove items before an order is sent to the kitchen. After sending, voids should require manager approval and a reason, and be reviewed weekly by staff member.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between a void and a comp?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>A void removes an item from a bill, for example because it was entered by mistake. A comp keeps the item on the record but gives it free of charge, for example to apologise for a service problem. Both should be logged with reasons.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should waiters handle payments?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Separating order-taking from payment, with dedicated cashiers, reduces fraud. In smaller venues where waiters collect payment, personal logins, payment references and daily reconciliation are essential.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I stop staff from sharing logins?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Make personal logins quick to use, set automatic timeouts, and make it a written rule that shared logins are a disciplinary matter. Review the activity log so staff know actions are attributed.<\/p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+    </script>
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+      (function (c, l, a, r, i, t, y) {
+        c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
+        t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", "x9n1mwb8c5");
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TNP53ZZW7K"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag("js", new Date());
+      gtag("config", "G-TNP53ZZW7K");
+    </script>
+    <!-- Usercentrics CMP -->
+    <script id="usercentrics-cmp" src="https://app.usercentrics.eu/browser-ui/latest/loader.js" data-settings-id="SSwfY4ZtHuL22V" async></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <nav class="navbar" id="navbar" aria-label="Main Navigation">
+      <div class="nav-content">
+        <div class="nav-left">
+          <a href="/" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 0.75rem;">
+            <img src="/images/logo/loungeos-logo.svg" alt="LoungeOS" width="148" height="26" class="nav-logo" />
+            <span class="nav-badge">Restaurant POS</span>
+          </a>
+        </div>
+
+        <div class="nav-links" id="navLinks">
+          <a href="/">Home</a>
+          <a href="/features/">Features</a>
+          <div class="nav-dropdown">
+            <button type="button" class="nav-dropdown-toggle" aria-haspopup="true">Solutions <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+            <div class="nav-dropdown-menu">
+              <a href="/restaurant-pos/">Restaurants</a>
+              <a href="/bar-pos/">Bars</a>
+              <a href="/lounge-pos/">Lounges</a>
+              <a href="/nightclub-pos/">Nightclubs</a>
+              <a href="/hotel-pos/">Hotels</a>
+              <a href="/cafe-pos/">Cafés &amp; Fast Food</a>
+              <a href="/cameroon/">Cameroon</a>
+              <a href="/africa/">Africa</a>
+            </div>
+          </div>
+          <a href="/pricing/">Pricing</a>
+          <a href="/download/">Download</a>
+          <div class="nav-dropdown">
+            <button type="button" class="nav-dropdown-toggle" aria-haspopup="true">Resources <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+            <div class="nav-dropdown-menu">
+              <a href="/blog/">Blog</a>
+              <a href="/faq/">FAQ</a>
+              <a href="/knowledgebase.html">Knowledge Base</a>
+              <a href="/documentation.html">Documentation</a>
+              <a href="/about/">About</a>
+              <a href="/contact/">Contact</a>
+              <a href="/fr/">Français</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-cta" style="display: flex; align-items: center; gap: 1rem">
+          <div class="lang-selector">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 16px; height: 16px" aria-hidden="true"><circle cx="12" cy="12" r="10" /><line x1="2" y1="12" x2="22" y2="12" /><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" /></svg>
+            <select id="customLangSelect" aria-label="Select Language" onchange="changeLanguage(this.value)">
+              <option value="en" selected>English</option>
+              <option value="fr">Français</option>
+              <option value="es">Español</option>
+              <option value="de">Deutsch</option>
+              <option value="zh-CN">中文</option>
+              <option value="ar">العربية</option>
+              <option value="hi">हिन्दी</option>
+              <option value="pt">Português</option>
+              <option value="ru">Русский</option>
+              <option value="ja">日本語</option>
+            </select>
+          </div>
+          <a href="https://account.loungeos.app/sign-up" class="btn btn-primary btn-sm" id="navCtaBtn">Start Free Trial</a>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+    <main id="main-content">
+      <header class="page-hero">
+        <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">›</span> <a href="/blog/">Blog</a> <span aria-hidden="true">›</span> <span aria-current="page">POS permissions</span></nav>
+        <p class="section-label">Loss prevention</p>
+        <h1>Setting up POS permissions: who should be allowed to void, discount and refund?</h1>
+        <p class="lead">Permissions are the cheapest loss-prevention tool you have. Set up well, they protect your revenue and your honest staff. Set up badly, they either let money leak or slow service to a crawl.</p>
+        <div class="article-meta"><span>By <a href="/about/">LoungeOS Team</a></span><span>Published <time datetime="2026-10-08">October 8, 2026</time></span><span>Updated <time datetime="2026-10-08" data-auto="modified">October 8, 2026</time></span><span>5 min read</span></div>
+        
+        
+      </header>
+      <article class="content-section">
+        <div class="prose">
+<figure><img src="/images/screens/loungeos-staff-management.webp" srcset="/images/screens/loungeos-staff-management-800.webp 800w, /images/screens/loungeos-staff-management.webp 1600w" sizes="(max-width: 800px) 100vw, 760px" width="1600" height="861" alt="LoungeOS staff management list with names, roles, phone numbers and status" fetchpriority="high" decoding="async" /></figure>
+<aside class="key-takeaways"><h2>Key takeaways</h2><ul>
+<li>Follow <strong>least privilege</strong>: each person gets only what their job needs, through a role, never a shared login.</li>
+<li>Separate <strong>ordering</strong>, <strong>payment</strong> and <strong>configuration</strong>, so no single person controls a whole transaction.</li>
+<li>Put <strong>manager approval</strong> on actions that remove money from a bill: voids after sending, splits, merges, refunds and reactivations.</li>
+<li>Require a <strong>reason</strong> for every cancellation and review cancellations and discounts by person every week.</li>
+</ul></aside>
+<details class="toc" open><summary>In this guide</summary><ol>
+<li><a href="#key-terms">Key terms</a></li>
+<li><a href="#principle-1-one-person-one-login">Principle 1: one person, one login</a></li>
+<li><a href="#principle-2-least-privilege-by-role">Principle 2: least privilege by role</a></li>
+<li><a href="#principle-3-approvals-where-money-leaves-the-bill">Principle 3: approvals where money leaves the bill</a></li>
+<li><a href="#principle-4-reasons-not-just-records">Principle 4: reasons, not just records</a></li>
+<li><a href="#principle-5-discounts-as-rules-not-free-text">Principle 5: discounts as rules, not free text</a></li>
+<li><a href="#the-weekly-permissions-review-10-minutes">The weekly permissions review (10 minutes)</a></li>
+<li><a href="#common-mistakes">Common mistakes</a></li>
+<li><a href="#frequently-asked-questions">Frequently asked questions</a></li>
+</ol></details>
+<p>Every POS action that changes what a customer pays is an opportunity for an honest mistake or a dishonest decision. Permissions decide who can take those actions, under what conditions, and with what record.</p>
+<h2 id="key-terms">Key terms</h2>
+<ul>
+<li><strong>Void / cancellation:</strong> removing an item or an entire order. Before it’s sent to the kitchen it’s usually harmless. After it’s sent, or after payment, it’s the most common theft vector.</li>
+<li><strong>Comp:</strong> giving an item free of charge, for example to apologise for a mistake.</li>
+<li><strong>Discount:</strong> reducing the price, either a percentage or a fixed amount.</li>
+<li><strong>Refund:</strong> returning money for a paid item.</li>
+<li><strong>Split / merge:</strong> moving items between bills or tables.</li>
+</ul>
+<h2 id="principle-1-one-person-one-login">Principle 1: one person, one login</h2>
+<p>Shared logins make every control useless, because you can’t attribute anything. Give <strong>every</strong> staff member their own account, require them to log in on whichever device they use, and set sessions to <strong>time out</strong> when idle. In LoungeOS, inactive sessions log out automatically after two hours.</p>
+<h2 id="principle-2-least-privilege-by-role">Principle 2: least privilege by role</h2>
+<p>Design roles around jobs, not people. Here’s the role matrix LoungeOS uses, a useful template even if you use another system:</p>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Dashboard</th>
+<th>POS</th>
+<th>Kitchen/bar screens</th>
+<th>Stock</th>
+<th>Accounting</th>
+<th>Configuration</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Super Admin (owner)</td>
+<td>Full</td>
+<td>View only</td>
+<td>View only</td>
+<td>View only</td>
+<td>View only</td>
+<td>Full</td>
+</tr>
+<tr>
+<td>Manager</td>
+<td>Full</td>
+<td>Full</td>
+<td>Full</td>
+<td>Full</td>
+<td>Sync &amp; view</td>
+<td>Visual &amp; layout</td>
+</tr>
+<tr>
+<td>Accountant</td>
+<td>Financial</td>
+<td>View only</td>
+<td>None</td>
+<td>View only</td>
+<td>Full</td>
+<td>None</td>
+</tr>
+<tr>
+<td>Stock manager</td>
+<td>Stock stats</td>
+<td>None</td>
+<td>None</td>
+<td>Full</td>
+<td>None</td>
+<td>None</td>
+</tr>
+<tr>
+<td>Chef</td>
+<td>None</td>
+<td>None</td>
+<td>Kitchen</td>
+<td>Menu catalogue</td>
+<td>None</td>
+<td>None</td>
+</tr>
+<tr>
+<td>Waiter</td>
+<td>Own floor’s tables</td>
+<td>Order taking</td>
+<td>None</td>
+<td>None</td>
+<td>None</td>
+<td>None</td>
+</tr>
+<tr>
+<td>Cashier</td>
+<td>POS / bills</td>
+<td>Payment processing</td>
+<td>Bar display</td>
+<td>None</td>
+<td>None</td>
+<td>None</td>
+</tr>
+<tr>
+<td>Bartender</td>
+<td>None</td>
+<td>None</td>
+<td>Bar</td>
+<td>None</td>
+<td>None</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<p>Notice the <strong>separation of duties</strong>: the waiter who takes the order doesn’t take the payment, the cashier can’t change prices or stock, and the owner’s configuration account isn’t used to ring up sales.</p>
+<h2 id="principle-3-approvals-where-money-leaves-the-bill">Principle 3: approvals where money leaves the bill</h2>
+<p>Not every action needs a manager. Too many approvals slow service and push staff to share the manager’s password, which is worse. A good default:</p>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Who can do it</th>
+<th>Approval</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Remove an item <strong>before</strong> sending</td>
+<td>Waiter</td>
+<td>None</td>
+</tr>
+<tr>
+<td>Remove an item <strong>after</strong> sending</td>
+<td>—</td>
+<td><strong>Manager credentials</strong></td>
+</tr>
+<tr>
+<td>Cancel an order (customer left, error)</td>
+<td>Waiter, chef, bartender</td>
+<td><strong>Reason required</strong>, logged</td>
+</tr>
+<tr>
+<td>Reactivate a cancelled order</td>
+<td>Manager</td>
+<td>Manager only, within 24 h</td>
+</tr>
+<tr>
+<td>Apply a discount</td>
+<td>Cashier, waiter</td>
+<td>Only pre-configured discount rules</td>
+</tr>
+<tr>
+<td>Split or merge bills</td>
+<td>Manager</td>
+<td>Manager only</td>
+</tr>
+<tr>
+<td>Refund</td>
+<td>Manager</td>
+<td>Manager + reason</td>
+</tr>
+<tr>
+<td>Change prices or menu</td>
+<td>Manager, chef (menu)</td>
+<td>Logged</td>
+</tr>
+<tr>
+<td>Adjust stock (damage/waste/loss)</td>
+<td>Stock manager, manager</td>
+<td>Reason, logged</td>
+</tr>
+</tbody>
+</table>
+<p>LoungeOS enforces most of these rules out of the box. Removing items from sent orders requires manager credentials, splitting, merging and reactivating orders are manager-only, discounts come only from configured rules, and every cancellation needs a reason.</p>
+<h2 id="principle-4-reasons-not-just-records">Principle 4: reasons, not just records</h2>
+<p>A log that says “Order cancelled by Paul at 23:41” is useful. A log that says “Order cancelled by Paul at 23:41: <strong>customer left</strong>” is far more useful, because you can count reasons. Use a short, fixed list:</p>
+<ul>
+<li>Customer left / changed mind</li>
+<li>Wrong entry</li>
+<li>Out of stock</li>
+<li>Quality problem (comp)</li>
+<li>Other (with note)</li>
+</ul>
+<h2 id="principle-5-discounts-as-rules-not-free-text">Principle 5: discounts as rules, not free text</h2>
+<p>If staff can type any discount, they will, generously and inconsistently. Pre-configure the discounts you allow: happy hour 20%, staff meal 50%, loyalty 10%. Switch off discounts entirely if you don’t use them.</p>
+<h2 id="the-weekly-permissions-review-10-minutes">The weekly permissions review (10 minutes)</h2>
+<ol>
+<li><strong>Cancellations by person and reason.</strong> Look for outliers.</li>
+<li><strong>Discounts by person.</strong> Are they in line with your rules and with sales?</li>
+<li><strong>Manager approvals.</strong> Is one manager approving far more voids than others?</li>
+<li><strong>Failed login attempts.</strong> Repeated failures can mean password guessing.</li>
+<li><strong>Off-hours activity.</strong> Logins or changes after closing.</li>
+<li><strong>Staff list.</strong> Remove accounts for people who left. Do it the day they leave.</li>
+</ol>
+<h2 id="common-mistakes">Common mistakes</h2>
+<ul>
+<li><strong>Sharing the manager password with the head waiter</strong> “for speed.” Give them a manager role instead, or accept the extra seconds.</li>
+<li><strong>Using the owner’s admin account for daily work.</strong> Keep it for configuration.</li>
+<li><strong>Forgetting to remove ex-staff accounts.</strong></li>
+<li><strong>Never looking at the log.</strong> Controls only deter if staff know someone reviews them.</li>
+</ul>
+<div class="cta-box">
+<h2>Run your next service on LoungeOS</h2>
+<p>Install LoungeOS on a Windows computer, connect your tablets and phones over Wi-Fi, and run real service for 30 days. Free, no credit card.</p>
+<div class="cta-actions">
+<a class="btn btn-primary btn-lg" href="https://account.loungeos.app/sign-up">Start Free Trial</a>
+<a class="btn btn-secondary btn-lg" href="/download/">Download for Windows</a>
+</div>
+</div>
+<h2 id="frequently-asked-questions">Frequently asked questions</h2>
+<h3 id="who-should-be-allowed-to-void-items-in-a-restaurant-pos">Who should be allowed to void items in a restaurant POS?</h3>
+<p>Waiters can remove items before an order is sent to the kitchen. After sending, voids should require manager approval and a reason, and be reviewed weekly by staff member.</p>
+<h3 id="what-is-the-difference-between-a-void-and-a-comp">What is the difference between a void and a comp?</h3>
+<p>A void removes an item from a bill, for example because it was entered by mistake. A comp keeps the item on the record but gives it free of charge, for example to apologise for a service problem. Both should be logged with reasons.</p>
+<h3 id="should-waiters-handle-payments">Should waiters handle payments?</h3>
+<p>Separating order-taking from payment, with dedicated cashiers, reduces fraud. In smaller venues where waiters collect payment, personal logins, payment references and daily reconciliation are essential.</p>
+<h3 id="how-do-i-stop-staff-from-sharing-logins">How do I stop staff from sharing logins?</h3>
+<p>Make personal logins quick to use, set automatic timeouts, and make it a written rule that shared logins are a disciplinary matter. Review the activity log so staff know actions are attributed.</p>
+<div class="cta-box">
+  <h2>Run your next service on LoungeOS</h2>
+  <p>Install LoungeOS on a Windows computer, connect your tablets and phones over Wi-Fi, and run real service for 30 days. Free, no credit card.</p>
+  <div class="cta-actions">
+    <a class="btn btn-primary btn-lg" href="https://account.loungeos.app/sign-up">Start Free Trial</a>
+    <a class="btn btn-secondary btn-lg" href="/download/">Download for Windows</a>
+  </div>
+</div>
+        </div>
+      </article>
+      <section class="related-section">
+        <h2 class="section-title">Keep reading</h2>
+        <div class="card-grid">
+<a class="post-card" href="/features/loss-prevention/">
+  <img src="/images/screens/loungeos-activity-log-audit-trail-800.webp" width="800" height="430" alt="LoungeOS activity log listing user actions such as order status changes, table updates and stock adjustments with timestamps" loading="lazy" decoding="async" />
+  <div class="post-card-body">
+    <span class="tag">Loss Prevention</span>
+    <h3>Loss Prevention &amp; Audit Log</h3>
+    <p>Eight staff roles, manager-only edits, cancellation reasons and a searchable activity log.</p>
+    <span class="read-more">Learn more →</span>
+  </div>
+</a>
+<a class="post-card" href="/blog/restaurant-employee-theft-prevention/">
+  <img src="/images/screens/loungeos-activity-log-audit-trail-800.webp" width="800" height="430" alt="LoungeOS activity log listing staff actions with timestamps" loading="lazy" decoding="async" />
+  <div class="post-card-body">
+    <span class="tag">Loss prevention</span>
+    <h3>Restaurant employee theft: 12 schemes and fixes</h3>
+    <p>Voids, under-ringing, fake comps, sweethearting and fake mobile money, and how to stop each.</p>
+    <span class="read-more">Read guide →</span>
+  </div>
+</a>
+<a class="post-card" href="/blog/restaurant-kpis-metrics/">
+  <img src="/images/screens/loungeos-sales-reports-800.webp" width="800" height="430" alt="LoungeOS reports and analytics with sales over time and sales by category" loading="lazy" decoding="async" />
+  <div class="post-card-body">
+    <span class="tag">Inventory &amp; finance</span>
+    <h3>15 restaurant KPIs with formulas</h3>
+    <p>Sales, costs, speed and control metrics, and where to find them.</p>
+    <span class="read-more">Read guide →</span>
+  </div>
+</a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-grid footer-grid-wide">
+        <div class="footer-brand">
+          <img src="/images/logo/loungeos-logo-white.svg" alt="LoungeOS" width="159" height="28" class="footer-logo" />
+          <p>Offline-first POS and management system for restaurants, bars, lounges and hotels. Built in Cameroon, used across Africa and beyond.</p>
+          <div class="footer-worldwide">
+            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> All currencies</span>
+            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> English &amp; French</span>
+            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Works offline</span>
+          </div>
+          <p class="footer-contact">
+            <a href="mailto:support@loungeos.app">support@loungeos.app</a><br />
+            <a href="mailto:hello@loungeos.app">hello@loungeos.app</a><br />
+            <a href="tel:+237679690703">+237 679 690 703</a>
+          </p>
+        </div>
+        <div class="footer-col">
+          <h3>Product</h3>
+          <a href="/features/">Features</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/download/">Download</a>
+          <a href="/features/offline-pos/">Offline POS</a>
+          <a href="/features/kitchen-display-system/">Kitchen Display System</a>
+          <a href="/features/inventory-management/">Inventory</a>
+          <a href="/features/restaurant-accounting/">Accounting</a>
+        </div>
+        <div class="footer-col">
+          <h3>Solutions</h3>
+          <a href="/restaurant-pos/">Restaurant POS</a>
+          <a href="/bar-pos/">Bar POS</a>
+          <a href="/lounge-pos/">Lounge POS</a>
+          <a href="/nightclub-pos/">Nightclub POS</a>
+          <a href="/hotel-pos/">Hotel POS</a>
+          <a href="/cafe-pos/">Café &amp; Fast Food POS</a>
+        </div>
+        <div class="footer-col">
+          <h3>Countries</h3>
+          <a href="/cameroon/">Cameroon</a>
+          <a href="/nigeria/">Nigeria</a>
+          <a href="/ghana/">Ghana</a>
+          <a href="/south-africa/">South Africa</a>
+          <a href="/africa/">Africa</a>
+          <a href="/fr/cameroun/">Cameroun (FR)</a>
+          <a href="/fr/cote-divoire/">Côte d'Ivoire (FR)</a>
+          <a href="/fr/senegal/">Sénégal (FR)</a>
+        </div>
+        <div class="footer-col">
+          <h3>Resources</h3>
+          <a href="/blog/">Blog</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/knowledgebase.html">Knowledge Base</a>
+          <a href="/documentation.html">Documentation</a>
+          <a href="/about/">About</a>
+          <a href="/contact/">Contact</a>
+          <a href="/privacy.html">Privacy Policy</a>
+          <a href="/terms.html">Terms of Service</a>
+          <a href="/accessibility.html">Accessibility</a>
+          <a href="/legal.html">Legal</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 LoungeOS. All rights reserved.</p>
+        <a href="https://account.loungeos.app/sign-up" class="btn btn-outline-light btn-sm" id="footerCtaBtn">Start Free Trial <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg></a>
+      </div>
+    </footer>
+    <div id="google_translate_element" style="display: none"></div>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: "en", autoDisplay: false },
+          "google_translate_element",
+        );
+      }
+    </script>
+    <script defer type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script defer src="/app.js"></script>
+    <!-- Botpress Webchat -->
+    <script defer src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
+    <script defer src="https://files.bpcontent.cloud/2026/06/19/19/20260619193215-LONFMDIT.js"></script>
+  </body>
+</html>

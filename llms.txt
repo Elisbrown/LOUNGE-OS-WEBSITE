@@ -1,0 +1,90 @@
+# LoungeOS
+
+> LoungeOS is an offline-first point of sale (POS) and management system for restaurants, bars, lounges, nightclubs, cafés and hotels, developed in Cameroon. It runs on a Windows computer inside the venue; staff phones, tablets and kitchen/bar screens connect over the venue's Wi-Fi, so service continues without internet.
+
+Key facts:
+- Modules: table and floor management, POS ordering, Kitchen Display System (KDS) and Bar Display System (BDS) with automatic food/drink routing, inventory and suppliers, 8 staff roles with manager-only voids and splits, mandatory cancellation reasons and an activity log, payments (cash, card, MTN Mobile Money, Orange Money with references, split payments), double-entry accounting (P&L, balance sheet, cash flow), encrypted backups.
+- Platform: host on Windows 10/11 (64-bit, 4 GB RAM); terminals are any device with a web browser on the local network (port 2304). macOS version in development. Current version 1.3.6.
+- Languages: English and French interface. Currencies: XAF, USD, EUR, GBP, NGN, GHS built in; custom currencies supported.
+- Pricing: 30-day free trial, no credit card. One plan with every feature and unlimited terminals, priced by region: 30,000 FCFA/month (20,000 FCFA/month on a yearly plan) in the FCFA zone; ₦35,000/month in Nigeria; GH₵299/month in Ghana; R599/month in South Africa; US$49/month (US$39/month yearly) in the US and most high-income countries; about US$25/month in other emerging markets. Enterprise plans on quote.
+- Not included today: integrated card processing, delivery-platform integrations, hotel PMS folio posting, e-invoicing/fiscal device connections.
+- Contact: support@loungeos.app, hello@loungeos.app (sales), billing@loungeos.app, +237 679 690 703.
+
+## Product
+
+- [LoungeOS](https://loungeos.app/): Offline-first POS for restaurants, bars, lounges and hotels: table orders, kitchen screens, stock, staff control, mobile money and accounting. 30-day free trial.
+- [About LoungeOS: Offline-First Hospitality Software From Cameroon](https://loungeos.app/about/): LoungeOS builds offline-first POS and management software for restaurants, bars, lounges and hotels. Learn who we are, why we built it and how to reach us.
+- [Contact LoungeOS: Sales, Support & Billing](https://loungeos.app/contact/): Talk to LoungeOS sales, get technical support or ask a billing question. Email and phone support in English and French, based in Cameroon.
+- [Download LoungeOS Restaurant POS for Windows (v1.3.6)](https://loungeos.app/download/): Download LoungeOS 1.3.6 for Windows 10 and 11. System requirements, installation, licence activation, default login and how to connect tablets on your network.
+- [LoungeOS FAQ: Offline POS, Pricing, Setup, Hardware & Data](https://loungeos.app/faq/): Answers to common questions about LoungeOS: how it works offline, what hardware you need, pricing by country, activation, mobile money, security and backups.
+- [LoungeOS Pricing: Restaurant POS Plans & Free 30-Day Trial](https://loungeos.app/pricing/): One plan with every feature and unlimited terminals. From 20,000 FCFA, ₦25,000 or US$39 a month on a yearly plan. 30-day free trial, no credit card.
+
+## Features
+
+- [Restaurant POS Features: KDS, Inventory, Accounting](https://loungeos.app/features/): Every LoungeOS feature in one place: offline POS, table management, kitchen and bar displays, inventory, staff permissions, audit logs, mobile money and accounting.
+- [Restaurant & Bar Inventory Management Software](https://loungeos.app/features/inventory-management/): Track drinks, ingredients and packaging with stock levels, low-stock alerts, supplier records, waste and damage logging, and CSV import. Works offline.
+- [Kitchen Display System (KDS) for Restaurants & Bars](https://loungeos.app/features/kitchen-display-system/): Replace paper tickets with a kitchen display system that works offline. Food goes to the kitchen screen, drinks to the bar screen, with alerts when orders are ready.
+- [Restaurant Theft Prevention & POS Audit Log](https://loungeos.app/features/loss-prevention/): Stop voids, fake cancellations and cash leaks. LoungeOS has 8 staff roles, manager-only edits, mandatory cancellation reasons and a searchable activity log.
+- [POS With Mobile Money: MTN MoMo & Orange Money](https://loungeos.app/features/mobile-money-pos/): Record MTN Mobile Money, Orange Money, cash and card payments with transaction references, split bills across methods, and reconcile at closing. Works offline.
+- [Offline POS System: Keep Selling Without Internet](https://loungeos.app/features/offline-pos/): LoungeOS is an offline-first restaurant POS. Orders, kitchen screens, payments and stock keep working on your local Wi-Fi when the internet goes down.
+- [Restaurant Accounting Software: P&L & Balance Sheet](https://loungeos.app/features/restaurant-accounting/): Turn POS sales and stock purchases into balanced double-entry journals, then get a P&L, balance sheet and cash-flow statement as PDF or CSV.
+- [Restaurant Table & Floor Management Software](https://loungeos.app/features/table-management/): Live table status, floors and VIP areas, waiter sections, split and merge bills. LoungeOS table management keeps the floor organised during the rush, even offline.
+
+## Solutions by venue
+
+- [Bar POS System With Stock Control & Bar Display](https://loungeos.app/bar-pos/): A fast bar POS that tracks every bottle and crate, sends drink orders to a bar display, controls free drinks and discounts, and keeps working offline.
+- [Café, Snack Bar & Fast-Food POS System](https://loungeos.app/cafe-pos/): A simple POS for cafés, snack bars and fast-food outlets: quick counter orders, packaging stock, mobile money, and one tablet or laptop is enough. Works offline.
+- [Hotel Restaurant & Bar POS (F&B Outlets)](https://loungeos.app/hotel-pos/): Run your hotel restaurant, bar, pool bar and terrace on one offline POS. Separate service areas, kitchen and bar displays, stock control and F&B accounting.
+- [Lounge POS & Lounge Management Software](https://loungeos.app/lounge-pos/): LoungeOS is lounge management software built for VIP areas, bottle sales, events and late-night cash control. Offline POS, bar display, stock and audit log.
+- [Nightclub POS System for High-Volume Drink Service](https://loungeos.app/nightclub-pos/): A nightclub POS for fast drink orders, VIP tables, bottle service and strict cash control. Runs offline on your own network with unlimited devices.
+- [Restaurant POS System That Works Offline](https://loungeos.app/restaurant-pos/): An offline restaurant POS with table ordering, kitchen display, inventory, staff permissions and accounting. Use your own phones and tablets. Free 30-day trial.
+
+## Countries
+
+- [Restaurant POS for Africa: Offline & Mobile Money](https://loungeos.app/africa/): An offline-first restaurant, bar and lounge POS built in Africa. Works through power and internet cuts, records MTN MoMo and Orange Money, local currencies.
+- [Restaurant & Bar POS Software in Cameroon](https://loungeos.app/cameroon/): Offline POS for restaurants, snack-bars, lounges and hotels in Douala, Yaoundé and across Cameroon. FCFA prices, MTN MoMo & Orange Money, 19.25% VAT.
+- [Restaurant & Bar POS Software in Ghana (Cedi Pricing)](https://loungeos.app/ghana/): Offline restaurant, bar and lounge POS for Accra, Kumasi and across Ghana. Cedi pricing, MTN MoMo payment records, VAT and levies, and no downtime during dumsor.
+- [Restaurant & Bar POS Software in Nigeria (Naira)](https://loungeos.app/nigeria/): Offline restaurant, bar and lounge POS for Lagos, Abuja and all of Nigeria. From ₦25,000/month, transfer reference tracking, 7.5% VAT, works on generator.
+- [Restaurant & Bar POS Software in South Africa (Rand)](https://loungeos.app/south-africa/): Offline-first restaurant, bar and shisanyama POS for South Africa. Rand pricing from R449/month, 15% VAT, unlimited devices, and no downtime during load-shedding.
+
+## Guides (English)
+
+- [How to Accept Mobile Money in a Restaurant (MoMo & Orange Money)](https://loungeos.app/blog/accept-mobile-money-in-your-restaurant/): Accept MTN MoMo and Orange Money in your restaurant or bar safely: merchant accounts, a fraud-proof checkout routine, fake SMS scams and daily reconciliation.
+- [Bar Inventory Shrinkage & Pour Cost: Measure and Cut Losses](https://loungeos.app/blog/bar-inventory-shrinkage-pour-cost/): Calculate pour cost and bar shrinkage step by step, compare with industry benchmarks, find where bottles disappear, and set up a weekly count that stops the leak.
+- [Best Offline Restaurant POS Systems in 2026 (Compared)](https://loungeos.app/blog/best-offline-restaurant-pos-systems/): Which restaurant POS systems really work without internet? We compare LoungeOS, SambaPOS, Toast, Square and Loyverse on what keeps working, and what doesn't.
+- [Cloud vs Offline (Local) POS: Which Is Right for Your Restaurant?](https://loungeos.app/blog/cloud-vs-offline-pos/): Cloud POS or local, offline-first POS? Compare how they handle outages, data ownership, cost, security, updates and remote access, with a simple decision guide.
+- [Food Cost Percentage: Formula, Benchmarks & How to Lower It](https://loungeos.app/blog/food-cost-percentage-formula/): Calculate restaurant food cost percentage and plate cost with worked examples, typical benchmarks (28–35%), actual vs ideal food cost, and ways to lower it.
+- [How to Choose a Restaurant POS System: 2026 Buyer's Checklist](https://loungeos.app/blog/how-to-choose-a-restaurant-pos-system/): A practical checklist for choosing a restaurant POS: 12 questions to ask, how to calculate total cost of ownership, red flags in contracts, and a 2-week trial plan.
+- [How to Manage a Lounge or Nightclub: VIP, Bottles, Staff & Cash](https://loungeos.app/blog/lounge-nightclub-management/): How to run or open a lounge or nightclub: zones and VIP tables, bottle service, events, staffing, late-night cash control, stock and the KPIs to watch.
+- [Loyverse Alternatives for Restaurants & Bars (2026 Guide)](https://loungeos.app/blog/loyverse-alternatives/): Outgrowing Loyverse? Learn the signs, Loyverse's real offline limits and add-on costs, and the best alternatives for table service, bars and unreliable internet.
+- [POS Permissions for Restaurants: Voids, Discounts & Staff Roles](https://loungeos.app/blog/pos-user-permissions-voids-discounts/): How to set POS user permissions in a restaurant or bar: role design, who can void or discount, approval workflows, reason codes and the reports to review weekly.
+- [Restaurant Accounting Basics: P&L, Balance Sheet & Cash Flow](https://loungeos.app/blog/restaurant-accounting-basics/): Restaurant accounting for owners: the P&L, COGS and prime cost, balance sheet, cash flow, double-entry basics, chart of accounts and a monthly close.
+- [Restaurant Employee Theft: 12 Common Schemes & How to Stop Them](https://loungeos.app/blog/restaurant-employee-theft-prevention/): How restaurant and bar staff steal (voids, under-ringing, fake comps, sweethearting, fake mobile money) and the controls that stop each scheme.
+- [Restaurant Inventory Management: A Step-by-Step System That Works](https://loungeos.app/blog/restaurant-inventory-management-guide/): Set up restaurant inventory management in 8 steps: item list, units, par levels, receiving, FIFO, waste logging, counts and variance, with examples.
+- [15 Restaurant KPIs Every Owner Should Track (With Formulas)](https://loungeos.app/blog/restaurant-kpis-metrics/): The 15 restaurant and bar KPIs that matter: sales, average check, table turnover, food and pour cost, prime cost, labour, voids, discounts and inventory.
+- [Restaurant POS Hardware Guide: PC, Tablets, Printer, Wi-Fi, UPS](https://loungeos.app/blog/restaurant-pos-hardware-guide/): What hardware does a restaurant POS need? Host computer specs, tablets, thermal printers, Wi-Fi routers, kitchen screens and UPS sizing, with budget setups.
+- [Restaurant Table Management: Floor Plans, Sections & Table Turns](https://loungeos.app/blog/restaurant-table-management/): How to manage restaurant tables: floor plans, waiter sections, table status, turn times, reservations, splitting and merging bills, and key metrics.
+- [How to Run a Restaurant During Power Cuts & Internet Outages](https://loungeos.app/blog/run-a-restaurant-during-power-and-internet-outages/): A checklist for keeping a restaurant, bar or lounge running through power cuts and internet outages: backup power, POS, payments, kitchen and cold chain.
+- [What Is a Kitchen Display System (KDS)? Benefits, Setup & Costs](https://loungeos.app/blog/what-is-a-kitchen-display-system/): A kitchen display system replaces paper tickets with screens. Learn how a KDS works, its benefits, what hardware it needs, how routing works and how to set one up.
+
+## En français
+
+- [LoungeOS : logiciel de caisse restaurant et bar hors ligne](https://loungeos.app/fr/): Logiciel de caisse et de gestion pour restaurants, bars, lounges et hôtels, sans internet : commandes, écrans cuisine, stocks, Mobile Money, comptabilité.
+- [Logiciel de caisse restaurant en Afrique francophone](https://loungeos.app/fr/afrique/): Logiciel de caisse et de gestion conçu en Afrique : fonctionne sans internet, gère MTN MoMo et Orange Money, prix en FCFA. Pour restaurants, bars, lounges et hôtels.
+- [Coupures de courant et d'internet : garder son restaurant ouvert](https://loungeos.app/fr/blog/coupures-courant-internet-restaurant/): Délestages et coupures d'internet : continuer à servir dans un restaurant, bar ou lounge. Onduleur, caisse hors ligne, paiements, cuisine, chaîne du froid.
+- [Logiciel de caisse restaurant en Afrique : bien choisir en 2026](https://loungeos.app/fr/blog/logiciel-caisse-restaurant-afrique/): Choisir un logiciel de caisse pour restaurant, bar ou lounge en Afrique : fonctionnement hors ligne, Mobile Money, contrôle du personnel, prix en FCFA.
+- [Vols des employés au bar ou au restaurant : 10 techniques et parades](https://loungeos.app/fr/blog/vols-employes-bar-restaurant/): Comment les employés volent dans les bars, restaurants et lounges (annulations, sous-facturation, tournées offertes, faux Mobile Money) et comment l'empêcher.
+- [Logiciel de caisse restaurant et bar au Cameroun](https://loungeos.app/fr/cameroun/): Logiciel de caisse camerounais pour restaurants, snack-bars, lounges et hôtels à Douala, Yaoundé et partout au Cameroun : FCFA, MTN MoMo, Orange Money, TVA 19,25 %.
+- [Logiciel de caisse maquis et restaurant en Côte d'Ivoire](https://loungeos.app/fr/cote-divoire/): Logiciel de caisse hors ligne pour restaurants, maquis, lounges et bars à Abidjan et en Côte d'Ivoire : prix en FCFA, Mobile Money, TVA 18 %, contrôle des stocks.
+- [FAQ LoungeOS : caisse hors ligne, tarifs, matériel, Mobile Money](https://loungeos.app/fr/faq/): Questions fréquentes sur LoungeOS : fonctionnement sans internet, matériel nécessaire, tarifs en FCFA, activation, Mobile Money, sécurité et sauvegardes.
+- [Fonctionnalités LoungeOS : caisse, écran cuisine, stocks](https://loungeos.app/fr/fonctionnalites/): Toutes les fonctionnalités de LoungeOS : caisse hors ligne, tables, écrans cuisine et bar, stocks, rôles et journal d'activité, Mobile Money, comptabilité.
+- [Logiciel de caisse restaurant hors ligne](https://loungeos.app/fr/logiciel-caisse-restaurant/): Logiciel de caisse pour restaurant : commandes à table sur téléphone, écran cuisine, stocks, contrôle des serveurs et comptabilité. Fonctionne sans internet.
+- [Logiciel de gestion bar, lounge et boîte de nuit](https://loungeos.app/fr/logiciel-gestion-bar-lounge/): Logiciel de caisse et de stock pour bars, snack-bars, lounges, cabarets et boîtes de nuit : écran bar, suivi des bouteilles, zones VIP, annulations contrôlées.
+- [Logiciel de caisse restaurant et bar au Sénégal](https://loungeos.app/fr/senegal/): Logiciel de caisse hors ligne pour restaurants, dibiteries, fast-foods, lounges et hôtels à Dakar et au Sénégal : FCFA, Orange Money, TVA 18 %, gestion des stocks.
+- [Tarifs LoungeOS : logiciel de caisse dès 20 000 FCFA/mois](https://loungeos.app/fr/tarifs/): Une seule formule avec toutes les fonctionnalités et des terminaux illimités : 30 000 FCFA/mois, ou 20 000 FCFA/mois à l'année. Essai gratuit de 30 jours.
+- [Télécharger LoungeOS pour Windows (version 1.3.6)](https://loungeos.app/fr/telecharger/): Téléchargez le logiciel de caisse LoungeOS pour Windows 10 et 11 : configuration requise, installation, activation de la licence et connexion des tablettes.
+
+## Documentation
+
+- [LoungeOS Documentation: Install, Activate & Operate the POS](https://loungeos.app/documentation.html): Official LoungeOS documentation: system requirements, installation, licence activation, user roles, setup, daily workflows, stock, accounting and troubleshooting.
+- [LoungeOS Knowledge Base: How-To Guides & Troubleshooting](https://loungeos.app/knowledgebase.html): Step-by-step LoungeOS help articles: installing and activating, roles and permissions, orders, kitchen and bar displays, inventory, accounting and backups.
