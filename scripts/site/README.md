@@ -54,3 +54,17 @@ file. When you change `style.css` or `app.js`, run `python3 scripts/seo_update.p
 (or let the GitHub Action do it after you push) so the hash changes and browsers
 download the new file instead of reusing an old cached copy. Without this,
 returning visitors can see new pages with the old stylesheet.
+
+## Link preview images
+
+Every page has its own share card at `images/og/<slug>.webp` (1200×630): the
+page's screenshot with the logo, category label and title. That's what shows
+when a link is shared on WhatsApp, Facebook, LinkedIn, X, Telegram or iMessage.
+`scripts/seo_update.py` adds the og:image and twitter:image tags. After adding a
+page or changing a title, regenerate the cards:
+
+```
+node scripts/og/make-og.js            # or: node scripts/og/make-og.js /new-page/
+python3 scripts/og/to_webp.py
+python3 scripts/seo_update.py
+```

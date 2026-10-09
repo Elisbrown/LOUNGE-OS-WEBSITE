@@ -22,7 +22,7 @@ from bs4 import BeautifulSoup
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.dirname(HERE))
-from seo_update import version_links  # noqa: E402
+from seo_update import social_tags, version_links  # noqa: E402
 CONTENT = os.path.join(HERE, "content")
 SITE = "https://loungeos.app"
 TODAY = dt.date(2026, 10, 8)
@@ -444,12 +444,41 @@ def breadcrumb_node(url, crumbs):
 
 
 # ---------------------------------------------------------------- shortcodes
-def card_html(p, lang, cta=None):
+def figures_of(p):
+    """(image, alt) for each [[figure:...]] in a page's body."""
+    return [(m.group(1).strip(), m.group(2).strip())
+            for m in re.finditer(r"\[\[figure:([^|\]]+)\|([^|\]]+)", p.get("body_md", ""))]
+
+
+def card_images(cards, used=()):
+    """Choose a thumbnail per card so a row never shows the same screenshot twice,
+    nor the screenshot already at the top of the page. A card falls back to one of
+    its own page's figures, then to any screenshot not yet in the row."""
+    used, out = set(used), []
+    for p in cards:
+        title = p.get("card_title") or p["h1"]
+        options = [(p.get("image", "loungeos-pos-order-screen"), p.get("image_alt", title))] + figures_of(p)
+        options += [(g, title) for g in CARD_FALLBACK_IMAGES]
+        name, alt = next((o for o in options if o[0] not in used), options[0])
+        used.add(name)
+        out.append((name, alt))
+    return out
+
+
+CARD_FALLBACK_IMAGES = ["loungeos-pos-order-screen", "loungeos-kitchen-display-system", "loungeos-inventory-dashboard",
+                        "loungeos-sales-reports", "loungeos-table-management", "loungeos-floor-management",
+                        "loungeos-menu-management", "loungeos-order-management"]
+
+
+def cards_html(cards, lang, used=()):
+    return "\n".join(card_html(p, lang, img=im) for p, im in zip(cards, card_images(cards, used)))
+
+
+def card_html(p, lang, cta=None, img=None):
     title = p.get("card_title") or p["h1"]
     desc = p.get("card_desc") or p["description"]
     tag = p.get("category") or p.get("label") or ""
-    img = p.get("image", "loungeos-pos-order-screen")
-    alt = p.get("image_alt", title)
+    img, alt = img or (p.get("image", "loungeos-pos-order-screen"), p.get("image_alt", title))
     more = cta or (T[lang]["read_more"] if p["type"] == "blog" else T[lang]["learn_more"])
     return f"""<a class="post-card" href="{p['url']}">
   <img src="/images/screens/{img}-800.webp" width="800" height="430" alt="{esc(alt)}" loading="lazy" decoding="async" />
@@ -484,14 +513,14 @@ def shortcodes(md, page, by_url):
 
     def cards(m):
         urls = [u.strip() for u in m.group(1).split(",") if u.strip()]
-        out = []
+        found = []
         for u in urls:
             if u not in by_url:
                 if LENIENT:
                     continue
                 raise SystemExit(f"{page['url']}: card link {u} not found")
-            out.append(card_html(by_url[u], lang))
-        return '<div class="card-grid">\n' + "\n".join(out) + "\n</div>"
+            found.append(by_url[u])
+        return '<div class="card-grid">\n' + cards_html(found, lang, [page.get("image")]) + "\n</div>"
 
     md = re.sub(r"\[\[figure:(.+?)\]\]", fig, md)
     md = re.sub(r"\[\[cards:(.+?)\]\]", cards, md)
@@ -521,6 +550,13 @@ PRICES_FR_REGION = {
     "South Africa": "Afrique du Sud",
 }
 
+PRICES_FR_CURRENCY = {"US$ (shown in local currency)": "US$ (affiché en monnaie locale)"}
+
+
+def fr_number(v):
+    """30,000 -> 30 000 with a narrow no-break space, as written in French."""
+    return v.replace(",", "\u202f")
+
 
 def price_table(lang):
     if lang == "fr":
@@ -533,6 +569,9 @@ def price_table(lang):
     for region, cur, mo, s, st, y, yt in PRICES:
         r = PRICES_FR_REGION.get(region, region) if lang == "fr" else region
         tot = "total" if lang == "en" else "au total"
+        if lang == "fr":
+            cur = PRICES_FR_CURRENCY.get(cur, cur)
+            mo, s, st, y, yt = (fr_number(v) for v in (mo, s, st, y, yt))
         rows.append(f"<tr><td>{r}</td><td>{cur}</td><td>{mo}</td><td>{s} ({st} {tot})</td>"
                     f"<td>{y} ({yt} {tot})</td></tr>")
     return f"<table>\n<thead>{head}</thead>\n<tbody>\n" + "\n".join(rows) + "\n</tbody>\n</table>"
@@ -582,7 +621,7 @@ def plan_cards(lang):
     <div class="price" data-base-price="30000" data-plan="monthly">30 000 FCFA</div>
     <div class="price-period">{L['pm']}</div>
     <ul class="price-features">{li([L['all'], L['unl'], L['inv'], L['cancel']])}</ul>
-    <a href="https://account.loungeos.app/checkout?duration=30" class="btn btn-secondary" data-checkout="30">{L['get']}</a>
+    <a href="https://account.loungeos.app/checkout?duration=30" class="btn btn-primary" data-checkout="30">{L['get']}</a>
   </div>
   <div class="price-card featured">
     <span class="price-card-badge">{L['popular']}</span>
@@ -592,20 +631,20 @@ def plan_cards(lang):
     <div class="price-total" data-base-total="150000" data-plan="six" data-total-label="{L['total']}">150 000 FCFA {L['total']}</div>
     <div class="price-savings" data-base-savings="30000" data-plan="six" data-free-months="{L['save6']}" data-save-label="{L['yousave']}">{L['yousave']} 30 000 FCFA ({L['save6']})</div>
     <ul class="price-features">{li([L['all'], L['unl'], L['inv'], L['updates']])}</ul>
-    <a href="https://account.loungeos.app/checkout?duration=180" class="btn btn-primary" data-checkout="180">{L['get']}</a>
+    <a href="https://account.loungeos.app/checkout?duration=180" class="btn btn-accent" data-checkout="180">{L['get']}</a>
   </div>
   <div class="price-card">
-    <span class="price-card-badge">{L['best']}</span>
+    <span class="price-card-badge" style="background: var(--accent-green); color: #fff">{L['best']}</span>
     <h3>{L['year']}</h3>
     <div class="price" data-base-price="20000" data-plan="yearly">20 000 FCFA</div>
     <div class="price-period">{L['pm']}</div>
     <div class="price-total" data-base-total="240000" data-plan="yearly" data-total-label="{L['total']}">240 000 FCFA {L['total']}</div>
     <div class="price-savings" data-base-savings="120000" data-plan="yearly" data-free-months="{L['save12']}" data-save-label="{L['yousave']}">{L['yousave']} 120 000 FCFA ({L['save12']})</div>
     <ul class="price-features">{li([L['all'], L['unl'], L['inv'], L['prio']])}</ul>
-    <a href="https://account.loungeos.app/checkout?duration=365" class="btn btn-secondary" data-checkout="365">{L['get']}</a>
+    <a href="https://account.loungeos.app/checkout?duration=365" class="btn btn-primary" data-checkout="365">{L['get']}</a>
   </div>
   <div class="price-card">
-    <h3>Enterprise</h3>
+    <h3>{'Entreprise' if fr else 'Enterprise'}</h3>
     <div class="price">{'Sur devis' if fr else 'Custom'}</div>
     <div class="price-period">{'multi-sites &amp; grands comptes' if fr else 'multi-site &amp; groups'}</div>
     <ul class="price-features">{li(['Installation &amp; formation sur site' if fr else 'On-site setup &amp; training', 'Interlocuteur dédié' if fr else 'Dedicated account manager', 'Intégrations sur mesure' if fr else 'Custom integrations'])}</ul>
@@ -664,6 +703,18 @@ def render_body(page, by_url):
                 parts.append(str(sib))
         if q:
             faq.append((q, parts))
+    for table in soup.find_all("table"):
+        thead = table.find("thead")
+        if thead and not thead.get_text(strip=True):
+            thead.decompose()
+        if not (table.parent and "table-wrap" in (table.parent.get("class") or [])):
+            wrap = soup.new_tag("div", attrs={"class": "table-wrap", "tabindex": "0", "role": "region",
+                                              "aria-label": "Table" if page["lang"] == "en" else "Tableau"})
+            table.wrap(wrap)
+    for ul in soup.find_all("ul"):
+        items = ul.find_all("li", recursive=False)
+        if items and all(li.get_text(strip=True).startswith("☐") for li in items):
+            ul["class"] = (ul.get("class") or []) + ["checklist"]
     toc = [(h.get("id"), h.get_text(" ", strip=True)) for h in soup.find_all("h2")
            if h.get("id") and not h.find_parent(class_="cta-box")
            and not h.find_parent(class_="key-takeaways")]
@@ -770,6 +821,7 @@ def hero_html(page, crumbs, minutes=None):
         else:
             bc.append(f'<a href="{u}">{name}</a>')
     bc = ' <span aria-hidden="true">›</span> '.join(bc)
+    bc = f'<nav class="breadcrumbs" aria-label="Breadcrumb">{bc}</nav>' if len(crumbs) > 1 else ""
     label = f'<p class="section-label">{page.get("category") or page.get("label", "")}</p>' if (page.get("category") or page.get("label")) else ""
     lead = f'<p class="lead">{page["lead"]}</p>' if page.get("lead") else ""
     if page["type"] == "blog":
@@ -791,7 +843,7 @@ def hero_html(page, crumbs, minutes=None):
         if page.get("image") and not page.get("no_hero_image"):
             media = f'<div class="page-hero-media">{img_tag(page["image"], page.get("image_alt", page["h1"]), hero=True, sizes="(max-width: 1100px) 100vw, 1100px")}</div>'
     return f"""      <header class="page-hero">
-        <nav class="breadcrumbs" aria-label="Breadcrumb">{bc}</nav>
+        {bc}
         {label}
         <h1>{page['h1']}</h1>
         {lead}
@@ -799,6 +851,39 @@ def hero_html(page, crumbs, minutes=None):
         {actions}
         {media}
       </header>"""
+
+
+FR_PUNCT = [
+    (re.compile(r"[ \u00a0]([;!?])"), "\u202f\\1"),  # narrow no-break space before ; ! ?
+    (re.compile(r"[ \u00a0]:(?=\s|$|<)"), "\u00a0:"),   # no-break space before a colon
+    (re.compile(r"«[ \u00a0]"), "«\u00a0"),
+    (re.compile(r"[ \u00a0]»"), "\u00a0»"),
+]
+
+
+def fr_typography(page_html):
+    """Keep French punctuation attached to its word (« … », ?, !, :, ;) so it never
+    wraps onto a line of its own. Touches the text of <body> only, never tags,
+    attributes or scripts."""
+    head, sep, body = page_html.partition("<body>")
+    if not sep:
+        return page_html
+    out, in_script = [], False
+    for chunk in re.split(r"(<[^>]+>)", body):
+        if chunk.startswith("<"):
+            low = chunk.lower()
+            if low.startswith("<script") or low.startswith("<style"):
+                in_script = True
+            elif low.startswith("</script") or low.startswith("</style"):
+                in_script = False
+            out.append(chunk)
+        elif in_script or not chunk.strip():
+            out.append(chunk)
+        else:
+            for rx, sub in FR_PUNCT:
+                chunk = rx.sub(sub, chunk)
+            out.append(chunk)
+    return head + sep + "".join(out)
 
 
 def build_page(page, by_url, pages):
@@ -851,7 +936,9 @@ def build_page(page, by_url, pages):
         toc_items = [x for x in toc if x[1].lower() not in (t["faq_heading"].lower(),)]
         if len(toc) >= 3:
             lis = "\n".join(f'<li><a href="#{i}">{esc(x)}</a></li>' for i, x in toc)
-            toc_html = f'<details class="toc" open><summary>{t["toc"]}</summary><ol>\n{lis}\n</ol></details>'
+            # Headings that already carry "1. ", "2. " get a plain list, not a second number
+            lst = "ul" if any(re.match(r"\d+[.)]\s", x) for _, x in toc) else "ol"
+            toc_html = f'<details class="toc" open><summary>{t["toc"]}</summary><{lst}>\n{lis}\n</{lst}></details>'
         fig = ""
         if page.get("image"):
             fig = f'<figure>{img_tag(page["image"], page.get("image_alt", page["h1"]), hero=True, sizes="(max-width: 800px) 100vw, 760px")}</figure>'
@@ -861,7 +948,7 @@ def build_page(page, by_url, pages):
 {tk}
 {toc_html}
 {body}
-{cta_box(lang)}
+{"" if "[[cta]]" in page["body_md"] else cta_box(lang)}
         </div>
       </article>"""
         parts.append(article)
@@ -876,7 +963,7 @@ def build_page(page, by_url, pages):
 
     rel = page.get("related", [])
     if rel:
-        cards = "\n".join(card_html(by_url[u], lang) for u in rel if u in by_url or not LENIENT)
+        cards = cards_html([by_url[u] for u in rel if u in by_url or not LENIENT], lang, [page.get("image")])
         heading = t["related"] if page["type"] == "blog" else t["explore"]
         parts.append(f"""      <section class="related-section">
         <h2 class="section-title">{heading}</h2>
@@ -886,17 +973,21 @@ def build_page(page, by_url, pages):
       </section>""")
 
     parts += ["    </main>", footer_html(lang), tail_scripts(lang), "  </body>", "</html>", ""]
-    return "\n".join(parts), words
+    out = "\n".join(parts)
+    return (fr_typography(out) if lang == "fr" else out), words
 
 
 def blog_index(pages, by_url):
     posts = sorted([p for p in pages if p["type"] == "blog"],
                    key=lambda p: (p["published"], p["url"]), reverse=True)
     order = ["POS buying guides", "Loss prevention", "Operations", "Inventory & finance", "Africa", "En français"]
-    cats = sorted({p["category"] for p in posts}, key=lambda c: order.index(c) if c in order else len(order))
+    def section(p):
+        return "En français" if p["lang"] == "fr" else p["category"]
+    cats = sorted({section(p) for p in posts}, key=lambda c: order.index(c) if c in order else len(order))
     sections = []
     for c in cats:
-        cards = "\n".join(card_html(p, p["lang"]) for p in posts if p["category"] == c)
+        row = [p for p in posts if section(p) == c]
+        cards = "\n".join(card_html(p, p["lang"], img=im) for p, im in zip(row, card_images(row)))
         sections.append(f'<h2 class="blog-section-title">{esc(c)}</h2>\n<div class="card-grid">\n{cards}\n</div>')
     page = {
         "url": "/blog/", "lang": "en", "type": "blog-index", "alternates": {},
@@ -932,7 +1023,7 @@ def main():
     report = []
     for p in pages:
         html_out, words = build_page(p, by_url, pages)
-        html_out = version_links(html_out, repo)
+        html_out = social_tags(version_links(html_out, repo), repo)
         path = os.path.join(repo, p["output"]) if p.get("output") else os.path.join(repo, p["url"].strip("/"), "index.html")
         os.makedirs(os.path.dirname(path), exist_ok=True)
         open(path, "w", encoding="utf-8").write(html_out)
@@ -940,7 +1031,7 @@ def main():
     if any(p["type"] == "blog" for p in pages):
         path = os.path.join(repo, "blog", "index.html")
         os.makedirs(os.path.dirname(path), exist_ok=True)
-        open(path, "w", encoding="utf-8").write(version_links(blog_index(pages, by_url), repo))
+        open(path, "w", encoding="utf-8").write(social_tags(version_links(blog_index(pages, by_url), repo), repo))
     for r in sorted(report):
         flag = ""
         if r[4] > 65:

@@ -6,8 +6,8 @@ description: "Run your hotel restaurant, bar, pool bar and terrace on one offlin
 h1: "One POS for every food and beverage outlet in your hotel"
 label: "Hotel POS"
 lead: "Restaurant, lobby bar, pool bar, terrace, room service: hotels run several F&B outlets under one roof. LoungeOS organises them as service areas on one system, with shared stock, separate staff and one set of accounts."
-image: loungeos-accounting-dashboard
-image_alt: "LoungeOS accounting dashboard showing revenue, expenses and profit margin"
+image: loungeos-floor-management
+image_alt: "LoungeOS floor management with service areas, assigned tables and assigned staff"
 card_title: "Hotel POS"
 card_desc: "Restaurant, bar, pool bar and room service on one offline system with F&B accounting."
 related:

@@ -5,7 +5,7 @@ lang: fr
 title: "Vols des employés au bar ou au restaurant : 10 techniques et parades"
 description: "Comment les employés volent dans les bars, restaurants et lounges (annulations, sous-facturation, tournées offertes, faux Mobile Money) et comment l'empêcher."
 h1: "Vols des employés dans un bar ou un restaurant : 10 techniques courantes et comment les arrêter"
-category: "En français"
+category: "Prévention des pertes"
 lead: "Dans la plupart des établissements, l'argent ne disparaît pas d'un coup : il s'évapore, un peu chaque soir. Voici les techniques les plus courantes, les signes qui les trahissent et les parades qui fonctionnent."
 published: 2026-10-08
 modified: 2026-10-08
@@ -37,51 +37,61 @@ Demandez à des patrons de bar ou de restaurant expérimentés : les plus grosse
 ### 1. Supprimer un article après paiement
 
 **Comment :** le client paie trois bières en espèces. Après son départ, l'employé en supprime une de l'addition et garde la différence.
+
 **Parade :** la suppression d'un article déjà envoyé exige **le code du gérant**, et chaque annulation exige **un motif**, enregistré avec le nom et l'heure.
 
 ### 2. Sous-facturer
 
 **Comment :** une bière importée est servie, une bière locale moins chère est saisie.
+
 **Parade :** compter chaque semaine les produits de valeur et comparer **livraisons − ventes − pertes déclarées** avec le stock réel.
 
 ### 3. Ne rien saisir du tout
 
 **Comment :** la boisson est servie, payée en espèces et jamais saisie.
+
 **Parade :** **pas de bon, pas de boisson.** Avec un écran bar, le barman ne prépare que ce qui s'affiche.
 
 ### 4. Le faux « client parti sans payer »
 
 **Comment :** le client a payé en espèces, mais la commande est annulée avec « client parti ».
+
 **Parade :** motif obligatoire, et suivi du nombre de « clients partis » par serveur.
 
 ### 5. Les remises de complaisance
 
 **Comment :** remise appliquée à un ami, ou prix plein encaissé et remise empochée.
+
 **Parade :** seules les **remises prédéfinies** sont possibles, et elles sont contrôlées par employé chaque semaine.
 
 ### 6. Les tournées « offertes » et la fausse casse
 
 **Comment :** bouteilles déclarées cassées ou offertes, en réalité vendues ou données.
+
 **Parade :** chaque sortie de stock pour **casse, perte ou vol** est enregistrée avec le nom de l'employé et le motif. Limitez qui peut en déclarer.
 
 ### 7. Le mot de passe partagé
 
 **Comment :** tout le monde utilise le même compte. Impossible de savoir qui a fait quoi.
+
 **Parade :** **un employé, un compte**, avec déconnexion automatique en cas d'inactivité.
 
 ### 8. Le prélèvement dans la caisse
 
 **Comment :** quelques billets disparaissent pendant le rush.
+
 **Parade :** un caissier par tiroir et par service, comptage à chaque passation, comparaison avec le total du logiciel.
 
 ### 9. Les faux paiements Mobile Money
 
 **Comment :** faux SMS de confirmation montré par un client, ou paiement en espèces enregistré comme MoMo par l'employé, qui garde les espèces.
+
 **Parade :** vérifier le paiement sur **le téléphone marchand de l'établissement**, enregistrer la **référence de transaction**, rapprocher chaque soir.
 
 ### 10. Le stock qui part par la porte de service
 
 **Comment :** casiers, viande ou emballages sortent avec un employé ou un « livreur ».
+
 **Parade :** réception contrôlée avec le bon de livraison, **entrée en stock immédiate**, comptages fréquents et accès limité au magasin.
 
 ## Les quatre contrôles qui bloquent presque tout

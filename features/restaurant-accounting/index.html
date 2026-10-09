@@ -12,20 +12,24 @@
     <meta property="og:locale" content="en_US" />
     <meta property="og:title" content="Restaurant Accounting Software: P&amp;L &amp; Balance Sheet" />
     <meta property="og:description" content="Turn POS sales and stock purchases into balanced double-entry journals, then get a P&amp;L, balance sheet and cash-flow statement as PDF or CSV." />
-    <meta property="og:url" content="https://loungeos.app/features/restaurant-accounting/" />
-    <meta property="og:image" content="https://loungeos.app/images/og-loungeos.jpg" />
+    <meta property="og:image" content="https://loungeos.app/images/og/features-restaurant-accounting.webp" />
+    <meta property="og:image:secure_url" content="https://loungeos.app/images/og/features-restaurant-accounting.webp" />
+    <meta property="og:image:type" content="image/webp" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="LoungeOS: offline POS for restaurants, bars and lounges" />
+    <meta property="og:image:alt" content="Restaurant Accounting Software: P&amp;L &amp; Balance Sheet" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Restaurant Accounting Software: P&amp;L &amp; Balance Sheet" />
     <meta name="twitter:description" content="Turn POS sales and stock purchases into balanced double-entry journals, then get a P&amp;L, balance sheet and cash-flow statement as PDF or CSV." />
-    <meta name="twitter:image" content="https://loungeos.app/images/og-loungeos.jpg" />
+    <meta name="twitter:image" content="https://loungeos.app/images/og/features-restaurant-accounting.webp" />
+    <meta name="twitter:image:alt" content="Restaurant Accounting Software: P&amp;L &amp; Balance Sheet" />
+    <link rel="image_src" href="https://loungeos.app/images/og/features-restaurant-accounting.webp" />
+    <meta property="og:url" content="https://loungeos.app/features/restaurant-accounting/" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/style.css?v=5dc3f5f1a3" />
+    <link rel="stylesheet" href="/style.css?v=ecf9ab204e" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -264,7 +268,7 @@
       "breadcrumb": {
         "@id": "https://loungeos.app/features/restaurant-accounting/#breadcrumb"
       },
-      "dateModified": "2026-10-08",
+      "dateModified": "2026-10-09",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://loungeos.app/images/screens/loungeos-accounting-dashboard.webp"
@@ -455,9 +459,11 @@
 <p>LoungeOS deliberately does not post every sale to the ledger in real time, because that would slow the POS during a rush. Instead, the owner or accountant clicks <strong>Sync Accounting Data</strong> and picks a date range. LoungeOS then:</p>
 <ol>
 <li>Reads every <strong>paid POS order</strong> and every recorded <strong>stock-in purchase</strong> in that period.</li>
-<li>Creates balanced journal entries automatically:
-   - <em>Sales:</em> debit Cash or Bank, credit Sales Revenue
-   - <em>Purchases:</em> debit Inventory or Cost of Goods Sold, credit Cash or Accounts Payable</li>
+<li>Creates balanced journal entries automatically:<ul>
+<li><em>Sales:</em> debit Cash or Bank, credit Sales Revenue</li>
+<li><em>Purchases:</em> debit Inventory or Cost of Goods Sold, credit Cash or Accounts Payable</li>
+</ul>
+</li>
 <li>Updates the financial statements immediately.</li>
 </ol>
 <p>Stock written off as damage, waste or loss in <a href="/features/inventory-management/">inventory</a> is recorded as an expense, so your P&amp;L reflects real losses instead of hiding them.</p>
@@ -469,7 +475,7 @@
 <li><strong>Separation of duties.</strong> The Accountant role has full access to accounting but cannot take orders. Managers can sync and view. See <a href="/features/loss-prevention/">roles and permissions</a>.</li>
 </ul>
 <h2 id="the-default-chart-of-accounts">The default chart of accounts</h2>
-<table>
+<div aria-label="Table" class="table-wrap" role="region" tabindex="0"><table>
 <thead>
 <tr>
 <th>Class</th>
@@ -498,7 +504,7 @@
 <td>Cost of goods, rent, utilities, staff wages, waste and loss</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>You can add child accounts under any parent, for example separate accounts for MTN MoMo and Orange Money balances, or for each bank.</p>
 <h2 id="who-its-for">Who it’s for</h2>
 <p>LoungeOS accounting is designed for owners and managers who want to see whether the business makes money, and for accountants who want clean, balanced data instead of a shoebox of receipts. It does not replace your accountant or your local tax filings. It gives them accurate numbers to work from. In OHADA countries, your accountant can map LoungeOS accounts to the SYSCOHADA chart when preparing statutory accounts.</p>
@@ -525,7 +531,7 @@
         <h2 class="section-title">Explore more</h2>
         <div class="card-grid">
 <a class="post-card" href="/blog/restaurant-accounting-basics/">
-  <img src="/images/screens/loungeos-accounting-dashboard-800.webp" width="800" height="430" alt="LoungeOS accounting dashboard with net profit, revenue, expenses and profit margin" loading="lazy" decoding="async" />
+  <img src="/images/screens/loungeos-pos-order-screen-800.webp" width="800" height="430" alt="Restaurant accounting basics" loading="lazy" decoding="async" />
   <div class="post-card-body">
     <span class="tag">Inventory &amp; finance</span>
     <h3>Restaurant accounting basics</h3>
@@ -534,7 +540,7 @@
   </div>
 </a>
 <a class="post-card" href="/blog/food-cost-percentage-formula/">
-  <img src="/images/screens/loungeos-financial-reports-800.webp" width="800" height="430" alt="LoungeOS financial reports with profit and loss statement" loading="lazy" decoding="async" />
+  <img src="/images/screens/loungeos-menu-management-800.webp" width="800" height="430" alt="LoungeOS menu management list with dishes, categories, prices and stock status" loading="lazy" decoding="async" />
   <div class="post-card-body">
     <span class="tag">Inventory &amp; finance</span>
     <h3>Food cost percentage: formula and benchmarks</h3>
@@ -629,7 +635,7 @@
       }
     </script>
     <script defer type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <script defer src="/app.js?v=9c3df55294"></script>
+    <script defer src="/app.js?v=b315057552"></script>
     <!-- Botpress Webchat -->
     <script defer src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
     <script defer src="https://files.bpcontent.cloud/2026/06/19/19/20260619193215-LONFMDIT.js"></script>

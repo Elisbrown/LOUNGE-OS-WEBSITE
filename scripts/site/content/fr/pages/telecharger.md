@@ -66,10 +66,7 @@ L'activation est la seule étape qui demande internet. Une connexion mobile suff
 
 ## Première connexion
 
-Connectez-vous avec le compte Super Admin par défaut :
-
-- **E-mail** : sunyinelisbrown@gmail.com
-- **Mot de passe** : 12345678
+Connectez-vous avec le compte Super Admin par défaut. Son e-mail et son mot de passe figurent dans la section [connexion d'administration par défaut](/documentation.html#5-default-administration-login) de la documentation (en anglais).
 
 **Changez ce mot de passe immédiatement** dans votre profil, puis créez un compte personnel pour chaque employé. Ne partagez jamais le compte Super Admin.
 

@@ -83,8 +83,49 @@ def version_links(src, root=ROOT):
     return src
 
 
+def og_slug(url):
+    p = re.sub(r"^https?://[^/]+", "", url).strip("/")
+    p = re.sub(r"/index$", "", re.sub(r"\.html$", "", p))
+    return p.replace("/", "-") or "home"
+
+
+SOCIAL_TAG = re.compile(r'\n?[ \t]*<meta\s+(?:property|name)="(?:og:image(?::[a-z_]+)?|twitter:(?:card|title|description|image|image:alt))"'
+                        r'\s+content="[^"]*"\s*/?>|\n?[ \t]*<link\s+rel="image_src"[^>]*>')
+
+
+def social_tags(src, root=ROOT):
+    """Give the page its own share card (images/og/<slug>.webp, made by scripts/og/)
+    and the tags each platform reads: og:* for WhatsApp, Facebook, LinkedIn,
+    Telegram, Slack and iMessage; twitter:* for X; image_src for older scrapers."""
+    canonical = re.search(r'<link\s+rel="canonical"\s+href="([^"]+)"', src)
+    anchor = re.search(r'\n([ \t]*)<meta\s+property="og:description"\s+content="([^"]*)"\s*/?>', src)
+    title = re.search(r'<meta\s+property="og:title"\s+content="([^"]*)"', src)
+    if not (canonical and anchor and title):
+        return src
+    slug = og_slug(canonical.group(1))
+    if not os.path.exists(os.path.join(root, "images", "og", slug + ".webp")):
+        return src
+    img, ind, desc, t = f"{SITE}/images/og/{slug}.webp", anchor.group(1), anchor.group(2), title.group(1)
+    tags = [f'<meta property="og:image" content="{img}" />',
+            f'<meta property="og:image:secure_url" content="{img}" />',
+            '<meta property="og:image:type" content="image/webp" />',
+            '<meta property="og:image:width" content="1200" />',
+            '<meta property="og:image:height" content="630" />',
+            f'<meta property="og:image:alt" content="{t}" />',
+            '<meta name="twitter:card" content="summary_large_image" />',
+            f'<meta name="twitter:title" content="{t}" />',
+            f'<meta name="twitter:description" content="{desc}" />',
+            f'<meta name="twitter:image" content="{img}" />',
+            f'<meta name="twitter:image:alt" content="{t}" />',
+            f'<link rel="image_src" href="{img}" />']
+    src = SOCIAL_TAG.sub("", src)
+    anchor = re.search(r'<meta\s+property="og:description"\s+content="[^"]*"\s*/?>', src)
+    return src[:anchor.end()] + "".join("\n" + ind + x for x in tags) + src[anchor.end():]
+
+
 def version_all_pages():
-    """Apply version_links to every HTML page, including noindex ones. Returns the number changed."""
+    """Apply version_links and social_tags to every HTML page, including noindex ones.
+    Returns the number changed."""
     changed = 0
     for dirpath, dirnames, filenames in os.walk(ROOT):
         dirnames[:] = [d for d in dirnames if d not in EXCLUDE_DIRS and not d.startswith(".")]
@@ -93,7 +134,7 @@ def version_all_pages():
                 continue
             path = os.path.join(dirpath, f)
             src = open(path, encoding="utf-8").read()
-            new = version_links(src)
+            new = social_tags(version_links(src))
             if new != src:
                 open(path, "w", encoding="utf-8").write(new)
                 changed += 1

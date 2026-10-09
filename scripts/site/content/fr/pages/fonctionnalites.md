@@ -7,8 +7,8 @@ description: "Toutes les fonctionnalités de LoungeOS : caisse hors ligne, table
 h1: "Tout ce qu'il faut pour gérer le service, les stocks et la caisse, dans un seul logiciel"
 label: "Fonctionnalités"
 lead: "LoungeOS remplace la caisse enregistreuse, le carnet de bons, le cahier de stock et le tableur que votre comptable refait chaque mois."
-image: loungeos-dashboard-sales-analytics
-image_alt: "Tableau de bord LoungeOS avec chiffre d'affaires, ventes du jour et ventes par catégorie"
+image: loungeos-tableau-de-bord-francais
+image_alt: "Tableau de bord LoungeOS en français avec chiffre d'affaires en FCFA, commandes et tables actives"
 card_title: "Fonctionnalités"
 alternates:
   en: /features/

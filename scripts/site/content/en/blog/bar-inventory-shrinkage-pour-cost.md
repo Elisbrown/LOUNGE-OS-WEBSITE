@@ -8,8 +8,8 @@ category: "Loss prevention"
 lead: "Bars commonly lose a large slice of their beverage stock to over-pouring, breakage, freebies and theft, and most owners only feel it as 'the bar isn't making what it should'. Two numbers turn that feeling into facts: pour cost and shrinkage."
 published: 2026-10-08
 modified: 2026-10-08
-image: loungeos-stock-movement-history
-image_alt: "LoungeOS stock movement history for an item showing a damage entry with date, quantity and user"
+image: loungeos-stock-items
+image_alt: "LoungeOS stock items list showing beer bottles and packaging with stock levels and costs"
 breadcrumb:
   - ["Blog", "/blog/"]
 crumb: "Bar shrinkage & pour cost"
@@ -65,6 +65,7 @@ This is what your pour cost would be if every drink sold was poured exactly righ
 Pour cost tells you *how much* you lose. Shrinkage per product tells you *where*.
 
 > **Expected stock = Opening count + Received − Sold − Recorded losses**
+>
 > **Shrinkage = Expected stock − Actual count**
 
 | Product | Opening | Received | Sold (POS) | Recorded loss | Expected | Counted | Shrinkage |

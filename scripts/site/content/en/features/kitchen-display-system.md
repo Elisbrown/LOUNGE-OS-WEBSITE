@@ -32,7 +32,7 @@ Routing is set once, at the category level. When you create a menu category such
 
 There is no re-typing and no walking back and forth between kitchen and bar.
 
-[[figure:loungeos-kds-pending-orders|LoungeOS kitchen display with a pending order for table VIP 2 and a Start button|A new ticket arrives in the Pending column, oldest first.]]
+[[figure:loungeos-kds-pending-orders|LoungeOS kitchen display with a VIP 2 ticket being dragged from Pending to In Progress, and a Drag here to Cancel zone|Drag a ticket to move it along, or drop it on the red zone to cancel it.]]
 
 ## The three columns: Pending, In progress, Ready
 

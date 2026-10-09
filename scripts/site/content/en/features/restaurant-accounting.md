@@ -35,8 +35,8 @@ LoungeOS deliberately does not post every sale to the ledger in real time, becau
 
 1. Reads every **paid POS order** and every recorded **stock-in purchase** in that period.
 2. Creates balanced journal entries automatically:
-   - *Sales:* debit Cash or Bank, credit Sales Revenue
-   - *Purchases:* debit Inventory or Cost of Goods Sold, credit Cash or Accounts Payable
+    - *Sales:* debit Cash or Bank, credit Sales Revenue
+    - *Purchases:* debit Inventory or Cost of Goods Sold, credit Cash or Accounts Payable
 3. Updates the financial statements immediately.
 
 Stock written off as damage, waste or loss in [inventory](/features/inventory-management/) is recorded as an expense, so your P&L reflects real losses instead of hiding them.

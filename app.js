@@ -274,7 +274,21 @@
       storageSet('localStorage', 'loBannerDismissed', String(Date.now()));
     });
     b.appendChild(span); b.appendChild(a); b.appendChild(close);
-    document.body.appendChild(b);
+    // Wait until the visitor scrolls past the hero, so the banner never covers its buttons
+    whenScrolled(function () {
+      if (!document.querySelector('.locale-banner')) document.body.appendChild(b);
+    });
+  }
+
+  function whenScrolled(fn) {
+    function past() { return window.scrollY > window.innerHeight * 0.4; }
+    if (past()) return fn();
+    function onScroll() {
+      if (!past()) return;
+      window.removeEventListener('scroll', onScroll);
+      fn();
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
   }
 
   function suggestLocale(geo) {
@@ -288,7 +302,8 @@
       showBanner('Ce site existe en français.', frAlt.getAttribute('href'), 'Voir la version française');
       return true;
     }
-    var landing = /^\/(index\.html)?$|^\/fr\/$|^\/pricing\/|^\/fr\/tarifs\/|^\/features\/$|^\/fr\/fonctionnalites\/|^\/download\/|^\/fr\/telecharger\//.test(pagePath);
+    // Not on the pricing pages: they already show local prices
+    var landing = /^\/(index\.html)?$|^\/fr\/$|^\/features\/$|^\/fr\/fonctionnalites\/|^\/download\/|^\/fr\/telecharger\//.test(pagePath);
     if (!landing) return false;
     var cfg = COUNTRY_BANNERS[country];
     var pick = cfg && (pageLang === 'fr' ? (cfg.fr || cfg.en) : (cfg.en || cfg.fr));

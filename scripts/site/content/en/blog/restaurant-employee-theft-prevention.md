@@ -38,65 +38,81 @@ This isn't about distrusting your team. Most staff are honest. Good systems **pr
 ### 1. Voiding an item after the customer has paid
 
 **How it works:** the customer pays cash for three drinks. The staff member deletes one from the bill afterwards and pockets the difference.
+
 **What exposes it:** voids or cancellations after payment, concentrated on one person or one shift.
+
 **Control:** removing items from a sent order requires a **manager's credentials**, and every cancellation requires a **reason**. In LoungeOS both are enforced and logged.
 
 ### 2. Under-ringing
 
 **How it works:** the item rung up is cheaper than the one served (a local beer instead of an imported one).
+
 **What exposes it:** stock variance. Imported beer goes down faster than sales say.
+
 **Control:** count high-value stock weekly. Compare **deliveries − sales − recorded losses** with the shelf. See [bar shrinkage](/blog/bar-inventory-shrinkage-pour-cost/).
 
 ### 3. Not ringing up at all
 
 **How it works:** the drink is served and paid for in cash, and the order is never entered.
+
 **What exposes it:** stock variance, and drinks that leave the bar without a ticket.
+
 **Control:** **no ticket, no drink.** With a bar display, bartenders prepare only what appears on their screen.
 
 ### 4. Fake walkouts
 
 **How it works:** "The customer left without paying." In reality the customer paid cash.
+
 **Control:** cancellations require a **reason** and are logged with name and time. Track walkout frequency per waiter.
 
 ### 5. Unauthorised discounts
 
 **How it works:** a staff member applies a discount, charges full price in cash and keeps the difference, or gives friends a deal.
+
 **Control:** only **pre-configured discount rules** can be applied, and discounts can be switched off. Review discounts by staff weekly.
 
 ### 6. Fake comps and "free" drinks
 
 **How it works:** drinks recorded as complimentary, spilt or broken, but actually sold or given away.
+
 **Control:** every stock-out for damage, waste or loss is recorded with a **name and reason**. Limit who can record waste.
 
 ### 7. Sweethearting
 
 **How it works:** free or cheap food and drinks for friends and family.
+
 **What exposes it:** unusual discounts, cancellations or low average bills for one waiter's tables.
+
 **Control:** personal logins plus staff performance reports.
 
 ### 8. Shared-login abuse
 
 **How it works:** one login used by several people, so nothing can be attributed.
+
 **Control:** **one person, one account.** Sessions should time out. In LoungeOS inactive sessions log out after two hours.
 
 ### 9. Cash drawer skimming
 
 **How it works:** cash is taken from the drawer during a busy shift.
+
 **Control:** one cashier per drawer per shift, counted at handover. The POS cash total for that cashier must match.
 
 ### 10. Fake mobile money payments
 
 **How it works:** a fake confirmation SMS from a customer, or a staff member records a cash sale as mobile money and keeps the cash.
+
 **Control:** confirm payments on the **business phone**, record the **transaction reference**, reconcile daily. See [accepting mobile money safely](/blog/accept-mobile-money-in-your-restaurant/).
 
 ### 11. Inventory walking out the back door
 
 **How it works:** bottles, meat or packaging leave with staff or "suppliers".
+
 **Control:** receive deliveries against an order, record **stock in** immediately, count high-value items often, and limit stockroom access.
 
 ### 12. Refund fraud
 
 **How it works:** a refund is processed for a sale that never happened, or was already refunded.
+
 **Control:** refunds need a manager and a reason, and are reviewed weekly.
 
 ## The four controls that stop most theft

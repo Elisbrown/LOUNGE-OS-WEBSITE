@@ -723,7 +723,7 @@ button {
 }
 
 .pricing-grid-5 {
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   max-width: 1280px; /* Give it a bit more room for 5 columns */
 }
 
@@ -1700,7 +1700,7 @@ button {
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 150px;
+  width: min(150px, 12vw);
   z-index: 2;
   pointer-events: none;
 }
@@ -2397,8 +2397,51 @@ button.nav-dropdown-toggle {
   font-size: 0.9375rem;
   line-height: 1.5;
   margin: 1.5rem 0 2rem;
-  display: block;
+}
+
+/* Tables scroll sideways inside their wrapper when they can't fit; the edge
+   shadows show there is more to see. */
+.prose .table-wrap {
   overflow-x: auto;
+  margin: 1.5rem 0 2rem;
+  background:
+    linear-gradient(to right, var(--bg-primary) 30%, rgba(255, 255, 255, 0)) left center / 40px 100% no-repeat local,
+    linear-gradient(to left, var(--bg-primary) 30%, rgba(255, 255, 255, 0)) right center / 40px 100% no-repeat local,
+    radial-gradient(farthest-side at 0 50%, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)) left center / 14px 100% no-repeat scroll,
+    radial-gradient(farthest-side at 100% 50%, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)) right center / 14px 100% no-repeat scroll;
+}
+
+.prose .table-wrap table {
+  margin: 0;
+}
+
+.prose .table-wrap:focus-visible {
+  outline: 2px solid var(--text-primary);
+  outline-offset: 2px;
+}
+
+@media (max-width: 600px) {
+  .prose table {
+    font-size: 0.8125rem;
+  }
+
+  .prose th,
+  .prose td {
+    min-width: 5.5rem;
+    padding: 0.5rem 0.6rem;
+  }
+}
+
+.prose ul.checklist {
+  list-style: none;
+  padding-left: 0.25rem;
+}
+
+.prose .toc ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0.75rem 0 0.25rem;
+  font-size: 0.9375rem;
 }
 
 .prose th,
@@ -2572,11 +2615,18 @@ button.nav-dropdown-toggle {
 }
 
 .card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1.5rem;
   max-width: var(--max-width);
   margin: 0 auto;
+}
+
+/* Up to three cards per row; short last rows stay centred */
+.card-grid > * {
+  flex: 1 1 320px;
+  max-width: 384px;
 }
 
 .post-card {
@@ -2647,6 +2697,7 @@ button.nav-dropdown-toggle {
 }
 
 .link-pills a {
+  color: var(--text-primary);
   padding: 0.55rem 1.1rem;
   border-radius: var(--radius-pill);
   border: 1px solid var(--border-medium);
@@ -2862,4 +2913,47 @@ button.nav-dropdown-toggle {
 /* Don't let the location banner cover the open mobile menu */
 body.menu-open .locale-banner {
   display: none;
+}
+
+/* Even line lengths in headings, so a single word never sits alone on the last line */
+.page-hero h1,
+.prose h2,
+.prose h3,
+.section-title {
+  text-wrap: balance;
+}
+
+/* Bento: wide cards alternate (2+1, 1+2, 2+1) so the six cards fill three full rows */
+@media (min-width: 1025px) {
+  .bento-item:nth-child(4),
+  .bento-item:nth-child(5) {
+    grid-column: span 2;
+  }
+}
+
+/* Language selector: the select fits the chosen language and uses the same thin
+   chevron as the Solutions and Resources menus. */
+.lang-selector select {
+  field-sizing: content;
+  padding-right: 1rem;
+}
+
+.lang-selector::after {
+  content: '';
+  width: 6px;
+  height: 6px;
+  top: 50%;
+  right: 3px;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: translateY(-70%) rotate(45deg);
+}
+
+.prose .link-pills a {
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.prose a.btn-accent {
+  color: var(--text-primary);
 }

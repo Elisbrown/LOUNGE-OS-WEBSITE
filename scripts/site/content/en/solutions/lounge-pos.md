@@ -24,7 +24,7 @@ In **Floor management**, create one service area for each zone, for example *Mai
 
 Table colours show the whole lounge at a glance: green available, red occupied, orange reserved. Reserve VIP tables before the guests arrive.
 
-[[figure:loungeos-floor-management|LoungeOS floor management screen with service areas, tables and assigned waiters|Assign tables and waiters to each area of the lounge.]]
+[[figure:loungeos-table-management|LoungeOS table layout with VIP tables, their availability and a Reserve button on each table|Reserve VIP tables from the table layout before guests arrive.]]
 
 ## Bottle sales without bottle losses
 

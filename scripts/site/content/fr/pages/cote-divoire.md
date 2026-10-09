@@ -7,8 +7,8 @@ description: "Logiciel de caisse hors ligne pour restaurants, maquis, lounges et
 h1: "Logiciel de caisse pour restaurants, maquis et lounges en Côte d'Ivoire"
 label: "LoungeOS en Côte d'Ivoire"
 lead: "Du maquis de Yopougon au lounge de Cocody : prenez les commandes sur téléphone, suivez chaque bouteille et chaque franc, même quand internet coupe."
-image: loungeos-pos-menu-grid
-image_alt: "Grille de produits LoungeOS avec photos des plats et boissons"
+image: loungeos-tableau-de-bord-francais
+image_alt: "Tableau de bord LoungeOS en français avec chiffre d'affaires en FCFA, commandes et tables actives"
 card_title: "LoungeOS en Côte d'Ivoire"
 card_desc: "Maquis, restaurants et lounges : prix en FCFA, Mobile Money, TVA 18 %."
 breadcrumb:

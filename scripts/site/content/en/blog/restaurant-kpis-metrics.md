@@ -116,6 +116,7 @@ Discounts should follow your rules and promotions, not individual generosity.
 ### 15. Inventory variance and turnover
 
 > **Variance = Expected stock − counted stock** (by value)
+>
 > **Inventory turnover = COGS ÷ average inventory value**
 
 Variance shows leaks. Turnover shows whether cash is stuck on shelves. Food usually turns fast. Spirits and wine turn more slowly.
