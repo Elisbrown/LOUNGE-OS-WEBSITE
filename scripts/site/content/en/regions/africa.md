@@ -6,8 +6,8 @@ description: "An offline-first restaurant, bar and lounge POS built in Africa. W
 h1: "A restaurant POS built in Africa, for African conditions"
 label: "LoungeOS in Africa"
 lead: "Imported POS systems are designed for reliable broadband and card-first customers. LoungeOS is designed for what African restaurants, bars and lounges actually face: outages, mobile money and cash that needs watching."
-image: loungeos-dashboard-sales-analytics
-image_alt: "LoungeOS dashboard with revenue in FCFA and sales by category"
+image: loungeos-pos-menu-grid
+image_alt: "LoungeOS point of sale menu grid with local dishes and drinks priced in FCFA"
 card_title: "LoungeOS in Africa"
 card_desc: "Offline operation, mobile money, local currencies and regional pricing across Africa."
 alternates:

@@ -6,8 +6,8 @@ description: "Offline POS for restaurants, snack-bars, lounges and hotels in Dou
 h1: "Restaurant, bar and lounge POS software made in Cameroon"
 label: "LoungeOS in Cameroon"
 lead: "Built in Cameroon for Cameroonian conditions: FCFA pricing, MTN MoMo and Orange Money, English and French, and a system that keeps running through internet cuts and load shedding."
-image: loungeos-tableau-de-bord-francais
-image_alt: "LoungeOS dashboard in French (tableau de bord) showing revenue in FCFA"
+image: loungeos-pos-order-screen
+image_alt: "LoungeOS point of sale screen with local dishes and drinks priced in FCFA and an open order"
 card_title: "LoungeOS in Cameroon"
 card_desc: "FCFA prices, MTN MoMo & Orange Money, 19.25% VAT, English and French."
 alternates:

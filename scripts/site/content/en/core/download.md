@@ -23,7 +23,7 @@ related:
 <div class="download-cards" style="margin-top:0">
   <div class="download-card selected" data-os="windows">
     <h3>Windows</h3>
-    <p>Windows 10 &amp; 11 (64-bit) · Installer 383 MB</p>
+    <p>Windows 10 &amp; 11 (64-bit) · Installer 383&nbsp;MB</p>
     <a href="https://drive.usercontent.google.com/download?id=1eW9bjs97fR2k-I7_yu_kj1p_76zUc3xc&amp;export=download&amp;authuser=1&amp;confirm=t&amp;uuid=ac0c36a6-25cf-46ae-89d9-da18ead345ca&amp;at=AAINaIKicemCbcjo6MrGDzpDD21K%3A1781889497574" class="btn btn-primary">Download LoungeOS 1.3.6</a>
   </div>
   <div class="download-card" data-os="mac">
@@ -70,10 +70,7 @@ Activation is the only step that needs internet. After that, LoungeOS runs on yo
 
 ## First login
 
-After activation, sign in with the default Super Admin account:
-
-- **Email:** sunyinelisbrown@gmail.com
-- **Password:** 12345678
+After activation, sign in with the default Super Admin account. Its email and password are in the [default administration login](/documentation.html#5-default-administration-login) section of the documentation.
 
 **Change this password immediately** in your profile settings, then create personal accounts for every staff member. Never share the Super Admin login with staff. See [roles and permissions](/features/loss-prevention/).
 

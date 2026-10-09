@@ -6,8 +6,8 @@ description: "A nightclub POS for fast drink orders, VIP tables, bottle service 
 h1: "Nightclub POS: fast drinks, VIP tables and no excuses at closing"
 label: "Nightclub POS"
 lead: "A nightclub does most of its revenue in a few hours, in the dark, with loud music and a crowd at the bar. Your POS has to be fast, simple and impossible to cheat."
-image: loungeos-staff-performance
-image_alt: "LoungeOS staff performance dashboard with orders, revenue and efficiency per staff member"
+image: loungeos-table-management
+image_alt: "LoungeOS table layout with VIP tables, their availability and guest capacity"
 card_title: "Nightclub POS"
 card_desc: "Fast drink service, VIP and bottle service, and strict cash control for clubs."
 related:

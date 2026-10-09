@@ -6,8 +6,8 @@ description: "Every LoungeOS feature in one place: offline POS, table management
 h1: "Everything you need to run service, stock and cash — in one offline system"
 label: "Features"
 lead: "LoungeOS replaces the cash register, the paper ticket book, the stock notebook and the spreadsheet your accountant rebuilds every month. Here is everything it does, and how each piece fits together."
-image: loungeos-dashboard-sales-analytics
-image_alt: "LoungeOS dashboard showing total revenue, daily sales, open orders, active tables and sales by category"
+image: loungeos-sales-reports
+image_alt: "LoungeOS reports and analytics with sales over time and sales by category"
 card_title: "All LoungeOS features"
 alternates:
   fr: /fr/fonctionnalites/

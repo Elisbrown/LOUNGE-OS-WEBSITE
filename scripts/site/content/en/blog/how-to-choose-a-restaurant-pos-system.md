@@ -8,8 +8,8 @@ category: "POS buying guides"
 lead: "The wrong POS costs you twice: once in fees, and again in lost sales, slow service and money you never see. Use this checklist to compare systems on what actually matters in your venue."
 published: 2026-10-08
 modified: 2026-10-08
-image: loungeos-dashboard-sales-analytics
-image_alt: "LoungeOS restaurant dashboard with revenue and sales analytics"
+image: loungeos-order-management
+image_alt: "LoungeOS order management list with order IDs, tables, totals in FCFA and order status"
 breadcrumb:
   - ["Blog", "/blog/"]
 crumb: "How to choose a restaurant POS"

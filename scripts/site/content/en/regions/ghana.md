@@ -6,8 +6,8 @@ description: "Offline restaurant, bar and lounge POS for Accra, Kumasi and acros
 h1: "Restaurant and bar POS for Ghana, priced in cedis and ready for dumsor"
 label: "LoungeOS in Ghana"
 lead: "Record MTN MoMo payments with their references, keep service running when the lights go off, and know your real margins on every drink and dish."
-image: loungeos-tax-discount-settings
-image_alt: "LoungeOS tax management settings with several tax rates and discount rules"
+image: loungeos-order-management
+image_alt: "LoungeOS order management list with order IDs, tables, totals and order status"
 card_title: "LoungeOS in Ghana"
 card_desc: "Cedi pricing, MoMo payment records, VAT and levies, offline operation."
 breadcrumb:

@@ -1,7 +1,8 @@
 name: SEO refresh
 
 # Regenerates sitemap.xml (lastmod from git history), blog/feed.xml, robots.txt,
-# llms.txt and on-page "updated" dates, commits them, then notifies IndexNow
+# llms.txt, on-page "updated" dates and the ?v= versions on style.css/app.js
+# links, commits them, then notifies IndexNow
 # (Bing, Yandex and others; Bing's index also feeds ChatGPT and Copilot search).
 on:
   push:
@@ -29,7 +30,7 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Regenerate sitemap, feed, robots.txt, llms.txt and page dates
+      - name: Regenerate sitemap, feed, robots.txt, llms.txt, page dates and asset versions
         run: python3 scripts/seo_update.py --indexnow-file "$RUNNER_TEMP/indexnow-urls.txt"
 
       - name: Commit and push changes

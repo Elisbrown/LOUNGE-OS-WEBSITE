@@ -8,8 +8,8 @@ category: "Inventory & finance"
 lead: "Food cost percentage is the number that tells you whether your menu prices and your kitchen are working together. Here's how to calculate it properly, what 'good' looks like, and how to bring it down without cutting quality."
 published: 2026-10-08
 modified: 2026-10-08
-image: loungeos-financial-reports
-image_alt: "LoungeOS financial reports with profit and loss statement"
+image: loungeos-menu-management
+image_alt: "LoungeOS menu management list with dishes, categories, prices and stock status"
 breadcrumb:
   - ["Blog", "/blog/"]
 crumb: "Food cost percentage"

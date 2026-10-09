@@ -7,8 +7,8 @@ description: "LoungeOS builds offline-first POS and management software for rest
 h1: "We build hospitality software for places where the internet can't be taken for granted"
 label: "About LoungeOS"
 lead: "LoungeOS was built in Cameroon for restaurants, bars and lounges that lose money to two problems most POS systems ignore: unreliable connectivity and unaccountable cash."
-image: loungeos-dashboard-sales-analytics
-image_alt: "LoungeOS management dashboard"
+image: loungeos-login-screen
+image_alt: "LoungeOS login screen on a Windows computer"
 card_title: "About LoungeOS"
 no_hero_cta: true
 related:

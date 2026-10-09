@@ -17,6 +17,9 @@ What it does
 - blog/feed.xml: RSS feed of blog posts, newest first.
 - robots.txt: allow search engines and AI assistants, point to the sitemaps.
 - llms.txt: a plain-text map of the site for AI assistants.
+- Asset versions: links to /style.css and /app.js carry ?v=<content hash>, so
+  browsers and CDNs fetch the new file as soon as it changes instead of pairing
+  new HTML with a stale cached stylesheet.
 
 Dates only change when a page's content changes. Search engines ignore (and can
 distrust) lastmod values that move without real edits, so nothing here fakes
@@ -26,6 +29,8 @@ Standard library only.
 """
 import argparse
 import datetime as dt
+import functools
+import hashlib
 import html
 import json
 import os
@@ -41,6 +46,7 @@ BOT_MARK = "[seo-bot]"
 INDEXNOW_KEY = "8391080daa0a00470dfef794afac6a58"
 EXCLUDE_DIRS = {".git", ".github", "scripts", "Screenshots", "images", "node_modules"}
 EXCLUDE_FILES = {"404.html"}
+VERSIONED_ASSETS = ("style.css", "app.js")
 FR_MONTHS = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet",
              "août", "septembre", "octobre", "novembre", "décembre"]
 EN_MONTHS = ["January", "February", "March", "April", "May", "June", "July",
@@ -60,6 +66,79 @@ def last_modified(rel):
         return dt.date.today()
     out = git("log", "-1", "--format=%cs", "--invert-grep", f"--grep={re.escape(BOT_MARK)}", "--", rel)
     return dt.date.fromisoformat(out) if out else dt.date.today()
+
+
+@functools.lru_cache(maxsize=None)
+def asset_version(name, root=ROOT):
+    with open(os.path.join(root, name), "rb") as f:
+        return hashlib.sha256(f.read()).hexdigest()[:10]
+
+
+def version_links(src, root=ROOT):
+    """Rewrite href="/style.css" and src="/app.js" (with or without an old ?v=)
+    to carry the current content hash of the file."""
+    for name in VERSIONED_ASSETS:
+        src = re.sub(r'((?:href|src)=")/?%s(?:\?v=[0-9a-f]*)?"' % re.escape(name),
+                     rf'\g<1>/{name}?v={asset_version(name, root)}"', src)
+    return src
+
+
+def og_slug(url):
+    p = re.sub(r"^https?://[^/]+", "", url).strip("/")
+    p = re.sub(r"/index$", "", re.sub(r"\.html$", "", p))
+    return p.replace("/", "-") or "home"
+
+
+SOCIAL_TAG = re.compile(r'\n?[ \t]*<meta\s+(?:property|name)="(?:og:image(?::[a-z_]+)?|twitter:(?:card|title|description|image|image:alt))"'
+                        r'\s+content="[^"]*"\s*/?>|\n?[ \t]*<link\s+rel="image_src"[^>]*>')
+
+
+def social_tags(src, root=ROOT):
+    """Give the page its own share card (images/og/<slug>.webp, made by scripts/og/)
+    and the tags each platform reads: og:* for WhatsApp, Facebook, LinkedIn,
+    Telegram, Slack and iMessage; twitter:* for X; image_src for older scrapers."""
+    canonical = re.search(r'<link\s+rel="canonical"\s+href="([^"]+)"', src)
+    anchor = re.search(r'\n([ \t]*)<meta\s+property="og:description"\s+content="([^"]*)"\s*/?>', src)
+    title = re.search(r'<meta\s+property="og:title"\s+content="([^"]*)"', src)
+    if not (canonical and anchor and title):
+        return src
+    slug = og_slug(canonical.group(1))
+    if not os.path.exists(os.path.join(root, "images", "og", slug + ".webp")):
+        return src
+    img, ind, desc, t = f"{SITE}/images/og/{slug}.webp", anchor.group(1), anchor.group(2), title.group(1)
+    tags = [f'<meta property="og:image" content="{img}" />',
+            f'<meta property="og:image:secure_url" content="{img}" />',
+            '<meta property="og:image:type" content="image/webp" />',
+            '<meta property="og:image:width" content="1200" />',
+            '<meta property="og:image:height" content="630" />',
+            f'<meta property="og:image:alt" content="{t}" />',
+            '<meta name="twitter:card" content="summary_large_image" />',
+            f'<meta name="twitter:title" content="{t}" />',
+            f'<meta name="twitter:description" content="{desc}" />',
+            f'<meta name="twitter:image" content="{img}" />',
+            f'<meta name="twitter:image:alt" content="{t}" />',
+            f'<link rel="image_src" href="{img}" />']
+    src = SOCIAL_TAG.sub("", src)
+    anchor = re.search(r'<meta\s+property="og:description"\s+content="[^"]*"\s*/?>', src)
+    return src[:anchor.end()] + "".join("\n" + ind + x for x in tags) + src[anchor.end():]
+
+
+def version_all_pages():
+    """Apply version_links and social_tags to every HTML page, including noindex ones.
+    Returns the number changed."""
+    changed = 0
+    for dirpath, dirnames, filenames in os.walk(ROOT):
+        dirnames[:] = [d for d in dirnames if d not in EXCLUDE_DIRS and not d.startswith(".")]
+        for f in filenames:
+            if not f.endswith(".html"):
+                continue
+            path = os.path.join(dirpath, f)
+            src = open(path, encoding="utf-8").read()
+            new = social_tags(version_links(src))
+            if new != src:
+                open(path, "w", encoding="utf-8").write(new)
+                changed += 1
+    return changed
 
 
 def url_for(rel):
@@ -284,9 +363,12 @@ def main():
     write_feed(pages)
     write_robots()
     write_llms(pages)
+    # After discover(): lastmod is already read from git, so these edits don't move it.
+    versioned = version_all_pages()
 
     changed_urls = [p["url"] for p in pages if before.get(p["url"]) != p["lastmod"].isoformat()]
-    print(f"{len(pages)} pages in sitemap; {len(changed_files)} page date(s) synced; {len(changed_urls)} URL(s) new or updated")
+    print(f"{len(pages)} pages in sitemap; {len(changed_files)} page date(s) synced; "
+          f"{versioned} page(s) re-versioned; {len(changed_urls)} URL(s) new or updated")
     if args.indexnow_file:
         with open(args.indexnow_file, "w") as f:
             f.write("\n".join(changed_urls))

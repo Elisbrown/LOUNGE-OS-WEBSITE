@@ -12,12 +12,19 @@
     <meta property="og:locale" content="en_US" />
     <meta property="og:title" content="LoungeOS Documentation: Install, Activate &amp; Operate the POS" />
     <meta property="og:description" content="Official LoungeOS documentation: system requirements, installation, licence activation, user roles, setup, daily workflows, stock, accounting and troubleshooting." />
-    <meta property="og:url" content="https://loungeos.app/documentation.html" />
-    <meta property="og:image" content="https://loungeos.app/images/og-loungeos.jpg" />
+    <meta property="og:image" content="https://loungeos.app/images/og/documentation.webp" />
+    <meta property="og:image:secure_url" content="https://loungeos.app/images/og/documentation.webp" />
+    <meta property="og:image:type" content="image/webp" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="LoungeOS Documentation: Install, Activate &amp; Operate the POS" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="https://loungeos.app/images/og-loungeos.jpg" />
+    <meta name="twitter:title" content="LoungeOS Documentation: Install, Activate &amp; Operate the POS" />
+    <meta name="twitter:description" content="Official LoungeOS documentation: system requirements, installation, licence activation, user roles, setup, daily workflows, stock, accounting and troubleshooting." />
+    <meta name="twitter:image" content="https://loungeos.app/images/og/documentation.webp" />
+    <meta name="twitter:image:alt" content="LoungeOS Documentation: Install, Activate &amp; Operate the POS" />
+    <link rel="image_src" href="https://loungeos.app/images/og/documentation.webp" />
+    <meta property="og:url" content="https://loungeos.app/documentation.html" />
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -104,7 +111,7 @@
       "breadcrumb": {
         "@id": "https://loungeos.app/documentation.html#breadcrumb"
       },
-      "dateModified": "2026-10-08",
+      "dateModified": "2026-10-09",
       "about": {
         "@id": "https://loungeos.app/#software"
       }
@@ -335,7 +342,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/style.css?v=ecf9ab204e" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -659,14 +666,28 @@
           transform: translateY(0);
         }
       }
-      table thead tr,
-      table tbody tr,
-      table thead th,
-      table tbody td {
+      /* Tables inside articles scroll horizontally instead of widening the page */
+      .doc-article-content table {
         border-collapse: collapse;
         width: 100%;
+        display: block;
+        overflow-x: auto;
+        white-space: normal;
+      }
+      .doc-article-content th,
+      .doc-article-content td {
         border: 0.5px solid black;
-        padding: 5px;
+        padding: 6px 8px;
+        text-align: left;
+        vertical-align: top;
+      }
+      @media (max-width: 1024px) {
+        .doc-container {
+          align-items: stretch;
+        }
+        .doc-main {
+          width: 100%;
+        }
       }
     </style>
   </head>
@@ -1430,7 +1451,7 @@
       }
     </script>
     <script defer type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <script defer src="/app.js"></script>
+    <script defer src="/app.js?v=b315057552"></script>
     <!-- Botpress Webchat -->
     <script defer src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
     <script defer src="https://files.bpcontent.cloud/2026/06/19/19/20260619193215-LONFMDIT.js"></script>

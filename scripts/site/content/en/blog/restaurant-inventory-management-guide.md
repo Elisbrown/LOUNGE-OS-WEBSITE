@@ -102,6 +102,7 @@ Count **at the same time** (before opening is best), with **two people** for hig
 For each item:
 
 > **Expected = opening + received − used (sold) − recorded losses**
+>
 > **Variance = expected − counted**
 
 Sort variances **by value**, and investigate the top five. Common causes: unrecorded waste, receiving errors, wrong units, portioning that's too generous, and theft. Fix the process, then watch the next count.

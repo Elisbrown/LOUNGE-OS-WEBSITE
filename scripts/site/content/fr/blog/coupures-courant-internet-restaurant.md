@@ -5,7 +5,7 @@ lang: fr
 title: "Coupures de courant et d'internet : garder son restaurant ouvert"
 description: "Délestages et coupures d'internet : continuer à servir dans un restaurant, bar ou lounge. Onduleur, caisse hors ligne, paiements, cuisine, chaîne du froid."
 h1: "Coupures de courant et d'internet : comment garder votre restaurant ouvert"
-category: "En français"
+category: "Opérations"
 lead: "Dans beaucoup de villes africaines, les délestages ne sont pas une exception mais une habitude. Les établissements qui continuent de servir n'ont pas de chance : ils ont un plan."
 published: 2026-10-08
 modified: 2026-10-08

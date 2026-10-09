@@ -5,7 +5,7 @@ lang: fr
 title: "Logiciel de caisse restaurant en Afrique : bien choisir en 2026"
 description: "Choisir un logiciel de caisse pour restaurant, bar ou lounge en Afrique : fonctionnement hors ligne, Mobile Money, contrôle du personnel, prix en FCFA."
 h1: "Logiciel de caisse pour restaurant en Afrique : le guide pour bien choisir en 2026"
-category: "En français"
+category: "Guides d’achat"
 lead: "Un logiciel de caisse pensé pour l'Europe ne tient pas forcément un samedi soir à Douala ou à Abidjan. Voici les critères qui comptent vraiment en Afrique, et les questions à poser avant de signer."
 published: 2026-10-08
 modified: 2026-10-08
