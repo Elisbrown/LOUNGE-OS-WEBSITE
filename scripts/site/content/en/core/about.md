@@ -2,13 +2,13 @@
 url: /about/
 type: core
 schema_type: AboutPage
-title: "About LoungeOS: Offline-First Hospitality Software From Cameroon"
-description: "LoungeOS builds offline-first POS and management software for restaurants, bars, lounges and hotels. Learn who we are, why we built it and how to reach us."
-h1: "We build hospitality software for places where the internet can't be taken for granted"
+title: "About LoungeOS: POS & Business Software Made by Sigalix in Cameroon"
+description: "LoungeOS makes point of sale and business management software for every business that sells. Made by Sigalix in Cameroon. Learn who we are, why we built it and how to reach us."
+h1: "We build business software for places where the internet can't be taken for granted"
 label: "About LoungeOS"
-lead: "LoungeOS was built in Cameroon for restaurants, bars and lounges that lose money to two problems most POS systems ignore: unreliable connectivity and unaccountable cash."
-image: loungeos-login-screen
-image_alt: "LoungeOS login screen on a Windows computer"
+lead: "LoungeOS was built in Cameroon for businesses that lose money to two problems most POS systems ignore: unreliable connectivity and unaccountable cash. It is made for restaurants, bars, cafés, hotels, shops, supermarkets and every other business that sells."
+image: loungeos-pos-order-screen
+image_alt: "LoungeOS point of sale order screen"
 card_title: "About LoungeOS"
 no_hero_cta: true
 related:
@@ -19,38 +19,39 @@ related:
 
 ## What LoungeOS is
 
-LoungeOS is a point of sale (POS) and management system for restaurants, bars, lounges, nightclubs, cafés and hotels. It runs on a Windows computer inside the venue and connects waiters' phones, kitchen and bar screens and the cashier over the venue's own Wi-Fi. Service keeps running when the internet is down. It combines ordering, [kitchen and bar displays](/features/kitchen-display-system/), [inventory](/features/inventory-management/), [staff permissions and audit logs](/features/loss-prevention/), [mobile money payments](/features/mobile-money-pos/) and [double-entry accounting](/features/restaurant-accounting/) in a single application.
+LoungeOS is point of sale (POS) and business management software for every kind of business that sells: restaurants, bars, lounges, cafés, nightclubs, hotels, retail shops, supermarkets and more. It runs in the web app at [app.loungeos.app](https://app.loungeos.app) and in apps for Windows, Mac and Android, with one account everywhere. The Windows and Mac apps keep selling when the internet is down and sync when the connection comes back, and phones and tablets on the same Wi-Fi can use them through their browser. LoungeOS combines tables and orders, [kitchen and bar screens](/features/kitchen-display-system/), [inventory](/features/inventory-management/), [staff roles and an activity log](/features/loss-prevention/), [your own payment methods, including mobile money](/features/mobile-money-pos/), and [expenses and accounting](/features/restaurant-accounting/) in one application.
 
 ## Why we built it
 
-Hospitality businesses in Cameroon and across much of Africa share two problems. First, internet and power are not reliable enough to depend on during a Saturday night rush. Second, without strict controls, cash and stock leak through deleted items, unapproved discounts and missing bottles, and nobody can say where the money went. Cloud POS systems designed for markets with reliable broadband handle the first problem with limited "offline modes", often charge per device, and sometimes require hardware that is hard to buy or repair locally.
+Businesses in Cameroon and across much of Africa share two problems. First, internet and power are not reliable enough to depend on during a busy Saturday night. Second, without strict controls, cash and stock leak through deleted items, unapproved discounts and missing bottles, and nobody can say where the money went. Cloud POS systems designed for markets with reliable broadband handle the first problem with limited "offline modes", often charge extra for every device, and sometimes require hardware that is hard to buy or repair locally.
 
 LoungeOS is designed around three principles:
 
-1. **Offline first.** The venue's own computer is the server. The internet is optional during service.
-2. **Accountability by design.** Every role sees only what it needs, sensitive actions need a manager, and every action is logged.
-3. **Use the hardware you have.** Any phone, tablet or PC with a browser is a terminal, with no per-device fees.
+1. **Keep selling offline.** The Windows and Mac apps keep the business's data on the computer, keep selling without internet and sync when the connection comes back. A copy of all your data is kept in the cloud, with a full backup every day.
+2. **Accountability by design.** Each staff member has their own account and a role with its own permissions, and every action is logged.
+3. **Use the hardware you have.** Windows and Mac computers, Android phones and tablets, or any device with a modern browser. LoungeOS works with touch and mouse on any screen size.
 
 ## Who uses LoungeOS
 
-LoungeOS is designed for independent restaurants, bars, snack bars, lounges, nightclubs, cafés and fast-food outlets, and for the food-and-beverage outlets of hotels. The interface is available in English and French. Built-in currencies include the CFA franc (XAF), naira (NGN), cedi (GHS), US dollar, euro and pound sterling, and you can add others.
+LoungeOS is designed for independent businesses that sell: restaurants, bars, snack bars, lounges, nightclubs, cafés, fast-food outlets, hotels, retail shops and supermarkets. The app is available in English and French. The setup wizard asks for your business type, currency and taxes, so LoungeOS fits your business from day one.
 
 ## The team
 
-LoungeOS is developed in Cameroon under the technical supervision of Sunyin Elisbrown Sigala. Customers are supported by email and phone in English and French.
+LoungeOS is made by [Sigalix](https://sigalix.com), a custom software company, and developed in Cameroon under the technical supervision of Sunyin Elisbrown Sigala. Customers are supported by email and phone in English and French.
 
 ## Facts at a glance
 
 | | |
 |---|---|
-| Product | LoungeOS, an offline-first restaurant, bar and lounge POS |
-| Current version | 1.3.6 (Windows). macOS in development |
+| Product | LoungeOS, point of sale and business management software for every business that sells |
+| Made by | [Sigalix](https://sigalix.com) |
+| Current version | 2.0.0: web app, Windows, Mac and Android |
 | Headquarters | Cameroon |
 | Languages | English, French |
-| Pricing | 30-day free trial, then from 20,000 FCFA / US$39 per month on a yearly plan. See [pricing](/pricing/) |
+| Pricing | 14-day free trial with Business features, then plans from US$10 / 6,000 FCFA a month. See [pricing](/pricing/) |
 | Support | support@loungeos.app · +237 679 690 703 |
-| Sales | hello@loungeos.app · +237 689 699 688 |
-| Billing | billing@loungeos.app |
+| Sales and other questions | info@sigalix.com · +237 689 699 688 |
+| Billing | billing@sigalix.com |
 
 ## Brand assets
 

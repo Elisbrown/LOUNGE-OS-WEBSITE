@@ -2,13 +2,13 @@
 url: /faq/
 type: core
 faq_all: true
-title: "LoungeOS FAQ: Offline POS, Pricing, Setup, Hardware & Data"
-description: "Answers to common questions about LoungeOS: how it works offline, what hardware you need, pricing by country, activation, mobile money, security and backups."
+title: "LoungeOS FAQ: Plans, Free Trial, Offline Use, Devices & Data"
+description: "Answers to common questions about LoungeOS 2.0: plans and the 14-day free trial, offline use, devices and platforms, Google sign-in, payments by Mobile Money, card or PayPal, and data safety."
 h1: "Frequently asked questions"
 label: "FAQ"
-lead: "Straight answers about how LoungeOS works, what it costs, what you need to run it and how your data is protected."
+lead: "Straight answers about how LoungeOS works, what it costs, where it runs and how your data is protected."
 card_title: "LoungeOS FAQ"
-card_desc: "Offline use, hardware, pricing, activation, payments, security and backups."
+card_desc: "Plans, free trial, offline use, devices, sign-in, payments and data safety."
 image: loungeos-pos-menu-grid
 no_hero_image: true
 no_hero_cta: true
@@ -24,110 +24,142 @@ related:
 
 ### What is LoungeOS?
 
-LoungeOS is an offline-first point of sale (POS) and management system for restaurants, bars, lounges, nightclubs, cafés and hotels. It handles table ordering, kitchen and bar display screens, payments including mobile money, inventory, staff permissions with an activity log, and double-entry accounting. It runs on a Windows computer in your venue and works without internet.
+LoungeOS is point of sale (POS) and business management software for every kind of business that sells: restaurants, bars, lounges, cafés, nightclubs, hotels, retail shops, supermarkets and more. It handles tables and orders, kitchen and bar screens, your own payment methods including mobile money, receipts, inventory and suppliers, expenses and accounting, staff roles with an activity log, and reports. It runs in the web app and in the Windows, Mac and Android apps, with one account everywhere.
 
 ### Who is LoungeOS for?
 
-Any business that serves food or drinks: restaurants, bars, snack bars, lounges, nightclubs, cafés, fast-food outlets and hotel restaurants and bars. It is especially useful where the internet or power is unreliable, and where owners need tight control over cash and stock.
+Any business that sells: [restaurants](/restaurant-pos/), [bars](/bar-pos/), [lounges](/lounge-pos/), [nightclubs](/nightclub-pos/), [hotels](/hotel-pos/), [cafés and fast-food outlets](/cafe-pos/), retail shops and supermarkets. When you create your account, the setup wizard asks for your business type and suggests menu, inventory and expense categories to tick.
 
-### Where is LoungeOS made?
+### Who makes LoungeOS?
 
-LoungeOS is developed in Cameroon and used across Africa and internationally. Support is available in English and French. See [About LoungeOS](/about/).
+LoungeOS is made by [Sigalix](https://sigalix.com), a custom software company, and developed in Cameroon. It is used across Africa and internationally, with support in English and French. See [About LoungeOS](/about/).
 
 ### What languages does LoungeOS support?
 
-The application interface is available in English and French, with more languages planned for version 1.3.7. The website can be read in ten languages.
+The app is available in English and French. The website can be read in ten languages.
 
-## Offline use and hardware
+## Platforms, offline use and hardware
 
-### Does LoungeOS work without internet?
+### Where does LoungeOS run?
 
-Yes. LoungeOS runs on your own computer and local Wi-Fi network, so orders, kitchen and bar screens, payments, stock and reports all keep working during an internet outage. You need internet only to activate or renew your licence. See [offline POS](/features/offline-pos/).
-
-### What hardware do I need?
-
-One Windows 10 or 11 computer (64-bit, 4 GB RAM, 2 GB free storage) as the host, a Wi-Fi router, and any phones, tablets or computers with a web browser as terminals. A thermal receipt printer is optional but recommended. See the [hardware guide](/blog/restaurant-pos-hardware-guide/).
-
-### How many devices can I connect?
-
-As many as you need. Every plan includes unlimited terminals, with no per-device fee.
+In the web app at [app.loungeos.app](https://app.loungeos.app), in any modern browser, and in apps for Windows 10 and 11 (64-bit), Mac (Apple Silicon and Intel) and Android 6.0 or later. The same LoungeOS account works on all of them. See the [download page](/download/).
 
 ### Is there a mobile app?
 
-Phones and tablets use LoungeOS in their web browser, connected to the host computer on your Wi-Fi. There is nothing to install on them. The host application runs on Windows, and a macOS version is in development.
+Yes, for Android 6.0 or later. The Android app needs Google Chrome and an internet connection. On iPhone and iPad, open the [web app](https://app.loungeos.app) in the browser. On phones, a bottom navigation bar with a "More" sheet keeps every screen in reach.
+
+### Does LoungeOS work without internet?
+
+Yes, in the Windows and Mac apps. They keep your business's data on the computer, keep selling without internet and sync automatically when the connection comes back. After 7 days without syncing, the till becomes read-only until it reconnects, and a warning shows during the last 2 days. Read-only means past orders, reports, printing and exports still work, but you cannot make new sales or edits. The web app and the Android app need internet. See [offline POS](/features/offline-pos/).
+
+### What hardware do I need?
+
+The devices you already have: a Windows 10 or 11 (64-bit) computer, a Mac, an Android phone or tablet, or any device with a modern browser. LoungeOS works with touch and mouse on any screen size. Receipts print on 58 mm and 80 mm thermal printers, or as PDF. See the [hardware guide](/blog/restaurant-pos-hardware-guide/).
+
+### How many devices can I use?
+
+It depends on your plan. Starter includes 2 users and 2 devices, Business 5 users and 5 devices, and Pro unlimited users and 10 or more devices. See [pricing](/pricing/).
+
+### How do phones and tablets connect to a Windows or Mac till?
+
+Any phone or tablet with internet can open the web app. Phones and tablets can also use the Windows or Mac app over your Wi-Fi: connect them to the same network as the computer, allow port 2304 in the computer's firewall, then open `http://<computer-IP>:2304` in the browser, for example `http://192.168.1.15:2304`. See [connect other devices](/download/#connect-other-devices).
 
 ### What happens during a power cut?
 
-Phones and tablets run on battery. Put the host computer and the Wi-Fi router on a small UPS, or use a laptop as the host, and service continues. See [running a restaurant during power and internet outages](/blog/run-a-restaurant-during-power-and-internet-outages/).
+A laptop running the Windows or Mac app keeps selling on its battery, even without internet. Put a desktop computer and your Wi-Fi router on a small UPS. Phones and tablets run on battery. See [running a restaurant during power and internet outages](/blog/run-a-restaurant-during-power-and-internet-outages/).
 
-### How do tablets connect to LoungeOS?
+## Account and sign-in
 
-Connect them to the same Wi-Fi as the host computer, then open `http://<host-IP>:2304` in the browser, for example `http://192.168.1.15:2304`. Allow port 2304 in the Windows firewall on the host.
+### How do I get started?
+
+Create your account at [app.loungeos.app](https://app.loungeos.app/login). Sign-up is on the sign-in page. A setup wizard then asks for your business type, name, logo, currency, taxes, payment methods and opening hours, and suggests menu, inventory and expense categories to tick, so LoungeOS is configured on day one.
+
+### Can I sign in with Google?
+
+Yes. Each person has one LoungeOS account, with email and password or "Continue with Google". The same account works in the web app and in the Windows, Mac and Android apps.
+
+### Do I need a key or code to use the Windows or Mac app?
+
+No. Install the app, open it and sign in with your LoungeOS account. That is all. There is nothing to copy or paste.
+
+### How do my staff sign in?
+
+The owner invites staff by email, and each staff member gets a role with its own permissions. On a shared till, staff can switch with a quick PIN. Every action goes into the activity log with a name.
+
+### How long does setup take?
+
+Creating your account and answering the setup wizard takes a few minutes. Adding your products, prices, tables and staff takes longer, depending on how many products you sell.
+
+### Can I move LoungeOS to a new computer?
+
+Yes. Install the app on the new computer and sign in with your LoungeOS account. Your data is kept in the cloud, so it syncs to the new computer. There is nothing to back up or restore by hand. The number of devices you can use depends on your [plan](/pricing/).
 
 ## Pricing and billing
 
 ### How much does LoungeOS cost?
 
-In the FCFA zone, LoungeOS costs 30,000 FCFA per month, 25,000 FCFA per month on a 6-month plan, or 20,000 FCFA per month on a yearly plan. Prices are set by region, for example ₦35,000 a month in Nigeria and US$49 a month in the US. Every plan includes every feature and unlimited terminals. See [pricing](/pricing/).
+There are three plans: Starter at US$10 a month (6,000 FCFA), Business at US$25 a month (15,000 FCFA) and Pro at US$50 a month (30,000 FCFA). Pay yearly and get 2 months free: US$100, US$250 or US$500 a year (60,000, 150,000 or 300,000 FCFA). Visitors in Cameroon see FCFA and everyone else sees US$. See [pricing](/pricing/).
 
 ### Is there a free trial?
 
-Yes. 30 days, every feature, unlimited terminals, and no credit card required.
+Yes. Every plan starts with a 14-day free trial with Business features, and there is no payment up front. At the end of the trial, choose Starter, Business or Pro to keep selling.
 
-### Do you charge per device or take a percentage of sales?
+### What is the difference between the plans?
 
-No. LoungeOS is a flat subscription with unlimited terminals, and we take no percentage of your sales.
+Starter covers the point of sale, inventory, receipts and daily reports for 2 users on 2 devices. Business adds expenses, accounting, shifts and cash control, weekly and monthly reports and email alerts, for 5 users on 5 devices. Pro gives unlimited users, 10 or more devices, priority support and advanced admin. Several branches and payroll are coming soon on Pro.
 
-### Can I cancel at any time?
+### How do I pay?
 
-Yes. Monthly plans can be cancelled at any time. 6-month and yearly plans are paid upfront at a lower monthly price.
+On [account.loungeos.app](https://account.loungeos.app), by Mobile Money (MTN, Orange), card or PayPal. The amount is charged in FCFA, and US$ prices are shown converted. Invoices and receipts are sent by email. For billing questions, write to [billing@sigalix.com](mailto:billing@sigalix.com).
 
-## Setup and activation
+### Does LoungeOS take a percentage of my sales?
 
-### How long does setup take?
+No. You pay the plan price. Card and mobile money fees, if any, are charged by your bank or mobile money operator.
 
-Installation and licence activation take about five minutes. Entering your menu, tables and staff typically takes an hour or two, depending on menu size. You can import stock lists from CSV.
+### Can I change my plan?
 
-### How do I activate LoungeOS?
-
-Create an account at account.loungeos.app, choose the trial or a plan, open LoungeOS and copy your Machine ID. Paste it in your account dashboard to generate a licence key, then paste the key into LoungeOS and click Activate. Full steps are on the [download page](/download/).
-
-### Can I move LoungeOS to a new computer?
-
-Yes. Back up your database, install LoungeOS on the new computer, restore the backup and activate the licence on the new machine. Contact [support](/contact/) if your licence needs to be moved.
+Yes. You manage your plan, invoices and payments at [account.loungeos.app](https://account.loungeos.app), and you can upgrade from there.
 
 ## Features
 
 ### Does LoungeOS have a kitchen display system?
 
-Yes. Food items go to the kitchen display and drinks to the bar display automatically, with Pending, In progress and Ready columns and audio alerts. See [kitchen display system](/features/kitchen-display-system/).
+Yes. Orders appear on kitchen and bar screens, so the people preparing them see what to make. See [kitchen display system](/features/kitchen-display-system/).
 
 ### Can LoungeOS prevent employee theft?
 
-It removes the most common opportunities. There are eight roles with limited permissions, and manager approval is required to remove items from sent orders or to split and merge bills. Every cancellation needs a reason, and every action goes into a searchable activity log. See [loss prevention](/features/loss-prevention/).
+It removes the usual opportunities. Each staff member has their own account and a role with its own permissions, so people only do what their role allows. Every action is written to the activity log with a name. See [loss prevention](/features/loss-prevention/).
 
 ### Does LoungeOS support mobile money?
 
-Yes. Cashiers can record MTN Mobile Money and Orange Money payments with the transaction reference, as well as cash and card, and split one bill across methods. See [mobile money payments](/features/mobile-money-pos/).
+Yes. Each business creates its own payment methods, such as cash, MTN Mobile Money, Orange Money, card or bank transfer. See [mobile money payments](/features/mobile-money-pos/).
+
+### Can I print receipts?
+
+Yes, on 58 mm and 80 mm thermal printers, or as PDF. Every order has a print button.
 
 ### Does LoungeOS include accounting?
 
-Yes. LoungeOS keeps a double-entry ledger and produces a profit and loss statement, balance sheet and cash-flow statement from your sales, purchases and expenses. See [restaurant accounting](/features/restaurant-accounting/).
+Yes, on the Business and Pro plans. You get expenses with categories you create (common ones are made for you), a chart of accounts, a journal and reports. See [accounting](/features/restaurant-accounting/).
 
-### Can I manage several restaurants?
+### Can I manage several branches?
 
-Each venue runs its own LoungeOS installation. For groups and multi-site operations, the Enterprise plan adds setup, training and custom integrations. [Contact sales](/contact/).
+Several branches are coming soon on the Pro plan. If you need something now, write to [info@sigalix.com](mailto:info@sigalix.com) or [contact us](/contact/).
 
 ## Security and data
 
 ### Where is my data stored?
 
-On your host computer, in a local database. Sales and stock data are not sent to external servers during operation.
+In the cloud, on the servers we use to run LoungeOS. The Windows and Mac apps also keep a copy of your business's data on the computer, so they can keep selling without internet. Logos, images and documents you upload are stored securely in the cloud.
 
-### How do I back up my data?
+### Is my data backed up?
 
-Click Backup Database to download an encrypted backup file, or enable automatic backups. Keep copies on a USB drive and in cloud storage. If your computer fails, install LoungeOS on another one and restore the backup.
+Yes. All your data has a copy in the cloud, and we make a full backup every day. You do not need to make backups by hand.
 
-### What should I do after the first login?
+### What happens to my data if my subscription ends?
 
-Change the default Super Admin password immediately, then create a personal account for each staff member with the right role. Never share the Super Admin login.
+Nothing is deleted. LoungeOS becomes read-only, on the web and on your tills, until you renew. You can still see past orders and reports, print and export, but you cannot make new sales or edits.
+
+### How do I keep my account secure?
+
+Use a strong password, or sign in with Google. Do not share your own account: invite each staff member by email and give them only the role they need. Ask staff to keep their PIN private.

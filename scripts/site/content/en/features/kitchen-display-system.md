@@ -2,7 +2,7 @@
 url: /features/kitchen-display-system/
 type: feature
 title: "Kitchen Display System (KDS) for Restaurants & Bars | LoungeOS"
-description: "Replace paper tickets with a kitchen display system that works offline. Food goes to the kitchen screen, drinks to the bar screen, with alerts when orders are ready."
+description: "Replace paper tickets with kitchen and bar screens. Food goes to the kitchen, drinks to the bar, with alerts when orders are ready. Keeps working offline on Windows and Mac."
 h1: "Kitchen and bar display screens that end lost tickets"
 label: "Kitchen Display System"
 lead: "Every order splits itself in two. Food goes to the kitchen screen, drinks go to the bar screen, and the waiter hears when it's ready. No handwriting, no running, no lost paper."
@@ -19,7 +19,7 @@ related:
   - /restaurant-pos/
 ---
 
-A **kitchen display system (KDS)** is a screen in the kitchen that shows orders as soon as waiters enter them, replacing printed or handwritten tickets. LoungeOS includes a KDS for food and a separate **Bar Display System (BDS)** for drinks. Both are included in every plan and both run on your local network without internet.
+A **kitchen display system (KDS)** is a screen in the kitchen that shows orders as soon as waiters enter them, replacing printed or handwritten tickets. LoungeOS includes a KDS for food and a separate **Bar Display System (BDS)** for drinks. Both work in the web app and in the Windows, Mac and Android apps. When your till runs the Windows or Mac app, the screens keep working over your Wi-Fi even when the internet is down.
 
 ## How orders reach the right screen
 
@@ -44,7 +44,7 @@ Tickets stay in *Ready* until the bill is paid. Managers can see at a glance whe
 
 ## Cancelling from the kitchen, with accountability
 
-Sometimes an order must be cancelled: the customer left, or the item was entered by mistake. On LoungeOS the chef or bartender drags the ticket to the **cancel zone** at the bottom of the screen and must **choose a reason**. The cancellation and its reason are written to the [activity log](/features/loss-prevention/). If it was a mistake, a manager can reactivate the order within 24 hours.
+Sometimes an order must be cancelled: the customer left, or the item was entered by mistake. On LoungeOS the chef or bartender drags the ticket to the **cancel zone** at the bottom of the screen and must **choose a reason**. The cancellation and its reason are written to the [activity log](/features/loss-prevention/). If it was a mistake, a manager can reopen the order within 24 hours.
 
 This matters for loss prevention. A common way to steal in restaurants is to cancel an item *after* it was served and keep the cash. When every cancellation has a name, a time and a reason, that pattern becomes visible.
 
@@ -52,11 +52,11 @@ This matters for loss prevention. A common way to steal in restaurants is to can
 
 Any screen with a modern web browser works as a kitchen or bar display:
 
-- A cheap Android tablet on a wall mount (the most common setup)
-- An old laptop
+- A cheap Android tablet on a wall mount (the most common setup), with the Android app or the browser
+- An old laptop or Mac
 - A smart TV or monitor with a small PC attached
 
-It only needs to be on the same Wi-Fi network as the LoungeOS host computer. Our [POS hardware guide](/blog/restaurant-pos-hardware-guide/) covers mounting, grease and heat in more detail.
+The screen can open the web app, which needs internet. Or, if your till runs the Windows or Mac app, it can connect to that computer through its browser over the same Wi-Fi, which keeps working without internet. The number of devices you can use depends on your [plan](/pricing/). Our [POS hardware guide](/blog/restaurant-pos-hardware-guide/) covers mounting, grease and heat in more detail.
 
 ## Why kitchens switch from paper
 
@@ -76,7 +76,7 @@ If you have a separate bar, yes. That is where the BDS earns its keep. Small ven
 
 ### Does the KDS still work if the internet is down?
 
-Yes. The KDS talks to the LoungeOS host computer over your Wi-Fi, not over the internet.
+Yes, when your till runs the Windows or Mac app and the kitchen and bar screens connect to it over your Wi-Fi. Screens that use the web app or the Android app need internet.
 
 ### Why don't drinks show on my kitchen screen?
 
@@ -84,4 +84,4 @@ That is by design. Drink categories should have "This is a food category" untick
 
 ### Can I still print kitchen tickets?
 
-LoungeOS prints customer receipts on thermal printers. Most venues that adopt the KDS stop printing kitchen tickets entirely, which also saves paper.
+LoungeOS prints receipts on 58 mm and 80 mm thermal printers, or as PDF, and every order has a print button. Most venues that adopt the KDS stop printing kitchen tickets entirely, which also saves paper.

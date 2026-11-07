@@ -7,7 +7,7 @@ h1: "Best offline restaurant POS systems in 2026: what really keeps working with
 category: "POS buying guides"
 lead: "Every POS vendor now claims an 'offline mode'. Their own help centres tell a more nuanced story. Here's how five systems behave when the connection drops, and how to test any POS before you buy."
 published: 2026-10-08
-modified: 2026-10-08
+modified: 2026-11-07
 image: loungeos-pos-menu-grid
 image_alt: "LoungeOS point of sale menu grid running on a local network without internet"
 breadcrumb:
@@ -19,7 +19,7 @@ about: ["Offline POS", "Restaurant point of sale", "POS comparison"]
 takeaways:
   - "There are two designs: **offline-first** (the server is in your venue) and **cloud with an offline mode** (the server is online, and your devices cope temporarily)."
   - "Cloud systems such as Square, Toast and Loyverse document real limits offline: time limits on card payments, blocked check closing or refunds, and delayed reports."
-  - "Offline-first systems (LoungeOS, SambaPOS) keep full functionality during outages, but you are responsible for the host computer and backups."
+  - "Offline-first systems (LoungeOS on Windows or Mac, SambaPOS) keep full functionality during outages, but the computer in your venue must stay powered."
   - "Before buying, run the 'unplug test': disconnect the internet during a mock service and try every task your team does on a busy night."
 related:
   - /blog/cloud-vs-offline-pos/
@@ -47,7 +47,7 @@ Vendor documentation changes. The behaviour below reflects their help centres as
 
 | | Architecture | Orders & kitchen offline | Payments offline | Notable limits offline | Best for |
 |---|---|---|---|---|---|
-| **LoungeOS** | Offline-first (Windows host in venue) | Yes, full | Yes (records cash, card, mobile money) | Needs host + router powered; no integrated card processing | Venues with unreliable internet, cash and mobile money |
+| **LoungeOS** | Offline-first (Windows or Mac app in venue, synced to the cloud) | Yes, full | Yes (records cash, card, mobile money) | Needs the computer + router powered; read-only after 7 days without sync; web and Android apps need internet; no integrated card processing | Venues with unreliable internet, cash and mobile money |
 | **SambaPOS** | Local Windows server + database | Yes | Yes | Tablets typically Windows or remote desktop; setup is technical | Venues with IT support who want deep customisation |
 | **Toast** | Cloud + local hub | Yes, if a hub is set up on the local network | Cards with background processing | Can't close checks, reconcile tips or clock out offline; reports delayed | Full-service restaurants in markets with Toast support |
 | **Square for Restaurants** | Cloud | Yes, on each device | Cards, with limits | Session ends after 24 h; payments must upload within 72 h; some payment types excluded | Card-heavy venues with mostly reliable internet |
@@ -55,9 +55,9 @@ Vendor documentation changes. The behaviour below reflects their help centres as
 
 ## LoungeOS: offline-first, built for outages
 
-LoungeOS installs on a Windows computer in the venue, which acts as the server. Waiters' phones, tablets and kitchen screens connect to it through the venue's Wi-Fi router, so **the internet is never in the path of an order**. During an outage the team keeps taking orders, routing food to the [kitchen display](/features/kitchen-display-system/) and drinks to the bar display, closing bills, recording cash, card and mobile money payments, adjusting stock and running reports. You only need internet to activate or renew the licence.
+The LoungeOS Windows or Mac app runs on a computer in the venue and keeps the business's data on that computer. Waiters' phones, tablets and kitchen screens connect to it through the venue's Wi-Fi router, so **the internet is never in the path of an order**. During an outage the team keeps taking orders, routing food to the [kitchen display](/features/kitchen-display-system/) and drinks to the bar display, closing bills, recording cash, card and mobile money payments, adjusting stock and running reports. When the connection comes back, everything syncs to the cloud automatically. A till can stay offline for up to 7 days. After that it becomes read-only (past orders, reports and printing still work) until it reconnects.
 
-**Trade-offs:** you must keep the host computer and router powered (a small UPS or a laptop host solves this) and take backups. LoungeOS records card and mobile money payments made on your terminal or wallet. It doesn't process cards itself, so a card terminal that needs a network still needs one.
+**Trade-offs:** you must keep the computer and router powered (a small UPS or a laptop solves this). Backups are handled for you: LoungeOS keeps a cloud copy of your data and makes a full backup every day. The LoungeOS web app and Android app need internet, so for service without internet, use the Windows or Mac app. LoungeOS records card and mobile money payments made on your terminal or wallet. It doesn't process cards itself, so a card terminal that needs a network still needs one.
 
 **Best for:** restaurants, bars and lounges in places where outages are routine, and where cash and mobile money control matter. [See how LoungeOS works offline →](/features/offline-pos/)
 
@@ -114,7 +114,7 @@ Write down every task that failed. If any of them is something your team does ev
 
 ### What is the best POS system that works without internet?
 
-For venues where outages are frequent, an offline-first POS that runs on a local computer, such as LoungeOS or SambaPOS, keeps full functionality without internet. Cloud POS systems like Toast, Square and Loyverse offer offline modes with documented limits on payments, refunds, check closing or reporting.
+For venues where outages are frequent, an offline-first POS that runs on a local computer, such as the LoungeOS Windows or Mac app or SambaPOS, keeps full functionality without internet. Cloud POS systems like Toast, Square and Loyverse offer offline modes with documented limits on payments, refunds, check closing or reporting.
 
 ### Does Square work offline?
 

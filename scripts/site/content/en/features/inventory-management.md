@@ -2,7 +2,7 @@
 url: /features/inventory-management/
 type: feature
 title: "Restaurant & Bar Inventory Management Software | LoungeOS"
-description: "Track drinks, ingredients and packaging with stock levels, low-stock alerts, supplier records, waste and damage logging, and CSV import. Works offline."
+description: "Track drinks, ingredients, packaging and shop stock with stock levels, low-stock alerts, supplier records, waste and damage logging, and CSV import. Included in every plan."
 h1: "Inventory management that shows where your stock actually goes"
 label: "Inventory Management"
 lead: "Know what you have, what it cost, what was sold and what disappeared. LoungeOS tracks every bottle, crate and takeaway box from delivery to sale, and records every loss."
@@ -19,7 +19,7 @@ related:
   - /blog/food-cost-percentage-formula/
 ---
 
-**Restaurant inventory management** means knowing at any moment how much stock you have, what it is worth and where the difference went when the count does not match. LoungeOS combines a stock register, supplier directory and movement ledger with your point of sale. Sales and losses are both recorded in the same place.
+**Restaurant inventory management** means knowing at any moment how much stock you have, what it is worth and where the difference went when the count does not match. LoungeOS combines a stock register, supplier directory and movement ledger with your point of sale, on every plan. Sales and losses are both recorded in the same place, whether you run a restaurant, a bar, a shop or a supermarket.
 
 ## What you can track
 
@@ -70,7 +70,7 @@ Already have your stock in Excel? Download the CSV template, paste your list and
 
 ## How inventory connects to accounting
 
-Stock purchases and stock losses flow into the [accounting module](/features/restaurant-accounting/). When you sync accounting data, purchases are recorded against inventory and cost of goods sold, and damage and waste are recorded as expenses. Your profit and loss statement then reflects real losses, not just sales.
+On the Business and Pro plans, stock purchases and stock losses flow into the [accounting module](/features/restaurant-accounting/). When you sync accounting data, purchases are recorded against inventory and cost of goods sold, and damage and waste are recorded as expenses. Your profit and loss statement then reflects real losses, not just sales.
 
 ## Frequently asked questions
 
@@ -88,4 +88,4 @@ Yes. Choose the unit that matches how you count, for example bottles for beer so
 
 ### Does inventory work offline?
 
-Yes. Like everything in LoungeOS, inventory runs on your local computer and does not need internet.
+Yes, in the Windows and Mac apps. Sales keep updating stock levels without internet, and everything syncs automatically when the connection comes back. After 7 days without syncing, the till becomes read-only until it reconnects. The web app and the Android app need internet.

@@ -1,15 +1,15 @@
 ---
 url: /south-africa/
 type: region
-title: "Restaurant & Bar POS Software in South Africa (Rand) | LoungeOS"
-description: "Offline-first restaurant, bar and shisanyama POS for South Africa. Rand pricing from R449/month, 15% VAT, unlimited devices, and no downtime during load-shedding."
+title: "Restaurant & Bar POS Software in South Africa | LoungeOS"
+description: "Restaurant, bar and shisanyama POS for South Africa. From US$10 a month, 15% VAT, devices included, and Windows and Mac tills that keep selling during load-shedding."
 h1: "A restaurant POS for South Africa that shrugs off load-shedding"
 label: "LoungeOS in South Africa"
-lead: "Run orders, kitchen screens and payments on your own network, with unlimited devices and a flat rand price. Keep your current card machine and bank."
+lead: "Run orders, kitchen screens and payments on your own Wi-Fi, with devices included in your plan and a flat monthly price. Keep your current card machine and bank."
 image: loungeos-kitchen-display-system
 image_alt: "LoungeOS kitchen display system with order tickets"
 card_title: "LoungeOS in South Africa"
-card_desc: "Rand pricing, 15% VAT, unlimited devices and load-shedding-proof service."
+card_desc: "15% VAT, rand receipts, devices included and load-shedding-proof selling."
 breadcrumb:
   - ["Africa", "/africa/"]
 crumb: "South Africa"
@@ -19,31 +19,30 @@ related:
   - /features/kitchen-display-system/
 ---
 
-LoungeOS is an **offline-first POS for South African restaurants, bars, taverns, shisanyamas, lounges and guest-house kitchens**. The system runs on a Windows computer in your venue, so it keeps working through load-shedding and internet outages.
+LoungeOS is **point of sale and management software for South African restaurants, bars, taverns, shisanyamas, lounges, guest-house kitchens and shops**. It runs in the web app and in apps for Windows, Mac and Android, with one account everywhere. The Windows and Mac apps keep selling through load-shedding and internet outages, and sync when the connection comes back.
 
-## Why South African venues look at LoungeOS
+## Why South African businesses look at LoungeOS
 
-- **Load-shedding and outages.** Put the host computer and the Wi-Fi router on a small UPS or inverter, and service continues. No internet is needed during service.
-- **Unlimited devices.** Waiters' phones, kitchen screens and bar tablets are included. There are no per-terminal fees.
-- **Keep your card machine.** Card payments on your existing machine or bank terminal are recorded in LoungeOS. LoungeOS takes no percentage of your sales.
+- **Load-shedding and outages.** Use the Windows or Mac app on the till, and put the computer and the Wi-Fi router on a small UPS or inverter. The till keeps selling without internet, and phones keep ordering over your Wi-Fi.
+- **Devices included.** Starter covers 2 users on 2 devices, Business 5 users on 5 devices, and Pro unlimited users on 10 or more devices. There is no separate fee per terminal.
+- **Keep your card machine.** Card payments on your existing machine or bank terminal are recorded in LoungeOS as one of your payment methods. LoungeOS takes no percentage of your sales.
 - **Stock control.** Bottle-level drinks stock, low-stock alerts, and every breakage or loss recorded with a name.
 
 ## Configure LoungeOS for South Africa
 
+When you create your account, the setup wizard asks for your business type, name, logo, currency, taxes, payment methods and opening hours.
+
 - **Currency:** add the rand (ZAR) as a custom currency with the "R" symbol before the amount.
 - **VAT:** South Africa's standard VAT rate is **15%**. Configure it as your default tax rate if you are a registered VAT vendor.
-- **Receipts:** business name, address, phone and logo on every receipt.
+- **Receipts:** business name, address, phone and logo on every receipt, printed on 58 mm or 80 mm thermal printers or as PDF.
 
-## Rand pricing
+## Pricing in US$
 
-| Plan | Price | Per month |
-|---|---|---|
-| Free trial | R0 for 30 days | — |
-| Monthly | R599 / month | R599 |
-| 6 months | R2,994 | R499 |
-| 12 months | R5,388 | R449 |
+Visitors in South Africa see prices in US$. The plans and features are the same everywhere.
 
-Every plan includes every feature and unlimited terminals. Prices on the [pricing page](/pricing/) appear in rand automatically when you visit from South Africa. Checkout confirms the final amount.
+[[include:plans]]
+
+Starter costs US$10 a month, Business US$25 and Pro US$50. Pay yearly and get 2 months free. You pay on [account.loungeos.app](https://account.loungeos.app) by Mobile Money (MTN, Orange), card or PayPal. The amount is charged in FCFA, and the US$ prices are the same amounts shown converted. See the [pricing page](/pricing/).
 
 ## What LoungeOS doesn't do (yet)
 
@@ -53,7 +52,7 @@ To help you decide: LoungeOS does not currently integrate with delivery platform
 
 ### Will LoungeOS run during load-shedding?
 
-Yes, if the host computer and the Wi-Fi router have backup power. Use a UPS, an inverter, or a laptop as the host. Phones and tablets run on battery, and no internet is needed.
+Yes, with the Windows or Mac app, if the computer and the Wi-Fi router have backup power. Use a UPS, an inverter, or a laptop. Phones and tablets run on battery, and the till keeps selling without internet for up to 7 days. After that, it becomes read-only until it syncs again.
 
 ### Do I need to change my card machine?
 

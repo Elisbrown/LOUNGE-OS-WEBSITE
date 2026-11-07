@@ -7,9 +7,9 @@ h1: "Cloud POS vs offline POS: which one should your restaurant use?"
 category: "POS buying guides"
 lead: "The difference isn't old versus new. It's where the system keeps its brain. That one design choice decides what happens during outages, who holds your data and what you pay."
 published: 2026-10-08
-modified: 2026-10-08
-image: loungeos-backup-restore
-image_alt: "LoungeOS backup and restore screen with manual backup, automatic backups and backup history"
+modified: 2026-11-07
+image: loungeos-pos-menu-grid
+image_alt: "LoungeOS point of sale menu grid that keeps selling without internet"
 breadcrumb:
   - ["Blog", "/blog/"]
 crumb: "Cloud vs offline POS"
@@ -37,6 +37,8 @@ Restaurant POS systems come in two basic designs. Most marketing blurs the diffe
 
 **Hybrid** usually means a cloud POS with a local component. Toast's local hub, for example, relays orders between devices during an outage. That's genuinely better than device-only offline mode, but the "source of truth" is still in the cloud, and some tasks wait for reconnection.
 
+**Local-first with cloud sync** is the reverse. The till in your venue holds the data and keeps selling offline, and a cloud copy is updated whenever the connection is up. LoungeOS works this way: the Windows and Mac apps sell without internet and sync when the connection comes back, and the same account also opens in the web app and the Android app, which need internet.
+
 ## Side-by-side comparison
 
 | | Cloud POS | Offline-first POS |
@@ -47,7 +49,7 @@ Restaurant POS systems come in two basic designs. Most marketing blurs the diffe
 | Remote access for owner | Built in, from anywhere | On the local network. Remote access requires extra setup |
 | Updates | Automatic | Install new versions |
 | Backups | Handled by vendor | Your responsibility (one-click in good systems) |
-| Pricing model | Monthly per location, often per device, often processing margin | Monthly or licence, often unlimited devices |
+| Pricing model | Monthly per location, often per device, often processing margin | Monthly subscription or one-off purchase, often many devices included |
 | Hardware | Often vendor-specific | Usually any PC, phone or tablet |
 | Vendor outage risk | Their outage is your outage | Unaffected |
 | Data portability | Depends on export options | Data is on your machine |
@@ -72,11 +74,11 @@ Restaurant POS systems come in two basic designs. Most marketing blurs the diffe
 
 ### "What if the computer dies?"
 
-That's the real risk of a local system, and it's manageable. Put the host on a UPS, and **back up daily** to a USB drive and to cloud storage. In LoungeOS, an encrypted backup is one click, automatic backups can be scheduled, and restoring to a new Windows computer takes minutes. See [backup and restore](/features/offline-pos/).
+That's the real risk of a local system, and it's manageable. Put the computer on a UPS, and **back up daily** to somewhere outside the venue. LoungeOS does this for you: it keeps a cloud copy of all your data and makes a full backup every day. If the computer dies, install LoungeOS on another Windows or Mac computer and sign in with the same account. See [offline POS](/features/offline-pos/).
 
 ### "Can I see my sales from home?"
 
-Cloud systems win here by default. With a local system, reports are on your network. Many owners check reports when they arrive in the morning or ask the manager to send the end-of-day report. If remote visibility is critical, ask your vendor about remote access options.
+Cloud systems win here by default. With a purely local system, reports are on your network. Many owners check reports when they arrive in the morning or ask the manager to send the end-of-day report. If remote visibility is critical, ask your vendor about remote access options. With LoungeOS, the till syncs to the cloud whenever it is online, so you can open the web app at [app.loungeos.app](https://app.loungeos.app) and see your sales.
 
 ### "Isn't local less secure?"
 
@@ -84,7 +86,7 @@ Not inherently. A cloud vendor protects its servers well, but your data is expos
 
 ### "What about updates?"
 
-Local software needs updating when new versions come out. With LoungeOS you download the new installer. Your data stays in place.
+Local software needs updating when new versions come out. The LoungeOS web app is always up to date. For the Windows and Mac apps you install the new version from the [download page](/download/). Your data stays in place.
 
 ## A simple decision guide
 
@@ -110,8 +112,8 @@ No. The design is old, but modern offline-first systems use web technology so an
 
 ### Can a local POS be accessed remotely?
 
-Reports are available to any device on the venue's network. Accessing them from outside requires network configuration or a remote access tool, which cloud systems include by default.
+Reports are available to any device on the venue's network. Accessing them from outside requires network configuration or a remote access tool, which cloud systems include by default. A local POS that syncs to the cloud, such as LoungeOS, also lets you open the same data in a web app.
 
 ### Which is cheaper, cloud or local POS?
 
-It depends on the pricing model. Cloud systems often charge per location and per device, plus a margin on card processing. Offline-first systems like LoungeOS often charge a flat price with unlimited devices. Compare 3-year total cost.
+It depends on the pricing model. Cloud systems often charge per location and per device, plus a margin on card processing. LoungeOS charges a flat monthly price per plan: Starter at US$10 (6,000 FCFA) with 2 devices, Business at US$25 (15,000 FCFA) with 5, and Pro at US$50 (30,000 FCFA) with 10 or more. Compare 3-year total cost.

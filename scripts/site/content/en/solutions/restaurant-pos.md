@@ -2,7 +2,7 @@
 url: /restaurant-pos/
 type: solution
 title: "Restaurant POS System That Works Offline | LoungeOS"
-description: "An offline restaurant POS with table ordering, kitchen display, inventory, staff permissions and accounting. Use your own phones and tablets. Free 30-day trial."
+description: "An offline restaurant POS with table ordering, kitchen display, inventory, staff permissions and accounting. Use your own computers, phones and tablets. 14-day free trial."
 h1: "The restaurant POS system that keeps the dining room and kitchen in sync, with or without internet"
 label: "Restaurant POS"
 lead: "Take orders at the table on any phone, send them to the kitchen screen instantly, close bills in cash, card or mobile money, and see your food cost and profit without a spreadsheet."
@@ -18,7 +18,7 @@ related:
   - /features/kitchen-display-system/
 ---
 
-A **restaurant POS system** records orders, sends them to the kitchen, takes payments and keeps track of what you sell. LoungeOS does all of that, plus inventory, staff permissions and accounting. It runs on a computer in your restaurant rather than on the internet, so a dropped connection never stops service.
+A **restaurant POS system** records orders, sends them to the kitchen, takes payments and keeps track of what you sell. LoungeOS does all of that, plus inventory, staff permissions and accounting. It runs in the web app and in the Windows, Mac and Android apps, with one account everywhere. On a Windows or Mac till, a dropped connection does not stop service: the till keeps selling and syncs when the connection comes back.
 
 ## How a service runs on LoungeOS
 
@@ -37,9 +37,9 @@ A **restaurant POS system** records orders, sends them to the kitchen, takes pay
   <div class="info-card"><h3>Lost or misread tickets</h3><p>Orders go digitally from the table to the kitchen screen. No handwriting and no lost paper.</p></div>
   <div class="info-card"><h3>Dishes sold that you don't have</h3><p>Menu items carry an available quantity. At zero they are greyed out and cannot be ordered.</p></div>
   <div class="info-card"><h3>Items removed after serving</h3><p>Removing items from a sent order needs a manager, and every cancellation needs a reason.</p></div>
-  <div class="info-card"><h3>Internet outages on busy nights</h3><p>LoungeOS runs on your local Wi-Fi. The internet can go down and service won't notice.</p></div>
-  <div class="info-card"><h3>Not knowing if you make money</h3><p>The built-in ledger produces a profit and loss statement from your real sales and costs.</p></div>
-  <div class="info-card"><h3>Expensive hardware</h3><p>Use the phones, tablets and PCs you already own. No per-device fees.</p></div>
+  <div class="info-card"><h3>Internet outages on busy nights</h3><p>On Windows and Mac, the till keeps selling without internet and syncs later. Phones keep ordering over your Wi-Fi.</p></div>
+  <div class="info-card"><h3>Not knowing if you make money</h3><p>On Business and Pro, the built-in ledger produces a profit and loss statement from your real sales and costs.</p></div>
+  <div class="info-card"><h3>Expensive hardware</h3><p>Use the computers, phones and tablets you already own, with touch or mouse. Devices are included in your plan.</p></div>
 </div>
 
 ## Menu management that fits how restaurants work
@@ -52,26 +52,26 @@ A **restaurant POS system** records orders, sends them to the kitchen, takes pay
 
 ## Know your food cost and margins
 
-Restaurants usually aim to keep food cost around 28–35% of food sales and prime cost (food plus labour) near 60–65%. You cannot manage those numbers without data. LoungeOS gives you sales by category, purchases from [inventory](/features/inventory-management/), recorded waste and a [P&L](/features/restaurant-accounting/). That is enough to calculate food cost every week instead of guessing. Our guide to the [food cost percentage formula](/blog/food-cost-percentage-formula/) shows how.
+Restaurants usually aim to keep food cost around 28–35% of food sales and prime cost (food plus labour) near 60–65%. You cannot manage those numbers without data. LoungeOS gives you sales by category, purchases from [inventory](/features/inventory-management/), recorded waste and, on the Business and Pro plans, a [P&L](/features/restaurant-accounting/). That is enough to calculate food cost every week instead of guessing. Our guide to the [food cost percentage formula](/blog/food-cost-percentage-formula/) shows how.
 
 ## What you need to get started
 
-- One Windows 10/11 computer (4 GB RAM) as the host
+- A Windows 10 or 11 (64-bit) computer or a Mac with the LoungeOS app, so the till keeps selling without internet. You can also start with the web app in any modern browser.
 - A Wi-Fi router
 - Your staff's phones or a few tablets
-- Optional: a thermal receipt printer and a tablet or screen for the kitchen
+- Optional: a 58 mm or 80 mm thermal receipt printer and a tablet or screen for the kitchen
 
-Setup takes an afternoon: install, activate, add your categories, dishes, tables and staff. See the [download page](/download/).
+Setup takes an afternoon. Create your account at [app.loungeos.app](https://app.loungeos.app/login) with your email and a password or **Continue with Google**. The setup wizard asks for your business type, name, logo, currency, taxes, payment methods and opening hours, and suggests menu, inventory and expense categories to tick. Then add your dishes, tables and staff. To use the Windows or Mac app, install it and sign in with the same account. See the [download page](/download/).
 
 ## Frequently asked questions
 
 ### Is LoungeOS suitable for a small restaurant?
 
-Yes. A small restaurant can run LoungeOS on one laptop and one or two phones. The price is the same whatever the number of devices, and the 30-day trial is free.
+Yes. A small restaurant can run LoungeOS on one laptop and a phone. The Starter plan costs US$10 a month (6,000 FCFA in Cameroon) for 2 users on 2 devices, and every plan starts with a 14-day free trial with Business features. See [pricing](/pricing/).
 
 ### Can waiters take orders on their own phones?
 
-Yes. Any smartphone with a browser on your Wi-Fi can be used to take orders. Each waiter logs in with their own account, so every order is attributed to them.
+Yes. Waiters can use the Android app, the web app in any phone browser, or a phone browser connected over your Wi-Fi to a Windows or Mac till. Each waiter has their own account, so every order is attributed to them. The number of devices you can use depends on your plan.
 
 ### Does it support takeaway orders?
 

@@ -1,7 +1,7 @@
 {
-  "name": "LoungeOS: Offline Restaurant, Bar & Lounge POS",
+  "name": "LoungeOS: POS & Business Management",
   "short_name": "LoungeOS",
-  "description": "Offline-first POS and management system for restaurants, bars, lounges and hotels.",
+  "description": "Point of sale and business management for every business that sells: restaurants, bars, lounges, cafés, hotels, shops and supermarkets. Made by Sigalix.",
   "start_url": "/",
   "scope": "/",
   "icons": [

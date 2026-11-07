@@ -1,9 +1,9 @@
 ---
 url: /features/
 type: core
-title: "Restaurant POS Features: KDS, Inventory, Accounting | LoungeOS"
-description: "Every LoungeOS feature in one place: offline POS, table management, kitchen and bar displays, inventory, staff permissions, audit logs, mobile money and accounting."
-h1: "Everything you need to run service, stock and cash — in one offline system"
+title: "POS Features: Tables, KDS, Inventory, Accounting | LoungeOS"
+description: "All LoungeOS features: POS with tables, kitchen and bar screens, inventory, staff roles and activity log, mobile money and your own payment methods, expenses and accounting."
+h1: "Everything you need to run sales, stock and cash, in one system"
 label: "Features"
 lead: "LoungeOS replaces the cash register, the paper ticket book, the stock notebook and the spreadsheet your accountant rebuilds every month. Here is everything it does, and how each piece fits together."
 image: loungeos-sales-reports
@@ -17,45 +17,53 @@ related:
   - /features/loss-prevention/
 ---
 
-LoungeOS is an offline-first point of sale (POS) and management system for restaurants, bars, lounges, nightclubs, cafés and hotels. It installs on one Windows computer in your venue. Waiters, chefs, bartenders and cashiers then use any phone, tablet or PC on your Wi-Fi to take orders, see tickets and take payments. No internet connection is needed during service.
+LoungeOS is point of sale (POS) and business management software for every kind of business that sells: restaurants, bars, lounges, cafés, nightclubs, hotels, retail shops, supermarkets and more. It runs in the web app and in apps for Windows, Mac and Android, with one account everywhere. The Windows and Mac apps keep selling when the internet is down and sync when the connection comes back.
 
 The table below is the short version. Each module has its own page with the details.
 
 | Module | What it does | Who uses it |
 |---|---|---|
-| [Point of sale](/restaurant-pos/) | Fast touch ordering, item notes, discounts, split payments | Waiters, cashiers |
+| [Point of sale](/restaurant-pos/) | Touch or mouse ordering, item notes, discounts, split payments, receipts | Waiters, cashiers |
 | [Table & floor management](/features/table-management/) | Live table status, floors, waiter sections, split and merge bills | Waiters, managers |
 | [Kitchen & bar displays](/features/kitchen-display-system/) | Food goes to the kitchen screen, drinks to the bar screen, automatically | Chefs, bartenders |
-| [Inventory](/features/inventory-management/) | Stock items, suppliers, low-stock alerts, damage and waste logging | Stock manager |
-| [Loss prevention](/features/loss-prevention/) | 8 staff roles, manager-only voids and edits, activity log | Owners, managers |
-| [Mobile money & payments](/features/mobile-money-pos/) | Cash, card, MTN MoMo and Orange Money with references | Cashiers |
-| [Accounting](/features/restaurant-accounting/) | Double-entry journals, P&L, balance sheet, cash flow | Accountant, owner |
-| [Offline architecture](/features/offline-pos/) | Everything above keeps working with no internet | Everyone |
+| [Inventory](/features/inventory-management/) | Stock items, stock movements, suppliers, low-stock alerts, damage and waste logging | Stock manager |
+| [Loss prevention](/features/loss-prevention/) | Staff roles and permissions, manager-only voids and edits, activity log | Owners, managers |
+| [Payments & mobile money](/features/mobile-money-pos/) | Payment methods you create: cash, card, MTN MoMo, Orange Money, bank transfer | Cashiers |
+| [Expenses & accounting](/features/restaurant-accounting/) | Expense categories, chart of accounts, journal, P&L, balance sheet, cash flow | Accountant, owner |
+| [Offline selling](/features/offline-pos/) | Windows and Mac tills keep selling without internet and sync later | Everyone |
 
-## How LoungeOS is built
+## Where LoungeOS runs
 
-Most cloud POS systems keep your data on a server abroad and treat the internet as a requirement. When the connection drops they fall back to a limited "offline mode". LoungeOS works the other way round. The **main computer in your venue is the server**. Your phones and tablets connect to it over your own Wi-Fi router, so orders move between the floor, the kitchen and the bar even when your internet provider is down.
+You use the same LoungeOS account everywhere, with your email and password or **Continue with Google**:
 
-That design has three practical consequences:
+- **Windows app** for Windows 10 and 11 (64-bit)
+- **Mac app** for Apple Silicon (M1 and later) and Intel Macs
+- **Android app** for Android 6.0 or later (it needs Google Chrome and internet)
+- **Web app** at [app.loungeos.app](https://app.loungeos.app) in any modern browser
 
-- **Service never stops for a network outage.** Ordering, kitchen tickets, payments, stock and reports all keep running.
-- **You do not buy proprietary hardware.** Any modern browser on a phone, tablet or laptop becomes a terminal. There is no per-device fee, and terminals are unlimited on every plan.
-- **Your data stays on your premises.** Sales and stock live in a local database on your computer, and you can make encrypted backups.
+The Windows and Mac apps keep your business's data on the computer too. When the internet drops, the till keeps selling, and everything syncs automatically when the connection comes back. Phones and tablets on the same Wi-Fi can use the Windows or Mac app through their browser. The web app and the Android app need internet. See the [download page](/download/).
+
+That gives you three practical benefits:
+
+- **Service keeps going during an internet outage.** On a Windows or Mac till, ordering, kitchen and bar screens, payments and receipts keep running. After 7 days without syncing, the till becomes read-only until it reconnects, and a warning shows during the last 2 days.
+- **You do not buy proprietary hardware.** Use the computers, phones and tablets you already have. LoungeOS works with touch and mouse on any screen size. On phones, a bottom navigation bar with a "More" sheet keeps every screen in reach. Your [plan](/pricing/) sets how many users and devices you can use: 2, 5, or 10 and more.
+- **Your data is kept safe in the cloud.** LoungeOS keeps a cloud copy of all your data and makes a full backup every day. Logos, images and documents you upload are stored securely in the cloud.
 
 [[figure:loungeos-pos-order-screen|LoungeOS point of sale screen with menu categories, product photos and an open order for table VIP 2|The POS screen: tap items, add notes, then place the order. Food goes to the kitchen, drinks to the bar.]]
 
 ## Point of sale and ordering
 
-- **Fast, visual ordering.** Products appear as photo tiles grouped by category, with a search bar. Out-of-stock items are greyed out automatically so waiters cannot sell what you do not have.
+- **Fast, visual ordering.** Products appear as photo tiles grouped by category, with a search bar. Out-of-stock items are greyed out automatically so staff cannot sell what you do not have.
+- **Touch and mouse.** The same screen works on a phone, a tablet, a laptop or a large till screen.
 - **Preparation notes** such as "medium-rare" or "no ice" travel with the item to the right screen.
 - **Variations** (single/double, small/large) with their own prices.
 - **Discounts** as a percentage or a fixed amount, from rules you define, so staff cannot invent their own.
-- **Split payments** across cash, card and mobile money on the same bill.
-- **Receipts** print on your thermal printer with your logo, address and custom thank-you message.
+- **Split payments** across your payment methods on the same bill.
+- **Receipts** print on 58 mm and 80 mm thermal printers, or as PDF, with your logo, address and thank-you message. Every order has a print button.
 
 ## Tables, floors and waiter sections
 
-Create your floors (main room, terrace, VIP mezzanine), add tables with seat counts and assign waiters to floors. Tables show their status by colour: green for available, red for occupied, orange for reserved or needing cleaning. A waiter only sees the tables on their own floor. [Read more about table management →](/features/table-management/)
+Create your floors (main room, terrace, VIP mezzanine), add tables with seat counts and assign waiters to floors. Tables show their status by colour: green for available, red for occupied, orange for reserved or needing cleaning. A waiter only sees the tables on their own floor. Shops and supermarkets that do not serve at tables can skip this and sell straight from the till. [Read more about table management →](/features/table-management/)
 
 ## Kitchen Display System (KDS) and Bar Display System (BDS)
 
@@ -65,43 +73,45 @@ Each menu category is marked as food or drink. When an order is placed, food ite
 
 Track every stock item with SKU, unit, cost, minimum and maximum levels and supplier. Record deliveries (stock in), breakage, spoilage and losses (stock out) and cost corrections. The inventory dashboard shows total stock value, low-stock warnings, out-of-stock items and a timeline of movements. Import and export with CSV. [Read more about inventory →](/features/inventory-management/)
 
-## Staff permissions and audit trail
+## Staff, roles and the activity log
 
-LoungeOS has eight built-in roles: Super Admin, Manager, Accountant, Stock Manager, Chef, Waiter, Cashier and Bartender. Each sees only the screens their job needs. Removing items from a sent order, splitting and merging bills, and reactivating cancelled orders need a manager. Every login, failed login, cancellation (with its reason), stock adjustment and configuration change is written to an activity log you can search and export. [Read more about loss prevention →](/features/loss-prevention/)
+The owner invites staff by email and gives each person a role: Manager, Accountant, Stock Manager, Chef, Waiter, Cashier or Bartender. The owner can adjust the permissions of each staff member, and each person sees only the screens their job needs. On a shared till, staff switch with a quick PIN. Removing items from a sent order, splitting and merging bills, and reopening cancelled orders need a manager. Every login, failed login, cancellation (with its reason), stock adjustment and configuration change is written to an activity log you can search and export. [Read more about loss prevention →](/features/loss-prevention/)
 
 ## Payments and mobile money
 
-Record cash with automatic change calculation, card or bank transfer payments, and mobile money (MTN Mobile Money and Orange Money) with the transaction reference. Groups can split one bill across several methods. [Read more about payments →](/features/mobile-money-pos/)
+Each business creates its own payment methods: cash, MTN Mobile Money, Orange Money, card, bank transfer or any other way your customers pay. The setup wizard asks which ones you accept and creates them for you. Cash payments show the change due, and mobile money, card and transfer payments can carry the transaction reference. Groups can split one bill across several methods. [Read more about payments →](/features/mobile-money-pos/)
 
-## Accounting and reports
+## Expenses, accounting and reports
 
-The sales and analytics dashboards show revenue, daily sales, sales by category, staff performance and recent transactions. For the finance side, LoungeOS keeps a double-entry ledger with a chart of accounts. One click on **Sync Accounting Data** turns paid orders and stock purchases into balanced journal entries. You get an income statement (P&L), balance sheet and cash-flow statement, exportable to PDF or CSV. [Read more about accounting →](/features/restaurant-accounting/)
+Every plan includes the sales dashboard and daily reports: revenue, sales by category, staff performance and recent transactions. The Business and Pro plans add weekly and monthly reports, shifts and cash control, and email alerts. They also add the finance side: expenses with categories you create (common ones are made for you), a chart of accounts and a double-entry journal. One click on **Sync Accounting Data** turns paid orders and stock purchases into balanced journal entries. You get an income statement (P&L), balance sheet and cash-flow statement, exportable to PDF or CSV. [Read more about accounting →](/features/restaurant-accounting/)
 
-## Configuration that fits your country
+## Set up for your business on day one
+
+When you create your account, a setup wizard asks for your business type, name, logo, currency, taxes, payment methods and opening hours. It then suggests menu, inventory and expense categories to tick, so LoungeOS is configured on day one.
 
 - **Currencies:** XAF (FCFA), USD, EUR, GBP, NGN and GHS are built in, and you can add any other currency. You choose whether the symbol goes before or after the amount.
 - **Taxes:** define several tax rates (for example VAT at 19.25% in Cameroon or 7.5% in Nigeria) and set the default for checkout.
-- **Languages:** the app interface is available in English and French.
-- **Branding:** your business name, address, logo and login-screen photos.
+- **Languages:** the app is available in English and French.
+- **Branding:** your business name, address and logo on screens and receipts.
 
 ## Security, backups and support tools
 
-Inactive sessions log out automatically after two hours. You can download an encrypted backup of your whole database and restore it on a new computer if hardware fails, and automatic backups can be scheduled. An internal ticketing system lets staff report equipment problems such as a broken printer or freezer, with priority and assignment.
+LoungeOS keeps a cloud copy of all your data and makes a full backup every day, so there is nothing to back up by hand. If a computer breaks, install LoungeOS on another one and sign in: your data comes back from the cloud. Inactive sessions log out automatically after two hours. An internal ticketing system lets staff report equipment problems such as a broken printer or freezer, with priority and assignment.
 
 ## Frequently asked questions
 
 ### Does LoungeOS need internet to work?
 
-No. LoungeOS runs on your local network. You need internet once to create your account and activate your licence. After that, orders, kitchen and bar screens, payments, stock and reports all work without internet.
+It depends on the app. The Windows and Mac apps keep selling without internet and sync automatically when the connection comes back. After 7 days without syncing, the till becomes read-only until it reconnects, and a warning shows during the last 2 days. Read-only means past orders, reports, printing and exports still work, but you cannot make new sales or edits. The web app and the Android app need internet.
 
-### What devices can I use as terminals?
+### What devices can I use?
 
-The host must be a Windows 10 or 11 computer with at least 4 GB of RAM. Waiters, chefs and cashiers can use any phone, tablet or computer with a modern web browser on the same Wi-Fi network. There is no limit on the number of terminals.
+Windows 10 and 11 (64-bit) computers, Macs with Apple Silicon or Intel, Android 6.0 or later phones and tablets, and any device with a modern browser through the web app. Phones and tablets on the same Wi-Fi as a Windows or Mac till can also use it through their browser. The number of users and devices depends on your [plan](/pricing/).
 
 ### Is LoungeOS only for restaurants?
 
-No. It is used by restaurants, bars, lounges, nightclubs, snack bars, cafés and hotel food-and-beverage outlets. Any business that sells food or drinks to tables or at a counter can use it.
+No. It is used by restaurants, bars, lounges, nightclubs, snack bars, cafés, hotels, retail shops and supermarkets. Any business that sells, at tables or at a counter, can use it.
 
-### Can I try every feature before paying?
+### Can I try LoungeOS before paying?
 
-Yes. The 30-day free trial includes every feature with unlimited terminals, and no credit card is required. See [pricing](/pricing/).
+Yes. Every plan starts with a 14-day free trial with Business features, and there is no payment up front. See [pricing](/pricing/).

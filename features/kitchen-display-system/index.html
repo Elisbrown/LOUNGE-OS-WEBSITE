@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kitchen Display System (KDS) for Restaurants &amp; Bars | LoungeOS</title>
-    <meta name="description" content="Replace paper tickets with a kitchen display system that works offline. Food goes to the kitchen screen, drinks to the bar screen, with alerts when orders are ready." />
+    <meta name="description" content="Replace paper tickets with kitchen and bar screens. Food goes to the kitchen, drinks to the bar, with alerts when orders are ready. Keeps working offline on Windows and Mac." />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <link rel="canonical" href="https://loungeos.app/features/kitchen-display-system/" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="LoungeOS" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:title" content="Kitchen Display System (KDS) for Restaurants &amp; Bars" />
-    <meta property="og:description" content="Replace paper tickets with a kitchen display system that works offline. Food goes to the kitchen screen, drinks to the bar screen, with alerts when orders are ready." />
+    <meta property="og:description" content="Replace paper tickets with kitchen and bar screens. Food goes to the kitchen, drinks to the bar, with alerts when orders are ready. Keeps working offline on Windows and Mac." />
     <meta property="og:image" content="https://loungeos.app/images/og/features-kitchen-display-system.webp" />
     <meta property="og:image:secure_url" content="https://loungeos.app/images/og/features-kitchen-display-system.webp" />
     <meta property="og:image:type" content="image/webp" />
@@ -20,7 +20,7 @@
     <meta property="og:image:alt" content="Kitchen Display System (KDS) for Restaurants &amp; Bars" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Kitchen Display System (KDS) for Restaurants &amp; Bars" />
-    <meta name="twitter:description" content="Replace paper tickets with a kitchen display system that works offline. Food goes to the kitchen screen, drinks to the bar screen, with alerts when orders are ready." />
+    <meta name="twitter:description" content="Replace paper tickets with kitchen and bar screens. Food goes to the kitchen, drinks to the bar, with alerts when orders are ready. Keeps working offline on Windows and Mac." />
     <meta name="twitter:image" content="https://loungeos.app/images/og/features-kitchen-display-system.webp" />
     <meta name="twitter:image:alt" content="Kitchen Display System (KDS) for Restaurants &amp; Bars" />
     <link rel="image_src" href="https://loungeos.app/images/og/features-kitchen-display-system.webp" />
@@ -29,7 +29,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/style.css?v=ecf9ab204e" />
+    <link rel="stylesheet" href="/style.css?v=b2c5659691" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -53,8 +53,8 @@
         "height": 512
       },
       "image": "https://loungeos.app/images/og-loungeos.jpg",
-      "description": "LoungeOS develops offline-first point of sale (POS) and management software for restaurants, bars, lounges, nightclubs and hotels.",
-      "email": "hello@loungeos.app",
+      "description": "LoungeOS makes point of sale (POS) and business management software for every kind of business that sells: restaurants, bars, lounges, cafés, nightclubs, hotels, retail shops, supermarkets and more. LoungeOS is made by Sigalix.",
+      "email": "info@sigalix.com",
       "telephone": "+237679690703",
       "address": {
         "@type": "PostalAddress",
@@ -83,7 +83,7 @@
         {
           "@type": "ContactPoint",
           "contactType": "sales",
-          "email": "hello@loungeos.app",
+          "email": "info@sigalix.com",
           "telephone": "+237689699688",
           "availableLanguage": [
             "English",
@@ -93,9 +93,15 @@
         {
           "@type": "ContactPoint",
           "contactType": "billing support",
-          "email": "billing@loungeos.app"
+          "email": "billing@sigalix.com"
         }
-      ]
+      ],
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "Sigalix",
+        "url": "https://sigalix.com",
+        "email": "info@sigalix.com"
+      }
     },
     {
       "@type": "WebSite",
@@ -115,10 +121,9 @@
       "@id": "https://loungeos.app/#software",
       "name": "LoungeOS",
       "applicationCategory": "BusinessApplication",
-      "applicationSubCategory": "Restaurant point of sale (POS) and management software",
-      "operatingSystem": "Windows 10, Windows 11 (host computer); any modern web browser on the local network for tablets and phones",
-      "softwareVersion": "1.3.6",
-      "fileSize": "383MB",
+      "applicationSubCategory": "Point of sale (POS) and business management software",
+      "operatingSystem": "Windows 10 and 11 (64-bit), macOS (Apple Silicon and Intel), Android 6.0 or later, any modern web browser",
+      "softwareVersion": "2.0.0",
       "downloadUrl": "https://loungeos.app/download/",
       "installUrl": "https://loungeos.app/download/",
       "url": "https://loungeos.app/",
@@ -129,19 +134,21 @@
       "publisher": {
         "@id": "https://loungeos.app/#organization"
       },
-      "description": "Offline-first restaurant, bar and lounge POS with kitchen and bar display screens, table and floor management, inventory, role-based permissions with audit logs, and double-entry accounting. Runs on your own Windows computer and local Wi-Fi network without internet.",
+      "description": "Business management and point of sale for restaurants, bars, lounges, cafés, nightclubs, hotels, retail shops and supermarkets: POS with tables and orders, kitchen and bar screens, custom payment methods, receipts, inventory, expenses, accounting, staff roles and reports. Web app plus Windows, Mac and Android apps with one account; the Windows and Mac apps keep selling without internet and sync when the connection comes back.",
       "featureList": [
-        "Works without internet on the local network",
-        "Point of sale with table and floor management",
-        "Kitchen Display System (KDS) and Bar Display System (BDS) with automatic food/drink routing",
-        "Split and merge bills; split payments across cash, card and mobile money",
-        "Mobile money payment recording (MTN Mobile Money, Orange Money)",
-        "Inventory and stock movements with low-stock alerts, suppliers and CSV import/export",
-        "Role-based permissions for 8 roles and a searchable activity log",
-        "Double-entry accounting: journals, profit & loss, balance sheet, cash flow",
-        "Multi-currency (XAF, USD, EUR, GBP, NGN, GHS and custom) and multiple tax rates",
-        "Thermal receipt printing with logo and custom messages",
-        "Encrypted database backups and restore",
+        "One LoungeOS account on the web, Windows, Mac and Android, with email and password or Continue with Google",
+        "Setup wizard: business type, name, logo, currency, taxes, payment methods, opening hours and suggested categories",
+        "Point of sale for touch and mouse on any screen size",
+        "Tables and orders, kitchen and bar screens",
+        "Custom payment methods such as cash, MTN Mobile Money, Orange Money, card and bank transfer",
+        "Receipts on 58 mm and 80 mm thermal printers, or PDF, with a print button on every order",
+        "Inventory with stock movements, low-stock alerts and suppliers",
+        "Expenses with your own categories",
+        "Accounting with a chart of accounts and a journal",
+        "Daily, weekly and monthly reports",
+        "Staff roles, permissions, quick PIN on a shared till and an activity log",
+        "Offline selling on the Windows and Mac apps with automatic sync",
+        "Cloud copy of all data and daily full backups",
         "English and French interface"
       ],
       "screenshot": [
@@ -152,15 +159,205 @@
       "offers": [
         {
           "@type": "Offer",
-          "name": "30-day free trial",
+          "name": "14-day free trial (Business features)",
           "price": "0",
-          "priceCurrency": "XAF",
+          "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
           "url": "https://loungeos.app/pricing/"
         },
         {
           "@type": "Offer",
-          "name": "Monthly plan (FCFA zone)",
+          "name": "Starter monthly",
+          "price": "10",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "10",
+            "priceCurrency": "USD",
+            "billingDuration": "P1M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 1,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Starter yearly",
+          "price": "100",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "100",
+            "priceCurrency": "USD",
+            "billingDuration": "P12M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 12,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Starter monthly (Cameroon)",
+          "price": "6000",
+          "priceCurrency": "XAF",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "6000",
+            "priceCurrency": "XAF",
+            "billingDuration": "P1M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 1,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Starter yearly (Cameroon)",
+          "price": "60000",
+          "priceCurrency": "XAF",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "60000",
+            "priceCurrency": "XAF",
+            "billingDuration": "P12M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 12,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Business monthly",
+          "price": "25",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "25",
+            "priceCurrency": "USD",
+            "billingDuration": "P1M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 1,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Business yearly",
+          "price": "250",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "250",
+            "priceCurrency": "USD",
+            "billingDuration": "P12M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 12,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Business monthly (Cameroon)",
+          "price": "15000",
+          "priceCurrency": "XAF",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "15000",
+            "priceCurrency": "XAF",
+            "billingDuration": "P1M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 1,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Business yearly (Cameroon)",
+          "price": "150000",
+          "priceCurrency": "XAF",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "150000",
+            "priceCurrency": "XAF",
+            "billingDuration": "P12M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 12,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Pro monthly",
+          "price": "50",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "50",
+            "priceCurrency": "USD",
+            "billingDuration": "P1M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 1,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Pro yearly",
+          "price": "500",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "500",
+            "priceCurrency": "USD",
+            "billingDuration": "P12M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 12,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Pro monthly (Cameroon)",
           "price": "30000",
           "priceCurrency": "XAF",
           "availability": "https://schema.org/InStock",
@@ -179,72 +376,15 @@
         },
         {
           "@type": "Offer",
-          "name": "6-month plan (FCFA zone)",
-          "price": "150000",
+          "name": "Pro yearly (Cameroon)",
+          "price": "300000",
           "priceCurrency": "XAF",
           "availability": "https://schema.org/InStock",
           "url": "https://loungeos.app/pricing/",
           "priceSpecification": {
             "@type": "UnitPriceSpecification",
-            "price": "150000",
+            "price": "300000",
             "priceCurrency": "XAF",
-            "billingDuration": "P6M",
-            "referenceQuantity": {
-              "@type": "QuantitativeValue",
-              "value": 6,
-              "unitCode": "MON"
-            }
-          }
-        },
-        {
-          "@type": "Offer",
-          "name": "12-month plan (FCFA zone)",
-          "price": "240000",
-          "priceCurrency": "XAF",
-          "availability": "https://schema.org/InStock",
-          "url": "https://loungeos.app/pricing/",
-          "priceSpecification": {
-            "@type": "UnitPriceSpecification",
-            "price": "240000",
-            "priceCurrency": "XAF",
-            "billingDuration": "P12M",
-            "referenceQuantity": {
-              "@type": "QuantitativeValue",
-              "value": 12,
-              "unitCode": "MON"
-            }
-          }
-        },
-        {
-          "@type": "Offer",
-          "name": "Monthly plan (international)",
-          "price": "49",
-          "priceCurrency": "USD",
-          "availability": "https://schema.org/InStock",
-          "url": "https://loungeos.app/pricing/",
-          "priceSpecification": {
-            "@type": "UnitPriceSpecification",
-            "price": "49",
-            "priceCurrency": "USD",
-            "billingDuration": "P1M",
-            "referenceQuantity": {
-              "@type": "QuantitativeValue",
-              "value": 1,
-              "unitCode": "MON"
-            }
-          }
-        },
-        {
-          "@type": "Offer",
-          "name": "12-month plan (international)",
-          "price": "468",
-          "priceCurrency": "USD",
-          "availability": "https://schema.org/InStock",
-          "url": "https://loungeos.app/pricing/",
-          "priceSpecification": {
-            "@type": "UnitPriceSpecification",
-            "price": "468",
-            "priceCurrency": "USD",
             "billingDuration": "P12M",
             "referenceQuantity": {
               "@type": "QuantitativeValue",
@@ -260,7 +400,7 @@
       "@id": "https://loungeos.app/features/kitchen-display-system/#webpage",
       "url": "https://loungeos.app/features/kitchen-display-system/",
       "name": "Kitchen Display System (KDS) for Restaurants & Bars | LoungeOS",
-      "description": "Replace paper tickets with a kitchen display system that works offline. Food goes to the kitchen screen, drinks to the bar screen, with alerts when orders are ready.",
+      "description": "Replace paper tickets with kitchen and bar screens. Food goes to the kitchen, drinks to the bar, with alerts when orders are ready. Keeps working offline on Windows and Mac.",
       "inLanguage": "en",
       "isPartOf": {
         "@id": "https://loungeos.app/#website"
@@ -268,7 +408,7 @@
       "breadcrumb": {
         "@id": "https://loungeos.app/features/kitchen-display-system/#breadcrumb"
       },
-      "dateModified": "2026-10-09",
+      "dateModified": "2026-11-07",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://loungeos.app/images/screens/loungeos-kitchen-display-system.webp"
@@ -318,7 +458,7 @@
           "name": "Does the KDS still work if the internet is down?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "<p>Yes. The KDS talks to the LoungeOS host computer over your Wi-Fi, not over the internet.<\/p>"
+            "text": "<p>Yes, when your till runs the Windows or Mac app and the kitchen and bar screens connect to it over your Wi-Fi. Screens that use the web app or the Android app need internet.<\/p>"
           }
         },
         {
@@ -334,7 +474,7 @@
           "name": "Can I still print kitchen tickets?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "<p>LoungeOS prints customer receipts on thermal printers. Most venues that adopt the KDS stop printing kitchen tickets entirely, which also saves paper.<\/p>"
+            "text": "<p>LoungeOS prints receipts on 58 mm and 80 mm thermal printers, or as PDF, and every order has a print button. Most venues that adopt the KDS stop printing kitchen tickets entirely, which also saves paper.<\/p>"
           }
         }
       ]
@@ -368,7 +508,7 @@
         <div class="nav-left">
           <a href="/" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 0.75rem;">
             <img src="/images/logo/loungeos-logo.svg" alt="LoungeOS" width="148" height="26" class="nav-logo" />
-            <span class="nav-badge">Restaurant POS</span>
+            <span class="nav-badge">POS &amp; Business</span>
           </a>
         </div>
 
@@ -420,7 +560,7 @@
               <option value="ja">日本語</option>
             </select>
           </div>
-          <a href="https://account.loungeos.app/sign-up" class="btn btn-primary btn-sm" id="navCtaBtn">Start Free Trial</a>
+          <a href="https://app.loungeos.app/login" class="btn btn-primary btn-sm" id="navCtaBtn">Start free trial</a>
         </div>
 
         <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
@@ -438,15 +578,15 @@
         <p class="lead">Every order splits itself in two. Food goes to the kitchen screen, drinks go to the bar screen, and the waiter hears when it's ready. No handwriting, no running, no lost paper.</p>
         
         <div class="hero-actions">
-          <a href="https://account.loungeos.app/sign-up" class="btn btn-primary btn-lg">Start Free Trial <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg></a>
+          <a href="https://app.loungeos.app/login" class="btn btn-primary btn-lg">Start free trial <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg></a>
           <a href="/pricing/" class="btn btn-secondary btn-lg">See pricing</a>
         </div>
-        <p class="trust-line">30-day free trial · No credit card · Works without internet</p>
+        <p class="trust-line">14-day free trial · No payment up front · Sells offline on Windows and Mac</p>
         <div class="page-hero-media"><img src="/images/screens/loungeos-kitchen-display-system.webp" srcset="/images/screens/loungeos-kitchen-display-system-800.webp 800w, /images/screens/loungeos-kitchen-display-system.webp 1600w" sizes="(max-width: 1100px) 100vw, 1100px" width="1600" height="861" alt="LoungeOS kitchen display system with Pending, In Progress and Ready columns" fetchpriority="high" decoding="async" /></div>
       </header>
       <section class="content-section">
         <div class="prose prose-wide">
-<p>A <strong>kitchen display system (KDS)</strong> is a screen in the kitchen that shows orders as soon as waiters enter them, replacing printed or handwritten tickets. LoungeOS includes a KDS for food and a separate <strong>Bar Display System (BDS)</strong> for drinks. Both are included in every plan and both run on your local network without internet.</p>
+<p>A <strong>kitchen display system (KDS)</strong> is a screen in the kitchen that shows orders as soon as waiters enter them, replacing printed or handwritten tickets. LoungeOS includes a KDS for food and a separate <strong>Bar Display System (BDS)</strong> for drinks. Both work in the web app and in the Windows, Mac and Android apps. When your till runs the Windows or Mac app, the screens keep working over your Wi-Fi even when the internet is down.</p>
 <h2 id="how-orders-reach-the-right-screen">How orders reach the right screen</h2>
 <p>Routing is set once, at the category level. When you create a menu category such as <em>Main dishes</em>, <em>Grills</em> or <em>Desserts</em>, you tick <strong>“This is a food category”</strong>. Leave it unticked for <em>Beers</em>, <em>Cocktails</em>, <em>Wines</em> or <em>Soft drinks</em>. From then on:</p>
 <ol>
@@ -465,16 +605,16 @@
 </ul>
 <p>Tickets stay in <em>Ready</em> until the bill is paid. Managers can see at a glance where service is getting stuck.</p>
 <h2 id="cancelling-from-the-kitchen-with-accountability">Cancelling from the kitchen, with accountability</h2>
-<p>Sometimes an order must be cancelled: the customer left, or the item was entered by mistake. On LoungeOS the chef or bartender drags the ticket to the <strong>cancel zone</strong> at the bottom of the screen and must <strong>choose a reason</strong>. The cancellation and its reason are written to the <a href="/features/loss-prevention/">activity log</a>. If it was a mistake, a manager can reactivate the order within 24 hours.</p>
+<p>Sometimes an order must be cancelled: the customer left, or the item was entered by mistake. On LoungeOS the chef or bartender drags the ticket to the <strong>cancel zone</strong> at the bottom of the screen and must <strong>choose a reason</strong>. The cancellation and its reason are written to the <a href="/features/loss-prevention/">activity log</a>. If it was a mistake, a manager can reopen the order within 24 hours.</p>
 <p>This matters for loss prevention. A common way to steal in restaurants is to cancel an item <em>after</em> it was served and keep the cash. When every cancellation has a name, a time and a reason, that pattern becomes visible.</p>
 <h2 id="what-hardware-do-you-need">What hardware do you need?</h2>
 <p>Any screen with a modern web browser works as a kitchen or bar display:</p>
 <ul>
-<li>A cheap Android tablet on a wall mount (the most common setup)</li>
-<li>An old laptop</li>
+<li>A cheap Android tablet on a wall mount (the most common setup), with the Android app or the browser</li>
+<li>An old laptop or Mac</li>
 <li>A smart TV or monitor with a small PC attached</li>
 </ul>
-<p>It only needs to be on the same Wi-Fi network as the LoungeOS host computer. Our <a href="/blog/restaurant-pos-hardware-guide/">POS hardware guide</a> covers mounting, grease and heat in more detail.</p>
+<p>The screen can open the web app, which needs internet. Or, if your till runs the Windows or Mac app, it can connect to that computer through its browser over the same Wi-Fi, which keeps working without internet. The number of devices you can use depends on your <a href="/pricing/">plan</a>. Our <a href="/blog/restaurant-pos-hardware-guide/">POS hardware guide</a> covers mounting, grease and heat in more detail.</p>
 <h2 id="why-kitchens-switch-from-paper">Why kitchens switch from paper</h2>
 <div aria-label="Table" class="table-wrap" role="region" tabindex="0"><table>
 <thead>
@@ -510,18 +650,18 @@
 <h3 id="do-i-need-separate-screens-for-the-kitchen-and-the-bar">Do I need separate screens for the kitchen and the bar?</h3>
 <p>If you have a separate bar, yes. That is where the BDS earns its keep. Small venues where the same person makes food and drinks can open both views on one screen.</p>
 <h3 id="does-the-kds-still-work-if-the-internet-is-down">Does the KDS still work if the internet is down?</h3>
-<p>Yes. The KDS talks to the LoungeOS host computer over your Wi-Fi, not over the internet.</p>
+<p>Yes, when your till runs the Windows or Mac app and the kitchen and bar screens connect to it over your Wi-Fi. Screens that use the web app or the Android app need internet.</p>
 <h3 id="why-dont-drinks-show-on-my-kitchen-screen">Why don’t drinks show on my kitchen screen?</h3>
 <p>That is by design. Drink categories should have “This is a food category” unticked, so their items go to the bar display. If a drink appears in the kitchen, check that box on its category.</p>
 <h3 id="can-i-still-print-kitchen-tickets">Can I still print kitchen tickets?</h3>
-<p>LoungeOS prints customer receipts on thermal printers. Most venues that adopt the KDS stop printing kitchen tickets entirely, which also saves paper.</p>
+<p>LoungeOS prints receipts on 58 mm and 80 mm thermal printers, or as PDF, and every order has a print button. Most venues that adopt the KDS stop printing kitchen tickets entirely, which also saves paper.</p>
         </div>
       </section>
       <section style="padding: 0 1.5rem 1rem"><div class="cta-box">
   <h2>Run your next service on LoungeOS</h2>
-  <p>Install LoungeOS on a Windows computer, connect your tablets and phones over Wi-Fi, and run real service for 30 days. Free, no credit card.</p>
+  <p>Create your account, answer the setup wizard and your business is ready on day one. Try it free for 14 days with Business features. No payment up front.</p>
   <div class="cta-actions">
-    <a class="btn btn-primary btn-lg" href="https://account.loungeos.app/sign-up">Start Free Trial</a>
+    <a class="btn btn-primary btn-lg" href="https://app.loungeos.app/login">Start free trial</a>
     <a class="btn btn-secondary btn-lg" href="/download/">Download for Windows</a>
   </div>
 </div></section>
@@ -562,15 +702,15 @@
       <div class="footer-grid footer-grid-wide">
         <div class="footer-brand">
           <img src="/images/logo/loungeos-logo-white.svg" alt="LoungeOS" width="159" height="28" class="footer-logo" />
-          <p>Offline-first POS and management system for restaurants, bars, lounges and hotels. Built in Cameroon, used across Africa and beyond.</p>
+          <p>Point of sale and business management for every business that sells. Made by <a href="https://sigalix.com">Sigalix</a>, built in Cameroon, used across Africa and beyond.</p>
           <div class="footer-worldwide">
-            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> All currencies</span>
+            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Web, Windows, Mac &amp; Android</span>
             <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> English &amp; French</span>
-            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Works offline</span>
+            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Sells offline on desktop</span>
           </div>
           <p class="footer-contact">
             <a href="mailto:support@loungeos.app">support@loungeos.app</a><br />
-            <a href="mailto:hello@loungeos.app">hello@loungeos.app</a><br />
+            <a href="mailto:info@sigalix.com">info@sigalix.com</a><br />
             <a href="tel:+237679690703">+237 679 690 703</a>
           </p>
         </div>
@@ -620,7 +760,7 @@
       </div>
       <div class="footer-bottom">
         <p>&copy; 2026 LoungeOS. All rights reserved.</p>
-        <a href="https://account.loungeos.app/sign-up" class="btn btn-outline-light btn-sm" id="footerCtaBtn">Start Free Trial <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg></a>
+        <a href="https://app.loungeos.app/login" class="btn btn-outline-light btn-sm" id="footerCtaBtn">Start free trial <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg></a>
       </div>
     </footer>
     <div id="google_translate_element" style="display: none"></div>
@@ -633,7 +773,7 @@
       }
     </script>
     <script defer type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <script defer src="/app.js?v=b315057552"></script>
+    <script defer src="/app.js?v=ad0060ac71"></script>
     <!-- Botpress Webchat -->
     <script defer src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
     <script defer src="https://files.bpcontent.cloud/2026/06/19/19/20260619193215-LONFMDIT.js"></script>

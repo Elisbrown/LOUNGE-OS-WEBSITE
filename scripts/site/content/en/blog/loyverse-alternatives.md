@@ -7,7 +7,7 @@ h1: "Loyverse alternatives: when a free POS stops being enough"
 category: "POS buying guides"
 lead: "Loyverse is a great way to start. But once you have table service, several staff and stock that keeps going missing, the free plan and its add-ons stop fitting. Here's how to tell, and what to move to."
 published: 2026-10-08
-modified: 2026-10-08
+modified: 2026-11-07
 image: loungeos-table-management
 image_alt: "LoungeOS table layout for restaurant table service"
 breadcrumb:
@@ -87,7 +87,7 @@ Three or more ticks? It's worth trialling an alternative.
 
 | Option | Type | Why consider it | Watch out for |
 |---|---|---|---|
-| **LoungeOS** | Offline-first venue system | Full functionality offline, unlimited devices, 8 staff roles, activity log, bar/kitchen displays, accounting, mobile money recording | Windows host required (macOS in development); no built-in card processing or delivery integrations |
+| **LoungeOS** | Offline-first venue system, with web and Android apps | Full functionality offline on Windows and Mac, cloud sync, 8 staff roles, activity log, bar/kitchen displays, accounting, mobile money recording | Selling without internet needs the Windows or Mac app (web and Android apps need internet); device count depends on the plan; no built-in card processing or delivery integrations |
 | **SambaPOS** | Local Windows system | Deep customisation, works on a local network | Technical setup, usually through a reseller |
 | **Square for Restaurants** | Cloud suite | Integrated card payments, online ordering in supported countries | Card payments offline limited to 24 h sessions and 72 h upload; per-location fees |
 | **Toast** | Cloud suite with local hub | Strong restaurant features in its markets | Hardware ecosystem; limited availability outside its markets; offline restrictions on closing checks |
@@ -96,10 +96,10 @@ Three or more ticks? It's worth trialling an alternative.
 
 LoungeOS was designed for the situations where Loyverse users usually struggle:
 
-- **Outages don't matter.** It runs on a Windows computer and your Wi-Fi, so refunds, stock levels and reports all work offline. See [offline POS](/features/offline-pos/).
+- **Outages don't matter.** The Windows and Mac apps run on a computer in your venue and your Wi-Fi, so refunds, stock levels and reports all work offline, and everything syncs when the connection comes back. See [offline POS](/features/offline-pos/).
 - **Staff control is included.** Eight roles, manager-only item removal and bill splitting, mandatory cancellation reasons and an activity log. These aren't add-ons. See [loss prevention](/features/loss-prevention/).
 - **Inventory valuation is included.** Total stock value, low-stock alerts, suppliers, and damage, waste and loss recorded with names. See [inventory](/features/inventory-management/).
-- **Unlimited devices on a flat price.** From 20,000 FCFA or US$39 a month on a yearly plan. See [pricing](/pricing/).
+- **Three flat monthly plans.** From US$10 (6,000 FCFA) a month for 2 users and 2 devices, up to Pro with unlimited users. Pay yearly and get 2 months free. Every plan starts with a 14-day free trial. See [pricing](/pricing/).
 
 ## How to switch without disrupting service
 

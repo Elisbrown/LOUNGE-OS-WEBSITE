@@ -7,7 +7,7 @@ h1: "Setting up POS permissions: who should be allowed to void, discount and ref
 category: "Loss prevention"
 lead: "Permissions are the cheapest loss-prevention tool you have. Set up well, they protect your revenue and your honest staff. Set up badly, they either let money leak or slow service to a crawl."
 published: 2026-10-08
-modified: 2026-10-08
+modified: 2026-11-07
 image: loungeos-staff-management
 image_alt: "LoungeOS staff management list with names, roles, phone numbers and status"
 breadcrumb:
@@ -19,7 +19,7 @@ about: ["POS permissions", "Role-based access control", "Voids", "Discounts"]
 takeaways:
   - "Follow **least privilege**: each person gets only what their job needs, through a role, never a shared login."
   - "Separate **ordering**, **payment** and **configuration**, so no single person controls a whole transaction."
-  - "Put **manager approval** on actions that remove money from a bill: voids after sending, splits, merges, refunds and reactivations."
+  - "Put **manager approval** on actions that remove money from a bill: voids after sending, splits, merges, refunds and reopening cancelled orders."
   - "Require a **reason** for every cancellation and review cancellations and discounts by person every week."
 related:
   - /features/loss-prevention/
@@ -39,7 +39,7 @@ Every POS action that changes what a customer pays is an opportunity for an hone
 
 ## Principle 1: one person, one login
 
-Shared logins make every control useless, because you can't attribute anything. Give **every** staff member their own account, require them to log in on whichever device they use, and set sessions to **time out** when idle. In LoungeOS, inactive sessions log out automatically after two hours.
+Shared logins make every control useless, because you can't attribute anything. Give **every** staff member their own account, require them to log in on whichever device they use, and set sessions to **time out** when idle. In LoungeOS, the owner invites each staff member by email, staff can use a quick personal PIN on a shared till, and inactive sessions log out automatically after two hours.
 
 ## Principle 2: least privilege by role
 
@@ -47,7 +47,7 @@ Design roles around jobs, not people. Here's the role matrix LoungeOS uses, a us
 
 | Role | Dashboard | POS | Kitchen/bar screens | Stock | Accounting | Configuration |
 |---|---|---|---|---|---|---|
-| Super Admin (owner) | Full | View only | View only | View only | View only | Full |
+| Owner | Full | Full | Full | Full | Full | Full |
 | Manager | Full | Full | Full | Full | Sync & view | Visual & layout |
 | Accountant | Financial | View only | None | View only | Full | None |
 | Stock manager | Stock stats | None | None | Full | None | None |
@@ -56,7 +56,7 @@ Design roles around jobs, not people. Here's the role matrix LoungeOS uses, a us
 | Cashier | POS / bills | Payment processing | Bar display | None | None | None |
 | Bartender | None | None | Bar | None | None | None |
 
-Notice the **separation of duties**: the waiter who takes the order doesn't take the payment, the cashier can't change prices or stock, and the owner's configuration account isn't used to ring up sales.
+Notice the **separation of duties**: the waiter who takes the order doesn't take the payment, and the cashier can't change prices or stock. The owner can do everything, but staff each sign in with their own account, so the owner's login isn't used to ring up sales.
 
 ## Principle 3: approvals where money leaves the bill
 
@@ -67,14 +67,14 @@ Not every action needs a manager. Too many approvals slow service and push staff
 | Remove an item **before** sending | Waiter | None |
 | Remove an item **after** sending | — | **Manager credentials** |
 | Cancel an order (customer left, error) | Waiter, chef, bartender | **Reason required**, logged |
-| Reactivate a cancelled order | Manager | Manager only, within 24 h |
+| Reopen a cancelled order | Manager | Manager only, within 24 h |
 | Apply a discount | Cashier, waiter | Only pre-configured discount rules |
 | Split or merge bills | Manager | Manager only |
 | Refund | Manager | Manager + reason |
 | Change prices or menu | Manager, chef (menu) | Logged |
 | Adjust stock (damage/waste/loss) | Stock manager, manager | Reason, logged |
 
-LoungeOS enforces most of these rules out of the box. Removing items from sent orders requires manager credentials, splitting, merging and reactivating orders are manager-only, discounts come only from configured rules, and every cancellation needs a reason.
+LoungeOS enforces most of these rules out of the box. Removing items from sent orders requires manager credentials, splitting, merging and reopening cancelled orders are manager-only, discounts come only from configured rules, and every cancellation needs a reason.
 
 ## Principle 4: reasons, not just records
 

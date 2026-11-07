@@ -2,7 +2,7 @@
 url: /nightclub-pos/
 type: solution
 title: "Nightclub POS System for High-Volume Drink Service | LoungeOS"
-description: "A nightclub POS for fast drink orders, VIP tables, bottle service and strict cash control. Runs offline on your own network with unlimited devices."
+description: "A nightclub POS for fast drink orders, VIP tables, bottle service and strict cash control. Keeps selling offline on Windows and Mac, over your own Wi-Fi."
 h1: "Nightclub POS: fast drinks, VIP tables and no excuses at closing"
 label: "Nightclub POS"
 lead: "A nightclub does most of its revenue in a few hours, in the dark, with loud music and a crowd at the bar. Your POS has to be fast, simple and impossible to cheat."
@@ -16,14 +16,14 @@ related:
   - /bar-pos/
 ---
 
-A **nightclub POS system** must take a drink order in seconds, handle expensive bottle service at VIP tables and give the owner an exact picture of the night's cash and stock the next morning. LoungeOS does this on hardware you already have, with no internet required.
+A **nightclub POS system** must take a drink order in seconds, handle expensive bottle service at VIP tables and give the owner an exact picture of the night's cash and stock the next morning. LoungeOS does this on hardware you already have, and its Windows and Mac apps keep selling without internet.
 
 ## Speed at peak hours
 
 - **Waiters order on their phones** at the table and the drinks appear instantly on the bar display. Nobody has to queue at the bar to shout orders.
 - **Photo tiles and search** make the right bottle easy to find in a dark room.
 - **Ready alerts** tell the waiter when to collect from the bar.
-- **Unlimited devices**: add another phone or bar screen without paying more.
+- **Devices for the whole team**: Business covers 5 users and 5 devices, and Pro covers unlimited users and 10 or more devices. See [pricing](/pricing/).
 
 ## VIP tables and bottle service
 
@@ -35,7 +35,7 @@ Clubs are cash-heavy, so LoungeOS focuses on making cash leaks visible:
 
 | Risk | Control in LoungeOS |
 |---|---|
-| Staff using someone else's login | Personal accounts, auto-logout after 2 hours inactive |
+| Staff using someone else's login | Personal accounts, a quick PIN on shared tills, auto-logout after 2 hours inactive |
 | Drinks cancelled after cash was taken | Cancellations need a reason. Manager needed to remove items |
 | Fake mobile money payments | MoMo and Orange Money references recorded for every payment |
 | Bottles disappearing | Stock out must be recorded as damage, waste or loss with a name |
@@ -45,13 +45,13 @@ The **staff performance** view shows orders, revenue and efficiency per person, 
 
 ## Built for unreliable nights
 
-Generators kick in, ISPs drop out, phone networks get congested when the club is full. LoungeOS runs on your local Wi-Fi network, so none of that stops orders or payments. See [offline POS](/features/offline-pos/).
+Generators kick in, ISPs drop out, phone networks get congested when the club is full. With the Windows or Mac app, LoungeOS keeps selling over your local Wi-Fi, so none of that stops orders or payments. Everything syncs when the connection comes back. See [offline POS](/features/offline-pos/).
 
 ## Frequently asked questions
 
 ### Can a nightclub with several bars use LoungeOS?
 
-Yes. The bar display can be opened on several screens. For complex layouts with several independent bars, [contact us](/contact/) to plan the setup. The Enterprise plan includes on-site installation.
+Yes. The bar display can be opened on several screens. For complex layouts with several independent bars, write to [info@sigalix.com](mailto:info@sigalix.com) or [contact us](/contact/) to plan the setup.
 
 ### Can I run events and promotions?
 
@@ -59,8 +59,8 @@ Yes. Use the Events module to plan nights and discount rules for promotions such
 
 ### How many staff accounts can I create?
 
-As many as you need. Each staff member should have their own login so every order and cancellation is attributable.
+It depends on your plan: 2 users on Starter, 5 on Business and unlimited on Pro. Each staff member should have their own account so every order and cancellation is attributable.
 
 ### Do I need special hardware for a club?
 
-No. Staff phones, a tablet or screen behind the bar, a Windows computer as host and a good Wi-Fi router are enough. Put the host and router on a UPS.
+No. Staff phones, a tablet or screen behind the bar, a Windows computer or Mac running LoungeOS and a good Wi-Fi router are enough. Put the computer and router on a UPS.

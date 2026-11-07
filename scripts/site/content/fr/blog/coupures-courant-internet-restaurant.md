@@ -8,9 +8,9 @@ h1: "Coupures de courant et d'internet : comment garder votre restaurant ouvert"
 category: "Opérations"
 lead: "Dans beaucoup de villes africaines, les délestages ne sont pas une exception mais une habitude. Les établissements qui continuent de servir n'ont pas de chance : ils ont un plan."
 published: 2026-10-08
-modified: 2026-10-08
-image: loungeos-backup-restore
-image_alt: "Écran de sauvegarde et restauration LoungeOS"
+modified: 2026-11-07
+image: loungeos-pos-menu-grid
+image_alt: "Grille de caisse LoungeOS qui continue de vendre sans internet"
 breadcrumb:
   - ["Blog", "/blog/"]
 crumb: "Coupures de courant et d'internet"
@@ -42,7 +42,7 @@ Beaucoup d'établissements souffrent des coupures d'internet uniquement parce qu
 
 ## 1. Une caisse indépendante d'internet
 
-Un logiciel de caisse **hors ligne (« offline-first »)** tourne sur un ordinateur dans votre établissement. Les téléphones des serveurs s'y connectent par le routeur Wi-Fi. Internet n'intervient pas dans la prise de commande. Quand il coupe, rien ne change pour l'équipe. C'est le principe de **LoungeOS** : commandes, écrans cuisine et bar, encaissements, stocks et rapports fonctionnent sans internet.
+Un logiciel de caisse **hors ligne (« offline-first »)** tourne sur un ordinateur dans votre établissement. Les téléphones des serveurs s'y connectent par le routeur Wi-Fi. Internet n'intervient pas dans la prise de commande. Quand il coupe, rien ne change pour l'équipe. C'est le principe des applications Windows et Mac de **LoungeOS** : commandes, écrans cuisine et bar, encaissements, stocks et rapports fonctionnent sans internet, et tout se synchronise automatiquement quand la connexion revient. Une caisse peut rester hors ligne jusqu'à 7 jours, puis elle passe en lecture seule jusqu'à sa reconnexion. L'application web et l'application Android de LoungeOS ont besoin d'internet : pendant une coupure, les téléphones et tablettes utilisent l'application Windows ou Mac depuis leur navigateur, sur le Wi-Fi de l'établissement.
 
 Si vous utilisez un logiciel cloud, renseignez-vous précisément sur son mode hors ligne : certains bloquent les remboursements, masquent les stocks ou limitent les paiements par carte dans le temps.
 
@@ -90,7 +90,7 @@ Votre logiciel continue d'enregistrer les paiements, mais **les terminaux de car
 3. **La cuisine passe à la carte de délestage** si nécessaire.
 4. **La caisse passe aux espèces** si la carte et le MoMo ne fonctionnent plus, et affiche le panneau.
 5. **Frigos fermés.** On note l'heure de la coupure.
-6. **Après la coupure** : températures, pertes déclarées, rapprochement espèces et Mobile Money, sauvegarde de la base.
+6. **Après la coupure** : températures, pertes déclarées, rapprochement espèces et Mobile Money, vérification de la synchronisation ou sauvegarde de la base.
 
 Faites un **exercice de 10 minutes** une fois par mois, un après-midi calme : débranchez internet puis le courant, et regardez ce qui casse.
 
@@ -100,7 +100,7 @@ Faites un **exercice de 10 minutes** une fois par mois, un après-midi calme : d
 
 ### Un logiciel de caisse peut-il fonctionner sans internet ?
 
-Oui, s'il est conçu « hors ligne » : il tourne sur un ordinateur de l'établissement et les téléphones s'y connectent par Wi-Fi. C'est le cas de LoungeOS.
+Oui, s'il est conçu « hors ligne » : il tourne sur un ordinateur de l'établissement et les téléphones s'y connectent par Wi-Fi. C'est le cas des applications Windows et Mac de LoungeOS.
 
 ### Que faut-il brancher sur l'onduleur ?
 
