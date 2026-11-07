@@ -2,7 +2,7 @@
 url: /lounge-pos/
 type: solution
 title: "Lounge POS & Lounge Management Software | LoungeOS"
-description: "LoungeOS is lounge management software built for VIP areas, bottle sales, events and late-night cash control. Offline POS, bar display, stock and audit log."
+description: "Lounge management software for VIP areas, bottle sales, events and late-night cash control: POS, bar display, stock and audit log, with offline selling on Windows and Mac."
 h1: "Lounge management software, built by name and by design for lounges"
 label: "Lounge POS"
 lead: "Lounges mix restaurant service, bar volume and VIP expectations, often until 3 a.m. LoungeOS gives you the floor plan, bottle-level stock, event tools and night-long accountability a lounge needs."
@@ -45,7 +45,7 @@ Lounges live on events: birthdays, DJ nights, after-work parties, private hire. 
 
 The riskiest hours in a lounge are the last ones, when the manager is busy and the room is dark. LoungeOS keeps control without slowing anyone down:
 
-- **Personal logins** for every staff member, with auto-logout after two hours of inactivity
+- **Personal accounts** for every staff member, a quick PIN on shared tills, and auto-logout after two hours of inactivity
 - **Cancellation reasons** for every cancelled order
 - **Manager-only** split, merge and item removal
 - An **activity log** you can review the next morning: who logged in, what was cancelled, what stock was adjusted
@@ -54,13 +54,13 @@ When the drawer is short, you have facts instead of arguments. Read more in [los
 
 ## Payments the way lounge guests pay
 
-Big groups split bills, and some pay by card, some by MTN MoMo or Orange Money, some in cash. LoungeOS records every method with references, splits bills and payments, and prints a branded receipt with your logo.
+Big groups split bills, and some pay by card, some by MTN MoMo or Orange Money, some in cash. In LoungeOS you create every [payment method](/features/mobile-money-pos/) you accept. Each payment is recorded with its reference, bills and payments can be split, and a receipt with your logo prints on your 58 mm or 80 mm thermal printer, or as PDF.
 
 ## Frequently asked questions
 
 ### Is LoungeOS only for lounges?
 
-No. Despite the name, LoungeOS is used by restaurants, bars, nightclubs, cafés and hotels too. Lounges simply need all of its features at once.
+No. Despite the name, LoungeOS is used by restaurants, bars, nightclubs, cafés, hotels, retail shops and supermarkets too. Lounges simply need all of its features at once.
 
 ### Can I sell shisha or hookah?
 
@@ -72,4 +72,4 @@ Yes. Create a VIP floor, add the VIP tables to it and assign the VIP waiters to 
 
 ### Does LoungeOS work if the internet cuts during a party?
 
-Yes. LoungeOS runs on your local Wi-Fi network, so orders, the bar display and payments keep working with no internet.
+Yes, with the Windows or Mac app. The till keeps selling, and phones and the bar display keep working over your Wi-Fi with no internet. Everything syncs when the connection comes back.

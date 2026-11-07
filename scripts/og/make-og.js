@@ -25,7 +25,7 @@ const FALLBACK_IMAGE = {
   knowledgebase: 'loungeos-inventory-dashboard', '404': 'loungeos-table-management', default: 'loungeos-pos-order-screen',
 };
 const LABEL = {
-  home: 'Restaurant POS', fr: 'Logiciel de caisse', privacy: 'Legal', terms: 'Legal', legal: 'Legal',
+  home: 'POS & Business', fr: 'Logiciel de caisse', privacy: 'Legal', terms: 'Legal', legal: 'Legal',
   accessibility: 'Accessibility', documentation: 'Documentation', knowledgebase: 'Knowledge base', '404': 'LoungeOS',
 };
 
@@ -70,9 +70,9 @@ function template(d) {
   const bg = b64(path.join(ROOT, 'images', 'screens', d.img + '.webp'), 'image/webp');
   const logo = b64(path.join(ROOT, 'images', 'logo', 'loungeos-logo-white.svg'), 'image/svg+xml');
   const fr = d.lang.startsWith('fr');
-  const tagline = fr ? 'Caisse hors ligne · restaurants, bars, lounges' : 'Offline POS · restaurants, bars, lounges';
-  const footer = fr ? 'Essai gratuit 30 jours · Fonctionne sans internet · Conçu au Cameroun'
-                    : '30-day free trial · Works without internet · Made in Cameroon';
+  const tagline = fr ? 'Caisse et gestion · toute entreprise qui vend' : 'POS & business · every business that sells';
+  const footer = fr ? 'Essai gratuit 14 jours · Web, Windows, Mac, Android · Conçu par Sigalix'
+                    : '14-day free trial · Web, Windows, Mac & Android · Made by Sigalix';
   const len = d.title.length;
   const size = len > 95 ? 46 : len > 70 ? 52 : len > 48 ? 60 : 68;
   const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;');

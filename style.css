@@ -1034,9 +1034,9 @@ button {
 }
 
 /* ============================================================
-   8. ACTIVATION STEPS
+   8. GETTING STARTED STEPS (homepage section, class .setup-steps)
    ============================================================ */
-.activation {
+.setup-steps {
   padding: 6rem 1.5rem;
 }
 
@@ -1096,7 +1096,7 @@ button {
   line-height: 1.5;
 }
 
-.activation .activation-cta {
+.setup-steps .setup-cta {
   text-align: center;
 }
 
@@ -2956,4 +2956,89 @@ body.menu-open .locale-banner {
 
 .prose a.btn-accent {
   color: var(--text-primary);
+}
+
+/* Pricing: Starter, Business and Pro cards with a monthly/yearly switch (app.js) */
+.pricing-grid-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  max-width: 1080px;
+}
+
+.billing-toggle {
+  flex-wrap: wrap;
+}
+
+.billing-toggle [data-billing] {
+  cursor: pointer;
+}
+
+.billing-toggle .yearly-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--accent-green);
+}
+
+.toggle-switch:focus-visible {
+  outline: 2px solid var(--text-primary);
+  outline-offset: 3px;
+}
+
+.price-card .price-savings[hidden] {
+  display: none;
+}
+
+/* Long labels ("Commencer l'essai gratuit") wrap instead of overflowing the card */
+.price-card .btn,
+.download-card .btn {
+  white-space: normal;
+  text-align: center;
+}
+
+@media (min-width: 1025px) {
+  /* "150,000 FCFA" fits three cards side by side */
+  .pricing-grid-3 .price-card .price {
+    font-size: clamp(1.75rem, 2.6vw, 2.25rem);
+  }
+}
+
+@media (max-width: 1024px) {
+  .pricing-grid-3 {
+    grid-template-columns: 1fr;
+    max-width: 420px;
+  }
+
+  .pricing-grid-3 .price-card.featured {
+    transform: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .pricing-grid-3 .price-card .price {
+    font-size: 1.875rem;
+  }
+}
+
+/* Downloads: up to five cards (Windows, Mac Apple Silicon, Mac Intel, Android,
+   web) in centred rows of equal width; one column on phones */
+.download-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1120px;
+}
+
+.download-card {
+  flex: 0 1 300px;
+  padding: 1.75rem 1.25rem;
+}
+
+.download-card .btn {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (max-width: 768px) {
+  .download-card {
+    flex: 1 1 100%;
+  }
 }

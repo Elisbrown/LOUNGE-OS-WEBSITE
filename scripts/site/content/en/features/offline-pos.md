@@ -2,14 +2,14 @@
 url: /features/offline-pos/
 type: feature
 title: "Offline POS System: Keep Selling Without Internet | LoungeOS"
-description: "LoungeOS is an offline-first restaurant POS. Orders, kitchen screens, payments and stock keep working on your local Wi-Fi when the internet goes down."
+description: "The LoungeOS Windows and Mac apps keep selling without internet. Orders, kitchen screens, payments and receipts keep working on your Wi-Fi and sync when you're back online."
 h1: "An offline POS that keeps selling when the internet doesn't"
 label: "Offline POS"
-lead: "Most POS systems treat offline as an emergency mode with limits. LoungeOS was built to run without internet from the start. Your venue's own computer is the server."
+lead: "Most POS systems treat offline as an emergency mode with tight limits. The LoungeOS Windows and Mac apps keep your business's data on the computer, so the till keeps selling for up to 7 days without internet and syncs when the connection comes back."
 image: loungeos-pos-menu-grid
-image_alt: "LoungeOS point of sale menu grid running on a local network without internet"
+image_alt: "LoungeOS point of sale menu grid that keeps selling without internet"
 card_title: "Offline POS"
-card_desc: "Orders, kitchen screens, payments and stock keep running on your local Wi-Fi with no internet."
+card_desc: "Windows and Mac tills keep selling without internet, with phones on your Wi-Fi, and sync when the connection comes back."
 breadcrumb:
   - ["Features", "/features/"]
 crumb: "Offline POS"
@@ -19,30 +19,38 @@ related:
   - /blog/run-a-restaurant-during-power-and-internet-outages/
 ---
 
-An **offline POS** is a point of sale system that keeps taking orders and payments when the internet connection is lost. LoungeOS goes one step further: it is **offline-first**. The software and its database run on a Windows computer inside your venue. Every phone, tablet and screen talks to that computer over your local Wi-Fi, so the internet is never in the path of an order.
+An **offline POS** is a point of sale system that keeps taking orders and payments when the internet connection is lost. The LoungeOS **Windows and Mac apps** do this by keeping your business's data on the computer as well as in the cloud. Phones, tablets and kitchen screens can talk to that computer over your own Wi-Fi, so an internet outage does not stop an order.
 
 ## How LoungeOS works without internet
 
-1. **The host computer.** Install LoungeOS on one Windows 10 or 11 computer (4 GB RAM minimum). It stores your menu, tables, orders, stock and accounts in a local database.
+1. **The till computer.** Install the LoungeOS app on a Windows 10 or 11 (64-bit) computer or a Mac, and sign in with your LoungeOS account. The app keeps your menu, tables, orders, stock and accounts on the computer, with a copy in the cloud.
 2. **Your local network.** Connect that computer to an ordinary Wi-Fi router. The router does not need an internet connection to do this job. It only needs to be powered on.
-3. **Terminals.** Waiters, chefs, bartenders and cashiers open a browser on their phone or tablet and go to the host's address on port 2304, for example `http://192.168.1.15:2304`. That device is now a terminal. Add as many as you need.
+3. **Phones and tablets.** Waiters, chefs, bartenders and cashiers connect to the same Wi-Fi, open the browser and go to the computer's address on port 2304, for example `http://192.168.1.15:2304`. Allow port 2304 in the computer's firewall. The number of devices you can use depends on your [plan](/pricing/).
+4. **Sync.** When the internet comes back, the till syncs automatically with the cloud, so the web app shows the same sales, stock and reports.
 
-Because nothing leaves the building, an internet outage changes nothing for your team. The kitchen screen still beeps when an order arrives, and the cashier still closes bills and prints receipts.
+Because orders travel over your own Wi-Fi, an internet outage changes nothing for your team. The kitchen screen still beeps when an order arrives, and the cashier still closes bills and prints receipts. The step-by-step setup is on the [download page](/download/#connect-other-devices).
 
 ## What works offline in LoungeOS
 
-Everything used during service works offline:
+On a Windows or Mac till, everything used during service works offline:
 
-- Taking orders at the table, adding notes and discounts
+- Taking orders at the table or the counter, adding notes and discounts
 - Routing food to the kitchen display and drinks to the bar display
 - Splitting and merging bills, cancellations with reasons
-- Recording cash, card and mobile money payments, and printing receipts
+- Recording cash, card and mobile money payments, and printing receipts on 58 mm or 80 mm printers or as PDF
 - Stock levels, out-of-stock blocking and low-stock alerts
-- Staff logins, permissions and the activity log
+- Staff permissions and the activity log
 - Sales reports, staff performance and accounting statements
-- Database backups to a USB drive
 
-You need internet only to **create your account and generate your licence key** at activation. When you renew your subscription, you get a new licence key the same way.
+The **web app and the Android app need internet**. For a till that must keep selling through outages, use the Windows or Mac app.
+
+## The 7-day rule and read-only mode
+
+A Windows or Mac till can keep selling without internet for 7 days. After 7 days without syncing, the till becomes **read-only** until it reconnects. A warning shows during the last 2 days, so you have time to connect it.
+
+Read-only means past orders, reports, printing and exports still work, but you cannot make new sales or edits. As soon as the till reconnects and syncs, it works normally again.
+
+The same read-only mode applies when a subscription ends: LoungeOS becomes read-only, on the web and on your tills, until you renew. Nothing is ever deleted.
 
 ## Offline-first vs "offline mode": why the difference matters
 
@@ -54,42 +62,47 @@ Cloud POS vendors do offer offline modes, but they come with documented limits. 
 
 These are reasonable designs for markets with reliable internet. In places where connections drop several times a week, a system that *assumes* internet means limits during every outage. We compare them in detail in [Best offline restaurant POS systems](/blog/best-offline-restaurant-pos-systems/).
 
-| | Cloud POS with offline mode | LoungeOS (offline-first) |
+| | Cloud POS with offline mode | LoungeOS Windows and Mac apps |
 |---|---|---|
-| Where data lives | Vendor's cloud servers | Your own computer |
-| Internet outage | Limited mode, sync later | No change to service |
-| Reports during outage | Delayed until sync | Available immediately |
-| Hardware | Often vendor tablets or terminals | Any phone, tablet or PC |
-| Per-device fees | Common | None, unlimited terminals |
+| Where data lives | Vendor's cloud servers | On your computer, with a copy in the cloud |
+| Internet outage | Limited mode, sync later | Keeps selling, syncs when back online |
+| Time limit offline | Often hours (24 hours on Square) | 7 days, then read-only until it syncs |
+| Reports during outage | Delayed until sync | Available on the till |
+| Hardware | Often vendor tablets or terminals | Windows and Mac computers, Android devices, any modern browser |
+| Extra devices | Often charged per device | 2, 5 or 10+ devices included in your plan |
 
 ## What about power cuts?
 
 No POS can run without electricity, but you can make outages a non-event cheaply:
 
-- Put the **host computer and Wi-Fi router on a small UPS** (inverter). They draw little power, so a modest UPS keeps them running for a long time. A laptop as the host has its own battery.
+- Put the **till computer and Wi-Fi router on a small UPS** (inverter). They draw little power, so a modest UPS keeps them running for a long time. A laptop as the till has its own battery.
 - Phones and tablets run on their own batteries.
 - If your thermal printer is not on the UPS, receipts can wait. Orders still reach the kitchen screen.
 
 Our guide to [running a restaurant during power and internet outages](/blog/run-a-restaurant-during-power-and-internet-outages/) gives a full checklist.
 
-## Backups: your data, your responsibility, made easy
+## Your data is kept in two places
 
-Offline-first means your data is on your premises, not on someone else's server. LoungeOS makes protecting it simple. You can download an encrypted backup of the entire database at any time, schedule automatic backups, and restore everything on a new computer in minutes if the old one fails. Keep one copy on a USB drive and one in cloud storage.
+On a Windows or Mac till, your data is on the computer and in the cloud. LoungeOS keeps a cloud copy of all your data and makes a full backup every day, so there is nothing to copy to a USB drive by hand. If the computer breaks or is stolen, install LoungeOS on another computer and sign in: everything that has synced comes back from the cloud.
 
 ## Frequently asked questions
 
-### Can LoungeOS run for weeks without internet?
+### How long can LoungeOS run without internet?
 
-Yes. Day-to-day operation does not depend on the internet at all, so there is no 24- or 72-hour limit. You only need a connection when you activate or renew your licence.
+A Windows or Mac till keeps selling for 7 days without internet. After 7 days without syncing, it becomes read-only until it reconnects, and a warning shows during the last 2 days. Read-only means past orders, reports, printing and exports still work, but you cannot make new sales or edits.
 
 ### Do tablets need mobile data to connect?
 
-No. Tablets and phones connect to the host computer through your Wi-Fi router. They can have mobile data switched off.
+Not when they use the Windows or Mac app over your Wi-Fi. They connect to the computer through your router and can have mobile data switched off. Phones and tablets that use the web app or the Android app need internet.
 
-### What happens if the host computer turns off?
+### What happens if the till computer turns off?
 
-Terminals cannot reach the server until it is back on, so protect the host with a UPS. Data saved before the shutdown is kept in the local database. If the hardware fails completely, restore your latest backup on another Windows computer.
+Phones and tablets that use it over Wi-Fi cannot reach it until it is back on, so protect it with a UPS. Sales saved on the computer are kept and sync when it is back online. If the computer fails completely, install LoungeOS on another Windows or Mac computer and sign in: everything that has synced comes back from the cloud.
 
 ### Can I see my sales from home?
 
-LoungeOS is designed for on-premises use, and reports are available on the host computer and on any device on your network. Remote viewing from outside the venue depends on your network setup. Contact [support](/contact/) to discuss options for your venue.
+Yes. Sign in to the web app at [app.loungeos.app](https://app.loungeos.app) or the Android app from anywhere with internet. Sales made on a Windows or Mac till appear as soon as it has synced.
+
+### Does the web app work offline?
+
+No. The web app and the Android app need internet. To keep selling during outages, use the [Windows or Mac app](/download/).

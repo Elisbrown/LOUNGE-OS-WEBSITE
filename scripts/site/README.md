@@ -14,7 +14,7 @@ the legal, documentation and knowledge base pages are edited by hand.
    - `[[figure:loungeos-kitchen-display-system|Alt text|Caption]]`: a screenshot from `/images/screens/`
    - `[[cta]]`: the free-trial call-to-action box
    - `[[cards:/url-one/,/url-two/]]`: cards linking to other pages
-   - `[[include:plans]]` / `[[include:price_table]]`: pricing cards and regional price table
+   - `[[include:plans]]` / `[[include:price_table]]`: the plan cards (with the monthly/yearly toggle) and the US$/FCFA price table
 3. A `## Frequently asked questions` (or `## Questions fréquentes`) section with
    `###` questions becomes FAQ structured data automatically.
 4. Link translations with `alternates: {fr: /fr/…/}`; the reverse link is added for you.
@@ -31,14 +31,18 @@ not exist.
 
 ## Prices
 
-Regional prices appear in three places. Change them together:
+There are three plans (Starter, Business, Pro), each monthly or yearly, in US$ and
+FCFA. Visitors in Cameroon see FCFA; everyone else sees US$. The prices appear in
+these places. Change them together:
 
-- `REGIONAL_PRICING` and `USD_TIERS` at the top of the pricing section in `/app.js`
-  (what visitors see)
-- `PRICES` in `build.py` (the static tables on the pricing and country pages) and
-  the country pages' own tables in `content/`
-- the amounts charged by `account.loungeos.app/checkout`, which receives
-  `region` and `currency` query parameters from the site
+- `PLANS` in the pricing section of `/app.js` (what visitors see after the page loads)
+- `PRICES` and `TRIAL_DAYS` in `build.py` (the plan cards, the price table and the
+  JSON-LD offers on generated pages), plus any amounts written in the Markdown in `content/`
+- the hand-edited pricing cards and JSON-LD offers in `index.html`, `documentation.html`
+  and `knowledgebase.html`
+
+Payments, invoices and plan changes happen at `account.loungeos.app`; the "Start free
+trial" buttons go to `app.loungeos.app/login`.
 
 ## Sitemap, robots.txt, feed and llms.txt
 

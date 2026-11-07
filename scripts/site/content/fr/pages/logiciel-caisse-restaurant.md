@@ -3,7 +3,7 @@ url: /fr/logiciel-caisse-restaurant/
 type: solution
 lang: fr
 title: "Logiciel de caisse restaurant hors ligne | LoungeOS"
-description: "Logiciel de caisse pour restaurant : commandes à table sur téléphone, écran cuisine, stocks, contrôle des serveurs et comptabilité. Fonctionne sans internet."
+description: "Logiciel de caisse pour restaurant : commandes à table sur téléphone, écran cuisine, stocks, contrôle des serveurs et comptabilité. Vend sans internet sur Windows et Mac."
 h1: "Logiciel de caisse restaurant : la salle et la cuisine synchronisées, avec ou sans internet"
 label: "Logiciel de caisse restaurant"
 lead: "Commandes prises à table sur téléphone, envoyées en cuisine en une seconde, additions réglées en espèces, carte ou Mobile Money. Et enfin une vision claire de votre coût matière et de votre marge."
@@ -19,7 +19,7 @@ related:
   - /fr/fonctionnalites/
 ---
 
-Un **logiciel de caisse pour restaurant** enregistre les commandes, les transmet à la cuisine, encaisse les additions et garde la trace de tout ce qui est vendu. LoungeOS fait tout cela, et y ajoute la gestion des stocks, le contrôle du personnel et la comptabilité. Il fonctionne sur un ordinateur de votre restaurant, pas sur internet : une coupure de connexion n'arrête jamais le service.
+Un **logiciel de caisse pour restaurant** enregistre les commandes, les transmet à la cuisine, encaisse les additions et garde la trace de tout ce qui est vendu. LoungeOS fait tout cela, et y ajoute la gestion des stocks, le contrôle du personnel et la comptabilité. Il fonctionne dans l'application web et dans les applications Windows, Mac et Android, avec un seul compte partout. Sur une caisse Windows ou Mac, une coupure de connexion n'arrête pas le service : la caisse continue de vendre et se synchronise au retour de la connexion.
 
 ## Un service avec LoungeOS, étape par étape
 
@@ -27,7 +27,7 @@ Un **logiciel de caisse pour restaurant** enregistre les commandes, les transmet
 2. **Prise de commande.** Les plats s'affichent en photos par catégorie. Le serveur ajoute les remarques (« sans piment », « bien cuit ») et valide.
 3. **En cuisine.** Les plats apparaissent sur l'**écran cuisine** avec une alerte sonore. Les boissons partent sur l'écran bar.
 4. **Service.** Le cuisinier marque le plat *Prêt* et le serveur est prévenu.
-5. **Addition.** La caisse encaisse en espèces (monnaie calculée), carte, MTN MoMo ou Orange Money, éventuellement sur plusieurs moyens de paiement. Le ticket s'imprime et la table redevient verte.
+5. **Addition.** La caisse encaisse avec vos propres moyens de paiement : espèces (monnaie calculée), carte, MTN MoMo, Orange Money ou tout autre moyen que vous avez créé, éventuellement sur plusieurs moyens de paiement. Le reçu s'imprime sur une imprimante thermique 58 mm ou 80 mm, ou en PDF, et la table redevient verte.
 6. **Pilotage.** Le chiffre d'affaires, les ventes par catégorie et la performance des serveurs se mettent à jour immédiatement.
 
 [[figure:loungeos-kitchen-display-system|Écran cuisine LoungeOS avec colonnes En attente, En cours et Prêt|L'écran cuisine remplace les bons papier.]]
@@ -39,30 +39,32 @@ Un **logiciel de caisse pour restaurant** enregistre les commandes, les transmet
 | Bons de commande perdus ou illisibles | Commande transmise directement à l'écran cuisine |
 | Plat vendu alors qu'il n'y en a plus | Quantité disponible : à zéro, le plat est grisé |
 | Article supprimé après paiement en espèces | Suppression réservée au gérant, motif obligatoire |
-| Coupure d'internet un samedi soir | Fonctionnement sur le réseau Wi-Fi local |
-| « Je ne sais pas si je gagne de l'argent » | Compte de résultat généré depuis vos ventes et achats |
-| Matériel coûteux | Vos téléphones, tablettes et PC, sans frais par appareil |
+| Coupure d'internet un samedi soir | La caisse Windows ou Mac continue de vendre, les téléphones restent reliés par le Wi-Fi |
+| « Je ne sais pas si je gagne de l'argent » | Compte de résultat généré depuis vos ventes, achats et dépenses (formules Business et Pro) |
+| Matériel coûteux | Vos ordinateurs, téléphones et tablettes, au toucher ou à la souris. Les appareils sont inclus dans votre formule |
 
 ## Maîtriser le coût matière
 
-Un restaurant vise généralement un coût matière de 28 à 35 % du chiffre d'affaires nourriture. Pour le suivre, il faut des données : ventes par catégorie, achats de stock, pertes déclarées et compte de résultat. LoungeOS rassemble tout cela au même endroit, et vous pouvez calculer votre coût matière chaque semaine au lieu de le deviner.
+Un restaurant vise généralement un coût matière de 28 à 35 % du chiffre d'affaires nourriture. Pour le suivre, il faut des données : ventes par catégorie, achats de stock, pertes déclarées et, avec les formules Business et Pro, compte de résultat. LoungeOS rassemble tout cela au même endroit, et vous pouvez calculer votre coût matière chaque semaine au lieu de le deviner.
 
 ## Matériel nécessaire
 
-- Un ordinateur Windows 10 ou 11 (4 Go de RAM) comme poste principal
+- Un ordinateur Windows 10 ou 11 (64 bits) ou un Mac avec l'application LoungeOS, pour que la caisse continue de vendre sans internet. Vous pouvez aussi commencer avec l'application web dans tout navigateur récent.
 - Un routeur Wi-Fi
 - Les téléphones de vos serveurs ou quelques tablettes
-- En option : une imprimante thermique et une tablette pour la cuisine
+- En option : une imprimante thermique 58 mm ou 80 mm et une tablette pour la cuisine
+
+Pour démarrer, créez votre compte sur [app.loungeos.app](https://app.loungeos.app/login) avec votre e-mail et un mot de passe, ou avec **Continuer avec Google**. L'assistant de configuration vous demande votre type d'activité, votre nom, votre logo, votre devise, vos taxes, vos moyens de paiement et vos horaires, puis vous propose des catégories à cocher. Pour l'application Windows ou Mac, installez-la depuis la page [Télécharger](/fr/telecharger/) et connectez-vous avec le même compte.
 
 ## Questions fréquentes
 
 ### LoungeOS convient-il à un petit restaurant ?
 
-Oui. Un ordinateur portable et un ou deux téléphones suffisent. Le prix ne dépend pas du nombre d'appareils.
+Oui. Un ordinateur portable et un téléphone suffisent. La formule Starter, à 6 000 FCFA par mois au Cameroun (10 $ US ailleurs), comprend 2 utilisateurs et 2 appareils.
 
 ### Les serveurs peuvent-ils utiliser leur propre téléphone ?
 
-Oui. Tout smartphone avec un navigateur, connecté à votre Wi-Fi, peut servir à prendre les commandes. Chaque serveur se connecte avec son propre compte.
+Oui. Les serveurs peuvent utiliser l'application Android, l'application web dans le navigateur du téléphone, ou le navigateur relié par votre Wi-Fi à une caisse Windows ou Mac. Chaque serveur a son propre compte, et le nombre d'appareils dépend de votre formule.
 
 ### Peut-on gérer la vente à emporter ?
 
@@ -70,4 +72,4 @@ Oui : créez une table « Emporter » ou « Comptoir » et suivez vos emballages
 
 ### Combien coûte LoungeOS ?
 
-30 000 FCFA par mois, ou 20 000 FCFA par mois en formule annuelle, avec 30 jours d'essai gratuit. Voir les [tarifs](/fr/tarifs/).
+Trois formules : Starter à 6 000 FCFA, Business à 15 000 FCFA et Pro à 30 000 FCFA par mois au Cameroun, soit 10, 25 et 50 $ US ailleurs. Payez à l'année et profitez de 2 mois offerts. Chaque formule commence par un essai gratuit de 14 jours avec les fonctionnalités Business, sans paiement à l'avance. Vous payez par Mobile Money (MTN, Orange), carte ou PayPal. Voir les [tarifs](/fr/tarifs/).

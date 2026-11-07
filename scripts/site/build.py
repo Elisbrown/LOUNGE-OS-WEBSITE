@@ -26,7 +26,7 @@ from seo_update import social_tags, version_links  # noqa: E402
 CONTENT = os.path.join(HERE, "content")
 SITE = "https://loungeos.app"
 TODAY = dt.date(2026, 10, 8)
-SIGNUP = "https://account.loungeos.app/sign-up"
+SIGNUP = "https://app.loungeos.app/login"  # sign-up is on the sign-in page
 WIN_DOWNLOAD = "/download/"
 # Hand-maintained pages that generated pages may reference as hreflang alternates
 MANUAL_PAGES = {"/"}
@@ -41,14 +41,14 @@ FR_MONTHS = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet",
 
 T = {
     "en": {
-        "home": "Home", "blog": "Blog", "start_trial": "Start Free Trial",
+        "home": "Home", "blog": "Blog", "start_trial": "Start free trial",
         "see_pricing": "See pricing",
-        "trust": "30-day free trial · No credit card · Works without internet",
+        "trust": "14-day free trial · No payment up front · Sells offline on Windows and Mac",
         "by": "By", "team": "LoungeOS Team", "published": "Published",
         "updated": "Updated", "min_read": "min read", "takeaways": "Key takeaways",
         "toc": "In this guide", "related": "Keep reading", "explore": "Explore more",
         "cta_title": "Run your next service on LoungeOS",
-        "cta_text": "Install LoungeOS on a Windows computer, connect your tablets and phones over Wi-Fi, and run real service for 30 days. Free, no credit card.",
+        "cta_text": "Create your account, answer the setup wizard and your business is ready on day one. Try it free for 14 days with Business features. No payment up front.",
         "cta_btn2": "Download for Windows",
         "read_more": "Read guide →", "learn_more": "Learn more →",
         "faq_heading": "Frequently asked questions",
@@ -57,12 +57,12 @@ T = {
     "fr": {
         "home": "Accueil", "blog": "Blog", "start_trial": "Essai gratuit",
         "see_pricing": "Voir les tarifs",
-        "trust": "Essai gratuit de 30 jours · Sans carte bancaire · Fonctionne sans internet",
+        "trust": "Essai gratuit de 14 jours · Sans paiement à l'avance · Vente hors ligne sur Windows et Mac",
         "by": "Par", "team": "l'équipe LoungeOS", "published": "Publié le",
         "updated": "Mis à jour le", "min_read": "min de lecture", "takeaways": "Points clés",
         "toc": "Dans ce guide", "related": "À lire aussi", "explore": "Découvrir aussi",
         "cta_title": "Faites votre prochain service avec LoungeOS",
-        "cta_text": "Installez LoungeOS sur un ordinateur Windows, connectez vos tablettes et téléphones en Wi-Fi et travaillez en conditions réelles pendant 30 jours. Gratuit, sans carte bancaire.",
+        "cta_text": "Créez votre compte, répondez à l'assistant de configuration et votre activité est prête dès le premier jour. Essai gratuit de 14 jours avec les fonctionnalités Business, sans paiement à l'avance.",
         "cta_btn2": "Télécharger pour Windows",
         "read_more": "Lire le guide →", "learn_more": "En savoir plus →",
         "faq_heading": "Questions fréquentes",
@@ -146,7 +146,7 @@ LANG_OPTIONS = [("en", "English"), ("fr", "Français"), ("es", "Español"), ("de
 
 NAV = {
     "en": {
-        "badge": "Restaurant POS",
+        "badge": "POS &amp; Business",
         "links": [("Home", "/"), ("Features", "/features/")],
         "solutions": ("Solutions", [("Restaurants", "/restaurant-pos/"), ("Bars", "/bar-pos/"),
                                     ("Lounges", "/lounge-pos/"), ("Nightclubs", "/nightclub-pos/"),
@@ -158,7 +158,7 @@ NAV = {
                                     ("Documentation", "/documentation.html"),
                                     ("About", "/about/"), ("Contact", "/contact/"),
                                     ("Français", "/fr/")]),
-        "cta": "Start Free Trial",
+        "cta": "Start free trial",
     },
     "fr": {
         "badge": "Logiciel de caisse",
@@ -238,8 +238,8 @@ def nav_html(lang):
 
 FOOTER = {
     "en": {
-        "tagline": "Offline-first POS and management system for restaurants, bars, lounges and hotels. Built in Cameroon, used across Africa and beyond.",
-        "chips": ["All currencies", "English &amp; French", "Works offline"],
+        "tagline": 'Point of sale and business management for every business that sells. Made by <a href="https://sigalix.com">Sigalix</a>, built in Cameroon, used across Africa and beyond.',
+        "chips": ["Web, Windows, Mac &amp; Android", "English &amp; French", "Sells offline on desktop"],
         "cols": [
             ("Product", [("Features", "/features/"), ("Pricing", "/pricing/"), ("Download", "/download/"),
                          ("Offline POS", "/features/offline-pos/"),
@@ -260,11 +260,11 @@ FOOTER = {
                            ("Legal", "/legal.html")]),
         ],
         "rights": "All rights reserved.",
-        "cta": "Start Free Trial",
+        "cta": "Start free trial",
     },
     "fr": {
-        "tagline": "Logiciel de caisse et de gestion hors ligne pour restaurants, bars, lounges et hôtels. Conçu au Cameroun, utilisé en Afrique et au-delà.",
-        "chips": ["Toutes devises", "Français &amp; anglais", "Fonctionne hors ligne"],
+        "tagline": 'Logiciel de caisse et de gestion pour toutes les entreprises qui vendent. Conçu par <a href="https://sigalix.com">Sigalix</a> au Cameroun, utilisé en Afrique et au-delà.',
+        "chips": ["Web, Windows, Mac &amp; Android", "Français &amp; anglais", "Vente hors ligne sur ordinateur"],
         "cols": [
             ("Produit", [("Fonctionnalités", "/fr/fonctionnalites/"), ("Tarifs", "/fr/tarifs/"),
                          ("Télécharger", "/fr/telecharger/"), ("FAQ", "/fr/faq/")]),
@@ -306,7 +306,7 @@ def footer_html(lang):
           </div>
           <p class="footer-contact">
             <a href="mailto:support@loungeos.app">support@loungeos.app</a><br />
-            <a href="mailto:hello@loungeos.app">hello@loungeos.app</a><br />
+            <a href="mailto:info@sigalix.com">info@sigalix.com</a><br />
             <a href="tel:+237679690703">+237 679 690 703</a>
           </p>
         </div>
@@ -364,8 +364,8 @@ ORG = {
     "url": SITE + "/",
     "logo": {"@type": "ImageObject", "url": SITE + "/images/logo/loungeos-icon-512.png", "width": 512, "height": 512},
     "image": SITE + "/images/og-loungeos.jpg",
-    "description": "LoungeOS develops offline-first point of sale (POS) and management software for restaurants, bars, lounges, nightclubs and hotels.",
-    "email": "hello@loungeos.app",
+    "description": "LoungeOS makes point of sale (POS) and business management software for every kind of business that sells: restaurants, bars, lounges, cafés, nightclubs, hotels, retail shops, supermarkets and more. LoungeOS is made by Sigalix.",
+    "email": "info@sigalix.com",
     "telephone": "+237679690703",
     "address": {"@type": "PostalAddress", "addressCountry": "CM"},
     "areaServed": ["CM", "Africa", "Worldwide"],
@@ -373,10 +373,12 @@ ORG = {
     "contactPoint": [
         {"@type": "ContactPoint", "contactType": "customer support", "email": "support@loungeos.app",
          "telephone": "+237679690703", "availableLanguage": ["English", "French"]},
-        {"@type": "ContactPoint", "contactType": "sales", "email": "hello@loungeos.app",
+        {"@type": "ContactPoint", "contactType": "sales", "email": "info@sigalix.com",
          "telephone": "+237689699688", "availableLanguage": ["English", "French"]},
-        {"@type": "ContactPoint", "contactType": "billing support", "email": "billing@loungeos.app"},
+        {"@type": "ContactPoint", "contactType": "billing support", "email": "billing@sigalix.com"},
     ],
+    "parentOrganization": {"@type": "Organization", "name": "Sigalix", "url": "https://sigalix.com",
+                           "email": "info@sigalix.com"},
 }
 WEBSITE = {"@type": "WebSite", "@id": WEBSITE_ID, "url": SITE + "/", "name": "LoungeOS",
            "publisher": {"@id": ORG_ID}, "inLanguage": ["en", "fr"]}
@@ -393,46 +395,62 @@ def offer(name, price, cur, months=None):
     return o
 
 
+# Plans and prices (keep in sync with PLANS in /app.js). Same features in every
+# currency. Visitors in Cameroon see FCFA, everyone else US$. Yearly = 10 months
+# (2 months free). Every plan starts with a free trial with Business features.
+TRIAL_DAYS = 14
+PRICES = [
+    # key, name, users (None = unlimited), devices, US$/month, US$/year, FCFA/month, FCFA/year
+    ("starter", "Starter", 2, "2", 10, 100, 6000, 60000),
+    ("business", "Business", 5, "5", 25, 250, 15000, 150000),
+    ("pro", "Pro", None, "10+", 50, 500, 30000, 300000),
+]
+
+
+def plan_offers():
+    offers = [offer(f"{TRIAL_DAYS}-day free trial (Business features)", 0, "USD")]
+    for _, name, _, _, usd_m, usd_y, xaf_m, xaf_y in PRICES:
+        offers += [offer(f"{name} monthly", usd_m, "USD", 1),
+                   offer(f"{name} yearly", usd_y, "USD", 12),
+                   offer(f"{name} monthly (Cameroon)", xaf_m, "XAF", 1),
+                   offer(f"{name} yearly (Cameroon)", xaf_y, "XAF", 12)]
+    return offers
+
+
 SOFTWARE = {
     "@type": "SoftwareApplication",
     "@id": SOFTWARE_ID,
     "name": "LoungeOS",
     "applicationCategory": "BusinessApplication",
-    "applicationSubCategory": "Restaurant point of sale (POS) and management software",
-    "operatingSystem": "Windows 10, Windows 11 (host computer); any modern web browser on the local network for tablets and phones",
-    "softwareVersion": "1.3.6",
-    "fileSize": "383MB",
+    "applicationSubCategory": "Point of sale (POS) and business management software",
+    "operatingSystem": "Windows 10 and 11 (64-bit), macOS (Apple Silicon and Intel), Android 6.0 or later, any modern web browser",
+    "softwareVersion": "2.0.0",
     "downloadUrl": SITE + "/download/",
     "installUrl": SITE + "/download/",
     "url": SITE + "/",
     "inLanguage": ["en", "fr"],
     "publisher": {"@id": ORG_ID},
-    "description": "Offline-first restaurant, bar and lounge POS with kitchen and bar display screens, table and floor management, inventory, role-based permissions with audit logs, and double-entry accounting. Runs on your own Windows computer and local Wi-Fi network without internet.",
+    "description": "Business management and point of sale for restaurants, bars, lounges, cafés, nightclubs, hotels, retail shops and supermarkets: POS with tables and orders, kitchen and bar screens, custom payment methods, receipts, inventory, expenses, accounting, staff roles and reports. Web app plus Windows, Mac and Android apps with one account; the Windows and Mac apps keep selling without internet and sync when the connection comes back.",
     "featureList": [
-        "Works without internet on the local network",
-        "Point of sale with table and floor management",
-        "Kitchen Display System (KDS) and Bar Display System (BDS) with automatic food/drink routing",
-        "Split and merge bills; split payments across cash, card and mobile money",
-        "Mobile money payment recording (MTN Mobile Money, Orange Money)",
-        "Inventory and stock movements with low-stock alerts, suppliers and CSV import/export",
-        "Role-based permissions for 8 roles and a searchable activity log",
-        "Double-entry accounting: journals, profit & loss, balance sheet, cash flow",
-        "Multi-currency (XAF, USD, EUR, GBP, NGN, GHS and custom) and multiple tax rates",
-        "Thermal receipt printing with logo and custom messages",
-        "Encrypted database backups and restore",
+        "One LoungeOS account on the web, Windows, Mac and Android, with email and password or Continue with Google",
+        "Setup wizard: business type, name, logo, currency, taxes, payment methods, opening hours and suggested categories",
+        "Point of sale for touch and mouse on any screen size",
+        "Tables and orders, kitchen and bar screens",
+        "Custom payment methods such as cash, MTN Mobile Money, Orange Money, card and bank transfer",
+        "Receipts on 58 mm and 80 mm thermal printers, or PDF, with a print button on every order",
+        "Inventory with stock movements, low-stock alerts and suppliers",
+        "Expenses with your own categories",
+        "Accounting with a chart of accounts and a journal",
+        "Daily, weekly and monthly reports",
+        "Staff roles, permissions, quick PIN on a shared till and an activity log",
+        "Offline selling on the Windows and Mac apps with automatic sync",
+        "Cloud copy of all data and daily full backups",
         "English and French interface",
     ],
     "screenshot": [SITE + "/images/screens/loungeos-pos-order-screen.webp",
                    SITE + "/images/screens/loungeos-kitchen-display-system.webp",
                    SITE + "/images/screens/loungeos-inventory-dashboard.webp"],
-    "offers": [
-        offer("30-day free trial", 0, "XAF"),
-        offer("Monthly plan (FCFA zone)", 30000, "XAF", 1),
-        offer("6-month plan (FCFA zone)", 150000, "XAF", 6),
-        offer("12-month plan (FCFA zone)", 240000, "XAF", 12),
-        offer("Monthly plan (international)", 49, "USD", 1),
-        offer("12-month plan (international)", 468, "USD", 12),
-    ],
+    "offers": plan_offers(),
 }
 
 
@@ -529,130 +547,120 @@ def shortcodes(md, page, by_url):
     return md
 
 
-# Regional price table (keep in sync with REGIONAL_PRICING in app.js)
-PRICES = [
-    # region, currency label, monthly, 6-month per month, 6-month total, yearly per month, yearly total
-    ("Cameroon, CEMAC &amp; UEMOA (FCFA zone)", "FCFA", "30,000", "25,000", "150,000", "20,000", "240,000"),
-    ("Nigeria", "₦", "35,000", "30,000", "180,000", "25,000", "300,000"),
-    ("Ghana", "GH₵", "299", "249", "1,494", "199", "2,388"),
-    ("South Africa", "R", "599", "499", "2,994", "449", "5,388"),
-    ("Other African &amp; emerging markets", "US$ (shown in local currency)", "25", "21", "126", "17", "204"),
-    ("Europe / Eurozone", "€", "45", "40", "240", "35", "420"),
-    ("United Kingdom", "£", "39", "35", "210", "31", "372"),
-    ("United States, Canada, Gulf &amp; rest of world", "US$", "49", "44", "264", "39", "468"),
-]
-PRICES_FR_REGION = {
-    "Cameroon, CEMAC &amp; UEMOA (FCFA zone)": "Cameroun, CEMAC &amp; UEMOA (zone FCFA)",
-    "Other African &amp; emerging markets": "Autres pays africains &amp; émergents",
-    "Europe / Eurozone": "Europe / zone euro",
-    "United Kingdom": "Royaume-Uni",
-    "United States, Canada, Gulf &amp; rest of world": "États-Unis, Canada, Golfe &amp; reste du monde",
-    "South Africa": "Afrique du Sud",
-}
-
-PRICES_FR_CURRENCY = {"US$ (shown in local currency)": "US$ (affiché en monnaie locale)"}
-
-
 def fr_number(v):
     """30,000 -> 30 000 with a narrow no-break space, as written in French."""
     return v.replace(",", "\u202f")
 
 
+def money(amount, cur, lang):
+    """US$10 / 6,000 FCFA in English, 10 $ US / 6 000 FCFA in French.
+    Keep in sync with formatPrice() in /app.js so the price doesn't change on load."""
+    n = f"{amount:,}"
+    if lang == "fr":
+        n = fr_number(n)
+    if cur == "XAF":
+        return f"{n}\u00a0FCFA"
+    return f"{n}\u00a0$\u00a0US" if lang == "fr" else f"US${n}"
+
+
+def plan_seats(users, devices, lang):
+    """'2 users, 2 devices' / '2 utilisateurs, 2 appareils'."""
+    if lang == "fr":
+        u = "Utilisateurs illimités" if users is None else f"{users} utilisateurs"
+        d = f"{devices[:-1]} appareils et plus" if devices.endswith("+") else f"{devices} appareils"
+    else:
+        u = "Unlimited users" if users is None else f"{users} users"
+        d = f"{devices} devices"
+    return f"{u}, {d}"
+
+
 def price_table(lang):
     if lang == "fr":
-        head = ("<tr><th>Région</th><th>Devise</th><th>Mensuel</th><th>6 mois (par mois)</th>"
-                "<th>12 mois (par mois)</th></tr>")
+        head = ("<tr><th>Formule</th><th>Mensuel ($ US)</th><th>Annuel ($ US)</th>"
+                "<th>Mensuel (FCFA)</th><th>Annuel (FCFA)</th></tr>")
     else:
-        head = ("<tr><th>Region</th><th>Currency</th><th>Monthly</th><th>6 months (per month)</th>"
-                "<th>12 months (per month)</th></tr>")
+        head = ("<tr><th>Plan</th><th>Monthly (US$)</th><th>Yearly (US$)</th>"
+                "<th>Monthly (FCFA)</th><th>Yearly (FCFA)</th></tr>")
     rows = []
-    for region, cur, mo, s, st, y, yt in PRICES:
-        r = PRICES_FR_REGION.get(region, region) if lang == "fr" else region
-        tot = "total" if lang == "en" else "au total"
-        if lang == "fr":
-            cur = PRICES_FR_CURRENCY.get(cur, cur)
-            mo, s, st, y, yt = (fr_number(v) for v in (mo, s, st, y, yt))
-        rows.append(f"<tr><td>{r}</td><td>{cur}</td><td>{mo}</td><td>{s} ({st} {tot})</td>"
-                    f"<td>{y} ({yt} {tot})</td></tr>")
+    for _, name, _, _, usd_m, usd_y, xaf_m, xaf_y in PRICES:
+        cells = [money(usd_m, "USD", lang), money(usd_y, "USD", lang),
+                 money(xaf_m, "XAF", lang), money(xaf_y, "XAF", lang)]
+        rows.append(f"<tr><td>{name}</td>" + "".join(f"<td>{c}</td>" for c in cells) + "</tr>")
     return f"<table>\n<thead>{head}</thead>\n<tbody>\n" + "\n".join(rows) + "\n</tbody>\n</table>"
 
 
+PLAN_FEATURES = {
+    "en": {
+        "starter": ["Point of sale (POS)", "Inventory", "Receipts", "Daily reports"],
+        "business": ["Everything in Starter", "Expenses and accounting", "Shifts and cash control",
+                     "Weekly and monthly reports", "Email alerts"],
+        "pro": ["Everything in Business", "Priority support", "Advanced admin",
+                "Several branches (coming soon)", "Payroll (coming soon)"],
+    },
+    "fr": {
+        "starter": ["Caisse (point de vente)", "Stocks", "Reçus", "Rapports journaliers"],
+        "business": ["Tout ce que propose Starter", "Dépenses et comptabilité",
+                     "Services (shifts) et contrôle de caisse", "Rapports hebdomadaires et mensuels",
+                     "Alertes par e-mail"],
+        "pro": ["Tout ce que propose Business", "Support prioritaire", "Administration avancée",
+                "Plusieurs établissements (bientôt disponible)", "Paie (bientôt disponible)"],
+    },
+}
+
+
 def plan_cards(lang):
+    """Starter, Business and Pro cards with a monthly/yearly switch. The static HTML
+    shows US$ monthly prices; app.js switches to yearly on request and to FCFA for
+    visitors in Cameroon. app.js reads data-plan and writes .price, .price-period and
+    .price-savings, and the .billing-toggle state."""
     fr = lang == "fr"
     L = {
-        "trial": "Essai gratuit" if fr else "Free Trial",
-        "free": "Gratuit" if fr else "Free",
-        "for30": "pendant 30 jours" if fr else "for 30 days",
         "monthly": "Mensuel" if fr else "Monthly",
-        "six": "Formule 6 mois" if fr else "6-Month Plan",
-        "year": "Formule annuelle" if fr else "Yearly Plan",
+        "yearly": "Annuel" if fr else "Yearly",
+        "free2": "2 mois offerts" if fr else "2 months free",
+        "switch": "Payer à l'année (2 mois offerts)" if fr else "Pay yearly (2 months free)",
         "pm": "/ mois" if fr else "/ month",
-        "popular": "Le plus choisi" if fr else "Most Popular",
-        "best": "Meilleure offre" if fr else "Best Value",
-        "start": "Commencer l'essai" if fr else "Start Free Trial",
-        "get": "Choisir" if fr else "Get Started",
-        "all": "Toutes les fonctionnalités" if fr else "All features included",
-        "unl": "Terminaux illimités" if fr else "Unlimited terminals",
-        "kds": "Écrans cuisine &amp; bar (KDS/BDS)" if fr else "Kitchen &amp; bar display screens",
-        "inv": "Stocks, comptabilité &amp; rapports" if fr else "Inventory, accounting &amp; reports",
-        "nocard": "Sans carte bancaire" if fr else "No credit card required",
-        "cancel": "Résiliable à tout moment" if fr else "Cancel anytime",
-        "updates": "Mises à jour incluses" if fr else "Free software updates",
-        "prio": "Support prioritaire" if fr else "Priority support",
-        "total": "au total" if fr else "total",
-        "save6": "1 mois offert" if fr else "1 month free",
-        "save12": "4 mois offerts" if fr else "4 months free",
+        "popular": "Le plus choisi" if fr else "Most popular",
+        "start": "Commencer l'essai gratuit" if fr else "Start free trial",
         "yousave": "Vous économisez" if fr else "You save",
+        "note": (f"Chaque formule commence par un essai gratuit de {TRIAL_DAYS} jours avec les fonctionnalités "
+                 "Business, sans paiement à l'avance. Les prix s'affichent en FCFA au Cameroun et en dollars US "
+                 "partout ailleurs."
+                 if fr else
+                 f"Every plan starts with a {TRIAL_DAYS}-day free trial with Business features. No payment up "
+                 "front. Visitors in Cameroon see prices in FCFA, everyone else in US$."),
     }
 
     def li(items):
         return "\n".join(f"<li>{CHECK} {i}</li>" for i in items)
 
-    return f"""<div class="plans-breakout"><div class="pricing-grid pricing-grid-5" style="margin: 0 0 1.5rem;">
-  <div class="price-card">
-    <h3>{L['trial']}</h3>
-    <div class="price">{L['free']}</div>
-    <div class="price-period">{L['for30']}</div>
-    <ul class="price-features">{li([L['all'], L['unl'], L['kds'], L['nocard']])}</ul>
-    <a href="{SIGNUP}" class="btn btn-secondary">{L['start']}</a>
-  </div>
-  <div class="price-card">
-    <h3>{L['monthly']}</h3>
-    <div class="price" data-base-price="30000" data-plan="monthly">30 000 FCFA</div>
+    cards = []
+    for key, name, users, devices, usd_m, usd_y, _, _ in PRICES:
+        featured = key == "business"
+        badge = f'\n    <span class="price-card-badge">{L["popular"]}</span>' if featured else ""
+        btn = "btn-accent" if featured else "btn-primary"
+        save = money(usd_m * 12 - usd_y, "USD", lang)
+        features = [plan_seats(users, devices, lang)] + PLAN_FEATURES[lang][key]
+        cards.append(f"""  <div class="price-card{' featured' if featured else ''}" data-plan="{key}">{badge}
+    <h3>{name}</h3>
+    <div class="price">{money(usd_m, "USD", lang)}</div>
     <div class="price-period">{L['pm']}</div>
-    <ul class="price-features">{li([L['all'], L['unl'], L['inv'], L['cancel']])}</ul>
-    <a href="https://account.loungeos.app/checkout?duration=30" class="btn btn-primary" data-checkout="30">{L['get']}</a>
-  </div>
-  <div class="price-card featured">
-    <span class="price-card-badge">{L['popular']}</span>
-    <h3>{L['six']}</h3>
-    <div class="price" data-base-price="25000" data-plan="six">25 000 FCFA</div>
-    <div class="price-period">{L['pm']}</div>
-    <div class="price-total" data-base-total="150000" data-plan="six" data-total-label="{L['total']}">150 000 FCFA {L['total']}</div>
-    <div class="price-savings" data-base-savings="30000" data-plan="six" data-free-months="{L['save6']}" data-save-label="{L['yousave']}">{L['yousave']} 30 000 FCFA ({L['save6']})</div>
-    <ul class="price-features">{li([L['all'], L['unl'], L['inv'], L['updates']])}</ul>
-    <a href="https://account.loungeos.app/checkout?duration=180" class="btn btn-accent" data-checkout="180">{L['get']}</a>
-  </div>
-  <div class="price-card">
-    <span class="price-card-badge" style="background: var(--accent-green); color: #fff">{L['best']}</span>
-    <h3>{L['year']}</h3>
-    <div class="price" data-base-price="20000" data-plan="yearly">20 000 FCFA</div>
-    <div class="price-period">{L['pm']}</div>
-    <div class="price-total" data-base-total="240000" data-plan="yearly" data-total-label="{L['total']}">240 000 FCFA {L['total']}</div>
-    <div class="price-savings" data-base-savings="120000" data-plan="yearly" data-free-months="{L['save12']}" data-save-label="{L['yousave']}">{L['yousave']} 120 000 FCFA ({L['save12']})</div>
-    <ul class="price-features">{li([L['all'], L['unl'], L['inv'], L['prio']])}</ul>
-    <a href="https://account.loungeos.app/checkout?duration=365" class="btn btn-primary" data-checkout="365">{L['get']}</a>
-  </div>
-  <div class="price-card">
-    <h3>{'Entreprise' if fr else 'Enterprise'}</h3>
-    <div class="price">{'Sur devis' if fr else 'Custom'}</div>
-    <div class="price-period">{'multi-sites &amp; grands comptes' if fr else 'multi-site &amp; groups'}</div>
-    <ul class="price-features">{li(['Installation &amp; formation sur site' if fr else 'On-site setup &amp; training', 'Interlocuteur dédié' if fr else 'Dedicated account manager', 'Intégrations sur mesure' if fr else 'Custom integrations'])}</ul>
-    <a href="mailto:hello@loungeos.app" class="btn btn-secondary">{'Contacter les ventes' if fr else 'Contact Sales'}</a>
-  </div>
+    <div class="price-savings" hidden>{L['yousave']} {save}</div>
+    <ul class="price-features">{li(features)}</ul>
+    <a href="{SIGNUP}" class="btn {btn}">{L['start']}</a>
+  </div>""")
+    cards = "\n".join(cards)
+    return f"""<div class="plans-breakout">
+<div class="billing-toggle">
+  <span class="active" data-billing="monthly">{L['monthly']}</span>
+  <button type="button" class="toggle-switch" role="switch" aria-checked="false" aria-label="{L['switch']}"></button>
+  <span data-billing="yearly">{L['yearly']}</span>
+  <span class="yearly-badge">{L['free2']}</span>
 </div>
-</div><p class="region-price-note" data-region-note>{'Les prix s’affichent automatiquement dans votre devise selon votre pays.' if fr else 'Prices are shown automatically in your local currency based on your country.'}</p>"""
-
+<div class="pricing-grid pricing-grid-3" style="margin: 0 auto 1.5rem;">
+{cards}
+</div>
+</div><p class="region-price-note">{L['note']}</p>"""
 
 INCLUDES = {"price_table": price_table, "plans": plan_cards}
 

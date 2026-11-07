@@ -7,7 +7,7 @@ h1: "How to choose a restaurant POS system: the 2026 buyer's checklist"
 category: "POS buying guides"
 lead: "The wrong POS costs you twice: once in fees, and again in lost sales, slow service and money you never see. Use this checklist to compare systems on what actually matters in your venue."
 published: 2026-10-08
-modified: 2026-10-08
+modified: 2026-11-07
 image: loungeos-order-management
 image_alt: "LoungeOS order management list with order IDs, tables, totals in FCFA and order status"
 breadcrumb:
@@ -79,10 +79,10 @@ Subscription price is the number vendors advertise. Total cost is what you pay. 
 
 ### Worked example: 15-table restaurant, 2 terminals, 4 waiter phones, 1 kitchen screen
 
-| Cost item | Cloud POS (typical) | Offline-first, flat price |
+| Cost item | Cloud POS (typical) | LoungeOS Pro (offline-first, flat price) |
 |---|---|---|
-| Software | $69/month | $39/month (yearly plan) |
-| Extra devices and KDS | Often $30–40 per extra device per month | Included |
+| Software | $69/month | $50/month, or $500/year (2 months free) |
+| Extra devices and KDS | Often $30–40 per extra device per month | Included in the plan (Pro covers 10+ devices) |
 | Hardware | Often $500–2,500 per terminal | Existing phones + a low-cost tablet |
 | Card processing | Provider's rate, e.g. about 2.5–2.6% + $0.10–0.15 per in-person card payment in the US | Your existing bank or terminal, no POS margin |
 | Downtime | Depends on offline mode | Minimal with UPS |
@@ -118,7 +118,7 @@ At the end, answer three questions: did service get faster, did you see things y
 
 ## What LoungeOS was designed for
 
-We built LoungeOS for venues where the internet is unreliable, cash and mobile money dominate, and stock and cash control matter. It runs [offline-first](/features/offline-pos/), has [eight staff roles and an activity log](/features/loss-prevention/), separate [kitchen and bar displays](/features/kitchen-display-system/), [inventory](/features/inventory-management/) and [accounting](/features/restaurant-accounting/), with unlimited devices on a flat [regional price](/pricing/). It doesn't process cards itself or integrate with delivery apps. If those are critical for you, factor that in.
+We built LoungeOS for venues where the internet is unreliable, cash and mobile money dominate, and stock and cash control matter. The Windows and Mac apps run [offline-first](/features/offline-pos/) and sync to the cloud, and the same account works in the web app and the Android app when you have internet. It has [eight staff roles and an activity log](/features/loss-prevention/), separate [kitchen and bar displays](/features/kitchen-display-system/), [inventory](/features/inventory-management/) and [accounting](/features/restaurant-accounting/), on three flat [monthly plans](/pricing/) from US$10 (6,000 FCFA), each starting with a 14-day free trial. It doesn't process cards itself or integrate with delivery apps. If those are critical for you, factor that in.
 
 [[cta]]
 

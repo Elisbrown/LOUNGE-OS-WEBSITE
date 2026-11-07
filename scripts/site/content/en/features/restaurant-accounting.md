@@ -2,7 +2,7 @@
 url: /features/restaurant-accounting/
 type: feature
 title: "Restaurant Accounting Software: P&L & Balance Sheet | LoungeOS"
-description: "Turn POS sales and stock purchases into balanced double-entry journals, then get a P&L, balance sheet and cash-flow statement as PDF or CSV."
+description: "Record expenses in your own categories, turn POS sales and stock purchases into balanced double-entry journals, then get a P&L, balance sheet and cash-flow statement as PDF or CSV."
 h1: "Restaurant accounting built into your POS: P&L, balance sheet and cash flow"
 label: "Accounting"
 lead: "Stop rebuilding your books from receipts at the end of the month. LoungeOS turns every paid order and every stock purchase into balanced journal entries, then produces the three statements your accountant and your bank ask for."
@@ -19,14 +19,14 @@ related:
   - /blog/restaurant-kpis-metrics/
 ---
 
-Most restaurants run two disconnected systems: a till that knows what was sold, and an accountant who rebuilds the month from receipts, bank statements and notebooks. LoungeOS includes a **double-entry accounting ledger** fed directly by your POS and inventory. Your sales, purchases, expenses and profit are always one click away from being up to date.
+Most restaurants run two disconnected systems: a till that knows what was sold, and an accountant who rebuilds the month from receipts, bank statements and notebooks. LoungeOS includes a **double-entry accounting ledger** fed directly by your POS and inventory. Your sales, purchases, expenses and profit are always one click away from being up to date. Expenses and accounting are part of the Business and Pro plans.
 
 ## What's included
 
 - **Accounting dashboard** with net profit, total revenue, total expenses, profit margin and a revenue-vs-expenses chart
 - **Chart of accounts** in five classes (assets, liabilities, equity, revenue, expenses), with your own sub-accounts
 - **Financial journals** listing every entry with reference, date and amount
-- **Expense recording** for rent, salaries, utilities, marketing, maintenance and other running costs
+- **Expenses with categories you create**, such as rent, salaries, utilities, marketing and maintenance. Common categories are made for you when the setup wizard asks for your business type.
 - **Three financial statements**: income statement (P&L), balance sheet and cash-flow statement, for any date range, exported to PDF or CSV
 
 ## From sale to statement in one click
@@ -73,11 +73,15 @@ Sales are posted to the ledger when you click **Sync Accounting Data**, not one 
 
 ### Can I record expenses that don't come from stock?
 
-Yes. Use **Record expense** for rent, salaries, utilities, marketing, maintenance and other costs, with payee, date, payment account and category.
+Yes. Use **Record expense** for rent, salaries, utilities, marketing, maintenance and other costs, with payee, date, payment account and one of your expense categories.
 
 ### Can I export statements for my accountant or bank?
 
 Yes. The income statement, balance sheet, cash-flow statement and journal can be downloaded as PDF or CSV for any date range.
+
+### Which plans include accounting?
+
+Expenses and accounting are included in the Business and Pro plans. Starter covers the point of sale, inventory, receipts and daily reports. Every plan starts with a 14-day free trial with Business features, so you can try accounting before you pay. See [pricing](/pricing/).
 
 ### Does LoungeOS file my taxes?
 

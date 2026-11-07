@@ -2,7 +2,7 @@
 url: /features/table-management/
 type: feature
 title: "Restaurant Table & Floor Management Software | LoungeOS"
-description: "Live table status, floors and VIP areas, waiter sections, split and merge bills. LoungeOS table management keeps the floor organised during the rush, even offline."
+description: "Live table status, floors and VIP areas, waiter sections, split and merge bills. LoungeOS table management keeps the floor organised during the rush, online or offline."
 h1: "Table and floor management: see every table, every section, at a glance"
 label: "Table Management"
 lead: "Green, red or orange: the whole room in one view. Organise floors and VIP areas, assign waiters to sections, then split or merge bills when guests change their plans."
@@ -74,4 +74,4 @@ Yes. A manager splits the order by moving selected items to a new order, and eac
 
 ### Does table management work on phones?
 
-Yes. Waiters use the table view on any smartphone browser connected to your Wi-Fi.
+Yes. Waiters can use the Android app, the web app in any phone browser, or a phone browser connected over your Wi-Fi to a Windows or Mac till, which keeps working without internet. On phones, a bottom navigation bar with a "More" sheet keeps every screen in reach.

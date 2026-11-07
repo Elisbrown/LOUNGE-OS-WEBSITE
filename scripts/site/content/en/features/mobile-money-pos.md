@@ -2,14 +2,14 @@
 url: /features/mobile-money-pos/
 type: feature
 title: "POS With Mobile Money: MTN MoMo & Orange Money | LoungeOS"
-description: "Record MTN Mobile Money, Orange Money, cash and card payments with transaction references, split bills across methods, and reconcile at closing. Works offline."
+description: "Create your own payment methods: MTN Mobile Money, Orange Money, cash, card and more. Record transaction references, split bills and reconcile at closing."
 h1: "Cash, card and mobile money, recorded properly on every bill"
 label: "Payments & Mobile Money"
-lead: "In much of Africa, mobile money is how customers pay. LoungeOS records MTN Mobile Money and Orange Money with the transaction reference, alongside cash and card, so every franc is accounted for at closing time."
+lead: "In much of Africa, mobile money is how customers pay. In LoungeOS each business creates its own payment methods, such as MTN Mobile Money, Orange Money, cash and card, so every franc is accounted for at closing time."
 image: loungeos-pos-order-screen
 image_alt: "LoungeOS POS order summary with total ready to charge"
 card_title: "Mobile Money & Payments"
-card_desc: "Record MTN MoMo and Orange Money with references, plus cash and card. Split one bill across methods."
+card_desc: "Create your own payment methods, MTN MoMo and Orange Money included. Record references and split one bill across methods."
 breadcrumb:
   - ["Features", "/features/"]
 crumb: "Mobile Money & Payments"
@@ -19,17 +19,19 @@ related:
   - /africa/
 ---
 
-A POS with **mobile money** support lets the cashier record that a bill was paid by MTN Mobile Money (MoMo) or Orange Money, with the transaction reference, in the same place as cash and card payments. LoungeOS does this on every plan. Your end-of-day totals then show exactly how much should be in the cash drawer and how much in each wallet.
+A POS with **mobile money** support lets the cashier record that a bill was paid by MTN Mobile Money (MoMo), Orange Money or another wallet, with the transaction reference, in the same place as cash and card payments. LoungeOS does this on every plan. Your end-of-day totals then show exactly how much should be in the cash drawer and how much in each wallet.
 
-## Payment methods in LoungeOS
+## Payment methods you create
 
-When the cashier clicks **Charge order**, they choose:
+Each business creates its own payment methods, so the till shows exactly the ways your customers pay. When you create your account, the setup wizard asks which payment methods you accept and creates them for you. You can add, rename or remove them later in your settings.
+
+When the cashier clicks **Charge order**, they pick one of your methods:
 
 - **Cash.** Enter the amount received and LoungeOS shows the change due.
-- **Card / bank transfer.** For payments on your bank's card terminal or by transfer.
-- **Mobile money.** Select **MTN Mobile Money** or **Orange Money** and type the transaction reference from the confirmation SMS.
+- **Mobile money.** For example **MTN Mobile Money** or **Orange Money**, or any other wallet you created. Type the transaction reference from the confirmation SMS.
+- **Card or bank transfer.** For payments on your bank's card terminal or by transfer, with their reference.
 
-A group can **split the payment**, for example part cash and part MoMo. When the payment is confirmed the order is closed, the table becomes available and the receipt prints.
+A group can **split the payment**, for example part cash and part MoMo. When the payment is confirmed the order is closed, the table becomes available and the receipt prints on your 58 mm or 80 mm thermal printer, or as PDF.
 
 ## Why the transaction reference matters
 
@@ -46,11 +48,11 @@ Our guide to [accepting mobile money in your restaurant](/blog/accept-mobile-mon
 LoungeOS **records** payments. It does not move the money itself. The money moves through the customer's wallet and your merchant account, or through your bank's card terminal. This has two practical advantages:
 
 1. **No extra processing fees from us.** You pay only the operator's or bank's usual fees. LoungeOS takes no percentage of your sales.
-2. **Payments never block service.** Even when the internet is down, the cashier can record a cash payment and close the table. Card terminals and mobile money still depend on the operator's network, so record those once the operator confirms.
+2. **Payments don't block service.** Even when the internet is down, a Windows or Mac till can record a cash payment, close the table and print the receipt. Card terminals and mobile money still depend on the operator's network, so record those once the operator confirms.
 
 ## Currencies and taxes
 
-LoungeOS supports XAF (FCFA), USD, EUR, GBP, NGN and GHS out of the box, plus any custom currency. Configure your tax rates once, for example VAT at 19.25% in Cameroon, and every bill calculates them automatically.
+The setup wizard asks for your currency and taxes. XAF (FCFA), USD, EUR, GBP, NGN and GHS are built in, and you can add any other currency. Configure your tax rates once, for example VAT at 19.25% in Cameroon, and every bill calculates them automatically.
 
 ## Frequently asked questions
 
@@ -68,4 +70,8 @@ No. LoungeOS is a flat subscription. Any fees are charged by your mobile money o
 
 ### Which other wallets can I use?
 
-The built-in options are MTN Mobile Money and Orange Money. Payments from other wallets or bank apps can be recorded as card or bank transfer.
+Any wallet your customers use. Create a payment method for it, for example Wave, Moov Money, Airtel Money or M-Pesa, and it appears at checkout next to your other methods.
+
+### Can I pay for my LoungeOS subscription with mobile money?
+
+Yes. You choose your plan and pay on [account.loungeos.app](https://account.loungeos.app) by Mobile Money (MTN, Orange), card or PayPal. Invoices and receipts are sent by email. See [pricing](/pricing/).

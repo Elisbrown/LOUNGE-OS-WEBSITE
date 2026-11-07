@@ -1,15 +1,15 @@
 ---
 url: /ghana/
 type: region
-title: "Restaurant & Bar POS Software in Ghana (Cedi Pricing) | LoungeOS"
-description: "Offline restaurant, bar and lounge POS for Accra, Kumasi and across Ghana. Cedi pricing, MTN MoMo payment records, VAT and levies, and no downtime during dumsor."
-h1: "Restaurant and bar POS for Ghana, priced in cedis and ready for dumsor"
+title: "Restaurant & Bar POS Software in Ghana | LoungeOS"
+description: "Restaurant and bar POS for Accra, Kumasi and all of Ghana. From US$10 a month, MTN MoMo payment records, VAT and levies, and tills that keep selling during dumsor."
+h1: "Restaurant and bar POS for Ghana, ready for dumsor"
 label: "LoungeOS in Ghana"
-lead: "Record MTN MoMo payments with their references, keep service running when the lights go off, and know your real margins on every drink and dish."
+lead: "Record MTN MoMo payments with their references, keep selling when the lights go off, and know your real margins on every drink and dish."
 image: loungeos-order-management
 image_alt: "LoungeOS order management list with order IDs, tables, totals and order status"
 card_title: "LoungeOS in Ghana"
-card_desc: "Cedi pricing, MoMo payment records, VAT and levies, offline operation."
+card_desc: "MoMo payment records, VAT and levies, cedi receipts and offline selling."
 breadcrumb:
   - ["Africa", "/africa/"]
 crumb: "Ghana"
@@ -19,38 +19,37 @@ related:
   - /bar-pos/
 ---
 
-LoungeOS is an **offline-first POS for Ghanaian restaurants, chop bars, drinking spots, lounges and hotels**. It runs on a Windows computer in your venue and connects staff phones over Wi-Fi. Service continues through dumsor and internet outages.
+LoungeOS is **point of sale and management software for Ghanaian restaurants, chop bars, drinking spots, lounges, hotels and shops**. It runs in the web app and in apps for Windows, Mac and Android, with one account everywhere. With the Windows or Mac app, the till keeps selling through dumsor and internet outages, staff phones connect to it over Wi-Fi, and everything syncs when the connection comes back.
 
 ## Mobile money first
 
-In Ghana, mobile money is how many customers pay. **MTN Mobile Money is built into LoungeOS checkout.** The cashier selects it and records the transaction ID from the confirmation message. Payments from other wallets and bank apps can be recorded under card or bank transfer. Groups can split one bill across MoMo, cash and card.
+In Ghana, mobile money is how many customers pay. In LoungeOS you create your own payment methods, so **MTN Mobile Money** sits at checkout next to cash and card, with one method for each other wallet or bank app you accept. The cashier picks the method and records the transaction ID from the confirmation message. Groups can split one bill across MoMo, cash and card.
 
 At closing, compare LoungeOS mobile money totals with your merchant wallet. Any payment without a matching transaction ID stands out. Our guide to [accepting mobile money in your restaurant](/blog/accept-mobile-money-in-your-restaurant/) covers the full routine.
 
 ## Configure LoungeOS for Ghana
 
-- **Currency:** the cedi (GHS) is built in.
+When you create your account, the setup wizard asks for your business type, name, logo, currency, taxes, payment methods and opening hours.
+
+- **Currency:** choose the cedi (GHS), which is built in. Prices, receipts and reports then show GH₵.
 - **VAT and levies:** LoungeOS supports several tax rates, so you can configure VAT and each levy that applies to your business as separate lines and choose the default for checkout. Rates and rules change, so confirm the current ones with the Ghana Revenue Authority or your accountant.
-- **Receipts:** your business name, location, phone number and logo on every receipt.
+- **Receipts:** your business name, location, phone number and logo on every receipt, printed on 58 mm or 80 mm thermal printers or as PDF.
 
 ## Dumsor-proof service
 
-Put the host computer and the Wi-Fi router on a small UPS or inverter, or use a laptop as the host. Phones run on battery. LoungeOS doesn't need internet during service, so a power cut that also takes down your ISP doesn't stop orders reaching the kitchen and bar. See [offline POS](/features/offline-pos/).
+Use the Windows or Mac app on the till, and put the computer and the Wi-Fi router on a small UPS or inverter, or use a laptop. Phones run on battery. The till keeps selling without internet, so a power cut that also takes down your ISP doesn't stop orders reaching the kitchen and bar. After 7 days without syncing, the till becomes read-only until it reconnects, with a warning during the last 2 days. The web app and the Android app need internet. See [offline POS](/features/offline-pos/).
 
-## Cedi pricing
+## Pricing in US$
 
-| Plan | Price | Per month |
-|---|---|---|
-| Free trial | GH₵0 for 30 days | — |
-| Monthly | GH₵299 / month | GH₵299 |
-| 6 months | GH₵1,494 | GH₵249 |
-| 12 months | GH₵2,388 | GH₵199 |
+Visitors in Ghana see prices in US$. The plans and features are the same everywhere.
 
-Every plan includes every feature and unlimited terminals. Visit the [pricing page](/pricing/) from Ghana to see cedi prices automatically. Checkout confirms the final amount.
+[[include:plans]]
+
+Starter costs US$10 a month, Business US$25 and Pro US$50. Pay yearly and get 2 months free. You pay on [account.loungeos.app](https://account.loungeos.app) by Mobile Money (MTN, Orange), card or PayPal. The amount is charged in FCFA, and the US$ prices are the same amounts shown converted. See the [pricing page](/pricing/).
 
 ## Where LoungeOS fits
 
-Restaurants, drinking spots and lounges in **Accra** (Osu, East Legon, Airport, Labone), **Kumasi, Tema, Takoradi, Cape Coast and Tamale**. Anywhere with a Windows computer and a Wi-Fi router.
+Restaurants, drinking spots, lounges and shops in **Accra** (Osu, East Legon, Airport, Labone), **Kumasi, Tema, Takoradi, Cape Coast and Tamale**. A Windows computer or a Mac, an Android phone or tablet, or any device with a modern browser is enough to start.
 
 ## Frequently asked questions
 
@@ -66,6 +65,10 @@ Yes. Each drink is a stock item with its own unit, cost and minimum level, and e
 
 No. LoungeOS is a flat subscription. Mobile money and card fees are charged by your operator or bank.
 
+### How do I pay for my subscription?
+
+Choose your plan on [account.loungeos.app](https://account.loungeos.app) and pay by Mobile Money (MTN, Orange), card or PayPal. Invoices and receipts are sent by email. Every plan starts with a 14-day free trial with Business features, and there is no payment up front.
+
 ### Does it support English?
 
-Yes. The interface is available in English and French.
+Yes. The app is available in English and French.

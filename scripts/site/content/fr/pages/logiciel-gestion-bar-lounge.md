@@ -48,6 +48,10 @@ Chaque boisson est un article de stock avec son unité (bouteille, casier, litre
 | Prix « happy hour » non autorisé | Seules les remises que vous avez définies sont applicables |
 | Faux SMS de transfert Mobile Money | Référence MoMo ou Orange Money enregistrée et vérifiée à la clôture |
 
+## Encaissement et Mobile Money
+
+Chaque bar crée ses propres moyens de paiement : espèces avec calcul de la monnaie, carte, MTN MoMo, Orange Money, Wave ou tout autre portefeuille. Chaque paiement est enregistré avec sa référence, et une table peut régler l'addition avec plusieurs moyens de paiement. Le reçu s'imprime sur une imprimante thermique 58 mm ou 80 mm, ou en PDF.
+
 ## Événements et soirées
 
 Le module **Événements** permet de planifier anniversaires, soirées DJ, afterworks et privatisations (dates, lieu, capacité). Le calendrier du tableau de bord tient l'équipe informée.
@@ -56,7 +60,7 @@ Le module **Événements** permet de planifier anniversaires, soirées DJ, after
 
 ### LoungeOS convient-il à un petit snack-bar ?
 
-Oui. Un ordinateur portable et un téléphone suffisent. Le barman peut prendre les commandes et voir l'écran bar sur le même appareil.
+Oui. Un ordinateur portable avec l'application Windows ou Mac et un téléphone suffisent. Le barman peut prendre les commandes et voir l'écran bar sur le même appareil. La formule Starter comprend 2 utilisateurs et 2 appareils.
 
 ### Peut-on vendre de la chicha ?
 
@@ -64,8 +68,8 @@ Oui : ajoutez la chicha comme article du menu (par parfum ou par taille avec les
 
 ### Le logiciel fonctionne-t-il si internet coupe pendant une soirée ?
 
-Oui. LoungeOS fonctionne sur votre réseau Wi-Fi local, sans internet.
+Oui, avec l'application Windows ou Mac. La caisse continue de vendre, l'écran bar et les téléphones restent reliés par votre Wi-Fi, et tout se synchronise au retour de la connexion. Après 7 jours sans synchronisation, la caisse passe en lecture seule jusqu'à ce qu'elle se reconnecte.
 
 ### Combien coûte LoungeOS pour un bar ?
 
-Le même prix pour tous : 30 000 FCFA par mois, ou 20 000 FCFA par mois à l'année, terminaux illimités. Voir les [tarifs](/fr/tarifs/).
+Trois formules : Starter à 6 000 FCFA, Business à 15 000 FCFA et Pro à 30 000 FCFA par mois au Cameroun, soit 10, 25 et 50 $ US ailleurs. Payez à l'année et profitez de 2 mois offerts. Chaque formule commence par un essai gratuit de 14 jours avec les fonctionnalités Business, sans paiement à l'avance, et vous payez par Mobile Money (MTN, Orange), carte ou PayPal. Voir les [tarifs](/fr/tarifs/).

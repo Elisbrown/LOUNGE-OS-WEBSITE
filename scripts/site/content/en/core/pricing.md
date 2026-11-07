@@ -1,13 +1,13 @@
 ---
 url: /pricing/
 type: core
-title: "LoungeOS Pricing: Restaurant POS Plans & Free 30-Day Trial"
-description: "One plan with every feature and unlimited terminals. From 20,000 FCFA, ₦25,000 or US$39 a month on a yearly plan. 30-day free trial, no credit card."
-h1: "Simple pricing: every feature, unlimited terminals"
+title: "LoungeOS Pricing: Plans from US$10 a Month, 14-Day Free Trial"
+description: "LoungeOS plans: Starter US$10, Business US$25 and Pro US$50 a month (6,000 to 30,000 FCFA in Cameroon). Pay yearly, get 2 months free. 14-day free trial."
+h1: "Simple pricing for every business that sells"
 label: "Pricing"
-lead: "There is one product and no add-ons. Pick how long you want to pay for, and the longer the plan, the less you pay per month. Prices are set for your country, not just converted from another currency."
+lead: "Three plans for restaurants, bars, cafés, hotels, shops and supermarkets. Every plan starts with a 14-day free trial with Business features, and there is no payment up front. Pay yearly and get 2 months free."
 card_title: "Pricing"
-card_desc: "One plan with every feature and unlimited terminals, priced for your region. 30-day free trial."
+card_desc: "Starter, Business and Pro plans from US$10 a month. 14-day free trial, and 2 months free when you pay yearly."
 image: loungeos-pos-order-screen
 image_alt: "LoungeOS POS order screen"
 no_hero_image: true
@@ -24,65 +24,99 @@ related:
 
 ## What every plan includes
 
-Every LoungeOS plan includes the whole system. There are no feature tiers and no paid add-ons:
+Every plan gives you the same LoungeOS, with one account on the web app and the Windows, Mac and Android apps:
 
-- [Offline-first POS](/features/offline-pos/) with table and floor management
-- [Kitchen and bar display screens](/features/kitchen-display-system/) with automatic food/drink routing
-- [Inventory, suppliers and stock movements](/features/inventory-management/)
-- [Eight staff roles, manager-only actions and the activity log](/features/loss-prevention/)
-- [Cash, card and mobile money payments](/features/mobile-money-pos/), split bills and split payments
-- [Double-entry accounting](/features/restaurant-accounting/) with P&L, balance sheet and cash flow
-- **Unlimited terminals**: every waiter's phone, every tablet, every kitchen and bar screen
-- Software updates, encrypted backups and support by email and phone
+- A [point of sale](/features/offline-pos/) that works with touch and mouse on any screen size, with tables and orders
+- Your own [payment methods](/features/mobile-money-pos/): cash, MTN Mobile Money, Orange Money, card, bank transfer and any other you create
+- Receipts on 58 mm and 80 mm thermal printers, or as PDF, with a print button on every order
+- [Inventory](/features/inventory-management/) with stock movements, low-stock alerts and suppliers
+- Staff accounts with roles and permissions, a quick PIN for shared tills and an [activity log](/features/loss-prevention/)
+- A cloud copy of all your data and a full backup every day
+- English and French
 
-## Prices by region
+The Windows and Mac apps also keep the business's data on the computer, keep selling without internet and sync when the connection comes back.
 
-LoungeOS is built in Cameroon and used across Africa and beyond. A price that is fair in Douala is not automatically fair in Lagos or London, so we set prices by region. When you visit this page, prices are shown in your local currency automatically.
+## Compare the plans
+
+| | Starter | Business | Pro |
+|---|---|---|---|
+| Price per month | US$10 / 6,000 FCFA | US$25 / 15,000 FCFA | US$50 / 30,000 FCFA |
+| Price per year (2 months free) | US$100 / 60,000 FCFA | US$250 / 150,000 FCFA | US$500 / 300,000 FCFA |
+| Users | 2 | 5 | Unlimited |
+| Devices | 2 | 5 | 10+ |
+| Point of sale, inventory and receipts | ✓ | ✓ | ✓ |
+| Daily reports | ✓ | ✓ | ✓ |
+| [Expenses and accounting](/features/restaurant-accounting/) | | ✓ | ✓ |
+| Shifts and cash control | | ✓ | ✓ |
+| Weekly and monthly reports | | ✓ | ✓ |
+| Email alerts | | ✓ | ✓ |
+| Priority support | | | ✓ |
+| Advanced admin | | | ✓ |
+| Several branches | | | Coming soon |
+| Payroll | | | Coming soon |
+
+Business is the most popular plan. The free trial gives you Business features for 14 days, so you can see which plan you need before you pay.
+
+## Prices in US$ and FCFA
+
+Visitors in Cameroon see prices in FCFA. Everyone else sees US$. The plans and features are the same in both currencies.
 
 [[include:price_table]]
 
-Prices exclude any local taxes that apply to software subscriptions. The FCFA price applies in Cameroon and the other CEMAC and UEMOA countries that use the CFA franc. Your checkout confirms the final amount before you pay.
+You pay by Mobile Money (MTN, Orange), card or PayPal on [account.loungeos.app](https://account.loungeos.app), where you also manage your plan and invoices. Every payment is charged in FCFA, and the US$ prices are the same amounts shown converted. Invoices and receipts are sent by email.
+
+## Monthly or yearly
+
+Pay monthly, or pay for a year at once and get 2 months free: you pay for 10 months and use LoungeOS for 12. On Business, that is US$250 instead of US$300 a year, or 150,000 FCFA instead of 180,000 FCFA.
 
 ## How LoungeOS compares on total cost
 
-The monthly fee is only part of what a POS costs. Before you compare plans, count:
+The monthly fee is only part of what a POS costs. Before you compare, count:
 
 | Cost | Typical cloud POS | LoungeOS |
 |---|---|---|
-| Software subscription | Per location, with higher tiers for restaurant features | One plan, every feature |
-| Extra terminals and KDS screens | Often charged per device per month | Unlimited, included |
-| Hardware | Often proprietary terminals or tablets | Any phone, tablet or Windows PC you own |
+| Software subscription | Per location, with higher tiers for restaurant features | Three plans from US$10 a month |
+| Extra terminals and kitchen screens | Often charged per device per month | 2, 5 or 10+ devices included in your plan |
+| Hardware | Often proprietary terminals or tablets | Windows and Mac computers, Android phones and tablets, or any modern browser |
 | Card processing | A percentage of every card sale goes to the POS provider | No percentage. You keep your bank or operator |
-| Internet dependency | Needs a stable connection, with limited offline mode | Works fully offline |
+| Internet dependency | Needs a stable connection, with limited offline mode | Windows and Mac apps keep selling offline and sync later |
 
-In the US, restaurant plans from the big cloud POS brands usually start around **$60–$69 per location per month**. Extra devices, kitchen screens and card processing fees come on top. A full-service restaurant with five handheld devices and two kitchen screens can easily pay several times the headline price. With LoungeOS the price on this page is the price, whether you run two terminals or twenty.
+In the US, restaurant plans from the big cloud POS brands usually start around **$60–$69 per location per month**. Extra devices, kitchen screens and card processing fees come on top. LoungeOS Business costs US$25 a month for 5 users and 5 devices.
 
-## Enterprise and multi-site
+## Several branches or custom needs
 
-Running several venues, a hotel with multiple outlets, or a franchise? The Enterprise plan adds on-site installation and staff training, a dedicated account manager and custom integrations. [Contact sales](/contact/) for a quote.
+Support for several branches is coming soon on the Pro plan. LoungeOS is made by [Sigalix](https://sigalix.com), a custom software company. If you need something beyond the Pro plan, write to [info@sigalix.com](mailto:info@sigalix.com) or [contact us](/contact/).
 
 ## Frequently asked questions
 
 ### Is the free trial really free?
 
-Yes. The 30-day trial includes every feature and unlimited terminals, and you do not need a credit card. At the end of the trial, choose a plan to keep using LoungeOS.
+Yes. Every plan starts with a 14-day free trial with Business features, and there is no payment up front. Create your account at [app.loungeos.app](https://app.loungeos.app/login), and at the end of the trial choose Starter, Business or Pro to keep selling.
 
-### Are there any setup or per-device fees?
+### Which plan should I choose?
 
-No. There are no setup fees on the monthly, 6-month and yearly plans, and no per-device fees. On-site installation and training are available with Enterprise.
+Starter fits 2 users on 2 devices who need the point of sale, inventory, receipts and daily reports. Business adds expenses, accounting, shifts and cash control, weekly and monthly reports and email alerts for 5 users on 5 devices. Pro is for larger teams: unlimited users, 10 or more devices, priority support and advanced admin.
 
-### Does LoungeOS take a percentage of my sales?
+### Why do I see prices in FCFA or in US$?
 
-No. LoungeOS is a flat subscription. Card and mobile money fees, if any, are charged by your bank or mobile money operator.
+Visitors in Cameroon see FCFA and everyone else sees US$. The plans and features are the same. Every payment is charged in FCFA, and the US$ prices are the same amounts shown converted.
 
 ### How do I pay for my subscription?
 
-Create an account at [account.loungeos.app](https://account.loungeos.app/sign-up), choose your plan and pay at checkout. For billing questions write to [billing@loungeos.app](mailto:billing@loungeos.app).
+Choose your plan on [account.loungeos.app](https://account.loungeos.app) and pay by Mobile Money (MTN, Orange), card or PayPal. Invoices and receipts are sent by email. For billing questions, write to [billing@sigalix.com](mailto:billing@sigalix.com).
 
-### Why are prices different in different countries?
+### How much do I save by paying yearly?
 
-Costs of living, incomes and competing products vary a lot between markets. Regional pricing keeps LoungeOS affordable for a snack bar in Yaoundé and fairly priced for a restaurant in Europe, with the same features everywhere.
+2 months. A yearly plan costs the same as 10 months: US$100 instead of US$120 on Starter, US$250 instead of US$300 on Business and US$500 instead of US$600 on Pro. In FCFA: 60,000, 150,000 and 300,000 FCFA a year.
 
-### Can I cancel anytime?
+### What happens when my subscription ends?
 
-Yes. Monthly plans can be cancelled at any time and keep working until the end of the paid period. 6-month and yearly plans are paid upfront in exchange for the lower monthly price.
+LoungeOS becomes read-only, on the web and on your tills, until you renew. You can still see past orders and reports, print and export, but you cannot make new sales or edits. Nothing is ever deleted.
+
+### Does LoungeOS take a percentage of my sales?
+
+No. You pay the plan price. Card and mobile money fees, if any, are charged by your bank or mobile money operator.
+
+### Can I change my plan later?
+
+Yes. You manage your plan, invoices and payments on [account.loungeos.app](https://account.loungeos.app), and you can upgrade from there.

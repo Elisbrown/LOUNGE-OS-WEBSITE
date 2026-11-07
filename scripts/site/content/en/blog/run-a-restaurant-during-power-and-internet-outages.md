@@ -7,9 +7,9 @@ h1: "How to keep your restaurant running through power cuts and internet outages
 category: "Operations"
 lead: "In many cities, outages aren't a rare emergency. They're a weekly event. The restaurants that keep serving aren't lucky; they have a plan for power, network, payments, kitchen and food safety."
 published: 2026-10-08
-modified: 2026-10-08
-image: loungeos-backup-restore
-image_alt: "LoungeOS backup and restore screen"
+modified: 2026-11-07
+image: loungeos-pos-menu-grid
+image_alt: "LoungeOS point of sale menu grid that keeps selling without internet"
 breadcrumb:
   - ["Blog", "/blog/"]
 crumb: "Power and internet outages"
@@ -42,6 +42,8 @@ Most restaurants suffer from internet outages only because their POS depends on 
 ## 1. Make your POS independent of the internet
 
 With an **offline-first POS** the system runs on a computer inside your restaurant, and waiters' phones connect to it through your Wi-Fi router. The internet isn't involved in taking an order. When the internet goes down, nothing changes for your team.
+
+In LoungeOS this is the Windows or Mac app: it keeps selling without internet and syncs automatically when the connection comes back. A till can stay offline for up to 7 days, then it becomes read-only until it reconnects. The LoungeOS web app and Android app need internet, so during an outage, phones and tablets reach the Windows or Mac app through their browser on the venue Wi-Fi.
 
 If you use a cloud POS, learn exactly what its offline mode can and can't do. Some cannot close checks, process refunds or show stock levels offline, and some limit offline card payments by time. Train your team on the workarounds. See our comparison of [offline restaurant POS systems](/blog/best-offline-restaurant-pos-systems/).
 
@@ -102,7 +104,7 @@ Run a **10-minute drill** once a month on a quiet afternoon. Unplug the internet
 
 - Compare the POS report with the cash drawer and mobile money wallets.
 - Record any discarded food as waste.
-- Check the host computer restarted cleanly, and take a **backup** of the database.
+- Check the host computer restarted cleanly and that the POS has **synced or been backed up**. LoungeOS syncs to the cloud on its own once the internet is back.
 
 [[cta]]
 

@@ -2,14 +2,14 @@
 url: /features/loss-prevention/
 type: feature
 title: "Restaurant Theft Prevention & POS Audit Log | LoungeOS"
-description: "Stop voids, fake cancellations and cash leaks. LoungeOS has 8 staff roles, manager-only edits, mandatory cancellation reasons and a searchable activity log."
+description: "Stop voids, fake cancellations and cash leaks. LoungeOS has staff roles and permissions, manager-only edits, mandatory cancellation reasons and a searchable activity log."
 h1: "Stop the slow leak: staff permissions and an audit trail for every action"
 label: "Loss Prevention"
 lead: "Most restaurant theft isn't dramatic. It's an item deleted after it was served, a discount nobody approved, a bottle that went missing. LoungeOS makes each of those actions visible, attributable and, where it matters, impossible without a manager."
 image: loungeos-activity-log-audit-trail
 image_alt: "LoungeOS activity log listing user actions such as order status changes, table updates and stock adjustments with timestamps"
 card_title: "Loss Prevention & Audit Log"
-card_desc: "Eight staff roles, manager-only edits, cancellation reasons and a searchable activity log."
+card_desc: "Staff roles and permissions, manager-only edits, cancellation reasons and a searchable activity log."
 breadcrumb:
   - ["Features", "/features/"]
 crumb: "Loss Prevention"
@@ -25,7 +25,7 @@ Employee theft is widely reported as the largest source of restaurant shrinkage.
 
 | Role | Dashboard | POS | Kitchen/bar screens | Stock | Accounting | Configuration |
 |---|---|---|---|---|---|---|
-| **Super Admin** | Full | View only | View only | View only | View only | Full admin |
+| **Owner** | Full | Full | Full | Full | Full | Full admin |
 | **Manager** | Full | Full | Full | Full | Sync & view | Visual & layout |
 | **Accountant** | Financial | View only | None | View only | Full | None |
 | **Stock Manager** | Stock stats | None | None | Full | None | None |
@@ -34,7 +34,9 @@ Employee theft is widely reported as the largest source of restaurant shrinkage.
 | **Cashier** | POS / bills | Payment processing | Bar display | None | None | None |
 | **Bartender** | None | None | Bar display | None | None | None |
 
-Notice what is *not* in the table. The owner's Super Admin account is view-only on the POS, so the account that controls configuration is not also used to ring up sales. Waiters take orders but do not process payments. Cashiers take payments but cannot change stock or prices.
+Notice what is *not* in the table. Waiters take orders but do not process payments. Cashiers take payments but cannot change stock or prices. The owner can adjust the permissions of each staff member when a job needs more or less.
+
+**Everyone has their own account.** The owner invites each staff member by email, and they sign in with their own LoungeOS account. On a shared till, staff switch with a **quick PIN**, so every order, payment and cancellation is recorded under the right name.
 
 Waiters are **assigned to floors** and only see their own tables. Sessions **log out automatically after two hours** of inactivity, so a terminal left open cannot be used under someone else's name.
 
@@ -42,7 +44,7 @@ Waiters are **assigned to floors** and only see their own tables. Sessions **log
 
 - **Removing items from an order** that has already been sent requires manager credentials.
 - **Splitting and merging bills** is manager-only.
-- **Reactivating a cancelled order** is manager-only and possible only within 24 hours.
+- **Reopening a cancelled order** is manager-only and possible only within 24 hours.
 - **Discounts** come from rules you configure (for example 10% or 20%), so staff cannot invent their own.
 
 ## Every cancellation needs a reason
@@ -60,7 +62,7 @@ The activity log records:
 - Orders created, status changes and cancellations with reasons
 - Manual stock adjustments, damage and loss entries
 - Table changes, menu and price edits
-- Database backups and configuration changes
+- Configuration changes
 
 Search by keyword, filter by date or user, and export to CSV. When the cash count is short, you can review the evening in minutes instead of guessing.
 
@@ -77,6 +79,10 @@ No. Removing items from a sent order requires manager credentials, and paid orde
 ### Can staff give discounts?
 
 Only the discount rules you have configured can be applied, and discounts can be switched off entirely in settings.
+
+### Can several staff members share one till?
+
+Yes. Each person has their own account, and on a shared till they switch with a quick PIN instead of typing their email and password. Every action is still recorded under the name of the person who did it.
 
 ### Can I see who logged in with the wrong password?
 

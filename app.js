@@ -40,51 +40,51 @@
   }
 
   /* ---------- 2. OS DETECTION ---------- */
-  var detectedOS = null;
+  // Download cards carry data-os: windows, mac-apple-silicon, mac-intel, android
+  // or web. The card for the visitor's system is marked recommended and selected.
+  var detectedOS = detectOS();
   var selectedOS = null;
 
   function detectOS() {
-    var ua = navigator.userAgent.toLowerCase();
-    if (ua.indexOf('mac') !== -1 && ua.indexOf('iphone') === -1 && ua.indexOf('ipad') === -1) {
-      return 'mac';
-    }
-    if (ua.indexOf('win') !== -1) {
-      return 'windows';
-    }
-    return null;
+    var ua = navigator.userAgent || '';
+    var platform = (navigator.userAgentData && navigator.userAgentData.platform) || navigator.platform || '';
+    if (/android/i.test(ua)) return 'android';
+    // iPhone, iPad and iPod (iPadOS reports itself as a Mac with a touch screen) use the web app
+    if (/iphone|ipad|ipod/i.test(ua) || (/^mac/i.test(platform) && navigator.maxTouchPoints > 1)) return 'web';
+    if (/^win/i.test(platform) || /windows nt/i.test(ua)) return 'windows';
+    // Browsers report every Mac as Intel, so the chip is unknown here: 'mac'
+    // recommends both Mac cards (refined below where the browser tells the chip).
+    if (/^mac/i.test(platform) || /macintosh|mac os x/i.test(ua)) return 'mac';
+    return 'web';
   }
 
   function updateDownloadCards() {
-    var macCard = document.getElementById('downloadMac');
-    var winCard = document.getElementById('downloadWin');
-    if (!macCard || !winCard) return;
-
-    // Clear states
-    macCard.classList.remove('selected', 'recommended');
-    winCard.classList.remove('selected', 'recommended');
-
-    // Mark recommended
-    if (detectedOS === 'mac') {
-      macCard.classList.add('recommended');
-    } else if (detectedOS === 'windows') {
-      winCard.classList.add('recommended');
-    }
-
-    // Mark selected
+    var cards = Array.prototype.slice.call(document.querySelectorAll('.download-card[data-os]'));
+    if (!cards.length) return;
     var active = selectedOS || detectedOS;
-    if (active === 'mac') {
-      macCard.classList.add('selected');
-    } else if (active === 'windows') {
-      winCard.classList.add('selected');
-    }
+    // 'mac' (chip unknown) matches both Mac cards
+    function matches(os, target) { return os === target || (target === 'mac' && os.indexOf('mac-') === 0); }
+    var hasActive = cards.some(function (c) { return matches(c.dataset.os, active); });
+    cards.forEach(function (card) {
+      card.classList.toggle('recommended', matches(card.dataset.os, detectedOS));
+      // Keep the page's default selection when no card matches
+      if (hasActive) card.classList.toggle('selected', matches(card.dataset.os, active));
+    });
   }
 
-  // Detect OS and apply
-  detectedOS = detectOS();
   updateDownloadCards();
 
+  // Chromium browsers can tell an Intel Mac from an Apple Silicon one
+  if (detectedOS === 'mac' && navigator.userAgentData && navigator.userAgentData.getHighEntropyValues) {
+    navigator.userAgentData.getHighEntropyValues(['architecture']).then(function (v) {
+      if (!v) return;
+      detectedOS = v.architecture === 'x86' ? 'mac-intel' : (v.architecture === 'arm' ? 'mac-apple-silicon' : 'mac');
+      updateDownloadCards();
+    }).catch(function () {});
+  }
+
   // Interactive card selection
-  document.querySelectorAll('.download-card').forEach(function (card) {
+  document.querySelectorAll('.download-card[data-os]').forEach(function (card) {
     card.addEventListener('click', function (e) {
       // Don't trigger if clicking the download button
       if (e.target.closest('.btn')) return;
@@ -96,136 +96,107 @@
 
   /* ---------- 3. PRICING & LOCALIZATION ---------- */
 
-  // Regional pricing. Per-month prices for the monthly, 6-month and 12-month
-  // plans, set by market rather than converted from FCFA. Keep in sync with the
-  // price tables on /pricing/, /fr/tarifs/ and the country pages, and with the
-  // amounts charged at account.loungeos.app/checkout.
-  var REGIONAL_PRICING = {
-    XAF: { monthly: 30000, six: 25000, yearly: 20000, region: 'fcfa' },
-    XOF: { monthly: 30000, six: 25000, yearly: 20000, region: 'fcfa' },
-    NGN: { monthly: 35000, six: 30000, yearly: 25000, region: 'ng' },
-    GHS: { monthly: 299, six: 249, yearly: 199, region: 'gh' },
-    ZAR: { monthly: 599, six: 499, yearly: 449, region: 'za' },
-    EUR: { monthly: 45, six: 40, yearly: 35, region: 'eu' },
-    GBP: { monthly: 39, six: 35, yearly: 31, region: 'uk' },
-    USD: { monthly: 49, six: 44, yearly: 39, region: 'global' },
-    CAD: { monthly: 65, six: 59, yearly: 52, region: 'global' },
-    AUD: { monthly: 75, six: 67, yearly: 59, region: 'global' },
-    AED: { monthly: 179, six: 159, yearly: 139, region: 'global' }
+  // Plan prices, the same features in both currencies. Visitors in Cameroon see
+  // FCFA, everyone else US$. Yearly = 10 months (2 months free). Keep in sync with
+  // PRICES in scripts/site/build.py and the price cards in /index.html.
+  var PLANS = {
+    starter: { USD: { monthly: 10, yearly: 100 }, XAF: { monthly: 6000, yearly: 60000 } },
+    business: { USD: { monthly: 25, yearly: 250 }, XAF: { monthly: 15000, yearly: 150000 } },
+    pro: { USD: { monthly: 50, yearly: 500 }, XAF: { monthly: 30000, yearly: 300000 } }
   };
-  // Countries without a fixed local table: priced from a US$ tier, shown in the
-  // visitor's currency at the day's exchange rate.
-  var USD_TIERS = {
-    global: { monthly: 49, six: 44, yearly: 39 },
-    emerging: { monthly: 25, six: 21, yearly: 17 }
-  };
-  var GLOBAL_TIER_COUNTRIES = ['US', 'CA', 'GB', 'IE', 'FR', 'DE', 'NL', 'BE', 'LU', 'AT', 'CH', 'IT', 'ES', 'PT',
-    'GR', 'CY', 'MT', 'SI', 'SK', 'CZ', 'PL', 'HR', 'EE', 'LV', 'LT', 'FI', 'SE', 'NO', 'DK', 'IS', 'AU', 'NZ',
-    'JP', 'KR', 'SG', 'HK', 'TW', 'IL', 'AE', 'SA', 'QA', 'KW', 'BH', 'OM'];
 
   var isBot = /bot|crawl|spider|slurp|bingpreview|mediapartners|facebookexternalhit|embedly|lighthouse|headless|gptbot|claude|perplexity|chatgpt/i.test(navigator.userAgent);
   var pagePath = window.location.pathname;
   var pageLang = (document.documentElement.getAttribute('lang') || 'en').toLowerCase();
-  var currencyFormatter = new Intl.NumberFormat('fr-FR', { style: 'currency', currency: 'XAF', maximumFractionDigits: 0 });
-  var activePrices = { monthly: 30000, six: 25000, yearly: 20000 };
-  var activeRegion = 'fcfa';
-  var activeCurrency = 'XAF';
+  var isFr = pageLang.indexOf('fr') === 0;
+  var PRICE_TEXT = isFr
+    ? { monthly: '/ mois', yearly: '/ an', save: 'Vous économisez {amount}' }
+    : { monthly: '/ month', yearly: '/ year', save: 'You save {amount}' };
 
-  function niceRound(v) {
-    if (v < 100) return Math.round(v);
-    var step = Math.pow(10, Math.floor(Math.log10(v)) - 1) / 2;
-    return Math.round(v / step) * step;
+  // Until the visitor's country is known, guess Cameroon from the device's time zone
+  function inCameroonTimeZone() {
+    try { return Intl.DateTimeFormat().resolvedOptions().timeZone === 'Africa/Douala'; } catch (e) { return false; }
+  }
+  var activeCurrency = !isBot && inCameroonTimeZone() ? 'XAF' : 'USD';
+  var activeBilling = 'monthly';
+
+  // US$10 / 6,000 FCFA in English, 10 $ US / 6 000 FCFA in French (same as build.py)
+  function formatPrice(amount, currency) {
+    var n = String(amount).replace(/\B(?=(\d{3})+(?!\d))/g, isFr ? '\u202f' : ',');
+    if (currency === 'XAF') return n + '\u00a0FCFA';
+    return isFr ? n + '\u00a0$\u00a0US' : 'US$' + n;
   }
 
-  function formatPrice(amount) {
-    return currencyFormatter.format(amount);
-  }
-
-  function planOf(el, fallbackByBase) {
-    return el.dataset.plan || fallbackByBase[el.dataset.basePrice || el.dataset.baseTotal || el.dataset.baseSavings];
-  }
-
+  // Cards: .price-card[data-plan] with .price, .price-period and an optional
+  // .price-savings (shown for yearly billing).
   function updatePricing() {
-    var p = activePrices;
-    var totals = { six: p.six * 6, yearly: p.yearly * 12 };
-    var savings = { six: p.monthly * 6 - totals.six, yearly: p.monthly * 12 - totals.yearly };
-
-    document.querySelectorAll('.price[data-base-price]').forEach(function (el) {
-      var plan = planOf(el, { '30000': 'monthly', '25000': 'six', '20000': 'yearly' });
-      if (p[plan] !== undefined) el.textContent = formatPrice(p[plan]);
-    });
-    document.querySelectorAll('.price-total[data-base-total]').forEach(function (el) {
-      var plan = planOf(el, { '150000': 'six', '240000': 'yearly' });
-      if (totals[plan] !== undefined) el.textContent = formatPrice(totals[plan]) + ' ' + (el.dataset.totalLabel || 'total');
-    });
-    document.querySelectorAll('.price-savings[data-base-savings]').forEach(function (el) {
-      var plan = planOf(el, { '30000': 'six', '120000': 'yearly' });
-      if (savings[plan] === undefined) return;
-      var freeMonthsText = el.dataset.freeMonths || '';
-      el.textContent = (el.dataset.saveLabel || 'You save') + ' ' + formatPrice(savings[plan]) + (freeMonthsText ? ' (' + freeMonthsText + ')' : '');
-    });
-    // Pass the visitor's region to checkout so it can charge the matching price.
-    document.querySelectorAll('a[data-checkout]').forEach(function (a) {
-      try {
-        var u = new URL(a.href);
-        u.searchParams.set('region', activeRegion);
-        u.searchParams.set('currency', activeCurrency);
-        a.href = u.toString();
-      } catch (e) {}
-    });
-  }
-
-  function applyRegionalPricing(geo) {
-    var cur = geo.currency;
-    var country = geo.country_code;
-    if (!cur) return;
-    var locale = navigator.language || 'en-US';
-    var table = REGIONAL_PRICING[cur];
-    function setFormatter(c) {
-      var loc = c === 'XAF' || c === 'XOF' ? 'fr-FR' : locale;
-      // narrowSymbol shows ₦, GH₵, R, € instead of NGN, GHS, ZAR when the browser
-      // language doesn't match the currency's country; older browsers fall back.
-      try {
-        currencyFormatter = new Intl.NumberFormat(loc, { style: 'currency', currency: c, currencyDisplay: 'narrowSymbol', maximumFractionDigits: 0 });
-      } catch (e) {
-        try { currencyFormatter = new Intl.NumberFormat(loc, { style: 'currency', currency: c, maximumFractionDigits: 0 }); } catch (e2) {}
+    document.querySelectorAll('.price-card[data-plan]').forEach(function (card) {
+      var plan = PLANS[card.dataset.plan];
+      if (!plan) return;
+      var p = plan[activeCurrency];
+      var price = card.querySelector('.price');
+      var period = card.querySelector('.price-period');
+      var savings = card.querySelector('.price-savings');
+      if (price) price.textContent = formatPrice(p[activeBilling], activeCurrency);
+      if (period) period.textContent = PRICE_TEXT[activeBilling];
+      if (savings) {
+        savings.textContent = PRICE_TEXT.save.replace('{amount}', formatPrice(p.monthly * 12 - p.yearly, activeCurrency));
+        savings.hidden = activeBilling !== 'yearly';
       }
-    }
-    if (table) {
-      activePrices = table; activeRegion = table.region; activeCurrency = cur;
-      setFormatter(cur);
-      updatePricing();
-      return;
-    }
-    var tierName = GLOBAL_TIER_COUNTRIES.indexOf(country) > -1 ? 'global' : 'emerging';
-    var tier = USD_TIERS[tierName];
-    fetch('https://open.er-api.com/v6/latest/USD')
-      .then(function (res) { return res.json(); })
-      .then(function (rates) {
-        var r = rates && rates.rates && rates.rates[cur];
-        if (!r) { cur = 'USD'; r = 1; }
-        activePrices = { monthly: niceRound(tier.monthly * r), six: niceRound(tier.six * r), yearly: niceRound(tier.yearly * r) };
-        activeRegion = tierName; activeCurrency = cur;
-        setFormatter(cur);
-        updatePricing();
-      })
-      .catch(function (e) { console.error('Exchange rate error:', e); });
+    });
+    // Billing toggle: a .toggle-switch button between [data-billing] labels
+    document.querySelectorAll('.billing-toggle').forEach(function (toggle) {
+      var yearly = activeBilling === 'yearly';
+      var sw = toggle.querySelector('.toggle-switch');
+      if (sw) {
+        sw.classList.toggle('active', yearly);
+        sw.setAttribute('aria-checked', yearly ? 'true' : 'false');
+      }
+      toggle.querySelectorAll('[data-billing]').forEach(function (label) {
+        label.classList.toggle('active', label.dataset.billing === activeBilling);
+      });
+    });
   }
 
-  // Initialize pricing formatting (FCFA until the visitor's region is known)
+  function setBilling(billing) {
+    if (billing !== 'monthly' && billing !== 'yearly') return;
+    activeBilling = billing;
+    updatePricing();
+  }
+
+  document.querySelectorAll('.billing-toggle').forEach(function (toggle) {
+    var sw = toggle.querySelector('.toggle-switch');
+    if (sw) {
+      sw.addEventListener('click', function () {
+        setBilling(activeBilling === 'yearly' ? 'monthly' : 'yearly');
+      });
+    }
+    toggle.querySelectorAll('[data-billing]').forEach(function (label) {
+      label.addEventListener('click', function () { setBilling(label.dataset.billing); });
+    });
+  });
+
+  function applyCountryPricing(geo) {
+    if (!geo || !geo.country_code) return;
+    var currency = geo.country_code === 'CM' ? 'XAF' : 'USD';
+    if (currency === activeCurrency) return;
+    activeCurrency = currency;
+    updatePricing();
+  }
+
   updatePricing();
 
   // Multilingual meta descriptions for the machine-translated homepage only
   const seoData = {
-      'fr': { desc: "LoungeOS est un logiciel de caisse hors ligne pour restaurants, bars et lounges : commandes, écrans cuisine, stocks, Mobile Money et comptabilité. Essai gratuit de 30 jours." },
-      'es': { desc: "LoungeOS es un sistema POS sin conexión para restaurantes, bares y lounges: pedidos, pantallas de cocina, inventario y contabilidad. Prueba gratuita de 30 días." },
-      'de': { desc: "LoungeOS ist ein Offline-Kassensystem für Restaurants, Bars und Lounges: Bestellungen, Küchendisplays, Lager und Buchhaltung. 30 Tage kostenlos testen." },
-      'zh-CN': { desc: "LoungeOS是适用于餐厅、酒吧和休闲吧的离线POS系统：点餐、厨房显示屏、库存和会计。30天免费试用。" },
-      'ar': { desc: "LoungeOS نظام نقاط بيع يعمل بدون إنترنت للمطاعم والحانات: الطلبات وشاشات المطبخ والمخزون والمحاسبة. تجربة مجانية لمدة 30 يومًا." },
-      'hi': { desc: "LoungeOS रेस्तरां, बार और लाउंज के लिए ऑफ़लाइन POS है: ऑर्डर, किचन डिस्प्ले, इन्वेंट्री और अकाउंटिंग। 30 दिन का मुफ्त ट्रायल।" },
-      'pt': { desc: "LoungeOS é um PDV offline para restaurantes, bares e lounges: pedidos, telas de cozinha, estoque e contabilidade. Teste grátis de 30 dias." },
-      'ru': { desc: "LoungeOS — офлайн POS-система для ресторанов, баров и лаунжей: заказы, кухонные экраны, склад и учёт. 30 дней бесплатно." },
-      'ja': { desc: "LoungeOSはレストラン、バー、ラウンジ向けのオフラインPOSです。注文、キッチンディスプレイ、在庫、会計。30日間無料トライアル。" }
+      'fr': { desc: "LoungeOS est un logiciel de caisse et de gestion pour restaurants, bars, hôtels, boutiques et supermarchés : ventes, stocks, dépenses, comptabilité et Mobile Money. Essai gratuit de 14 jours." },
+      'es': { desc: "LoungeOS es un sistema de punto de venta y gestión para restaurantes, bares, hoteles, tiendas y supermercados: ventas, inventario, gastos y contabilidad. Prueba gratuita de 14 días." },
+      'de': { desc: "LoungeOS ist ein Kassen- und Verwaltungssystem für Restaurants, Bars, Hotels, Geschäfte und Supermärkte: Verkauf, Lager, Ausgaben und Buchhaltung. 14 Tage kostenlos testen." },
+      'zh-CN': { desc: "LoungeOS是适用于餐厅、酒吧、酒店、零售店和超市的收银与管理系统：销售、库存、支出和会计。14天免费试用。" },
+      'ar': { desc: "LoungeOS نظام نقاط بيع وإدارة للمطاعم والحانات والفنادق والمتاجر والسوبرماركت: المبيعات والمخزون والمصروفات والمحاسبة. تجربة مجانية لمدة 14 يومًا." },
+      'hi': { desc: "LoungeOS रेस्तरां, बार, होटल, दुकानों और सुपरमार्केट के लिए POS और प्रबंधन सिस्टम है: बिक्री, इन्वेंट्री, खर्च और अकाउंटिंग। 14 दिन का मुफ्त ट्रायल।" },
+      'pt': { desc: "LoungeOS é um sistema de PDV e gestão para restaurantes, bares, hotéis, lojas e supermercados: vendas, estoque, despesas e contabilidade. Teste grátis de 14 dias." },
+      'ru': { desc: "LoungeOS — кассовая система и система управления для ресторанов, баров, отелей, магазинов и супермаркетов: продажи, склад, расходы и учёт. 14 дней бесплатно." },
+      'ja': { desc: "LoungeOSはレストラン、バー、ホテル、小売店、スーパー向けのPOS・管理システムです。販売、在庫、経費、会計。14日間無料トライアル。" }
   };
 
   function updateDynamicSEO(lang) {
@@ -240,13 +211,13 @@
 
   /* ---------- 3b. LOCATION & LANGUAGE SUGGESTIONS ---------- */
   var COUNTRY_BANNERS = {
-    CM: { en: ['Running a venue in Cameroon? FCFA prices, MTN MoMo & Orange Money setup', '/cameroon/'],
+    CM: { en: ['Running a business in Cameroon? FCFA prices, MTN MoMo and Orange Money', '/cameroon/'],
           fr: ['Vous êtes au Cameroun ? Tarifs en FCFA, MTN MoMo et Orange Money', '/fr/cameroun/'] },
-    NG: { en: ['In Nigeria? See naira pricing and local setup', '/nigeria/'] },
-    GH: { en: ['In Ghana? See cedi pricing and MoMo setup', '/ghana/'] },
-    ZA: { en: ['In South Africa? See rand pricing and load-shedding setup', '/south-africa/'] },
-    CI: { fr: ["Vous êtes en Côte d'Ivoire ? LoungeOS pour maquis, restaurants et lounges", '/fr/cote-divoire/'] },
-    SN: { fr: ['Vous êtes au Sénégal ? LoungeOS pour restaurants et lounges', '/fr/senegal/'] }
+    NG: { en: ['In Nigeria? See how LoungeOS works for Nigerian businesses', '/nigeria/'] },
+    GH: { en: ['In Ghana? See how LoungeOS records MoMo payments', '/ghana/'] },
+    ZA: { en: ['In South Africa? See how LoungeOS handles load-shedding', '/south-africa/'] },
+    CI: { fr: ["Vous êtes en Côte d'Ivoire ? LoungeOS pour maquis, restaurants, boutiques et supermarchés", '/fr/cote-divoire/'] },
+    SN: { fr: ['Vous êtes au Sénégal ? LoungeOS pour restaurants, boutiques et commerces', '/fr/senegal/'] }
   };
   var FRANCOPHONE = ['CM', 'CI', 'SN', 'GA', 'CG', 'CD', 'TD', 'CF', 'GQ', 'BJ', 'TG', 'BF', 'ML', 'NE', 'GN',
     'MG', 'DJ', 'KM', 'BI', 'RW', 'MR', 'FR', 'BE', 'CH', 'LU', 'MC', 'HT'];
@@ -302,13 +273,13 @@
       showBanner('Ce site existe en français.', frAlt.getAttribute('href'), 'Voir la version française');
       return true;
     }
-    // Not on the pricing pages: they already show local prices
+    // Not on the pricing pages: they already show the visitor's currency
     var landing = /^\/(index\.html)?$|^\/fr\/$|^\/features\/$|^\/fr\/fonctionnalites\/|^\/download\/|^\/fr\/telecharger\//.test(pagePath);
     if (!landing) return false;
     var cfg = COUNTRY_BANNERS[country];
     var pick = cfg && (pageLang === 'fr' ? (cfg.fr || cfg.en) : (cfg.en || cfg.fr));
     if (!pick && geo.continent_code === 'AF') {
-      pick = pageLang === 'fr' ? ["En Afrique ? Tarifs locaux et Mobile Money", '/fr/afrique/'] : ['In Africa? See local pricing and mobile money setup', '/africa/'];
+      pick = pageLang === 'fr' ? ['En Afrique ? Mobile Money et vente hors ligne', '/fr/afrique/'] : ['In Africa? See mobile money and offline selling', '/africa/'];
     }
     if (pick && pick[1] !== pagePath) {
       showBanner(pick[0], pick[1], pageLang === 'fr' ? 'Voir →' : 'See →');
@@ -318,7 +289,7 @@
   }
 
   function onGeo(data) {
-    applyRegionalPricing(data);
+    applyCountryPricing(data);
 
     // Auto-language: real French pages first, machine translation otherwise
     // (always overridden by an explicit ?lang= parameter).
@@ -349,7 +320,8 @@
     }
   }
 
-  // Auto-detect location for currency, language and local pages.
+  // Detect the visitor's country for the currency (FCFA in Cameroon, US$ elsewhere),
+  // the language and local pages.
   // Skipped for crawlers so search engines index each page as published.
   var urlParams = new URLSearchParams(window.location.search);
   var paramLang = urlParams.get('lang');
@@ -364,13 +336,14 @@
         .then(function(data) {
           if (data && !data.error) {
             storageSet('sessionStorage', 'loGeo', JSON.stringify({
-              currency: data.currency, country_code: data.country_code,
-              continent_code: data.continent_code, languages: data.languages
+              country_code: data.country_code, continent_code: data.continent_code,
+              languages: data.languages
             }));
             onGeo(data);
           }
         })
-        .catch(function(e) { console.error("Location detection error:", e); });
+        // Lookup blocked or unavailable: keep the default currency and language
+        .catch(function () {});
     }
   }
 

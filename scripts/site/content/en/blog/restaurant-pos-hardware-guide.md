@@ -7,7 +7,7 @@ h1: "Restaurant POS hardware: exactly what you need (and what you don't)"
 category: "POS buying guides"
 lead: "You don't need a $3,000 proprietary terminal to run a modern restaurant. This guide covers every piece of hardware for a browser-based POS, how to choose it, and how to keep it running through power cuts."
 published: 2026-10-08
-modified: 2026-10-08
+modified: 2026-11-07
 image: loungeos-receipt-configuration
 image_alt: "LoungeOS receipt configuration with header, footer and a thermal receipt preview"
 breadcrumb:
@@ -17,7 +17,7 @@ card_title: "Restaurant POS hardware guide"
 card_desc: "Host computer, tablets, thermal printer, Wi-Fi and UPS, with three budget setups."
 about: ["POS hardware", "Thermal printer", "Restaurant Wi-Fi"]
 takeaways:
-  - "A browser-based POS needs one reliable **host computer**, a good **Wi-Fi router**, and any **phones or tablets** as terminals."
+  - "To keep selling without internet, a browser-based POS needs one reliable **host computer**, a good **Wi-Fi router**, and any **phones or tablets** as terminals. With reliable internet, LoungeOS also runs in a web browser or on Android with no host."
   - "The router matters more than the tablets. Place it centrally, use 5 GHz where possible and give the host a fixed IP."
   - "An 80 mm **thermal printer** is the standard for receipts. Check driver support for your host before buying."
   - "Protect the host and router with a **UPS** (a laptop host has its own battery), and service survives power cuts."
@@ -29,15 +29,17 @@ related:
 
 Traditional POS vendors sell terminals, printers and screens as a locked bundle. Modern browser-based systems like LoungeOS turn ordinary devices into terminals, so the hardware question becomes much simpler and cheaper. Here's what each piece does, what specification to look for and where people go wrong.
 
+With LoungeOS you have two ways to set up. The **Windows or Mac app** on a computer in your venue keeps selling without internet, and other devices connect to it over your Wi-Fi. That's the setup this guide covers. If your internet is reliable, you can also skip the host and use the **web app** at [app.loungeos.app](https://app.loungeos.app) or the **Android app** on each device; both need internet. See the [download page](/download/).
+
 ## The shopping list at a glance
 
 | Item | Required? | What to look for |
 |---|---|---|
-| Host computer | Yes | Windows 10/11 64-bit, 4 GB RAM min (8 GB better), SSD, battery if laptop |
+| Host computer | Yes, to sell without internet | Windows 10/11 64-bit or a Mac (Apple Silicon or Intel), 4 GB RAM min (8 GB better), SSD, battery if laptop |
 | Wi-Fi router | Yes | Dual-band (2.4 + 5 GHz), reliable brand, placed centrally |
 | Waiter devices | Yes (or use staff phones) | Any smartphone with a modern browser, 5.5"+ screen |
 | Kitchen/bar screen | Recommended | 8–10" Android tablet or old laptop, wall or stand mount |
-| Thermal receipt printer | Recommended | 80 mm, USB or Ethernet, compatible with your host OS |
+| Thermal receipt printer | Recommended | 80 mm (or 58 mm), USB or Ethernet, compatible with your host OS |
 | UPS / inverter | Strongly recommended | Enough capacity for host + router for your typical outage |
 | Cash drawer | Optional | Printer-driven (RJ11) or standalone |
 
@@ -45,7 +47,7 @@ Traditional POS vendors sell terminals, printers and screens as a locked bundle.
 
 In an offline-first system, the host computer **is the server**. Every order passes through it, so it deserves care.
 
-- **Operating system:** for LoungeOS, Windows 10 or 11 (64-bit).
+- **Operating system:** for LoungeOS, Windows 10 or 11 (64-bit), or a Mac with Apple Silicon (M1 and later) or an Intel processor.
 - **Memory:** 4 GB minimum. 8 GB gives comfortable headroom.
 - **Storage:** an SSD makes everything faster. LoungeOS needs about 2 GB free for its database and menu photos.
 - **Laptop or desktop?** A **laptop** is usually better for venues with power cuts because its battery acts as a built-in UPS. Desktops need an external UPS.
@@ -88,10 +90,10 @@ Receipt printers in hospitality are almost always **thermal**: no ink, fast, qui
 
 - **80 mm paper** is the standard width for restaurant receipts. 58 mm printers are cheaper but cramped.
 - **Connection:** USB (to the host) or Ethernet (to the network). USB is simplest for a single printer at the cashier.
-- **Compatibility:** many printers use the ESC/POS command standard. Install the Windows driver and print a test page from the host before buying in bulk.
+- **Compatibility:** many printers use the ESC/POS command standard. Install the driver for your computer (Windows or macOS) and print a test page from the host before buying in bulk.
 - **Paper stock:** keep at least a week of rolls. Running out on a Saturday is a classic avoidable failure.
 
-In LoungeOS you can put your logo, a header greeting and a thank-you message on receipts from the receipt configuration screen.
+In LoungeOS you can put your logo, a header greeting and a thank-you message on receipts from the receipt configuration screen. LoungeOS prints on 58 mm and 80 mm thermal printers, or to PDF, and every order has a print button.
 
 ## Power: the UPS is not optional
 
@@ -107,21 +109,21 @@ Don't plug the thermal printer, fridges or the coffee machine into the same UPS.
 
 ## Three example setups
 
-**Snack bar or café (minimum):** a Windows laptop as host and cashier, the owner's phone for orders, a small Android tablet for the kitchen, an 80 mm USB printer, the existing router, and a small UPS for the router.
+**Snack bar or café (minimum):** a Windows laptop or MacBook as host and cashier, the owner's phone for orders, a small Android tablet for the kitchen, an 80 mm USB printer, the existing router, and a small UPS for the router.
 
-**Restaurant, 15–25 tables:** a Windows laptop or desktop with SSD on a UPS, a dual-band router (plus an access point if needed), 3–6 waiter phones, a 10" kitchen tablet on a bracket, a 10" bar tablet, and an 80 mm printer at the cashier.
+**Restaurant, 15–25 tables:** a Windows or Mac laptop or desktop with SSD on a UPS, a dual-band router (plus an access point if needed), 3–6 waiter phones, a 10" kitchen tablet on a bracket, a 10" bar tablet, and an 80 mm printer at the cashier.
 
 **Lounge or hotel with several areas:** a dedicated host PC on an inverter, a mesh Wi-Fi system covering every area, phones for each waiter, kitchen and bar screens, a printer at each cashier point, and a separate guest Wi-Fi network.
 
 ## Hardware checklist before opening night
 
-- ☐ Host has a fixed IP and LoungeOS starts with Windows
+- ☐ Host has a fixed IP and LoungeOS starts with the computer
 - ☐ Firewall allows the POS port (2304 for LoungeOS)
 - ☐ Every table and the kitchen have good Wi-Fi signal
 - ☐ Host and router are on backup power, tested by unplugging
 - ☐ Test receipt printed with your logo
 - ☐ Spare paper rolls and charging cables in stock
-- ☐ A backup of the database saved to USB
+- ☐ LoungeOS has synced at least once, so the cloud copy is up to date
 
 [[cta]]
 
@@ -133,7 +135,7 @@ Yes, with a browser-based POS. Each person logs in with their own account and co
 
 ### What printer works with a restaurant POS?
 
-An 80 mm thermal receipt printer with a Windows driver and USB or Ethernet connection is the most common choice. Test it with the POS on your host computer before buying several.
+An 80 mm thermal receipt printer with a driver for your computer (Windows or macOS) and a USB or Ethernet connection is the most common choice. Test it with the POS on your host computer before buying several.
 
 ### Do I need a cash drawer?
 

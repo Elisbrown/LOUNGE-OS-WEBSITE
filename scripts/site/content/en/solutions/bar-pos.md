@@ -2,7 +2,7 @@
 url: /bar-pos/
 type: solution
 title: "Bar POS System With Stock Control & Bar Display | LoungeOS"
-description: "A fast bar POS that tracks every bottle and crate, sends drink orders to a bar display, controls free drinks and discounts, and keeps working offline."
+description: "A fast bar POS that tracks every bottle and crate, sends drink orders to a bar display, controls free drinks and discounts, and keeps selling offline on Windows and Mac."
 h1: "A bar POS that counts every bottle and every franc"
 label: "Bar POS"
 lead: "Bars lose money in small amounts: a free round, a bottle that breaks and is never recorded, a sale rung up for less. LoungeOS speeds up service at the bar and makes those small losses visible."
@@ -55,13 +55,13 @@ See the full approach in [loss prevention](/features/loss-prevention/).
 
 ## Payments at the bar
 
-Cash with automatic change, card, MTN MoMo and Orange Money with references, and split payments when a group pays together. When the internet is down, nothing changes, because LoungeOS runs on your [local network](/features/offline-pos/).
+Each bar creates its own [payment methods](/features/mobile-money-pos/): cash with automatic change, card, MTN MoMo, Orange Money or any other wallet, with their references, and split payments when a group pays together. When the internet is down, a Windows or Mac till keeps selling, phones keep ordering over your Wi-Fi, and everything syncs when the connection comes back. See [offline POS](/features/offline-pos/).
 
 ## Frequently asked questions
 
 ### Can I use LoungeOS for a small bar with one bartender?
 
-Yes. A laptop as the host and one phone is enough. The bartender can take orders and see the bar display on the same device.
+Yes. A laptop with the Windows or Mac app and one phone is enough. The bartender can take orders and see the bar display on the same device. The Starter plan, at US$10 a month (6,000 FCFA in Cameroon), covers 2 users on 2 devices. See [pricing](/pricing/).
 
 ### Can I track beer by the crate and sell by the bottle?
 
@@ -73,4 +73,4 @@ You can create discount rules, such as a percentage off, and apply them during h
 
 ### Will it work during a power cut?
 
-Put the host computer and Wi-Fi router on a small UPS, and phones run on battery, so service continues. No internet is needed.
+Put the till computer and Wi-Fi router on a small UPS, and phones run on battery, so service continues. A Windows or Mac till does not need internet to keep selling.

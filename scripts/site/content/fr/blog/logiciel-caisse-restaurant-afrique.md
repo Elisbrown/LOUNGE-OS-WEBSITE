@@ -8,7 +8,7 @@ h1: "Logiciel de caisse pour restaurant en Afrique : le guide pour bien choisir 
 category: "Guides d’achat"
 lead: "Un logiciel de caisse pensé pour l'Europe ne tient pas forcément un samedi soir à Douala ou à Abidjan. Voici les critères qui comptent vraiment en Afrique, et les questions à poser avant de signer."
 published: 2026-10-08
-modified: 2026-10-08
+modified: 2026-11-07
 image: loungeos-tableau-de-bord-francais
 image_alt: "Tableau de bord LoungeOS en français avec chiffre d'affaires en FCFA"
 breadcrumb:
@@ -101,7 +101,7 @@ En Afrique de l'Ouest et centrale, les abonnements de logiciels de caisse se sit
 
 ## Où se situe LoungeOS
 
-Nous avons conçu **LoungeOS** au Cameroun précisément pour ces critères : fonctionnement **sans internet** sur votre réseau local, **MTN MoMo et Orange Money** avec référence, **huit rôles**, actions réservées au gérant, motifs d'annulation et **journal d'activité**, **écrans cuisine et bar**, **stocks** et **comptabilité** intégrés, interface **en français et en anglais**, **terminaux illimités** à **30 000 FCFA par mois** (20 000 FCFA à l'année), avec **30 jours d'essai gratuit**. Il ne traite pas lui-même les paiements par carte et n'est pas encore connecté aux plateformes de livraison : à prendre en compte si c'est essentiel pour vous. Voir les [fonctionnalités](/fr/fonctionnalites/).
+Nous avons conçu **LoungeOS** au Cameroun précisément pour ces critères : les applications Windows et Mac fonctionnent **sans internet** sur votre réseau local et se synchronisent dès que la connexion revient, et le même compte s'ouvre dans l'application web et l'application Android quand vous avez internet. Vous y trouvez **MTN MoMo et Orange Money** avec référence, **huit rôles**, actions réservées au gérant, motifs d'annulation et **journal d'activité**, **écrans cuisine et bar**, **stocks** et **comptabilité** intégrés, et une interface **en français et en anglais**. Trois formules à prix fixe : **Starter à 6 000 FCFA par mois** (2 utilisateurs, 2 appareils), **Business à 15 000 FCFA** (5 utilisateurs, 5 appareils) et **Pro à 30 000 FCFA** (utilisateurs illimités, 10 appareils et plus), avec deux mois offerts en paiement annuel et **14 jours d'essai gratuit** sur chaque formule. Il ne traite pas lui-même les paiements par carte et n'est pas encore connecté aux plateformes de livraison : à prendre en compte si c'est essentiel pour vous. Voir les [fonctionnalités](/fr/fonctionnalites/) et les [tarifs](/fr/tarifs/).
 
 [[cta]]
 

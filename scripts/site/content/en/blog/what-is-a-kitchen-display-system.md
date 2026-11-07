@@ -7,7 +7,7 @@ h1: "What is a kitchen display system (KDS), and does your restaurant need one?"
 category: "Operations"
 lead: "A kitchen display system puts orders on a screen instead of paper. It sounds like a small change. In practice it changes how fast, accurate and accountable your kitchen is."
 published: 2026-10-08
-modified: 2026-10-08
+modified: 2026-11-07
 image: loungeos-kitchen-display-system
 image_alt: "LoungeOS kitchen display system with Pending, In Progress and Ready columns"
 breadcrumb:
@@ -64,7 +64,7 @@ Without routing, every station sees everything, and the bartender has to scroll 
 
 ## Cancellations from the kitchen
 
-Sometimes the kitchen must cancel: a dish ran out, or a duplicate order was entered. A good KDS lets the cook cancel **with a reason**, and logs who did it. LoungeOS has a cancel drop zone at the bottom of the screen. Dragging a ticket there asks for a reason, and a manager can reactivate it within 24 hours if it was a mistake. This turns "the kitchen lost it" into a traceable event.
+Sometimes the kitchen must cancel: a dish ran out, or a duplicate order was entered. A good KDS lets the cook cancel **with a reason**, and logs who did it. LoungeOS has a cancel drop zone at the bottom of the screen. Dragging a ticket there asks for a reason, and a manager can reopen it within 24 hours if it was a mistake. This turns "the kitchen lost it" into a traceable event.
 
 ## What hardware does a KDS need?
 
@@ -108,7 +108,7 @@ Often yes, because the hardware can be a low-cost tablet. The main benefits, no 
 
 ### Does a KDS work without internet?
 
-It depends on the POS. With an offline-first POS such as LoungeOS, the KDS connects to a computer in the restaurant over Wi-Fi and works without internet. Cloud KDS products may need a local hub or have limits during outages.
+It depends on the POS. With an offline-first POS such as LoungeOS on Windows or Mac, the KDS connects to a computer in the restaurant over Wi-Fi and works without internet. The LoungeOS web app and Android app need internet. Cloud KDS products may need a local hub or have limits during outages.
 
 ### Can I still print tickets with a KDS?
 
