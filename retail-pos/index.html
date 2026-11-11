@@ -1,0 +1,774 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Retail POS for Shops &amp; Mini-Markets, Works Offline | LoungeOS</title>
+    <meta name="description" content="POS for shops and mini-markets: barcode scanning, stock alerts, customer tabs, mobile money and 58/80 mm receipts. Keeps selling offline on desktop." />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <link rel="canonical" href="https://loungeos.app/retail-pos/" />
+    <link rel="alternate" hreflang="en" href="https://loungeos.app/retail-pos/" />
+    <link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/logiciel-caisse-boutique/" />
+    <link rel="alternate" hreflang="x-default" href="https://loungeos.app/retail-pos/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="LoungeOS" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="Retail POS for Shops &amp; Mini-Markets, Works Offline" />
+    <meta property="og:description" content="POS for shops and mini-markets: barcode scanning, stock alerts, customer tabs, mobile money and 58/80 mm receipts. Keeps selling offline on desktop." />
+    <meta property="og:image" content="https://loungeos.app/images/og/retail-pos.webp" />
+    <meta property="og:image:secure_url" content="https://loungeos.app/images/og/retail-pos.webp" />
+    <meta property="og:image:type" content="image/webp" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Retail POS for Shops &amp; Mini-Markets, Works Offline" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Retail POS for Shops &amp; Mini-Markets, Works Offline" />
+    <meta name="twitter:description" content="POS for shops and mini-markets: barcode scanning, stock alerts, customer tabs, mobile money and 58/80 mm receipts. Keeps selling offline on desktop." />
+    <meta name="twitter:image" content="https://loungeos.app/images/og/retail-pos.webp" />
+    <meta name="twitter:image:alt" content="Retail POS for Shops &amp; Mini-Markets, Works Offline" />
+    <link rel="image_src" href="https://loungeos.app/images/og/retail-pos.webp" />
+    <meta property="og:url" content="https://loungeos.app/retail-pos/" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/style.css?v=b2c5659691" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="alternate" type="application/rss+xml" title="LoungeOS Blog" href="https://loungeos.app/blog/feed.xml" />
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://loungeos.app/#organization",
+      "name": "LoungeOS",
+      "url": "https://loungeos.app/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://loungeos.app/images/logo/loungeos-icon-512.png",
+        "width": 512,
+        "height": 512
+      },
+      "image": "https://loungeos.app/images/og-loungeos.jpg",
+      "description": "LoungeOS makes point of sale (POS) and business management software for every kind of business that sells: restaurants, bars, lounges, cafés, nightclubs, hotels, retail shops, supermarkets and more. LoungeOS is made by Sigalix.",
+      "email": "info@sigalix.com",
+      "telephone": "+237679690703",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CM"
+      },
+      "areaServed": [
+        "CM",
+        "Africa",
+        "Worldwide"
+      ],
+      "knowsLanguage": [
+        "en",
+        "fr"
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "email": "support@loungeos.app",
+          "telephone": "+237679690703",
+          "availableLanguage": [
+            "English",
+            "French"
+          ]
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "email": "info@sigalix.com",
+          "telephone": "+237689699688",
+          "availableLanguage": [
+            "English",
+            "French"
+          ]
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "billing support",
+          "email": "billing@sigalix.com"
+        }
+      ],
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "Sigalix",
+        "url": "https://sigalix.com",
+        "email": "info@sigalix.com"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://loungeos.app/#website",
+      "url": "https://loungeos.app/",
+      "name": "LoungeOS",
+      "publisher": {
+        "@id": "https://loungeos.app/#organization"
+      },
+      "inLanguage": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://loungeos.app/#software",
+      "name": "LoungeOS",
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "Point of sale (POS) and business management software",
+      "operatingSystem": "Windows 10 and 11 (64-bit), macOS (Apple Silicon and Intel), Android 6.0 or later, any modern web browser",
+      "softwareVersion": "2.0.0",
+      "downloadUrl": "https://loungeos.app/download/",
+      "installUrl": "https://loungeos.app/download/",
+      "url": "https://loungeos.app/",
+      "inLanguage": [
+        "en",
+        "fr"
+      ],
+      "publisher": {
+        "@id": "https://loungeos.app/#organization"
+      },
+      "description": "Business management and point of sale for restaurants, bars, lounges, cafés, nightclubs, hotels, retail shops and supermarkets: POS with tables and orders, kitchen and bar screens, custom payment methods, receipts, inventory, expenses, accounting, staff roles and reports. Web app plus Windows, Mac and Android apps with one account; the Windows and Mac apps keep selling without internet and sync when the connection comes back.",
+      "featureList": [
+        "One LoungeOS account on the web, Windows, Mac and Android, with email and password or Continue with Google",
+        "Setup wizard: business type, name, logo, currency, taxes, payment methods, opening hours and suggested categories",
+        "Point of sale for touch and mouse on any screen size",
+        "Tables and orders, kitchen and bar screens",
+        "Custom payment methods such as cash, MTN Mobile Money, Orange Money, card and bank transfer",
+        "Receipts on 58 mm and 80 mm thermal printers, or PDF, with a print button on every order",
+        "Inventory with stock movements, low-stock alerts and suppliers",
+        "Expenses with your own categories",
+        "Accounting with a chart of accounts and a journal",
+        "Daily, weekly and monthly reports",
+        "Staff roles, permissions, quick PIN on a shared till and an activity log",
+        "Offline selling on the Windows and Mac apps with automatic sync",
+        "Cloud copy of all data and daily full backups",
+        "English and French interface"
+      ],
+      "screenshot": [
+        "https://loungeos.app/images/screens/loungeos-pos-order-screen.webp",
+        "https://loungeos.app/images/screens/loungeos-kitchen-display-system.webp",
+        "https://loungeos.app/images/screens/loungeos-inventory-dashboard.webp"
+      ],
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "14-day free trial (Business features)",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/"
+        },
+        {
+          "@type": "Offer",
+          "name": "Starter monthly",
+          "price": "10",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "10",
+            "priceCurrency": "USD",
+            "billingDuration": "P1M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 1,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Starter yearly",
+          "price": "100",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "100",
+            "priceCurrency": "USD",
+            "billingDuration": "P12M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 12,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Starter monthly (Cameroon)",
+          "price": "6000",
+          "priceCurrency": "XAF",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "6000",
+            "priceCurrency": "XAF",
+            "billingDuration": "P1M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 1,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Starter yearly (Cameroon)",
+          "price": "60000",
+          "priceCurrency": "XAF",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "60000",
+            "priceCurrency": "XAF",
+            "billingDuration": "P12M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 12,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Business monthly",
+          "price": "25",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "25",
+            "priceCurrency": "USD",
+            "billingDuration": "P1M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 1,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Business yearly",
+          "price": "250",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "250",
+            "priceCurrency": "USD",
+            "billingDuration": "P12M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 12,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Business monthly (Cameroon)",
+          "price": "15000",
+          "priceCurrency": "XAF",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "15000",
+            "priceCurrency": "XAF",
+            "billingDuration": "P1M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 1,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Business yearly (Cameroon)",
+          "price": "150000",
+          "priceCurrency": "XAF",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "150000",
+            "priceCurrency": "XAF",
+            "billingDuration": "P12M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 12,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Pro monthly",
+          "price": "50",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "50",
+            "priceCurrency": "USD",
+            "billingDuration": "P1M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 1,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Pro yearly",
+          "price": "500",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "500",
+            "priceCurrency": "USD",
+            "billingDuration": "P12M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 12,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Pro monthly (Cameroon)",
+          "price": "30000",
+          "priceCurrency": "XAF",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "30000",
+            "priceCurrency": "XAF",
+            "billingDuration": "P1M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 1,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Pro yearly (Cameroon)",
+          "price": "300000",
+          "priceCurrency": "XAF",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "300000",
+            "priceCurrency": "XAF",
+            "billingDuration": "P12M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 12,
+              "unitCode": "MON"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://loungeos.app/retail-pos/#webpage",
+      "url": "https://loungeos.app/retail-pos/",
+      "name": "Retail POS for Shops & Mini-Markets, Works Offline | LoungeOS",
+      "description": "POS for shops and mini-markets: barcode scanning, stock alerts, customer tabs, mobile money and 58/80 mm receipts. Keeps selling offline on desktop.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://loungeos.app/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://loungeos.app/retail-pos/#breadcrumb"
+      },
+      "dateModified": "2026-11-11",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://loungeos.app/images/screens/loungeos-inventory-dashboard.webp"
+      },
+      "about": {
+        "@id": "https://loungeos.app/#software"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://loungeos.app/retail-pos/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://loungeos.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Retail & Shop POS",
+          "item": "https://loungeos.app/retail-pos/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://loungeos.app/retail-pos/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Which barcode scanners work with LoungeOS?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Any USB or Bluetooth scanner that types the code like a keyboard, which is most scanners sold for shops. Plug it in, open the till and scan.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I sell on credit to my regular customers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Yes. Choose Pay later at checkout and pick the customer. The Customer tabs page shows what each customer owes, and you record their payments when they come in.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many tills can I use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Starter covers 2 users on 2 devices, Business 5 users on 5 devices and Pro unlimited users on 10 or more devices. Every plan starts with a 14-day free trial with Business features. See <a href=\"https://loungeos.app/pricing/\">pricing<\/a>.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it work for a supermarket?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>For a mini-market that sells packaged goods by the unit, yes. For a supermarket that needs weighed items, expiry dates or batches, not yet.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use it on my phone?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Yes. Use the Android app or the <a href=\"https://app.loungeos.app\">web app<\/a> on any phone with internet. For the counter, a Windows or Mac till is better because it keeps selling offline.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "I use Loyverse today. How does LoungeOS compare?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>See <a href=\"https://loungeos.app/blog/loyverse-alternatives/\">Loyverse alternatives<\/a> for an honest comparison, including what each does better.<\/p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+    </script>
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+      (function (c, l, a, r, i, t, y) {
+        c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
+        t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", "x9n1mwb8c5");
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TNP53ZZW7K"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag("js", new Date());
+      gtag("config", "G-TNP53ZZW7K");
+    </script>
+    <!-- Usercentrics CMP -->
+    <script id="usercentrics-cmp" src="https://app.usercentrics.eu/browser-ui/latest/loader.js" data-settings-id="SSwfY4ZtHuL22V" async></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <nav class="navbar" id="navbar" aria-label="Main Navigation">
+      <div class="nav-content">
+        <div class="nav-left">
+          <a href="/" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 0.75rem;">
+            <img src="/images/logo/loungeos-logo.svg" alt="LoungeOS" width="148" height="26" class="nav-logo" />
+            <span class="nav-badge">POS &amp; Business</span>
+          </a>
+        </div>
+
+        <div class="nav-links" id="navLinks">
+          <a href="/">Home</a>
+          <a href="/features/">Features</a>
+          <div class="nav-dropdown">
+            <button type="button" class="nav-dropdown-toggle" aria-haspopup="true">Solutions <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+            <div class="nav-dropdown-menu">
+              <a href="/restaurant-pos/">Restaurants</a>
+              <a href="/bar-pos/">Bars</a>
+              <a href="/lounge-pos/">Lounges</a>
+              <a href="/nightclub-pos/">Nightclubs</a>
+              <a href="/hotel-pos/">Hotels</a>
+              <a href="/cafe-pos/">Cafés &amp; Fast Food</a>
+              <a href="/retail-pos/">Shops &amp; Mini-Markets</a>
+              <a href="/cameroon/">Cameroon</a>
+              <a href="/africa/">Africa</a>
+            </div>
+          </div>
+          <a href="/pricing/">Pricing</a>
+          <a href="/download/">Download</a>
+          <div class="nav-dropdown">
+            <button type="button" class="nav-dropdown-toggle" aria-haspopup="true">Resources <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+            <div class="nav-dropdown-menu">
+              <a href="/blog/">Blog</a>
+              <a href="/faq/">FAQ</a>
+              <a href="/knowledgebase.html">Knowledge Base</a>
+              <a href="/documentation.html">Documentation</a>
+              <a href="/about/">About</a>
+              <a href="/contact/">Contact</a>
+              <a href="/fr/">Français</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-cta" style="display: flex; align-items: center; gap: 1rem">
+          <div class="lang-selector">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 16px; height: 16px" aria-hidden="true"><circle cx="12" cy="12" r="10" /><line x1="2" y1="12" x2="22" y2="12" /><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" /></svg>
+            <select id="customLangSelect" aria-label="Select Language" onchange="changeLanguage(this.value)">
+              <option value="en" selected>English</option>
+              <option value="fr">Français</option>
+              <option value="es">Español</option>
+              <option value="de">Deutsch</option>
+              <option value="zh-CN">中文</option>
+              <option value="ar">العربية</option>
+              <option value="hi">हिन्दी</option>
+              <option value="pt">Português</option>
+              <option value="ru">Русский</option>
+              <option value="ja">日本語</option>
+            </select>
+          </div>
+          <a href="https://app.loungeos.app/login" class="btn btn-primary btn-sm" id="navCtaBtn">Start free trial</a>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+    <main id="main-content">
+      <header class="page-hero">
+        <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">›</span> <span aria-current="page">Retail & Shop POS</span></nav>
+        <p class="section-label">Retail & Shop POS</p>
+        <h1>A retail POS for shops, boutiques and mini-markets</h1>
+        <p class="lead">Scan the barcode, take cash or mobile money, print the receipt. LoungeOS keeps your stock count, tells you what is running low and remembers which customers owe you money, even when the internet is down.</p>
+        
+        <div class="hero-actions">
+          <a href="https://app.loungeos.app/login" class="btn btn-primary btn-lg">Start free trial <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg></a>
+          <a href="/pricing/" class="btn btn-secondary btn-lg">See pricing</a>
+        </div>
+        <p class="trust-line">14-day free trial · No payment up front · Sells offline on Windows and Mac</p>
+        <div class="page-hero-media"><img src="/images/screens/loungeos-inventory-dashboard.webp" srcset="/images/screens/loungeos-inventory-dashboard-800.webp 800w, /images/screens/loungeos-inventory-dashboard.webp 1600w" sizes="(max-width: 1100px) 100vw, 1100px" width="1600" height="861" alt="LoungeOS inventory dashboard with stock levels, low-stock items and stock value" fetchpriority="high" decoding="async" /></div>
+      </header>
+      <section class="content-section">
+        <div class="prose prose-wide">
+<p>A <strong>retail POS</strong> for a shop has three jobs: ring up a sale fast, keep the stock count right and show the owner what was sold and by whom. LoungeOS does all three for shops, boutiques, mini-markets, drinks depots and kiosks. When you choose <em>Shop or boutique</em>, <em>Supermarket or grocery</em>, <em>Hardware store</em> or <em>Wholesale</em> as your business type in the setup wizard, LoungeOS talks about <strong>products</strong> instead of a menu and turns off the restaurant parts you do not need, such as tables and the kitchen screen.</p>
+<h2 id="selling-at-the-counter">Selling at the counter</h2>
+<ul>
+<li><strong>Barcode scanning.</strong> Plug a USB barcode scanner into the till and scan a product to add it to the sale. You can also type the code in the search box and press Enter. Each barcode belongs to one product, so a code cannot be given to two items by mistake.</li>
+<li><strong>Search and photos.</strong> Find a product by name, or tap its picture on the touch screen. LoungeOS can find a free photo for a product for you, or you can upload your own.</li>
+<li><strong>Your payment methods.</strong> Cash with the change shown, MTN Mobile Money, Orange Money, card, bank transfer or any method you create, and one sale can be split between two methods. See <a href="/features/mobile-money-pos/">mobile money POS</a>.</li>
+<li><strong>Receipts and cash drawer.</strong> 58 mm or 80 mm thermal receipts, or a PDF. A receipt printer with a drawer port can open the cash drawer after each cash sale.</li>
+</ul>
+<h2 id="customer-tabs-sell-now-get-paid-later">Customer tabs: sell now, get paid later</h2>
+<p>Many shops sell on credit to regular customers. In LoungeOS you put the sale on the customer’s <strong>tab</strong> with <em>Pay later</em>. The sale counts on the day it was made, and the <em>Customer tabs</em> page shows what each customer owes. When they pay, you record the payment against their tab, so a notebook full of names is no longer needed.</p>
+<h2 id="stock-you-can-trust">Stock you can trust</h2>
+<ul>
+<li>Every product sold comes off the stock count, and every delivery, adjustment or loss is recorded as a stock movement with a name and a time.</li>
+<li><strong>Low-stock alerts</strong> tell you what to reorder before the shelf is empty, and products that run out are greyed out at the till.</li>
+<li>Keep your <strong>suppliers</strong> in one place and see the value of the stock you hold. More in <a href="/features/inventory-management/">inventory management</a>.</li>
+</ul>
+<h2 id="control-when-you-are-not-in-the-shop">Control when you are not in the shop</h2>
+<ul>
+<li>Each cashier has their own account, and on a shared till they switch with a quick PIN.</li>
+<li>Cancels, refunds, reopened sales and price changes need a manager or a manager’s PIN, and every action goes in the activity log. See <a href="/features/loss-prevention/">loss prevention</a>.</li>
+<li>The daily sales report shows the day’s sales and the money taken by each payment method. You can check it from anywhere in the <a href="https://app.loungeos.app">web app</a>.</li>
+</ul>
+<h2 id="works-when-the-power-or-internet-does-not">Works when the power or internet does not</h2>
+<p>The Windows and Mac apps keep selling without internet and sync when the connection comes back. A laptop till also rides out short power cuts on its battery. See <a href="/features/offline-pos/">offline POS</a>.</p>
+<div class="cta-box">
+<h2>Run your next service on LoungeOS</h2>
+<p>Create your account, answer the setup wizard and your business is ready on day one. Try it free for 14 days with Business features. No payment up front.</p>
+<div class="cta-actions">
+<a class="btn btn-primary btn-lg" href="https://app.loungeos.app/login">Start free trial</a>
+<a class="btn btn-secondary btn-lg" href="/download/">Download for Windows</a>
+</div>
+</div>
+<h2 id="what-loungeos-does-not-do-yet">What LoungeOS does not do yet</h2>
+<p>LoungeOS is a good fit for shops that sell items by the unit. It does not yet handle products sold by weight on a scale, or expiry dates and batch numbers. If you run a supermarket with a fresh counter or a pharmacy, <a href="/contact/">tell us</a> what you need before you choose.</p>
+<h2 id="frequently-asked-questions">Frequently asked questions</h2>
+<h3 id="which-barcode-scanners-work-with-loungeos">Which barcode scanners work with LoungeOS?</h3>
+<p>Any USB or Bluetooth scanner that types the code like a keyboard, which is most scanners sold for shops. Plug it in, open the till and scan.</p>
+<h3 id="can-i-sell-on-credit-to-my-regular-customers">Can I sell on credit to my regular customers?</h3>
+<p>Yes. Choose Pay later at checkout and pick the customer. The Customer tabs page shows what each customer owes, and you record their payments when they come in.</p>
+<h3 id="how-many-tills-can-i-use">How many tills can I use?</h3>
+<p>Starter covers 2 users on 2 devices, Business 5 users on 5 devices and Pro unlimited users on 10 or more devices. Every plan starts with a 14-day free trial with Business features. See <a href="/pricing/">pricing</a>.</p>
+<h3 id="does-it-work-for-a-supermarket">Does it work for a supermarket?</h3>
+<p>For a mini-market that sells packaged goods by the unit, yes. For a supermarket that needs weighed items, expiry dates or batches, not yet.</p>
+<h3 id="can-i-use-it-on-my-phone">Can I use it on my phone?</h3>
+<p>Yes. Use the Android app or the <a href="https://app.loungeos.app">web app</a> on any phone with internet. For the counter, a Windows or Mac till is better because it keeps selling offline.</p>
+<h3 id="i-use-loyverse-today-how-does-loungeos-compare">I use Loyverse today. How does LoungeOS compare?</h3>
+<p>See <a href="/blog/loyverse-alternatives/">Loyverse alternatives</a> for an honest comparison, including what each does better.</p>
+        </div>
+      </section>
+      <section style="padding: 0 1.5rem 1rem"><div class="cta-box">
+  <h2>Run your next service on LoungeOS</h2>
+  <p>Create your account, answer the setup wizard and your business is ready on day one. Try it free for 14 days with Business features. No payment up front.</p>
+  <div class="cta-actions">
+    <a class="btn btn-primary btn-lg" href="https://app.loungeos.app/login">Start free trial</a>
+    <a class="btn btn-secondary btn-lg" href="/download/">Download for Windows</a>
+  </div>
+</div></section>
+      <section class="related-section">
+        <h2 class="section-title">Explore more</h2>
+        <div class="card-grid">
+<a class="post-card" href="/features/inventory-management/">
+  <img src="/images/screens/loungeos-stock-items-800.webp" width="800" height="430" alt="LoungeOS stock items list with SKU, category, stock level, cost and status" loading="lazy" decoding="async" />
+  <div class="post-card-body">
+    <span class="tag">Inventory Management</span>
+    <h3>Inventory Management</h3>
+    <p>Stock levels, low-stock alerts, suppliers, waste and damage logging, CSV import and export.</p>
+    <span class="read-more">Learn more →</span>
+  </div>
+</a>
+<a class="post-card" href="/features/mobile-money-pos/">
+  <img src="/images/screens/loungeos-pos-order-screen-800.webp" width="800" height="430" alt="LoungeOS POS order summary with total ready to charge" loading="lazy" decoding="async" />
+  <div class="post-card-body">
+    <span class="tag">Payments &amp; Mobile Money</span>
+    <h3>Mobile Money &amp; Payments</h3>
+    <p>Create your own payment methods, MTN MoMo and Orange Money included. Record references and split one bill across methods.</p>
+    <span class="read-more">Learn more →</span>
+  </div>
+</a>
+<a class="post-card" href="/features/offline-pos/">
+  <img src="/images/screens/loungeos-pos-menu-grid-800.webp" width="800" height="430" alt="LoungeOS point of sale menu grid that keeps selling without internet" loading="lazy" decoding="async" />
+  <div class="post-card-body">
+    <span class="tag">Offline POS</span>
+    <h3>Offline POS</h3>
+    <p>Windows and Mac tills keep selling without internet, with phones on your Wi-Fi, and sync when the connection comes back.</p>
+    <span class="read-more">Learn more →</span>
+  </div>
+</a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-grid footer-grid-wide">
+        <div class="footer-brand">
+          <img src="/images/logo/loungeos-logo-white.svg" alt="LoungeOS" width="159" height="28" class="footer-logo" />
+          <p>Point of sale and business management for every business that sells. Made by <a href="https://sigalix.com">Sigalix</a>, built in Cameroon, used across Africa and beyond.</p>
+          <div class="footer-worldwide">
+            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Web, Windows, Mac &amp; Android</span>
+            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> English &amp; French</span>
+            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Sells offline on desktop</span>
+          </div>
+          <p class="footer-contact">
+            <a href="mailto:support@loungeos.app">support@loungeos.app</a><br />
+            <a href="mailto:info@sigalix.com">info@sigalix.com</a><br />
+            <a href="tel:+237679690703">+237 679 690 703</a>
+          </p>
+        </div>
+        <div class="footer-col">
+          <h3>Product</h3>
+          <a href="/features/">Features</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/download/">Download</a>
+          <a href="/features/offline-pos/">Offline POS</a>
+          <a href="/features/kitchen-display-system/">Kitchen Display System</a>
+          <a href="/features/inventory-management/">Inventory</a>
+          <a href="/features/restaurant-accounting/">Accounting</a>
+        </div>
+        <div class="footer-col">
+          <h3>Solutions</h3>
+          <a href="/restaurant-pos/">Restaurant POS</a>
+          <a href="/bar-pos/">Bar POS</a>
+          <a href="/lounge-pos/">Lounge POS</a>
+          <a href="/nightclub-pos/">Nightclub POS</a>
+          <a href="/hotel-pos/">Hotel POS</a>
+          <a href="/cafe-pos/">Café &amp; Fast Food POS</a>
+          <a href="/retail-pos/">Retail &amp; Shop POS</a>
+        </div>
+        <div class="footer-col">
+          <h3>Countries</h3>
+          <a href="/cameroon/">Cameroon</a>
+          <a href="/nigeria/">Nigeria</a>
+          <a href="/ghana/">Ghana</a>
+          <a href="/south-africa/">South Africa</a>
+          <a href="/africa/">Africa</a>
+          <a href="/fr/cameroun/">Cameroun (FR)</a>
+          <a href="/fr/cote-divoire/">Côte d'Ivoire (FR)</a>
+          <a href="/fr/senegal/">Sénégal (FR)</a>
+        </div>
+        <div class="footer-col">
+          <h3>Resources</h3>
+          <a href="/blog/">Blog</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/knowledgebase.html">Knowledge Base</a>
+          <a href="/documentation.html">Documentation</a>
+          <a href="/about/">About</a>
+          <a href="/contact/">Contact</a>
+          <a href="/privacy.html">Privacy Policy</a>
+          <a href="/terms.html">Terms of Service</a>
+          <a href="/accessibility.html">Accessibility</a>
+          <a href="/legal.html">Legal</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 LoungeOS. All rights reserved.</p>
+        <a href="https://app.loungeos.app/login" class="btn btn-outline-light btn-sm" id="footerCtaBtn">Start free trial <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg></a>
+      </div>
+    </footer>
+    <div id="google_translate_element" style="display: none"></div>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: "en", autoDisplay: false },
+          "google_translate_element",
+        );
+      }
+    </script>
+    <script defer type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script defer src="/app.js?v=d2dcb41900"></script>
+    <!-- Botpress Webchat -->
+    <script defer src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
+    <script defer src="https://files.bpcontent.cloud/2026/06/19/19/20260619193215-LONFMDIT.js"></script>
+  </body>
+</html>

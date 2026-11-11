@@ -3,7 +3,7 @@ url: /fr/senegal/
 type: region
 lang: fr
 title: "Logiciel de caisse restaurant et bar au Sénégal | LoungeOS"
-description: "Logiciel de caisse pour restaurants, dibiteries, lounges, hôtels et boutiques à Dakar et au Sénégal : dès 10 $ US par mois, Orange Money, Wave, TVA 18 %, stocks."
+description: "Logiciel de caisse pour restaurants, dibiteries, lounges, hôtels et boutiques à Dakar et au Sénégal : dès 10 $ US par mois, Orange Money, Wave, TVA."
 h1: "Logiciel de caisse pour restaurants, dibiteries et lounges au Sénégal"
 label: "LoungeOS au Sénégal"
 lead: "À Dakar, Saly ou Saint-Louis : un logiciel de caisse qui suit chaque article et chaque paiement, et dont les caisses Windows et Mac continuent de vendre quand internet est capricieux."

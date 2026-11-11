@@ -3,7 +3,7 @@ url: /faq/
 type: core
 faq_all: true
 title: "LoungeOS FAQ: Plans, Free Trial, Offline Use, Devices & Data"
-description: "Answers to common questions about LoungeOS 2.0: plans and the 14-day free trial, offline use, devices and platforms, Google sign-in, payments by Mobile Money, card or PayPal, and data safety."
+description: "Answers about LoungeOS: plans and the 14-day free trial, offline use, devices, Google sign-in, paying by Mobile Money or card, and data safety."
 h1: "Frequently asked questions"
 label: "FAQ"
 lead: "Straight answers about how LoungeOS works, what it costs, where it runs and how your data is protected."
@@ -106,7 +106,7 @@ Yes. Every plan starts with a 14-day free trial with Business features, and ther
 
 ### What is the difference between the plans?
 
-Starter covers the point of sale, inventory, receipts and daily reports for 2 users on 2 devices. Business adds expenses, accounting, shifts and cash control, weekly and monthly reports and email alerts, for 5 users on 5 devices. Pro gives unlimited users, 10 or more devices, priority support and advanced admin. Several branches and payroll are coming soon on Pro.
+Starter covers the point of sale, inventory, receipts and daily reports for 2 users on 2 devices. Business adds expenses, accounting, shifts and cash control (coming soon), weekly and monthly reports and email alerts (coming soon), for 5 users on 5 devices. Pro gives unlimited users, 10 or more devices, priority support and advanced admin. Several branches and payroll are coming soon on Pro.
 
 ### How do I pay?
 

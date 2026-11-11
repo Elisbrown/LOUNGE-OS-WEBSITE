@@ -3,7 +3,7 @@ url: /fr/logiciel-caisse-restaurant/
 type: solution
 lang: fr
 title: "Logiciel de caisse restaurant hors ligne | LoungeOS"
-description: "Logiciel de caisse pour restaurant : commandes à table sur téléphone, écran cuisine, stocks, contrôle des serveurs et comptabilité. Vend sans internet sur Windows et Mac."
+description: "Logiciel de caisse restaurant : commandes à table sur téléphone, écran cuisine, stocks, contrôle des serveurs et comptabilité. Vend sans internet."
 h1: "Logiciel de caisse restaurant : la salle et la cuisine synchronisées, avec ou sans internet"
 label: "Logiciel de caisse restaurant"
 lead: "Commandes prises à table sur téléphone, envoyées en cuisine en une seconde, additions réglées en espèces, carte ou Mobile Money. Et enfin une vision claire de votre coût matière et de votre marge."

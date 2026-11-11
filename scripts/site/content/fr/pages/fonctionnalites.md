@@ -3,7 +3,7 @@ url: /fr/fonctionnalites/
 type: core
 lang: fr
 title: "Fonctionnalités LoungeOS : caisse, écran cuisine, stocks"
-description: "Les fonctionnalités de LoungeOS : caisse, tables, écrans cuisine et bar, stocks, rôles et journal d'activité, Mobile Money et vos moyens de paiement, dépenses et comptabilité."
+description: "Fonctionnalités LoungeOS : caisse, tables, code-barres, écrans cuisine et bar, stocks, rôles, Mobile Money, ardoises clients, dépenses et comptabilité."
 h1: "Tout ce qu'il faut pour gérer les ventes, les stocks et la caisse, dans un seul logiciel"
 label: "Fonctionnalités"
 lead: "LoungeOS remplace la caisse enregistreuse, le carnet de bons, le cahier de stock et le tableur que votre comptable refait chaque mois."
@@ -15,7 +15,7 @@ alternates:
 related:
   - /fr/logiciel-caisse-restaurant/
   - /fr/logiciel-gestion-bar-lounge/
-  - /fr/tarifs/
+  - /fr/logiciel-caisse-boutique/
 ---
 
 LoungeOS est un logiciel de caisse et de gestion pour tous les commerces qui vendent : restaurants, bars, lounges, boîtes de nuit, cafés, hôtels, boutiques et supermarchés. Il fonctionne dans l'application web et dans les applications Windows, Mac et Android, avec un seul compte partout. Voici, module par module, ce qu'il fait.
@@ -46,6 +46,10 @@ Après 7 jours sans synchronisation, la caisse passe en lecture seule jusqu'à c
 - **Remises** en pourcentage ou en montant fixe, uniquement selon les règles que vous définissez
 - **Produits en rupture grisés automatiquement** : impossible de vendre ce que vous n'avez plus
 - **Reçus** sur imprimantes thermiques 58 mm et 80 mm, ou en PDF, avec votre logo et votre message, et un bouton d'impression sur chaque commande
+- **Lecture des codes-barres** avec une douchette USB ou Bluetooth, ou en tapant le code : idéal pour les [boutiques et supérettes](/fr/logiciel-caisse-boutique/)
+- **Partager, déplacer, payer plus tard** : addition partagée par article, à parts égales ou par montants, commande déplacée vers une autre table, vente mise sur l'ardoise d'un client et réglée plus tard
+- **Tiroir-caisse** ouvert depuis la caisse ou après chaque vente en espèces, via une imprimante avec port tiroir
+- **Validation par un responsable** pour les annulations, remboursements, commandes rouvertes et changements de prix
 
 ## Tables, salles et zones
 

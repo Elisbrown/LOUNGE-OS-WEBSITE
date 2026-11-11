@@ -2,7 +2,7 @@
 url: /blog/how-to-choose-a-restaurant-pos-system/
 type: blog
 title: "How to Choose a Restaurant POS System: 2026 Buyer's Checklist"
-description: "A practical checklist for choosing a restaurant POS: 12 questions to ask, how to calculate total cost of ownership, red flags in contracts, and a 2-week trial plan."
+description: "A practical checklist for choosing a restaurant POS: 12 questions to ask, total cost of ownership, contract red flags and a 2-week trial plan."
 h1: "How to choose a restaurant POS system: the 2026 buyer's checklist"
 category: "POS buying guides"
 lead: "The wrong POS costs you twice: once in fees, and again in lost sales, slow service and money you never see. Use this checklist to compare systems on what actually matters in your venue."

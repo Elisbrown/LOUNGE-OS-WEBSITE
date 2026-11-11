@@ -2,7 +2,7 @@
 url: /africa/
 type: region
 title: "Restaurant POS for Africa: Offline & Mobile Money | LoungeOS"
-description: "POS for restaurants, bars, lounges and shops, built in Africa. Keeps selling through internet cuts on Windows and Mac, and records MoMo, Orange Money and other wallets."
+description: "POS for restaurants, bars, lounges and shops, built in Africa. Sells through internet cuts on Windows and Mac and records MoMo, Orange Money and more."
 h1: "A restaurant POS built in Africa, for African conditions"
 label: "LoungeOS in Africa"
 lead: "Imported POS systems are designed for reliable broadband and card-first customers. LoungeOS is designed for what African restaurants, bars, lounges and shops actually face: outages, mobile money and cash that needs watching."

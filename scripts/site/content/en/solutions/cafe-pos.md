@@ -2,7 +2,7 @@
 url: /cafe-pos/
 type: solution
 title: "Café, Snack Bar & Fast-Food POS System | LoungeOS"
-description: "A simple POS for cafés, snack bars and fast food: quick counter orders, packaging stock and mobile money on one laptop or tablet. Sells offline on Windows and Mac."
+description: "A simple POS for cafés, snack bars and fast food: quick counter orders, packaging stock and mobile money on one laptop or tablet. Sells offline."
 h1: "A simple, fast POS for cafés, snack bars and fast food"
 label: "Café & Fast Food POS"
 lead: "Counter service needs speed, not complexity. LoungeOS runs on a single laptop or tablet setup, rings up orders in seconds and tracks the cups, boxes and bottles that quietly eat your margin."

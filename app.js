@@ -479,6 +479,14 @@
 
 /* ---------- 8. CUSTOM GOOGLE TRANSLATE ---------- */
 window.changeLanguage = function(lang) {
+    if (lang === 'fr') {
+        var fr = document.querySelector('link[rel="alternate"][hreflang="fr"]');
+        if (fr && fr.href && fr.href !== location.href) { location.href = fr.href; return; }
+    }
+    if (lang === 'en' && document.documentElement.lang === 'fr') {
+        var en = document.querySelector('link[rel="alternate"][hreflang="en"]');
+        if (en && en.href) { location.href = en.href; return; }
+    }
     var selectField = document.querySelector(".goog-te-combo");
     if (selectField) {
         selectField.value = lang;
@@ -529,46 +537,38 @@ var gtBannerObserver = new MutationObserver(function() {
 });
 gtBannerObserver.observe(document.documentElement, { childList: true, subtree: true, attributes: true, attributeFilter: ['class', 'style'] });
 
-// --- Clerk Authentication Session Management ---
-(function() {
-  const clerkPubKey = 'pk_test_cmlnaHQtbWFybW9zZXQtMjYuY2xlcmsuYWNjb3VudHMuZGV2JA';
-  
-  const script = document.createElement('script');
-  script.setAttribute('data-clerk-publishable-key', clerkPubKey);
-  script.async = true;
-  script.src = 'https://cdn.jsdelivr.net/npm/@clerk/clerk-js@latest/dist/clerk.browser.js';
-  script.crossOrigin = 'anonymous';
-  
-  script.onload = async () => {
-    try {
-      await window.Clerk.load();
-      if (window.Clerk.user) {
-        // User is signed in, update all CTA buttons to "Go to Dashboard"
-        const ctas = document.querySelectorAll('a.btn, button.btn, a#navCtaBtn, a#heroCtaBtn, a#footerCtaBtn');
-        ctas.forEach(btn => {
-          const text = btn.innerText.toLowerCase();
-          if (text.includes('start free trial') || text.includes('get started') || text.includes('sign up')) {
-            // Keep the icon if it exists
-            const icon = btn.querySelector('svg');
-            btn.innerText = 'Go to Dashboard';
-            if (icon) btn.appendChild(icon);
-            
-            // Only update href if it's an anchor
-            if (btn.tagName === 'A') {
-              btn.href = 'https://account.loungeos.app/dashboard';
-            }
-          }
-        });
-      }
-    } catch (err) {
-      console.error('Error loading Clerk:', err);
-    }
-  };
-  
-  function loadClerk() { document.head.appendChild(script); }
-  if (document.readyState === 'complete') {
-    setTimeout(loadClerk, 1500);
-  } else {
-    window.addEventListener('load', function () { setTimeout(loadClerk, 1500); });
+// --- Lead tracking ---
+// Sends a Google Analytics event for each step towards a customer: trial and
+// sign-in clicks, app downloads, and contact clicks (email, phone, WhatsApp).
+// Mark them as key events in GA4 (Admin > Events) to see them as conversions.
+(function () {
+  function send(name, params) {
+    try { if (typeof window.gtag === 'function') window.gtag('event', name, params); } catch (e) {}
   }
+  function where(a) {
+    var box = a.closest('section[id], nav, footer, header');
+    if (!box) return 'page';
+    return box.id || box.tagName.toLowerCase();
+  }
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href]');
+    if (!a) return;
+    var href = a.getAttribute('href') || '';
+    var base = { link_text: (a.textContent || '').trim().slice(0, 60), page_path: location.pathname, placement: where(a) };
+    if (/^https:\/\/app\.loungeos\.app/.test(href)) {
+      send('start_trial_click', base);
+      send('generate_lead', Object.assign({ method: 'trial' }, base));
+    } else if (/releases\/(latest\/)?download\//.test(href)) {
+      var file = href.split('/').pop();
+      send('file_download', Object.assign({ file_name: file, platform: /\.exe$/.test(file) ? 'windows' : /\.dmg$/.test(file) ? 'mac' : /\.apk$/.test(file) ? 'android' : 'other' }, base));
+    } else if (/^mailto:/.test(href)) {
+      send('contact_click', Object.assign({ method: 'email', contact: href.slice(7).split('?')[0] }, base));
+    } else if (/^tel:/.test(href)) {
+      send('contact_click', Object.assign({ method: 'phone' }, base));
+    } else if (/^https:\/\/(wa\.me|api\.whatsapp\.com)/.test(href)) {
+      send('contact_click', Object.assign({ method: 'whatsapp' }, base));
+    } else if (/^https:\/\/account\.loungeos\.app/.test(href)) {
+      send('account_click', base);
+    }
+  }, true);
 })();

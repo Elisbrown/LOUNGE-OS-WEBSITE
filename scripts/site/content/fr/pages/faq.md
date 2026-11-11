@@ -4,7 +4,7 @@ type: core
 lang: fr
 faq_all: true
 title: "FAQ LoungeOS : formules, essai gratuit, hors ligne, appareils"
-description: "Questions fréquentes sur LoungeOS 2.0 : formules et essai gratuit de 14 jours, fonctionnement sans internet, appareils, connexion avec Google, paiement par Mobile Money, carte ou PayPal, sécurité des données."
+description: "Questions sur LoungeOS : formules et essai gratuit de 14 jours, usage sans internet, appareils, connexion Google, paiement Mobile Money ou carte, données."
 h1: "Questions fréquentes"
 label: "FAQ"
 lead: "Des réponses claires sur le fonctionnement de LoungeOS, son prix, les appareils compatibles et la protection de vos données."
@@ -98,7 +98,7 @@ Oui. Chaque formule commence par un essai gratuit de 14 jours avec les fonctionn
 
 ### Quelle est la différence entre les formules ?
 
-Starter couvre la caisse, les stocks, les reçus et les rapports journaliers pour 2 utilisateurs sur 2 appareils. Business ajoute les dépenses, la comptabilité, les services et le contrôle de caisse, les rapports hebdomadaires et mensuels et les alertes par e-mail, pour 5 utilisateurs sur 5 appareils. Pro offre des utilisateurs illimités, 10 appareils et plus, un support prioritaire et l'administration avancée. La gestion de plusieurs établissements et la paie arrivent bientôt sur Pro.
+Starter couvre la caisse, les stocks, les reçus et les rapports journaliers pour 2 utilisateurs sur 2 appareils. Business ajoute les dépenses, la comptabilité, les services et le contrôle de caisse (bientôt disponible), les rapports hebdomadaires et mensuels et les alertes par e-mail (bientôt disponible), pour 5 utilisateurs sur 5 appareils. Pro offre des utilisateurs illimités, 10 appareils et plus, un support prioritaire et l'administration avancée. La gestion de plusieurs établissements et la paie arrivent bientôt sur Pro.
 
 ### Comment payer ?
 

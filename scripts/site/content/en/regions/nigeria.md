@@ -2,7 +2,7 @@
 url: /nigeria/
 type: region
 title: "Restaurant & Bar POS Software in Nigeria | LoungeOS"
-description: "Restaurant and bar POS for Lagos, Abuja and all of Nigeria. From US$10 a month, transfer reference tracking, 7.5% VAT, and tills that keep selling through power cuts."
+description: "Restaurant and bar POS for Lagos, Abuja and all of Nigeria. From US$10 a month, transfer references, 7.5% VAT and tills that sell through power cuts."
 h1: "Restaurant and bar POS for Nigeria, built for power cuts"
 label: "LoungeOS in Nigeria"
 lead: "Keep orders moving when the grid goes and the generator kicks in. Track every transfer reference, and see exactly where your naira went at the end of the night."

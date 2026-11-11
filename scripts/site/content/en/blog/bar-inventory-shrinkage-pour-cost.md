@@ -2,7 +2,7 @@
 url: /blog/bar-inventory-shrinkage-pour-cost/
 type: blog
 title: "Bar Inventory Shrinkage & Pour Cost: Measure and Cut Losses"
-description: "Calculate pour cost and bar shrinkage step by step, compare with industry benchmarks, find where bottles disappear, and set up a weekly count that stops the leak."
+description: "Calculate pour cost and bar shrinkage step by step, compare with benchmarks, find where bottles disappear and set up a weekly count that stops the leak."
 h1: "Bar inventory shrinkage and pour cost: how to measure them and stop the leak"
 category: "Loss prevention"
 lead: "Bars commonly lose a large slice of their beverage stock to over-pouring, breakage, freebies and theft, and most owners only feel it as 'the bar isn't making what it should'. Two numbers turn that feeling into facts: pour cost and shrinkage."

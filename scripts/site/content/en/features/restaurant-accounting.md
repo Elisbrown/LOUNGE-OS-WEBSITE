@@ -2,7 +2,7 @@
 url: /features/restaurant-accounting/
 type: feature
 title: "Restaurant Accounting Software: P&L & Balance Sheet | LoungeOS"
-description: "Record expenses in your own categories, turn POS sales and stock purchases into balanced double-entry journals, then get a P&L, balance sheet and cash-flow statement as PDF or CSV."
+description: "Record expenses in your own categories, turn sales and stock purchases into double-entry journals, and get a P&L, balance sheet and cash flow."
 h1: "Restaurant accounting built into your POS: P&L, balance sheet and cash flow"
 label: "Accounting"
 lead: "Stop rebuilding your books from receipts at the end of the month. LoungeOS turns every paid order and every stock purchase into balanced journal entries, then produces the three statements your accountant and your bank ask for."

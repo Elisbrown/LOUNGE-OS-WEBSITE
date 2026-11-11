@@ -47,9 +47,9 @@ The Windows and Mac apps also keep the business's data on the computer, keep sel
 | Point of sale, inventory and receipts | ✓ | ✓ | ✓ |
 | Daily reports | ✓ | ✓ | ✓ |
 | [Expenses and accounting](/features/restaurant-accounting/) | | ✓ | ✓ |
-| Shifts and cash control | | ✓ | ✓ |
+| Shifts and cash control (coming soon) | | ✓ | ✓ |
 | Weekly and monthly reports | | ✓ | ✓ |
-| Email alerts | | ✓ | ✓ |
+| Email alerts (coming soon) | | ✓ | ✓ |
 | Priority support | | | ✓ |
 | Advanced admin | | | ✓ |
 | Several branches | | | Coming soon |
@@ -95,7 +95,7 @@ Yes. Every plan starts with a 14-day free trial with Business features, and ther
 
 ### Which plan should I choose?
 
-Starter fits 2 users on 2 devices who need the point of sale, inventory, receipts and daily reports. Business adds expenses, accounting, shifts and cash control, weekly and monthly reports and email alerts for 5 users on 5 devices. Pro is for larger teams: unlimited users, 10 or more devices, priority support and advanced admin.
+Starter fits 2 users on 2 devices who need the point of sale, inventory, receipts and daily reports. Business adds expenses, accounting, shifts and cash control (coming soon), weekly and monthly reports and email alerts (coming soon) for 5 users on 5 devices. Pro is for larger teams: unlimited users, 10 or more devices, priority support and advanced admin.
 
 ### Why do I see prices in FCFA or in US$?
 

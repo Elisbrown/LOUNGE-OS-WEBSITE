@@ -47,9 +47,9 @@ Les applications Windows et Mac gardent aussi les données de l'entreprise sur l
 | Caisse, stocks et reçus | ✓ | ✓ | ✓ |
 | Rapports journaliers | ✓ | ✓ | ✓ |
 | Dépenses et comptabilité | | ✓ | ✓ |
-| Services (shifts) et contrôle de caisse | | ✓ | ✓ |
+| Services (shifts) et contrôle de caisse (bientôt disponible) | | ✓ | ✓ |
 | Rapports hebdomadaires et mensuels | | ✓ | ✓ |
-| Alertes par e-mail | | ✓ | ✓ |
+| Alertes par e-mail (bientôt disponible) | | ✓ | ✓ |
 | Support prioritaire | | | ✓ |
 | Administration avancée | | | ✓ |
 | Plusieurs établissements | | | Bientôt disponible |
@@ -91,7 +91,7 @@ Oui. Chaque formule commence par un essai gratuit de 14 jours avec les fonctionn
 
 ### Quelle formule choisir ?
 
-Starter convient à 2 utilisateurs sur 2 appareils qui ont besoin de la caisse, des stocks, des reçus et des rapports journaliers. Business ajoute les dépenses, la comptabilité, les services et le contrôle de caisse, les rapports hebdomadaires et mensuels et les alertes par e-mail, pour 5 utilisateurs sur 5 appareils. Pro s'adresse aux équipes plus grandes : utilisateurs illimités, 10 appareils et plus, support prioritaire et administration avancée.
+Starter convient à 2 utilisateurs sur 2 appareils qui ont besoin de la caisse, des stocks, des reçus et des rapports journaliers. Business ajoute les dépenses, la comptabilité, les services et le contrôle de caisse (bientôt disponible), les rapports hebdomadaires et mensuels et les alertes par e-mail (bientôt disponible), pour 5 utilisateurs sur 5 appareils. Pro s'adresse aux équipes plus grandes : utilisateurs illimités, 10 appareils et plus, support prioritaire et administration avancée.
 
 ### Pourquoi les prix s'affichent-ils en FCFA ou en dollars US ?
 

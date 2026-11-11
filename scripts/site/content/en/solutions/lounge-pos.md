@@ -2,7 +2,7 @@
 url: /lounge-pos/
 type: solution
 title: "Lounge POS & Lounge Management Software | LoungeOS"
-description: "Lounge management software for VIP areas, bottle sales, events and late-night cash control: POS, bar display, stock and audit log, with offline selling on Windows and Mac."
+description: "Lounge management software for VIP areas, bottle sales and events: POS, bar screen, stock and audit log, selling offline on Windows and Mac."
 h1: "Lounge management software, built by name and by design for lounges"
 label: "Lounge POS"
 lead: "Lounges mix restaurant service, bar volume and VIP expectations, often until 3 a.m. LoungeOS gives you the floor plan, bottle-level stock, event tools and night-long accountability a lounge needs."

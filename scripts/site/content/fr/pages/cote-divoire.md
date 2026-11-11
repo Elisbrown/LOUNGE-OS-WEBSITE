@@ -2,7 +2,7 @@
 url: /fr/cote-divoire/
 type: region
 lang: fr
-title: "Logiciel de caisse maquis et restaurant en Côte d'Ivoire | LoungeOS"
+title: "Logiciel caisse maquis et restaurant Côte d'Ivoire | LoungeOS"
 description: "Logiciel de caisse pour restaurants, maquis, lounges et boutiques à Abidjan et en Côte d'Ivoire : dès 10 $ US par mois, Orange Money, MTN MoMo, Wave, TVA 18 %."
 h1: "Logiciel de caisse pour restaurants, maquis et lounges en Côte d'Ivoire"
 label: "LoungeOS en Côte d'Ivoire"

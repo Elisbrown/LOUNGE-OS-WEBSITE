@@ -2,7 +2,7 @@
 url: /features/loss-prevention/
 type: feature
 title: "Restaurant Theft Prevention & POS Audit Log | LoungeOS"
-description: "Stop voids, fake cancellations and cash leaks. LoungeOS has staff roles and permissions, manager-only edits, mandatory cancellation reasons and a searchable activity log."
+description: "Stop voids, fake cancellations and cash leaks with staff roles, manager approval for refunds and price changes, cancel reasons and an activity log."
 h1: "Stop the slow leak: staff permissions and an audit trail for every action"
 label: "Loss Prevention"
 lead: "Most restaurant theft isn't dramatic. It's an item deleted after it was served, a discount nobody approved, a bottle that went missing. LoungeOS makes each of those actions visible, attributable and, where it matters, impossible without a manager."

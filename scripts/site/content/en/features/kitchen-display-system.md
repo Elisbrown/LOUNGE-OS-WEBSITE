@@ -2,7 +2,7 @@
 url: /features/kitchen-display-system/
 type: feature
 title: "Kitchen Display System (KDS) for Restaurants & Bars | LoungeOS"
-description: "Replace paper tickets with kitchen and bar screens. Food goes to the kitchen, drinks to the bar, with alerts when orders are ready. Keeps working offline on Windows and Mac."
+description: "Replace paper tickets with kitchen and bar screens. Food goes to the kitchen, drinks to the bar, with alerts when orders are ready. Works offline."
 h1: "Kitchen and bar display screens that end lost tickets"
 label: "Kitchen Display System"
 lead: "Every order splits itself in two. Food goes to the kitchen screen, drinks go to the bar screen, and the waiter hears when it's ready. No handwriting, no running, no lost paper."

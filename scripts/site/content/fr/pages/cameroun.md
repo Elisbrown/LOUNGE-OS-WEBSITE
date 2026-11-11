@@ -3,7 +3,7 @@ url: /fr/cameroun/
 type: region
 lang: fr
 title: "Logiciel de caisse restaurant et bar au Cameroun | LoungeOS"
-description: "Logiciel de caisse camerounais pour restaurants, snack-bars, lounges, hôtels et boutiques à Douala, Yaoundé et partout au Cameroun : dès 6 000 FCFA par mois, MTN MoMo, Orange Money."
+description: "Logiciel de caisse pour restaurants, snack-bars, lounges, hôtels et boutiques à Douala, Yaoundé et partout au Cameroun : dès 6 000 FCFA par mois."
 h1: "Le logiciel de caisse et de gestion conçu au Cameroun, pour le Cameroun"
 label: "LoungeOS au Cameroun"
 lead: "Prix en FCFA, MTN MoMo et Orange Money, application en français et en anglais, et des caisses Windows et Mac qui continuent de vendre pendant les coupures d'internet et les délestages."
@@ -68,7 +68,7 @@ LoungeOS équipe des établissements dans toutes les villes du pays : **Douala**
 | Business (la plus choisie) | 15 000 FCFA | 150 000 FCFA | 5 utilisateurs, 5 appareils |
 | Pro | 30 000 FCFA | 300 000 FCFA | Utilisateurs illimités, 10 appareils et plus |
 
-Chaque formule commence par un **essai gratuit de 14 jours avec les fonctionnalités Business**, sans paiement à l'avance. Starter comprend la caisse, les stocks, les reçus et les rapports journaliers. Business ajoute les dépenses, la comptabilité, les services (shifts) et le contrôle de caisse, les rapports hebdomadaires et mensuels et les alertes par e-mail. Pro ajoute le support prioritaire et l'administration avancée ; la gestion de plusieurs établissements et la paie arrivent bientôt.
+Chaque formule commence par un **essai gratuit de 14 jours avec les fonctionnalités Business**, sans paiement à l'avance. Starter comprend la caisse, les stocks, les reçus et les rapports journaliers. Business ajoute les dépenses, la comptabilité, les services (shifts) et le contrôle de caisse (bientôt disponible), les rapports hebdomadaires et mensuels et les alertes par e-mail (bientôt disponible). Pro ajoute le support prioritaire et l'administration avancée ; la gestion de plusieurs établissements et la paie arrivent bientôt.
 
 Vous payez sur [account.loungeos.app](https://account.loungeos.app) par MTN Mobile Money, Orange Money, carte ou PayPal, et les factures et reçus vous sont envoyés par e-mail. Voir les [tarifs](/fr/tarifs/).
 

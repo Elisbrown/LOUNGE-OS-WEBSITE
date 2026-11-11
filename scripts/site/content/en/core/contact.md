@@ -3,7 +3,7 @@ url: /contact/
 type: core
 schema_type: ContactPage
 title: "Contact LoungeOS: Sales, Support & Billing"
-description: "Talk to the LoungeOS team at Sigalix: questions before you start, help with setup or a billing question. Email and phone in English and French, based in Cameroon."
+description: "Talk to the LoungeOS team at Sigalix about plans, demos, setup or billing. Email and phone in English and French, based in Cameroon."
 h1: "Talk to the LoungeOS team"
 label: "Contact"
 lead: "Questions before you start, help with setup, or a billing question. Write or call us in English or French."

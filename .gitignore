@@ -4,3 +4,8 @@ DOCUMENTATION_AND_KB.md
 /Lounge-os-activator-main
 __pycache__/
 *.pyc
+
+# SEO skills installed per session (see seo/README.md)
+.agents/
+.claude/
+skills-lock.json

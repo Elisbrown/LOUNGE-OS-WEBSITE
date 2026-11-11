@@ -2,7 +2,7 @@
 url: /download/
 type: core
 title: "Download LoungeOS 2.0 for Windows, Mac and Android"
-description: "Download LoungeOS 2.0 for Windows 10 and 11, Mac (Apple Silicon and Intel) and Android, or open the web app. Requirements, installation, sign-in and offline use."
+description: "Download LoungeOS for Windows 10 and 11, Mac (Apple Silicon and Intel) and Android, or open the web app. Requirements, setup, sign-in and offline use."
 h1: "Download LoungeOS for Windows, Mac and Android"
 label: "Download · Version 2.0"
 lead: "Install LoungeOS 2.0 on Windows, Mac or Android, or open the web app in any modern browser. Sign in with your LoungeOS account and the setup wizard gets your business ready on day one."

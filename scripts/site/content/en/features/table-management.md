@@ -2,7 +2,7 @@
 url: /features/table-management/
 type: feature
 title: "Restaurant Table & Floor Management Software | LoungeOS"
-description: "Live table status, floors and VIP areas, waiter sections, split and merge bills. LoungeOS table management keeps the floor organised during the rush, online or offline."
+description: "Live table status, floors and VIP areas, split bills by item or share, move orders between tables. Keeps the floor organised, online or offline."
 h1: "Table and floor management: see every table, every section, at a glance"
 label: "Table Management"
 lead: "Green, red or orange: the whole room in one view. Organise floors and VIP areas, assign waiters to sections, then split or merge bills when guests change their plans."
