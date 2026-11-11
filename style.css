@@ -3071,3 +3071,5 @@ body.menu-open .locale-banner {
   body:has(.locale-banner) .wa-float { bottom: 5.5rem; }
 }
 @media print { .wa-float { display: none; } }
+/* Keep the footer's last row clear of the WhatsApp button */
+.footer { padding-bottom: 6rem; }
