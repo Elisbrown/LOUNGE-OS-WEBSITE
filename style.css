@@ -3126,3 +3126,4 @@ body.menu-open .locale-banner {
 .prose .story-list figure img { border: 0; border-radius: 0; }
 .prose .story-list h3 { margin-top: 0; }
 .prose .story-list .story-chapter { gap: 2rem; }
+.hero-image-container.hero-devices .hero-image { box-shadow: none; border: 0; border-radius: 0; background: none; }

@@ -43,7 +43,7 @@ Create your account at [app.loungeos.app](https://app.loungeos.app/login) with y
 - **Mobile money.** Create **MTN Mobile Money** and **Orange Money** payment methods, or let the setup wizard create them. At checkout the cashier picks one and enters the reference from the confirmation SMS. At closing, compare the totals with your merchant wallet balances.
 - **Accounting.** On the Business and Pro plans, LoungeOS records expenses and produces a P&L, balance sheet and cash-flow statement. Your accountant can map the accounts to the **SYSCOHADA** chart for statutory filings.
 
-[[figure:loungeos-currency-settings|LoungeOS financial settings with FCFA (XAF) as the currency and other currencies available|Choose FCFA (XAF) as your currency. USD, EUR, GBP, NGN and GHS are also built in.]]
+[[figure:loungeos-currency-settings|LoungeOS payment methods with Cash, MTN Mobile Money, Orange Money, Card and Bank transfer, each with an Ask for a reference option|Cash, MTN Mobile Money and Orange Money are ready to use, with amounts in FCFA (XAF). USD, EUR, GBP, NGN and GHS are also built in.]]
 
 ## Built for power cuts and internet outages
 

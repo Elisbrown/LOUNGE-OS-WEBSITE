@@ -51,7 +51,7 @@ Waiters are **assigned to floors** and only see their own tables. Sessions **log
 
 When a waiter, chef or bartender cancels an order, LoungeOS asks *why*: customer left, input error, out of stock, or another reason. The answer is stored with the user and the time. Over a month, you will see who cancels the most and whether those cancellations match busy cash shifts.
 
-[[figure:loungeos-cancel-order-reason|LoungeOS cancel order dialog asking for a reason such as out of stock, customer changed mind or wrong entry|Cancellations require a reason, which is stored in the activity log.]]
+[[figure:loungeos-cancel-order-reason|LoungeOS cancel order dialog asking for a reason such as out of stock, customer changed mind, mistake entry or long wait|Cancellations require a reason, which is stored in the activity log.]]
 
 ## The activity log: who did what, and when
 
