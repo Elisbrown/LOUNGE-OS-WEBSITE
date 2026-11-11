@@ -2,7 +2,7 @@
 url: /ghana/
 type: region
 title: "Restaurant & Bar POS Software in Ghana | LoungeOS"
-description: "Restaurant and bar POS for Accra, Kumasi and all of Ghana. From US$10 a month, MTN MoMo payment records, VAT and levies, and tills that keep selling during dumsor."
+description: "Restaurant and bar POS for Accra, Kumasi and all of Ghana. From US$10 a month, MTN MoMo records, VAT and levies, and tills that sell during dumsor."
 h1: "Restaurant and bar POS for Ghana, ready for dumsor"
 label: "LoungeOS in Ghana"
 lead: "Record MTN MoMo payments with their references, keep selling when the lights go off, and know your real margins on every drink and dish."

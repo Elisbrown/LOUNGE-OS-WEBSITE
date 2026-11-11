@@ -1,0 +1,3 @@
+# Change log
+
+- 2026-11-11: Setup run. Added seo/ state. Marked shifts and cash control and email alerts "coming soon" on every page (not built yet). Added barcode scanning, split/move/pay later, cash drawer, kitchen/bar tickets and manager approval to the homepage and features pages. New page /retail-pos/ and /fr/logiciel-caisse-boutique/. Trimmed 33 meta descriptions and 4 titles to fit search results. GA4 events for trial, download and contact clicks. Removed the old Clerk test script from every page. French in the language menu now opens the real French page. Pricing heading fixed. Replaced the unverified homepage testimonials (owner confirmed they were not real) with a factual "Why owners switch" section.

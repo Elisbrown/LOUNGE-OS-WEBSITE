@@ -2,7 +2,7 @@
 url: /restaurant-pos/
 type: solution
 title: "Restaurant POS System That Works Offline | LoungeOS"
-description: "An offline restaurant POS with table ordering, kitchen display, inventory, staff permissions and accounting. Use your own computers, phones and tablets. 14-day free trial."
+description: "Offline restaurant POS with table orders, kitchen display, inventory, staff permissions and accounting on your own devices. 14-day free trial."
 h1: "The restaurant POS system that keeps the dining room and kitchen in sync, with or without internet"
 label: "Restaurant POS"
 lead: "Take orders at the table on any phone, send them to the kitchen screen instantly, close bills in cash, card or mobile money, and see your food cost and profit without a spreadsheet."

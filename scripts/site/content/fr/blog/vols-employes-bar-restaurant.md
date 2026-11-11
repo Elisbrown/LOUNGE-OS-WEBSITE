@@ -2,7 +2,7 @@
 url: /fr/blog/vols-employes-bar-restaurant/
 type: blog
 lang: fr
-title: "Vols des employés au bar ou au restaurant : 10 techniques et parades"
+title: "Vols des employés au bar ou restaurant : 10 techniques et parades"
 description: "Comment les employés volent dans les bars, restaurants et lounges (annulations, sous-facturation, tournées offertes, faux Mobile Money) et comment l'empêcher."
 h1: "Vols des employés dans un bar ou un restaurant : 10 techniques courantes et comment les arrêter"
 category: "Prévention des pertes"

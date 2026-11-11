@@ -2,8 +2,8 @@
 url: /about/
 type: core
 schema_type: AboutPage
-title: "About LoungeOS: POS & Business Software Made by Sigalix in Cameroon"
-description: "LoungeOS makes point of sale and business management software for every business that sells. Made by Sigalix in Cameroon. Learn who we are, why we built it and how to reach us."
+title: "About LoungeOS: POS Software Made by Sigalix in Cameroon"
+description: "LoungeOS makes POS and business management software for every business that sells. Made by Sigalix in Cameroon. Who we are and why we built it."
 h1: "We build business software for places where the internet can't be taken for granted"
 label: "About LoungeOS"
 lead: "LoungeOS was built in Cameroon for businesses that lose money to two problems most POS systems ignore: unreliable connectivity and unaccountable cash. It is made for restaurants, bars, cafés, hotels, shops, supermarkets and every other business that sells."

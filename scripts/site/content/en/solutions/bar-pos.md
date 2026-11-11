@@ -2,7 +2,7 @@
 url: /bar-pos/
 type: solution
 title: "Bar POS System With Stock Control & Bar Display | LoungeOS"
-description: "A fast bar POS that tracks every bottle and crate, sends drink orders to a bar display, controls free drinks and discounts, and keeps selling offline on Windows and Mac."
+description: "A fast bar POS that tracks every bottle and crate, sends drinks to a bar screen, controls free drinks and discounts, and sells offline on Windows and Mac."
 h1: "A bar POS that counts every bottle and every franc"
 label: "Bar POS"
 lead: "Bars lose money in small amounts: a free round, a bottle that breaks and is never recorded, a sale rung up for less. LoungeOS speeds up service at the bar and makes those small losses visible."

@@ -2,7 +2,7 @@
 url: /blog/what-is-a-kitchen-display-system/
 type: blog
 title: "What Is a Kitchen Display System (KDS)? Benefits, Setup & Costs"
-description: "A kitchen display system replaces paper tickets with screens. Learn how a KDS works, its benefits, what hardware it needs, how routing works and how to set one up."
+description: "A kitchen display system replaces paper tickets with screens. How a KDS works, its benefits, the hardware it needs, order routing and setup."
 h1: "What is a kitchen display system (KDS), and does your restaurant need one?"
 category: "Operations"
 lead: "A kitchen display system puts orders on a screen instead of paper. It sounds like a small change. In practice it changes how fast, accurate and accountable your kitchen is."

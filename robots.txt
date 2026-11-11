@@ -21,6 +21,7 @@ User-agent: Meta-ExternalAgent
 User-agent: CCBot
 Allow: /
 Disallow: /scripts/
+Disallow: /seo/
 
 Sitemap: https://loungeos.app/sitemap.xml
 Sitemap: https://loungeos.app/blog/feed.xml

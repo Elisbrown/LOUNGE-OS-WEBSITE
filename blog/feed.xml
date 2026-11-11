@@ -6,9 +6,9 @@
     <atom:link href="https://loungeos.app/blog/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Guides on restaurant, bar and lounge POS systems, loss prevention, inventory, accounting and running hospitality businesses in Africa.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 07 Nov 2026 08:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 08:00:00 +0000</lastBuildDate>
     <item>
-      <title>Vols des employés au bar ou au restaurant : 10 techniques et parades</title>
+      <title>Vols des employés au bar ou restaurant : 10 techniques et parades</title>
       <link>https://loungeos.app/fr/blog/vols-employes-bar-restaurant/</link>
       <guid isPermaLink="true">https://loungeos.app/fr/blog/vols-employes-bar-restaurant/</guid>
       <description>Comment les employés volent dans les bars, restaurants et lounges (annulations, sous-facturation, tournées offertes, faux Mobile Money) et comment l'empêcher.</description>
@@ -35,7 +35,7 @@
       <title>What Is a Kitchen Display System (KDS)? Benefits, Setup &amp; Costs</title>
       <link>https://loungeos.app/blog/what-is-a-kitchen-display-system/</link>
       <guid isPermaLink="true">https://loungeos.app/blog/what-is-a-kitchen-display-system/</guid>
-      <description>A kitchen display system replaces paper tickets with screens. Learn how a KDS works, its benefits, what hardware it needs, how routing works and how to set one up.</description>
+      <description>A kitchen display system replaces paper tickets with screens. How a KDS works, its benefits, the hardware it needs, order routing and setup.</description>
       <pubDate>Thu, 08 Oct 2026 08:00:00 +0000</pubDate>
       <dc:language>en</dc:language>
     </item>
@@ -99,7 +99,7 @@
       <title>POS Permissions for Restaurants: Voids, Discounts &amp; Staff Roles</title>
       <link>https://loungeos.app/blog/pos-user-permissions-voids-discounts/</link>
       <guid isPermaLink="true">https://loungeos.app/blog/pos-user-permissions-voids-discounts/</guid>
-      <description>How to set POS user permissions in a restaurant or bar: role design, who can void or discount, approval workflows, reason codes and the reports to review weekly.</description>
+      <description>How to set POS user permissions in a restaurant or bar: roles, who can void or discount, approvals, reason codes and the reports to review weekly.</description>
       <pubDate>Thu, 08 Oct 2026 08:00:00 +0000</pubDate>
       <dc:language>en</dc:language>
     </item>
@@ -107,7 +107,7 @@
       <title>Loyverse Alternatives for Restaurants &amp; Bars (2026 Guide)</title>
       <link>https://loungeos.app/blog/loyverse-alternatives/</link>
       <guid isPermaLink="true">https://loungeos.app/blog/loyverse-alternatives/</guid>
-      <description>Outgrowing Loyverse? Learn the signs, Loyverse's real offline limits and add-on costs, and the best alternatives for table service, bars and unreliable internet.</description>
+      <description>Outgrowing Loyverse? The signs, its real offline limits and add-on costs, and the best alternatives for table service, bars and unreliable internet.</description>
       <pubDate>Thu, 08 Oct 2026 08:00:00 +0000</pubDate>
       <dc:language>en</dc:language>
     </item>
@@ -123,7 +123,7 @@
       <title>How to Choose a Restaurant POS System: 2026 Buyer's Checklist</title>
       <link>https://loungeos.app/blog/how-to-choose-a-restaurant-pos-system/</link>
       <guid isPermaLink="true">https://loungeos.app/blog/how-to-choose-a-restaurant-pos-system/</guid>
-      <description>A practical checklist for choosing a restaurant POS: 12 questions to ask, how to calculate total cost of ownership, red flags in contracts, and a 2-week trial plan.</description>
+      <description>A practical checklist for choosing a restaurant POS: 12 questions to ask, total cost of ownership, contract red flags and a 2-week trial plan.</description>
       <pubDate>Thu, 08 Oct 2026 08:00:00 +0000</pubDate>
       <dc:language>en</dc:language>
     </item>
@@ -155,7 +155,7 @@
       <title>Bar Inventory Shrinkage &amp; Pour Cost: Measure and Cut Losses</title>
       <link>https://loungeos.app/blog/bar-inventory-shrinkage-pour-cost/</link>
       <guid isPermaLink="true">https://loungeos.app/blog/bar-inventory-shrinkage-pour-cost/</guid>
-      <description>Calculate pour cost and bar shrinkage step by step, compare with industry benchmarks, find where bottles disappear, and set up a weekly count that stops the leak.</description>
+      <description>Calculate pour cost and bar shrinkage step by step, compare with benchmarks, find where bottles disappear and set up a weekly count that stops the leak.</description>
       <pubDate>Thu, 08 Oct 2026 08:00:00 +0000</pubDate>
       <dc:language>en</dc:language>
     </item>

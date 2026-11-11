@@ -2,7 +2,7 @@
 url: /features/
 type: core
 title: "POS Features: Tables, KDS, Inventory, Accounting | LoungeOS"
-description: "All LoungeOS features: POS with tables, kitchen and bar screens, inventory, staff roles and activity log, mobile money and your own payment methods, expenses and accounting."
+description: "All LoungeOS features: POS with tables and barcodes, kitchen and bar screens, inventory, staff roles, mobile money, customer tabs, expenses and accounting."
 h1: "Everything you need to run sales, stock and cash, in one system"
 label: "Features"
 lead: "LoungeOS replaces the cash register, the paper ticket book, the stock notebook and the spreadsheet your accountant rebuilds every month. Here is everything it does, and how each piece fits together."
@@ -60,6 +60,10 @@ That gives you three practical benefits:
 - **Discounts** as a percentage or a fixed amount, from rules you define, so staff cannot invent their own.
 - **Split payments** across your payment methods on the same bill.
 - **Receipts** print on 58 mm and 80 mm thermal printers, or as PDF, with your logo, address and thank-you message. Every order has a print button.
+- **Barcode scanning.** Scan a product with a USB or Bluetooth scanner to add it to the sale, or type the code and press Enter. Shops can use this with no tables at all. See [retail POS](/retail-pos/).
+- **Split, move and pay later.** Split a bill by item, in equal shares or by set amounts, move an order to another table, and put a sale on a customer's tab to be paid later. The *Customer tabs* page shows who owes what.
+- **Cash drawer.** A receipt printer with a drawer port opens the cash drawer from the till, or after each cash sale.
+- **Manager approval.** Cancels, refunds, reopened orders and price changes need a manager or a manager's PIN.
 
 ## Tables, floors and waiter sections
 
@@ -83,7 +87,7 @@ Each business creates its own payment methods: cash, MTN Mobile Money, Orange Mo
 
 ## Expenses, accounting and reports
 
-Every plan includes the sales dashboard and daily reports: revenue, sales by category, staff performance and recent transactions. The Business and Pro plans add weekly and monthly reports, shifts and cash control, and email alerts. They also add the finance side: expenses with categories you create (common ones are made for you), a chart of accounts and a double-entry journal. One click on **Sync Accounting Data** turns paid orders and stock purchases into balanced journal entries. You get an income statement (P&L), balance sheet and cash-flow statement, exportable to PDF or CSV. [Read more about accounting →](/features/restaurant-accounting/)
+Every plan includes the sales dashboard and daily reports: revenue, sales by category, staff performance and recent transactions. The Business and Pro plans add weekly and monthly reports, shifts and cash control (coming soon), and email alerts (coming soon). They also add the finance side: expenses with categories you create (common ones are made for you), a chart of accounts and a double-entry journal. One click on **Sync Accounting Data** turns paid orders and stock purchases into balanced journal entries. You get an income statement (P&L), balance sheet and cash-flow statement, exportable to PDF or CSV. [Read more about accounting →](/features/restaurant-accounting/)
 
 ## Set up for your business on day one
 

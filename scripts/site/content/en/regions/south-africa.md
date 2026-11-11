@@ -2,7 +2,7 @@
 url: /south-africa/
 type: region
 title: "Restaurant & Bar POS Software in South Africa | LoungeOS"
-description: "Restaurant, bar and shisanyama POS for South Africa. From US$10 a month, 15% VAT, devices included, and Windows and Mac tills that keep selling during load-shedding."
+description: "Restaurant, bar and shisanyama POS for South Africa. From US$10 a month, 15% VAT, devices included, and tills that keep selling during load-shedding."
 h1: "A restaurant POS for South Africa that shrugs off load-shedding"
 label: "LoungeOS in South Africa"
 lead: "Run orders, kitchen screens and payments on your own Wi-Fi, with devices included in your plan and a flat monthly price. Keep your current card machine and bank."

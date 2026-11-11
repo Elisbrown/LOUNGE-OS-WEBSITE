@@ -15,7 +15,7 @@ const { chromium } = require('playwright');
 
 const ROOT = path.resolve(__dirname, '..', '..');
 const OUT = path.join(ROOT, 'images', 'og');
-const SKIP_DIRS = new Set(['.git', '.github', 'scripts', 'node_modules', 'images', 'Screenshots']);
+const SKIP_DIRS = new Set(['.git', '.github', '.agents', '.claude', 'seo', 'scripts', 'node_modules', 'images', 'Screenshots']);
 
 // Pages without a hero screenshot get one of these (by slug, else by default)
 const FALLBACK_IMAGE = {

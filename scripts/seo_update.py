@@ -275,6 +275,7 @@ User-agent: *
 {agents}
 Allow: /
 Disallow: /scripts/
+Disallow: /seo/
 
 Sitemap: {SITE}/sitemap.xml
 Sitemap: {SITE}/blog/feed.xml
@@ -292,7 +293,7 @@ Key facts:
 - Account: one LoungeOS account per person, with email and password or Continue with Google. A setup wizard asks for the business type, name, logo, currency, taxes, payment methods and opening hours, and suggests categories to tick. Desktop apps: install, open and sign in; there are no keys or codes. The owner invites staff by email; staff can also use a quick PIN on a shared till. Roles and permissions per staff member.
 - Modules: POS for touch and mouse on any screen size, tables and orders, kitchen and bar screens, payment methods each business creates (cash, MTN Mobile Money, Orange Money, card, bank transfer and others), receipts on 58 mm and 80 mm thermal printers or as PDF, inventory with stock movements and low-stock alerts, suppliers, expenses with your own categories, accounting (chart of accounts, journal), reports, staff roles and an activity log, a cloud copy of all data with daily full backups.
 - Offline: a Windows or Mac till keeps selling without internet and syncs automatically when it is back online. After 7 days without syncing it becomes read-only until it reconnects, with a warning during the last 2 days. Read-only means past orders, reports, printing and exports still work, but no new sales or edits. When a subscription ends, LoungeOS becomes read-only until it is renewed. Nothing is ever deleted.
-- Pricing: every plan starts with a 14-day free trial with Business features and no payment up front. Starter US$10/month (6,000 FCFA): 2 users, 2 devices, POS, inventory, receipts, daily reports. Business US$25/month (15,000 FCFA): 5 users, 5 devices, adds expenses, accounting, shifts and cash control, weekly and monthly reports, email alerts. Pro US$50/month (30,000 FCFA): unlimited users, 10+ devices, priority support, advanced admin; several branches and payroll are coming soon. Paying yearly gives 2 months free: US$100, US$250 or US$500 a year (60,000, 150,000 or 300,000 FCFA). Visitors in Cameroon see FCFA; everyone else sees US$. Payment by Mobile Money (MTN, Orange), card or PayPal at https://account.loungeos.app, charged in FCFA.
+- Pricing: every plan starts with a 14-day free trial with Business features and no payment up front. Starter US$10/month (6,000 FCFA): 2 users, 2 devices, POS, inventory, receipts, daily reports. Business US$25/month (15,000 FCFA): 5 users, 5 devices, adds expenses, accounting, shifts and cash control (coming soon), weekly and monthly reports, email alerts (coming soon). Pro US$50/month (30,000 FCFA): unlimited users, 10+ devices, priority support, advanced admin; several branches and payroll are coming soon. Paying yearly gives 2 months free: US$100, US$250 or US$500 a year (60,000, 150,000 or 300,000 FCFA). Visitors in Cameroon see FCFA; everyone else sees US$. Payment by Mobile Money (MTN, Orange), card or PayPal at https://account.loungeos.app, charged in FCFA.
 - Not included today: integrated card processing, delivery-platform integrations, hotel PMS folio posting, e-invoicing/fiscal device connections.
 - Contact: info@sigalix.com (inquiries), billing@sigalix.com (billing), support@loungeos.app, +237 679 690 703.
 """

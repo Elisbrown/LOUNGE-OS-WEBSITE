@@ -3,7 +3,7 @@ url: /fr/afrique/
 type: region
 lang: fr
 title: "Logiciel de caisse restaurant en Afrique francophone | LoungeOS"
-description: "Logiciel de caisse conçu en Afrique : vend sans internet sur Windows et Mac, gère MTN MoMo, Orange Money, Wave et vos moyens de paiement. Restaurants, bars, hôtels, boutiques."
+description: "Logiciel de caisse conçu en Afrique : vend sans internet sur Windows et Mac, gère MTN MoMo, Orange Money, Wave. Restaurants, bars, hôtels, boutiques."
 h1: "Un logiciel de caisse conçu en Afrique, pour les réalités africaines"
 label: "LoungeOS en Afrique francophone"
 lead: "Les logiciels importés supposent une connexion fiable et des clients qui paient par carte. LoungeOS part de ce que vivent vraiment les restaurants, bars, lounges et boutiques africains : coupures, Mobile Money et caisse à surveiller."

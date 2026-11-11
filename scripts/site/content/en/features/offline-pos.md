@@ -2,7 +2,7 @@
 url: /features/offline-pos/
 type: feature
 title: "Offline POS System: Keep Selling Without Internet | LoungeOS"
-description: "The LoungeOS Windows and Mac apps keep selling without internet. Orders, kitchen screens, payments and receipts keep working on your Wi-Fi and sync when you're back online."
+description: "The LoungeOS Windows and Mac apps keep selling without internet: orders, kitchen screens, payments and receipts work on your Wi-Fi and sync later."
 h1: "An offline POS that keeps selling when the internet doesn't"
 label: "Offline POS"
 lead: "Most POS systems treat offline as an emergency mode with tight limits. The LoungeOS Windows and Mac apps keep your business's data on the computer, so the till keeps selling for up to 7 days without internet and syncs when the connection comes back."

@@ -16,7 +16,7 @@ crumb: "Mobile Money & Payments"
 related:
   - /blog/accept-mobile-money-in-your-restaurant/
   - /cameroon/
-  - /africa/
+  - /retail-pos/
 ---
 
 A POS with **mobile money** support lets the cashier record that a bill was paid by MTN Mobile Money (MoMo), Orange Money or another wallet, with the transaction reference, in the same place as cash and card payments. LoungeOS does this on every plan. Your end-of-day totals then show exactly how much should be in the cash drawer and how much in each wallet.

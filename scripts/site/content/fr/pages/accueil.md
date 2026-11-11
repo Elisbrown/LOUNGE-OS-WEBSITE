@@ -2,7 +2,7 @@
 url: /fr/
 type: home-fr
 lang: fr
-title: "LoungeOS : logiciel de caisse et de gestion pour tous les commerces"
+title: "LoungeOS : logiciel de caisse et gestion pour tous les commerces"
 description: "Caisse et gestion pour restaurants, bars, hôtels, boutiques et supermarchés : stocks, dépenses, comptabilité, Mobile Money. Web, Windows, Mac et Android."
 h1: "Le logiciel de caisse et de gestion pour tous les commerces"
 label: "LoungeOS · Logiciel de caisse et de gestion"

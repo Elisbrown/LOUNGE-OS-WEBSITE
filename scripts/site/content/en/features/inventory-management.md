@@ -2,7 +2,7 @@
 url: /features/inventory-management/
 type: feature
 title: "Restaurant & Bar Inventory Management Software | LoungeOS"
-description: "Track drinks, ingredients, packaging and shop stock with stock levels, low-stock alerts, supplier records, waste and damage logging, and CSV import. Included in every plan."
+description: "Track drinks, ingredients, packaging and shop stock: barcodes, stock levels, low-stock alerts, suppliers, waste logging and CSV import. Every plan."
 h1: "Inventory management that shows where your stock actually goes"
 label: "Inventory Management"
 lead: "Know what you have, what it cost, what was sold and what disappeared. LoungeOS tracks every bottle, crate and takeaway box from delivery to sale, and records every loss."
@@ -16,7 +16,7 @@ crumb: "Inventory Management"
 related:
   - /blog/restaurant-inventory-management-guide/
   - /blog/bar-inventory-shrinkage-pour-cost/
-  - /blog/food-cost-percentage-formula/
+  - /retail-pos/
 ---
 
 **Restaurant inventory management** means knowing at any moment how much stock you have, what it is worth and where the difference went when the count does not match. LoungeOS combines a stock register, supplier directory and movement ledger with your point of sale, on every plan. Sales and losses are both recorded in the same place, whether you run a restaurant, a bar, a shop or a supermarket.

@@ -2,7 +2,7 @@
 url: /blog/pos-user-permissions-voids-discounts/
 type: blog
 title: "POS Permissions for Restaurants: Voids, Discounts & Staff Roles"
-description: "How to set POS user permissions in a restaurant or bar: role design, who can void or discount, approval workflows, reason codes and the reports to review weekly."
+description: "How to set POS user permissions in a restaurant or bar: roles, who can void or discount, approvals, reason codes and the reports to review weekly."
 h1: "Setting up POS permissions: who should be allowed to void, discount and refund?"
 category: "Loss prevention"
 lead: "Permissions are the cheapest loss-prevention tool you have. Set up well, they protect your revenue and your honest staff. Set up badly, they either let money leak or slow service to a crawl."

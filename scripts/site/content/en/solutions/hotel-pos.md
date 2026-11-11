@@ -2,7 +2,7 @@
 url: /hotel-pos/
 type: solution
 title: "Hotel Restaurant & Bar POS (F&B Outlets) | LoungeOS"
-description: "Run your hotel restaurant, bar, pool bar and terrace on one POS: service areas, kitchen and bar displays, stock control, F&B accounting and offline selling on Windows and Mac."
+description: "One POS for your hotel restaurant, bar, pool bar and terrace: kitchen and bar screens, stock control, F&B accounting and offline selling."
 h1: "One POS for every food and beverage outlet in your hotel"
 label: "Hotel POS"
 lead: "Restaurant, lobby bar, pool bar, terrace, room service: hotels run several F&B outlets under one roof. LoungeOS organises them as service areas on one system, with shared stock, separate staff and one set of accounts."
@@ -60,4 +60,4 @@ Yes, with the Windows or Mac app. It keeps selling without internet and syncs wh
 
 ### Which plan suits a hotel?
 
-Hotels with several outlets usually choose Business (5 users, 5 devices, with expenses, accounting, shifts and cash control) or Pro (unlimited users, 10 or more devices, priority support and advanced admin). Support for several branches is coming soon on Pro. See [pricing](/pricing/), or write to [info@sigalix.com](mailto:info@sigalix.com) for custom needs.
+Hotels with several outlets usually choose Business (5 users, 5 devices, with expenses, accounting, shifts and cash control, which is coming soon) or Pro (unlimited users, 10 or more devices, priority support and advanced admin). Support for several branches is coming soon on Pro. See [pricing](/pricing/), or write to [info@sigalix.com](mailto:info@sigalix.com) for custom needs.
