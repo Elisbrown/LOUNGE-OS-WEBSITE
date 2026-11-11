@@ -36,7 +36,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/style.css?v=0c04ec8587" />
+    <link rel="stylesheet" href="/style.css?v=996fee2008" />
     <link rel="preload" as="image" href="/Screenshots/dashboard-preview.webp" fetchpriority="high" />
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -657,11 +657,10 @@
         </h1>
 
         <p class="hero-subtitle">
-          Restaurants, bars, lounges, cafés, nightclubs, hotels, retail shops and
-          supermarkets run on <strong>LoungeOS</strong>. Sell at the till, send
-          orders to kitchen and bar screens, track stock and expenses, and keep
-          your accounts, in the browser or in the Windows, Mac and Android apps.
-          The Windows and Mac apps keep selling when the internet is down.
+          For restaurants, bars, lounges, cafés, nightclubs, hotels, shops and supermarkets:
+          sell at the till, send orders to kitchen and bar screens, track stock and expenses,
+          and keep your accounts. In the browser or the <strong>LoungeOS</strong> apps for
+          Windows, Mac and Android, which keep selling when the internet is down.
         </p>
 
         <div class="hero-benefits">
@@ -763,13 +762,13 @@
           <a href="/pricing/" class="btn btn-secondary btn-lg" id="heroPricingBtn">See pricing</a>
         </div>
 
-        <div class="hero-image-container">
+        <div class="hero-image-container hero-devices">
           <img
-            src="/Screenshots/dashboard-preview.webp"
-            alt="LoungeOS point of sale screen with menu categories, dish photos and an open table order"
+            src="/images/showcase/hero-devices.webp"
+            alt="LoungeOS on a POS terminal, a tablet kitchen display and a phone: the till with dish photos and an open order, kitchen tickets and the dashboard in FCFA"
             class="hero-image"
-            width="1920"
-            height="1033"
+            width="1600"
+            height="925"
             fetchpriority="high"
             decoding="async"
           />
@@ -777,931 +776,179 @@
       </header>
 
       <!-- ============================================================
-     2.1. WHO IS IT FOR?
+     3. STORY: ONE EVENING WITH LOUNGEOS (replaces problem, ecosystem, pillars, features, gallery)
      ============================================================ -->
-      <section
-        class="target-audience"
-        id="audience"
-        aria-label="Who is LoungeOS For?"
-        style="padding: 4rem 0 2rem; background: var(--bg-primary)"
-      >
+      <section class="story" id="features" aria-labelledby="story-title">
         <div class="container">
-          <p class="section-label" style="text-align: center">
-            Built for Every Business That Sells
+          <p class="section-label">A night with LoungeOS</p>
+          <h2 class="section-title" id="story-title">One evening at Mboa Lounge &amp; Grill</h2>
+          <p class="section-subtitle story-intro">
+            Mboa Lounge &amp; Grill is a sample business we set up in LoungeOS to show how it works: a lounge and grill in
+            Douala with 18 tables, 26 dishes and drinks and a team of 11. Follow one evening, from opening to closing.
+            Every screen below is LoungeOS as it ships today.
           </p>
-          <h2
-            class="section-title"
-            style="text-align: center; margin-bottom: 2.5rem"
-          >
-            Who is LoungeOS For?
-          </h2>
+          <ul class="story-types" aria-label="Businesses that use the same app">
+            <li><a href="/restaurant-pos/">Restaurants</a></li>
+            <li><a href="/bar-pos/">Bars</a></li>
+            <li><a href="/lounge-pos/">Lounges</a></li>
+            <li><a href="/cafe-pos/">Cafés</a></li>
+            <li><a href="/nightclub-pos/">Nightclubs</a></li>
+            <li><a href="/hotel-pos/">Hotels</a></li>
+            <li><a href="/retail-pos/">Shops &amp; supermarkets</a></li>
+          </ul>
 
-          <div
-            class="audience-grid animate-on-scroll"
-            style="
-              display: flex;
-              flex-wrap: wrap;
-              justify-content: center;
-              gap: 1rem;
-              text-align: center;
-            "
-          >
-            <a class="audience-badge" href="/restaurant-pos/">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2" />
-                <path d="M7 2v20" />
-                <path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7" />
-              </svg>
-              Restaurants
-            </a>
-            <a class="audience-badge" href="/bar-pos/">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path d="M8 22h8" />
-                <path d="M12 15v7" />
-                <path d="m3 3 18 0-9 12Z" />
-              </svg>
-              Bars
-            </a>
-            <a class="audience-badge" href="/cafe-pos/">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path d="M18 8h1a4 4 0 0 1 0 8h-1" />
-                <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" />
-                <line x1="6" y1="1" x2="6" y2="4" />
-                <line x1="10" y1="1" x2="10" y2="4" />
-                <line x1="14" y1="1" x2="14" y2="4" />
-              </svg>
-              Cafés &amp; Snack Bars
-            </a>
-            <a class="audience-badge" href="/lounge-pos/">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path d="M9 18V5l12-2v13" />
-                <circle cx="6" cy="18" r="3" />
-                <circle cx="18" cy="16" r="3" />
-              </svg>
-              Lounges
-            </a>
-            <a class="audience-badge" href="/hotel-pos/">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="M3 21h18" />
-                <path d="M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16" />
-                <path d="M9 21v-4a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v4" />
-                <path d="M10 9h.01" />
-                <path d="M14 9h.01" />
-                <path d="M10 13h.01" />
-                <path d="M14 13h.01" />
-              </svg>
-              Hotels
-            </a>
-            <a class="audience-badge" href="/retail-pos/">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-              >
-                <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" />
-                <path d="M3 6h18" />
-                <path d="M16 10a4 4 0 0 1-8 0" />
-              </svg>
-              Retail Shops
-            </a>
-            <span class="audience-badge">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-              >
-                <circle cx="9" cy="21" r="1" />
-                <circle cx="20" cy="21" r="1" />
-                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
-              </svg>
-              Supermarkets
-            </span>
+          <article class="story-chapter">
+            <div class="story-text">
+              <p class="story-time">4:00 pm · Before the doors open</p>
+              <h3>The owner reads her week in one glance</h3>
+              <p>
+                Amina, the owner, opens the dashboard on her computer. The last seven days in four numbers: net sales,
+                number of sales, average sale and cash taken, each compared with the week before. Below, what needs her
+                attention: items running low, tickets waiting too long, and money still owed on customer tabs.
+              </p>
+              <ul class="story-points">
+                <li>Same account in the browser and the Windows, Mac and Android apps</li>
+                <li>Summary PDF of the day in one tap</li>
+              </ul>
+            </div>
+            <figure class="story-figure">
+              <img src="/images/showcase/story-dashboard-pc.webp" width="1400" height="1058" loading="lazy" decoding="async"
+                alt="LoungeOS dashboard on a desktop monitor showing net sales, cash taken in FCFA and a Needs attention list with low stock and tabs" />
+            </figure>
+          </article>
+
+          <article class="story-chapter story-flip">
+            <div class="story-text">
+              <p class="story-time">5:30 pm · The beer delivery arrives</p>
+              <h3>Stock that matches what is on the shelf</h3>
+              <p>
+                The stock manager ticks what came in, types the quantities and costs from the delivery note, and the
+                counts are right before service. Every sale on the till takes from them, every movement is recorded with
+                a name, and low items are flagged before they run out.
+              </p>
+              <ul class="story-points">
+                <li>Receive a whole delivery in one go</li>
+                <li>Suppliers, barcodes and low-stock alerts</li>
+              </ul>
+              <a class="story-link" href="/features/inventory-management/">Inventory management</a>
+            </div>
+            <figure class="story-figure">
+              <img src="/images/showcase/story-stock-pc.webp" width="1400" height="1058" loading="lazy" decoding="async"
+                alt="LoungeOS stock items list on a desktop monitor with product photos, stock levels, costs, In stock and Low stock badges and suppliers" />
+            </figure>
+          </article>
+
+          <article class="story-chapter">
+            <div class="story-text">
+              <p class="story-time">8:00 pm · The tables fill up</p>
+              <h3>Waiters take the order at the table</h3>
+              <p>
+                A birthday party of eight sits in VIP 2. Grace opens the table on her tablet and taps the pictures: the
+                mixed grill platter, a bottle of champagne, three house cocktails. Every dish has a photo, so new staff
+                find it in a second. The table plan shows which tables are free, busy or reserved.
+              </p>
+              <ul class="story-points">
+                <li>Works by touch or mouse, from a phone to a large till screen</li>
+                <li>A photo on every product, barcode scanning for shops</li>
+              </ul>
+              <a class="story-link" href="/features/table-management/">Table management</a>
+            </div>
+            <figure class="story-figure">
+              <img src="/images/showcase/story-tables.webp" width="1316" height="956" loading="lazy" decoding="async"
+                alt="LoungeOS till on a tablet with dish photos and the order for table VIP 2: mixed grill platter, champagne and house cocktails" />
+            </figure>
+          </article>
+
+          <article class="story-chapter story-flip">
+            <div class="story-text">
+              <p class="story-time">8:01 pm · Kitchen and bar</p>
+              <h3>No paper ticket to lose</h3>
+              <p>
+                The food appears on the kitchen screen and the drinks on the bar screen, with the waiter's notes in red:
+                "fish well done, extra pepper on the side". The chef presses Start cooking, then Ready, and the waiter
+                knows. If the table adds a dish, the ticket shows only what changed.
+              </p>
+              <ul class="story-points">
+                <li>Kitchen and bar screens on any tablet or computer</li>
+                <li>Printed tickets on 58 mm or 80 mm printers if you prefer paper</li>
+              </ul>
+              <a class="story-link" href="/features/kitchen-display-system/">Kitchen display system</a>
+            </div>
+            <figure class="story-figure">
+              <img src="/images/showcase/story-kitchen-tablet.webp" width="1316" height="956" loading="lazy" decoding="async"
+                alt="LoungeOS kitchen display on a tablet with Pending, In progress and Ready orders, guest counts and table notes" />
+            </figure>
+          </article>
+
+          <article class="story-chapter">
+            <div class="story-text">
+              <p class="story-time">10:30 pm · The bill</p>
+              <h3>Cash, Mobile Money, split or on the tab</h3>
+              <p>
+                At the counter till, Carine charges table 3. Half in cash, half by MTN Mobile Money with its reference.
+                The next table splits the bill in equal shares, and a regular puts his on his tab to pay at the end of the
+                month. The receipt prints and the cash drawer opens.
+              </p>
+              <ul class="story-points">
+                <li>Cash, MTN Mobile Money, Orange Money, card and your own methods, in FCFA</li>
+                <li>Split, move a table, pay later, 58 mm and 80 mm receipts</li>
+              </ul>
+              <a class="story-link" href="/features/mobile-money-pos/">Mobile Money POS</a>
+            </div>
+            <figure class="story-figure">
+              <img src="/images/showcase/story-till-terminal.webp" width="1400" height="1026" loading="lazy" decoding="async"
+                alt="LoungeOS till on a POS terminal with dish photos, an open order for table 3 and the Charge order button in FCFA" />
+            </figure>
+          </article>
+
+          <div class="story-offline">
+            <p class="story-time">11:15 pm · The internet drops</p>
+            <h3>Nobody notices</h3>
+            <p>
+              The Windows and Mac apps keep the business on the computer, so the till keeps selling offline: orders,
+              kitchen and bar screens, payments and receipts. Phones on the same Wi-Fi keep working through it. When the
+              connection comes back, everything syncs.
+            </p>
+            <a class="story-link" href="/features/offline-pos/">Offline POS</a>
           </div>
-          <p
-            class="animate-on-scroll"
-            style="
-              text-align: center;
-              margin-top: 2rem;
-              color: var(--text-secondary);
-              font-size: 1.1rem;
-              font-weight: 500;
-            "
-          >
-            ...plus <a href="/nightclub-pos/" style="text-decoration: underline">nightclubs</a>, fast food,
-            boutiques, mini-markets and any business that sells.
-          </p>
-        </div>
-      </section>
 
-      <!-- ============================================================
-     2.5. THE PROBLEM
-     ============================================================ -->
-      <section
-        class="problem-statement"
-        id="problem"
-        aria-label="Traditional Ways Are Costing You"
-        style="
-          background-color: var(--bg-dark);
-          color: var(--text-on-dark);
-          padding: 5rem 0;
-        "
-      >
-        <div class="container">
-          <p class="section-label" style="color: rgba(255, 255, 255, 0.7)">
-            The Reality
-          </p>
-          <h2 class="section-title" style="color: #fff">
-            Traditional Ways Are Costing You
-          </h2>
-          <p class="section-subtitle" style="color: rgba(255, 255, 255, 0.9)">
-            Running a business with the wrong tools leads to invisible losses,
-            lack of traceability, and zero insights into what’s actually
-            happening.
-          </p>
+          <article class="story-chapter story-flip">
+            <div class="story-text">
+              <p class="story-time">4:00 am · The day closes</p>
+              <h3>Every sale, every franc, every name</h3>
+              <p>
+                The daily report breaks the night down by hour, product, waiter and payment method, ready as PDF, Excel
+                or CSV. Expenses go into categories, the books keep themselves, and the activity log shows who cancelled
+                what and why. Amina checks it on her phone the next morning.
+              </p>
+              <ul class="story-points">
+                <li>Expenses, chart of accounts, profit and loss</li>
+                <li>Roles, PINs, manager approval and an activity log</li>
+              </ul>
+              <a class="story-link" href="/features/restaurant-accounting/">Accounting</a>
+              <a class="story-link" href="/features/loss-prevention/">Loss prevention</a>
+            </div>
+            <figure class="story-figure">
+              <img src="/images/showcase/story-close.webp" width="1400" height="995" loading="lazy" decoding="async"
+                alt="LoungeOS daily sales report on a desktop monitor next to the dashboard on a phone" />
+            </figure>
+          </article>
 
-          <div class="problem-grid">
-            <div class="problem-card animate-on-scroll">
-              <svg
-                class="icon-xl"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-              >
-                <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
-                <path d="M7 11V7a5 5 0 0 1 9.9-1" />
-              </svg>
-              <h3>Encourages Theft</h3>
-              <p>
-                Without strict permission gates, staff can freely delete items
-                or void tickets without managers ever knowing. The cash drawer
-                leaks slowly every single day.
-              </p>
-            </div>
-            <div class="problem-card animate-on-scroll">
-              <svg
-                class="icon-xl"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-              >
-                <circle cx="11" cy="11" r="8" />
-                <line x1="21" y1="21" x2="16.65" y2="16.65" />
-                <line x1="8" y1="11" x2="14" y2="11" />
-              </svg>
-              <h3>Prevents Traceability</h3>
-              <p>
-                When an error happens or cash goes missing, traditional
-                registers offer no comprehensive audit logs. Accountability
-                becomes completely impossible.
-              </p>
-            </div>
-            <div class="problem-card animate-on-scroll">
-              <svg
-                class="icon-xl"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-              >
-                <path
-                  d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"
-                />
-                <line x1="1" y1="1" x2="23" y2="23" />
-              </svg>
-              <h3>Blind Operations</h3>
-              <p>
-                You can't see your business performing at a glance. Without data
-                on peak hours or top-selling items, you are guessing instead of
-                managing.
-              </p>
-            </div>
+          <div class="story-start" aria-labelledby="start-title">
+            <h3 id="start-title">Your own evening starts with three steps</h3>
+            <ol>
+              <li><strong>Create your account</strong> on app.loungeos.app with email or Google.</li>
+              <li><strong>Answer three questions:</strong> business name, country and what you sell. Logo, payment methods and receipts can wait.</li>
+              <li><strong>Add your items and team:</strong> a photo and price for each product, a role and PIN for each person.</li>
+            </ol>
+          </div>
+
+          <div class="story-end">
+            <a href="https://app.loungeos.app/login" class="btn btn-primary btn-lg">Start free trial</a>
+            <a href="/features/" class="btn btn-secondary btn-lg">All features</a>
           </div>
         </div>
       </section>
-
-      <!-- ============================================================
-     3. PRODUCT ECOSYSTEM
-     ============================================================ -->
-      <section
-        class="ecosystem"
-        id="ecosystem"
-        aria-label="From table to kitchen. Instantly."
-      >
-        <div class="container">
-          <p class="section-label">How It Works</p>
-          <h2 class="section-title">From table to kitchen. Instantly.</h2>
-          <p class="section-subtitle">
-            Phones, tablets, tills and kitchen screens all see the same orders.
-            With the Windows or Mac app, phones and tablets on the same Wi-Fi
-            keep working through their browser when the internet is down.
-          </p>
-
-          <div class="ecosystem-flow stagger-children">
-            <div class="eco-card animate-on-scroll">
-              <!-- Clipboard icon -->
-              <svg
-                class="icon-xl"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path
-                  d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"
-                />
-                <rect x="8" y="2" width="8" height="4" rx="1" ry="1" />
-              </svg>
-              <h3>Waiters</h3>
-              <p>
-                Take orders on a phone or tablet right at the table.
-              </p>
-            </div>
-            <div class="eco-card animate-on-scroll">
-              <!-- Flame icon (kitchen) -->
-              <svg
-                class="icon-xl"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path
-                  d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"
-                />
-              </svg>
-              <h3>Kitchen</h3>
-              <p>
-                Food orders appear on the kitchen screen. No lost paper
-                tickets.
-              </p>
-            </div>
-            <div class="eco-card animate-on-scroll">
-              <!-- Coffee / Glass icon (bar) -->
-              <svg
-                class="icon-xl"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="M18 8h1a4 4 0 0 1 0 8h-1" />
-                <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" />
-                <line x1="6" y1="1" x2="6" y2="4" />
-                <line x1="10" y1="1" x2="10" y2="4" />
-                <line x1="14" y1="1" x2="14" y2="4" />
-              </svg>
-              <h3>Bar</h3>
-              <p>
-                Drink orders appear on the bar screen.
-              </p>
-            </div>
-            <div class="eco-card animate-on-scroll">
-              <!-- Credit card icon (cashier) -->
-              <svg
-                class="icon-xl"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <rect x="1" y="4" width="22" height="16" rx="2" ry="2" />
-                <line x1="1" y1="10" x2="23" y2="10" />
-              </svg>
-              <h3>Cashier</h3>
-              <p>
-                Takes payment with your own payment methods and prints the
-                receipt on 58 mm or 80 mm paper, or as a PDF.
-              </p>
-            </div>
-            <div class="eco-card animate-on-scroll">
-              <!-- Bar chart icon (admin) -->
-              <svg
-                class="icon-xl"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <line x1="18" y1="20" x2="18" y2="10" />
-                <line x1="12" y1="20" x2="12" y2="4" />
-                <line x1="6" y1="20" x2="6" y2="14" />
-              </svg>
-              <h3>Admin</h3>
-              <p>
-                Follows sales, stock, expenses and reports from the browser or
-                the apps.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ============================================================
-     4. KEY PILLARS — Bento Grid
-     ============================================================ -->
-      <section class="pillars" id="pillars">
-        <div class="container">
-          <p class="section-label">The Fix</p>
-          <h2 class="section-title">
-            Six Problems. One Platform.
-          </h2>
-          <p class="section-subtitle">
-            LoungeOS puts your sales, stock, money and staff in one place, so
-            you can run a tighter, more profitable business.
-          </p>
-
-          <div class="bento-grid stagger-children">
-            <!-- Block 1 - spans 2 cols -->
-            <div class="bento-item animate-on-scroll">
-              <svg
-                class="icon-lg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="M21.21 15.89A10 10 0 1 1 8 2.83" />
-                <path d="M22 12A10 10 0 0 0 12 2v10z" />
-              </svg>
-              <h3>Clear Reports</h3>
-              <p>
-                Daily, weekly and monthly reports show what sells and when, so
-                you can set prices and plan your shifts with real numbers.
-              </p>
-              <span class="benefit-tag">Know what really sells</span>
-            </div>
-
-            <!-- Block 2 -->
-            <div class="bento-item animate-on-scroll">
-              <svg
-                class="icon-lg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
-                <path d="M7 11V7a5 5 0 0 1 10 0v4" />
-              </svg>
-              <h3>Anti-Theft Protection</h3>
-              <p>
-                Roles and permissions decide who can do what, and the activity
-                log records every action with a name.
-              </p>
-              <span class="benefit-tag">Every action has a name</span>
-            </div>
-
-            <!-- Block 3 -->
-            <div class="bento-item animate-on-scroll">
-              <svg
-                class="icon-lg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-                <circle cx="9" cy="7" r="4" />
-                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-              </svg>
-              <h3>Staff &amp; Roles</h3>
-              <p>
-                Invite staff by email and give each person a role. On a shared
-                till, they switch with a quick PIN.
-              </p>
-              <span class="benefit-tag">Everyone has their own login</span>
-            </div>
-
-            <!-- Block 4 -->
-            <div class="bento-item animate-on-scroll">
-              <svg
-                class="icon-lg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <circle cx="12" cy="12" r="3" />
-                <path
-                  d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"
-                />
-              </svg>
-              <h3>Expenses &amp; Accounting</h3>
-              <p>
-                Record expenses in categories you create (common ones are made
-                for you), and keep your books with a chart of accounts and a
-                journal.
-              </p>
-              <span class="benefit-tag">Know your real profit</span>
-            </div>
-
-            <!-- Block 5 -->
-            <div class="bento-item animate-on-scroll">
-              <svg
-                class="icon-lg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
-                <line x1="8" y1="21" x2="16" y2="21" />
-                <line x1="12" y1="17" x2="12" y2="21" />
-              </svg>
-              <h3>Bring Your Own Hardware</h3>
-              <p>
-                Use the web app in any modern browser, or the Windows, Mac and
-                Android apps. Touch or mouse, phone or big screen.
-              </p>
-              <span class="benefit-tag">Save on setup costs</span>
-            </div>
-
-            <!-- Block 6 -->
-            <div class="bento-item animate-on-scroll">
-              <svg
-                class="icon-lg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
-              </svg>
-              <h3>Keeps Selling Offline</h3>
-              <p>
-                The Windows and Mac apps keep your data on the computer, keep
-                selling without internet and sync when the connection comes
-                back.
-              </p>
-              <span class="benefit-tag">Outages don't stop service</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ============================================================
-     5. KEY FEATURES & DEEP DIVE
-     ============================================================ -->
-      <section
-        class="features"
-        id="features"
-        aria-label="The Full Arsenal: Built for Operators Who Mean Business"
-      >
-        <div class="container">
-          <p class="section-label" style="color: rgba(255, 255, 255, 0.4)">
-            Key Features
-          </p>
-          <h2 class="section-title">
-            The Full Arsenal: Built for Operators Who Mean Business
-          </h2>
-          <p class="section-subtitle">
-            You don't need a cash register. You need a command center. LoungeOS
-            shows you every sale, every payment and every stock movement, and
-            who made it.
-          </p>
-
-          <!-- Primary 6 Features Grid -->
-          <div class="features-grid">
-            <div class="feature-item animate-on-scroll">
-              <h4>Setup Wizard</h4>
-              <p>
-                Answer a few questions: business type, name, logo, currency, taxes, payment methods and opening hours. Tick the suggested menu, inventory and expense categories, and LoungeOS is configured on day one.
-              </p>
-            </div>
-            <div class="feature-item animate-on-scroll">
-              <h4>One Account, Google Sign-In</h4>
-              <p>
-                Each person has one LoungeOS account, with email and password or Continue with Google. The same account works on the web, Windows, Mac and Android. No keys, no codes to copy.
-              </p>
-            </div>
-            <div class="feature-item animate-on-scroll">
-              <h4>Offline Selling &amp; Sync</h4>
-              <p>
-                Windows and Mac tills keep selling without internet and sync automatically when the connection comes back. Phones and tablets on the same Wi-Fi keep working through their browser.
-              </p>
-            </div>
-            <div class="feature-item animate-on-scroll">
-              <h4>Payments &amp; Receipts</h4>
-              <p>
-                Create your own payment methods: cash, MTN Mobile Money, Orange Money, card, bank transfer and more. Print receipts on 58 mm or 80 mm thermal printers, or as PDF, from any order.
-              </p>
-            </div>
-            <div class="feature-item animate-on-scroll">
-              <h4>Expenses &amp; Accounting</h4>
-              <p>
-                Record expenses in categories you create, with common ones made for you. A chart of accounts and a journal keep your books, and reports show where the money goes.
-              </p>
-            </div>
-            <div class="feature-item animate-on-scroll">
-              <h4>Backups &amp; Staff Roles</h4>
-              <p>
-                A cloud copy of all your data with daily full backups. Logos, images and documents are stored securely in the cloud. Each staff member gets a role and permissions, and the activity log shows who did what.
-              </p>
-            </div>
-          </div>
-
-          <!-- Comprehensive Features Collapsible -->
-          <div class="full-features-wrapper">
-            <details class="full-features-details">
-              <summary class="btn btn-white-black">
-                <span>See full feature list</span>
-                <svg
-                  class="dropdown-arrow"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
-              </summary>
-
-              <div class="features-grid expanded-grid">
-                <!-- Category 1: Point of Sale & Order Management -->
-                <div class="feature-category animate-on-scroll">
-                  <div class="feature-category-header">
-                    <svg
-                      class="icon"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
-                      <line x1="8" y1="21" x2="16" y2="21" />
-                      <line x1="12" y1="17" x2="12" y2="21" />
-                    </svg>
-                    Point of Sale &amp; Ordering
-                  </div>
-                  <ul class="feature-list">
-                    <li>
-                      <strong>Touch and Mouse:</strong> Works on any screen size, from a phone to a large till screen.
-                    </li>
-                    <li>
-                      <strong>Tables and Orders:</strong> Open a table, add to the order and follow it until it is paid.
-                    </li>
-                    <li>
-                      <strong>Custom Payment Methods:</strong> Cash, MTN Mobile Money, Orange Money, card, bank transfer or any method you create.
-                    </li>
-                    <li>
-                      <strong>Receipts:</strong> 58 mm and 80 mm thermal printers, or PDF, with a print button on every order.
-                    </li>
-                    <li>
-                      <strong>Barcode Scanning:</strong> Scan a product’s barcode at the till to add it to the sale, or type the code and press Enter.
-                    </li>
-                    <li>
-                      <strong>Split, Move and Pay Later:</strong> Split a bill by item or in equal shares, move an order to another table, or put it on a customer’s tab and take the payment later.
-                    </li>
-                    <li>
-                      <strong>Cash Drawer:</strong> The drawer opens from the till, or after each cash sale, through a receipt printer with a drawer port.
-                    </li>
-                    <li>
-                      <strong>Made for Phones:</strong> A bottom navigation bar with a “More” sheet keeps every screen in reach.
-                    </li>
-                  </ul>
-                </div>
-
-                <!-- Category 2: Kitchen & Bar Operations -->
-                <div class="feature-category animate-on-scroll">
-                  <div class="feature-category-header">
-                    <svg
-                      class="icon"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path
-                        d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"
-                      />
-                    </svg>
-                    Kitchen &amp; Bar Production
-                  </div>
-                  <ul class="feature-list">
-                    <li>
-                      <strong>Kitchen Screens:</strong> Food orders appear on the kitchen screen, so no paper ticket gets lost.
-                    </li>
-                    <li>
-                      <strong>Bar Screens:</strong> Drink orders appear on the bar screen.
-                    </li>
-                    <li>
-                      <strong>Kitchen and Bar Tickets:</strong> Food goes to the kitchen and drinks to the bar. A changed order prints only what was added, removed or changed.
-                    </li>
-                    <li>
-                      <strong>Any Screen:</strong> Use a tablet, a computer or a large screen in the kitchen and at the bar.
-                    </li>
-                  </ul>
-                </div>
-
-                <!-- Category 3: Inventory & Supply Chain -->
-                <div class="feature-category animate-on-scroll">
-                  <div class="feature-category-header">
-                    <svg
-                      class="icon"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path
-                        d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"
-                      />
-                      <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
-                      <line x1="12" y1="22.08" x2="12" y2="12" />
-                    </svg>
-                    Inventory Management
-                  </div>
-                  <ul class="feature-list">
-                    <li>
-                      <strong>Stock Movements:</strong> Every item that comes in or goes out is recorded.
-                    </li>
-                    <li>
-                      <strong>Low-Stock Alerts:</strong> Warnings before essential items run out.
-                    </li>
-                    <li>
-                      <strong>Suppliers:</strong> Keep your suppliers’ details in one place.
-                    </li>
-                    <li>
-                      <strong>Several Branches:</strong> Coming soon on the Pro plan.
-                    </li>
-                  </ul>
-                </div>
-
-                <!-- Category 4: Security & Administration -->
-                <div class="feature-category animate-on-scroll">
-                  <div class="feature-category-header">
-                    <svg
-                      class="icon"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                    </svg>
-                    Security &amp; Administration
-                  </div>
-                  <ul class="feature-list">
-                    <li>
-                      <strong>Roles and Permissions:</strong> Each staff member only sees and does what their role allows.
-                    </li>
-                    <li>
-                      <strong>Staff Invites and PIN:</strong> Invite staff by email; on a shared till they switch with a quick PIN.
-                    </li>
-                    <li>
-                      <strong>Activity Log:</strong> Every action is recorded with a name and a time.
-                    </li>
-                    <li>
-                      <strong>Manager Approval:</strong> Cancels, refunds, reopened orders and price changes need a manager or a manager’s PIN.
-                    </li>
-                    <li>
-                      <strong>Shifts and Cash Control (coming soon):</strong> Open and close shifts and check the cash, on the Business and Pro plans.
-                    </li>
-                    <li>
-                      <strong>Backups:</strong> A cloud copy of all your data and daily full backups.
-                    </li>
-                  </ul>
-                </div>
-
-                <!-- Category 5: Business Intelligence -->
-                <div class="feature-category animate-on-scroll">
-                  <div class="feature-category-header">
-                    <svg
-                      class="icon"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <line x1="18" y1="20" x2="18" y2="10" />
-                      <line x1="12" y1="20" x2="12" y2="4" />
-                      <line x1="6" y1="20" x2="6" y2="14" />
-                    </svg>
-                    Money &amp; Reports
-                  </div>
-                  <ul class="feature-list">
-                    <li>
-                      <strong>Daily Reports:</strong> See each day’s sales on every plan.
-                    </li>
-                    <li>
-                      <strong>Weekly and Monthly Reports:</strong> On the Business and Pro plans. Email alerts are coming soon.
-                    </li>
-                    <li>
-                      <strong>Expenses:</strong> Categories you create, with common ones made for you.
-                    </li>
-                    <li>
-                      <strong>Accounting:</strong> A chart of accounts and a journal for your books.
-                    </li>
-                    <li>
-                      <strong>Exports:</strong> Print and export your reports when you need them.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </details>
-          </div>
-          <div class="link-pills" style="margin-top: 2.5rem">
-            <a href="/features/">All features</a>
-            <a href="/features/offline-pos/">Offline POS</a>
-            <a href="/features/kitchen-display-system/">Kitchen display</a>
-            <a href="/features/inventory-management/">Inventory</a>
-            <a href="/features/loss-prevention/">Loss prevention</a>
-            <a href="/features/mobile-money-pos/">Mobile money</a>
-            <a href="/features/restaurant-accounting/">Accounting</a>
-            <a href="/features/table-management/">Table management</a>
-          </div>
-        </div>
-      </section>
-
-      <!-- ============================================================
-     5.5. WHY OWNERS SWITCH
-     ============================================================ -->
-      <section class="testimonials" id="why-loungeos">
-        <div class="container">
-          <p class="section-label">Why owners switch</p>
-          <h2 class="section-title">Know Where Every Sale Goes</h2>
-          <p class="section-subtitle" style="color: #f0f0f0">
-            What changes in the first week, whatever you sell.
-          </p>
-
-          <div class="testimonials-grid">
-            <div class="testimonial-card animate-on-scroll">
-              <div class="quote-author" style="margin-top:0;margin-bottom:0.75rem">
-                <strong>Fewer missing sales</strong>
-              </div>
-              <p class="quote-text" style="font-style: normal">
-                Cancels, refunds, reopened orders and price changes need a manager or a manager’s PIN, and each one needs a reason. The activity log shows who did what, and when.
-              </p>
-            </div>
-            <div class="testimonial-card animate-on-scroll">
-              <div class="quote-author" style="margin-top:0;margin-bottom:0.75rem">
-                <strong>Selling through outages</strong>
-              </div>
-              <p class="quote-text" style="font-style: normal">
-                The Windows and Mac apps keep selling when the internet drops: orders, kitchen and bar screens, payments and receipts. Everything syncs when the connection comes back.
-              </p>
-            </div>
-            <div class="testimonial-card animate-on-scroll">
-              <div class="quote-author" style="margin-top:0;margin-bottom:0.75rem">
-                <strong>Cash and Mobile Money in one place</strong>
-              </div>
-              <p class="quote-text" style="font-style: normal">
-                Record cash, MTN Mobile Money, Orange Money, card or any method you create, split a bill between them, or put it on a customer’s tab. The daily report shows the money taken by each method.
-              </p>
-            </div>
-          </div>
-          <p style="text-align:center;margin-top:2rem">
-            <a href="https://app.loungeos.app/login" class="btn btn-white-black">Start your 14-day free trial</a>
-          </p>
-        </div>
-      </section>
-
-      <!-- Screenshot Carousel -->
-      <section
-        class="carousel-section"
-        id="gallery"
-        aria-label="See LoungeOS in Action"
-      >
-        <div class="container">
-          <p class="section-label">Gallery</p>
-          <h2 class="section-title">See LoungeOS in Action</h2>
-          <p class="section-subtitle">
-            A look inside LoungeOS: the till, kitchen screen, stock, accounting
-            and reports.
-          </p>
-        </div>
-        <div class="carousel-container">
-          <div class="carousel-track">
-            <img src="/images/screens/loungeos-pos-order-screen-800.webp" data-full="/images/screens/loungeos-pos-order-screen.webp" alt="LoungeOS Point of sale screen with dish photos and an open table order" class="carousel-img" width="372" height="200" loading="lazy" decoding="async" />
-            <img src="/images/screens/loungeos-kitchen-display-system-800.webp" data-full="/images/screens/loungeos-kitchen-display-system.webp" alt="LoungeOS Kitchen display system with Pending, In progress and Ready columns" class="carousel-img" width="372" height="200" loading="lazy" decoding="async" />
-            <img src="/images/screens/loungeos-table-management-800.webp" data-full="/images/screens/loungeos-table-management.webp" alt="LoungeOS Table layout with table status and capacity" class="carousel-img" width="372" height="200" loading="lazy" decoding="async" />
-            <img src="/images/screens/loungeos-dashboard-sales-analytics-800.webp" data-full="/images/screens/loungeos-dashboard-sales-analytics.webp" alt="LoungeOS Dashboard with revenue, orders and sales by category" class="carousel-img" width="372" height="200" loading="lazy" decoding="async" />
-            <img src="/images/screens/loungeos-inventory-dashboard-800.webp" data-full="/images/screens/loungeos-inventory-dashboard.webp" alt="LoungeOS Inventory dashboard with stock value and low-stock alerts" class="carousel-img" width="372" height="200" loading="lazy" decoding="async" />
-            <img src="/images/screens/loungeos-activity-log-audit-trail-800.webp" data-full="/images/screens/loungeos-activity-log-audit-trail.webp" alt="LoungeOS Activity log showing every staff action with time" class="carousel-img" width="372" height="200" loading="lazy" decoding="async" />
-            <img src="/images/screens/loungeos-accounting-dashboard-800.webp" data-full="/images/screens/loungeos-accounting-dashboard.webp" alt="LoungeOS Accounting dashboard with profit, revenue and expenses" class="carousel-img" width="372" height="200" loading="lazy" decoding="async" />
-            <img src="/images/screens/loungeos-financial-reports-800.webp" data-full="/images/screens/loungeos-financial-reports.webp" alt="LoungeOS Profit and loss and balance sheet reports" class="carousel-img" width="372" height="200" loading="lazy" decoding="async" />
-            <img src="/images/screens/loungeos-staff-performance-800.webp" data-full="/images/screens/loungeos-staff-performance.webp" alt="LoungeOS Staff performance with orders and revenue per person" class="carousel-img" width="372" height="200" loading="lazy" decoding="async" />
-            <img src="/images/screens/loungeos-floor-management-800.webp" data-full="/images/screens/loungeos-floor-management.webp" alt="LoungeOS Floor management with service areas and assigned waiters" class="carousel-img" width="372" height="200" loading="lazy" decoding="async" />
-            <img src="/images/screens/loungeos-receipt-configuration-800.webp" data-full="/images/screens/loungeos-receipt-configuration.webp" alt="LoungeOS Receipt configuration with a thermal receipt preview" class="carousel-img" width="372" height="200" loading="lazy" decoding="async" />
-            <img src="/images/screens/loungeos-tableau-de-bord-francais-800.webp" data-full="/images/screens/loungeos-tableau-de-bord-francais.webp" alt="LoungeOS dashboard in French" class="carousel-img" width="372" height="200" loading="lazy" decoding="async" />
-            <img src="/images/screens/loungeos-pos-order-screen-800.webp" data-full="/images/screens/loungeos-pos-order-screen.webp" alt="" class="carousel-img" width="372" height="200" loading="lazy" decoding="async" aria-hidden="true" />
-            <img src="/images/screens/loungeos-kitchen-display-system-800.webp" data-full="/images/screens/loungeos-kitchen-display-system.webp" alt="" class="carousel-img" width="372" height="200" loading="lazy" decoding="async" aria-hidden="true" />
-            <img src="/images/screens/loungeos-table-management-800.webp" data-full="/images/screens/loungeos-table-management.webp" alt="" class="carousel-img" width="372" height="200" loading="lazy" decoding="async" aria-hidden="true" />
-            <img src="/images/screens/loungeos-dashboard-sales-analytics-800.webp" data-full="/images/screens/loungeos-dashboard-sales-analytics.webp" alt="" class="carousel-img" width="372" height="200" loading="lazy" decoding="async" aria-hidden="true" />
-            <img src="/images/screens/loungeos-inventory-dashboard-800.webp" data-full="/images/screens/loungeos-inventory-dashboard.webp" alt="" class="carousel-img" width="372" height="200" loading="lazy" decoding="async" aria-hidden="true" />
-            <img src="/images/screens/loungeos-activity-log-audit-trail-800.webp" data-full="/images/screens/loungeos-activity-log-audit-trail.webp" alt="" class="carousel-img" width="372" height="200" loading="lazy" decoding="async" aria-hidden="true" />
-            <img src="/images/screens/loungeos-accounting-dashboard-800.webp" data-full="/images/screens/loungeos-accounting-dashboard.webp" alt="" class="carousel-img" width="372" height="200" loading="lazy" decoding="async" aria-hidden="true" />
-            <img src="/images/screens/loungeos-financial-reports-800.webp" data-full="/images/screens/loungeos-financial-reports.webp" alt="" class="carousel-img" width="372" height="200" loading="lazy" decoding="async" aria-hidden="true" />
-            <img src="/images/screens/loungeos-staff-performance-800.webp" data-full="/images/screens/loungeos-staff-performance.webp" alt="" class="carousel-img" width="372" height="200" loading="lazy" decoding="async" aria-hidden="true" />
-            <img src="/images/screens/loungeos-floor-management-800.webp" data-full="/images/screens/loungeos-floor-management.webp" alt="" class="carousel-img" width="372" height="200" loading="lazy" decoding="async" aria-hidden="true" />
-            <img src="/images/screens/loungeos-receipt-configuration-800.webp" data-full="/images/screens/loungeos-receipt-configuration.webp" alt="" class="carousel-img" width="372" height="200" loading="lazy" decoding="async" aria-hidden="true" />
-            <img src="/images/screens/loungeos-tableau-de-bord-francais-800.webp" data-full="/images/screens/loungeos-tableau-de-bord-francais.webp" alt="" class="carousel-img" width="372" height="200" loading="lazy" decoding="async" aria-hidden="true" />
-          </div>
-        </div>
-      </section>
-
-      <!-- Lightbox Modal -->
-      <dialog id="lightboxModal" class="lightbox-modal">
-        <div class="lightbox-content">
-          <button id="lightboxClose" class="lightbox-close" aria-label="Close">
-            &times;
-          </button>
-          <button
-            id="lightboxPrev"
-            class="lightbox-nav prev"
-            aria-label="Previous"
-          >
-            &lsaquo;
-          </button>
-          <img id="lightboxImage" src="" alt="Full size preview" />
-          <button id="lightboxNext" class="lightbox-nav next" aria-label="Next">
-            &rsaquo;
-          </button>
-        </div>
-      </dialog>
 
       <!-- ============================================================
      5.7. DEMO CTA
@@ -2086,91 +1333,6 @@
           <p style="text-align: center; margin-top: 1.5rem">
             <a href="/download/" class="how-to-install-link">System requirements, installation and sign-in steps for every app →</a>
           </p>
-        </div>
-      </section>
-
-      <!-- ============================================================
-     8. SETUP STEPS
-     ============================================================ -->
-      <section class="setup-steps" id="setup">
-        <div class="container">
-          <p class="section-label">Easy Setup</p>
-          <h2 class="section-title">
-            Ready on Day One.
-          </h2>
-          <p class="section-subtitle">
-            Five simple steps to get your business running on LoungeOS.
-          </p>
-
-          <div class="timeline">
-            <div class="timeline-step animate-on-scroll">
-              <div class="timeline-number">01</div>
-              <div class="timeline-content">
-                <h3>Create Your Account</h3>
-                <p>
-                  Go to <a href="https://app.loungeos.app/login" style="text-decoration: underline">app.loungeos.app</a> and create your account with your email and password, or click Continue with Google. Sign-up is on the sign-in page.
-                </p>
-              </div>
-            </div>
-            <div class="timeline-step animate-on-scroll">
-              <div class="timeline-number">02</div>
-              <div class="timeline-content">
-                <h3>Answer the Setup Wizard</h3>
-                <p>
-                  Tell LoungeOS your business type, name, logo, currency, taxes, payment methods and opening hours.
-                </p>
-              </div>
-            </div>
-            <div class="timeline-step animate-on-scroll">
-              <div class="timeline-number">03</div>
-              <div class="timeline-content">
-                <h3>Tick Your Categories</h3>
-                <p>
-                  Pick from the suggested menu, inventory and expense categories, then add your products and prices.
-                </p>
-              </div>
-            </div>
-            <div class="timeline-step animate-on-scroll">
-              <div class="timeline-number">04</div>
-              <div class="timeline-content">
-                <h3>Use It Where You Work</h3>
-                <p>
-                  Keep working in the web app, or install the Windows, Mac or Android app and sign in with the same account. No keys, no codes to copy.
-                </p>
-              </div>
-            </div>
-            <div class="timeline-step animate-on-scroll">
-              <div class="timeline-number">05</div>
-              <div class="timeline-content">
-                <h3>Invite Your Staff</h3>
-                <p>
-                  Invite staff by email and give each person a role. On a shared till, they switch with a quick PIN.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="setup-cta">
-            <a
-              href="https://app.loungeos.app/login"
-              class="btn btn-primary btn-lg"
-              id="setupCtaBtn"
-            >
-              Start free trial
-              <svg
-                class="icon"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <line x1="5" y1="12" x2="19" y2="12" />
-                <polyline points="12 5 19 12 12 19" />
-              </svg>
-            </a>
-          </div>
         </div>
       </section>
 
