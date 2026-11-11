@@ -10,7 +10,7 @@ Ordered by expected sign-ups per hour of work. Volumes are "not measured" until 
 4. **GA4 key events**: mark `generate_lead`, `start_trial_click` and `file_download` as key events (Admin > Events) so trial clicks show as conversions.
 5. **Directory listings** with the copy in `directories.md` (Capterra/GetApp/Software Advice, SourceForge, AlternativeTo, Product Hunt, G2).
 6. **Real customer quotes** (name, business, city, with permission). The made-up testimonials were removed on 2026-11-11.
-7. **WhatsApp number** for a click-to-chat button (most buyers in Cameroon ask on WhatsApp first).
+7. ~~WhatsApp number~~ Done 2026-11-11: +237 679 690 703 on every page.
 
 ## Site work
 

@@ -3042,3 +3042,32 @@ body.menu-open .locale-banner {
     flex: 1 1 100%;
   }
 }
+
+/* WhatsApp chat button (injected by app.js) */
+.wa-float {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 1400;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #25d366;
+  color: #fff;
+  padding: 0.75rem 1.1rem 0.75rem 0.9rem;
+  border-radius: var(--radius-pill);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  font-weight: 600;
+  font-size: 0.9375rem;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.wa-float:hover { transform: translateY(-2px); box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25); color: #fff; }
+.wa-float:focus-visible { outline: 3px solid #128c7e; outline-offset: 3px; }
+.wa-float svg { width: 24px; height: 24px; flex-shrink: 0; }
+@media (max-width: 640px) {
+  .wa-float { padding: 0.85rem; right: 1rem; bottom: 1rem; }
+  .wa-float span { display: none; }
+  body:has(.locale-banner) .wa-float { bottom: 5.5rem; }
+}
+@media print { .wa-float { display: none; } }

@@ -24,7 +24,7 @@ related:
   </div>
   <div class="info-card">
     <h3>Technical support</h3>
-    <p>Installation, sign-in, setup, local network and troubleshooting.<br /><a href="mailto:support@loungeos.app">support@loungeos.app</a><br /><a href="tel:+237679690703">+237 679 690 703</a></p>
+    <p>Installation, sign-in, setup, local network and troubleshooting.<br /><a href="mailto:support@loungeos.app">support@loungeos.app</a><br /><a href="tel:+237679690703">+237 679 690 703</a><br /><a href="https://wa.me/237679690703">WhatsApp: +237 679 690 703</a></p>
   </div>
   <div class="info-card">
     <h3>Billing</h3>
@@ -47,7 +47,7 @@ When you contact support, please include your **business name**, the **email add
 
 ## Book a demo
 
-Want to see LoungeOS with your own products? Email [info@sigalix.com](mailto:info@sigalix.com) with your business type (restaurant, bar, hotel, shop, supermarket or other), your city and your number of staff, and we will arrange a one-to-one demo. You can also [start the free trial](https://app.loungeos.app/login) straight away: 14 days with Business features, and no payment up front.
+Want to see LoungeOS with your own products? Message us on [WhatsApp](https://wa.me/237679690703) or email [info@sigalix.com](mailto:info@sigalix.com) with your business type (restaurant, bar, hotel, shop, supermarket or other), your city and your number of staff, and we will arrange a one-to-one demo. You can also [start the free trial](https://app.loungeos.app/login) straight away: 14 days with Business features, and no payment up front.
 
 ## Where we are
 
