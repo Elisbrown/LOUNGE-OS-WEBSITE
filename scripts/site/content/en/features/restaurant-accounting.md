@@ -29,15 +29,16 @@ Most restaurants run two disconnected systems: a till that knows what was sold, 
 - **Expenses with categories you create**, such as rent, salaries, utilities, marketing and maintenance. Common categories are made for you when the setup wizard asks for your business type.
 - **Three financial statements**: income statement (P&L), balance sheet and cash-flow statement, for any date range, exported to PDF or CSV
 
-## From sale to statement in one click
+## From sale to statement, automatically
 
-LoungeOS deliberately does not post every sale to the ledger in real time, because that would slow the POS during a rush. Instead, the owner or accountant clicks **Sync Accounting Data** and picks a date range. LoungeOS then:
+Every time a sale is paid, LoungeOS posts its own balanced journal entry, with the order number as the reference. Nobody retypes anything:
 
-1. Reads every **paid POS order** and every recorded **stock-in purchase** in that period.
-2. Creates balanced journal entries automatically:
-    - *Sales:* debit Cash or Bank, credit Sales Revenue
-    - *Purchases:* debit Inventory or Cost of Goods Sold, credit Cash or Accounts Payable
-3. Updates the financial statements immediately.
+- *A paid sale:* debit Cash, Bank or Mobile Money, credit Sales Revenue (and tax if you charge it)
+- *A Pay later sale:* debit Accounts Receivable, credit Sales Revenue; the customer's payment then moves it to cash or mobile money
+- *A refund:* the reverse of the sale
+- *An expense:* debit the expense account, credit where it was paid from
+
+For sales a till made offline, **Sync from the till** in **Journals** posts every sale that has no entry yet. The financial statements update as entries arrive.
 
 Stock written off as damage, waste or loss in [inventory](/features/inventory-management/) is recorded as an expense, so your P&L reflects real losses instead of hiding them.
 
@@ -69,7 +70,7 @@ LoungeOS accounting is designed for owners and managers who want to see whether 
 
 ### Why are my financial statements empty after a busy day?
 
-Sales are posted to the ledger when you click **Sync Accounting Data**, not one by one during service. Sync the date range and the statements update.
+Each paid sale posts its own entry, so the statements follow the day. If a till sold offline, press **Sync from the till** in **Journals** once it is back online to post those sales, and **Bring the accounts up to date** in Financial Reports refreshes the statements.
 
 ### Can I record expenses that don't come from stock?
 

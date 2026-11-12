@@ -67,7 +67,7 @@ LoungeOS serves businesses across Cameroon's cities: **Douala** (Akwa, Bonapriso
 | Business (most popular) | 15,000 FCFA | 150,000 FCFA | 5 users, 5 devices |
 | Pro | 30,000 FCFA | 300,000 FCFA | Unlimited users, 10+ devices |
 
-Every plan starts with a **14-day free trial with Business features**, and there is no payment up front. Starter covers the point of sale, inventory, receipts and daily reports. Business adds expenses, accounting, shifts and cash control (coming soon), weekly and monthly reports and email alerts (coming soon). Pro adds priority support and advanced admin, and several branches and payroll are coming soon.
+Every plan starts with a **14-day free trial with Business features**, and there is no payment up front. Starter covers the point of sale, tables, kitchen and bar screens, inventory, customer tabs, receipts and daily reports. Business adds expenses, accounting, weekly and monthly reports and [QR code table ordering](/features/qr-code-ordering/). Pro adds [several branches](/features/multi-branch/), an all-branches overview and priority support.
 
 You pay on [account.loungeos.app](https://account.loungeos.app) by MTN Mobile Money, Orange Money, card or PayPal, and invoices and receipts are sent by email. See [pricing](/pricing/).
 

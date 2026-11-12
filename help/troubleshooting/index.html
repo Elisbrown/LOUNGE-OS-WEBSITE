@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LoungeOS Troubleshooting: Printing, Sign-in, Sync, Install</title>
+    <meta name="description" content="Fixes for common LoungeOS problems: receipts not printing, forgotten PIN, till not syncing, install warnings on Windows, Mac and Android, kitchen routing." />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <link rel="canonical" href="https://loungeos.app/help/troubleshooting/" />
+    <link rel="alternate" hreflang="en" href="https://loungeos.app/help/troubleshooting/" />
+    <link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/aide/depannage/" />
+    <link rel="alternate" hreflang="x-default" href="https://loungeos.app/help/troubleshooting/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="LoungeOS" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="LoungeOS Troubleshooting: Printing, Sign-in, Sync, Install" />
+    <meta property="og:description" content="Fixes for common LoungeOS problems: receipts not printing, forgotten PIN, till not syncing, install warnings on Windows, Mac and Android, kitchen routing." />
+    <meta property="og:image" content="https://loungeos.app/images/og/help-troubleshooting.webp" />
+    <meta property="og:image:secure_url" content="https://loungeos.app/images/og/help-troubleshooting.webp" />
+    <meta property="og:image:type" content="image/webp" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="LoungeOS Troubleshooting: Printing, Sign-in, Sync, Install" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="LoungeOS Troubleshooting: Printing, Sign-in, Sync, Install" />
+    <meta name="twitter:description" content="Fixes for common LoungeOS problems: receipts not printing, forgotten PIN, till not syncing, install warnings on Windows, Mac and Android, kitchen routing." />
+    <meta name="twitter:image" content="https://loungeos.app/images/og/help-troubleshooting.webp" />
+    <meta name="twitter:image:alt" content="LoungeOS Troubleshooting: Printing, Sign-in, Sync, Install" />
+    <link rel="image_src" href="https://loungeos.app/images/og/help-troubleshooting.webp" />
+    <meta property="og:url" content="https://loungeos.app/help/troubleshooting/" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/style.css?v=c1bda027e5" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="alternate" type="application/rss+xml" title="LoungeOS Blog" href="https://loungeos.app/blog/feed.xml" />
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://loungeos.app/#organization",
+      "name": "LoungeOS",
+      "url": "https://loungeos.app/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://loungeos.app/images/logo/loungeos-icon-512.png",
+        "width": 512,
+        "height": 512
+      },
+      "image": "https://loungeos.app/images/og-loungeos.jpg",
+      "description": "LoungeOS makes point of sale (POS) and business management software for every kind of business that sells: restaurants, bars, lounges, cafés, nightclubs, hotels, retail shops, supermarkets and more. LoungeOS is made by Sigalix.",
+      "email": "info@sigalix.com",
+      "telephone": "+237679690703",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CM"
+      },
+      "areaServed": [
+        "CM",
+        "Africa",
+        "Worldwide"
+      ],
+      "knowsLanguage": [
+        "en",
+        "fr"
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "email": "support@loungeos.app",
+          "telephone": "+237679690703",
+          "availableLanguage": [
+            "English",
+            "French"
+          ]
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "email": "info@sigalix.com",
+          "telephone": "+237689699688",
+          "availableLanguage": [
+            "English",
+            "French"
+          ]
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "billing support",
+          "email": "billing@sigalix.com"
+        }
+      ],
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "Sigalix",
+        "url": "https://sigalix.com",
+        "email": "info@sigalix.com"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://loungeos.app/#website",
+      "url": "https://loungeos.app/",
+      "name": "LoungeOS",
+      "publisher": {
+        "@id": "https://loungeos.app/#organization"
+      },
+      "inLanguage": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://loungeos.app/help/troubleshooting/#webpage",
+      "url": "https://loungeos.app/help/troubleshooting/",
+      "name": "LoungeOS Troubleshooting: Printing, Sign-in, Sync, Install",
+      "description": "Fixes for common LoungeOS problems: receipts not printing, forgotten PIN, till not syncing, install warnings on Windows, Mac and Android, kitchen routing.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://loungeos.app/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://loungeos.app/help/troubleshooting/#breadcrumb"
+      },
+      "dateModified": "2026-11-12",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://loungeos.app/images/screens/loungeos-help-knowledge-base.webp"
+      }
+    },
+    {
+      "@type": "TechArticle",
+      "@id": "https://loungeos.app/help/troubleshooting/#article",
+      "headline": "Troubleshooting",
+      "description": "Fixes for common LoungeOS problems: receipts not printing, forgotten PIN, till not syncing, install warnings on Windows, Mac and Android, kitchen routing.",
+      "inLanguage": "en",
+      "dateModified": "2026-11-12",
+      "datePublished": "2026-11-12",
+      "author": {
+        "@id": "https://loungeos.app/#organization"
+      },
+      "publisher": {
+        "@id": "https://loungeos.app/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://loungeos.app/help/troubleshooting/#webpage"
+      },
+      "image": "https://loungeos.app/images/screens/loungeos-help-knowledge-base.webp",
+      "about": {
+        "@id": "https://loungeos.app/#software"
+      },
+      "proficiencyLevel": "Beginner"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://loungeos.app/help/troubleshooting/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://loungeos.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Troubleshooting",
+          "item": "https://loungeos.app/help/troubleshooting/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://loungeos.app/help/troubleshooting/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Receipts don’t print",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<ol> <li>On Windows, open <strong>Settings<\/strong>, <strong>Printers &amp; scanners<\/strong>, and check the printer is not <strong>Offline<\/strong> and has no stuck jobs. Turn it off and on.<\/li> <li>In <strong>Business settings<\/strong>, <strong>Receipt<\/strong>, check the <strong>Printer<\/strong> and the <strong>Paper width<\/strong> (58 or 80 mm), then press <strong>Print test receipt<\/strong>.<\/li> <li>In a browser, receipts open the print dialog: pick the receipt printer and set margins to none.<\/li> <\/ol>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "The receipt is cut on the right",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Choose the right paper width (58 mm rolls print 48 mm wide). LoungeOS prints exactly the printer’s width from the left edge.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "The cash drawer does not open",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>The drawer must be plugged into the receipt printer, and the printer on. Test with <strong>Open the drawer now<\/strong> in <strong>Business settings<\/strong>, <strong>Receipt<\/strong>.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Someone forgot their till PIN",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>A manager opens <strong>Staff<\/strong>, edits the person and types a new <strong>Till PIN<\/strong>. The owner can set their own in <strong>My settings<\/strong> online, and use <strong>Forgot password?<\/strong> on the till.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "The till asks to sign in again",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>The till was signed out of the account (for example from <strong>Devices<\/strong> in your account). Press <strong>Sign in with my account<\/strong> and confirm the code.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "The till says Offline but the internet works",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Press the cloud icon, then <strong>Sync now<\/strong>. If it stays offline, restart LoungeOS. Check that the computer’s date and time are right.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Sales from the till are missing online",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>They are still on the till, waiting to sync: the cloud icon shows how many changes are not sent yet. They arrive as soon as the till is online.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Windows says it protected my PC",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Press <strong>More info<\/strong>, then <strong>Run anyway<\/strong>. The installer comes from loungeos.app.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "macOS says LoungeOS cannot be opened",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Open <strong>System Settings<\/strong>, <strong>Privacy &amp; Security<\/strong>, and press <strong>Open Anyway<\/strong>. Check you took the right download: Apple Silicon (M1 and later) or Intel.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Android blocks the installation",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Allow installs from your browser or your files app when Android asks, then open the APK again.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Drinks show on the kitchen screen",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>The drink’s category is set to Kitchen. Open <strong>Menu<\/strong>, <strong>Categories<\/strong>, edit it and choose Bar.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "An order does not appear on the kitchen screen",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Check it was sent (<strong>Place Order<\/strong> or <strong>Send changes<\/strong>): items not yet sent are not on any screen.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "A page shows a lock",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Your plan does not include that feature. Press <strong>Upgrade to unlock<\/strong>, or see <a href=\"https://loungeos.app/help/plans-and-billing/\">Plans and billing<\/a>.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "LoungeOS is read-only",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Either the subscription ended (pay in your account and it opens within a minute), or a till has not synced for 7 days (connect it to the internet once).<\/p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+    </script>
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+      (function (c, l, a, r, i, t, y) {
+        c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
+        t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", "x9n1mwb8c5");
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TNP53ZZW7K"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag("js", new Date());
+      gtag("config", "G-TNP53ZZW7K");
+    </script>
+    <!-- Usercentrics CMP -->
+    <script id="usercentrics-cmp" src="https://app.usercentrics.eu/browser-ui/latest/loader.js" data-settings-id="SSwfY4ZtHuL22V" async></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <nav class="navbar" id="navbar" aria-label="Main Navigation">
+      <div class="nav-content">
+        <div class="nav-left">
+          <a href="/" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 0.75rem;">
+            <img src="/images/logo/loungeos-logo.svg" alt="LoungeOS" width="148" height="26" class="nav-logo" />
+            <span class="nav-badge">POS &amp; Business</span>
+          </a>
+        </div>
+
+        <div class="nav-links" id="navLinks">
+          <a href="/">Home</a>
+          <a href="/features/">Features</a>
+          <div class="nav-dropdown">
+            <button type="button" class="nav-dropdown-toggle" aria-haspopup="true">Solutions <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+            <div class="nav-dropdown-menu">
+              <a href="/restaurant-pos/">Restaurants</a>
+              <a href="/bar-pos/">Bars</a>
+              <a href="/lounge-pos/">Lounges</a>
+              <a href="/nightclub-pos/">Nightclubs</a>
+              <a href="/hotel-pos/">Hotels</a>
+              <a href="/cafe-pos/">Cafés &amp; Fast Food</a>
+              <a href="/retail-pos/">Shops &amp; Mini-Markets</a>
+              <a href="/cameroon/">Cameroon</a>
+              <a href="/africa/">Africa</a>
+            </div>
+          </div>
+          <a href="/pricing/">Pricing</a>
+          <a href="/download/">Download</a>
+          <div class="nav-dropdown">
+            <button type="button" class="nav-dropdown-toggle" aria-haspopup="true">Resources <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+            <div class="nav-dropdown-menu">
+              <a href="/blog/">Blog</a>
+              <a href="/faq/">FAQ</a>
+              <a href="/help/">Help centre</a>
+              <a href="/about/">About</a>
+              <a href="/contact/">Contact</a>
+              <a href="/fr/">Français</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-cta" style="display: flex; align-items: center; gap: 1rem">
+          <div class="lang-selector">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 16px; height: 16px" aria-hidden="true"><circle cx="12" cy="12" r="10" /><line x1="2" y1="12" x2="22" y2="12" /><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" /></svg>
+            <select id="customLangSelect" aria-label="Select Language" onchange="changeLanguage(this.value)">
+              <option value="en" selected>English</option>
+              <option value="fr">Français</option>
+              <option value="es">Español</option>
+              <option value="de">Deutsch</option>
+              <option value="zh-CN">中文</option>
+              <option value="ar">العربية</option>
+              <option value="hi">हिन्दी</option>
+              <option value="pt">Português</option>
+              <option value="ru">Русский</option>
+              <option value="ja">日本語</option>
+            </select>
+          </div>
+          <a href="https://app.loungeos.app/login" class="btn btn-primary btn-sm" id="navCtaBtn">Start free trial</a>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+    <main id="main-content">
+      <header class="page-hero">
+        <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">›</span> <span aria-current="page">Troubleshooting</span></nav>
+        
+        <h1>Troubleshooting</h1>
+        <p class="lead">The problems owners ask about most, and what to do. Still stuck? WhatsApp +237 679 690 703.</p>
+        <div class="article-meta"><span>For LoungeOS 2.1.4</span><span>Updated <time datetime="2026-11-12" data-auto="modified">November 12, 2026</time></span><span>3 min read</span></div>
+        
+        
+      </header>
+      <article class="content-section">
+        <div class="prose">
+<details class="toc" open><summary>On this page</summary><ul>
+<li><a href="#printing">Printing</a></li>
+<li><a href="#signing-in">Signing in</a></li>
+<li><a href="#sync">Sync</a></li>
+<li><a href="#installing">Installing</a></li>
+<li><a href="#kitchen-and-bar">Kitchen and bar</a></li>
+<li><a href="#plans">Plans</a></li>
+<li><a href="#contact-support">Contact support</a></li>
+</ul></details>
+<h2 id="printing">Printing</h2>
+<h3 id="receipts-dont-print">Receipts don’t print</h3>
+<ol>
+<li>On Windows, open <strong>Settings</strong>, <strong>Printers &amp; scanners</strong>, and check the printer is not <strong>Offline</strong> and has no stuck jobs. Turn it off and on.</li>
+<li>In <strong>Business settings</strong>, <strong>Receipt</strong>, check the <strong>Printer</strong> and the <strong>Paper width</strong> (58 or 80 mm), then press <strong>Print test receipt</strong>.</li>
+<li>In a browser, receipts open the print dialog: pick the receipt printer and set margins to none.</li>
+</ol>
+<h3 id="the-receipt-is-cut-on-the-right">The receipt is cut on the right</h3>
+<p>Choose the right paper width (58 mm rolls print 48 mm wide). LoungeOS prints exactly the printer’s width from the left edge.</p>
+<h3 id="the-cash-drawer-does-not-open">The cash drawer does not open</h3>
+<p>The drawer must be plugged into the receipt printer, and the printer on. Test with <strong>Open the drawer now</strong> in <strong>Business settings</strong>, <strong>Receipt</strong>.</p>
+<h2 id="signing-in">Signing in</h2>
+<h3 id="someone-forgot-their-till-pin">Someone forgot their till PIN</h3>
+<p>A manager opens <strong>Staff</strong>, edits the person and types a new <strong>Till PIN</strong>. The owner can set their own in <strong>My settings</strong> online, and use <strong>Forgot password?</strong> on the till.</p>
+<h3 id="the-till-asks-to-sign-in-again">The till asks to sign in again</h3>
+<p>The till was signed out of the account (for example from <strong>Devices</strong> in your account). Press <strong>Sign in with my account</strong> and confirm the code.</p>
+<h2 id="sync">Sync</h2>
+<h3 id="the-till-says-offline-but-the-internet-works">The till says Offline but the internet works</h3>
+<p>Press the cloud icon, then <strong>Sync now</strong>. If it stays offline, restart LoungeOS. Check that the computer’s date and time are right.</p>
+<h3 id="sales-from-the-till-are-missing-online">Sales from the till are missing online</h3>
+<p>They are still on the till, waiting to sync: the cloud icon shows how many changes are not sent yet. They arrive as soon as the till is online.</p>
+<h2 id="installing">Installing</h2>
+<h3 id="windows-says-it-protected-my-pc">Windows says it protected my PC</h3>
+<p>Press <strong>More info</strong>, then <strong>Run anyway</strong>. The installer comes from loungeos.app.</p>
+<h3 id="macos-says-loungeos-cannot-be-opened">macOS says LoungeOS cannot be opened</h3>
+<p>Open <strong>System Settings</strong>, <strong>Privacy &amp; Security</strong>, and press <strong>Open Anyway</strong>. Check you took the right download: Apple Silicon (M1 and later) or Intel.</p>
+<h3 id="android-blocks-the-installation">Android blocks the installation</h3>
+<p>Allow installs from your browser or your files app when Android asks, then open the APK again.</p>
+<h2 id="kitchen-and-bar">Kitchen and bar</h2>
+<h3 id="drinks-show-on-the-kitchen-screen">Drinks show on the kitchen screen</h3>
+<p>The drink’s category is set to Kitchen. Open <strong>Menu</strong>, <strong>Categories</strong>, edit it and choose Bar.</p>
+<h3 id="an-order-does-not-appear-on-the-kitchen-screen">An order does not appear on the kitchen screen</h3>
+<p>Check it was sent (<strong>Place Order</strong> or <strong>Send changes</strong>): items not yet sent are not on any screen.</p>
+<h2 id="plans">Plans</h2>
+<h3 id="a-page-shows-a-lock">A page shows a lock</h3>
+<p>Your plan does not include that feature. Press <strong>Upgrade to unlock</strong>, or see <a href="/help/plans-and-billing/">Plans and billing</a>.</p>
+<h3 id="loungeos-is-read-only">LoungeOS is read-only</h3>
+<p>Either the subscription ended (pay in your account and it opens within a minute), or a till has not synced for 7 days (connect it to the internet once).</p>
+<h2 id="contact-support">Contact support</h2>
+<ul>
+<li>WhatsApp or call: <strong>+237 679 690 703</strong></li>
+<li>Email: <strong>support@loungeos.app</strong></li>
+<li>In the app: <strong>Help</strong>, <strong>Support</strong> to open a ticket.</li>
+</ul>
+<p>Say which page you are on and what you pressed. A screenshot helps.</p>
+<p class="help-steps-note">Stuck on a step? Write to support@loungeos.app or WhatsApp +237 679 690 703 and say which page you are on.</p>
+<p><a href="/help/">← All help articles</a></p>
+        </div>
+      </article>
+      <section class="related-section">
+        <h2 class="section-title">Keep reading</h2>
+        <div class="card-grid">
+<a class="post-card" href="/help/payment-methods-and-receipts/">
+  <img src="/images/screens/loungeos-help-config-receipt-800.webp" width="800" height="430" alt="Payment methods, receipts and printers" loading="lazy" decoding="async" />
+  <div class="post-card-body">
+    <span class="tag"></span>
+    <h3>Payment methods, receipts and printers</h3>
+    <p>Mobile money and card methods, receipt layout, 58/80 mm printers, tickets, cash drawer.</p>
+    <span class="read-more">Learn more →</span>
+  </div>
+</a>
+<a class="post-card" href="/help/offline-and-sync/">
+  <img src="/images/screens/loungeos-help-pos-cart-800.webp" width="800" height="430" alt="Selling offline and sync" loading="lazy" decoding="async" />
+  <div class="post-card-body">
+    <span class="tag"></span>
+    <h3>Selling offline and sync</h3>
+    <p>What works offline, the sync status, Sync now, the 7-day limit.</p>
+    <span class="read-more">Learn more →</span>
+  </div>
+</a>
+<a class="post-card" href="/help/install-loungeos/">
+  <img src="/images/screens/loungeos-help-till-setup-800.webp" width="800" height="430" alt="Install LoungeOS on Windows, Mac and Android" loading="lazy" decoding="async" />
+  <div class="post-card-body">
+    <span class="tag"></span>
+    <h3>Install LoungeOS on Windows, Mac and Android</h3>
+    <p>Install the till app, sign it in with a code, choose your PIN, add the phone app.</p>
+    <span class="read-more">Learn more →</span>
+  </div>
+</a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-grid footer-grid-wide">
+        <div class="footer-brand">
+          <img src="/images/logo/loungeos-logo-white.svg" alt="LoungeOS" width="159" height="28" class="footer-logo" />
+          <p>Point of sale and business management for every business that sells. Made by <a href="https://sigalix.com">Sigalix</a>, built in Cameroon, used across Africa and beyond.</p>
+          <div class="footer-worldwide">
+            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Web, Windows, Mac &amp; Android</span>
+            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> English &amp; French</span>
+            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Sells offline on desktop</span>
+          </div>
+          <p class="footer-contact">
+            <a href="mailto:support@loungeos.app">support@loungeos.app</a><br />
+            <a href="mailto:info@sigalix.com">info@sigalix.com</a><br />
+            <a href="tel:+237679690703">+237 679 690 703</a>
+          </p>
+        </div>
+        <div class="footer-col">
+          <h3>Product</h3>
+          <a href="/features/">Features</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/download/">Download</a>
+          <a href="/features/offline-pos/">Offline POS</a>
+          <a href="/features/kitchen-display-system/">Kitchen Display System</a>
+          <a href="/features/inventory-management/">Inventory</a>
+          <a href="/features/restaurant-accounting/">Accounting</a>
+        </div>
+        <div class="footer-col">
+          <h3>Solutions</h3>
+          <a href="/restaurant-pos/">Restaurant POS</a>
+          <a href="/bar-pos/">Bar POS</a>
+          <a href="/lounge-pos/">Lounge POS</a>
+          <a href="/nightclub-pos/">Nightclub POS</a>
+          <a href="/hotel-pos/">Hotel POS</a>
+          <a href="/cafe-pos/">Café &amp; Fast Food POS</a>
+          <a href="/retail-pos/">Retail &amp; Shop POS</a>
+        </div>
+        <div class="footer-col">
+          <h3>Countries</h3>
+          <a href="/cameroon/">Cameroon</a>
+          <a href="/nigeria/">Nigeria</a>
+          <a href="/ghana/">Ghana</a>
+          <a href="/south-africa/">South Africa</a>
+          <a href="/africa/">Africa</a>
+          <a href="/fr/cameroun/">Cameroun (FR)</a>
+          <a href="/fr/cote-divoire/">Côte d'Ivoire (FR)</a>
+          <a href="/fr/senegal/">Sénégal (FR)</a>
+        </div>
+        <div class="footer-col">
+          <h3>Resources</h3>
+          <a href="/blog/">Blog</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/help/">Help centre</a>
+          <a href="/about/">About</a>
+          <a href="/contact/">Contact</a>
+          <a href="/privacy.html">Privacy Policy</a>
+          <a href="/terms.html">Terms of Service</a>
+          <a href="/accessibility.html">Accessibility</a>
+          <a href="/legal.html">Legal</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 LoungeOS. All rights reserved.</p>
+        <a href="https://app.loungeos.app/login" class="btn btn-outline-light btn-sm" id="footerCtaBtn">Start free trial <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg></a>
+      </div>
+    </footer>
+    <div id="google_translate_element" style="display: none"></div>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: "en", autoDisplay: false },
+          "google_translate_element",
+        );
+      }
+    </script>
+    <script defer type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script defer src="/app.js?v=a7444e90c8"></script>
+  </body>
+</html>

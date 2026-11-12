@@ -60,4 +60,4 @@ Yes, with the Windows or Mac app. It keeps selling without internet and syncs wh
 
 ### Which plan suits a hotel?
 
-Hotels with several outlets usually choose Business (5 users, 5 devices, with expenses, accounting, shifts and cash control, which is coming soon) or Pro (unlimited users, 10 or more devices, priority support and advanced admin). Support for several branches is coming soon on Pro. See [pricing](/pricing/), or write to [info@sigalix.com](mailto:info@sigalix.com) for custom needs.
+Hotels with several outlets usually choose Business (5 users, 5 devices, with expenses, accounting and QR ordering) or Pro (unlimited users, 10 or more devices, several branches with an all-branches overview, and priority support). Each outlet can be its own [branch](/features/multi-branch/) with its own menu, stock and tills. See [pricing](/pricing/), or write to [info@sigalix.com](mailto:info@sigalix.com) for custom needs.

@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Using Android Phones as Restaurant POS: Waiters, Kitchen, Owner</title>
+    <meta name="description" content="Can a restaurant or bar run on Android phones? What a phone POS does well, when you still need a till, notifications by role, and setup tips." />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <link rel="canonical" href="https://loungeos.app/blog/restaurant-pos-app-android-phone/" />
+    <link rel="alternate" hreflang="en" href="https://loungeos.app/blog/restaurant-pos-app-android-phone/" />
+    <link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/blog/application-caisse-android/" />
+    <link rel="alternate" hreflang="x-default" href="https://loungeos.app/blog/restaurant-pos-app-android-phone/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="LoungeOS" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="Using Android Phones as Restaurant POS: Waiters, Kitchen, Owner" />
+    <meta property="og:description" content="Can a restaurant or bar run on Android phones? What a phone POS does well, when you still need a till, notifications by role, and setup tips." />
+    <meta property="og:image" content="https://loungeos.app/images/og/blog-restaurant-pos-app-android-phone.webp" />
+    <meta property="og:image:secure_url" content="https://loungeos.app/images/og/blog-restaurant-pos-app-android-phone.webp" />
+    <meta property="og:image:type" content="image/webp" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Using Android Phones as Restaurant POS: Waiters, Kitchen, Owner" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Using Android Phones as Restaurant POS: Waiters, Kitchen, Owner" />
+    <meta name="twitter:description" content="Can a restaurant or bar run on Android phones? What a phone POS does well, when you still need a till, notifications by role, and setup tips." />
+    <meta name="twitter:image" content="https://loungeos.app/images/og/blog-restaurant-pos-app-android-phone.webp" />
+    <meta name="twitter:image:alt" content="Using Android Phones as Restaurant POS: Waiters, Kitchen, Owner" />
+    <link rel="image_src" href="https://loungeos.app/images/og/blog-restaurant-pos-app-android-phone.webp" />
+    <meta property="og:url" content="https://loungeos.app/blog/restaurant-pos-app-android-phone/" />
+    <meta property="article:published_time" content="2026-11-12" />
+    <meta property="article:modified_time" content="2026-11-12" data-auto="modified" />
+    <meta property="article:section" content="Operations" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/style.css?v=c1bda027e5" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="alternate" type="application/rss+xml" title="LoungeOS Blog" href="https://loungeos.app/blog/feed.xml" />
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://loungeos.app/#organization",
+      "name": "LoungeOS",
+      "url": "https://loungeos.app/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://loungeos.app/images/logo/loungeos-icon-512.png",
+        "width": 512,
+        "height": 512
+      },
+      "image": "https://loungeos.app/images/og-loungeos.jpg",
+      "description": "LoungeOS makes point of sale (POS) and business management software for every kind of business that sells: restaurants, bars, lounges, cafés, nightclubs, hotels, retail shops, supermarkets and more. LoungeOS is made by Sigalix.",
+      "email": "info@sigalix.com",
+      "telephone": "+237679690703",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CM"
+      },
+      "areaServed": [
+        "CM",
+        "Africa",
+        "Worldwide"
+      ],
+      "knowsLanguage": [
+        "en",
+        "fr"
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "email": "support@loungeos.app",
+          "telephone": "+237679690703",
+          "availableLanguage": [
+            "English",
+            "French"
+          ]
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "email": "info@sigalix.com",
+          "telephone": "+237689699688",
+          "availableLanguage": [
+            "English",
+            "French"
+          ]
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "billing support",
+          "email": "billing@sigalix.com"
+        }
+      ],
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "Sigalix",
+        "url": "https://sigalix.com",
+        "email": "info@sigalix.com"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://loungeos.app/#website",
+      "url": "https://loungeos.app/",
+      "name": "LoungeOS",
+      "publisher": {
+        "@id": "https://loungeos.app/#organization"
+      },
+      "inLanguage": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://loungeos.app/blog/restaurant-pos-app-android-phone/#webpage",
+      "url": "https://loungeos.app/blog/restaurant-pos-app-android-phone/",
+      "name": "Using Android Phones as Restaurant POS: Waiters, Kitchen, Owner",
+      "description": "Can a restaurant or bar run on Android phones? What a phone POS does well, when you still need a till, notifications by role, and setup tips.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://loungeos.app/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://loungeos.app/blog/restaurant-pos-app-android-phone/#breadcrumb"
+      },
+      "dateModified": "2026-11-12",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://loungeos.app/images/screens/loungeos-help-phone-trio.webp"
+      }
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://loungeos.app/blog/restaurant-pos-app-android-phone/#article",
+      "headline": "Running a restaurant or bar on Android phones: what works",
+      "description": "Can a restaurant or bar run on Android phones? What a phone POS does well, when you still need a till, notifications by role, and setup tips.",
+      "image": [
+        "https://loungeos.app/images/screens/loungeos-help-phone-trio.webp",
+        "https://loungeos.app/images/og-loungeos.jpg"
+      ],
+      "datePublished": "2026-11-12",
+      "dateModified": "2026-11-12",
+      "author": {
+        "@type": "Organization",
+        "@id": "https://loungeos.app/#organization",
+        "name": "LoungeOS",
+        "url": "https://loungeos.app/about/"
+      },
+      "publisher": {
+        "@id": "https://loungeos.app/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://loungeos.app/blog/restaurant-pos-app-android-phone/#webpage"
+      },
+      "inLanguage": "en",
+      "articleSection": "Operations",
+      "wordCount": 559,
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Mobile POS"
+        },
+        {
+          "@type": "Thing",
+          "name": "Android"
+        },
+        {
+          "@type": "Thing",
+          "name": "Restaurant operations"
+        }
+      ],
+      "mentions": {
+        "@id": "https://loungeos.app/#software"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://loungeos.app/blog/restaurant-pos-app-android-phone/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://loungeos.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://loungeos.app/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "POS on Android phones",
+          "item": "https://loungeos.app/blog/restaurant-pos-app-android-phone/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://loungeos.app/blog/restaurant-pos-app-android-phone/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can a small shop run on a phone only?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Yes, for selling and stock, if the internet is reliable. Add a till computer when you need receipts printed fast or selling through cuts.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are staff phones safe for a POS?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>With one account per person, a PIN or password, and the ability to deactivate someone who leaves, yes. Avoid shared logins.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do phones count as POS devices in my plan?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>In LoungeOS, yes: phones, tablets and tills count toward the plan’s device limit (2, 5 or 10).<\/p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+    </script>
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+      (function (c, l, a, r, i, t, y) {
+        c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
+        t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", "x9n1mwb8c5");
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TNP53ZZW7K"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag("js", new Date());
+      gtag("config", "G-TNP53ZZW7K");
+    </script>
+    <!-- Usercentrics CMP -->
+    <script id="usercentrics-cmp" src="https://app.usercentrics.eu/browser-ui/latest/loader.js" data-settings-id="SSwfY4ZtHuL22V" async></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <nav class="navbar" id="navbar" aria-label="Main Navigation">
+      <div class="nav-content">
+        <div class="nav-left">
+          <a href="/" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 0.75rem;">
+            <img src="/images/logo/loungeos-logo.svg" alt="LoungeOS" width="148" height="26" class="nav-logo" />
+            <span class="nav-badge">POS &amp; Business</span>
+          </a>
+        </div>
+
+        <div class="nav-links" id="navLinks">
+          <a href="/">Home</a>
+          <a href="/features/">Features</a>
+          <div class="nav-dropdown">
+            <button type="button" class="nav-dropdown-toggle" aria-haspopup="true">Solutions <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+            <div class="nav-dropdown-menu">
+              <a href="/restaurant-pos/">Restaurants</a>
+              <a href="/bar-pos/">Bars</a>
+              <a href="/lounge-pos/">Lounges</a>
+              <a href="/nightclub-pos/">Nightclubs</a>
+              <a href="/hotel-pos/">Hotels</a>
+              <a href="/cafe-pos/">Cafés &amp; Fast Food</a>
+              <a href="/retail-pos/">Shops &amp; Mini-Markets</a>
+              <a href="/cameroon/">Cameroon</a>
+              <a href="/africa/">Africa</a>
+            </div>
+          </div>
+          <a href="/pricing/">Pricing</a>
+          <a href="/download/">Download</a>
+          <div class="nav-dropdown">
+            <button type="button" class="nav-dropdown-toggle" aria-haspopup="true">Resources <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+            <div class="nav-dropdown-menu">
+              <a href="/blog/">Blog</a>
+              <a href="/faq/">FAQ</a>
+              <a href="/help/">Help centre</a>
+              <a href="/about/">About</a>
+              <a href="/contact/">Contact</a>
+              <a href="/fr/">Français</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-cta" style="display: flex; align-items: center; gap: 1rem">
+          <div class="lang-selector">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 16px; height: 16px" aria-hidden="true"><circle cx="12" cy="12" r="10" /><line x1="2" y1="12" x2="22" y2="12" /><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" /></svg>
+            <select id="customLangSelect" aria-label="Select Language" onchange="changeLanguage(this.value)">
+              <option value="en" selected>English</option>
+              <option value="fr">Français</option>
+              <option value="es">Español</option>
+              <option value="de">Deutsch</option>
+              <option value="zh-CN">中文</option>
+              <option value="ar">العربية</option>
+              <option value="hi">हिन्दी</option>
+              <option value="pt">Português</option>
+              <option value="ru">Русский</option>
+              <option value="ja">日本語</option>
+            </select>
+          </div>
+          <a href="https://app.loungeos.app/login" class="btn btn-primary btn-sm" id="navCtaBtn">Start free trial</a>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+    <main id="main-content">
+      <header class="page-hero">
+        <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">›</span> <a href="/blog/">Blog</a> <span aria-hidden="true">›</span> <span aria-current="page">POS on Android phones</span></nav>
+        <p class="section-label">Operations</p>
+        <h1>Running a restaurant or bar on Android phones: what works</h1>
+        <p class="lead">Every waiter already has an Android phone in their pocket. With the right POS app, it becomes an order pad, the kitchen gets its tickets, and the owner sees the night's sales from home. Here is what works, and what still belongs on a till.</p>
+        <div class="article-meta"><span>By <a href="/about/">LoungeOS Team</a></span><span>Published <time datetime="2026-11-12">November 12, 2026</time></span><span>Updated <time datetime="2026-11-12" data-auto="modified">November 12, 2026</time></span><span>3 min read</span></div>
+        
+        
+      </header>
+      <article class="content-section">
+        <div class="prose">
+<figure><img src="/images/screens/loungeos-help-phone-trio.webp" srcset="/images/screens/loungeos-help-phone-trio-800.webp 800w, /images/screens/loungeos-help-phone-trio.webp 1440w" sizes="(max-width: 800px) 100vw, 760px" width="1440" height="900" alt="LoungeOS on three Android phones: the dashboard, the till with tables and the kitchen screen" fetchpriority="high" decoding="async" /></figure>
+<aside class="key-takeaways"><h2>Key takeaways</h2><ul>
+<li>Phones are excellent for <strong>taking orders at the table</strong>, <strong>kitchen and bar alerts</strong> and <strong>the owner's view of sales</strong>.</li>
+<li>Keep a <strong>till computer at the counter</strong> for printing, the cash drawer and selling through internet cuts.</li>
+<li>Good notifications go <strong>by role</strong>: the chef gets tickets, the waiter gets 'ready', the manager gets cancellations.</li>
+<li>Give each person their own account, never a shared phone login.</li>
+</ul></aside>
+<details class="toc" open><summary>In this guide</summary><ol>
+<li><a href="#what-phones-do-well">What phones do well</a></li>
+<li><a href="#what-still-belongs-on-a-till">What still belongs on a till</a></li>
+<li><a href="#notifications-by-role-or-not-at-all">Notifications: by role, or not at all</a></li>
+<li><a href="#setup-tips">Setup tips</a></li>
+<li><a href="#the-loungeos-android-app">The LoungeOS Android app</a></li>
+<li><a href="#frequently-asked-questions">Frequently asked questions</a></li>
+</ol></details>
+<p>A few years ago a restaurant POS meant a heavy terminal bolted to the counter. Today most of the work can happen on the phones your team already owns. The question is not whether phones can do it, but which jobs belong on a phone and which on a till.</p>
+<h2 id="what-phones-do-well">What phones do well</h2>
+<ul>
+<li><strong>Taking orders at the table.</strong> The waiter taps the table, adds items with photos and sends. No walking back to the counter, no handwriting for the kitchen to decode.</li>
+<li><strong>Alerts.</strong> The chef’s phone buzzes when a ticket arrives; the waiter’s when it is ready.</li>
+<li><strong>The owner’s view.</strong> Today’s sales, open bills and stock alerts, from anywhere.</li>
+<li><strong>Barcode scanning with the camera</strong> in a small shop, without a scanner.</li>
+<li><strong>Sharing reports</strong> as PDF or Excel on WhatsApp.</li>
+</ul>
+<h2 id="what-still-belongs-on-a-till">What still belongs on a till</h2>
+<ul>
+<li><strong>Printing receipts and kitchen tickets</strong> to thermal printers, quickly and reliably.</li>
+<li><strong>The cash drawer</strong>, which opens from the receipt printer.</li>
+<li><strong>Selling through internet cuts.</strong> A till that keeps the business on its own computer keeps going when the internet does not.</li>
+</ul>
+<p>The best setup for most venues: one Windows or Mac till at the counter, phones for waiters, the kitchen, the bar and the owner.</p>
+<h2 id="notifications-by-role-or-not-at-all">Notifications: by role, or not at all</h2>
+<p>A phone that buzzes for everything gets muted by the second night. Notifications should go to the person who must act:</p>
+<div aria-label="Table" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>Event</th>
+<th>Who needs it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Guest order from a table QR code</td>
+<td>Waiters and cashiers</td>
+</tr>
+<tr>
+<td>New kitchen or bar ticket</td>
+<td>Chef or bartender</td>
+</tr>
+<tr>
+<td>Order ready</td>
+<td>The waiter who took it</td>
+</tr>
+<tr>
+<td>Order cancelled</td>
+<td>Managers</td>
+</tr>
+<tr>
+<td>Stock low or out</td>
+<td>Stock manager and managers</td>
+</tr>
+</tbody>
+</table></div>
+<p>And they should expire: an alert from two hours ago is noise.</p>
+<h2 id="setup-tips">Setup tips</h2>
+<ol>
+<li><strong>One account per person.</strong> Every order, cancellation and payment is then attributed to someone.</li>
+<li><strong>Phones charged at the start of the shift</strong>, with a charging spot behind the bar.</li>
+<li><strong>Good Wi-Fi in every area</strong>, separate from the guest network.</li>
+<li><strong>Notifications allowed</strong> for the POS app, and tested before service.</li>
+<li><strong>A home-screen widget</strong> for the owner and manager, so the day’s figures are one glance away.</li>
+</ol>
+<h2 id="the-loungeos-android-app">The LoungeOS Android app</h2>
+<p>The <a href="/features/mobile-app/">LoungeOS phone app</a> is the full LoungeOS on Android 7 and later: till, tables, kitchen and bar screens, stock, customer tabs and reports. It sends notifications by role (the table above is how LoungeOS does it), drops alerts older than 10 minutes, and adds a home-screen widget with up to four figures chosen by role. It scans barcodes with the camera, prints through Android printing and shares PDFs and Excel files.</p>
+<div class="phone-row"><figure><img alt="The LoungeOS dashboard on a phone" class="shot-tall" decoding="async" height="1558" loading="lazy" src="/images/screens/loungeos-help-phone-dashboard.webp" width="720"/><figcaption>Dashboard</figcaption></figure><figure><img alt="The LoungeOS kitchen screen on a phone" class="shot-tall" decoding="async" height="1558" loading="lazy" src="/images/screens/loungeos-help-phone-kitchen.webp" width="720"/><figcaption>Kitchen</figcaption></figure><figure><img alt="Customer tabs on a phone" class="shot-tall" decoding="async" height="1558" loading="lazy" src="/images/screens/loungeos-help-phone-customers.webp" width="720"/><figcaption>Customer tabs</figcaption></figure></div>
+<p>It is free with every plan. The phone app needs internet; during a cut, phones can keep ordering by opening the Windows or Mac till in the browser over your Wi-Fi. Install guide: <a href="/help/phone-app/">The LoungeOS phone app</a>.</p>
+<h2 id="frequently-asked-questions">Frequently asked questions</h2>
+<h3 id="can-a-small-shop-run-on-a-phone-only">Can a small shop run on a phone only?</h3>
+<p>Yes, for selling and stock, if the internet is reliable. Add a till computer when you need receipts printed fast or selling through cuts.</p>
+<h3 id="are-staff-phones-safe-for-a-pos">Are staff phones safe for a POS?</h3>
+<p>With one account per person, a PIN or password, and the ability to deactivate someone who leaves, yes. Avoid shared logins.</p>
+<h3 id="do-phones-count-as-pos-devices-in-my-plan">Do phones count as POS devices in my plan?</h3>
+<p>In LoungeOS, yes: phones, tablets and tills count toward the plan’s device limit (2, 5 or 10).</p>
+<div class="cta-box">
+  <h2>Run your next service on LoungeOS</h2>
+  <p>Create your account, answer the setup wizard and your business is ready on day one. Try it free for 14 days with Business features. No payment up front.</p>
+  <div class="cta-actions">
+    <a class="btn btn-primary btn-lg" href="https://app.loungeos.app/login">Start free trial</a>
+    <a class="btn btn-secondary btn-lg" href="/download/">Download for Windows</a>
+  </div>
+</div>
+        </div>
+      </article>
+      <section class="related-section">
+        <h2 class="section-title">Keep reading</h2>
+        <div class="card-grid">
+<a class="post-card" href="/features/mobile-app/">
+  <img src="/images/screens/loungeos-pos-order-screen-800.webp" width="800" height="430" alt="Android Phone App" loading="lazy" decoding="async" />
+  <div class="post-card-body">
+    <span class="tag">Phone App</span>
+    <h3>Android Phone App</h3>
+    <p>Orders, payments and reports on a phone, role-based notifications, home-screen widget.</p>
+    <span class="read-more">Learn more →</span>
+  </div>
+</a>
+<a class="post-card" href="/blog/restaurant-pos-hardware-guide/">
+  <img src="/images/screens/loungeos-receipt-configuration-800.webp" width="800" height="430" alt="LoungeOS receipt configuration with header, footer and a thermal receipt preview" loading="lazy" decoding="async" />
+  <div class="post-card-body">
+    <span class="tag">POS buying guides</span>
+    <h3>Restaurant POS hardware guide</h3>
+    <p>Host computer, tablets, thermal printer, Wi-Fi and UPS, with three budget setups.</p>
+    <span class="read-more">Read guide →</span>
+  </div>
+</a>
+<a class="post-card" href="/blog/what-is-a-kitchen-display-system/">
+  <img src="/images/screens/loungeos-kitchen-display-system-800.webp" width="800" height="430" alt="LoungeOS kitchen display system with Pending, In Progress and Ready columns" loading="lazy" decoding="async" />
+  <div class="post-card-body">
+    <span class="tag">Operations</span>
+    <h3>What is a kitchen display system (KDS)?</h3>
+    <p>How a KDS works, its benefits, hardware, routing and setup.</p>
+    <span class="read-more">Read guide →</span>
+  </div>
+</a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-grid footer-grid-wide">
+        <div class="footer-brand">
+          <img src="/images/logo/loungeos-logo-white.svg" alt="LoungeOS" width="159" height="28" class="footer-logo" />
+          <p>Point of sale and business management for every business that sells. Made by <a href="https://sigalix.com">Sigalix</a>, built in Cameroon, used across Africa and beyond.</p>
+          <div class="footer-worldwide">
+            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Web, Windows, Mac &amp; Android</span>
+            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> English &amp; French</span>
+            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Sells offline on desktop</span>
+          </div>
+          <p class="footer-contact">
+            <a href="mailto:support@loungeos.app">support@loungeos.app</a><br />
+            <a href="mailto:info@sigalix.com">info@sigalix.com</a><br />
+            <a href="tel:+237679690703">+237 679 690 703</a>
+          </p>
+        </div>
+        <div class="footer-col">
+          <h3>Product</h3>
+          <a href="/features/">Features</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/download/">Download</a>
+          <a href="/features/offline-pos/">Offline POS</a>
+          <a href="/features/kitchen-display-system/">Kitchen Display System</a>
+          <a href="/features/inventory-management/">Inventory</a>
+          <a href="/features/restaurant-accounting/">Accounting</a>
+        </div>
+        <div class="footer-col">
+          <h3>Solutions</h3>
+          <a href="/restaurant-pos/">Restaurant POS</a>
+          <a href="/bar-pos/">Bar POS</a>
+          <a href="/lounge-pos/">Lounge POS</a>
+          <a href="/nightclub-pos/">Nightclub POS</a>
+          <a href="/hotel-pos/">Hotel POS</a>
+          <a href="/cafe-pos/">Café &amp; Fast Food POS</a>
+          <a href="/retail-pos/">Retail &amp; Shop POS</a>
+        </div>
+        <div class="footer-col">
+          <h3>Countries</h3>
+          <a href="/cameroon/">Cameroon</a>
+          <a href="/nigeria/">Nigeria</a>
+          <a href="/ghana/">Ghana</a>
+          <a href="/south-africa/">South Africa</a>
+          <a href="/africa/">Africa</a>
+          <a href="/fr/cameroun/">Cameroun (FR)</a>
+          <a href="/fr/cote-divoire/">Côte d'Ivoire (FR)</a>
+          <a href="/fr/senegal/">Sénégal (FR)</a>
+        </div>
+        <div class="footer-col">
+          <h3>Resources</h3>
+          <a href="/blog/">Blog</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/help/">Help centre</a>
+          <a href="/about/">About</a>
+          <a href="/contact/">Contact</a>
+          <a href="/privacy.html">Privacy Policy</a>
+          <a href="/terms.html">Terms of Service</a>
+          <a href="/accessibility.html">Accessibility</a>
+          <a href="/legal.html">Legal</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 LoungeOS. All rights reserved.</p>
+        <a href="https://app.loungeos.app/login" class="btn btn-outline-light btn-sm" id="footerCtaBtn">Start free trial <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg></a>
+      </div>
+    </footer>
+    <div id="google_translate_element" style="display: none"></div>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: "en", autoDisplay: false },
+          "google_translate_element",
+        );
+      }
+    </script>
+    <script defer type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script defer src="/app.js?v=a7444e90c8"></script>
+  </body>
+</html>

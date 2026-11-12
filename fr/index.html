@@ -32,7 +32,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/style.css?v=6530869673" />
+    <link rel="stylesheet" href="/style.css?v=c1bda027e5" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -125,8 +125,8 @@
       "name": "LoungeOS",
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "Point of sale (POS) and business management software",
-      "operatingSystem": "Windows 10 and 11 (64-bit), macOS (Apple Silicon and Intel), Android 6.0 or later, any modern web browser",
-      "softwareVersion": "2.0.0",
+      "operatingSystem": "Windows 10 and 11 (64-bit), macOS (Apple Silicon and Intel), Android 7.0 or later, any modern web browser",
+      "softwareVersion": "2.1.4",
       "downloadUrl": "https://loungeos.app/download/",
       "installUrl": "https://loungeos.app/download/",
       "url": "https://loungeos.app/",
@@ -142,7 +142,11 @@
         "One LoungeOS account on the web, Windows, Mac and Android, with email and password or Continue with Google",
         "Setup wizard: business type, name, logo, currency, taxes, payment methods, opening hours and suggested categories",
         "Point of sale for touch and mouse on any screen size",
-        "Tables and orders, kitchen and bar screens",
+        "Tables and floors, split, move and merge bills, kitchen and bar screens",
+        "QR code table ordering with staff approval",
+        "Customer tabs (pay later) with balances and part payments",
+        "Several branches with a copy of the menu, tables, settings and team",
+        "Android phone app with role-based notifications and a home-screen widget",
         "Custom payment methods such as cash, MTN Mobile Money, Orange Money, card and bank transfer",
         "Receipts on 58 mm and 80 mm thermal printers, or PDF, with a print button on every order",
         "Inventory with stock movements, low-stock alerts and suppliers",
@@ -411,7 +415,7 @@
       "breadcrumb": {
         "@id": "https://loungeos.app/fr/#breadcrumb"
       },
-      "dateModified": "2026-11-11",
+      "dateModified": "2026-11-12",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://loungeos.app/images/screens/loungeos-tableau-de-bord-francais.webp"
@@ -449,7 +453,7 @@
           "name": "Sur quels appareils fonctionne LoungeOS ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "<p>Dans n’importe quel navigateur récent, et avec les applications Windows 10 et 11 (64 bits), Mac (Apple Silicon et Intel) et Android 6.0 ou plus récent. Vous utilisez le même compte LoungeOS partout. Voir la page <a href=\"https://loungeos.app/fr/telecharger/\">Télécharger<\/a>.<\/p>"
+            "text": "<p>Dans n’importe quel navigateur récent, et avec les applications Windows 10 et 11 (64 bits), Mac (Apple Silicon et Intel) et Android 7.0 ou plus récent. Vous utilisez le même compte LoungeOS partout. Voir la page <a href=\"https://loungeos.app/fr/telecharger/\">Télécharger<\/a>.<\/p>"
           }
         },
         {
@@ -566,8 +570,7 @@
             <div class="nav-dropdown-menu">
               <a href="/blog/">Blog</a>
               <a href="/fr/faq/">FAQ</a>
-              <a href="/knowledgebase.html">Base de connaissances</a>
-              <a href="/documentation.html">Documentation</a>
+              <a href="/fr/aide/">Centre d'aide</a>
               <a href="/contact/">Contact</a>
               <a href="/">English</a>
             </div>
@@ -631,7 +634,7 @@
 <li><strong>Créez votre compte</strong> sur <a href="https://app.loungeos.app/login">app.loungeos.app</a> avec votre e-mail et un mot de passe, ou cliquez sur <strong>Continuer avec Google</strong>. L’inscription se trouve sur la page de connexion.</li>
 <li><strong>Répondez à l’assistant de configuration</strong> : type d’activité, nom, logo, devise, taxes, moyens de paiement et horaires d’ouverture.</li>
 <li><strong>Cochez les catégories proposées</strong> pour votre menu, vos stocks et vos dépenses. LoungeOS est configuré dès le premier jour.</li>
-<li><strong>Utilisez LoungeOS où vous travaillez</strong> : dans l’application web, ou installez l’application Windows, Mac ou Android et connectez-vous avec le même compte. Aucune clé, aucun code à copier.</li>
+<li><strong>Utilisez LoungeOS où vous travaillez</strong> : dans l’application web, ou installez l’application Windows, Mac ou Android et connectez-vous avec le même compte. Aucune clé de licence.</li>
 <li><strong>Invitez votre personnel</strong> par e-mail et donnez un rôle à chacun. Sur une caisse partagée, chacun change d’utilisateur avec un code PIN rapide.</li>
 </ol>
 <h2 id="une-soiree-au-viona-lounge">Une soirée au Viona Lounge</h2>
@@ -641,8 +644,9 @@
 <article class="story-chapter story-flip"><div class="story-text"><p class="story-time">17 h 30 · La livraison de bières</p><h3>Un stock qui correspond aux étagères</h3><p>Le gestionnaire de stock coche ce qui est arrivé, saisit les quantités et les coûts du bon de livraison, et les chiffres sont justes avant le service. Chaque vente les diminue, chaque mouvement est enregistré avec un nom, et les articles bas sont signalés avant la rupture.</p><ul class="story-points"><li>Toute une livraison en une fois</li><li>Fournisseurs, codes-barres et alertes de stock bas</li></ul></div><figure class="story-figure"><img alt="Liste des articles en stock LoungeOS avec photos, quantités, coûts, badges En stock et Stock bas et fournisseurs" decoding="async" height="1066" loading="lazy" src="/images/showcase/story-stock-pc.webp" width="1400"/></figure></article>
 <article class="story-chapter"><div class="story-text"><p class="story-time">20 h · Les tables se remplissent</p><h3>La commande se prend à table</h3><p>Un anniversaire de huit personnes s'installe au VIP 2. Grace ouvre la table sur sa tablette et touche les photos : le plateau de grillades, une bouteille de champagne, trois cocktails maison. Chaque plat a sa photo, un nouveau serveur le trouve en une seconde.</p><ul class="story-points"><li>Au toucher ou à la souris, du téléphone au grand écran de caisse</li><li>Une photo pour chaque produit, scan des codes-barres en boutique</li></ul></div><figure class="story-figure"><img alt="Caisse LoungeOS sur une tablette avec photos des plats et la commande de la table VIP 2" decoding="async" height="1049" loading="lazy" src="/images/showcase/story-tables.webp" width="1400"/></figure></article>
 <article class="story-chapter story-flip"><div class="story-text"><p class="story-time">20 h 01 · Cuisine et bar</p><h3>Plus aucun bon perdu</h3><p>Les plats s'affichent sur l'écran cuisine et les boissons sur l'écran bar, avec les notes du serveur en rouge : « poisson bien cuit, piment à part ». Le cuisinier appuie sur Commencer, puis Prêt, et le serveur est prévenu. Si la table ajoute un plat, le ticket n'affiche que ce qui a changé.</p><ul class="story-points"><li>Écrans cuisine et bar sur n'importe quelle tablette ou ordinateur</li><li>Tickets imprimés en 58 ou 80 mm si vous préférez le papier</li></ul></div><figure class="story-figure"><img alt="Écran cuisine LoungeOS sur une tablette avec commandes en attente, en préparation et prêtes" decoding="async" height="1049" loading="lazy" src="/images/showcase/story-kitchen-tablet.webp" width="1400"/></figure></article>
-<article class="story-chapter"><div class="story-text"><p class="story-time">22 h 30 · L'addition</p><h3>Espèces, Mobile Money, partagée ou sur le compte</h3><p>À la caisse, Carine encaisse la table 3 : moitié en espèces, moitié en MTN Mobile Money avec sa référence. La table suivante partage l'addition en parts égales, et un habitué met la sienne sur son compte pour payer en fin de mois. Le reçu s'imprime et le tiroir-caisse s'ouvre.</p><ul class="story-points"><li>Espèces, MTN Mobile Money, Orange Money, carte et vos propres moyens, en FCFA</li><li>Partage, changement de table, paiement plus tard, reçus 58 et 80 mm</li></ul></div><figure class="story-figure"><img alt="Caisse LoungeOS sur un terminal de point de vente avec photos des plats et la commande de la table 3 en FCFA" decoding="async" height="1049" loading="lazy" src="/images/showcase/story-till-terminal.webp" width="1400"/></figure></article>
-<article class="story-chapter story-flip"><div class="story-text"><p class="story-time">4 h · La journée se ferme</p><h3>Chaque vente, chaque franc, chaque nom</h3><p>Le rapport du jour détaille la nuit par heure, produit, serveur et moyen de paiement, en PDF, Excel ou CSV. Les dépenses vont dans leurs catégories, la comptabilité se tient toute seule, et le journal d'activité montre qui a annulé quoi et pourquoi. Amina le consulte sur son téléphone le lendemain matin.</p><ul class="story-points"><li>Dépenses, plan comptable, compte de résultat</li><li>Rôles, codes PIN, validation du gérant et journal d'activité</li></ul></div><figure class="story-figure"><img alt="Rapport des ventes du jour LoungeOS sur un écran d'ordinateur et tableau de bord sur un téléphone" decoding="async" height="993" loading="lazy" src="/images/showcase/story-close.webp" width="1400"/></figure></article>
+<article class="story-chapter"><div class="story-text"><p class="story-time">21 h 30 · La terrasse est pleine</p><h3>La deuxième tournée se commande toute seule</h3><p>Sur la terrasse, la table 5 veut encore à boire et tous les serveurs sont occupés. Les clients scannent le QR code posé sur la table, choisissent deux bières et une assiette de frites, indiquent leur table et envoient. La commande apparaît sous Des tables sur la caisse et sur le téléphone de Grace. Elle vérifie, appuie sur Prendre sur la caisse, et la commande part au bar et en cuisine.</p><ul class="story-points"><li>Un seul QR code pour tout le commerce, sans application à installer</li><li>L'équipe accepte chaque commande avant qu'elle arrive en cuisine</li></ul><a class="story-link" href="/fr/fonctionnalites/commande-qr-code/">Commande par QR code</a></div><figure class="story-figure"><img alt="Commandes des tables dans la caisse LoungeOS, avec la table, les articles, la note du client, Prendre sur la caisse et Refuser" decoding="async" height="900" loading="lazy" src="/images/screens/loungeos-help-fr-pos-from-tables.webp" width="1440"/></figure></article>
+<article class="story-chapter story-flip"><div class="story-text"><p class="story-time">22 h 30 · L'addition</p><h3>Espèces, Mobile Money, partagée ou sur le compte</h3><p>À la caisse, Carine encaisse la table 3 : moitié en espèces, moitié en MTN Mobile Money avec sa référence. La table suivante partage l'addition en parts égales, et un habitué met la sienne sur son compte pour payer en fin de mois. Le reçu s'imprime et le tiroir-caisse s'ouvre.</p><ul class="story-points"><li>Espèces, MTN Mobile Money, Orange Money, carte et vos propres moyens, en FCFA</li><li>Partage, changement de table, paiement plus tard, reçus 58 et 80 mm</li></ul></div><figure class="story-figure"><img alt="Caisse LoungeOS sur un terminal de point de vente avec photos des plats et la commande de la table 3 en FCFA" decoding="async" height="1049" loading="lazy" src="/images/showcase/story-till-terminal.webp" width="1400"/></figure></article>
+<article class="story-chapter"><div class="story-text"><p class="story-time">4 h · La journée se ferme</p><h3>Chaque vente, chaque franc, chaque nom</h3><p>Le rapport du jour détaille la nuit par heure, produit, serveur et moyen de paiement, en PDF, Excel ou CSV. Les dépenses vont dans leurs catégories, la comptabilité se tient toute seule, et le journal d'activité montre qui a annulé quoi et pourquoi. Amina le consulte sur son téléphone le lendemain matin.</p><ul class="story-points"><li>Dépenses, plan comptable, compte de résultat</li><li>Rôles, codes PIN, validation du gérant et journal d'activité</li></ul></div><figure class="story-figure"><img alt="Rapport des ventes du jour LoungeOS sur un écran d'ordinateur et tableau de bord sur un téléphone" decoding="async" height="993" loading="lazy" src="/images/showcase/story-close.webp" width="1400"/></figure></article>
 </div>
 <p>Dans une boutique ou un supermarché, tout se passe à la caisse : vous scannez ou touchez les articles, vous encaissez et vous imprimez le reçu.</p>
 <h2 id="vendre-meme-sans-internet">Vendre même sans internet</h2>
@@ -653,7 +657,7 @@
 <ul>
 <li><strong>Windows</strong> 10 et 11 (64 bits) : vente hors ligne et synchronisation</li>
 <li><strong>Mac</strong> Apple Silicon (M1 et suivants) et Intel : vente hors ligne et synchronisation</li>
-<li><strong>Android</strong> 6.0 ou plus récent, avec Google Chrome et internet</li>
+<li><strong>Android</strong> 7.0 ou plus récent, avec internet : notifications selon le rôle et widget d’accueil</li>
 <li><strong>Application web</strong> sur <a href="https://app.loungeos.app/login">app.loungeos.app</a>, dans n’importe quel navigateur récent, sans rien installer</li>
 </ul>
 <p>Toutes les applications et les liens de téléchargement sont sur la page <a href="/fr/telecharger/">Télécharger</a>.</p>
@@ -672,8 +676,9 @@
 <div class="price-period">/ mois</div>
 <div class="price-savings" hidden="">Vous économisez 20 $ US</div>
 <ul class="price-features"><li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> 2 utilisateurs, 2 appareils</li>
-<li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Caisse (point de vente)</li>
-<li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Stocks</li>
+<li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Caisse, tables, écrans cuisine et bar</li>
+<li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Stocks et fournisseurs</li>
+<li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Comptes clients (payer plus tard)</li>
 <li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Reçus</li>
 <li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Rapports journaliers</li></ul>
 <a class="btn btn-primary" href="https://app.loungeos.app/login">Commencer l'essai gratuit</a>
@@ -687,9 +692,9 @@
 <ul class="price-features"><li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> 5 utilisateurs, 5 appareils</li>
 <li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Tout ce que propose Starter</li>
 <li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Dépenses et comptabilité</li>
-<li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Services (shifts) et contrôle de caisse (bientôt disponible)</li>
 <li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Rapports hebdomadaires et mensuels</li>
-<li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Alertes par e-mail (bientôt disponible)</li></ul>
+<li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Commande par QR code à table</li>
+<li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Services et contrôle de caisse (bientôt disponible)</li></ul>
 <a class="btn btn-accent" href="https://app.loungeos.app/login">Commencer l'essai gratuit</a>
 </div>
 <div class="price-card" data-plan="pro">
@@ -699,9 +704,9 @@
 <div class="price-savings" hidden="">Vous économisez 100 $ US</div>
 <ul class="price-features"><li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Utilisateurs illimités, 10 appareils et plus</li>
 <li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Tout ce que propose Business</li>
+<li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Plusieurs succursales</li>
+<li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Vue des ventes de toutes les succursales</li>
 <li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Support prioritaire</li>
-<li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Administration avancée</li>
-<li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Plusieurs établissements (bientôt disponible)</li>
 <li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Paie (bientôt disponible)</li></ul>
 <a class="btn btn-primary" href="https://app.loungeos.app/login">Commencer l'essai gratuit</a>
 </div>
@@ -720,7 +725,7 @@
 <h3 id="loungeos-fonctionne-t-il-vraiment-sans-internet">LoungeOS fonctionne-t-il vraiment sans internet ?</h3>
 <p>Oui, avec les applications Windows et Mac. Elles gardent vos données sur l’ordinateur, continuent de vendre sans internet et se synchronisent automatiquement au retour de la connexion. Après 7 jours sans synchronisation, la caisse passe en lecture seule jusqu’à ce qu’elle se reconnecte. L’application web et l’application Android ont besoin d’internet.</p>
 <h3 id="sur-quels-appareils-fonctionne-loungeos">Sur quels appareils fonctionne LoungeOS ?</h3>
-<p>Dans n’importe quel navigateur récent, et avec les applications Windows 10 et 11 (64 bits), Mac (Apple Silicon et Intel) et Android 6.0 ou plus récent. Vous utilisez le même compte LoungeOS partout. Voir la page <a href="/fr/telecharger/">Télécharger</a>.</p>
+<p>Dans n’importe quel navigateur récent, et avec les applications Windows 10 et 11 (64 bits), Mac (Apple Silicon et Intel) et Android 7.0 ou plus récent. Vous utilisez le même compte LoungeOS partout. Voir la page <a href="/fr/telecharger/">Télécharger</a>.</p>
 <h3 id="combien-coute-loungeos">Combien coûte LoungeOS ?</h3>
 <p>Au Cameroun : Starter à 6 000 FCFA par mois, Business à 15 000 FCFA et Pro à 30 000 FCFA. Ailleurs : 10, 25 ou 50 $ US par mois. En payant à l’année, vous avez 2 mois offerts (60 000, 150 000 ou 300 000 FCFA par an). Chaque formule commence par un essai gratuit de 14 jours avec les fonctionnalités Business, sans paiement à l’avance.</p>
 <h3 id="comment-commencer">Comment commencer ?</h3>
@@ -820,8 +825,7 @@
         <div class="footer-col">
           <h3>Ressources</h3>
           <a href="/blog/">Blog</a>
-          <a href="/knowledgebase.html">Base de connaissances</a>
-          <a href="/documentation.html">Documentation</a>
+          <a href="/fr/aide/">Centre d'aide</a>
           <a href="/about/">À propos</a>
           <a href="/contact/">Contact</a>
           <a href="/privacy.html">Confidentialité</a>

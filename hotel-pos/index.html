@@ -29,7 +29,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/style.css?v=6530869673" />
+    <link rel="stylesheet" href="/style.css?v=c1bda027e5" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -122,8 +122,8 @@
       "name": "LoungeOS",
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "Point of sale (POS) and business management software",
-      "operatingSystem": "Windows 10 and 11 (64-bit), macOS (Apple Silicon and Intel), Android 6.0 or later, any modern web browser",
-      "softwareVersion": "2.0.0",
+      "operatingSystem": "Windows 10 and 11 (64-bit), macOS (Apple Silicon and Intel), Android 7.0 or later, any modern web browser",
+      "softwareVersion": "2.1.4",
       "downloadUrl": "https://loungeos.app/download/",
       "installUrl": "https://loungeos.app/download/",
       "url": "https://loungeos.app/",
@@ -139,7 +139,11 @@
         "One LoungeOS account on the web, Windows, Mac and Android, with email and password or Continue with Google",
         "Setup wizard: business type, name, logo, currency, taxes, payment methods, opening hours and suggested categories",
         "Point of sale for touch and mouse on any screen size",
-        "Tables and orders, kitchen and bar screens",
+        "Tables and floors, split, move and merge bills, kitchen and bar screens",
+        "QR code table ordering with staff approval",
+        "Customer tabs (pay later) with balances and part payments",
+        "Several branches with a copy of the menu, tables, settings and team",
+        "Android phone app with role-based notifications and a home-screen widget",
         "Custom payment methods such as cash, MTN Mobile Money, Orange Money, card and bank transfer",
         "Receipts on 58 mm and 80 mm thermal printers, or PDF, with a print button on every order",
         "Inventory with stock movements, low-stock alerts and suppliers",
@@ -408,7 +412,7 @@
       "breadcrumb": {
         "@id": "https://loungeos.app/hotel-pos/#breadcrumb"
       },
-      "dateModified": "2026-11-11",
+      "dateModified": "2026-11-12",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://loungeos.app/images/screens/loungeos-floor-management.webp"
@@ -468,7 +472,7 @@
           "name": "Which plan suits a hotel?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "<p>Hotels with several outlets usually choose Business (5 users, 5 devices, with expenses, accounting, shifts and cash control, which is coming soon) or Pro (unlimited users, 10 or more devices, priority support and advanced admin). Support for several branches is coming soon on Pro. See <a href=\"https://loungeos.app/pricing/\">pricing<\/a>, or write to <a href=\"mailto:info@sigalix.com\">info@sigalix.com<\/a> for custom needs.<\/p>"
+            "text": "<p>Hotels with several outlets usually choose Business (5 users, 5 devices, with expenses, accounting and QR ordering) or Pro (unlimited users, 10 or more devices, several branches with an all-branches overview, and priority support). Each outlet can be its own <a href=\"https://loungeos.app/features/multi-branch/\">branch<\/a> with its own menu, stock and tills. See <a href=\"https://loungeos.app/pricing/\">pricing<\/a>, or write to <a href=\"mailto:info@sigalix.com\">info@sigalix.com<\/a> for custom needs.<\/p>"
           }
         }
       ]
@@ -530,8 +534,7 @@
             <div class="nav-dropdown-menu">
               <a href="/blog/">Blog</a>
               <a href="/faq/">FAQ</a>
-              <a href="/knowledgebase.html">Knowledge Base</a>
-              <a href="/documentation.html">Documentation</a>
+              <a href="/help/">Help centre</a>
               <a href="/about/">About</a>
               <a href="/contact/">Contact</a>
               <a href="/fr/">Français</a>
@@ -606,7 +609,7 @@
 <h3 id="will-it-work-in-a-hotel-with-poor-internet">Will it work in a hotel with poor internet?</h3>
 <p>Yes, with the Windows or Mac app. It keeps selling without internet and syncs when the connection comes back, and outlets connect to it over the hotel’s Wi-Fi. After 7 days without syncing, the till becomes read-only until it reconnects, with a warning during the last 2 days.</p>
 <h3 id="which-plan-suits-a-hotel">Which plan suits a hotel?</h3>
-<p>Hotels with several outlets usually choose Business (5 users, 5 devices, with expenses, accounting, shifts and cash control, which is coming soon) or Pro (unlimited users, 10 or more devices, priority support and advanced admin). Support for several branches is coming soon on Pro. See <a href="/pricing/">pricing</a>, or write to <a href="mailto:info@sigalix.com">info@sigalix.com</a> for custom needs.</p>
+<p>Hotels with several outlets usually choose Business (5 users, 5 devices, with expenses, accounting and QR ordering) or Pro (unlimited users, 10 or more devices, several branches with an all-branches overview, and priority support). Each outlet can be its own <a href="/features/multi-branch/">branch</a> with its own menu, stock and tills. See <a href="/pricing/">pricing</a>, or write to <a href="mailto:info@sigalix.com">info@sigalix.com</a> for custom needs.</p>
         </div>
       </section>
       <section style="padding: 0 1.5rem 1rem"><div class="cta-box">
@@ -701,8 +704,7 @@
           <h3>Resources</h3>
           <a href="/blog/">Blog</a>
           <a href="/faq/">FAQ</a>
-          <a href="/knowledgebase.html">Knowledge Base</a>
-          <a href="/documentation.html">Documentation</a>
+          <a href="/help/">Help centre</a>
           <a href="/about/">About</a>
           <a href="/contact/">Contact</a>
           <a href="/privacy.html">Privacy Policy</a>

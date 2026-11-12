@@ -31,6 +31,10 @@ The table below is the short version. Each module has its own page with the deta
 | [Payments & mobile money](/features/mobile-money-pos/) | Payment methods you create: cash, card, MTN MoMo, Orange Money, bank transfer | Cashiers |
 | [Expenses & accounting](/features/restaurant-accounting/) | Expense categories, chart of accounts, journal, P&L, balance sheet, cash flow | Accountant, owner |
 | [Offline selling](/features/offline-pos/) | Windows and Mac tills keep selling without internet and sync later | Everyone |
+| [QR code ordering](/features/qr-code-ordering/) | Guests order from their phone with one QR code; staff accept on the till | Guests, waiters |
+| [Customer tabs](/features/customer-tabs/) | Sell on credit with Pay later, see who owes what, take part payments | Cashiers, owner |
+| [Multi-branch](/features/multi-branch/) | Open branches with a copy of your setup, compare today's sales | Owner |
+| [Phone app](/features/mobile-app/) | Android app with notifications by role and a home-screen widget | Everyone |
 
 ## Where LoungeOS runs
 
@@ -38,7 +42,7 @@ You use the same LoungeOS account everywhere, with your email and password or **
 
 - **Windows app** for Windows 10 and 11 (64-bit)
 - **Mac app** for Apple Silicon (M1 and later) and Intel Macs
-- **Android app** for Android 6.0 or later (it needs Google Chrome and internet)
+- **Android app** for Android 7.0 or later (it needs internet), with notifications by role and a home-screen widget
 - **Web app** at [app.loungeos.app](https://app.loungeos.app) in any modern browser
 
 The Windows and Mac apps keep your business's data on the computer too. When the internet drops, the till keeps selling, and everything syncs automatically when the connection comes back. Phones and tablets on the same Wi-Fi can use the Windows or Mac app through their browser. The web app and the Android app need internet. See the [download page](/download/).
@@ -87,7 +91,7 @@ Each business creates its own payment methods: cash, MTN Mobile Money, Orange Mo
 
 ## Expenses, accounting and reports
 
-Every plan includes the sales dashboard and daily reports: revenue, sales by category, staff performance and recent transactions. The Business and Pro plans add weekly and monthly reports, shifts and cash control (coming soon), and email alerts (coming soon). They also add the finance side: expenses with categories you create (common ones are made for you), a chart of accounts and a double-entry journal. One click on **Sync Accounting Data** turns paid orders and stock purchases into balanced journal entries. You get an income statement (P&L), balance sheet and cash-flow statement, exportable to PDF or CSV. [Read more about accounting →](/features/restaurant-accounting/)
+Every plan includes the sales dashboard and daily reports: revenue, sales by category, staff performance and recent transactions. The Business and Pro plans add weekly and monthly reports, and the finance side: expenses with categories you create (common ones are made for you), a chart of accounts and a double-entry journal. Every paid sale, tab payment, refund and expense posts its own balanced journal entry automatically. You get an income statement (P&L), balance sheet and cash-flow statement, exportable to PDF or CSV. [Read more about accounting →](/features/restaurant-accounting/)
 
 ## Set up for your business on day one
 
@@ -110,7 +114,7 @@ It depends on the app. The Windows and Mac apps keep selling without internet an
 
 ### What devices can I use?
 
-Windows 10 and 11 (64-bit) computers, Macs with Apple Silicon or Intel, Android 6.0 or later phones and tablets, and any device with a modern browser through the web app. Phones and tablets on the same Wi-Fi as a Windows or Mac till can also use it through their browser. The number of users and devices depends on your [plan](/pricing/).
+Windows 10 and 11 (64-bit) computers, Macs with Apple Silicon or Intel, Android 7.0 or later phones and tablets, and any device with a modern browser through the web app. Phones and tablets on the same Wi-Fi as a Windows or Mac till can also use it through their browser. The number of users and devices depends on your [plan](/pricing/).
 
 ### Is LoungeOS only for restaurants?
 

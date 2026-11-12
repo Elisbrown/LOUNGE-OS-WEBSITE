@@ -32,7 +32,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/style.css?v=6530869673" />
+    <link rel="stylesheet" href="/style.css?v=c1bda027e5" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -125,8 +125,8 @@
       "name": "LoungeOS",
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "Point of sale (POS) and business management software",
-      "operatingSystem": "Windows 10 and 11 (64-bit), macOS (Apple Silicon and Intel), Android 6.0 or later, any modern web browser",
-      "softwareVersion": "2.0.0",
+      "operatingSystem": "Windows 10 and 11 (64-bit), macOS (Apple Silicon and Intel), Android 7.0 or later, any modern web browser",
+      "softwareVersion": "2.1.4",
       "downloadUrl": "https://loungeos.app/download/",
       "installUrl": "https://loungeos.app/download/",
       "url": "https://loungeos.app/",
@@ -142,7 +142,11 @@
         "One LoungeOS account on the web, Windows, Mac and Android, with email and password or Continue with Google",
         "Setup wizard: business type, name, logo, currency, taxes, payment methods, opening hours and suggested categories",
         "Point of sale for touch and mouse on any screen size",
-        "Tables and orders, kitchen and bar screens",
+        "Tables and floors, split, move and merge bills, kitchen and bar screens",
+        "QR code table ordering with staff approval",
+        "Customer tabs (pay later) with balances and part payments",
+        "Several branches with a copy of the menu, tables, settings and team",
+        "Android phone app with role-based notifications and a home-screen widget",
         "Custom payment methods such as cash, MTN Mobile Money, Orange Money, card and bank transfer",
         "Receipts on 58 mm and 80 mm thermal printers, or PDF, with a print button on every order",
         "Inventory with stock movements, low-stock alerts and suppliers",
@@ -411,7 +415,7 @@
       "breadcrumb": {
         "@id": "https://loungeos.app/fr/fonctionnalites/#breadcrumb"
       },
-      "dateModified": "2026-11-11",
+      "dateModified": "2026-11-12",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://loungeos.app/images/screens/loungeos-tableau-de-bord-francais.webp"
@@ -540,8 +544,7 @@
             <div class="nav-dropdown-menu">
               <a href="/blog/">Blog</a>
               <a href="/fr/faq/">FAQ</a>
-              <a href="/knowledgebase.html">Base de connaissances</a>
-              <a href="/documentation.html">Documentation</a>
+              <a href="/fr/aide/">Centre d'aide</a>
               <a href="/contact/">Contact</a>
               <a href="/">English</a>
             </div>
@@ -596,7 +599,7 @@
 <ul>
 <li><strong>Application Windows</strong> pour Windows 10 et 11 (64 bits)</li>
 <li><strong>Application Mac</strong> pour Mac Apple Silicon (M1 et plus récent) et Intel</li>
-<li><strong>Application Android</strong> pour Android 6.0 ou plus récent (elle a besoin de Google Chrome et d’internet)</li>
+<li><strong>Application Android</strong> pour Android 7.0 ou plus récent (elle a besoin d’internet), avec notifications par rôle et widget d’accueil</li>
 <li><strong>Application web</strong> sur <a href="https://app.loungeos.app">app.loungeos.app</a>, dans tout navigateur récent</li>
 </ul>
 <p>Sur téléphone, une barre de navigation en bas de l’écran, avec un menu « Plus », garde tous les écrans à portée de main. Le nombre d’utilisateurs et d’appareils dépend de votre <a href="/fr/tarifs/">formule</a>. Voir la page <a href="/fr/telecharger/">Télécharger</a>.</p>
@@ -629,7 +632,15 @@
 <h2 id="encaissement-et-mobile-money">Encaissement et Mobile Money</h2>
 <p>Chaque établissement crée ses propres moyens de paiement : espèces avec calcul de la monnaie, <strong>MTN Mobile Money, Orange Money</strong>, carte, virement, Wave ou tout autre moyen accepté par vos clients. L’assistant de configuration crée pour vous ceux que vous acceptez. Les paiements Mobile Money, carte et virement sont enregistrés avec la référence de transaction, et une même addition peut être réglée avec plusieurs moyens de paiement.</p>
 <h2 id="depenses-et-comptabilite">Dépenses et comptabilité</h2>
-<p>Avec les formules Business et Pro, vous enregistrez vos <strong>dépenses dans les catégories que vous créez</strong> (les plus courantes sont créées pour vous) et tenez une comptabilité en <strong>partie double</strong> avec plan de comptes et journal. Un clic sur <em>Synchroniser les données comptables</em> transforme les ventes et les achats de stock en écritures équilibrées. Vous obtenez le <strong>compte de résultat</strong>, le <strong>bilan</strong> et le <strong>tableau des flux de trésorerie</strong>, exportables en PDF ou CSV. Votre comptable peut rapprocher les comptes du plan SYSCOHADA.</p>
+<p>Avec les formules Business et Pro, vous enregistrez vos <strong>dépenses dans les catégories que vous créez</strong> (les plus courantes sont créées pour vous) et tenez une comptabilité en <strong>partie double</strong> avec plan de comptes et journal. Chaque vente payée, paiement sur compte client, remboursement et dépense passe automatiquement son écriture équilibrée. Vous obtenez le <strong>compte de résultat</strong>, le <strong>bilan</strong> et le <strong>tableau des flux de trésorerie</strong>, exportables en PDF ou CSV. Votre comptable peut rapprocher les comptes du plan SYSCOHADA.</p>
+<h2 id="nouveautes-de-la-version-21">Nouveautés de la version 2.1</h2>
+<ul>
+<li><strong><a href="/fr/fonctionnalites/commande-qr-code/">Commande par QR code à table</a></strong> : le client commande depuis son téléphone, l’équipe accepte en caisse (Business et Pro).</li>
+<li><strong><a href="/fr/fonctionnalites/ventes-a-credit/">Comptes clients</a></strong> : vendre à crédit avec Payer plus tard, voir qui doit quoi et depuis quand.</li>
+<li><strong><a href="/fr/fonctionnalites/multi-etablissements/">Plusieurs succursales</a></strong> : ouvrir un établissement avec une copie de vos réglages et comparer les ventes (Pro).</li>
+<li><strong><a href="/fr/fonctionnalites/application-mobile/">Application Android</a></strong> : notifications selon le rôle et widget avec les chiffres du jour.</li>
+</ul>
+<p>Chaque fonction est expliquée pas à pas, avec captures d’écran, dans le <a href="/fr/aide/">centre d’aide</a>.</p>
 <h2 id="parametrage-des-le-premier-jour">Paramétrage dès le premier jour</h2>
 <p>À la création de votre compte, l’assistant de configuration vous demande votre type d’activité, votre nom, votre logo, votre devise, vos taxes, vos moyens de paiement et vos horaires d’ouverture, puis vous propose des catégories de menu, de stock et de dépenses à cocher.</p>
 <ul>
@@ -735,8 +746,7 @@
         <div class="footer-col">
           <h3>Ressources</h3>
           <a href="/blog/">Blog</a>
-          <a href="/knowledgebase.html">Base de connaissances</a>
-          <a href="/documentation.html">Documentation</a>
+          <a href="/fr/aide/">Centre d'aide</a>
           <a href="/about/">À propos</a>
           <a href="/contact/">Contact</a>
           <a href="/privacy.html">Confidentialité</a>

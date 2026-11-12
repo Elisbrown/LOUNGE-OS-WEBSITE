@@ -44,15 +44,19 @@ Les applications Windows et Mac gardent aussi les données de l'entreprise sur l
 | Prix par an (2 mois offerts) | 60 000 FCFA / 100 $ US | 150 000 FCFA / 250 $ US | 300 000 FCFA / 500 $ US |
 | Utilisateurs | 2 | 5 | Illimités |
 | Appareils | 2 | 5 | 10 et plus |
-| Caisse, stocks et reçus | ✓ | ✓ | ✓ |
+| Caisse, tables, écrans cuisine et bar, reçus | ✓ | ✓ | ✓ |
+| Stocks et fournisseurs | ✓ | ✓ | ✓ |
+| [Comptes clients (payer plus tard)](/fr/fonctionnalites/ventes-a-credit/) | ✓ | ✓ | ✓ |
+| [Application Android](/fr/fonctionnalites/application-mobile/) avec notifications | ✓ | ✓ | ✓ |
 | Rapports journaliers | ✓ | ✓ | ✓ |
 | Dépenses et comptabilité | | ✓ | ✓ |
-| Services (shifts) et contrôle de caisse (bientôt disponible) | | ✓ | ✓ |
 | Rapports hebdomadaires et mensuels | | ✓ | ✓ |
-| Alertes par e-mail (bientôt disponible) | | ✓ | ✓ |
+| [Commande par QR code à table](/fr/fonctionnalites/commande-qr-code/) | | ✓ | ✓ |
+| [Plusieurs succursales](/fr/fonctionnalites/multi-etablissements/) | | | ✓ |
+| Vue des ventes de toutes les succursales | | | ✓ |
 | Support prioritaire | | | ✓ |
-| Administration avancée | | | ✓ |
-| Plusieurs établissements | | | Bientôt disponible |
+| Services et contrôle de caisse | | Bientôt disponible | Bientôt disponible |
+| Alertes par e-mail | | Bientôt disponible | Bientôt disponible |
 | Paie | | | Bientôt disponible |
 
 Business est la formule la plus choisie. L'essai gratuit vous donne les fonctionnalités Business pendant 14 jours : vous voyez quelle formule vous convient avant de payer.
@@ -81,7 +85,7 @@ Payez chaque mois, ou payez l'année en une fois et profitez de 2 mois offerts :
 
 ## Plusieurs établissements ou besoins sur mesure
 
-La gestion de plusieurs établissements arrive bientôt dans la formule Pro. LoungeOS est conçu par [Sigalix](https://sigalix.com), une entreprise de logiciels sur mesure. Pour un besoin qui dépasse la formule Pro, écrivez à [info@sigalix.com](mailto:info@sigalix.com) ou [contactez-nous](/contact/).
+Plusieurs succursales sont incluses dans la formule Pro : ouvrez une succursale avec une copie du menu, des tables, des réglages et de l'équipe, et voyez les ventes de toutes sur une page. Voir [multi-établissements](/fr/fonctionnalites/multi-etablissements/). LoungeOS est conçu par [Sigalix](https://sigalix.com), une entreprise de logiciels sur mesure. Pour un besoin qui dépasse la formule Pro, écrivez à [info@sigalix.com](mailto:info@sigalix.com) ou [contactez-nous](/contact/).
 
 ## Questions fréquentes
 
@@ -91,7 +95,7 @@ Oui. Chaque formule commence par un essai gratuit de 14 jours avec les fonctionn
 
 ### Quelle formule choisir ?
 
-Starter convient à 2 utilisateurs sur 2 appareils qui ont besoin de la caisse, des stocks, des reçus et des rapports journaliers. Business ajoute les dépenses, la comptabilité, les services et le contrôle de caisse (bientôt disponible), les rapports hebdomadaires et mensuels et les alertes par e-mail (bientôt disponible), pour 5 utilisateurs sur 5 appareils. Pro s'adresse aux équipes plus grandes : utilisateurs illimités, 10 appareils et plus, support prioritaire et administration avancée.
+Starter convient à 2 utilisateurs sur 2 appareils qui ont besoin de la caisse, des tables, des écrans cuisine et bar, des stocks, des comptes clients, des reçus et des rapports journaliers. Business ajoute les dépenses, la comptabilité, les rapports hebdomadaires et mensuels et la commande par QR code, pour 5 utilisateurs sur 5 appareils. Pro s'adresse aux équipes et groupes plus grands : utilisateurs illimités, 10 appareils et plus, plusieurs succursales avec une vue d'ensemble, et support prioritaire.
 
 ### Pourquoi les prix s'affichent-ils en FCFA ou en dollars US ?
 

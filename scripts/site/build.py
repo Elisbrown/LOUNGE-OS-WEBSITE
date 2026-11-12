@@ -26,6 +26,7 @@ from seo_update import social_tags, version_links  # noqa: E402
 CONTENT = os.path.join(HERE, "content")
 SITE = "https://loungeos.app"
 TODAY = dt.date(2026, 10, 8)
+APP_VERSION = "2.1.4"
 SIGNUP = "https://app.loungeos.app/login"  # sign-up is on the sign-in page
 WIN_DOWNLOAD = "/download/"
 # Hand-maintained pages that generated pages may reference as hreflang alternates
@@ -53,6 +54,9 @@ T = {
         "read_more": "Read guide →", "learn_more": "Learn more →",
         "faq_heading": "Frequently asked questions",
         "og_locale": "en_US",
+        "help": "Help centre", "help_for": "For", "help_toc": "On this page",
+        "help_stuck": "Stuck on a step? Write to support@loungeos.app or WhatsApp +237 679 690 703 and say which page you are on.",
+        "help_back": "All help articles",
     },
     "fr": {
         "home": "Accueil", "blog": "Blog", "start_trial": "Essai gratuit",
@@ -67,6 +71,9 @@ T = {
         "read_more": "Lire le guide →", "learn_more": "En savoir plus →",
         "faq_heading": "Questions fréquentes",
         "og_locale": "fr_FR",
+        "help": "Centre d'aide", "help_for": "Pour", "help_toc": "Sur cette page",
+        "help_stuck": "Bloqué à une étape ? Écrivez à support@loungeos.app ou sur WhatsApp au +237 679 690 703 en précisant la page.",
+        "help_back": "Tous les articles d'aide",
     },
 }
 
@@ -122,11 +129,38 @@ def load_pages():
 
 
 # ---------------------------------------------------------------- html parts
+def webp_size(path):
+    """(width, height) of a WebP file, read from its header (VP8, VP8L or VP8X)."""
+    try:
+        with open(path, "rb") as fh:
+            head = fh.read(30)
+    except OSError:
+        return None
+    if head[:4] != b"RIFF" or head[8:12] != b"WEBP":
+        return None
+    kind = head[12:16]
+    if kind == b"VP8 ":
+        return (int.from_bytes(head[26:28], "little") & 0x3FFF, int.from_bytes(head[28:30], "little") & 0x3FFF)
+    if kind == b"VP8L":
+        b = head[21:25]
+        return (1 + (((b[1] & 0x3F) << 8) | b[0]), 1 + (((b[3] & 0xF) << 10) | (b[2] << 2) | ((b[1] & 0xC0) >> 6)))
+    if kind == b"VP8X":
+        return (1 + int.from_bytes(head[24:27], "little"), 1 + int.from_bytes(head[27:30], "little"))
+    return None
+
+
+SCREENS_DIR = os.path.abspath(os.path.join(HERE, "..", "..", "images", "screens"))
+
+
 def img_tag(name, alt, hero=False, sizes="(max-width: 800px) 100vw, 960px"):
     attrs = 'fetchpriority="high"' if hero else 'loading="lazy"'
-    return (f'<img src="/images/screens/{name}.webp" '
-            f'srcset="/images/screens/{name}-800.webp 800w, /images/screens/{name}.webp 1600w" '
-            f'sizes="{sizes}" width="1600" height="861" alt="{esc(alt)}" {attrs} decoding="async" />')
+    w, h = webp_size(os.path.join(SCREENS_DIR, name + ".webp")) or (1600, 861)
+    small = os.path.exists(os.path.join(SCREENS_DIR, name + "-800.webp"))
+    srcset = (f'srcset="/images/screens/{name}-800.webp 800w, /images/screens/{name}.webp {w}w" sizes="{sizes}" '
+              if small else "")
+    tall = ' class="shot-tall"' if h > w else ""
+    return (f'<img src="/images/screens/{name}.webp" {srcset}'
+            f'width="{w}" height="{h}" alt="{esc(alt)}"{tall} {attrs} decoding="async" />')
 
 
 CHEVRON = ('<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" '
@@ -155,8 +189,7 @@ NAV = {
                                     ("Cameroon", "/cameroon/"), ("Africa", "/africa/")]),
         "after": [("Pricing", "/pricing/"), ("Download", "/download/")],
         "resources": ("Resources", [("Blog", "/blog/"), ("FAQ", "/faq/"),
-                                    ("Knowledge Base", "/knowledgebase.html"),
-                                    ("Documentation", "/documentation.html"),
+                                    ("Help centre", "/help/"),
                                     ("About", "/about/"), ("Contact", "/contact/"),
                                     ("Français", "/fr/")]),
         "cta": "Start free trial",
@@ -174,8 +207,7 @@ NAV = {
                                     ("Afrique francophone", "/fr/afrique/")]),
         "after": [("Tarifs", "/fr/tarifs/"), ("Télécharger", "/fr/telecharger/")],
         "resources": ("Ressources", [("Blog", "/blog/"), ("FAQ", "/fr/faq/"),
-                                     ("Base de connaissances", "/knowledgebase.html"),
-                                     ("Documentation", "/documentation.html"),
+                                     ("Centre d'aide", "/fr/aide/"),
                                      ("Contact", "/contact/"),
                                      ("English", "/")]),
         "cta": "Essai gratuit",
@@ -256,8 +288,8 @@ FOOTER = {
                            ("South Africa", "/south-africa/"), ("Africa", "/africa/"),
                            ("Cameroun (FR)", "/fr/cameroun/"), ("Côte d'Ivoire (FR)", "/fr/cote-divoire/"),
                            ("Sénégal (FR)", "/fr/senegal/")]),
-            ("Resources", [("Blog", "/blog/"), ("FAQ", "/faq/"), ("Knowledge Base", "/knowledgebase.html"),
-                           ("Documentation", "/documentation.html"), ("About", "/about/"),
+            ("Resources", [("Blog", "/blog/"), ("FAQ", "/faq/"), ("Help centre", "/help/"),
+                           ("About", "/about/"),
                            ("Contact", "/contact/"), ("Privacy Policy", "/privacy.html"),
                            ("Terms of Service", "/terms.html"), ("Accessibility", "/accessibility.html"),
                            ("Legal", "/legal.html")]),
@@ -278,8 +310,8 @@ FOOTER = {
             ("Pays", [("Cameroun", "/fr/cameroun/"), ("Côte d'Ivoire", "/fr/cote-divoire/"),
                       ("Sénégal", "/fr/senegal/"), ("Cameroon (EN)", "/cameroon/"),
                       ("Nigeria (EN)", "/nigeria/"), ("Ghana (EN)", "/ghana/")]),
-            ("Ressources", [("Blog", "/blog/"), ("Base de connaissances", "/knowledgebase.html"),
-                            ("Documentation", "/documentation.html"), ("À propos", "/about/"),
+            ("Ressources", [("Blog", "/blog/"), ("Centre d'aide", "/fr/aide/"),
+                            ("À propos", "/about/"),
                             ("Contact", "/contact/"), ("Confidentialité", "/privacy.html"),
                             ("Conditions", "/terms.html"), ("Mentions légales", "/legal.html")]),
         ],
@@ -424,8 +456,8 @@ SOFTWARE = {
     "name": "LoungeOS",
     "applicationCategory": "BusinessApplication",
     "applicationSubCategory": "Point of sale (POS) and business management software",
-    "operatingSystem": "Windows 10 and 11 (64-bit), macOS (Apple Silicon and Intel), Android 6.0 or later, any modern web browser",
-    "softwareVersion": "2.0.0",
+    "operatingSystem": "Windows 10 and 11 (64-bit), macOS (Apple Silicon and Intel), Android 7.0 or later, any modern web browser",
+    "softwareVersion": APP_VERSION,
     "downloadUrl": SITE + "/download/",
     "installUrl": SITE + "/download/",
     "url": SITE + "/",
@@ -436,7 +468,11 @@ SOFTWARE = {
         "One LoungeOS account on the web, Windows, Mac and Android, with email and password or Continue with Google",
         "Setup wizard: business type, name, logo, currency, taxes, payment methods, opening hours and suggested categories",
         "Point of sale for touch and mouse on any screen size",
-        "Tables and orders, kitchen and bar screens",
+        "Tables and floors, split, move and merge bills, kitchen and bar screens",
+        "QR code table ordering with staff approval",
+        "Customer tabs (pay later) with balances and part payments",
+        "Several branches with a copy of the menu, tables, settings and team",
+        "Android phone app with role-based notifications and a home-screen widget",
         "Custom payment methods such as cash, MTN Mobile Money, Orange Money, card and bank transfer",
         "Receipts on 58 mm and 80 mm thermal printers, or PDF, with a print button on every order",
         "Inventory with stock movements, low-stock alerts and suppliers",
@@ -541,6 +577,15 @@ def shortcodes(md, page, by_url):
             found.append(by_url[u])
         return '<div class="card-grid">\n' + cards_html(found, lang, [page.get("image")]) + "\n</div>"
 
+    def phones(m):
+        figs = []
+        for part in m.group(1).split(";;"):
+            name, alt, *cap = part.split("|")
+            c = f"<figcaption>{cap[0].strip()}</figcaption>" if cap and cap[0].strip() else ""
+            figs.append(f'<figure>{img_tag(name.strip(), alt.strip(), sizes="240px")}{c}</figure>')
+        return '<div class="phone-row">' + "".join(figs) + "</div>"
+
+    md = re.sub(r"\[\[phones:(.+?)\]\]", phones, md)
     md = re.sub(r"\[\[figure:(.+?)\]\]", fig, md)
     md = re.sub(r"\[\[cards:(.+?)\]\]", cards, md)
     md = md.replace("[[cta]]", cta_box(lang))
@@ -592,19 +637,20 @@ def price_table(lang):
 
 PLAN_FEATURES = {
     "en": {
-        "starter": ["Point of sale (POS)", "Inventory", "Receipts", "Daily reports"],
-        "business": ["Everything in Starter", "Expenses and accounting", "Shifts and cash control (coming soon)",
-                     "Weekly and monthly reports", "Email alerts (coming soon)"],
-        "pro": ["Everything in Business", "Priority support", "Advanced admin",
-                "Several branches (coming soon)", "Payroll (coming soon)"],
+        "starter": ["Point of sale (POS), tables, kitchen and bar screens", "Inventory and suppliers",
+                    "Customer tabs (pay later)", "Receipts", "Daily reports"],
+        "business": ["Everything in Starter", "Expenses and accounting", "Weekly and monthly reports",
+                     "QR code table ordering", "Shifts and cash control (coming soon)"],
+        "pro": ["Everything in Business", "Several branches", "All-branches sales overview",
+                "Priority support", "Payroll (coming soon)"],
     },
     "fr": {
-        "starter": ["Caisse (point de vente)", "Stocks", "Reçus", "Rapports journaliers"],
-        "business": ["Tout ce que propose Starter", "Dépenses et comptabilité",
-                     "Services (shifts) et contrôle de caisse (bientôt disponible)", "Rapports hebdomadaires et mensuels",
-                     "Alertes par e-mail (bientôt disponible)"],
-        "pro": ["Tout ce que propose Business", "Support prioritaire", "Administration avancée",
-                "Plusieurs établissements (bientôt disponible)", "Paie (bientôt disponible)"],
+        "starter": ["Caisse, tables, écrans cuisine et bar", "Stocks et fournisseurs",
+                    "Comptes clients (payer plus tard)", "Reçus", "Rapports journaliers"],
+        "business": ["Tout ce que propose Starter", "Dépenses et comptabilité", "Rapports hebdomadaires et mensuels",
+                     "Commande par QR code à table", "Services et contrôle de caisse (bientôt disponible)"],
+        "pro": ["Tout ce que propose Business", "Plusieurs succursales", "Vue des ventes de toutes les succursales",
+                "Support prioritaire", "Paie (bientôt disponible)"],
     },
 }
 
@@ -833,7 +879,13 @@ def hero_html(page, crumbs, minutes=None):
     bc = f'<nav class="breadcrumbs" aria-label="Breadcrumb">{bc}</nav>' if len(crumbs) > 1 else ""
     label = f'<p class="section-label">{page.get("category") or page.get("label", "")}</p>' if (page.get("category") or page.get("label")) else ""
     lead = f'<p class="lead">{page["lead"]}</p>' if page.get("lead") else ""
-    if page["type"] == "blog":
+    if page["type"] == "help":
+        meta = (f'<div class="article-meta"><span>{t["help_for"]} LoungeOS {APP_VERSION}</span>'
+                f'<span>{t["updated"]} <time datetime="{page["modified"]}" data-auto="modified">{fmt_date(page["modified"], lang)}</time></span>'
+                f'<span>{minutes} {t["min_read"]}</span></div>')
+        actions = ""
+        media = ""
+    elif page["type"] == "blog":
         meta = (f'<div class="article-meta"><span>{t["by"]} <a href="/about/">{t["team"]}</a></span>'
                 f'<span>{t["published"]} <time datetime="{page["published"]}">{fmt_date(page["published"], lang)}</time></span>'
                 f'<span>{t["updated"]} <time datetime="{page["modified"]}" data-auto="modified">{fmt_date(page["modified"], lang)}</time></span>'
@@ -929,6 +981,14 @@ def build_page(page, by_url, pages):
         if not art["about"]:
             del art["about"]
         graph.append(art)
+    if page["type"] == "help":
+        graph.append({"@type": "TechArticle", "@id": SITE + url + "#article", "headline": page["h1"],
+                      "description": page["description"], "inLanguage": lang,
+                      "dateModified": page["modified"], "datePublished": page.get("published", page["modified"]),
+                      "author": {"@id": ORG_ID}, "publisher": {"@id": ORG_ID},
+                      "mainEntityOfPage": {"@id": SITE + url + "#webpage"},
+                      "image": f"{SITE}/images/screens/{page.get('image', 'loungeos-pos-order-screen')}.webp",
+                      "about": {"@id": SOFTWARE_ID}, "proficiencyLevel": "Beginner"})
     graph.append(breadcrumb_node(url, crumbs))
     if faq:
         graph.append(faq_node(url, faq))
@@ -936,7 +996,21 @@ def build_page(page, by_url, pages):
     parts = [head_html(page, graph), "  <body>", nav_html(lang), '    <main id="main-content">',
              hero_html(page, crumbs, minutes)]
 
-    if page["type"] == "blog":
+    if page["type"] == "help":
+        toc_html = ""
+        if len(toc) >= 3:
+            lis = "\n".join(f'<li><a href="#{i}">{esc(x)}</a></li>' for i, x in toc)
+            toc_html = f'<details class="toc" open><summary>{t["help_toc"]}</summary><ul>\n{lis}\n</ul></details>'
+        back = "/fr/aide/" if lang == "fr" else "/help/"
+        parts.append(f"""      <article class="content-section">
+        <div class="prose">
+{toc_html}
+{body}
+<p class="help-steps-note">{t["help_stuck"]}</p>
+<p><a href="{back}">← {t["help_back"]}</a></p>
+        </div>
+      </article>""")
+    elif page["type"] == "blog":
         tk = ""
         if page.get("takeaways"):
             lis = "\n".join(f"<li>{markdown.markdown(x)[3:-4]}</li>" for x in page["takeaways"])
@@ -973,7 +1047,7 @@ def build_page(page, by_url, pages):
     rel = page.get("related", [])
     if rel:
         cards = cards_html([by_url[u] for u in rel if u in by_url or not LENIENT], lang, [page.get("image")])
-        heading = t["related"] if page["type"] == "blog" else t["explore"]
+        heading = t["related"] if page["type"] in ("blog", "help") else t["explore"]
         parts.append(f"""      <section class="related-section">
         <h2 class="section-title">{heading}</h2>
         <div class="card-grid">
@@ -984,6 +1058,63 @@ def build_page(page, by_url, pages):
     parts += ["    </main>", footer_html(lang), tail_scripts(lang), "  </body>", "</html>", ""]
     out = "\n".join(parts)
     return (fr_typography(out) if lang == "fr" else out), words
+
+
+HELP_SECTIONS = {
+    "en": ["Get started", "Selling", "Products and stock", "Money and reports", "Team and branches", "Account, data and troubleshooting"],
+    "fr": ["Bien démarrer", "Vendre", "Produits et stocks", "Argent et rapports", "Équipe et succursales", "Compte, données et dépannage"],
+}
+
+
+def help_index(pages, by_url, lang):
+    url = "/fr/aide/" if lang == "fr" else "/help/"
+    other = "/help/" if lang == "fr" else "/fr/aide/"
+    arts = sorted([p for p in pages if p["type"] == "help" and p["lang"] == lang],
+                  key=lambda p: (HELP_SECTIONS[lang].index(p["section"]), p.get("order", 99), p["url"]))
+    t = T[lang]
+    sections = []
+    for sec in HELP_SECTIONS[lang]:
+        row = [p for p in arts if p["section"] == sec]
+        if not row:
+            continue
+        links = "\n".join(f'<a class="help-link" href="{p["url"]}"><strong>{esc(p.get("card_title") or p["h1"])}</strong>'
+                          f'<span>{esc(p.get("card_desc") or p["description"])}</span></a>' for p in row)
+        sections.append(f'<h2 class="blog-section-title">{esc(sec)}</h2>\n<div class="help-grid">\n{links}\n</div>')
+    fr = lang == "fr"
+    page = {
+        "url": url, "lang": lang, "type": "help-index", "alternates": {"en": "/help/", "fr": "/fr/aide/"},
+        "title": ("Centre d'aide LoungeOS : guides pas à pas avec captures" if fr else
+                  "LoungeOS Help Centre: Step-by-Step Guides with Screenshots"),
+        "description": ("Guides pas à pas pour LoungeOS 2.1 : installation, caisse, cuisine et bar, commande par QR code, stocks, dépenses, comptabilité, succursales et application mobile."
+                        if fr else
+                        "Step-by-step LoungeOS 2.1 guides with screenshots: setup, the till, kitchen and bar, QR table ordering, stock, expenses, accounting, branches and the phone app."),
+        "h1": "Centre d'aide LoungeOS" if fr else "LoungeOS Help Centre",
+        "lead": ("Chaque guide suit l'application telle qu'elle est aujourd'hui (version " + APP_VERSION + "), avec des captures de l'établissement de démonstration Viona Lounge à Buea. Les chiffres et les noms du personnel sont des exemples."
+                 if fr else
+                 "Every guide follows the app as it is today (version " + APP_VERSION + "), with screenshots from the sample business Viona Lounge in Buea. Figures and staff names are sample data."),
+        "label": t["help"], "modified": max(p["modified"] for p in arts), "no_hero_cta": True,
+    }
+    crumbs = [(t["home"], "/fr/" if fr else "/"), (t["help"], url)]
+    items = [{"@type": "ListItem", "position": i + 1, "url": SITE + p["url"], "name": p["h1"]} for i, p in enumerate(arts)]
+    graph = [ORG, WEBSITE,
+             {"@type": ["WebPage", "CollectionPage"], "@id": SITE + url + "#webpage", "url": SITE + url,
+              "name": page["title"], "description": page["description"], "inLanguage": lang,
+              "isPartOf": {"@id": WEBSITE_ID}, "breadcrumb": {"@id": SITE + url + "#breadcrumb"},
+              "dateModified": page["modified"], "about": {"@id": SOFTWARE_ID},
+              "mainEntity": {"@type": "ItemList", "itemListElement": items}},
+             SOFTWARE, breadcrumb_node(url, crumbs)]
+    search = ("Rechercher dans l'aide" if fr else "Search the help centre")
+    box = (f'<div class="help-search"><input type="search" id="helpSearch" placeholder="{search}…" aria-label="{search}" /></div>'
+           '<script>(function(){var i=document.getElementById("helpSearch");if(!i)return;i.addEventListener("input",function(){var q=i.value.toLowerCase().trim();'
+           'document.querySelectorAll(".help-link").forEach(function(a){a.style.display=!q||a.textContent.toLowerCase().indexOf(q)>-1?"":"none";});});})();</script>')
+    out = [head_html(page, graph), "  <body>", nav_html(lang), '    <main id="main-content">',
+           hero_html(page, crumbs),
+           '      <section class="content-section" style="max-width: 1100px; margin: 0 auto;">', box,
+           "\n".join(sections), "      </section>",
+           f'      <section style="padding: 2rem 1.5rem 1rem">{cta_box(lang)}</section>',
+           "    </main>", footer_html(lang), tail_scripts(lang), "  </body>", "</html>", ""]
+    html_out = "\n".join(out)
+    return url, (fr_typography(html_out) if fr else html_out)
 
 
 def blog_index(pages, by_url):
@@ -1041,6 +1172,14 @@ def main():
         path = os.path.join(repo, "blog", "index.html")
         os.makedirs(os.path.dirname(path), exist_ok=True)
         open(path, "w", encoding="utf-8").write(social_tags(version_links(blog_index(pages, by_url), repo), repo))
+    if any(p["type"] == "help" for p in pages):
+        for lang in ("en", "fr"):
+            if not any(p["type"] == "help" and p["lang"] == lang for p in pages):
+                continue
+            url, out = help_index(pages, by_url, lang)
+            path = os.path.join(repo, url.strip("/"), "index.html")
+            os.makedirs(os.path.dirname(path), exist_ok=True)
+            open(path, "w", encoding="utf-8").write(social_tags(version_links(out, repo), repo))
     for r in sorted(report):
         flag = ""
         if r[4] > 65:

@@ -32,7 +32,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/style.css?v=6530869673" />
+    <link rel="stylesheet" href="/style.css?v=c1bda027e5" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -125,8 +125,8 @@
       "name": "LoungeOS",
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "Point of sale (POS) and business management software",
-      "operatingSystem": "Windows 10 and 11 (64-bit), macOS (Apple Silicon and Intel), Android 6.0 or later, any modern web browser",
-      "softwareVersion": "2.0.0",
+      "operatingSystem": "Windows 10 and 11 (64-bit), macOS (Apple Silicon and Intel), Android 7.0 or later, any modern web browser",
+      "softwareVersion": "2.1.4",
       "downloadUrl": "https://loungeos.app/download/",
       "installUrl": "https://loungeos.app/download/",
       "url": "https://loungeos.app/",
@@ -142,7 +142,11 @@
         "One LoungeOS account on the web, Windows, Mac and Android, with email and password or Continue with Google",
         "Setup wizard: business type, name, logo, currency, taxes, payment methods, opening hours and suggested categories",
         "Point of sale for touch and mouse on any screen size",
-        "Tables and orders, kitchen and bar screens",
+        "Tables and floors, split, move and merge bills, kitchen and bar screens",
+        "QR code table ordering with staff approval",
+        "Customer tabs (pay later) with balances and part payments",
+        "Several branches with a copy of the menu, tables, settings and team",
+        "Android phone app with role-based notifications and a home-screen widget",
         "Custom payment methods such as cash, MTN Mobile Money, Orange Money, card and bank transfer",
         "Receipts on 58 mm and 80 mm thermal printers, or PDF, with a print button on every order",
         "Inventory with stock movements, low-stock alerts and suppliers",
@@ -411,7 +415,7 @@
       "breadcrumb": {
         "@id": "https://loungeos.app/features/#breadcrumb"
       },
-      "dateModified": "2026-11-11",
+      "dateModified": "2026-11-12",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://loungeos.app/images/screens/loungeos-sales-reports.webp"
@@ -455,7 +459,7 @@
           "name": "What devices can I use?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "<p>Windows 10 and 11 (64-bit) computers, Macs with Apple Silicon or Intel, Android 6.0 or later phones and tablets, and any device with a modern browser through the web app. Phones and tablets on the same Wi-Fi as a Windows or Mac till can also use it through their browser. The number of users and devices depends on your <a href=\"https://loungeos.app/pricing/\">plan<\/a>.<\/p>"
+            "text": "<p>Windows 10 and 11 (64-bit) computers, Macs with Apple Silicon or Intel, Android 7.0 or later phones and tablets, and any device with a modern browser through the web app. Phones and tablets on the same Wi-Fi as a Windows or Mac till can also use it through their browser. The number of users and devices depends on your <a href=\"https://loungeos.app/pricing/\">plan<\/a>.<\/p>"
           }
         },
         {
@@ -533,8 +537,7 @@
             <div class="nav-dropdown-menu">
               <a href="/blog/">Blog</a>
               <a href="/faq/">FAQ</a>
-              <a href="/knowledgebase.html">Knowledge Base</a>
-              <a href="/documentation.html">Documentation</a>
+              <a href="/help/">Help centre</a>
               <a href="/about/">About</a>
               <a href="/contact/">Contact</a>
               <a href="/fr/">Français</a>
@@ -635,6 +638,26 @@
 <td>Windows and Mac tills keep selling without internet and sync later</td>
 <td>Everyone</td>
 </tr>
+<tr>
+<td><a href="/features/qr-code-ordering/">QR code ordering</a></td>
+<td>Guests order from their phone with one QR code; staff accept on the till</td>
+<td>Guests, waiters</td>
+</tr>
+<tr>
+<td><a href="/features/customer-tabs/">Customer tabs</a></td>
+<td>Sell on credit with Pay later, see who owes what, take part payments</td>
+<td>Cashiers, owner</td>
+</tr>
+<tr>
+<td><a href="/features/multi-branch/">Multi-branch</a></td>
+<td>Open branches with a copy of your setup, compare today’s sales</td>
+<td>Owner</td>
+</tr>
+<tr>
+<td><a href="/features/mobile-app/">Phone app</a></td>
+<td>Android app with notifications by role and a home-screen widget</td>
+<td>Everyone</td>
+</tr>
 </tbody>
 </table></div>
 <h2 id="where-loungeos-runs">Where LoungeOS runs</h2>
@@ -642,7 +665,7 @@
 <ul>
 <li><strong>Windows app</strong> for Windows 10 and 11 (64-bit)</li>
 <li><strong>Mac app</strong> for Apple Silicon (M1 and later) and Intel Macs</li>
-<li><strong>Android app</strong> for Android 6.0 or later (it needs Google Chrome and internet)</li>
+<li><strong>Android app</strong> for Android 7.0 or later (it needs internet), with notifications by role and a home-screen widget</li>
 <li><strong>Web app</strong> at <a href="https://app.loungeos.app">app.loungeos.app</a> in any modern browser</li>
 </ul>
 <p>The Windows and Mac apps keep your business’s data on the computer too. When the internet drops, the till keeps selling, and everything syncs automatically when the connection comes back. Phones and tablets on the same Wi-Fi can use the Windows or Mac app through their browser. The web app and the Android app need internet. See the <a href="/download/">download page</a>.</p>
@@ -678,7 +701,7 @@
 <h2 id="payments-and-mobile-money">Payments and mobile money</h2>
 <p>Each business creates its own payment methods: cash, MTN Mobile Money, Orange Money, card, bank transfer or any other way your customers pay. The setup wizard asks which ones you accept and creates them for you. Cash payments show the change due, and mobile money, card and transfer payments can carry the transaction reference. Groups can split one bill across several methods. <a href="/features/mobile-money-pos/">Read more about payments →</a></p>
 <h2 id="expenses-accounting-and-reports">Expenses, accounting and reports</h2>
-<p>Every plan includes the sales dashboard and daily reports: revenue, sales by category, staff performance and recent transactions. The Business and Pro plans add weekly and monthly reports, shifts and cash control (coming soon), and email alerts (coming soon). They also add the finance side: expenses with categories you create (common ones are made for you), a chart of accounts and a double-entry journal. One click on <strong>Sync Accounting Data</strong> turns paid orders and stock purchases into balanced journal entries. You get an income statement (P&amp;L), balance sheet and cash-flow statement, exportable to PDF or CSV. <a href="/features/restaurant-accounting/">Read more about accounting →</a></p>
+<p>Every plan includes the sales dashboard and daily reports: revenue, sales by category, staff performance and recent transactions. The Business and Pro plans add weekly and monthly reports, and the finance side: expenses with categories you create (common ones are made for you), a chart of accounts and a double-entry journal. Every paid sale, tab payment, refund and expense posts its own balanced journal entry automatically. You get an income statement (P&amp;L), balance sheet and cash-flow statement, exportable to PDF or CSV. <a href="/features/restaurant-accounting/">Read more about accounting →</a></p>
 <h2 id="set-up-for-your-business-on-day-one">Set up for your business on day one</h2>
 <p>When you create your account, a setup wizard asks for your business type, name, logo, currency, taxes, payment methods and opening hours. It then suggests menu, inventory and expense categories to tick, so LoungeOS is configured on day one.</p>
 <ul>
@@ -693,7 +716,7 @@
 <h3 id="does-loungeos-need-internet-to-work">Does LoungeOS need internet to work?</h3>
 <p>It depends on the app. The Windows and Mac apps keep selling without internet and sync automatically when the connection comes back. After 7 days without syncing, the till becomes read-only until it reconnects, and a warning shows during the last 2 days. Read-only means past orders, reports, printing and exports still work, but you cannot make new sales or edits. The web app and the Android app need internet.</p>
 <h3 id="what-devices-can-i-use">What devices can I use?</h3>
-<p>Windows 10 and 11 (64-bit) computers, Macs with Apple Silicon or Intel, Android 6.0 or later phones and tablets, and any device with a modern browser through the web app. Phones and tablets on the same Wi-Fi as a Windows or Mac till can also use it through their browser. The number of users and devices depends on your <a href="/pricing/">plan</a>.</p>
+<p>Windows 10 and 11 (64-bit) computers, Macs with Apple Silicon or Intel, Android 7.0 or later phones and tablets, and any device with a modern browser through the web app. Phones and tablets on the same Wi-Fi as a Windows or Mac till can also use it through their browser. The number of users and devices depends on your <a href="/pricing/">plan</a>.</p>
 <h3 id="is-loungeos-only-for-restaurants">Is LoungeOS only for restaurants?</h3>
 <p>No. It is used by restaurants, bars, lounges, nightclubs, snack bars, cafés, hotels, retail shops and supermarkets. Any business that sells, at tables or at a counter, can use it.</p>
 <h3 id="can-i-try-loungeos-before-paying">Can I try LoungeOS before paying?</h3>
@@ -792,8 +815,7 @@
           <h3>Resources</h3>
           <a href="/blog/">Blog</a>
           <a href="/faq/">FAQ</a>
-          <a href="/knowledgebase.html">Knowledge Base</a>
-          <a href="/documentation.html">Documentation</a>
+          <a href="/help/">Help centre</a>
           <a href="/about/">About</a>
           <a href="/contact/">Contact</a>
           <a href="/privacy.html">Privacy Policy</a>

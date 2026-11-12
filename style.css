@@ -2472,6 +2472,36 @@ button.nav-dropdown-toggle {
   border-radius: 12px;
   border: 1px solid var(--border-light);
   width: 100%;
+  height: auto;
+}
+
+.prose figure img.shot-tall {
+  width: auto;
+  max-width: min(100%, 340px);
+  display: block;
+  margin: 0 auto;
+  border-radius: 24px;
+}
+
+.prose .phone-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  justify-content: center;
+}
+
+.prose .phone-row figure {
+  margin: 0;
+  flex: 0 1 240px;
+}
+
+.prose .phone-row figure img.shot-tall {
+  max-width: 100%;
+}
+
+.help-steps-note {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
 }
 
 .prose figcaption {
@@ -3127,3 +3157,48 @@ body.menu-open .locale-banner {
 .prose .story-list h3 { margin-top: 0; }
 .prose .story-list .story-chapter { gap: 2rem; }
 .hero-image-container.hero-devices .hero-image { box-shadow: none; border: 0; border-radius: 0; background: none; }
+
+/* Help centre */
+.help-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 2.5rem;
+}
+
+.help-link {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 1.1rem 1.25rem;
+  border: 1px solid var(--border-light);
+  border-radius: 14px;
+  background: var(--bg-primary, #fff);
+  color: inherit;
+  text-decoration: none;
+  transition: border-color 0.15s, transform 0.15s;
+}
+
+.help-link:hover {
+  border-color: var(--primary, #e11d48);
+  transform: translateY(-1px);
+}
+
+.help-link span {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.help-search {
+  margin: 0 0 2rem;
+}
+
+.help-search input {
+  width: 100%;
+  padding: 0.9rem 1.1rem;
+  font-size: 1rem;
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  background: var(--bg-secondary);
+  color: inherit;
+}

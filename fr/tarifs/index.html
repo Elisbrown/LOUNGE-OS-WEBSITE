@@ -32,7 +32,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/style.css?v=6530869673" />
+    <link rel="stylesheet" href="/style.css?v=c1bda027e5" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -125,8 +125,8 @@
       "name": "LoungeOS",
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "Point of sale (POS) and business management software",
-      "operatingSystem": "Windows 10 and 11 (64-bit), macOS (Apple Silicon and Intel), Android 6.0 or later, any modern web browser",
-      "softwareVersion": "2.0.0",
+      "operatingSystem": "Windows 10 and 11 (64-bit), macOS (Apple Silicon and Intel), Android 7.0 or later, any modern web browser",
+      "softwareVersion": "2.1.4",
       "downloadUrl": "https://loungeos.app/download/",
       "installUrl": "https://loungeos.app/download/",
       "url": "https://loungeos.app/",
@@ -142,7 +142,11 @@
         "One LoungeOS account on the web, Windows, Mac and Android, with email and password or Continue with Google",
         "Setup wizard: business type, name, logo, currency, taxes, payment methods, opening hours and suggested categories",
         "Point of sale for touch and mouse on any screen size",
-        "Tables and orders, kitchen and bar screens",
+        "Tables and floors, split, move and merge bills, kitchen and bar screens",
+        "QR code table ordering with staff approval",
+        "Customer tabs (pay later) with balances and part payments",
+        "Several branches with a copy of the menu, tables, settings and team",
+        "Android phone app with role-based notifications and a home-screen widget",
         "Custom payment methods such as cash, MTN Mobile Money, Orange Money, card and bank transfer",
         "Receipts on 58 mm and 80 mm thermal printers, or PDF, with a print button on every order",
         "Inventory with stock movements, low-stock alerts and suppliers",
@@ -411,7 +415,7 @@
       "breadcrumb": {
         "@id": "https://loungeos.app/fr/tarifs/#breadcrumb"
       },
-      "dateModified": "2026-11-11",
+      "dateModified": "2026-11-12",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://loungeos.app/images/screens/loungeos-pos-order-screen.webp"
@@ -455,7 +459,7 @@
           "name": "Quelle formule choisir ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "<p>Starter convient à 2 utilisateurs sur 2 appareils qui ont besoin de la caisse, des stocks, des reçus et des rapports journaliers. Business ajoute les dépenses, la comptabilité, les services et le contrôle de caisse (bientôt disponible), les rapports hebdomadaires et mensuels et les alertes par e-mail (bientôt disponible), pour 5 utilisateurs sur 5 appareils. Pro s’adresse aux équipes plus grandes : utilisateurs illimités, 10 appareils et plus, support prioritaire et administration avancée.<\/p>"
+            "text": "<p>Starter convient à 2 utilisateurs sur 2 appareils qui ont besoin de la caisse, des tables, des écrans cuisine et bar, des stocks, des comptes clients, des reçus et des rapports journaliers. Business ajoute les dépenses, la comptabilité, les rapports hebdomadaires et mensuels et la commande par QR code, pour 5 utilisateurs sur 5 appareils. Pro s’adresse aux équipes et groupes plus grands : utilisateurs illimités, 10 appareils et plus, plusieurs succursales avec une vue d’ensemble, et support prioritaire.<\/p>"
           }
         },
         {
@@ -564,8 +568,7 @@
             <div class="nav-dropdown-menu">
               <a href="/blog/">Blog</a>
               <a href="/fr/faq/">FAQ</a>
-              <a href="/knowledgebase.html">Base de connaissances</a>
-              <a href="/documentation.html">Documentation</a>
+              <a href="/fr/aide/">Centre d'aide</a>
               <a href="/contact/">Contact</a>
               <a href="/">English</a>
             </div>
@@ -628,8 +631,9 @@
 <div class="price-period">/ mois</div>
 <div class="price-savings" hidden="">Vous économisez 20 $ US</div>
 <ul class="price-features"><li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> 2 utilisateurs, 2 appareils</li>
-<li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Caisse (point de vente)</li>
-<li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Stocks</li>
+<li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Caisse, tables, écrans cuisine et bar</li>
+<li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Stocks et fournisseurs</li>
+<li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Comptes clients (payer plus tard)</li>
 <li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Reçus</li>
 <li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Rapports journaliers</li></ul>
 <a class="btn btn-primary" href="https://app.loungeos.app/login">Commencer l'essai gratuit</a>
@@ -643,9 +647,9 @@
 <ul class="price-features"><li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> 5 utilisateurs, 5 appareils</li>
 <li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Tout ce que propose Starter</li>
 <li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Dépenses et comptabilité</li>
-<li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Services (shifts) et contrôle de caisse (bientôt disponible)</li>
 <li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Rapports hebdomadaires et mensuels</li>
-<li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Alertes par e-mail (bientôt disponible)</li></ul>
+<li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Commande par QR code à table</li>
+<li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Services et contrôle de caisse (bientôt disponible)</li></ul>
 <a class="btn btn-accent" href="https://app.loungeos.app/login">Commencer l'essai gratuit</a>
 </div>
 <div class="price-card" data-plan="pro">
@@ -655,9 +659,9 @@
 <div class="price-savings" hidden="">Vous économisez 100 $ US</div>
 <ul class="price-features"><li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Utilisateurs illimités, 10 appareils et plus</li>
 <li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Tout ce que propose Business</li>
+<li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Plusieurs succursales</li>
+<li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Vue des ventes de toutes les succursales</li>
 <li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Support prioritaire</li>
-<li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Administration avancée</li>
-<li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Plusieurs établissements (bientôt disponible)</li>
 <li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Paie (bientôt disponible)</li></ul>
 <a class="btn btn-primary" href="https://app.loungeos.app/login">Commencer l'essai gratuit</a>
 </div>
@@ -712,7 +716,25 @@
 <td>10 et plus</td>
 </tr>
 <tr>
-<td>Caisse, stocks et reçus</td>
+<td>Caisse, tables, écrans cuisine et bar, reçus</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>Stocks et fournisseurs</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+</tr>
+<tr>
+<td><a href="/fr/fonctionnalites/ventes-a-credit/">Comptes clients (payer plus tard)</a></td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+</tr>
+<tr>
+<td><a href="/fr/fonctionnalites/application-mobile/">Application Android</a> avec notifications</td>
 <td>✓</td>
 <td>✓</td>
 <td>✓</td>
@@ -730,21 +752,27 @@
 <td>✓</td>
 </tr>
 <tr>
-<td>Services (shifts) et contrôle de caisse (bientôt disponible)</td>
-<td></td>
-<td>✓</td>
-<td>✓</td>
-</tr>
-<tr>
 <td>Rapports hebdomadaires et mensuels</td>
 <td></td>
 <td>✓</td>
 <td>✓</td>
 </tr>
 <tr>
-<td>Alertes par e-mail (bientôt disponible)</td>
+<td><a href="/fr/fonctionnalites/commande-qr-code/">Commande par QR code à table</a></td>
 <td></td>
 <td>✓</td>
+<td>✓</td>
+</tr>
+<tr>
+<td><a href="/fr/fonctionnalites/multi-etablissements/">Plusieurs succursales</a></td>
+<td></td>
+<td></td>
+<td>✓</td>
+</tr>
+<tr>
+<td>Vue des ventes de toutes les succursales</td>
+<td></td>
+<td></td>
 <td>✓</td>
 </tr>
 <tr>
@@ -754,15 +782,15 @@
 <td>✓</td>
 </tr>
 <tr>
-<td>Administration avancée</td>
+<td>Services et contrôle de caisse</td>
 <td></td>
-<td></td>
-<td>✓</td>
+<td>Bientôt disponible</td>
+<td>Bientôt disponible</td>
 </tr>
 <tr>
-<td>Plusieurs établissements</td>
+<td>Alertes par e-mail</td>
 <td></td>
-<td></td>
+<td>Bientôt disponible</td>
 <td>Bientôt disponible</td>
 </tr>
 <tr>
@@ -825,12 +853,12 @@
 </tbody>
 </table></div>
 <h2 id="plusieurs-etablissements-ou-besoins-sur-mesure">Plusieurs établissements ou besoins sur mesure</h2>
-<p>La gestion de plusieurs établissements arrive bientôt dans la formule Pro. LoungeOS est conçu par <a href="https://sigalix.com">Sigalix</a>, une entreprise de logiciels sur mesure. Pour un besoin qui dépasse la formule Pro, écrivez à <a href="mailto:info@sigalix.com">info@sigalix.com</a> ou <a href="/contact/">contactez-nous</a>.</p>
+<p>Plusieurs succursales sont incluses dans la formule Pro : ouvrez une succursale avec une copie du menu, des tables, des réglages et de l’équipe, et voyez les ventes de toutes sur une page. Voir <a href="/fr/fonctionnalites/multi-etablissements/">multi-établissements</a>. LoungeOS est conçu par <a href="https://sigalix.com">Sigalix</a>, une entreprise de logiciels sur mesure. Pour un besoin qui dépasse la formule Pro, écrivez à <a href="mailto:info@sigalix.com">info@sigalix.com</a> ou <a href="/contact/">contactez-nous</a>.</p>
 <h2 id="questions-frequentes">Questions fréquentes</h2>
 <h3 id="lessai-gratuit-est-il-vraiment-gratuit">L’essai gratuit est-il vraiment gratuit ?</h3>
 <p>Oui. Chaque formule commence par un essai gratuit de 14 jours avec les fonctionnalités Business, sans paiement à l’avance. Créez votre compte sur <a href="https://app.loungeos.app/login">app.loungeos.app</a> ; à la fin de l’essai, choisissez Starter, Business ou Pro pour continuer à vendre.</p>
 <h3 id="quelle-formule-choisir">Quelle formule choisir ?</h3>
-<p>Starter convient à 2 utilisateurs sur 2 appareils qui ont besoin de la caisse, des stocks, des reçus et des rapports journaliers. Business ajoute les dépenses, la comptabilité, les services et le contrôle de caisse (bientôt disponible), les rapports hebdomadaires et mensuels et les alertes par e-mail (bientôt disponible), pour 5 utilisateurs sur 5 appareils. Pro s’adresse aux équipes plus grandes : utilisateurs illimités, 10 appareils et plus, support prioritaire et administration avancée.</p>
+<p>Starter convient à 2 utilisateurs sur 2 appareils qui ont besoin de la caisse, des tables, des écrans cuisine et bar, des stocks, des comptes clients, des reçus et des rapports journaliers. Business ajoute les dépenses, la comptabilité, les rapports hebdomadaires et mensuels et la commande par QR code, pour 5 utilisateurs sur 5 appareils. Pro s’adresse aux équipes et groupes plus grands : utilisateurs illimités, 10 appareils et plus, plusieurs succursales avec une vue d’ensemble, et support prioritaire.</p>
 <h3 id="pourquoi-les-prix-saffichent-ils-en-fcfa-ou-en-dollars-us">Pourquoi les prix s’affichent-ils en FCFA ou en dollars US ?</h3>
 <p>Au Cameroun, vous voyez les prix en FCFA ; ailleurs, en dollars US. Les formules et les fonctionnalités sont les mêmes. Chaque paiement est prélevé en FCFA : les prix en dollars US sont les mêmes montants convertis.</p>
 <h3 id="comment-payer-mon-abonnement">Comment payer mon abonnement ?</h3>
@@ -859,7 +887,7 @@
 <a class="post-card" href="/fr/telecharger/">
   <img src="/images/screens/loungeos-kitchen-display-system-800.webp" width="800" height="430" alt="Télécharger LoungeOS" loading="lazy" decoding="async" />
   <div class="post-card-body">
-    <span class="tag">Téléchargement · Version 2.0</span>
+    <span class="tag">Téléchargement · Version 2.1.4</span>
     <h3>Télécharger LoungeOS</h3>
     <p>Applications Windows, Mac et Android, application web, configuration requise, installation et connexion.</p>
     <span class="read-more">En savoir plus →</span>
@@ -928,8 +956,7 @@
         <div class="footer-col">
           <h3>Ressources</h3>
           <a href="/blog/">Blog</a>
-          <a href="/knowledgebase.html">Base de connaissances</a>
-          <a href="/documentation.html">Documentation</a>
+          <a href="/fr/aide/">Centre d'aide</a>
           <a href="/about/">À propos</a>
           <a href="/contact/">Contact</a>
           <a href="/privacy.html">Confidentialité</a>

@@ -7,7 +7,7 @@ h1: "Loyverse alternatives: when a free POS stops being enough"
 category: "POS buying guides"
 lead: "Loyverse is a great way to start. But once you have table service, several staff and stock that keeps going missing, the free plan and its add-ons stop fitting. Here's how to tell, and what to move to."
 published: 2026-10-08
-modified: 2026-11-07
+modified: 2026-11-12
 image: loungeos-table-management
 image_alt: "LoungeOS table layout for restaurant table service"
 breadcrumb:
@@ -17,7 +17,7 @@ card_title: "Loyverse alternatives for restaurants and bars"
 card_desc: "Signs you've outgrown Loyverse, its real offline limits, and what to move to."
 about: ["Loyverse", "POS alternatives", "Restaurant POS"]
 takeaways:
-  - "Loyverse's core POS is free, but employee management, advanced inventory and full sales history are paid add-ons."
+  - "Loyverse's core POS is free, but employee management, advanced inventory and full sales history are paid add-ons, priced per store (about US$57 a month for all three in November 2026)."
   - "Offline, Loyverse keeps selling but disables refunds, hides stock levels and stops integrated card terminals until it reconnects."
   - "Signs you've outgrown it: table service with several waiters, a separate bar and kitchen, frequent outages, and stock or cash gaps you can't explain."
   - "Alternatives fall into three groups: offline-first venue systems (LoungeOS), local customisable systems (SambaPOS) and cloud restaurant suites (Square, Toast)."
@@ -45,7 +45,7 @@ For a single-counter café with one or two staff and stable internet, it's often
 
 ### 1. Paid add-ons add up
 
-Loyverse's paid features include **employee management** (access rights, sales by employee, timecards), **advanced inventory** (purchase orders, stock valuation) and **unlimited sales history**. Pricing is per employee or per store depending on the add-on, so the bill grows with your team and your outlets. Third-party price trackers report different figures over 2026, so check [Loyverse's pricing page](https://loyverse.com/pricing) for current amounts before you budget.
+Loyverse's paid features include **employee management** (access rights, sales by employee, timecards), **advanced inventory** (purchase orders, stock valuation) and **unlimited sales history**. Each add-on is priced per store: in November 2026 [Loyverse's pricing page](https://loyverse.com/pricing) listed unlimited sales history at US$7 a month, employee management at US$25 a month and advanced inventory at US$25 a month (or about 10 months' price when paid yearly), each with a 14-day free trial. A bar that needs all three pays about US$57 a month per store, and the bill grows with every outlet. Check the page for current amounts before you budget.
 
 The add-ons you need most once you have a team, staff controls and stock valuation, are exactly the paid ones.
 
