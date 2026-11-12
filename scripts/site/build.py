@@ -637,7 +637,7 @@ def price_table(lang):
 
 PLAN_FEATURES = {
     "en": {
-        "starter": ["Point of sale (POS), tables, kitchen and bar screens", "Inventory and suppliers",
+        "starter": ["Point of sale (POS)", "Inventory and suppliers",
                     "Customer tabs (pay later)", "Receipts", "Daily reports"],
         "business": ["Everything in Starter", "Expenses and accounting", "Weekly and monthly reports",
                      "QR code table ordering", "Shifts and cash control (coming soon)"],
@@ -645,7 +645,7 @@ PLAN_FEATURES = {
                 "Priority support", "Payroll (coming soon)"],
     },
     "fr": {
-        "starter": ["Caisse, tables, écrans cuisine et bar", "Stocks et fournisseurs",
+        "starter": ["Caisse (point de vente)", "Stocks et fournisseurs",
                     "Comptes clients (payer plus tard)", "Reçus", "Rapports journaliers"],
         "business": ["Tout ce que propose Starter", "Dépenses et comptabilité", "Rapports hebdomadaires et mensuels",
                      "Commande par QR code à table", "Services et contrôle de caisse (bientôt disponible)"],
@@ -654,12 +654,48 @@ PLAN_FEATURES = {
     },
 }
 
+# The business-type switcher on the price cards. Keys are the app's business
+# types (keep in sync with TYPE_FAMILY in /app.js). Each family words the first
+# Starter line for that kind of business; only features the app has today.
+BUSINESS_TYPES = [
+    # key, family, English, French
+    ("restaurant", "food", "Restaurant", "Restaurant"),
+    ("lounge", "food", "Lounge or bar", "Lounge ou bar"),
+    ("cafe", "food", "Café or fast food", "Café ou fast-food"),
+    ("hotel", "hotel", "Hotel", "Hôtel"),
+    ("retail", "shop", "Clothes and shoes", "Vêtements et chaussures"),
+    ("supermarket", "shop", "Supermarket", "Supermarché"),
+    ("pharmacy", "shop", "Pharmacy", "Pharmacie"),
+    ("hardware", "shop", "Hardware", "Quincaillerie"),
+    ("wholesale", "shop", "Wholesale", "Commerce de gros"),
+    ("other", "shop", "Other", "Autre"),
+]
+FAMILY_LINE = {
+    "en": {"all": "Point of sale (POS) for any kind of business",
+           "food": "Point of sale (POS), tables, kitchen and bar screens",
+           "hotel": "Point of sale for the restaurant and bar (rooms and bookings coming soon)",
+           "shop": "Point of sale (POS) with barcode scanning"},
+    "fr": {"all": "Caisse (point de vente) pour tout type d'activité",
+           "food": "Caisse, tables, écrans cuisine et bar",
+           "hotel": "Caisse du restaurant et du bar (chambres et réservations bientôt disponibles)",
+           "shop": "Caisse avec lecture des codes-barres"},
+}
+
+# Plan lines that only apply to some families (space separated). The rest of
+# the list applies to every kind of business.
+FAMILY_ONLY = {
+    "business": {"QR code table ordering": "food hotel",
+                 "Commande par QR code à table": "food hotel"},
+}
+
 
 def plan_cards(lang):
-    """Starter, Business and Pro cards with a monthly/yearly switch. The static HTML
-    shows US$ monthly prices; app.js switches to yearly on request and to FCFA for
-    visitors in Cameroon. app.js reads data-plan and writes .price, .price-period and
-    .price-savings, and the .billing-toggle state."""
+    """Starter, Business and Pro cards with a business-type switcher and a
+    monthly/yearly switch. The static HTML shows "From" US$ monthly prices;
+    app.js switches to yearly on request, to FCFA for visitors in Cameroon and
+    to the chosen business type's prices (admin can price a plan per type).
+    app.js reads data-plan and writes .price, .price-from, .price-period and
+    .price-savings, and the .billing-toggle and .type-switch state."""
     fr = lang == "fr"
     L = {
         "monthly": "Mensuel" if fr else "Monthly",
@@ -667,19 +703,39 @@ def plan_cards(lang):
         "free2": "2 mois offerts" if fr else "2 months free",
         "switch": "Payer à l'année (2 mois offerts)" if fr else "Pay yearly (2 months free)",
         "pm": "/ mois" if fr else "/ month",
+        "from": "À partir de" if fr else "From",
         "popular": "Le plus choisi" if fr else "Most popular",
         "start": "Commencer l'essai gratuit" if fr else "Start free trial",
         "yousave": "Vous économisez" if fr else "You save",
+        "yourtype": "Votre activité" if fr else "Your business",
+        "all": "Toutes" if fr else "All",
         "note": (f"Chaque formule commence par un essai gratuit de {TRIAL_DAYS} jours avec les fonctionnalités "
                  "Business, sans paiement à l'avance. Les prix s'affichent en FCFA au Cameroun et en dollars US "
-                 "partout ailleurs."
+                 "partout ailleurs. Choisissez votre activité pour voir son prix exact."
                  if fr else
                  f"Every plan starts with a {TRIAL_DAYS}-day free trial with Business features. No payment up "
-                 "front. Visitors in Cameroon see prices in FCFA, everyone else in US$."),
+                 "front. Visitors in Cameroon see prices in FCFA, everyone else in US$. Pick your kind of "
+                 "business to see its exact price."),
     }
 
-    def li(items):
-        return "\n".join(f"<li>{CHECK} {i}</li>" for i in items)
+    def li(items, families=None):
+        out = []
+        for i in items:
+            fams = (families or {}).get(i)
+            attr = f' class="family-item" data-families="{fams}"' if fams else ""
+            out.append(f"<li{attr}>{CHECK} {i}</li>")
+        return "\n".join(out)
+
+    lines = FAMILY_LINE[lang]
+    family_line = "".join(
+        f'<span class="family-line" data-family="{fam}"{"" if fam == "all" else " hidden"}>{text}</span>'
+        for fam, text in lines.items())
+
+    chips = [f'<button type="button" class="type-chip active" data-type="" aria-pressed="true">{L["all"]}</button>']
+    for key, fam, en, fr_name in BUSINESS_TYPES:
+        chips.append(f'<button type="button" class="type-chip" data-type="{key}" data-family="{fam}" '
+                     f'aria-pressed="false">{fr_name if fr else en}</button>')
+    chips = "\n  ".join(chips)
 
     cards = []
     for key, name, users, devices, usd_m, usd_y, _, _ in PRICES:
@@ -687,17 +743,27 @@ def plan_cards(lang):
         badge = f'\n    <span class="price-card-badge">{L["popular"]}</span>' if featured else ""
         btn = "btn-accent" if featured else "btn-primary"
         save = money(usd_m * 12 - usd_y, "USD", lang)
-        features = [plan_seats(users, devices, lang)] + PLAN_FEATURES[lang][key]
+        items = list(PLAN_FEATURES[lang][key])
+        if key == "starter":
+            items[0] = family_line
+        features = [plan_seats(users, devices, lang)] + items
+        # Lines only some kinds of business get (hidden when another type is picked)
+        families = {i: fams for i, fams in FAMILY_ONLY.get(key, {}).items()}
         cards.append(f"""  <div class="price-card{' featured' if featured else ''}" data-plan="{key}">{badge}
     <h3>{name}</h3>
+    <div class="price-from">{L['from']}</div>
     <div class="price">{money(usd_m, "USD", lang)}</div>
     <div class="price-period">{L['pm']}</div>
     <div class="price-savings" hidden>{L['yousave']} {save}</div>
-    <ul class="price-features">{li(features)}</ul>
+    <ul class="price-features">{li(features, families)}</ul>
     <a href="{SIGNUP}" class="btn {btn}">{L['start']}</a>
   </div>""")
     cards = "\n".join(cards)
     return f"""<div class="plans-breakout">
+<div class="type-switch" role="group" aria-label="{L['yourtype']}">
+  <span class="type-switch-label">{L['yourtype']}</span>
+  {chips}
+</div>
 <div class="billing-toggle">
   <span class="active" data-billing="monthly">{L['monthly']}</span>
   <button type="button" class="toggle-switch" role="switch" aria-checked="false" aria-label="{L['switch']}"></button>
