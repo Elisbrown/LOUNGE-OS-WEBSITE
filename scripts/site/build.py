@@ -481,7 +481,7 @@ def from_prices(key):
 def plan_offers(biz_type=None, url="/pricing/", label=""):
     offers = [offer(f"{TRIAL_DAYS}-day free trial (Business features)", 0, "USD", url=url)]
     for key, name, *_ in PRICES:
-        usd_m, usd_y, xaf_m, xaf_y = tier_prices(key, biz_type) if biz_type else from_prices(key)
+        usd_m, usd_y, xaf_m, xaf_y = tier_prices(key, biz_type)
         name = f"{name}{label}"
         offers += [offer(f"{name} monthly", usd_m, "USD", 1, url),
                    offer(f"{name} yearly", usd_y, "USD", 12, url),
@@ -680,11 +680,24 @@ def price_table(lang):
                 "<th>Monthly (FCFA)</th><th>Yearly (FCFA)</th></tr>")
     rows = []
     for key, name, *_ in PRICES:
-        usd_m, usd_y, xaf_m, xaf_y = from_prices(key)
+        usd_m, usd_y, xaf_m, xaf_y = tier_prices(key)
         cells = [money(usd_m, "USD", lang), money(usd_y, "USD", lang),
                  money(xaf_m, "XAF", lang), money(xaf_y, "XAF", lang)]
         rows.append(f"<tr><td>{name}</td>" + "".join(f"<td>{c}</td>" for c in cells) + "</tr>")
-    return f"<table>\n<thead>{head}</thead>\n<tbody>\n" + "\n".join(rows) + "\n</tbody>\n</table>"
+    table = f"<table>\n<thead>{head}</thead>\n<tbody>\n" + "\n".join(rows) + "\n</tbody>\n</table>"
+    # Kinds of business that admin priced differently
+    own = []
+    for key, *_ in TYPE_PAGES:
+        prices = [tier_prices(k, key) for k, *_ in PRICES]
+        if prices != [tier_prices(k) for k, *_ in PRICES]:
+            amounts = " / ".join(f"{money(p[0], 'USD', lang)} ({money(p[2], 'XAF', lang)})" for p in prices)
+            sep = " :" if lang == "fr" else ":"
+            own.append(f'<a href="{type_url(key, lang)}">{type_name(key, lang)}</a>{sep} {amounts}')
+    if own:
+        intro = ("Prix par mois de Starter / Business / Pro pour les activités qui ont leur propre tarif :" if lang == "fr"
+                 else "Monthly Starter / Business / Pro prices for the kinds of business with their own price:")
+        table += f"\n<p>{intro}</p>\n<ul>\n" + "\n".join(f"<li>{o}</li>" for o in own) + "\n</ul>"
+    return table
 
 
 PLAN_FEATURES = {
