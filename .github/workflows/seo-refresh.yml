@@ -30,6 +30,18 @@ jobs:
         with:
           python-version: "3.12"
 
+      # Plan prices (and each business type's own price) are set by admin on
+      # account.loungeos.app. Browsers read them live; this copies them into the
+      # static pages and JSON-LD offers that search engines read.
+      - name: Copy live plan prices and rebuild the pages when they changed
+        run: |
+          pip install --quiet markdown pyyaml beautifulsoup4
+          set +e
+          python3 scripts/site/sync_prices.py
+          code=$?
+          set -e
+          if [ "$code" = "10" ]; then python3 scripts/site/build.py; fi
+
       - name: Regenerate sitemap, feed, robots.txt, llms.txt, page dates and asset versions
         run: python3 scripts/seo_update.py --indexnow-file "$RUNNER_TEMP/indexnow-urls.txt"
 
@@ -44,7 +56,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
-          git commit -m "chore(seo): refresh sitemap, feed and modified dates [seo-bot]"
+          git commit -m "chore(seo): refresh prices, sitemap, feed and modified dates [seo-bot]"
           git push
           echo "pushed=true" >> "$GITHUB_OUTPUT"
 

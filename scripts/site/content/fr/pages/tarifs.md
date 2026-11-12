@@ -2,8 +2,8 @@
 url: /fr/tarifs/
 type: core
 lang: fr
-title: "Tarifs LoungeOS : Starter, Business et Pro dès 6 000 FCFA/mois"
-description: "Trois formules LoungeOS : Starter 6 000 FCFA, Business 15 000 FCFA et Pro 30 000 FCFA par mois au Cameroun. 2 mois offerts à l'année, essai gratuit de 14 jours."
+title: "Tarifs LoungeOS : Starter, Business et Pro selon votre activité"
+description: "Starter, Business et Pro, au prix de votre type d'activité. Choisissez-le pour voir son prix en FCFA ou en dollars US. 2 mois offerts à l'année, essai de 14 jours."
 h1: "Des tarifs simples pour tous les commerces"
 label: "Tarifs"
 lead: "Trois formules pour restaurants, bars, cafés, hôtels, boutiques et supermarchés. Chaque formule commence par un essai gratuit de 14 jours avec les fonctionnalités Business, sans paiement à l'avance. Payez à l'année et profitez de 2 mois offerts."
@@ -21,6 +21,12 @@ related:
 ---
 
 [[include:plans]]
+
+## LoungeOS pour votre activité
+
+Chaque type de commerce a sa page, avec ce que LoungeOS fait pour lui et ses propres prix.
+
+[[include:types]]
 
 ## Ce que comprend chaque formule
 

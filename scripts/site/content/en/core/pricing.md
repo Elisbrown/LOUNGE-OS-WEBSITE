@@ -1,8 +1,8 @@
 ---
 url: /pricing/
 type: core
-title: "LoungeOS Pricing: Plans from US$10 a Month, 14-Day Free Trial"
-description: "LoungeOS plans: Starter US$10, Business US$25 and Pro US$50 a month (6,000 to 30,000 FCFA in Cameroon). Pay yearly, get 2 months free. 14-day free trial."
+title: "LoungeOS Pricing: Plans for Each Kind of Business, Free Trial"
+description: "Starter, Business and Pro, priced for your kind of business. Pick yours to see its price in US$ or FCFA. Pay yearly, get 2 months free. 14-day free trial."
 h1: "Simple pricing for every business that sells"
 label: "Pricing"
 lead: "Three plans for restaurants, bars, cafés, hotels, shops and supermarkets. Every plan starts with a 14-day free trial with Business features, and there is no payment up front. Pay yearly and get 2 months free."
@@ -21,6 +21,12 @@ related:
 ---
 
 [[include:plans]]
+
+## See LoungeOS for your kind of business
+
+Each kind of business has its own page with what LoungeOS does for it and its own prices.
+
+[[include:types]]
 
 ## What every plan includes
 

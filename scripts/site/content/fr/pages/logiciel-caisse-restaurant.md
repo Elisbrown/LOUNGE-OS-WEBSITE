@@ -1,6 +1,6 @@
 ---
 url: /fr/logiciel-caisse-restaurant/
-type: solution
+type: industry
 lang: fr
 title: "Logiciel de caisse restaurant hors ligne | LoungeOS"
 description: "Logiciel de caisse restaurant : commandes à table sur téléphone, écran cuisine, stocks, contrôle des serveurs et comptabilité. Vend sans internet."
@@ -17,6 +17,21 @@ related:
   - /fr/blog/logiciel-caisse-restaurant-afrique/
   - /fr/blog/vols-employes-bar-restaurant/
   - /fr/fonctionnalites/
+biz_type: restaurant
+pricing_name: "les restaurants"
+pains_title: "Un service chargé ne doit pas vous coûter d'argent"
+pains:
+  - ["Des commandes perdues entre la salle et la cuisine", "Les bons écrits à la main sont mal lus ou oubliés, une table attend 40 minutes et part sans dessert."]
+  - ["Des plats jamais facturés", "Une assiette sort, personne ne l'encaisse, et à la fermeture la caisse est courte sans qu'on sache pourquoi."]
+  - ["Le service s'arrête quand internet coupe", "Une caisse 100 % en ligne se bloque en plein rush du vendredi soir."]
+features_title: "Salle, cuisine et bureau sur un seul système"
+features:
+  - ["table", "Tables et plan de salle", "Placez les clients par zone, voyez les tables ouvertes et depuis combien de temps. Partagez, déplacez et fusionnez les additions."]
+  - ["kitchen", "Écrans cuisine et bar", "Les plats partent en cuisine et les boissons au bar dès la prise de commande, et les bons n'impriment que ce qui a changé."]
+  - ["qr", "Commande par QR code", "Les clients scannent un QR code, choisissent leur table et commandent. Le personnel valide avant l'envoi en cuisine."]
+  - ["wifi-off", "Vente hors ligne", "Les applications Windows et Mac continuent de vendre sans internet et se synchronisent au retour de la connexion."]
+  - ["shield", "Validation du gérant", "Annulations, remboursements et changements de prix demandent le code PIN d'un gérant, et tout est enregistré dans le journal d'activité."]
+  - ["chart", "Coût matière et rapports", "Ventes du jour par serveur et par moyen de paiement, dépenses et comptabilité dans la même application."]
 ---
 
 Un **logiciel de caisse pour restaurant** enregistre les commandes, les transmet à la cuisine, encaisse les additions et garde la trace de tout ce qui est vendu. LoungeOS fait tout cela, et y ajoute la gestion des stocks, le contrôle du personnel et la comptabilité. Il fonctionne dans l'application web et dans les applications Windows, Mac et Android, avec un seul compte partout. Sur une caisse Windows ou Mac, une coupure de connexion n'arrête pas le service : la caisse continue de vendre et se synchronise au retour de la connexion.

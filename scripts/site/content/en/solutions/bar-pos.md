@@ -1,6 +1,6 @@
 ---
 url: /bar-pos/
-type: solution
+type: industry
 title: "Bar POS System With Stock Control & Bar Display | LoungeOS"
 description: "A fast bar POS that tracks every bottle and crate, sends drinks to a bar screen, controls free drinks and discounts, and sells offline on Windows and Mac."
 h1: "A bar POS that counts every bottle and every franc"
@@ -10,12 +10,24 @@ image: loungeos-stock-items
 image_alt: "LoungeOS stock items list showing beer bottles and packaging with stock levels and costs"
 card_title: "Bar POS"
 card_desc: "Fast drink ordering, a bar display screen, bottle-level stock and controlled discounts."
-alternates:
-  fr: /fr/logiciel-gestion-bar-lounge/
 related:
   - /blog/bar-inventory-shrinkage-pour-cost/
   - /blog/restaurant-employee-theft-prevention/
   - /lounge-pos/
+biz_type: lounge
+pains_title: "A busy bar leaks money one drink at a time"
+pains:
+  - ["Bottles that disappear", "A crate of beer comes in on Friday, half is sold and the rest is “broken”. Without counts, nobody can say."]
+  - ["VIP tables with open tabs", "Big tables order all night, change waiters and leave a bill nobody can reconstruct at 3 a.m."]
+  - ["Cash that doesn't match", "Mobile money, cash and card from several bartenders end up in one pile with no record of who took what."]
+features_title: "Everything a bar needs, from the cooler to the cash-up"
+features:
+  - ["wine", "Bottle and stock control", "Every drink sold comes off stock. Deliveries, losses and adjustments are recorded with a name and a time."]
+  - ["table", "Areas and VIP tables", "Organise the room by area, give tables their own waiter and follow each table's spending."]
+  - ["kitchen", "Bar and kitchen screens", "Drinks go to the bar, food to the kitchen, without shouting across the room."]
+  - ["credit", "Customer tabs", "Regulars can pay later. The Customer tabs page shows what each one owes."]
+  - ["music", "Events and special nights", "Plan events and themed nights in the events calendar so the team knows what is coming."]
+  - ["shield", "Late-night accountability", "Each bartender signs in with a PIN, and cancels need a manager. The activity log shows who did what."]
 ---
 
 A **bar POS system** has to be fast during a rush, simple for new staff and strict about stock, because drinks are where most bars make, and lose, their margin. LoungeOS gives waiters a quick ordering screen on their phones and gives bartenders a bar display. Owners get stock tracking down to the bottle, with every loss recorded.

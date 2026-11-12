@@ -1,6 +1,6 @@
 ---
 url: /lounge-pos/
-type: solution
+type: industry
 title: "Lounge POS & Lounge Management Software | LoungeOS"
 description: "Lounge management software for VIP areas, bottle sales and events: POS, bar screen, stock and audit log, selling offline on Windows and Mac."
 h1: "Lounge management software, built by name and by design for lounges"
@@ -10,10 +10,26 @@ image: loungeos-floor-management
 image_alt: "LoungeOS floor management with Main Hall service area, assigned tables and assigned staff"
 card_title: "Lounge POS"
 card_desc: "VIP areas, bottle sales, events and late-night cash control for lounges."
+alternates:
+  fr: /fr/logiciel-gestion-bar-lounge/
 related:
   - /blog/lounge-nightclub-management/
   - /bar-pos/
   - /nightclub-pos/
+biz_type: lounge
+pains_title: "Long nights, thin margins, too many hands on the bottles"
+pains:
+  - ["Bottles that disappear", "A crate of beer comes in on Friday, half is sold and the rest is “broken”. Without counts, nobody can say."]
+  - ["VIP tables with open tabs", "Big tables order all night, change waiters and leave a bill nobody can reconstruct at 3 a.m."]
+  - ["Cash that doesn't match", "Mobile money, cash and card from several bartenders end up in one pile with no record of who took what."]
+features_title: "Built for bars, lounges and nightclubs"
+features:
+  - ["wine", "Bottle and stock control", "Every drink sold comes off stock. Deliveries, losses and adjustments are recorded with a name and a time."]
+  - ["table", "Areas and VIP tables", "Organise the room by area, give tables their own waiter and follow each table's spending."]
+  - ["kitchen", "Bar and kitchen screens", "Drinks go to the bar, food to the kitchen, without shouting across the room."]
+  - ["credit", "Customer tabs", "Regulars can pay later. The Customer tabs page shows what each one owes."]
+  - ["music", "Events and special nights", "Plan events and themed nights in the events calendar so the team knows what is coming."]
+  - ["shield", "Late-night accountability", "Each bartender signs in with a PIN, and cancels need a manager. The activity log shows who did what."]
 ---
 
 A **lounge POS** has to do more than a bar till. It runs table service in several areas (main room, terrace, VIP), handles expensive bottle sales, supports events and keeps cash and stock under control through a long night. LoungeOS was designed for exactly this kind of venue. That's where the name comes from.

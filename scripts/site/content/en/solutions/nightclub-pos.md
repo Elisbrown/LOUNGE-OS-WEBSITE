@@ -1,6 +1,6 @@
 ---
 url: /nightclub-pos/
-type: solution
+type: industry
 title: "Nightclub POS System for High-Volume Drink Service | LoungeOS"
 description: "A nightclub POS for fast drink orders, VIP tables, bottle service and strict cash control. Keeps selling offline on Windows and Mac, over your own Wi-Fi."
 h1: "Nightclub POS: fast drinks, VIP tables and no excuses at closing"
@@ -14,6 +14,20 @@ related:
   - /blog/lounge-nightclub-management/
   - /blog/bar-inventory-shrinkage-pour-cost/
   - /bar-pos/
+biz_type: lounge
+pains_title: "Packed nights, fast drinks and no excuses at closing"
+pains:
+  - ["Bottles that disappear", "A crate of beer comes in on Friday, half is sold and the rest is “broken”. Without counts, nobody can say."]
+  - ["VIP tables with open tabs", "Big tables order all night, change waiters and leave a bill nobody can reconstruct at 3 a.m."]
+  - ["Cash that doesn't match", "Mobile money, cash and card from several bartenders end up in one pile with no record of who took what."]
+features_title: "Built for high-volume nightclub service"
+features:
+  - ["wine", "Bottle and stock control", "Every drink sold comes off stock. Deliveries, losses and adjustments are recorded with a name and a time."]
+  - ["table", "Areas and VIP tables", "Organise the room by area, give tables their own waiter and follow each table's spending."]
+  - ["kitchen", "Bar and kitchen screens", "Drinks go to the bar, food to the kitchen, without shouting across the room."]
+  - ["credit", "Customer tabs", "Regulars can pay later. The Customer tabs page shows what each one owes."]
+  - ["music", "Events and special nights", "Plan events and themed nights in the events calendar so the team knows what is coming."]
+  - ["shield", "Late-night accountability", "Each bartender signs in with a PIN, and cancels need a manager. The activity log shows who did what."]
 ---
 
 A **nightclub POS system** must take a drink order in seconds, handle expensive bottle service at VIP tables and give the owner an exact picture of the night's cash and stock the next morning. LoungeOS does this on hardware you already have, and its Windows and Mac apps keep selling without internet.

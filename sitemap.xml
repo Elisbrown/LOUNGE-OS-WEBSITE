@@ -25,9 +25,6 @@
   <url>
     <loc>https://loungeos.app/bar-pos/</loc>
     <lastmod>2026-11-12</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://loungeos.app/bar-pos/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/logiciel-gestion-bar-lounge/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/bar-pos/"/>
   </url>
   <url>
     <loc>https://loungeos.app/blog/</loc>
@@ -156,6 +153,9 @@
   <url>
     <loc>https://loungeos.app/cafe-pos/</loc>
     <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://loungeos.app/cafe-pos/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/logiciel-caisse-fast-food/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/cafe-pos/"/>
   </url>
   <url>
     <loc>https://loungeos.app/cameroon/</loc>
@@ -545,6 +545,20 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/retail-pos/"/>
   </url>
   <url>
+    <loc>https://loungeos.app/fr/logiciel-caisse-fast-food/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://loungeos.app/cafe-pos/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/logiciel-caisse-fast-food/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/cafe-pos/"/>
+  </url>
+  <url>
+    <loc>https://loungeos.app/fr/logiciel-caisse-quincaillerie/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://loungeos.app/hardware-store-pos/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/logiciel-caisse-quincaillerie/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/hardware-store-pos/"/>
+  </url>
+  <url>
     <loc>https://loungeos.app/fr/logiciel-caisse-restaurant/</loc>
     <lastmod>2026-11-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://loungeos.app/restaurant-pos/"/>
@@ -552,15 +566,50 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/restaurant-pos/"/>
   </url>
   <url>
+    <loc>https://loungeos.app/fr/logiciel-caisse-supermarche/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://loungeos.app/supermarket-pos/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/logiciel-caisse-supermarche/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/supermarket-pos/"/>
+  </url>
+  <url>
     <loc>https://loungeos.app/fr/logiciel-gestion-bar-lounge/</loc>
     <lastmod>2026-11-12</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://loungeos.app/bar-pos/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://loungeos.app/lounge-pos/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/logiciel-gestion-bar-lounge/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/bar-pos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/lounge-pos/"/>
+  </url>
+  <url>
+    <loc>https://loungeos.app/fr/logiciel-gestion-commerce-de-gros/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://loungeos.app/wholesale-pos/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/logiciel-gestion-commerce-de-gros/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/wholesale-pos/"/>
+  </url>
+  <url>
+    <loc>https://loungeos.app/fr/logiciel-gestion-hotel/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://loungeos.app/hotel-pos/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/logiciel-gestion-hotel/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/hotel-pos/"/>
+  </url>
+  <url>
+    <loc>https://loungeos.app/fr/logiciel-gestion-pharmacie/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://loungeos.app/pharmacy-pos/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/logiciel-gestion-pharmacie/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/pharmacy-pos/"/>
   </url>
   <url>
     <loc>https://loungeos.app/fr/senegal/</loc>
     <lastmod>2026-11-12</lastmod>
+  </url>
+  <url>
+    <loc>https://loungeos.app/fr/solutions/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://loungeos.app/solutions/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/solutions/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/solutions/"/>
   </url>
   <url>
     <loc>https://loungeos.app/fr/tarifs/</loc>
@@ -579,6 +628,13 @@
   <url>
     <loc>https://loungeos.app/ghana/</loc>
     <lastmod>2026-11-12</lastmod>
+  </url>
+  <url>
+    <loc>https://loungeos.app/hardware-store-pos/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://loungeos.app/hardware-store-pos/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/logiciel-caisse-quincaillerie/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/hardware-store-pos/"/>
   </url>
   <url>
     <loc>https://loungeos.app/help/</loc>
@@ -744,6 +800,9 @@
   <url>
     <loc>https://loungeos.app/hotel-pos/</loc>
     <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://loungeos.app/hotel-pos/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/logiciel-gestion-hotel/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/hotel-pos/"/>
   </url>
   <url>
     <loc>https://loungeos.app/legal.html</loc>
@@ -752,6 +811,9 @@
   <url>
     <loc>https://loungeos.app/lounge-pos/</loc>
     <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://loungeos.app/lounge-pos/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/logiciel-gestion-bar-lounge/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/lounge-pos/"/>
   </url>
   <url>
     <loc>https://loungeos.app/nigeria/</loc>
@@ -760,6 +822,13 @@
   <url>
     <loc>https://loungeos.app/nightclub-pos/</loc>
     <lastmod>2026-11-12</lastmod>
+  </url>
+  <url>
+    <loc>https://loungeos.app/pharmacy-pos/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://loungeos.app/pharmacy-pos/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/logiciel-gestion-pharmacie/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/pharmacy-pos/"/>
   </url>
   <url>
     <loc>https://loungeos.app/pricing/</loc>
@@ -787,11 +856,32 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/retail-pos/"/>
   </url>
   <url>
+    <loc>https://loungeos.app/solutions/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://loungeos.app/solutions/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/solutions/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/solutions/"/>
+  </url>
+  <url>
     <loc>https://loungeos.app/south-africa/</loc>
     <lastmod>2026-11-12</lastmod>
   </url>
   <url>
+    <loc>https://loungeos.app/supermarket-pos/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://loungeos.app/supermarket-pos/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/logiciel-caisse-supermarche/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/supermarket-pos/"/>
+  </url>
+  <url>
     <loc>https://loungeos.app/terms.html</loc>
     <lastmod>2026-11-12</lastmod>
+  </url>
+  <url>
+    <loc>https://loungeos.app/wholesale-pos/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://loungeos.app/wholesale-pos/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/logiciel-gestion-commerce-de-gros/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/wholesale-pos/"/>
   </url>
 </urlset>

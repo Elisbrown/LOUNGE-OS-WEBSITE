@@ -1,6 +1,6 @@
 ---
 url: /cafe-pos/
-type: solution
+type: industry
 title: "Café, Snack Bar & Fast-Food POS System | LoungeOS"
 description: "A simple POS for cafés, snack bars and fast food: quick counter orders, packaging stock and mobile money on one laptop or tablet. Sells offline."
 h1: "A simple, fast POS for cafés, snack bars and fast food"
@@ -10,10 +10,26 @@ image: loungeos-menu-management
 image_alt: "LoungeOS menu management list with dishes, categories, prices and stock status"
 card_title: "Café & Fast Food POS"
 card_desc: "Quick counter orders, packaging stock and mobile money on minimal hardware."
+alternates:
+  fr: /fr/logiciel-caisse-fast-food/
 related:
   - /blog/restaurant-pos-hardware-guide/
   - /blog/restaurant-inventory-management-guide/
   - /features/mobile-money-pos/
+biz_type: cafe
+pains_title: "A queue at the counter is money walking away"
+pains:
+  - ["Slow orders at rush hour", "Customers wait while the cashier hunts for prices, and some leave before ordering."]
+  - ["Packaging nobody counts", "Boxes, cups and bags go out with every order, but they never show up in the costs."]
+  - ["An owner who can't always be there", "You can't stand behind the counter all day, so you need to see the day's sales from wherever you are."]
+features_title: "Fast counter sales for cafés, snack bars and fast food"
+features:
+  - ["receipt", "Counter orders in seconds", "Tap items with their photos, take cash or mobile money and print a 58 mm or 80 mm receipt."]
+  - ["kitchen", "Kitchen screen", "Orders appear in the kitchen as soon as they are paid or sent, with notes for each item."]
+  - ["package", "Stock and packaging", "Ingredients and packaging come off stock, with low-stock alerts before you run out."]
+  - ["wallet", "Your payment methods", "Cash, MTN Mobile Money, Orange Money, card or any method you create, and split payments."]
+  - ["phone", "Phone app and web", "Check sales on the Android app or the web app from anywhere."]
+  - ["wifi-off", "Works offline", "The Windows and Mac apps keep selling without internet."]
 ---
 
 A **café or fast-food POS** has to ring up orders quickly, print a receipt and keep stock of high-turnover items: coffee, bread, soft drinks, takeaway boxes and cups. LoungeOS covers this on minimal hardware, with the same anti-theft and accounting tools as large restaurants.
