@@ -7,6 +7,9 @@
     <meta name="description" content="A simple POS for cafés, snack bars and fast food: quick counter orders, packaging stock and mobile money on one laptop or tablet. Sells offline." />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <link rel="canonical" href="https://loungeos.app/cafe-pos/" />
+    <link rel="alternate" hreflang="en" href="https://loungeos.app/cafe-pos/" />
+    <link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/logiciel-caisse-fast-food/" />
+    <link rel="alternate" hreflang="x-default" href="https://loungeos.app/cafe-pos/" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="LoungeOS" />
     <meta property="og:locale" content="en_US" />
@@ -29,7 +32,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/style.css?v=c57d8fc7f0" />
+    <link rel="stylesheet" href="/style.css?v=3fbf448520" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -400,6 +403,278 @@
       ]
     },
     {
+      "@type": "SoftwareApplication",
+      "@id": "https://loungeos.app/cafe-pos/#app",
+      "name": "LoungeOS for Cafés & fast food",
+      "url": "https://loungeos.app/cafe-pos/",
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "Café & Fast Food POS",
+      "operatingSystem": "Windows 10 and 11 (64-bit), macOS (Apple Silicon and Intel), Android 7.0 or later, any modern web browser",
+      "softwareVersion": "2.1.4",
+      "inLanguage": [
+        "en",
+        "fr"
+      ],
+      "publisher": {
+        "@id": "https://loungeos.app/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://loungeos.app/#software"
+      },
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Cafés & fast food"
+      },
+      "description": "A simple POS for cafés, snack bars and fast food: quick counter orders, packaging stock and mobile money on one laptop or tablet. Sells offline.",
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "14-day free trial (Business features)",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/cafe-pos/"
+        },
+        {
+          "@type": "Offer",
+          "name": "Starter (Cafés & fast food) monthly",
+          "price": "10",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/cafe-pos/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "10",
+            "priceCurrency": "USD",
+            "billingDuration": "P1M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 1,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Starter (Cafés & fast food) yearly",
+          "price": "100",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/cafe-pos/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "100",
+            "priceCurrency": "USD",
+            "billingDuration": "P12M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 12,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Starter (Cafés & fast food) monthly (Cameroon)",
+          "price": "6000",
+          "priceCurrency": "XAF",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/cafe-pos/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "6000",
+            "priceCurrency": "XAF",
+            "billingDuration": "P1M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 1,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Starter (Cafés & fast food) yearly (Cameroon)",
+          "price": "60000",
+          "priceCurrency": "XAF",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/cafe-pos/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "60000",
+            "priceCurrency": "XAF",
+            "billingDuration": "P12M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 12,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Business (Cafés & fast food) monthly",
+          "price": "25",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/cafe-pos/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "25",
+            "priceCurrency": "USD",
+            "billingDuration": "P1M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 1,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Business (Cafés & fast food) yearly",
+          "price": "250",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/cafe-pos/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "250",
+            "priceCurrency": "USD",
+            "billingDuration": "P12M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 12,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Business (Cafés & fast food) monthly (Cameroon)",
+          "price": "15000",
+          "priceCurrency": "XAF",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/cafe-pos/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "15000",
+            "priceCurrency": "XAF",
+            "billingDuration": "P1M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 1,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Business (Cafés & fast food) yearly (Cameroon)",
+          "price": "150000",
+          "priceCurrency": "XAF",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/cafe-pos/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "150000",
+            "priceCurrency": "XAF",
+            "billingDuration": "P12M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 12,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Pro (Cafés & fast food) monthly",
+          "price": "50",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/cafe-pos/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "50",
+            "priceCurrency": "USD",
+            "billingDuration": "P1M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 1,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Pro (Cafés & fast food) yearly",
+          "price": "500",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/cafe-pos/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "500",
+            "priceCurrency": "USD",
+            "billingDuration": "P12M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 12,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Pro (Cafés & fast food) monthly (Cameroon)",
+          "price": "30000",
+          "priceCurrency": "XAF",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/cafe-pos/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "30000",
+            "priceCurrency": "XAF",
+            "billingDuration": "P1M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 1,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Pro (Cafés & fast food) yearly (Cameroon)",
+          "price": "300000",
+          "priceCurrency": "XAF",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/cafe-pos/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "300000",
+            "priceCurrency": "XAF",
+            "billingDuration": "P12M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 12,
+              "unitCode": "MON"
+            }
+          }
+        }
+      ],
+      "featureList": [
+        "Counter orders in seconds",
+        "Kitchen screen",
+        "Stock and packaging",
+        "Your payment methods",
+        "Phone app and web",
+        "Works offline"
+      ],
+      "screenshot": "https://loungeos.app/images/screens/loungeos-menu-management.webp"
+    },
+    {
       "@type": "WebPage",
       "@id": "https://loungeos.app/cafe-pos/#webpage",
       "url": "https://loungeos.app/cafe-pos/",
@@ -418,7 +693,7 @@
         "url": "https://loungeos.app/images/screens/loungeos-menu-management.webp"
       },
       "about": {
-        "@id": "https://loungeos.app/#software"
+        "@id": "https://loungeos.app/cafe-pos/#app"
       }
     },
     {
@@ -517,14 +792,15 @@
             <button type="button" class="nav-dropdown-toggle" aria-haspopup="true">Solutions <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
             <div class="nav-dropdown-menu">
               <a href="/restaurant-pos/">Restaurants</a>
-              <a href="/bar-pos/">Bars</a>
-              <a href="/lounge-pos/">Lounges</a>
-              <a href="/nightclub-pos/">Nightclubs</a>
-              <a href="/hotel-pos/">Hotels</a>
-              <a href="/cafe-pos/">Cafés &amp; Fast Food</a>
-              <a href="/retail-pos/">Shops &amp; Mini-Markets</a>
-              <a href="/cameroon/">Cameroon</a>
-              <a href="/africa/">Africa</a>
+              <a href="/lounge-pos/">Bars, lounges &amp; nightclubs</a>
+              <a href="/cafe-pos/">Cafés &amp; fast food</a>
+              <a href="/hotel-pos/">Hotels &amp; guest houses</a>
+              <a href="/retail-pos/">Clothes, shoes &amp; boutiques</a>
+              <a href="/supermarket-pos/">Supermarkets &amp; groceries</a>
+              <a href="/pharmacy-pos/">Pharmacies</a>
+              <a href="/hardware-store-pos/">Hardware stores</a>
+              <a href="/wholesale-pos/">Wholesale &amp; depots</a>
+              <a href="/solutions/">All kinds of business →</a>
             </div>
           </div>
           <a href="/pricing/">Pricing</a>
@@ -582,6 +858,92 @@
         <p class="trust-line">14-day free trial · No payment up front · Sells offline on Windows and Mac</p>
         <div class="page-hero-media"><img src="/images/screens/loungeos-menu-management.webp" srcset="/images/screens/loungeos-menu-management-800.webp 800w, /images/screens/loungeos-menu-management.webp 1600w" sizes="(max-width: 1100px) 100vw, 1100px" width="1600" height="861" alt="LoungeOS menu management list with dishes, categories, prices and stock status" fetchpriority="high" decoding="async" /></div>
       </header>
+      <section class="ind-band ind-pains">
+        <div class="container">
+          <p class="section-label">Sound familiar?</p>
+          <h2 class="section-title">A queue at the counter is money walking away</h2>
+          <div class="pain-grid">
+<div class="pain-card"><h3>Slow orders at rush hour</h3><p>Customers wait while the cashier hunts for prices, and some leave before ordering.</p></div>
+<div class="pain-card"><h3>Packaging nobody counts</h3><p>Boxes, cups and bags go out with every order, but they never show up in the costs.</p></div>
+<div class="pain-card"><h3>An owner who can&#x27;t always be there</h3><p>You can't stand behind the counter all day, so you need to see the day's sales from wherever you are.</p></div>
+          </div>
+        </div>
+      </section>
+      <section class="ind-band">
+        <div class="container">
+          <p class="section-label">What LoungeOS does for you</p>
+          <h2 class="section-title">Fast counter sales for cafés, snack bars and fast food</h2>
+          <div class="feat-grid">
+<div class="feat-card"><svg class="ind-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"/><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/><path d="M12 17.5v-11"/></svg><h3>Counter orders in seconds</h3><p>Tap items with their photos, take cash or mobile money and print a 58 mm or 80 mm receipt.</p></div>
+<div class="feat-card"><svg class="ind-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21a1 1 0 0 0 1-1v-5.35c0-.457.316-.844.727-1.041a4 4 0 0 0-2.134-7.589 5 5 0 0 0-9.186 0 4 4 0 0 0-2.134 7.588c.411.198.727.585.727 1.041V20a1 1 0 0 0 1 1Z"/><path d="M6 17h12"/></svg><h3>Kitchen screen</h3><p>Orders appear in the kitchen as soon as they are paid or sent, with notes for each item.</p></div>
+<div class="feat-card"><svg class="ind-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg><h3>Stock and packaging</h3><p>Ingredients and packaging come off stock, with low-stock alerts before you run out.</p></div>
+<div class="feat-card"><svg class="ind-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"/><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"/></svg><h3>Your payment methods</h3><p>Cash, MTN Mobile Money, Orange Money, card or any method you create, and split payments.</p></div>
+<div class="feat-card"><svg class="ind-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg><h3>Phone app and web</h3><p>Check sales on the Android app or the web app from anywhere.</p></div>
+<div class="feat-card"><svg class="ind-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h.01"/><path d="M8.5 16.43a5 5 0 0 1 7 0"/><path d="M2 8.82a15 15 0 0 1 4.18-2.65"/><path d="M19 12.86a10 10 0 0 0-2.27-1.62"/><path d="M5 12.86a10 10 0 0 1 5.17-2.69"/><path d="M10.71 5.05A16 16 0 0 1 22 8.82"/><line x1="2" x2="22" y1="2" y2="22"/></svg><h3>Works offline</h3><p>The Windows and Mac apps keep selling without internet.</p></div>
+          </div>
+          
+        </div>
+      </section>
+      <section class="ind-band ind-pricing" id="pricing">
+        <div class="container">
+          <h2 class="section-title">Pricing for cafés &amp; fast food</h2>
+          <p class="section-subtitle">The price of each plan for this kind of business, straight from our price list.</p>
+          <div class="plans-breakout" data-fixed-type="cafe">
+
+<div class="billing-toggle">
+  <span class="active" data-billing="monthly">Monthly</span>
+  <button type="button" class="toggle-switch" role="switch" aria-checked="false" aria-label="Pay yearly (2 months free)"></button>
+  <span data-billing="yearly">Yearly</span>
+  <span class="yearly-badge">2 months free</span>
+</div>
+<div class="pricing-grid pricing-grid-3" style="margin: 0 auto 1.5rem;">
+  <div class="price-card" data-plan="starter">
+    <h3>Starter</h3>
+    <div class="price-from" hidden>From</div>
+    <div class="price">US$10</div>
+    <div class="price-period">/ month</div>
+    <div class="price-savings" hidden>You save US$20</div>
+    <ul class="price-features"><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> 2 users, 2 devices</li>
+<li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> <span class="family-line" data-family="all" hidden>Point of sale (POS) for any kind of business</span><span class="family-line" data-family="food">Point of sale (POS), tables, kitchen and bar screens</span><span class="family-line" data-family="hotel" hidden>Point of sale for the restaurant and bar (rooms and bookings coming soon)</span><span class="family-line" data-family="shop" hidden>Point of sale (POS) with barcode scanning</span></li>
+<li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Inventory and suppliers</li>
+<li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Customer tabs (pay later)</li>
+<li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Receipts</li>
+<li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Daily reports</li></ul>
+    <a href="https://app.loungeos.app/login" class="btn btn-primary">Start free trial</a>
+  </div>
+  <div class="price-card featured" data-plan="business">
+    <span class="price-card-badge">Most popular</span>
+    <h3>Business</h3>
+    <div class="price-from" hidden>From</div>
+    <div class="price">US$25</div>
+    <div class="price-period">/ month</div>
+    <div class="price-savings" hidden>You save US$50</div>
+    <ul class="price-features"><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> 5 users, 5 devices</li>
+<li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Everything in Starter</li>
+<li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Expenses and accounting</li>
+<li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Weekly and monthly reports</li>
+<li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Shifts and cash control (coming soon)</li></ul>
+    <a href="https://app.loungeos.app/login" class="btn btn-accent">Start free trial</a>
+  </div>
+  <div class="price-card" data-plan="pro">
+    <h3>Pro</h3>
+    <div class="price-from" hidden>From</div>
+    <div class="price">US$50</div>
+    <div class="price-period">/ month</div>
+    <div class="price-savings" hidden>You save US$100</div>
+    <ul class="price-features"><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Unlimited users, 10+ devices</li>
+<li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Everything in Business</li>
+<li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Several branches</li>
+<li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> All-branches sales overview</li>
+<li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Priority support</li>
+<li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Payroll (coming soon)</li></ul>
+    <a href="https://app.loungeos.app/login" class="btn btn-primary">Start free trial</a>
+  </div>
+</div>
+</div><p class="region-price-note">Every plan starts with a 14-day free trial with Business features. No payment up front. Visitors in Cameroon see prices in FCFA, everyone else in US$.</p>
+          <p class="ind-compare"><a href="/pricing/">Compare prices for every kind of business →</a></p>
+        </div>
+      </section>
       <section class="content-section">
         <div class="prose prose-wide">
 <p>A <strong>café or fast-food POS</strong> has to ring up orders quickly, print a receipt and keep stock of high-turnover items: coffee, bread, soft drinks, takeaway boxes and cups. LoungeOS covers this on minimal hardware, with the same anti-theft and accounting tools as large restaurants.</p>
@@ -621,6 +983,22 @@
     <a class="btn btn-secondary btn-lg" href="/download/">Download for Windows</a>
   </div>
 </div></section>
+      <section class="ind-band ind-others">
+        <div class="container">
+          <h2 class="section-title">LoungeOS for other businesses</h2>
+          <div class="type-tiles">
+<a class="type-tile" href="/restaurant-pos/"><svg class="type-tile-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg><strong>Restaurants</strong></a>
+<a class="type-tile" href="/lounge-pos/"><svg class="type-tile-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 22h8"/><path d="M7 10h10"/><path d="M12 15v7"/><path d="M12 15a5 5 0 0 0 5-5c0-2-.5-4-2-8H9c-1.5 4-2 6-2 8a5 5 0 0 0 5 5Z"/></svg><strong>Bars, lounges &amp; nightclubs</strong></a>
+<a class="type-tile" href="/hotel-pos/"><svg class="type-tile-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/></svg><strong>Hotels &amp; guest houses</strong></a>
+<a class="type-tile" href="/retail-pos/"><svg class="type-tile-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></svg><strong>Clothes, shoes &amp; boutiques</strong></a>
+<a class="type-tile" href="/supermarket-pos/"><svg class="type-tile-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg><strong>Supermarkets &amp; groceries</strong></a>
+<a class="type-tile" href="/pharmacy-pos/"><svg class="type-tile-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z"/><path d="m8.5 8.5 7 7"/></svg><strong>Pharmacies</strong></a>
+<a class="type-tile" href="/hardware-store-pos/"><svg class="type-tile-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 12-8.5 8.5c-.83.83-2.17.83-3 0 0 0 0 0 0 0a2.12 2.12 0 0 1 0-3L12 9"/><path d="M17.64 15 22 10.64"/><path d="m20.91 11.7-1.25-1.25c-.6-.6-.93-1.4-.93-2.25v-.86L16.01 4.6a5.56 5.56 0 0 0-3.94-1.64H9l.92.82A6.18 6.18 0 0 1 12 8.4v1.56l2 2h2.47l2.26 1.91"/></svg><strong>Hardware stores</strong></a>
+<a class="type-tile" href="/wholesale-pos/"><svg class="type-tile-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z"/><path d="m7 16.5-4.74-2.85"/><path d="m7 16.5 5-3"/><path d="M7 16.5v5.17"/><path d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z"/><path d="m17 16.5-5-3"/><path d="m17 16.5 4.74-2.85"/><path d="M17 16.5v5.17"/><path d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z"/><path d="M12 8 7.26 5.15"/><path d="m12 8 4.74-2.85"/><path d="M12 13.5V8"/></svg><strong>Wholesale &amp; depots</strong></a>
+</div>
+          <p class="ind-compare"><a href="/solutions/">All kinds of business →</a></p>
+        </div>
+      </section>
       <section class="related-section">
         <h2 class="section-title">Explore more</h2>
         <div class="card-grid">
@@ -688,7 +1066,12 @@
           <a href="/nightclub-pos/">Nightclub POS</a>
           <a href="/hotel-pos/">Hotel POS</a>
           <a href="/cafe-pos/">Café &amp; Fast Food POS</a>
-          <a href="/retail-pos/">Retail &amp; Shop POS</a>
+          <a href="/retail-pos/">Clothing &amp; Shoe Store POS</a>
+          <a href="/supermarket-pos/">Supermarket POS</a>
+          <a href="/pharmacy-pos/">Pharmacy POS</a>
+          <a href="/hardware-store-pos/">Hardware Store POS</a>
+          <a href="/wholesale-pos/">Wholesale POS</a>
+          <a href="/solutions/">All businesses</a>
         </div>
         <div class="footer-col">
           <h3>Countries</h3>
@@ -729,6 +1112,6 @@
       }
     </script>
     <script defer type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <script defer src="/app.js?v=29efa068d2"></script>
+    <script defer src="/app.js?v=88b7e25c4f"></script>
   </body>
 </html>

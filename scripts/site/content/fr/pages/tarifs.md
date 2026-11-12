@@ -22,6 +22,12 @@ related:
 
 [[include:plans]]
 
+## LoungeOS pour votre activité
+
+Chaque type de commerce a sa page, avec ce que LoungeOS fait pour lui et ses propres prix.
+
+[[include:types]]
+
 ## Ce que comprend chaque formule
 
 Chaque formule vous donne le même LoungeOS, avec un seul compte sur l'application web et sur les applications Windows, Mac et Android :

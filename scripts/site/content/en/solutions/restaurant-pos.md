@@ -1,6 +1,6 @@
 ---
 url: /restaurant-pos/
-type: solution
+type: industry
 title: "Restaurant POS System That Works Offline | LoungeOS"
 description: "Offline restaurant POS with table orders, kitchen display, inventory, staff permissions and accounting on your own devices. 14-day free trial."
 h1: "The restaurant POS system that keeps the dining room and kitchen in sync, with or without internet"
@@ -16,6 +16,20 @@ related:
   - /blog/how-to-choose-a-restaurant-pos-system/
   - /blog/food-cost-percentage-formula/
   - /features/kitchen-display-system/
+biz_type: restaurant
+pains_title: "Busy services shouldn't cost you money"
+pains:
+  - ["Orders lost between floor and kitchen", "Handwritten tickets get misread or forgotten, a table waits 40 minutes and leaves without dessert."]
+  - ["Dishes that never reach the bill", "A plate goes out, nobody rings it up, and at closing the cash is short with no way to find out why."]
+  - ["Service stops when the internet does", "A cloud-only till freezes in the middle of the Friday rush, just when you need it most."]
+features_title: "Dining room, kitchen and office on one system"
+features:
+  - ["table", "Tables and floor plan", "Seat guests by area, see which tables are open and how long they have been waiting. Split, move and merge bills."]
+  - ["kitchen", "Kitchen and bar screens", "Food goes to the kitchen and drinks to the bar the moment the order is taken, and tickets print only what changed."]
+  - ["qr", "QR table ordering", "Guests scan one QR code, pick their table and order. Staff approve before anything reaches the kitchen."]
+  - ["wifi-off", "Keeps selling offline", "The Windows and Mac apps keep taking orders without internet and sync when the connection comes back."]
+  - ["shield", "Manager approval for cancels", "Cancels, refunds and price changes need a manager's PIN, and every action goes in the activity log."]
+  - ["chart", "Food cost and reports", "Daily sales by waiter and payment method, expenses and accounting in the same app."]
 ---
 
 A **restaurant POS system** records orders, sends them to the kitchen, takes payments and keeps track of what you sell. LoungeOS does all of that, plus inventory, staff permissions and accounting. It runs in the web app and in the Windows, Mac and Android apps, with one account everywhere. On a Windows or Mac till, a dropped connection does not stop service: the till keeps selling and syncs when the connection comes back.

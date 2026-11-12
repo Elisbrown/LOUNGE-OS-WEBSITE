@@ -41,6 +41,23 @@ these places. Change them together:
 - the hand-edited pricing cards and JSON-LD offers in `index.html`, `documentation.html`
   and `knowledgebase.html`
 
+Admin can give a plan its own price per business type on `account.loungeos.app`
+(by default every type pays the plan's price). Browsers read the live prices from
+`account.loungeos.app/api/plans` (`loadLivePrices()` in `/app.js`).
+`scripts/site/sync_prices.py` copies them into `scripts/site/prices.json`, which
+`build.py` uses for the static prices and the JSON-LD offers; the SEO refresh
+Action runs it daily and rebuilds the pages when a price changed. `PRICES` is the
+fallback when `prices.json` is missing.
+
+## Business-type landing pages
+
+Each business type of the app has a page in English and French (`TYPE_PAGES` in
+`build.py`), written as `type: industry` with `biz_type`, `pains`, `features` and
+an optional `soon` list in the front matter. The page shows that type's prices.
+`/solutions/` and `/fr/solutions/` list them all, and `[[include:types]]` adds
+the tiles anywhere (the homepage tiles sit between `type-tiles` markers in
+`index.html` and are filled by `build.py`).
+
 Payments, invoices and plan changes happen at `account.loungeos.app`; the "Start free
 trial" buttons go to `app.loungeos.app/login`.
 

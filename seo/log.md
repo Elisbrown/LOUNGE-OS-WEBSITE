@@ -8,3 +8,9 @@
 - New feature pages: QR ordering, branches, phone app, customer tabs (EN + FR).
 - New articles: LoungeOS vs Loyverse, best POS Cameroon, Odoo POS alternatives, QR ordering, multiple branches, credit tabs, Android POS app (+ FR versions, FR stock software guide).
 - Pricing, download (2.1.4, Android 7.0), FAQ, homepage, schema and llms.txt updated.
+
+## 2026-11-12: one landing page per business type
+- Every business type of the app has its own landing page in English and French, with problems, features, what is still coming, FAQ, and that type's own prices: /restaurant-pos/, /lounge-pos/ (+ /bar-pos/, /nightclub-pos/), /cafe-pos/, /hotel-pos/, /retail-pos/ (now clothes, shoes and boutiques), new /supermarket-pos/, /pharmacy-pos/, /hardware-store-pos/, /wholesale-pos/; French: new /fr/logiciel-caisse-fast-food/, /fr/logiciel-gestion-hotel/, /fr/logiciel-caisse-supermarche/, /fr/logiciel-gestion-pharmacie/, /fr/logiciel-caisse-quincaillerie/, /fr/logiciel-gestion-commerce-de-gros/.
+- Hub pages /solutions/ and /fr/solutions/; business-type tiles on the homepage, French homepage and pricing pages; Solutions menu and footer list every type.
+- Each type page has a SoftwareApplication node with an audience and that type's offers. Prices come from the admin panel: live in the browser (app.js), and copied daily into scripts/site/prices.json by the SEO refresh Action (sync_prices.py), which rebuilds the pages when a price changes.
+- /fr/logiciel-gestion-bar-lounge/ now pairs with /lounge-pos/ (was /bar-pos/).

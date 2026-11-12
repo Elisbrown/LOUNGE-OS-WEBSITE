@@ -136,9 +136,14 @@
     supermarket: 'shop', pharmacy: 'shop', hardware: 'shop', wholesale: 'shop', other: 'shop'
   };
   var activeType = '';
+  // A business-type landing page shows that type's prices only
+  var fixedPlans = document.querySelector('.plans-breakout[data-fixed-type]');
+  var fixedType = fixedPlans && TYPE_FAMILY[fixedPlans.dataset.fixedType] ? fixedPlans.dataset.fixedType : '';
   try {
-    var asked = new URLSearchParams(window.location.search).get('type') || localStorage.getItem('loungeos-biz-type') || '';
+    var asked = fixedType || new URLSearchParams(window.location.search).get('type') || localStorage.getItem('loungeos-biz-type') || '';
     if (TYPE_FAMILY[asked]) activeType = asked;
+    // Remember it, so the pricing page opens on the same kind of business
+    if (fixedType) localStorage.setItem('loungeos-biz-type', fixedType);
   } catch (e) { /* no storage */ }
   // Live prices from the account site, per tier: { plan: {USD, XAF}, types: { pharmacy: {USD, XAF} } }
   var LIVE = null;

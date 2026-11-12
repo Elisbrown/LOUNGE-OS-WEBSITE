@@ -1,6 +1,6 @@
 ---
 url: /fr/logiciel-gestion-bar-lounge/
-type: solution
+type: industry
 lang: fr
 title: "Logiciel de gestion bar, lounge et boîte de nuit | LoungeOS"
 description: "Logiciel de caisse et de stock pour bars, snack-bars, lounges, cabarets et boîtes de nuit : écran bar, suivi des bouteilles, zones VIP, annulations contrôlées."
@@ -12,11 +12,26 @@ image_alt: "Gestion des zones LoungeOS avec tables et serveurs affectés"
 card_title: "Logiciel bar & lounge"
 card_desc: "Écran bar, suivi des bouteilles, zones VIP et contrôle des annulations."
 alternates:
-  en: /bar-pos/
+  en: /lounge-pos/
 related:
   - /fr/blog/vols-employes-bar-restaurant/
   - /fr/cameroun/
   - /fr/tarifs/
+biz_type: lounge
+pricing_name: "les bars, lounges et boîtes de nuit"
+pains_title: "Longues nuits, marges fines et trop de mains sur les bouteilles"
+pains:
+  - ["Des bouteilles qui disparaissent", "Un casier de bières arrive le vendredi, la moitié est vendue et le reste est « cassé ». Sans comptage, impossible de savoir."]
+  - ["Des tables VIP aux additions ouvertes", "Les grandes tables commandent toute la nuit, changent de serveur et laissent une addition que personne ne peut reconstituer à 3 h du matin."]
+  - ["Une caisse qui ne tombe pas juste", "Mobile money, espèces et carte de plusieurs barmans finissent dans un même tas, sans savoir qui a encaissé quoi."]
+features_title: "Conçu pour les bars, lounges et boîtes de nuit"
+features:
+  - ["wine", "Contrôle des bouteilles et du stock", "Chaque boisson vendue sort du stock. Livraisons, pertes et ajustements sont enregistrés avec un nom et une heure."]
+  - ["table", "Zones et tables VIP", "Organisez la salle par zone, donnez à chaque table son serveur et suivez ses dépenses."]
+  - ["kitchen", "Écrans bar et cuisine", "Les boissons partent au bar, les plats en cuisine, sans crier à travers la salle."]
+  - ["credit", "Comptes clients", "Les habitués peuvent payer plus tard. La page Comptes clients montre ce que chacun doit."]
+  - ["music", "Événements et soirées", "Préparez événements et soirées à thème dans le calendrier pour que l'équipe sache ce qui arrive."]
+  - ["shield", "Responsabilité de nuit", "Chaque barman se connecte avec un code PIN, et les annulations demandent un gérant. Le journal d'activité montre qui a fait quoi."]
 ---
 
 Un **logiciel de gestion de bar** doit être rapide pendant le rush, simple pour les nouveaux employés et intraitable sur les stocks. C'est sur les boissons que se fait la marge, et que disparaît l'argent. LoungeOS a été conçu pour les bars, snack-bars, lounges, cabarets et boîtes de nuit. D'où son nom.

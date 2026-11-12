@@ -22,6 +22,12 @@ related:
 
 [[include:plans]]
 
+## See LoungeOS for your kind of business
+
+Each kind of business has its own page with what LoungeOS does for it and its own prices.
+
+[[include:types]]
+
 ## What every plan includes
 
 Every plan gives you the same LoungeOS, with one account on the web app and the Windows, Mac and Android apps:

@@ -30,7 +30,7 @@ APP_VERSION = "2.1.4"
 SIGNUP = "https://app.loungeos.app/login"  # sign-up is on the sign-in page
 WIN_DOWNLOAD = "/download/"
 # Hand-maintained pages that generated pages may reference as hreflang alternates
-MANUAL_PAGES = {"/"}
+MANUAL_PAGES = {"/", "/solutions/", "/fr/solutions/"}
 LENIENT = bool(os.environ.get("LENIENT"))
 
 ORG_ID = SITE + "/#organization"
@@ -182,11 +182,12 @@ NAV = {
     "en": {
         "badge": "POS &amp; Business",
         "links": [("Home", "/"), ("Features", "/features/")],
-        "solutions": ("Solutions", [("Restaurants", "/restaurant-pos/"), ("Bars", "/bar-pos/"),
-                                    ("Lounges", "/lounge-pos/"), ("Nightclubs", "/nightclub-pos/"),
-                                    ("Hotels", "/hotel-pos/"), ("Cafés &amp; Fast Food", "/cafe-pos/"),
-                                    ("Shops &amp; Mini-Markets", "/retail-pos/"),
-                                    ("Cameroon", "/cameroon/"), ("Africa", "/africa/")]),
+        "solutions": ("Solutions", [("Restaurants", "/restaurant-pos/"), ("Bars, lounges &amp; nightclubs", "/lounge-pos/"),
+                                    ("Cafés &amp; fast food", "/cafe-pos/"), ("Hotels &amp; guest houses", "/hotel-pos/"),
+                                    ("Clothes, shoes &amp; boutiques", "/retail-pos/"),
+                                    ("Supermarkets &amp; groceries", "/supermarket-pos/"), ("Pharmacies", "/pharmacy-pos/"),
+                                    ("Hardware stores", "/hardware-store-pos/"), ("Wholesale &amp; depots", "/wholesale-pos/"),
+                                    ("All kinds of business →", "/solutions/")]),
         "after": [("Pricing", "/pricing/"), ("Download", "/download/")],
         "resources": ("Resources", [("Blog", "/blog/"), ("FAQ", "/faq/"),
                                     ("Help centre", "/help/"),
@@ -199,12 +200,14 @@ NAV = {
         "links": [("Accueil", "/fr/"), ("Fonctionnalités", "/fr/fonctionnalites/")],
         "solutions": ("Solutions", [("Restaurants", "/fr/logiciel-caisse-restaurant/"),
                                     ("Bars, lounges &amp; boîtes de nuit", "/fr/logiciel-gestion-bar-lounge/"),
-                                    ("Boutiques &amp; supérettes", "/fr/logiciel-caisse-boutique/"),
-                                    ("Hôtels", "/hotel-pos/"),
-                                    ("Cameroun", "/fr/cameroun/"),
-                                    ("Côte d'Ivoire", "/fr/cote-divoire/"),
-                                    ("Sénégal", "/fr/senegal/"),
-                                    ("Afrique francophone", "/fr/afrique/")]),
+                                    ("Cafés &amp; fast-food", "/fr/logiciel-caisse-fast-food/"),
+                                    ("Hôtels &amp; auberges", "/fr/logiciel-gestion-hotel/"),
+                                    ("Vêtements, chaussures &amp; boutiques", "/fr/logiciel-caisse-boutique/"),
+                                    ("Supermarchés &amp; épiceries", "/fr/logiciel-caisse-supermarche/"),
+                                    ("Pharmacies", "/fr/logiciel-gestion-pharmacie/"),
+                                    ("Quincailleries", "/fr/logiciel-caisse-quincaillerie/"),
+                                    ("Commerce de gros &amp; dépôts", "/fr/logiciel-gestion-commerce-de-gros/"),
+                                    ("Toutes les activités →", "/fr/solutions/")]),
         "after": [("Tarifs", "/fr/tarifs/"), ("Télécharger", "/fr/telecharger/")],
         "resources": ("Ressources", [("Blog", "/blog/"), ("FAQ", "/fr/faq/"),
                                      ("Centre d'aide", "/fr/aide/"),
@@ -283,7 +286,9 @@ FOOTER = {
             ("Solutions", [("Restaurant POS", "/restaurant-pos/"), ("Bar POS", "/bar-pos/"),
                            ("Lounge POS", "/lounge-pos/"), ("Nightclub POS", "/nightclub-pos/"),
                            ("Hotel POS", "/hotel-pos/"), ("Café &amp; Fast Food POS", "/cafe-pos/"),
-                           ("Retail &amp; Shop POS", "/retail-pos/")]),
+                           ("Clothing &amp; Shoe Store POS", "/retail-pos/"), ("Supermarket POS", "/supermarket-pos/"),
+                           ("Pharmacy POS", "/pharmacy-pos/"), ("Hardware Store POS", "/hardware-store-pos/"),
+                           ("Wholesale POS", "/wholesale-pos/"), ("All businesses", "/solutions/")]),
             ("Countries", [("Cameroon", "/cameroon/"), ("Nigeria", "/nigeria/"), ("Ghana", "/ghana/"),
                            ("South Africa", "/south-africa/"), ("Africa", "/africa/"),
                            ("Cameroun (FR)", "/fr/cameroun/"), ("Côte d'Ivoire (FR)", "/fr/cote-divoire/"),
@@ -305,8 +310,14 @@ FOOTER = {
                          ("Télécharger", "/fr/telecharger/"), ("FAQ", "/fr/faq/")]),
             ("Solutions", [("Logiciel de caisse restaurant", "/fr/logiciel-caisse-restaurant/"),
                            ("Logiciel bar &amp; lounge", "/fr/logiciel-gestion-bar-lounge/"),
-                           ("Logiciel caisse boutique", "/fr/logiciel-caisse-boutique/"),
-                           ("Afrique francophone", "/fr/afrique/")]),
+                           ("Caisse fast-food &amp; café", "/fr/logiciel-caisse-fast-food/"),
+                           ("Logiciel de gestion hôtel", "/fr/logiciel-gestion-hotel/"),
+                           ("Caisse boutique de vêtements", "/fr/logiciel-caisse-boutique/"),
+                           ("Caisse supermarché", "/fr/logiciel-caisse-supermarche/"),
+                           ("Logiciel pharmacie", "/fr/logiciel-gestion-pharmacie/"),
+                           ("Caisse quincaillerie", "/fr/logiciel-caisse-quincaillerie/"),
+                           ("Commerce de gros", "/fr/logiciel-gestion-commerce-de-gros/"),
+                           ("Toutes les activités", "/fr/solutions/")]),
             ("Pays", [("Cameroun", "/fr/cameroun/"), ("Côte d'Ivoire", "/fr/cote-divoire/"),
                       ("Sénégal", "/fr/senegal/"), ("Cameroon (EN)", "/cameroon/"),
                       ("Nigeria (EN)", "/nigeria/"), ("Ghana (EN)", "/ghana/")]),
@@ -417,9 +428,9 @@ WEBSITE = {"@type": "WebSite", "@id": WEBSITE_ID, "url": SITE + "/", "name": "Lo
            "publisher": {"@id": ORG_ID}, "inLanguage": ["en", "fr"]}
 
 
-def offer(name, price, cur, months=None):
+def offer(name, price, cur, months=None, url="/pricing/"):
     o = {"@type": "Offer", "name": name, "price": str(price), "priceCurrency": cur,
-         "availability": "https://schema.org/InStock", "url": SITE + "/pricing/"}
+         "availability": "https://schema.org/InStock", "url": SITE + url}
     if months:
         o["priceSpecification"] = {"@type": "UnitPriceSpecification", "price": str(price),
                                    "priceCurrency": cur, "billingDuration": f"P{months}M",
@@ -440,13 +451,42 @@ PRICES = [
 ]
 
 
-def plan_offers():
-    offers = [offer(f"{TRIAL_DAYS}-day free trial (Business features)", 0, "USD")]
-    for _, name, _, _, usd_m, usd_y, xaf_m, xaf_y in PRICES:
-        offers += [offer(f"{name} monthly", usd_m, "USD", 1),
-                   offer(f"{name} yearly", usd_y, "USD", 12),
-                   offer(f"{name} monthly (Cameroon)", xaf_m, "XAF", 1),
-                   offer(f"{name} yearly (Cameroon)", xaf_y, "XAF", 12)]
+# Live prices from the admin panel (account.loungeos.app/api/plans), copied into
+# prices.json by sync_prices.py. Admin can give a plan its own price per business
+# type; by default every type pays the plan's price. PRICES above is the fallback.
+PRICES_FILE = os.path.join(HERE, "prices.json")
+try:
+    LIVE_PRICES = json.load(open(PRICES_FILE, encoding="utf-8")).get("tiers") or {}
+except (OSError, ValueError):
+    LIVE_PRICES = {}
+
+
+def tier_prices(key, biz_type=None):
+    """(US$/month, US$/year, FCFA/month, FCFA/year) of a plan for one business type."""
+    row = next(r for r in PRICES if r[0] == key)
+    live = LIVE_PRICES.get(key)
+    if not live:
+        return tuple(row[4:8])
+    p = (live.get("types") or {}).get(biz_type) if biz_type else None
+    p = p or live["plan"]
+    return (p["USD"]["monthly"], p["USD"]["yearly"], p["XAF"]["monthly"], p["XAF"]["yearly"])
+
+
+def from_prices(key):
+    """The lowest prices of a plan across every business type ("From ...")."""
+    options = [tier_prices(key)] + [tier_prices(key, t) for t in (LIVE_PRICES.get(key, {}).get("types") or {})]
+    return min(options)
+
+
+def plan_offers(biz_type=None, url="/pricing/", label=""):
+    offers = [offer(f"{TRIAL_DAYS}-day free trial (Business features)", 0, "USD", url=url)]
+    for key, name, *_ in PRICES:
+        usd_m, usd_y, xaf_m, xaf_y = tier_prices(key, biz_type) if biz_type else from_prices(key)
+        name = f"{name}{label}"
+        offers += [offer(f"{name} monthly", usd_m, "USD", 1, url),
+                   offer(f"{name} yearly", usd_y, "USD", 12, url),
+                   offer(f"{name} monthly (Cameroon)", xaf_m, "XAF", 1, url),
+                   offer(f"{name} yearly (Cameroon)", xaf_y, "XAF", 12, url)]
     return offers
 
 
@@ -558,6 +598,17 @@ def cta_box(lang, title=None, text=None):
 </div>"""
 
 
+def page_cta_title(page):
+    """Shops and hotels get a call to action in their own words, not a restaurant's."""
+    fam = next((f for k, f, *_ in BUSINESS_TYPES if k == page.get("biz_type")), None)
+    fr = page["lang"] == "fr"
+    if fam == "shop":
+        return "Faites tourner votre commerce avec LoungeOS" if fr else "Run your shop on LoungeOS"
+    if fam == "hotel":
+        return "Faites tourner votre hôtel avec LoungeOS" if fr else "Run your hotel's outlets on LoungeOS"
+    return None
+
+
 def shortcodes(md, page, by_url):
     lang = page["lang"]
 
@@ -588,7 +639,7 @@ def shortcodes(md, page, by_url):
     md = re.sub(r"\[\[phones:(.+?)\]\]", phones, md)
     md = re.sub(r"\[\[figure:(.+?)\]\]", fig, md)
     md = re.sub(r"\[\[cards:(.+?)\]\]", cards, md)
-    md = md.replace("[[cta]]", cta_box(lang))
+    md = md.replace("[[cta]]", cta_box(lang, page_cta_title(page)))
     md = re.sub(r"\[\[include:(\w+)\]\]", lambda m: INCLUDES[m.group(1)](lang), md)
     return md
 
@@ -628,7 +679,8 @@ def price_table(lang):
         head = ("<tr><th>Plan</th><th>Monthly (US$)</th><th>Yearly (US$)</th>"
                 "<th>Monthly (FCFA)</th><th>Yearly (FCFA)</th></tr>")
     rows = []
-    for _, name, _, _, usd_m, usd_y, xaf_m, xaf_y in PRICES:
+    for key, name, *_ in PRICES:
+        usd_m, usd_y, xaf_m, xaf_y = from_prices(key)
         cells = [money(usd_m, "USD", lang), money(usd_y, "USD", lang),
                  money(xaf_m, "XAF", lang), money(xaf_y, "XAF", lang)]
         rows.append(f"<tr><td>{name}</td>" + "".join(f"<td>{c}</td>" for c in cells) + "</tr>")
@@ -689,7 +741,7 @@ FAMILY_ONLY = {
 }
 
 
-def plan_cards(lang):
+def plan_cards(lang, fixed=None):
     """Starter, Business and Pro cards with a business-type switcher and a
     monthly/yearly switch. The static HTML shows "From" US$ monthly prices;
     app.js switches to yearly on request, to FCFA for visitors in Cameroon and
@@ -731,6 +783,11 @@ def plan_cards(lang):
         f'<span class="family-line" data-family="{fam}"{"" if fam == "all" else " hidden"}>{text}</span>'
         for fam, text in lines.items())
 
+    if fixed:
+        fam = next(f for k, f, *_ in BUSINESS_TYPES if k == fixed)
+        family_line = "".join(
+            f'<span class="family-line" data-family="{f_}"{"" if f_ == fam else " hidden"}>{text}</span>'
+            for f_, text in lines.items())
     chips = [f'<button type="button" class="type-chip active" data-type="" aria-pressed="true">{L["all"]}</button>']
     for key, fam, en, fr_name in BUSINESS_TYPES:
         chips.append(f'<button type="button" class="type-chip" data-type="{key}" data-family="{fam}" '
@@ -738,7 +795,8 @@ def plan_cards(lang):
     chips = "\n  ".join(chips)
 
     cards = []
-    for key, name, users, devices, usd_m, usd_y, _, _ in PRICES:
+    for key, name, users, devices, *_ in PRICES:
+        usd_m, usd_y, _, _ = tier_prices(key, fixed) if fixed else from_prices(key)
         featured = key == "business"
         badge = f'\n    <span class="price-card-badge">{L["popular"]}</span>' if featured else ""
         btn = "btn-accent" if featured else "btn-primary"
@@ -749,9 +807,13 @@ def plan_cards(lang):
         features = [plan_seats(users, devices, lang)] + items
         # Lines only some kinds of business get (hidden when another type is picked)
         families = {i: fams for i, fams in FAMILY_ONLY.get(key, {}).items()}
+        if fixed:  # lines this type doesn't get are left out
+            items = [i for i in items if i not in families or fam in families[i].split()]
+            features = [plan_seats(users, devices, lang)] + items
+            families = {}
         cards.append(f"""  <div class="price-card{' featured' if featured else ''}" data-plan="{key}">{badge}
     <h3>{name}</h3>
-    <div class="price-from">{L['from']}</div>
+    <div class="price-from"{' hidden' if fixed else ''}>{L['from']}</div>
     <div class="price">{money(usd_m, "USD", lang)}</div>
     <div class="price-period">{L['pm']}</div>
     <div class="price-savings" hidden>{L['yousave']} {save}</div>
@@ -759,11 +821,13 @@ def plan_cards(lang):
     <a href="{SIGNUP}" class="btn {btn}">{L['start']}</a>
   </div>""")
     cards = "\n".join(cards)
-    return f"""<div class="plans-breakout">
-<div class="type-switch" role="group" aria-label="{L['yourtype']}">
+    switch = f"""<div class="type-switch" role="group" aria-label="{L['yourtype']}">
   <span class="type-switch-label">{L['yourtype']}</span>
   {chips}
-</div>
+</div>""" if not fixed else ""
+    note = L["note"] if not fixed else L["note"].rsplit(". ", 1)[0] + "."
+    return f"""<div class="plans-breakout"{f' data-fixed-type="{fixed}"' if fixed else ''}>
+{switch}
 <div class="billing-toggle">
   <span class="active" data-billing="monthly">{L['monthly']}</span>
   <button type="button" class="toggle-switch" role="switch" aria-checked="false" aria-label="{L['switch']}"></button>
@@ -773,9 +837,262 @@ def plan_cards(lang):
 <div class="pricing-grid pricing-grid-3" style="margin: 0 auto 1.5rem;">
 {cards}
 </div>
-</div><p class="region-price-note">{L['note']}</p>"""
+</div><p class="region-price-note">{note}</p>"""
 
-INCLUDES = {"price_table": price_table, "plans": plan_cards}
+# ---------------------------------------------------------------- business-type landing pages
+# One landing page per business type of the app (LoungeOS src/lib/business-types.ts,
+# "other" excepted), in English and French. Each shows that type's own prices,
+# which admin can set per type on account.loungeos.app. Keys = BUSINESS_TYPES above.
+TYPE_PAGES = [
+    # key, icon, English name, French name, English page, French page
+    ("restaurant", "utensils", "Restaurants", "Restaurants", "/restaurant-pos/", "/fr/logiciel-caisse-restaurant/"),
+    ("lounge", "wine", "Bars, lounges &amp; nightclubs", "Bars, lounges &amp; boîtes de nuit", "/lounge-pos/", "/fr/logiciel-gestion-bar-lounge/"),
+    ("cafe", "coffee", "Cafés &amp; fast food", "Cafés &amp; fast-food", "/cafe-pos/", "/fr/logiciel-caisse-fast-food/"),
+    ("hotel", "bed", "Hotels &amp; guest houses", "Hôtels &amp; auberges", "/hotel-pos/", "/fr/logiciel-gestion-hotel/"),
+    ("retail", "shirt", "Clothes, shoes &amp; boutiques", "Vêtements, chaussures &amp; boutiques", "/retail-pos/", "/fr/logiciel-caisse-boutique/"),
+    ("supermarket", "cart", "Supermarkets &amp; groceries", "Supermarchés &amp; épiceries", "/supermarket-pos/", "/fr/logiciel-caisse-supermarche/"),
+    ("pharmacy", "pill", "Pharmacies", "Pharmacies", "/pharmacy-pos/", "/fr/logiciel-gestion-pharmacie/"),
+    ("hardware", "hammer", "Hardware stores", "Quincailleries", "/hardware-store-pos/", "/fr/logiciel-caisse-quincaillerie/"),
+    ("wholesale", "boxes", "Wholesale &amp; depots", "Commerce de gros &amp; dépôts", "/wholesale-pos/", "/fr/logiciel-gestion-commerce-de-gros/"),
+]
+SOLUTIONS_URL = {"en": "/solutions/", "fr": "/fr/solutions/"}
+
+
+def type_page(key):
+    return next(t for t in TYPE_PAGES if t[0] == key)
+
+
+def type_name(key, lang):
+    t = type_page(key)
+    return t[3] if lang == "fr" else t[2]
+
+
+def type_url(key, lang):
+    t = type_page(key)
+    return t[5] if lang == "fr" else t[4]
+
+
+_I = {
+    "utensils": '<path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/>',
+    "wine": '<path d="M8 22h8"/><path d="M7 10h10"/><path d="M12 15v7"/><path d="M12 15a5 5 0 0 0 5-5c0-2-.5-4-2-8H9c-1.5 4-2 6-2 8a5 5 0 0 0 5 5Z"/>',
+    "coffee": '<path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" x2="6" y1="2" y2="4"/><line x1="10" x2="10" y1="2" y2="4"/><line x1="14" x2="14" y1="2" y2="4"/>',
+    "bed": '<path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/>',
+    "shirt": '<path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/>',
+    "cart": '<circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/>',
+    "pill": '<path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z"/><path d="m8.5 8.5 7 7"/>',
+    "hammer": '<path d="m15 12-8.5 8.5c-.83.83-2.17.83-3 0 0 0 0 0 0 0a2.12 2.12 0 0 1 0-3L12 9"/><path d="M17.64 15 22 10.64"/><path d="m20.91 11.7-1.25-1.25c-.6-.6-.93-1.4-.93-2.25v-.86L16.01 4.6a5.56 5.56 0 0 0-3.94-1.64H9l.92.82A6.18 6.18 0 0 1 12 8.4v1.56l2 2h2.47l2.26 1.91"/>',
+    "boxes": '<path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z"/><path d="m7 16.5-4.74-2.85"/><path d="m7 16.5 5-3"/><path d="M7 16.5v5.17"/><path d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z"/><path d="m17 16.5-5-3"/><path d="m17 16.5 4.74-2.85"/><path d="M17 16.5v5.17"/><path d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z"/><path d="M12 8 7.26 5.15"/><path d="m12 8 4.74-2.85"/><path d="M12 13.5V8"/>',
+    "scan": '<path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/><path d="M8 7v10"/><path d="M12 7v10"/><path d="M16 7v10"/>',
+    "wifi-off": '<path d="M12 20h.01"/><path d="M8.5 16.43a5 5 0 0 1 7 0"/><path d="M2 8.82a15 15 0 0 1 4.18-2.65"/><path d="M19 12.86a10 10 0 0 0-2.27-1.62"/><path d="M5 12.86a10 10 0 0 1 5.17-2.69"/><path d="M10.71 5.05A16 16 0 0 1 22 8.82"/><line x1="2" x2="22" y1="2" y2="22"/>',
+    "phone": '<rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/>',
+    "users": '<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>',
+    "receipt": '<path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"/><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/><path d="M12 17.5v-11"/>',
+    "package": '<path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/>',
+    "chart": '<path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/>',
+    "wallet": '<path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"/><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"/>',
+    "shield": '<path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/>',
+    "clock": '<circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>',
+    "tag": '<path d="M12.59 2.59A2 2 0 0 0 11.17 2H4a2 2 0 0 0-2 2v7.17a2 2 0 0 0 .59 1.42l8.7 8.7a2.43 2.43 0 0 0 3.42 0l6.58-6.58a2.43 2.43 0 0 0 0-3.42z"/><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"/>',
+    "truck": '<path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.62l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/>',
+    "qr": '<rect width="5" height="5" x="3" y="3" rx="1"/><rect width="5" height="5" x="16" y="3" rx="1"/><rect width="5" height="5" x="3" y="16" rx="1"/><path d="M21 16h-3a2 2 0 0 0-2 2v3"/><path d="M21 21v.01"/><path d="M12 7v3a2 2 0 0 1-2 2H7"/><path d="M3 12h.01"/><path d="M12 3h.01"/><path d="M12 16v.01"/><path d="M16 12h1"/><path d="M21 12v.01"/><path d="M12 21v-1"/>',
+    "store": '<path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7"/><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4"/><path d="M2 7h20"/><path d="M22 7v3a2 2 0 0 1-2 2a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 16 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 12 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 8 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 4 12a2 2 0 0 1-2-2V7"/>',
+    "layers": '<path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/>',
+    "printer": '<path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 9V3a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6"/><rect x="6" y="14" width="12" height="8" rx="1"/>',
+    "kitchen": '<path d="M17 21a1 1 0 0 0 1-1v-5.35c0-.457.316-.844.727-1.041a4 4 0 0 0-2.134-7.589 5 5 0 0 0-9.186 0 4 4 0 0 0-2.134 7.588c.411.198.727.585.727 1.041V20a1 1 0 0 0 1 1Z"/><path d="M6 17h12"/>',
+    "table": '<path d="M3 9h18"/><path d="M5 9v12"/><path d="M19 9v12"/><path d="M3 5h18v4H3z"/>',
+    "credit": '<rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/>',
+    "book": '<path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"/>',
+    "branch": '<path d="M6 3v12"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/>',
+    "calendar": '<rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/>',
+    "alert": '<path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/>',
+    "search": '<circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>',
+    "image": '<rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/>',
+    "music": '<path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>',
+    "lock": '<rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>',
+}
+
+
+def icon(name, cls="ind-icon"):
+    return (f'<svg class="{cls}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" '
+            f'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{_I[name]}</svg>')
+
+
+IND_T = {
+    "en": {"for": "LoungeOS for", "problem": "Sound familiar?", "does": "What LoungeOS does for you",
+           "soon": "Coming next", "soon_note": "Not in the app yet. We say so here, so you can decide with the facts.",
+           "pricing": "Pricing for {name}", "pricing_sub": "The price of each plan for this kind of business, straight from our price list.",
+           "compare": "Compare prices for every kind of business →", "others": "LoungeOS for other businesses",
+           "all": "All kinds of business", "pick": "What kind of business do you run?"},
+    "fr": {"for": "LoungeOS pour", "problem": "Ça vous parle ?", "does": "Ce que LoungeOS fait pour vous",
+           "soon": "Bientôt disponible", "soon_note": "Pas encore dans l'application. Nous le disons ici pour que vous choisissiez en connaissance de cause.",
+           "pricing": "Tarifs pour {name}", "pricing_sub": "Le prix de chaque formule pour ce type d'activité, tiré directement de notre grille tarifaire.",
+           "compare": "Comparer les prix de chaque type d'activité →", "others": "LoungeOS pour d'autres activités",
+           "all": "Tous les types d'activité", "pick": "Quel type d'activité gérez-vous ?"},
+}
+
+
+def md_inline(text):
+    return markdown.markdown(str(text))[3:-4]
+
+
+def type_tiles(lang, current=None, desc=True):
+    """Icon tiles linking to every business-type landing page."""
+    tiles = []
+    for key, ic, *_ in TYPE_PAGES:
+        if key == current:
+            continue
+        url = type_url(key, lang)
+        p = BY_URL.get(url, {})
+        sub = f'<span>{esc(p.get("card_desc", ""))}</span>' if desc and p.get("card_desc") else ""
+        tiles.append(f'<a class="type-tile" href="{url}">{icon(ic, "type-tile-icon")}'
+                     f'<strong>{type_name(key, lang)}</strong>{sub}</a>')
+    return '<div class="type-tiles">\n' + "\n".join(tiles) + "\n</div>"
+
+
+def types_include(lang):
+    return type_tiles(lang)
+
+
+BY_URL = {}
+
+
+def industry_sections(page):
+    """The landing-page blocks above the long-form text: problems, features,
+    what is still coming, and this type's prices."""
+    lang = page["lang"]
+    t = IND_T[lang]
+    key = page["biz_type"]
+    name = page.get("type_name") or type_name(key, lang)
+    out = []
+    if page.get("pains"):
+        cards = "\n".join(
+            f'<div class="pain-card"><h3>{esc(p[0])}</h3><p>{md_inline(p[1])}</p></div>' for p in page["pains"])
+        out.append(f"""      <section class="ind-band ind-pains">
+        <div class="container">
+          <p class="section-label">{t['problem']}</p>
+          <h2 class="section-title">{esc(page.get('pains_title', ''))}</h2>
+          <div class="pain-grid">
+{cards}
+          </div>
+        </div>
+      </section>""")
+    if page.get("features"):
+        cards = "\n".join(
+            f'<div class="feat-card">{icon(f[0])}<h3>{esc(f[1])}</h3><p>{md_inline(f[2])}</p></div>'
+            for f in page["features"])
+        soon = ""
+        if page.get("soon"):
+            lis = "\n".join(f"<li>{md_inline(s)}</li>" for s in page["soon"])
+            soon = f"""<div class="soon-box">
+            <h3>{icon('clock', 'ind-icon-sm')} {t['soon']}</h3>
+            <ul>
+{lis}
+            </ul>
+            <p>{t['soon_note']}</p>
+          </div>"""
+        out.append(f"""      <section class="ind-band">
+        <div class="container">
+          <p class="section-label">{t['does']}</p>
+          <h2 class="section-title">{esc(page.get('features_title', ''))}</h2>
+          <div class="feat-grid">
+{cards}
+          </div>
+          {soon}
+        </div>
+      </section>""")
+    compare = SOLUTIONS_URL[lang].replace("/solutions/", "/tarifs/" if lang == "fr" else "/pricing/")
+    out.append(f"""      <section class="ind-band ind-pricing" id="pricing">
+        <div class="container">
+          <h2 class="section-title">{t['pricing'].format(name=page.get('pricing_name') or name.lower())}</h2>
+          <p class="section-subtitle">{t['pricing_sub']}</p>
+          {plan_cards(lang, fixed=key)}
+          <p class="ind-compare"><a href="{compare}">{t['compare']}</a></p>
+        </div>
+      </section>""")
+    return out
+
+
+def industry_graph(page):
+    """Structured data for a business-type page: LoungeOS for this kind of
+    business, with this type's offers."""
+    lang, url, key = page["lang"], page["url"], page["biz_type"]
+    name = html.unescape(page.get("type_name") or type_name(key, lang))
+    label = f" ({name})"
+    app = {
+        "@type": "SoftwareApplication", "@id": SITE + url + "#app",
+        "name": html.unescape(page.get("app_name") or f"LoungeOS {'pour' if lang == 'fr' else 'for'} {name}"),
+        "url": SITE + url, "applicationCategory": "BusinessApplication",
+        "applicationSubCategory": html.unescape(page.get("label", "")),
+        "operatingSystem": SOFTWARE["operatingSystem"], "softwareVersion": APP_VERSION,
+        "inLanguage": ["en", "fr"], "publisher": {"@id": ORG_ID}, "isPartOf": {"@id": SOFTWARE_ID},
+        "audience": {"@type": "BusinessAudience", "audienceType": name},
+        "description": page["description"],
+        "offers": plan_offers(key, url, label),
+    }
+    if page.get("features"):
+        app["featureList"] = [f[1] for f in page["features"]]
+    if page.get("image"):
+        app["screenshot"] = f"{SITE}/images/screens/{page['image']}.webp"
+    return app
+
+
+def solutions_index(lang):
+    fr = lang == "fr"
+    url = SOLUTIONS_URL[lang]
+    t = T[lang]
+    page = {
+        "url": url, "lang": lang, "type": "solutions-index",
+        "alternates": {"en": SOLUTIONS_URL["en"], "fr": SOLUTIONS_URL["fr"]},
+        "title": ("Logiciel de caisse pour chaque type de commerce | LoungeOS" if fr else
+                  "POS for Every Kind of Business: Food, Shops, Hotels | LoungeOS"),
+        "description": ("Restaurant, bar, hôtel, boutique de vêtements, supermarché, pharmacie, quincaillerie ou commerce de gros : choisissez votre activité et voyez ses écrans et ses prix."
+                        if fr else
+                        "Restaurant, bar, hotel, clothes shop, supermarket, pharmacy, hardware store or wholesale: pick your kind of business and see its screens and its prices."),
+        "h1": "Une caisse taillée pour votre activité" if fr else "A point of sale made for your kind of business",
+        "lead": ("Le même LoungeOS, avec les bons écrans et les bons mots pour chaque commerce. Choisissez le vôtre pour voir ce qu'il fait pour vous et combien il coûte."
+                 if fr else
+                 "The same LoungeOS, with the right screens and the right words for each kind of business. Pick yours to see what it does for you and what it costs."),
+        "label": "Solutions", "modified": TODAY.isoformat(), "no_hero_cta": True,
+    }
+    crumbs = [(t["home"], "/fr/" if fr else "/"), ("Solutions", url)]
+    items = [{"@type": "ListItem", "position": i + 1, "url": SITE + type_url(k, lang),
+              "name": html.unescape(type_name(k, lang))} for i, (k, *_) in enumerate(TYPE_PAGES)]
+    graph = [ORG, WEBSITE,
+             {"@type": ["WebPage", "CollectionPage"], "@id": SITE + url + "#webpage", "url": SITE + url,
+              "name": page["title"], "description": page["description"], "inLanguage": lang,
+              "isPartOf": {"@id": WEBSITE_ID}, "breadcrumb": {"@id": SITE + url + "#breadcrumb"},
+              "dateModified": page["modified"], "about": {"@id": SOFTWARE_ID},
+              "mainEntity": {"@type": "ItemList", "itemListElement": items}},
+             SOFTWARE, breadcrumb_node(url, crumbs)]
+    how = [("store", "Un seul compte, plusieurs activités" if fr else "One account, any mix of businesses",
+            "Un hôtel avec un restaurant, une boutique avec un bar : cochez tout ce que vous faites dans l'assistant de configuration."
+            if fr else "A hotel with a restaurant, a shop with a bar: tick everything you do in the setup wizard."),
+           ("layers", "Les bons écrans" if fr else "The right screens",
+            "Tables, cuisine et bar pour la restauration ; produits et codes-barres pour les commerces. Le reste se masque."
+            if fr else "Tables, kitchen and bar for food; products and barcodes for shops. What you don't need stays out of the way."),
+           ("tag", "Un prix par activité" if fr else "A price for each kind of business",
+            "Chaque page affiche le prix de votre activité. Aujourd'hui, toutes les activités paient le même prix."
+            if fr else "Each page shows your kind of business's own price. Today every kind of business pays the same.")]
+    how_html = "\n".join(f'<div class="feat-card">{icon(i)}<h3>{a}</h3><p>{b}</p></div>' for i, a, b in how)
+    other = ("Votre activité n'est pas dans la liste ? Choisissez « Autre activité » à l'inscription : vous avez la caisse, les stocks, l'équipe et les rapports, et vous activez les écrans dont vous avez besoin."
+             if fr else
+             "Not on the list? Pick “Something else” when you sign up: you get the till, stock, team and reports, and switch on the screens you need.")
+    out = [head_html(page, graph), "  <body>", nav_html(lang), '    <main id="main-content">',
+           hero_html(page, crumbs),
+           f'      <section class="ind-band" style="padding-top: 0"><div class="container">{type_tiles(lang)}'
+           f'<p class="ind-compare">{other}</p></div></section>',
+           f'      <section class="ind-band ind-pains"><div class="container"><h2 class="section-title">'
+           f'{"Un logiciel, chaque commerce" if fr else "One app, every kind of business"}</h2>'
+           f'<div class="feat-grid">{how_html}</div></div></section>',
+           f'      <section class="ind-band ind-pricing" id="pricing"><div class="container"><h2 class="section-title">'
+           f'{"Tarifs" if fr else "Pricing"}</h2>{plan_cards(lang)}</div></section>',
+           f'      <section style="padding: 0 1.5rem 1rem">{cta_box(lang)}</section>',
+           "    </main>", footer_html(lang), tail_scripts(lang), "  </body>", "</html>", ""]
+    html_out = "\n".join(out)
+    return url, (fr_typography(html_out) if fr else html_out)
+
+
+INCLUDES = {"price_table": price_table, "plans": plan_cards, "types": types_include}
 
 
 # ---------------------------------------------------------------- page build
@@ -1030,9 +1347,12 @@ def build_page(page, by_url, pages):
     if page.get("image"):
         pnode["primaryImageOfPage"] = {"@type": "ImageObject",
                                        "url": f"{SITE}/images/screens/{page['image']}.webp"}
-    if page["type"] in ("feature", "solution", "region", "core", "home-fr"):
+    if page["type"] in ("feature", "solution", "region", "core", "home-fr", "industry"):
         pnode["about"] = {"@id": SOFTWARE_ID}
         graph.append(SOFTWARE)
+    if page["type"] == "industry":
+        pnode["about"] = {"@id": SITE + url + "#app"}
+        graph.append(industry_graph(page))
     graph.append(pnode)
     if page["type"] == "blog":
         img = f"{SITE}/images/screens/{page.get('image', 'loungeos-pos-order-screen')}.webp"
@@ -1102,14 +1422,24 @@ def build_page(page, by_url, pages):
       </article>"""
         parts.append(article)
     else:
+        if page["type"] == "industry":
+            parts += industry_sections(page)
         parts.append(f"""      <section class="content-section">
         <div class="prose prose-wide">
 {body}
         </div>
       </section>""")
         if not page.get("no_cta"):
-            parts.append(f'      <section style="padding: 0 1.5rem 1rem">{cta_box(lang)}</section>')
+            parts.append(f'      <section style="padding: 0 1.5rem 1rem">{cta_box(lang, page_cta_title(page))}</section>')
 
+    if page["type"] == "industry":
+        parts.append(f"""      <section class="ind-band ind-others">
+        <div class="container">
+          <h2 class="section-title">{IND_T[lang]['others']}</h2>
+          {type_tiles(lang, current=page['biz_type'], desc=False)}
+          <p class="ind-compare"><a href="{SOLUTIONS_URL[lang]}">{IND_T[lang]['all']} →</a></p>
+        </div>
+      </section>""")
     rel = page.get("related", [])
     if rel:
         cards = cards_html([by_url[u] for u in rel if u in by_url or not LENIENT], lang, [page.get("image")])
@@ -1226,6 +1556,12 @@ def blog_index(pages, by_url):
 def main():
     repo = sys.argv[1] if len(sys.argv) > 1 else os.path.abspath(os.path.join(HERE, "..", ".."))
     pages, by_url = load_pages()
+    BY_URL.update(by_url)
+    for key, *_ in TYPE_PAGES:
+        for lang in ("en", "fr"):
+            u = type_url(key, lang)
+            if u not in by_url and not LENIENT:
+                raise SystemExit(f"business type {key}: page {u} not found")
     report = []
     for p in pages:
         html_out, words = build_page(p, by_url, pages)
@@ -1246,6 +1582,18 @@ def main():
             path = os.path.join(repo, url.strip("/"), "index.html")
             os.makedirs(os.path.dirname(path), exist_ok=True)
             open(path, "w", encoding="utf-8").write(social_tags(version_links(out, repo), repo))
+    # The homepage (hand-edited) shows the same business-type tiles
+    home = os.path.join(repo, "index.html")
+    h = open(home, encoding="utf-8").read()
+    h2 = re.sub(r"(<!-- type-tiles:start -->).*?(\s*<!-- type-tiles:end -->)",
+                lambda m: m.group(1) + "\n" + type_tiles("en") + m.group(2), h, flags=re.S)
+    if h2 != h:
+        open(home, "w", encoding="utf-8").write(h2)
+    for lang in ("en", "fr"):
+        url, out = solutions_index(lang)
+        path = os.path.join(repo, url.strip("/"), "index.html")
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        open(path, "w", encoding="utf-8").write(social_tags(version_links(out, repo), repo))
     for r in sorted(report):
         flag = ""
         if r[4] > 65:

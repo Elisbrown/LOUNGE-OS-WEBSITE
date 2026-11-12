@@ -1,6 +1,6 @@
 ---
 url: /hotel-pos/
-type: solution
+type: industry
 title: "Hotel Restaurant & Bar POS (F&B Outlets) | LoungeOS"
 description: "One POS for your hotel restaurant, bar, pool bar and terrace: kitchen and bar screens, stock control, F&B accounting and offline selling."
 h1: "One POS for every food and beverage outlet in your hotel"
@@ -10,10 +10,32 @@ image: loungeos-floor-management
 image_alt: "LoungeOS floor management with service areas, assigned tables and assigned staff"
 card_title: "Hotel POS"
 card_desc: "Restaurant, bar, pool bar and room service on one system with F&B accounting."
+alternates:
+  fr: /fr/logiciel-gestion-hotel/
 related:
   - /features/restaurant-accounting/
   - /features/table-management/
   - /lounge-pos/
+biz_type: hotel
+pricing_name: "hotels and guest houses"
+pains_title: "Restaurant, bar and room service, each with its own leaks"
+pains:
+  - ["Outlets that don't add up", "The restaurant, bar and pool bar each keep their own notebook, and the manager pieces it together at month end."]
+  - ["Room service with no trace", "A tray goes up, nobody writes it down, and it never reaches the guest's bill."]
+  - ["Banquets and events on paper", "Conference lunches and weddings get priced on paper and the stock used is never counted."]
+features_title: "One POS for every food and drink outlet in your hotel"
+features:
+  - ["layers", "Every outlet in one place", "Each outlet is a service area with its own tables and staff, and reports show all of them together."]
+  - ["kitchen", "Kitchen and bar screens", "Orders from the restaurant, bar and room service go to the right screen."]
+  - ["calendar", "Events and banquets", "Plan conferences, weddings and themed nights in the events calendar."]
+  - ["package", "F&B stock", "Drinks, food and minibar stock with movements, suppliers and low-stock alerts."]
+  - ["book", "Expenses and accounting", "Record expenses and follow the accounts of the food and drink side."]
+  - ["users", "Staff and roles", "Each staff member has a role and a PIN. Managers approve cancels and refunds."]
+soon:
+  - "Rooms, bookings and a room calendar"
+  - "Check-in and check-out with a guest register"
+  - "Charge to room and guest folios"
+  - "Housekeeping on the phone app"
 ---
 
 A **hotel POS** for food and beverage needs to handle several outlets with different staff and menus, while giving management one view of revenue, stock and profit. LoungeOS runs in the web app and in the Windows, Mac and Android apps, with one account for each staff member. With the Windows or Mac app on the main till, outlets keep working over the hotel's Wi-Fi when the internet fails, which matters for hotels outside major cities.

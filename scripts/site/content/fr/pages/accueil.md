@@ -20,6 +20,12 @@ related:
 
 **LoungeOS** est un logiciel de caisse (point de vente) et de gestion pour tous les commerces qui vendent : restaurants, snack-bars, bars, lounges, boîtes de nuit, maquis, fast-foods, hôtels, boutiques, supermarchés et bien d'autres. Vous l'utilisez dans n'importe quel navigateur récent sur [app.loungeos.app](https://app.loungeos.app/login), ou avec les applications Windows, Mac et Android. Un seul compte LoungeOS suffit partout.
 
+## Quel type de commerce gérez-vous ?
+
+Chaque activité a sa page, ses écrans et son prix.
+
+[[include:types]]
+
 ## Ce que LoungeOS règle pour vous
 
 <div class="info-grid">
