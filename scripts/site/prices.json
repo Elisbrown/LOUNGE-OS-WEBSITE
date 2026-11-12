@@ -1,6 +1,6 @@
 {
   "source": "https://account.loungeos.app/api/plans",
-  "fetched": "2026-11-12T23:27:10Z",
+  "fetched": "2026-11-12T23:39:42Z",
   "tiers": {
     "business": {
       "plan": {
@@ -13,7 +13,18 @@
           "yearly": 150000
         }
       },
-      "types": {}
+      "types": {
+        "retail": {
+          "USD": {
+            "monthly": 17,
+            "yearly": 170
+          },
+          "XAF": {
+            "monthly": 10000,
+            "yearly": 100000
+          }
+        }
+      }
     },
     "pro": {
       "plan": {
@@ -26,7 +37,18 @@
           "yearly": 300000
         }
       },
-      "types": {}
+      "types": {
+        "retail": {
+          "USD": {
+            "monthly": 35,
+            "yearly": 350
+          },
+          "XAF": {
+            "monthly": 20000,
+            "yearly": 200000
+          }
+        }
+      }
     },
     "starter": {
       "plan": {
@@ -39,7 +61,18 @@
           "yearly": 60000
         }
       },
-      "types": {}
+      "types": {
+        "retail": {
+          "USD": {
+            "monthly": 7,
+            "yearly": 70
+          },
+          "XAF": {
+            "monthly": 4000,
+            "yearly": 40000
+          }
+        }
+      }
     }
   }
 }
