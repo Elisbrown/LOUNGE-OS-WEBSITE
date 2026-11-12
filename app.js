@@ -127,22 +127,73 @@
     return isFr ? n + '\u00a0$\u00a0US' : 'US$' + n;
   }
 
-  // Cards: .price-card[data-plan] with .price, .price-period and an optional
-  // .price-savings (shown for yearly billing).
+  // Kind of business picked on the price cards ('' = all). Admin can price a
+  // plan per business type on the account site: with no type picked the cards
+  // say "From" the lowest price; with one they show that type's price.
+  // Keep the keys in sync with BUSINESS_TYPES in scripts/site/build.py.
+  var TYPE_FAMILY = {
+    restaurant: 'food', lounge: 'food', cafe: 'food', hotel: 'hotel', retail: 'shop',
+    supermarket: 'shop', pharmacy: 'shop', hardware: 'shop', wholesale: 'shop', other: 'shop'
+  };
+  var activeType = '';
+  try {
+    var asked = new URLSearchParams(window.location.search).get('type') || localStorage.getItem('loungeos-biz-type') || '';
+    if (TYPE_FAMILY[asked]) activeType = asked;
+  } catch (e) { /* no storage */ }
+  // Live prices from the account site, per tier: { plan: {USD, XAF}, types: { pharmacy: {USD, XAF} } }
+  var LIVE = null;
+
+  function pricesOf(tier, type) {
+    var live = LIVE && LIVE[tier];
+    if (live && type && live.types[type]) return live.types[type];
+    if (live) return live.plan;
+    return PLANS[tier];
+  }
+  // The lowest price of a tier across every business type
+  function fromPrices(tier) {
+    var base = pricesOf(tier, '');
+    var live = LIVE && LIVE[tier];
+    if (!live) return base;
+    var best = base;
+    Object.keys(live.types).forEach(function (t) {
+      var p = live.types[t];
+      if (p[activeCurrency][activeBilling] < best[activeCurrency][activeBilling]) best = p;
+    });
+    return best;
+  }
+
+  // Cards: .price-card[data-plan] with .price, .price-from, .price-period and an
+  // optional .price-savings (shown for yearly billing).
   function updatePricing() {
     document.querySelectorAll('.price-card[data-plan]').forEach(function (card) {
-      var plan = PLANS[card.dataset.plan];
-      if (!plan) return;
-      var p = plan[activeCurrency];
+      var tier = card.dataset.plan;
+      if (!PLANS[tier]) return;
+      var p = (activeType ? pricesOf(tier, activeType) : fromPrices(tier))[activeCurrency];
       var price = card.querySelector('.price');
+      var from = card.querySelector('.price-from');
       var period = card.querySelector('.price-period');
       var savings = card.querySelector('.price-savings');
       if (price) price.textContent = formatPrice(p[activeBilling], activeCurrency);
+      if (from) from.hidden = !!activeType;
       if (period) period.textContent = PRICE_TEXT[activeBilling];
       if (savings) {
         savings.textContent = PRICE_TEXT.save.replace('{amount}', formatPrice(p.monthly * 12 - p.yearly, activeCurrency));
-        savings.hidden = activeBilling !== 'yearly';
+        savings.hidden = activeBilling !== 'yearly' || p.monthly * 12 - p.yearly <= 0;
       }
+      // The first Starter line, worded for the kind of business
+      var family = activeType ? TYPE_FAMILY[activeType] : 'all';
+      card.querySelectorAll('.family-line').forEach(function (line) {
+        line.hidden = line.dataset.family !== family;
+      });
+      // Lines only some kinds of business get
+      card.querySelectorAll('.family-item').forEach(function (item) {
+        item.hidden = family !== 'all' && (' ' + item.dataset.families + ' ').indexOf(' ' + family + ' ') < 0;
+      });
+    });
+    document.querySelectorAll('.type-switch .type-chip').forEach(function (chip) {
+      var on = (chip.dataset.type || '') === activeType;
+      chip.classList.toggle('active', on);
+      chip.setAttribute('aria-pressed', on ? 'true' : 'false');
     });
     // Billing toggle: a .toggle-switch button between [data-billing] labels
     document.querySelectorAll('.billing-toggle').forEach(function (toggle) {
@@ -156,6 +207,64 @@
         label.classList.toggle('active', label.dataset.billing === activeBilling);
       });
     });
+  }
+
+  document.querySelectorAll('.type-switch .type-chip').forEach(function (chip) {
+    chip.addEventListener('click', function () {
+      activeType = chip.dataset.type || '';
+      try { localStorage.setItem('loungeos-biz-type', activeType); } catch (e) { /* no storage */ }
+      updatePricing();
+    });
+  });
+
+  // Live plan prices (and per-type prices) from the account site. The static
+  // prices above stay when it can't be reached.
+  function loadLivePrices() {
+    if (isBot || !document.querySelector('.price-card[data-plan]') || !window.fetch) return;
+    fetch('https://account.loungeos.app/api/plans', { mode: 'cors' })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (plans) {
+        if (!Array.isArray(plans)) return;
+        var live = {};
+        plans.forEach(function (pl) {
+          var tier = pl.code;
+          if (!PLANS[tier] || pl.isTrial || !(pl.basePrice > 0)) return;
+          var period = pl.durationDays >= 300 ? 'yearly' : 'monthly';
+          var t = live[tier] || (live[tier] = { plan: { USD: {}, XAF: {} }, types: {} });
+          var usdOf = function (xaf, usd, ref) {
+            if (usd != null && usd >= 0) return usd;
+            // No US$ price: scale the static one by this FCFA price
+            return Math.round(PLANS[tier].USD[period] * xaf / ref);
+          };
+          t.plan.XAF[period] = Math.round(pl.basePrice);
+          t.plan.USD[period] = usdOf(pl.basePrice, pl.priceUsd, PLANS[tier].XAF[period]);
+          var own = {};
+          try { own = pl.typePrices ? JSON.parse(pl.typePrices) : {}; } catch (e) { own = {}; }
+          Object.keys(own).forEach(function (type) {
+            if (!TYPE_FAMILY[type]) return;
+            var o = own[type] || {};
+            var x = o.basePrice != null ? o.basePrice : pl.basePrice;
+            var u = o.priceUsd != null ? o.priceUsd : (o.basePrice != null ? usdOf(x, null, PLANS[tier].XAF[period]) : t.plan.USD[period]);
+            var tt = t.types[type] || (t.types[type] = { USD: {}, XAF: {} });
+            tt.XAF[period] = Math.round(x);
+            tt.USD[period] = u;
+          });
+        });
+        // Fill any period or type left out with the plan's own price
+        Object.keys(live).forEach(function (tier) {
+          var t = live[tier];
+          ['monthly', 'yearly'].forEach(function (period) {
+            ['USD', 'XAF'].forEach(function (cur) {
+              if (t.plan[cur][period] == null) t.plan[cur][period] = PLANS[tier][cur][period];
+              Object.keys(t.types).forEach(function (type) {
+                if (t.types[type][cur][period] == null) t.types[type][cur][period] = t.plan[cur][period];
+              });
+            });
+          });
+        });
+        if (Object.keys(live).length) { LIVE = live; updatePricing(); }
+      })
+      .catch(function () { /* keep the static prices */ });
   }
 
   function setBilling(billing) {
@@ -185,6 +294,7 @@
   }
 
   updatePricing();
+  loadLivePrices();
 
   // Multilingual meta descriptions for the machine-translated homepage only
   const seoData = {

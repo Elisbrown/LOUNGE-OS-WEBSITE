@@ -29,7 +29,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/style.css?v=c1bda027e5" />
+    <link rel="stylesheet" href="/style.css?v=c57d8fc7f0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -611,6 +611,20 @@
 <h2 id="tarifs-en-dollars-us">Tarifs en dollars US</h2>
 <p>En Côte d’Ivoire, les prix s’affichent en dollars US. Les formules et les fonctionnalités sont les mêmes partout, sans commission sur vos ventes.</p>
 <div class="plans-breakout">
+<div aria-label="Votre activité" class="type-switch" role="group">
+<span class="type-switch-label">Votre activité</span>
+<button aria-pressed="true" class="type-chip active" data-type="" type="button">Toutes</button>
+<button aria-pressed="false" class="type-chip" data-family="food" data-type="restaurant" type="button">Restaurant</button>
+<button aria-pressed="false" class="type-chip" data-family="food" data-type="lounge" type="button">Lounge ou bar</button>
+<button aria-pressed="false" class="type-chip" data-family="food" data-type="cafe" type="button">Café ou fast-food</button>
+<button aria-pressed="false" class="type-chip" data-family="hotel" data-type="hotel" type="button">Hôtel</button>
+<button aria-pressed="false" class="type-chip" data-family="shop" data-type="retail" type="button">Vêtements et chaussures</button>
+<button aria-pressed="false" class="type-chip" data-family="shop" data-type="supermarket" type="button">Supermarché</button>
+<button aria-pressed="false" class="type-chip" data-family="shop" data-type="pharmacy" type="button">Pharmacie</button>
+<button aria-pressed="false" class="type-chip" data-family="shop" data-type="hardware" type="button">Quincaillerie</button>
+<button aria-pressed="false" class="type-chip" data-family="shop" data-type="wholesale" type="button">Commerce de gros</button>
+<button aria-pressed="false" class="type-chip" data-family="shop" data-type="other" type="button">Autre</button>
+</div>
 <div class="billing-toggle">
 <span class="active" data-billing="monthly">Mensuel</span>
 <button aria-checked="false" aria-label="Payer à l'année (2 mois offerts)" class="toggle-switch" role="switch" type="button"></button>
@@ -620,11 +634,12 @@
 <div class="pricing-grid pricing-grid-3" style="margin: 0 auto 1.5rem;">
 <div class="price-card" data-plan="starter">
 <h3>Starter</h3>
+<div class="price-from">À partir de</div>
 <div class="price">10 $ US</div>
 <div class="price-period">/ mois</div>
 <div class="price-savings" hidden="">Vous économisez 20 $ US</div>
 <ul class="price-features"><li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> 2 utilisateurs, 2 appareils</li>
-<li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Caisse, tables, écrans cuisine et bar</li>
+<li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> <span class="family-line" data-family="all">Caisse (point de vente) pour tout type d'activité</span><span class="family-line" data-family="food" hidden="">Caisse, tables, écrans cuisine et bar</span><span class="family-line" data-family="hotel" hidden="">Caisse du restaurant et du bar (chambres et réservations bientôt disponibles)</span><span class="family-line" data-family="shop" hidden="">Caisse avec lecture des codes-barres</span></li>
 <li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Stocks et fournisseurs</li>
 <li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Comptes clients (payer plus tard)</li>
 <li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Reçus</li>
@@ -634,6 +649,7 @@
 <div class="price-card featured" data-plan="business">
 <span class="price-card-badge">Le plus choisi</span>
 <h3>Business</h3>
+<div class="price-from">À partir de</div>
 <div class="price">25 $ US</div>
 <div class="price-period">/ mois</div>
 <div class="price-savings" hidden="">Vous économisez 50 $ US</div>
@@ -641,12 +657,13 @@
 <li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Tout ce que propose Starter</li>
 <li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Dépenses et comptabilité</li>
 <li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Rapports hebdomadaires et mensuels</li>
-<li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Commande par QR code à table</li>
+<li class="family-item" data-families="food hotel"><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Commande par QR code à table</li>
 <li><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Services et contrôle de caisse (bientôt disponible)</li></ul>
 <a class="btn btn-accent" href="https://app.loungeos.app/login">Commencer l'essai gratuit</a>
 </div>
 <div class="price-card" data-plan="pro">
 <h3>Pro</h3>
+<div class="price-from">À partir de</div>
 <div class="price">50 $ US</div>
 <div class="price-period">/ mois</div>
 <div class="price-savings" hidden="">Vous économisez 100 $ US</div>
@@ -660,7 +677,7 @@
 </div>
 </div>
 </div>
-<p class="region-price-note">Chaque formule commence par un essai gratuit de 14 jours avec les fonctionnalités Business, sans paiement à l'avance. Les prix s'affichent en FCFA au Cameroun et en dollars US partout ailleurs.</p>
+<p class="region-price-note">Chaque formule commence par un essai gratuit de 14 jours avec les fonctionnalités Business, sans paiement à l'avance. Les prix s'affichent en FCFA au Cameroun et en dollars US partout ailleurs. Choisissez votre activité pour voir son prix exact.</p>
 <p>Starter coûte 10 $ US par mois, Business 25 $ US et Pro 50 $ US. Payez à l’année et profitez de 2 mois offerts. Vous payez sur <a href="https://account.loungeos.app">account.loungeos.app</a> par Mobile Money (MTN, Orange), carte ou PayPal. Le montant est prélevé en FCFA : les prix en dollars US sont les mêmes montants convertis. Voir les <a href="/fr/tarifs/">tarifs</a>.</p>
 <h2 id="questions-frequentes">Questions fréquentes</h2>
 <h3 id="loungeos-gere-t-il-wave">LoungeOS gère-t-il Wave ?</h3>
@@ -779,6 +796,6 @@
       }
     </script>
     <script defer type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <script defer src="/app.js?v=a7444e90c8"></script>
+    <script defer src="/app.js?v=29efa068d2"></script>
   </body>
 </html>
