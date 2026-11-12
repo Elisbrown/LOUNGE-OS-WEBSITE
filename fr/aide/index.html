@@ -32,7 +32,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/style.css?v=3fbf448520" />
+    <link rel="stylesheet" href="/style.css?v=71abb64a66" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -612,38 +612,104 @@
         </div>
 
         <div class="nav-links" id="navLinks">
-          <a href="/fr/">Accueil</a>
-          <a href="/fr/fonctionnalites/">Fonctionnalités</a>
-          <div class="nav-dropdown">
-            <button type="button" class="nav-dropdown-toggle" aria-haspopup="true">Solutions <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
-            <div class="nav-dropdown-menu">
-              <a href="/fr/logiciel-caisse-restaurant/">Restaurants</a>
-              <a href="/fr/logiciel-gestion-bar-lounge/">Bars, lounges &amp; boîtes de nuit</a>
-              <a href="/fr/logiciel-caisse-fast-food/">Cafés &amp; fast-food</a>
-              <a href="/fr/logiciel-gestion-hotel/">Hôtels &amp; auberges</a>
-              <a href="/fr/logiciel-caisse-boutique/">Vêtements, chaussures &amp; boutiques</a>
-              <a href="/fr/logiciel-caisse-supermarche/">Supermarchés &amp; épiceries</a>
-              <a href="/fr/logiciel-gestion-pharmacie/">Pharmacies</a>
-              <a href="/fr/logiciel-caisse-quincaillerie/">Quincailleries</a>
-              <a href="/fr/logiciel-gestion-commerce-de-gros/">Commerce de gros &amp; dépôts</a>
-              <a href="/fr/solutions/">Toutes les activités →</a>
+          <div class="nav-dropdown mega" data-mega="0">
+            <button type="button" class="nav-dropdown-toggle" aria-expanded="false" aria-controls="mega-0">Produit <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+            <div class="mega-panel" id="mega-0">
+              <div class="mega-inner">
+                <button type="button" class="mega-back">‹ Retour</button>
+                <p class="mega-title">Produit</p>
+                <div class="mega-cols">
+<div class="mega-col"><p class="mega-heading">Vendre</p><ul>
+<li><a class="mega-item" href="/fr/fonctionnalites/"><svg class="mega-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"/><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/><path d="M12 17.5v-11"/></svg><span><strong>Caisse</strong><small>Rapide au toucher et à la souris</small></span></a></li>
+<li><a class="mega-item" href="/fr/aide/hors-ligne-et-synchronisation/"><svg class="mega-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h.01"/><path d="M8.5 16.43a5 5 0 0 1 7 0"/><path d="M2 8.82a15 15 0 0 1 4.18-2.65"/><path d="M19 12.86a10 10 0 0 0-2.27-1.62"/><path d="M5 12.86a10 10 0 0 1 5.17-2.69"/><path d="M10.71 5.05A16 16 0 0 1 22 8.82"/><line x1="2" x2="22" y1="2" y2="22"/></svg><span><strong>Vente hors ligne</strong><small>Continue sans internet</small></span></a></li>
+<li><a class="mega-item" href="/fr/fonctionnalites/commande-qr-code/"><svg class="mega-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="5" height="5" x="3" y="3" rx="1"/><rect width="5" height="5" x="16" y="3" rx="1"/><rect width="5" height="5" x="3" y="16" rx="1"/><path d="M21 16h-3a2 2 0 0 0-2 2v3"/><path d="M21 21v.01"/><path d="M12 7v3a2 2 0 0 1-2 2H7"/><path d="M3 12h.01"/><path d="M12 3h.01"/><path d="M12 16v.01"/><path d="M16 12h1"/><path d="M21 12v.01"/><path d="M12 21v-1"/></svg><span><strong>Commande par QR code</strong><small>Les clients commandent depuis leur téléphone</small></span></a></li>
+<li><a class="mega-item" href="/fr/aide/paiements-et-recus/"><svg class="mega-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"/><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"/></svg><span><strong>Mobile money et paiements</strong><small>Espèces, MoMo, Orange Money, carte</small></span></a></li>
+<li><a class="mega-item" href="/fr/fonctionnalites/ventes-a-credit/"><svg class="mega-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/></svg><span><strong>Ventes à crédit</strong><small>Vendez maintenant, encaissez plus tard</small></span></a></li>
+</ul></div>
+<div class="mega-col"><p class="mega-heading">Gérer</p><ul>
+<li><a class="mega-item" href="/fr/aide/stocks-et-fournisseurs/"><svg class="mega-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg><span><strong>Stocks</strong><small>Stock, fournisseurs et alertes</small></span></a></li>
+<li><a class="mega-item" href="/fr/aide/ecrans-cuisine-et-bar/"><svg class="mega-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21a1 1 0 0 0 1-1v-5.35c0-.457.316-.844.727-1.041a4 4 0 0 0-2.134-7.589 5 5 0 0 0-9.186 0 4 4 0 0 0-2.134 7.588c.411.198.727.585.727 1.041V20a1 1 0 0 0 1 1Z"/><path d="M6 17h12"/></svg><span><strong>Écrans cuisine et bar</strong><small>Chaque commande au bon poste</small></span></a></li>
+<li><a class="mega-item" href="/fr/aide/tables-et-salles/"><svg class="mega-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9h18"/><path d="M5 9v12"/><path d="M19 9v12"/><path d="M3 5h18v4H3z"/></svg><span><strong>Tables et salles</strong><small>Zones, tables, additions partagées</small></span></a></li>
+<li><a class="mega-item" href="/fr/aide/comptabilite/"><svg class="mega-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"/></svg><span><strong>Dépenses et comptabilité</strong><small>Des comptes qui suivent chaque vente</small></span></a></li>
+<li><a class="mega-item" href="/fr/aide/annuler-rembourser-approbation/"><svg class="mega-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg><span><strong>Contrôle et sécurité</strong><small>PIN du responsable et journal</small></span></a></li>
+</ul></div>
+<div class="mega-col"><p class="mega-heading">Grandir</p><ul>
+<li><a class="mega-item" href="/fr/fonctionnalites/multi-etablissements/"><svg class="mega-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3v12"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></svg><span><strong>Plusieurs établissements</strong><small>Chaque magasin côte à côte</small></span></a></li>
+<li><a class="mega-item" href="/fr/fonctionnalites/application-mobile/"><svg class="mega-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg><span><strong>Application mobile</strong><small>Ventes et alertes dans la poche</small></span></a></li>
+<li><a class="mega-item" href="/fr/telecharger/"><svg class="mega-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg><span><strong>Télécharger</strong><small>Windows, Mac, Android et web</small></span></a></li>
+</ul></div>
+                </div>
+                <div class="mega-side"><a class="mega-feature" href="/fr/fonctionnalites/"><img src="/images/screens/loungeos-help-fr-pos-800.webp" alt="" width="800" height="430" loading="lazy" decoding="async" /><strong>Toutes les fonctionnalités</strong><span>Tout ce que fait LoungeOS, en français et en anglais.</span><em>Voir les fonctionnalités <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg></em></a></div>
+              </div>
             </div>
           </div>
-          <a href="/fr/tarifs/">Tarifs</a>
-          <a href="/fr/telecharger/">Télécharger</a>
-          <div class="nav-dropdown">
-            <button type="button" class="nav-dropdown-toggle" aria-haspopup="true">Ressources <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
-            <div class="nav-dropdown-menu">
-              <a href="/blog/">Blog</a>
-              <a href="/fr/faq/">FAQ</a>
-              <a href="/fr/aide/">Centre d'aide</a>
-              <a href="/contact/">Contact</a>
-              <a href="/">English</a>
+          <div class="nav-dropdown mega" data-mega="1">
+            <button type="button" class="nav-dropdown-toggle" aria-expanded="false" aria-controls="mega-1">Solutions <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+            <div class="mega-panel" id="mega-1">
+              <div class="mega-inner">
+                <button type="button" class="mega-back">‹ Retour</button>
+                <p class="mega-title">Solutions</p>
+                <div class="mega-cols">
+<div class="mega-col"><p class="mega-heading">Restauration</p><ul>
+<li><a class="mega-item" href="/fr/logiciel-caisse-restaurant/"><svg class="mega-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg><span><strong>Restaurants</strong><small>Tables, cuisine et coût matière</small></span></a></li>
+<li><a class="mega-item" href="/fr/logiciel-gestion-bar-lounge/"><svg class="mega-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 22h8"/><path d="M7 10h10"/><path d="M12 15v7"/><path d="M12 15a5 5 0 0 0 5-5c0-2-.5-4-2-8H9c-1.5 4-2 6-2 8a5 5 0 0 0 5 5Z"/></svg><span><strong>Bars, lounges &amp; boîtes de nuit</strong><small>Bouteilles, tables VIP, nuits longues</small></span></a></li>
+<li><a class="mega-item" href="/fr/logiciel-caisse-fast-food/"><svg class="mega-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" x2="6" y1="2" y2="4"/><line x1="10" x2="10" y1="2" y2="4"/><line x1="14" x2="14" y1="2" y2="4"/></svg><span><strong>Cafés &amp; fast-food</strong><small>Commandes au comptoir en secondes</small></span></a></li>
+<li><a class="mega-item" href="/fr/logiciel-gestion-hotel/"><svg class="mega-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/></svg><span><strong>Hôtels &amp; auberges</strong><small>Restaurant, bar et room service</small></span></a></li>
+</ul></div>
+<div class="mega-col"><p class="mega-heading">Commerces</p><ul>
+<li><a class="mega-item" href="/fr/logiciel-caisse-boutique/"><svg class="mega-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></svg><span><strong>Vêtements, chaussures &amp; boutiques</strong><small>Codes-barres, stock et crédit</small></span></a></li>
+<li><a class="mega-item" href="/fr/logiciel-caisse-supermarche/"><svg class="mega-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg><span><strong>Supermarchés &amp; épiceries</strong><small>Caisse rapide, plusieurs caisses</small></span></a></li>
+<li><a class="mega-item" href="/fr/logiciel-gestion-pharmacie/"><svg class="mega-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z"/><path d="m8.5 8.5 7 7"/></svg><span><strong>Pharmacies</strong><small>Chaque boîte comptée</small></span></a></li>
+<li><a class="mega-item" href="/fr/logiciel-caisse-quincaillerie/"><svg class="mega-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 12-8.5 8.5c-.83.83-2.17.83-3 0 0 0 0 0 0 0a2.12 2.12 0 0 1 0-3L12 9"/><path d="M17.64 15 22 10.64"/><path d="m20.91 11.7-1.25-1.25c-.6-.6-.93-1.4-.93-2.25v-.86L16.01 4.6a5.56 5.56 0 0 0-3.94-1.64H9l.92.82A6.18 6.18 0 0 1 12 8.4v1.56l2 2h2.47l2.26 1.91"/></svg><span><strong>Quincailleries</strong><small>Crédit et livraisons</small></span></a></li>
+<li><a class="mega-item" href="/fr/logiciel-gestion-commerce-de-gros/"><svg class="mega-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z"/><path d="m7 16.5-4.74-2.85"/><path d="m7 16.5 5-3"/><path d="M7 16.5v5.17"/><path d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z"/><path d="m17 16.5-5-3"/><path d="m17 16.5 4.74-2.85"/><path d="M17 16.5v5.17"/><path d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z"/><path d="M12 8 7.26 5.15"/><path d="m12 8 4.74-2.85"/><path d="M12 13.5V8"/></svg><span><strong>Commerce de gros &amp; dépôts</strong><small>Cartons, crédit et dépôts</small></span></a></li>
+</ul></div>
+<div class="mega-col"><p class="mega-heading">Pays</p><ul>
+<li><a class="mega-item" href="/fr/cameroun/"><svg class="mega-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg><span><strong>Cameroun</strong><small>FCFA, MTN et Orange Money</small></span></a></li>
+<li><a class="mega-item" href="/fr/cote-divoire/"><svg class="mega-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg><span><strong>Côte d'Ivoire</strong><small>FCFA et mobile money</small></span></a></li>
+<li><a class="mega-item" href="/fr/senegal/"><svg class="mega-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg><span><strong>Sénégal</strong><small>FCFA, Wave et Orange Money</small></span></a></li>
+<li><a class="mega-item" href="/fr/afrique/"><svg class="mega-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg><span><strong>Afrique francophone</strong><small>Partout sur le continent</small></span></a></li>
+</ul></div>
+                </div>
+                <div class="mega-side"><a class="mega-feature" href="/fr/solutions/"><img src="/images/screens/loungeos-till-supermarket-800.webp" alt="" width="800" height="430" loading="lazy" decoding="async" /><strong>Chaque type d'activité</strong><span>Choisissez la vôtre pour voir ses écrans et son prix.</span><em>Voir toutes les activités <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg></em></a></div>
+              </div>
             </div>
+          </div>
+          <div class="nav-dropdown mega" data-mega="2">
+            <button type="button" class="nav-dropdown-toggle" aria-expanded="false" aria-controls="mega-2">Ressources <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+            <div class="mega-panel" id="mega-2">
+              <div class="mega-inner">
+                <button type="button" class="mega-back">‹ Retour</button>
+                <p class="mega-title">Ressources</p>
+                <div class="mega-cols">
+<div class="mega-col"><p class="mega-heading">Apprendre</p><ul>
+<li><a class="mega-item" href="/fr/aide/"><svg class="mega-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg><span><strong>Centre d'aide</strong><small>Guides pas à pas avec captures</small></span></a></li>
+<li><a class="mega-item" href="/blog/"><svg class="mega-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6Z"/></svg><span><strong>Blog</strong><small>Conseils pour mieux gérer</small></span></a></li>
+<li><a class="mega-item" href="/fr/faq/"><svg class="mega-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg><span><strong>FAQ</strong><small>Réponses rapides avant de commencer</small></span></a></li>
+</ul></div>
+<div class="mega-col"><p class="mega-heading">Comparer</p><ul>
+<li><a class="mega-item" href="/fr/blog/loungeos-ou-loyverse/"><svg class="mega-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></svg><span><strong>LoungeOS ou Loyverse</strong><small>Comparaison honnête</small></span></a></li>
+<li><a class="mega-item" href="/fr/blog/meilleur-logiciel-caisse-cameroun/"><svg class="mega-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></svg><span><strong>Meilleur logiciel au Cameroun</strong><small>Les options comparées</small></span></a></li>
+<li><a class="mega-item" href="/fr/blog/logiciel-gestion-stock-cameroun/"><svg class="mega-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></svg><span><strong>Gestion de stock au Cameroun</strong><small>Le guide</small></span></a></li>
+</ul></div>
+<div class="mega-col"><p class="mega-heading">Entreprise</p><ul>
+<li><a class="mega-item" href="/about/"><svg class="mega-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg><span><strong>À propos</strong><small>Conçu par Sigalix au Cameroun</small></span></a></li>
+<li><a class="mega-item" href="/contact/"><svg class="mega-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg><span><strong>Contact</strong><small>E-mail, téléphone et WhatsApp</small></span></a></li>
+<li><a class="mega-item" href="/"><svg class="mega-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg><span><strong>English</strong><small>LoungeOS in English</small></span></a></li>
+</ul></div>
+                </div>
+                <div class="mega-side"><a class="mega-feature" href="https://wa.me/237679690703" target="_blank" rel="noopener"><img src="/images/screens/loungeos-help-fr-pos-cart-800.webp" alt="" width="800" height="430" loading="lazy" decoding="async" /><strong>Écrivez-nous sur WhatsApp</strong><span>Une question avant de commencer ? Nous répondons en français et en anglais.</span><em>Discuter sur WhatsApp <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg></em></a></div>
+              </div>
+            </div>
+          </div>
+          <a class="nav-plain" href="/fr/tarifs/">Tarifs</a>
+          <a class="nav-plain" href="/fr/telecharger/">Télécharger</a>
+          <div class="nav-mobile-cta">
+            <a href="https://app.loungeos.app/login" class="btn btn-primary">Essai gratuit</a>
+            <a href="https://app.loungeos.app/login" class="btn btn-secondary">Connexion</a>
           </div>
         </div>
 
-        <div class="nav-cta" style="display: flex; align-items: center; gap: 1rem">
+        <div class="nav-cta">
           <div class="lang-selector">
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 16px; height: 16px" aria-hidden="true"><circle cx="12" cy="12" r="10" /><line x1="2" y1="12" x2="22" y2="12" /><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" /></svg>
             <select id="customLangSelect" aria-label="Choisir la langue" onchange="changeLanguage(this.value)">
@@ -659,10 +725,11 @@
               <option value="ja">日本語</option>
             </select>
           </div>
+          <a href="https://app.loungeos.app/login" class="nav-login" id="navLoginBtn">Connexion</a>
           <a href="https://app.loungeos.app/login" class="btn btn-primary btn-sm" id="navCtaBtn">Essai gratuit</a>
         </div>
 
-        <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Ouvrir le menu">
           <span></span>
           <span></span>
           <span></span>
@@ -802,6 +869,6 @@
       }
     </script>
     <script defer type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <script defer src="/app.js?v=88b7e25c4f"></script>
+    <script defer src="/app.js?v=7b92549aba"></script>
   </body>
 </html>

@@ -7,37 +7,102 @@
 (function () {
   'use strict';
 
-  /* ---------- 1. MOBILE MENU ---------- */
+  /* ---------- 1. MENU: mega menus on desktop, slide-in sections on phones ---------- */
   const menuToggle = document.getElementById('menuToggle');
   const navLinks = document.getElementById('navLinks');
+  const megas = Array.prototype.slice.call(document.querySelectorAll('.nav-dropdown.mega'));
+  var small = window.matchMedia('(max-width: 1024px)');
+  var hoverTimer = null;
+
+  function setOpen(m, on) {
+    m.classList.toggle('open', on);
+    var b = m.querySelector('.nav-dropdown-toggle');
+    if (b) b.setAttribute('aria-expanded', on ? 'true' : 'false');
+  }
+  function closeAll(except) {
+    megas.forEach(function (m) { if (m !== except) { setOpen(m, false); m.classList.remove('sub-open'); } });
+  }
+  function closeMobile() {
+    if (!menuToggle || !navLinks) return;
+    menuToggle.classList.remove('active');
+    menuToggle.setAttribute('aria-expanded', 'false');
+    navLinks.classList.remove('open');
+    document.body.classList.remove('menu-open');
+    closeAll();
+  }
 
   if (menuToggle && navLinks) {
     menuToggle.addEventListener('click', function () {
-      this.classList.toggle('active');
-      navLinks.classList.toggle('open');
-      document.body.classList.toggle('menu-open');
+      var on = !navLinks.classList.contains('open');
+      if (!on) return closeMobile();
+      this.classList.add('active');
+      this.setAttribute('aria-expanded', 'true');
+      navLinks.classList.add('open');
+      document.body.classList.add('menu-open');
     });
-
-    // Close menu when a link is clicked
-    navLinks.querySelectorAll('a:not(.nav-dropdown-menu a)').forEach(function (link) {
-      link.addEventListener('click', function () {
-        menuToggle.classList.remove('active');
-        navLinks.classList.remove('open');
-        document.body.classList.remove('menu-open');
-      });
-    });
-
-    // Mobile Dropdown toggle
-    const dropdownToggles = document.querySelectorAll('.nav-dropdown-toggle');
-    dropdownToggles.forEach(function(dt) {
-      dt.addEventListener('click', function(e) {
-        if (window.innerWidth <= 1024) {
-          e.preventDefault();
-          this.parentElement.classList.toggle('active');
-        }
-      });
+    // Close the menu when a link is followed
+    navLinks.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () { closeMobile(); });
     });
   }
+
+  megas.forEach(function (m) {
+    var btn = m.querySelector('.nav-dropdown-toggle');
+    var back = m.querySelector('.mega-back');
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
+      if (small.matches) {
+        closeAll(m);
+        m.classList.add('sub-open');
+        setOpen(m, true);
+        var first = m.querySelector('.mega-back');
+        if (first) first.focus({ preventScroll: true });
+      } else {
+        var on = !m.classList.contains('open');
+        closeAll(m);
+        setOpen(m, on);
+      }
+    });
+    if (back) back.addEventListener('click', function () {
+      m.classList.remove('sub-open');
+      setOpen(m, false);
+      btn.focus({ preventScroll: true });
+    });
+    // Desktop: open on hover, with a short delay so passing over doesn't flash
+    m.addEventListener('mouseenter', function () {
+      if (small.matches) return;
+      clearTimeout(hoverTimer);
+      hoverTimer = setTimeout(function () { closeAll(m); setOpen(m, true); }, 90);
+    });
+    m.addEventListener('mouseleave', function () {
+      if (small.matches) return;
+      clearTimeout(hoverTimer);
+      hoverTimer = setTimeout(function () { setOpen(m, false); }, 180);
+    });
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'Escape') return;
+    var open = megas.filter(function (m) { return m.classList.contains('open'); })[0];
+    if (open && small.matches && open.classList.contains('sub-open')) {
+      open.classList.remove('sub-open');
+      setOpen(open, false);
+      open.querySelector('.nav-dropdown-toggle').focus();
+    } else if (open) {
+      closeAll();
+      open.querySelector('.nav-dropdown-toggle').focus();
+    } else if (navLinks && navLinks.classList.contains('open')) {
+      closeMobile();
+      menuToggle.focus();
+    }
+  });
+  document.addEventListener('click', function (e) {
+    if (small.matches || e.target.closest('.nav-dropdown.mega')) return;
+    closeAll();
+  });
+  // Leaving the phone layout resets the menu
+  var onResize = function () { if (!small.matches) closeMobile(); else closeAll(); };
+  if (small.addEventListener) small.addEventListener('change', onResize);
 
   /* ---------- 2. OS DETECTION ---------- */
   // Download cards carry data-os: windows, mac-apple-silicon, mac-intel, android

@@ -178,61 +178,192 @@ LANG_OPTIONS = [("en", "English"), ("fr", "Français"), ("es", "Español"), ("de
                 ("zh-CN", "中文"), ("ar", "العربية"), ("hi", "हिन्दी"), ("pt", "Português"),
                 ("ru", "Русский"), ("ja", "日本語")]
 
-NAV = {
+LOGIN = "https://app.loungeos.app/login"
+
+# Shopify-style mega menus. Each menu: (label, columns, featured card). A column
+# is (heading, [(icon, title, one-line description, url)]). Icons are in _I.
+MEGA = {
     "en": {
         "badge": "POS &amp; Business",
-        "links": [("Home", "/"), ("Features", "/features/")],
-        "solutions": ("Solutions", [("Restaurants", "/restaurant-pos/"), ("Bars, lounges &amp; nightclubs", "/lounge-pos/"),
-                                    ("Cafés &amp; fast food", "/cafe-pos/"), ("Hotels &amp; guest houses", "/hotel-pos/"),
-                                    ("Clothes, shoes &amp; boutiques", "/retail-pos/"),
-                                    ("Supermarkets &amp; groceries", "/supermarket-pos/"), ("Pharmacies", "/pharmacy-pos/"),
-                                    ("Hardware stores", "/hardware-store-pos/"), ("Wholesale &amp; depots", "/wholesale-pos/"),
-                                    ("All kinds of business →", "/solutions/")]),
-        "after": [("Pricing", "/pricing/"), ("Download", "/download/")],
-        "resources": ("Resources", [("Blog", "/blog/"), ("FAQ", "/faq/"),
-                                    ("Help centre", "/help/"),
-                                    ("About", "/about/"), ("Contact", "/contact/"),
-                                    ("Français", "/fr/")]),
-        "cta": "Start free trial",
+        "menus": [
+            ("Product", [
+                ("Sell", [
+                    ("receipt", "Point of sale", "Fast till for touch and mouse", "/features/"),
+                    ("wifi-off", "Offline selling", "Keeps selling without internet", "/features/offline-pos/"),
+                    ("qr", "QR table ordering", "Guests order from their phone", "/features/qr-code-ordering/"),
+                    ("wallet", "Mobile money &amp; payments", "Cash, MoMo, Orange Money, card", "/features/mobile-money-pos/"),
+                    ("credit", "Customer tabs", "Sell now, get paid later", "/features/customer-tabs/"),
+                ]),
+                ("Run your business", [
+                    ("package", "Inventory", "Stock, suppliers and alerts", "/features/inventory-management/"),
+                    ("kitchen", "Kitchen &amp; bar screens", "Orders straight to the right station", "/features/kitchen-display-system/"),
+                    ("table", "Tables &amp; floors", "Areas, tables, split and move bills", "/features/table-management/"),
+                    ("book", "Expenses &amp; accounting", "Books that follow every sale", "/features/restaurant-accounting/"),
+                    ("shield", "Loss prevention", "Manager PINs and activity log", "/features/loss-prevention/"),
+                ]),
+                ("Grow", [
+                    ("branch", "Several branches", "Every shop side by side", "/features/multi-branch/"),
+                    ("phone", "Phone app", "Sales and alerts in your pocket", "/features/mobile-app/"),
+                    ("download", "Download", "Windows, Mac, Android and web", "/download/"),
+                ]),
+            ], ("All features", "Everything LoungeOS does, in one place, in English and French.", "/features/", "See all features", "loungeos-pos-order-screen")),
+            ("Solutions", [
+                ("Food &amp; drink", [
+                    ("utensils", "Restaurants", "Tables, kitchen and food cost", "/restaurant-pos/"),
+                    ("wine", "Bars, lounges &amp; nightclubs", "Bottles, VIP tables, late nights", "/lounge-pos/"),
+                    ("coffee", "Cafés &amp; fast food", "Counter orders in seconds", "/cafe-pos/"),
+                    ("bed", "Hotels &amp; guest houses", "Restaurant, bar and room service", "/hotel-pos/"),
+                ]),
+                ("Shops", [
+                    ("shirt", "Clothes, shoes &amp; boutiques", "Barcodes, stock and credit", "/retail-pos/"),
+                    ("cart", "Supermarkets &amp; groceries", "Fast checkout, several tills", "/supermarket-pos/"),
+                    ("pill", "Pharmacies", "Every box counted", "/pharmacy-pos/"),
+                    ("hammer", "Hardware stores", "Builder credit and deliveries", "/hardware-store-pos/"),
+                    ("boxes", "Wholesale &amp; depots", "Cartons, credit and depots", "/wholesale-pos/"),
+                ]),
+                ("Countries", [
+                    ("globe", "Cameroon", "FCFA, MTN and Orange Money", "/cameroon/"),
+                    ("globe", "Nigeria", "Naira and local payments", "/nigeria/"),
+                    ("globe", "Ghana", "Cedi and mobile money", "/ghana/"),
+                    ("globe", "South Africa", "Rand and load-shedding", "/south-africa/"),
+                    ("globe", "Africa", "Across the continent", "/africa/"),
+                ]),
+            ], ("Every kind of business", "Pick yours to see its screens and its own price.", "/solutions/", "See all businesses", "loungeos-till-supermarket")),
+            ("Resources", [
+                ("Learn", [
+                    ("help", "Help centre", "Step-by-step guides with screenshots", "/help/"),
+                    ("news", "Blog", "Guides on running a tighter business", "/blog/"),
+                    ("message", "FAQ", "Quick answers before you start", "/faq/"),
+                ]),
+                ("Compare", [
+                    ("scale", "LoungeOS vs Loyverse", "An honest side-by-side", "/blog/loungeos-vs-loyverse/"),
+                    ("scale", "Loyverse alternatives", "What else to look at", "/blog/loyverse-alternatives/"),
+                    ("scale", "Best POS in Cameroon", "The options compared", "/blog/best-pos-systems-cameroon/"),
+                ]),
+                ("Company", [
+                    ("info", "About", "Made by Sigalix in Cameroon", "/about/"),
+                    ("message", "Contact", "Email, phone and WhatsApp", "/contact/"),
+                    ("globe", "Français", "LoungeOS en français", "/fr/"),
+                ]),
+            ], ("Talk to us on WhatsApp", "Questions before you start? We answer in English and French.", "https://wa.me/237679690703", "Chat on WhatsApp", "loungeos-help-pos-cart")),
+        ],
+        "links": [("Pricing", "/pricing/"), ("Download", "/download/")],
+        "login": "Log in", "cta": "Start free trial", "back": "Back", "menu": "Menu",
     },
     "fr": {
         "badge": "Logiciel de caisse",
-        "links": [("Accueil", "/fr/"), ("Fonctionnalités", "/fr/fonctionnalites/")],
-        "solutions": ("Solutions", [("Restaurants", "/fr/logiciel-caisse-restaurant/"),
-                                    ("Bars, lounges &amp; boîtes de nuit", "/fr/logiciel-gestion-bar-lounge/"),
-                                    ("Cafés &amp; fast-food", "/fr/logiciel-caisse-fast-food/"),
-                                    ("Hôtels &amp; auberges", "/fr/logiciel-gestion-hotel/"),
-                                    ("Vêtements, chaussures &amp; boutiques", "/fr/logiciel-caisse-boutique/"),
-                                    ("Supermarchés &amp; épiceries", "/fr/logiciel-caisse-supermarche/"),
-                                    ("Pharmacies", "/fr/logiciel-gestion-pharmacie/"),
-                                    ("Quincailleries", "/fr/logiciel-caisse-quincaillerie/"),
-                                    ("Commerce de gros &amp; dépôts", "/fr/logiciel-gestion-commerce-de-gros/"),
-                                    ("Toutes les activités →", "/fr/solutions/")]),
-        "after": [("Tarifs", "/fr/tarifs/"), ("Télécharger", "/fr/telecharger/")],
-        "resources": ("Ressources", [("Blog", "/blog/"), ("FAQ", "/fr/faq/"),
-                                     ("Centre d'aide", "/fr/aide/"),
-                                     ("Contact", "/contact/"),
-                                     ("English", "/")]),
-        "cta": "Essai gratuit",
+        "menus": [
+            ("Produit", [
+                ("Vendre", [
+                    ("receipt", "Caisse", "Rapide au toucher et à la souris", "/fr/fonctionnalites/"),
+                    ("wifi-off", "Vente hors ligne", "Continue sans internet", "/fr/aide/hors-ligne-et-synchronisation/"),
+                    ("qr", "Commande par QR code", "Les clients commandent depuis leur téléphone", "/fr/fonctionnalites/commande-qr-code/"),
+                    ("wallet", "Mobile money et paiements", "Espèces, MoMo, Orange Money, carte", "/fr/aide/paiements-et-recus/"),
+                    ("credit", "Ventes à crédit", "Vendez maintenant, encaissez plus tard", "/fr/fonctionnalites/ventes-a-credit/"),
+                ]),
+                ("Gérer", [
+                    ("package", "Stocks", "Stock, fournisseurs et alertes", "/fr/aide/stocks-et-fournisseurs/"),
+                    ("kitchen", "Écrans cuisine et bar", "Chaque commande au bon poste", "/fr/aide/ecrans-cuisine-et-bar/"),
+                    ("table", "Tables et salles", "Zones, tables, additions partagées", "/fr/aide/tables-et-salles/"),
+                    ("book", "Dépenses et comptabilité", "Des comptes qui suivent chaque vente", "/fr/aide/comptabilite/"),
+                    ("shield", "Contrôle et sécurité", "PIN du responsable et journal", "/fr/aide/annuler-rembourser-approbation/"),
+                ]),
+                ("Grandir", [
+                    ("branch", "Plusieurs établissements", "Chaque magasin côte à côte", "/fr/fonctionnalites/multi-etablissements/"),
+                    ("phone", "Application mobile", "Ventes et alertes dans la poche", "/fr/fonctionnalites/application-mobile/"),
+                    ("download", "Télécharger", "Windows, Mac, Android et web", "/fr/telecharger/"),
+                ]),
+            ], ("Toutes les fonctionnalités", "Tout ce que fait LoungeOS, en français et en anglais.", "/fr/fonctionnalites/", "Voir les fonctionnalités", "loungeos-help-fr-pos")),
+            ("Solutions", [
+                ("Restauration", [
+                    ("utensils", "Restaurants", "Tables, cuisine et coût matière", "/fr/logiciel-caisse-restaurant/"),
+                    ("wine", "Bars, lounges &amp; boîtes de nuit", "Bouteilles, tables VIP, nuits longues", "/fr/logiciel-gestion-bar-lounge/"),
+                    ("coffee", "Cafés &amp; fast-food", "Commandes au comptoir en secondes", "/fr/logiciel-caisse-fast-food/"),
+                    ("bed", "Hôtels &amp; auberges", "Restaurant, bar et room service", "/fr/logiciel-gestion-hotel/"),
+                ]),
+                ("Commerces", [
+                    ("shirt", "Vêtements, chaussures &amp; boutiques", "Codes-barres, stock et crédit", "/fr/logiciel-caisse-boutique/"),
+                    ("cart", "Supermarchés &amp; épiceries", "Caisse rapide, plusieurs caisses", "/fr/logiciel-caisse-supermarche/"),
+                    ("pill", "Pharmacies", "Chaque boîte comptée", "/fr/logiciel-gestion-pharmacie/"),
+                    ("hammer", "Quincailleries", "Crédit et livraisons", "/fr/logiciel-caisse-quincaillerie/"),
+                    ("boxes", "Commerce de gros &amp; dépôts", "Cartons, crédit et dépôts", "/fr/logiciel-gestion-commerce-de-gros/"),
+                ]),
+                ("Pays", [
+                    ("globe", "Cameroun", "FCFA, MTN et Orange Money", "/fr/cameroun/"),
+                    ("globe", "Côte d'Ivoire", "FCFA et mobile money", "/fr/cote-divoire/"),
+                    ("globe", "Sénégal", "FCFA, Wave et Orange Money", "/fr/senegal/"),
+                    ("globe", "Afrique francophone", "Partout sur le continent", "/fr/afrique/"),
+                ]),
+            ], ("Chaque type d'activité", "Choisissez la vôtre pour voir ses écrans et son prix.", "/fr/solutions/", "Voir toutes les activités", "loungeos-till-supermarket")),
+            ("Ressources", [
+                ("Apprendre", [
+                    ("help", "Centre d'aide", "Guides pas à pas avec captures", "/fr/aide/"),
+                    ("news", "Blog", "Conseils pour mieux gérer", "/blog/"),
+                    ("message", "FAQ", "Réponses rapides avant de commencer", "/fr/faq/"),
+                ]),
+                ("Comparer", [
+                    ("scale", "LoungeOS ou Loyverse", "Comparaison honnête", "/fr/blog/loungeos-ou-loyverse/"),
+                    ("scale", "Meilleur logiciel au Cameroun", "Les options comparées", "/fr/blog/meilleur-logiciel-caisse-cameroun/"),
+                    ("scale", "Gestion de stock au Cameroun", "Le guide", "/fr/blog/logiciel-gestion-stock-cameroun/"),
+                ]),
+                ("Entreprise", [
+                    ("info", "À propos", "Conçu par Sigalix au Cameroun", "/about/"),
+                    ("message", "Contact", "E-mail, téléphone et WhatsApp", "/contact/"),
+                    ("globe", "English", "LoungeOS in English", "/"),
+                ]),
+            ], ("Écrivez-nous sur WhatsApp", "Une question avant de commencer ? Nous répondons en français et en anglais.", "https://wa.me/237679690703", "Discuter sur WhatsApp", "loungeos-help-fr-pos-cart")),
+        ],
+        "links": [("Tarifs", "/fr/tarifs/"), ("Télécharger", "/fr/telecharger/")],
+        "login": "Connexion", "cta": "Essai gratuit", "back": "Retour", "menu": "Menu",
     },
 }
 
 
-def dropdown(label, items):
-    links = "\n".join(f'              <a href="{u}">{t}</a>' for t, u in items)
-    return f"""          <div class="nav-dropdown">
-            <button type="button" class="nav-dropdown-toggle" aria-haspopup="true">{label} {CHEVRON}</button>
-            <div class="nav-dropdown-menu">
-{links}
+def nav_urls():
+    """Every internal URL in the menus (build.py checks they exist)."""
+    out = set()
+    for m in MEGA.values():
+        for _, cols, feat in m["menus"]:
+            out.add(feat[2])
+            for _, items in cols:
+                out.update(i[3] for i in items)
+        out.update(u for _, u in m["links"])
+    return {u for u in out if u.startswith("/")}
+
+
+def mega_menu(i, label, cols, feat, lang):
+    back = MEGA[lang]["back"]
+    cols_html = []
+    for heading, items in cols:
+        lis = "\n".join(
+            f'<li><a class="mega-item" href="{u}">{icon(ic, "mega-icon")}<span><strong>{t}</strong>'
+            f'<small>{d}</small></span></a></li>' for ic, t, d, u in items)
+        cols_html.append(f'<div class="mega-col"><p class="mega-heading">{heading}</p><ul>\n{lis}\n</ul></div>')
+    ext = ' target="_blank" rel="noopener"' if feat[2].startswith("http") else ""
+    pic = (f'<img src="/images/screens/{feat[4]}-800.webp" alt="" width="800" height="430" loading="lazy" decoding="async" />'
+           if len(feat) > 4 else "")
+    feat_html = (f'<a class="mega-feature" href="{feat[2]}"{ext}>{pic}<strong>{feat[0]}</strong><span>{feat[1]}</span>'
+                 f'<em>{feat[3]} {ARROW}</em></a>')
+    return f"""          <div class="nav-dropdown mega" data-mega="{i}">
+            <button type="button" class="nav-dropdown-toggle" aria-expanded="false" aria-controls="mega-{i}">{label} {CHEVRON}</button>
+            <div class="mega-panel" id="mega-{i}">
+              <div class="mega-inner">
+                <button type="button" class="mega-back">‹ {back}</button>
+                <p class="mega-title">{label}</p>
+                <div class="mega-cols">
+{chr(10).join(cols_html)}
+                </div>
+                <div class="mega-side">{feat_html}</div>
+              </div>
             </div>
           </div>"""
 
 
 def nav_html(lang):
-    n = NAV[lang]
+    n = MEGA[lang]
     home = "/fr/" if lang == "fr" else "/"
-    links = "\n".join(f'          <a href="{u}">{t}</a>' for t, u in n["links"])
-    after = "\n".join(f'          <a href="{u}">{t}</a>' for t, u in n["after"])
+    menus = "\n".join(mega_menu(i, label, cols, feat, lang) for i, (label, cols, feat) in enumerate(n["menus"]))
+    links = "\n".join(f'          <a class="nav-plain" href="{u}">{t}</a>' for t, u in n["links"])
     opts = "\n".join(
         f'              <option value="{v}"{" selected" if v == lang else ""}>{t}</option>'
         for v, t in LANG_OPTIONS)
@@ -248,23 +379,26 @@ def nav_html(lang):
         </div>
 
         <div class="nav-links" id="navLinks">
+{menus}
 {links}
-{dropdown(*n['solutions'])}
-{after}
-{dropdown(*n['resources'])}
+          <div class="nav-mobile-cta">
+            <a href="{SIGNUP}" class="btn btn-primary">{n['cta']}</a>
+            <a href="{LOGIN}" class="btn btn-secondary">{n['login']}</a>
+          </div>
         </div>
 
-        <div class="nav-cta" style="display: flex; align-items: center; gap: 1rem">
+        <div class="nav-cta">
           <div class="lang-selector">
             {GLOBE}
             <select id="customLangSelect" aria-label="{sel_label}" onchange="changeLanguage(this.value)">
 {opts}
             </select>
           </div>
+          <a href="{LOGIN}" class="nav-login" id="navLoginBtn">{n['login']}</a>
           <a href="{SIGNUP}" class="btn btn-primary btn-sm" id="navCtaBtn">{n['cta']}</a>
         </div>
 
-        <button class="menu-toggle" id="menuToggle" aria-label="{'Ouvrir le menu' if lang == 'fr' else 'Toggle navigation menu'}">
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navLinks" aria-label="{'Ouvrir le menu' if lang == 'fr' else 'Toggle navigation menu'}">
           <span></span>
           <span></span>
           <span></span>
@@ -922,6 +1056,13 @@ _I = {
     "image": '<rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/>',
     "music": '<path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>',
     "lock": '<rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>',
+    "globe": '<circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/>',
+    "help": '<circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/>',
+    "news": '<path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6Z"/>',
+    "message": '<path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/>',
+    "scale": '<path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/>',
+    "info": '<circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/>',
+    "download": '<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/>',
 }
 
 
@@ -1595,6 +1736,16 @@ def main():
             path = os.path.join(repo, url.strip("/"), "index.html")
             os.makedirs(os.path.dirname(path), exist_ok=True)
             open(path, "w", encoding="utf-8").write(social_tags(version_links(out, repo), repo))
+    for u in sorted(nav_urls()):
+        if u not in by_url and u not in MANUAL_PAGES and not os.path.exists(os.path.join(repo, u.strip("/"), "index.html")):
+            raise SystemExit(f"menu link {u} not found")
+    # Hand-edited pages get the same menu as the generated ones
+    for name in ("index.html", "accessibility.html", "legal.html", "privacy.html", "terms.html"):
+        path = os.path.join(repo, name)
+        h = open(path, encoding="utf-8").read()
+        h2 = re.sub(r'    <a class="skip-link".*?</nav>', lambda m: nav_html("en"), h, count=1, flags=re.S)
+        if h2 != h:
+            open(path, "w", encoding="utf-8").write(h2)
     # The homepage (hand-edited) shows the same business-type tiles
     home = os.path.join(repo, "index.html")
     h = open(home, encoding="utf-8").read()
