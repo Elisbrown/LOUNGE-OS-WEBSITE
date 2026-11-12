@@ -1,11 +1,11 @@
 ---
 url: /download/
 type: core
-title: "Download LoungeOS 2.0 for Windows, Mac and Android"
+title: "Download LoungeOS 2.1 for Windows, Mac and Android"
 description: "Download LoungeOS for Windows 10 and 11, Mac (Apple Silicon and Intel) and Android, or open the web app. Requirements, setup, sign-in and offline use."
 h1: "Download LoungeOS for Windows, Mac and Android"
-label: "Download · Version 2.0"
-lead: "Install LoungeOS 2.0 on Windows, Mac or Android, or open the web app in any modern browser. Sign in with your LoungeOS account and the setup wizard gets your business ready on day one."
+label: "Download · Version 2.1.4"
+lead: "Install LoungeOS 2.1 on Windows, Mac or Android, or open the web app in any modern browser. Sign in with your LoungeOS account and the setup wizard gets your business ready on day one."
 image: loungeos-pos-order-screen
 image_alt: "LoungeOS point of sale order screen"
 card_title: "Download LoungeOS"
@@ -38,7 +38,7 @@ related:
   </div>
   <div class="download-card" data-os="android" id="android">
     <h3>Android</h3>
-    <p>Android 6.0 or later · App (.apk)</p>
+    <p>Android 7.0 or later · App (.apk)</p>
     <a href="https://github.com/Elisbrown/lounge-os-website/releases/latest/download/LoungeOS-Android.apk" class="btn btn-primary">Download for Android</a>
   </div>
   <div class="download-card" data-os="web" id="web">
@@ -48,7 +48,7 @@ related:
   </div>
 </div>
 
-Every app is LoungeOS 2.0 and uses the same LoungeOS account. New to LoungeOS? [Create your account](https://app.loungeos.app) and start a 14-day free trial with Business features. No payment up front.
+Every app is LoungeOS 2.1.4 and uses the same LoungeOS account. New to LoungeOS? [Create your account](https://app.loungeos.app) and start a 14-day free trial with Business features. No payment up front.
 
 If a download does not start, you can use the [web app](https://app.loungeos.app) right away or [contact us](/contact/).
 
@@ -56,10 +56,9 @@ If a download does not start, you can use the [web app](https://app.loungeos.app
 
 | | Windows app | Mac app | Android app | Web app |
 |---|---|---|---|---|
-| System | Windows 10 or 11, 64-bit | Apple Silicon (M1 and later) or Intel Mac | Android 6.0 or later | Any modern web browser |
+| System | Windows 10 or 11, 64-bit | Apple Silicon (M1 and later) or Intel Mac | Android 7.0 or later | Any modern web browser |
 | File | LoungeOS-Setup.exe | LoungeOS-Mac-arm64.dmg (Apple Silicon) or LoungeOS-Mac-x64.dmg (Intel) | LoungeOS-Android.apk | Nothing to install |
 | Internet | Optional: keeps selling offline and syncs when back online | Optional: keeps selling offline and syncs when back online | Required | Required |
-| Also needed | — | — | Google Chrome | — |
 
 Receipts print on 58 mm and 80 mm thermal printers, or as PDF. A laptop makes a good till computer because its battery keeps it running through short power cuts. See our [POS hardware guide](/blog/restaurant-pos-hardware-guide/) for printers, tablets and routers.
 
@@ -83,9 +82,10 @@ The Mac app is not yet notarised by Apple, so the first time you open it, macOS 
 
 1. Download **LoungeOS-Android.apk** with the Android button above.
 2. Open the downloaded file. When Android asks, allow installing apps from your browser or your files app.
-3. Tap **Install**, then open **LoungeOS**.
+3. Tap **Install**, then open **LoungeOS** and sign in. **Continue with Google** finishes in your phone's browser and brings you back to the app.
+4. Allow notifications when Android asks: each person gets alerts for their role (table QR orders, kitchen and bar tickets, orders ready, cancellations, low stock).
 
-The Android app needs Google Chrome and an internet connection.
+The Android app needs an internet connection. **Had the old LoungeOS Android app?** The 2.1.4 app is a new app: install it, then uninstall the old one. More in the [phone app guide](/help/phone-app/).
 
 ### Use the web app
 
@@ -97,7 +97,7 @@ Each person has one LoungeOS account and uses it everywhere: the web app, Window
 
 1. **Create your account** at [app.loungeos.app](https://app.loungeos.app). Sign-up is on the sign-in page.
 2. **Sign in** with your email and password, or click **Continue with Google**.
-3. **That is all.** There is no key or code to copy. In the Windows, Mac and Android apps, you simply open the app and sign in.
+3. **No licence key.** The Android app signs in like the web app. The Windows and Mac apps show a short code the first time: confirm it at account.loungeos.app/link and the till is signed in. Step by step: [Install LoungeOS](/help/install-loungeos/).
 
 The owner invites staff by email, and each staff member gets their own role and permissions. On a shared till, staff can switch with a quick PIN. See [roles and permissions](/features/loss-prevention/).
 
@@ -146,7 +146,7 @@ Open the Apple menu and choose **About This Mac**. A **Chip** such as Apple M1 o
 
 ### Do I need a key or code to use LoungeOS?
 
-No. Install the app, open it and sign in with your LoungeOS account. There is nothing to copy or paste.
+No licence key. Install the app and sign in with your LoungeOS account. The first time, a Windows or Mac till shows a short code that you confirm in your account, so only you can link a till to your business.
 
 ### Is there an app for iPhone or iPad?
 

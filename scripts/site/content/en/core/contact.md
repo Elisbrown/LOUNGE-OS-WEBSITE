@@ -38,8 +38,8 @@ LoungeOS is made by [Sigalix](https://sigalix.com). You manage your plan, invoic
 
 Many questions are answered in a few minutes in our self-help resources:
 
-- [Knowledge base](/knowledgebase.html): step-by-step guides to every screen
-- [Documentation](/documentation.html): installation, sign-in, roles and troubleshooting
+- [Help centre](/help/): step-by-step guides with screenshots for every screen, in English and French
+- [Troubleshooting](/help/troubleshooting/): printing, sign-in, sync and install problems
 - [FAQ](/faq/): plans, offline use, devices and data
 - [Download page](/download/): system requirements and local network setup
 

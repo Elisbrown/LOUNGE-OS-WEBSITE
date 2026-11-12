@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stock, Suppliers, Receiving Deliveries and Low-Stock Alerts</title>
+    <meta name="description" content="Track stock in LoungeOS: add stock items with units, costs and minimum levels, receive deliveries, record waste, follow every movement and add suppliers." />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <link rel="canonical" href="https://loungeos.app/help/stock-and-suppliers/" />
+    <link rel="alternate" hreflang="en" href="https://loungeos.app/help/stock-and-suppliers/" />
+    <link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/aide/stocks-et-fournisseurs/" />
+    <link rel="alternate" hreflang="x-default" href="https://loungeos.app/help/stock-and-suppliers/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="LoungeOS" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="Stock, Suppliers, Receiving Deliveries and Low-Stock Alerts" />
+    <meta property="og:description" content="Track stock in LoungeOS: add stock items with units, costs and minimum levels, receive deliveries, record waste, follow every movement and add suppliers." />
+    <meta property="og:image" content="https://loungeos.app/images/og/help-stock-and-suppliers.webp" />
+    <meta property="og:image:secure_url" content="https://loungeos.app/images/og/help-stock-and-suppliers.webp" />
+    <meta property="og:image:type" content="image/webp" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Stock, Suppliers, Receiving Deliveries and Low-Stock Alerts" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Stock, Suppliers, Receiving Deliveries and Low-Stock Alerts" />
+    <meta name="twitter:description" content="Track stock in LoungeOS: add stock items with units, costs and minimum levels, receive deliveries, record waste, follow every movement and add suppliers." />
+    <meta name="twitter:image" content="https://loungeos.app/images/og/help-stock-and-suppliers.webp" />
+    <meta name="twitter:image:alt" content="Stock, Suppliers, Receiving Deliveries and Low-Stock Alerts" />
+    <link rel="image_src" href="https://loungeos.app/images/og/help-stock-and-suppliers.webp" />
+    <meta property="og:url" content="https://loungeos.app/help/stock-and-suppliers/" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/style.css?v=c1bda027e5" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="alternate" type="application/rss+xml" title="LoungeOS Blog" href="https://loungeos.app/blog/feed.xml" />
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://loungeos.app/#organization",
+      "name": "LoungeOS",
+      "url": "https://loungeos.app/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://loungeos.app/images/logo/loungeos-icon-512.png",
+        "width": 512,
+        "height": 512
+      },
+      "image": "https://loungeos.app/images/og-loungeos.jpg",
+      "description": "LoungeOS makes point of sale (POS) and business management software for every kind of business that sells: restaurants, bars, lounges, cafés, nightclubs, hotels, retail shops, supermarkets and more. LoungeOS is made by Sigalix.",
+      "email": "info@sigalix.com",
+      "telephone": "+237679690703",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CM"
+      },
+      "areaServed": [
+        "CM",
+        "Africa",
+        "Worldwide"
+      ],
+      "knowsLanguage": [
+        "en",
+        "fr"
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "email": "support@loungeos.app",
+          "telephone": "+237679690703",
+          "availableLanguage": [
+            "English",
+            "French"
+          ]
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "email": "info@sigalix.com",
+          "telephone": "+237689699688",
+          "availableLanguage": [
+            "English",
+            "French"
+          ]
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "billing support",
+          "email": "billing@sigalix.com"
+        }
+      ],
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "Sigalix",
+        "url": "https://sigalix.com",
+        "email": "info@sigalix.com"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://loungeos.app/#website",
+      "url": "https://loungeos.app/",
+      "name": "LoungeOS",
+      "publisher": {
+        "@id": "https://loungeos.app/#organization"
+      },
+      "inLanguage": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://loungeos.app/help/stock-and-suppliers/#webpage",
+      "url": "https://loungeos.app/help/stock-and-suppliers/",
+      "name": "Stock, Suppliers, Receiving Deliveries and Low-Stock Alerts",
+      "description": "Track stock in LoungeOS: add stock items with units, costs and minimum levels, receive deliveries, record waste, follow every movement and add suppliers.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://loungeos.app/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://loungeos.app/help/stock-and-suppliers/#breadcrumb"
+      },
+      "dateModified": "2026-11-12",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://loungeos.app/images/screens/loungeos-help-stock-items.webp"
+      }
+    },
+    {
+      "@type": "TechArticle",
+      "@id": "https://loungeos.app/help/stock-and-suppliers/#article",
+      "headline": "Stock and suppliers",
+      "description": "Track stock in LoungeOS: add stock items with units, costs and minimum levels, receive deliveries, record waste, follow every movement and add suppliers.",
+      "inLanguage": "en",
+      "dateModified": "2026-11-12",
+      "datePublished": "2026-11-12",
+      "author": {
+        "@id": "https://loungeos.app/#organization"
+      },
+      "publisher": {
+        "@id": "https://loungeos.app/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://loungeos.app/help/stock-and-suppliers/#webpage"
+      },
+      "image": "https://loungeos.app/images/screens/loungeos-help-stock-items.webp",
+      "about": {
+        "@id": "https://loungeos.app/#software"
+      },
+      "proficiencyLevel": "Beginner"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://loungeos.app/help/stock-and-suppliers/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://loungeos.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Stock, deliveries and suppliers",
+          "item": "https://loungeos.app/help/stock-and-suppliers/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://loungeos.app/help/stock-and-suppliers/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do sales take stock off automatically?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Products with a quantity, and stock items sold on the till, come off at each sale. Ingredients used in cooked dishes are recorded as stock out or by a count; recipes that take off each ingredient are not in LoungeOS yet.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I find where stock went missing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Compare the movements with your count, and check the activity log for adjustments and waste. Our <a href=\"https://loungeos.app/blog/bar-inventory-shrinkage-pour-cost/\">guide to bar shrinkage<\/a> explains a weekly routine.<\/p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+    </script>
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+      (function (c, l, a, r, i, t, y) {
+        c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
+        t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", "x9n1mwb8c5");
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TNP53ZZW7K"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag("js", new Date());
+      gtag("config", "G-TNP53ZZW7K");
+    </script>
+    <!-- Usercentrics CMP -->
+    <script id="usercentrics-cmp" src="https://app.usercentrics.eu/browser-ui/latest/loader.js" data-settings-id="SSwfY4ZtHuL22V" async></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <nav class="navbar" id="navbar" aria-label="Main Navigation">
+      <div class="nav-content">
+        <div class="nav-left">
+          <a href="/" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 0.75rem;">
+            <img src="/images/logo/loungeos-logo.svg" alt="LoungeOS" width="148" height="26" class="nav-logo" />
+            <span class="nav-badge">POS &amp; Business</span>
+          </a>
+        </div>
+
+        <div class="nav-links" id="navLinks">
+          <a href="/">Home</a>
+          <a href="/features/">Features</a>
+          <div class="nav-dropdown">
+            <button type="button" class="nav-dropdown-toggle" aria-haspopup="true">Solutions <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+            <div class="nav-dropdown-menu">
+              <a href="/restaurant-pos/">Restaurants</a>
+              <a href="/bar-pos/">Bars</a>
+              <a href="/lounge-pos/">Lounges</a>
+              <a href="/nightclub-pos/">Nightclubs</a>
+              <a href="/hotel-pos/">Hotels</a>
+              <a href="/cafe-pos/">Cafés &amp; Fast Food</a>
+              <a href="/retail-pos/">Shops &amp; Mini-Markets</a>
+              <a href="/cameroon/">Cameroon</a>
+              <a href="/africa/">Africa</a>
+            </div>
+          </div>
+          <a href="/pricing/">Pricing</a>
+          <a href="/download/">Download</a>
+          <div class="nav-dropdown">
+            <button type="button" class="nav-dropdown-toggle" aria-haspopup="true">Resources <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+            <div class="nav-dropdown-menu">
+              <a href="/blog/">Blog</a>
+              <a href="/faq/">FAQ</a>
+              <a href="/help/">Help centre</a>
+              <a href="/about/">About</a>
+              <a href="/contact/">Contact</a>
+              <a href="/fr/">Français</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-cta" style="display: flex; align-items: center; gap: 1rem">
+          <div class="lang-selector">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 16px; height: 16px" aria-hidden="true"><circle cx="12" cy="12" r="10" /><line x1="2" y1="12" x2="22" y2="12" /><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" /></svg>
+            <select id="customLangSelect" aria-label="Select Language" onchange="changeLanguage(this.value)">
+              <option value="en" selected>English</option>
+              <option value="fr">Français</option>
+              <option value="es">Español</option>
+              <option value="de">Deutsch</option>
+              <option value="zh-CN">中文</option>
+              <option value="ar">العربية</option>
+              <option value="hi">हिन्दी</option>
+              <option value="pt">Português</option>
+              <option value="ru">Русский</option>
+              <option value="ja">日本語</option>
+            </select>
+          </div>
+          <a href="https://app.loungeos.app/login" class="btn btn-primary btn-sm" id="navCtaBtn">Start free trial</a>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+    <main id="main-content">
+      <header class="page-hero">
+        <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">›</span> <span aria-current="page">Stock, deliveries and suppliers</span></nav>
+        
+        <h1>Stock and suppliers</h1>
+        <p class="lead">Stock is what you keep in the store room: crates, kilos of fish, bags of charcoal. LoungeOS knows how much is left, what it is worth and when to order more.</p>
+        <div class="article-meta"><span>For LoungeOS 2.1.4</span><span>Updated <time datetime="2026-11-12" data-auto="modified">November 12, 2026</time></span><span>3 min read</span></div>
+        
+        
+      </header>
+      <article class="content-section">
+        <div class="prose">
+<details class="toc" open><summary>On this page</summary><ul>
+<li><a href="#the-stock-overview">The stock overview</a></li>
+<li><a href="#add-a-stock-item">Add a stock item</a></li>
+<li><a href="#receive-a-delivery">Receive a delivery</a></li>
+<li><a href="#stock-out-waste-and-adjustments">Stock out, waste and adjustments</a></li>
+<li><a href="#low-stock-alerts">Low-stock alerts</a></li>
+<li><a href="#suppliers">Suppliers</a></li>
+<li><a href="#frequently-asked-questions">Frequently asked questions</a></li>
+</ul></details>
+<p>Stock comes with every plan. The <strong>Stock Manager</strong> role is for the person who receives deliveries and counts.</p>
+<p><strong>Products or stock items?</strong> A product is what you sell on the till (a plate of grilled fish). A stock item is what you buy and keep (kilos of fish). Drinks you buy and resell as they are can be stock items sold on the till.</p>
+<h2 id="the-stock-overview">The stock overview</h2>
+<p>Open <strong>Stock</strong>. The <strong>Overview</strong> tab shows how many items you track, how many are low or out of stock, the value of what you hold, stock movements over time and the latest activity.</p>
+<figure><img alt="The LoungeOS stock overview with total items, low stock, out of stock and inventory value" decoding="async" height="900" loading="lazy" sizes="(max-width: 800px) 100vw, 960px" src="/images/screens/loungeos-help-inventory.webp" srcset="/images/screens/loungeos-help-inventory-800.webp 800w, /images/screens/loungeos-help-inventory.webp 1440w" width="1440"/><figcaption>Low Stock counts items under their minimum level.</figcaption></figure>
+<h2 id="add-a-stock-item">Add a stock item</h2>
+<ol>
+<li>Open the <strong>Items</strong> tab and press <strong>Add Item</strong> (or <strong>+ New</strong>, <strong>Receive stock</strong> for a delivery).</li>
+<li>Fill in the name, SKU, category, <strong>unit</strong> (kg, crate, bottle, bag…), current stock, <strong>minimum level</strong> and maximum level, the <strong>cost per unit</strong> and the supplier.</li>
+<li>Optional: a photo, a barcode, and <strong>Sell on the till</strong> with a selling price for things you resell as they are.</li>
+<li>Save.</li>
+</ol>
+<figure><img alt="The LoungeOS stock items list with SKU, category, stock, cost, status and supplier" decoding="async" height="900" loading="lazy" sizes="(max-width: 800px) 100vw, 960px" src="/images/screens/loungeos-help-stock-items.webp" srcset="/images/screens/loungeos-help-stock-items-800.webp 800w, /images/screens/loungeos-help-stock-items.webp 1440w" width="1440"/><figcaption>Each row has Stock in and a menu for other movements.</figcaption></figure>
+<h2 id="receive-a-delivery">Receive a delivery</h2>
+<p>For one item, press <strong>Stock in</strong> on its row, type the quantity, the cost and a reference (the supplier’s delivery note) and save.</p>
+<p>For a whole delivery, press <strong>Receive stock</strong> (or <strong>+ New</strong>, <strong>Receive stock</strong>):</p>
+<ol>
+<li><strong>Bulk Stock In</strong> opens. Tick every item in the delivery.</li>
+<li>Press <strong>Next</strong>, then type each quantity and cost, and a reference such as PO-12345.</li>
+<li>Press <strong>Process Movement</strong>.</li>
+</ol>
+<figure><img alt="The Bulk Stock In window in LoungeOS with stock items to tick" decoding="async" height="900" loading="lazy" sizes="(max-width: 800px) 100vw, 960px" src="/images/screens/loungeos-help-stock-receive.webp" srcset="/images/screens/loungeos-help-stock-receive-800.webp 800w, /images/screens/loungeos-help-stock-receive.webp 1440w" width="1440"/><figcaption>Tick the items of the delivery, then type quantities and costs.</figcaption></figure>
+<h2 id="stock-out-waste-and-adjustments">Stock out, waste and adjustments</h2>
+<p>From an item’s menu, record <strong>Stock out</strong> (used in the kitchen), <strong>Waste</strong> or <strong>Damage</strong> (with a reason), or an adjustment after a count. Every movement is kept with who did it and when. <strong>Export movements</strong> downloads them for any dates.</p>
+<h2 id="low-stock-alerts">Low-stock alerts</h2>
+<p>When an item falls under its minimum level it turns <strong>Low Stock</strong>, and <strong>Out of Stock</strong> at zero. You see it:</p>
+<ul>
+<li>on the dashboard’s <strong>Needs attention</strong>, with <strong>Restock</strong>,</li>
+<li>on the stock overview,</li>
+<li>as a phone notification for the stock manager and managers.</li>
+</ul>
+<h2 id="suppliers">Suppliers</h2>
+<p>Open the <strong>Suppliers</strong> tab and press <strong>Add Supplier</strong>: name, contact person, phone, email and address. Link stock items to their supplier so you know who to call when something runs low. Suppliers import from CSV too.</p>
+<figure><img alt="The LoungeOS suppliers list with contact person and phone" decoding="async" height="900" loading="lazy" sizes="(max-width: 800px) 100vw, 960px" src="/images/screens/loungeos-help-suppliers.webp" srcset="/images/screens/loungeos-help-suppliers-800.webp 800w, /images/screens/loungeos-help-suppliers.webp 1440w" width="1440"/><figcaption>Sample suppliers.</figcaption></figure>
+<h2 id="frequently-asked-questions">Frequently asked questions</h2>
+<h3 id="do-sales-take-stock-off-automatically">Do sales take stock off automatically?</h3>
+<p>Products with a quantity, and stock items sold on the till, come off at each sale. Ingredients used in cooked dishes are recorded as stock out or by a count; recipes that take off each ingredient are not in LoungeOS yet.</p>
+<h3 id="how-do-i-find-where-stock-went-missing">How do I find where stock went missing?</h3>
+<p>Compare the movements with your count, and check the activity log for adjustments and waste. Our <a href="/blog/bar-inventory-shrinkage-pour-cost/">guide to bar shrinkage</a> explains a weekly routine.</p>
+<p class="help-steps-note">Stuck on a step? Write to support@loungeos.app or WhatsApp +237 679 690 703 and say which page you are on.</p>
+<p><a href="/help/">← All help articles</a></p>
+        </div>
+      </article>
+      <section class="related-section">
+        <h2 class="section-title">Keep reading</h2>
+        <div class="card-grid">
+<a class="post-card" href="/help/add-products-and-categories/">
+  <img src="/images/screens/loungeos-help-meal-new-800.webp" width="800" height="430" alt="Add products, photos and categories" loading="lazy" decoding="async" />
+  <div class="post-card-body">
+    <span class="tag"></span>
+    <h3>Add products, photos and categories</h3>
+    <p>Names, prices, photos, barcodes, stock counts and kitchen or bar categories.</p>
+    <span class="read-more">Learn more →</span>
+  </div>
+</a>
+<a class="post-card" href="/blog/restaurant-inventory-management-guide/">
+  <img src="/images/screens/loungeos-inventory-dashboard-800.webp" width="800" height="430" alt="LoungeOS inventory dashboard with stock value, low stock alerts and stock movement chart" loading="lazy" decoding="async" />
+  <div class="post-card-body">
+    <span class="tag">Inventory &amp; finance</span>
+    <h3>Restaurant inventory management, step by step</h3>
+    <p>Item list, units, par levels, receiving, FIFO, waste and variance in 8 steps.</p>
+    <span class="read-more">Read guide →</span>
+  </div>
+</a>
+<a class="post-card" href="/features/inventory-management/">
+  <img src="/images/screens/loungeos-stock-items-800.webp" width="800" height="430" alt="LoungeOS stock items list with SKU, category, stock level, cost and status" loading="lazy" decoding="async" />
+  <div class="post-card-body">
+    <span class="tag">Inventory Management</span>
+    <h3>Inventory Management</h3>
+    <p>Stock levels, low-stock alerts, suppliers, waste and damage logging, CSV import and export.</p>
+    <span class="read-more">Learn more →</span>
+  </div>
+</a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-grid footer-grid-wide">
+        <div class="footer-brand">
+          <img src="/images/logo/loungeos-logo-white.svg" alt="LoungeOS" width="159" height="28" class="footer-logo" />
+          <p>Point of sale and business management for every business that sells. Made by <a href="https://sigalix.com">Sigalix</a>, built in Cameroon, used across Africa and beyond.</p>
+          <div class="footer-worldwide">
+            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Web, Windows, Mac &amp; Android</span>
+            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> English &amp; French</span>
+            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Sells offline on desktop</span>
+          </div>
+          <p class="footer-contact">
+            <a href="mailto:support@loungeos.app">support@loungeos.app</a><br />
+            <a href="mailto:info@sigalix.com">info@sigalix.com</a><br />
+            <a href="tel:+237679690703">+237 679 690 703</a>
+          </p>
+        </div>
+        <div class="footer-col">
+          <h3>Product</h3>
+          <a href="/features/">Features</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/download/">Download</a>
+          <a href="/features/offline-pos/">Offline POS</a>
+          <a href="/features/kitchen-display-system/">Kitchen Display System</a>
+          <a href="/features/inventory-management/">Inventory</a>
+          <a href="/features/restaurant-accounting/">Accounting</a>
+        </div>
+        <div class="footer-col">
+          <h3>Solutions</h3>
+          <a href="/restaurant-pos/">Restaurant POS</a>
+          <a href="/bar-pos/">Bar POS</a>
+          <a href="/lounge-pos/">Lounge POS</a>
+          <a href="/nightclub-pos/">Nightclub POS</a>
+          <a href="/hotel-pos/">Hotel POS</a>
+          <a href="/cafe-pos/">Café &amp; Fast Food POS</a>
+          <a href="/retail-pos/">Retail &amp; Shop POS</a>
+        </div>
+        <div class="footer-col">
+          <h3>Countries</h3>
+          <a href="/cameroon/">Cameroon</a>
+          <a href="/nigeria/">Nigeria</a>
+          <a href="/ghana/">Ghana</a>
+          <a href="/south-africa/">South Africa</a>
+          <a href="/africa/">Africa</a>
+          <a href="/fr/cameroun/">Cameroun (FR)</a>
+          <a href="/fr/cote-divoire/">Côte d'Ivoire (FR)</a>
+          <a href="/fr/senegal/">Sénégal (FR)</a>
+        </div>
+        <div class="footer-col">
+          <h3>Resources</h3>
+          <a href="/blog/">Blog</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/help/">Help centre</a>
+          <a href="/about/">About</a>
+          <a href="/contact/">Contact</a>
+          <a href="/privacy.html">Privacy Policy</a>
+          <a href="/terms.html">Terms of Service</a>
+          <a href="/accessibility.html">Accessibility</a>
+          <a href="/legal.html">Legal</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 LoungeOS. All rights reserved.</p>
+        <a href="https://app.loungeos.app/login" class="btn btn-outline-light btn-sm" id="footerCtaBtn">Start free trial <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg></a>
+      </div>
+    </footer>
+    <div id="google_translate_element" style="display: none"></div>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: "en", autoDisplay: false },
+          "google_translate_element",
+        );
+      }
+    </script>
+    <script defer type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script defer src="/app.js?v=a7444e90c8"></script>
+  </body>
+</html>

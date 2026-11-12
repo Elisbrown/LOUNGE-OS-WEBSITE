@@ -119,7 +119,7 @@ In OHADA countries (Cameroon, Côte d'Ivoire, Senegal and others), statutory acc
 
 ## How LoungeOS handles this
 
-LoungeOS keeps a [double-entry ledger](/features/restaurant-accounting/) with a five-class chart of accounts. Clicking **Sync Accounting Data** for a date range turns paid POS orders and stock purchases into balanced journal entries. Expenses are recorded in the expense screen, and stock losses flow in as expenses. You get the **income statement, balance sheet and cash-flow statement** for any period, exportable to PDF or CSV for your accountant.
+LoungeOS keeps a [double-entry ledger](/features/restaurant-accounting/) with a five-class chart of accounts. Every paid sale, tab payment and refund posts its own balanced journal entry automatically. Expenses are recorded in the expense screen, and stock losses flow in as expenses. You get the **income statement, balance sheet and cash-flow statement** for any period, exportable to PDF or CSV for your accountant.
 
 [[cta]]
 

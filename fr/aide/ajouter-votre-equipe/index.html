@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="fr" data-no-autolang>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ajouter le personnel, les rôles et les codes PIN dans LoungeOS</title>
+    <meta name="description" content="Ajoutez serveurs, caissiers, chefs, barmans, gestionnaires de stock et comptables dans LoungeOS, donnez à chacun un rôle et un code PIN, et voyez qui a fait quoi." />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <link rel="canonical" href="https://loungeos.app/fr/aide/ajouter-votre-equipe/" />
+    <link rel="alternate" hreflang="en" href="https://loungeos.app/help/add-your-team/" />
+    <link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/aide/ajouter-votre-equipe/" />
+    <link rel="alternate" hreflang="x-default" href="https://loungeos.app/help/add-your-team/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="LoungeOS" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:title" content="Ajouter le personnel, les rôles et les codes PIN dans LoungeOS" />
+    <meta property="og:description" content="Ajoutez serveurs, caissiers, chefs, barmans, gestionnaires de stock et comptables dans LoungeOS, donnez à chacun un rôle et un code PIN, et voyez qui a fait quoi." />
+    <meta property="og:image" content="https://loungeos.app/images/og/fr-aide-ajouter-votre-equipe.webp" />
+    <meta property="og:image:secure_url" content="https://loungeos.app/images/og/fr-aide-ajouter-votre-equipe.webp" />
+    <meta property="og:image:type" content="image/webp" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Ajouter le personnel, les rôles et les codes PIN dans LoungeOS" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Ajouter le personnel, les rôles et les codes PIN dans LoungeOS" />
+    <meta name="twitter:description" content="Ajoutez serveurs, caissiers, chefs, barmans, gestionnaires de stock et comptables dans LoungeOS, donnez à chacun un rôle et un code PIN, et voyez qui a fait quoi." />
+    <meta name="twitter:image" content="https://loungeos.app/images/og/fr-aide-ajouter-votre-equipe.webp" />
+    <meta name="twitter:image:alt" content="Ajouter le personnel, les rôles et les codes PIN dans LoungeOS" />
+    <link rel="image_src" href="https://loungeos.app/images/og/fr-aide-ajouter-votre-equipe.webp" />
+    <meta property="og:url" content="https://loungeos.app/fr/aide/ajouter-votre-equipe/" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/style.css?v=c1bda027e5" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="alternate" type="application/rss+xml" title="LoungeOS Blog" href="https://loungeos.app/blog/feed.xml" />
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://loungeos.app/#organization",
+      "name": "LoungeOS",
+      "url": "https://loungeos.app/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://loungeos.app/images/logo/loungeos-icon-512.png",
+        "width": 512,
+        "height": 512
+      },
+      "image": "https://loungeos.app/images/og-loungeos.jpg",
+      "description": "LoungeOS makes point of sale (POS) and business management software for every kind of business that sells: restaurants, bars, lounges, cafés, nightclubs, hotels, retail shops, supermarkets and more. LoungeOS is made by Sigalix.",
+      "email": "info@sigalix.com",
+      "telephone": "+237679690703",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CM"
+      },
+      "areaServed": [
+        "CM",
+        "Africa",
+        "Worldwide"
+      ],
+      "knowsLanguage": [
+        "en",
+        "fr"
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "email": "support@loungeos.app",
+          "telephone": "+237679690703",
+          "availableLanguage": [
+            "English",
+            "French"
+          ]
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "email": "info@sigalix.com",
+          "telephone": "+237689699688",
+          "availableLanguage": [
+            "English",
+            "French"
+          ]
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "billing support",
+          "email": "billing@sigalix.com"
+        }
+      ],
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "Sigalix",
+        "url": "https://sigalix.com",
+        "email": "info@sigalix.com"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://loungeos.app/#website",
+      "url": "https://loungeos.app/",
+      "name": "LoungeOS",
+      "publisher": {
+        "@id": "https://loungeos.app/#organization"
+      },
+      "inLanguage": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://loungeos.app/fr/aide/ajouter-votre-equipe/#webpage",
+      "url": "https://loungeos.app/fr/aide/ajouter-votre-equipe/",
+      "name": "Ajouter le personnel, les rôles et les codes PIN dans LoungeOS",
+      "description": "Ajoutez serveurs, caissiers, chefs, barmans, gestionnaires de stock et comptables dans LoungeOS, donnez à chacun un rôle et un code PIN, et voyez qui a fait quoi.",
+      "inLanguage": "fr",
+      "isPartOf": {
+        "@id": "https://loungeos.app/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://loungeos.app/fr/aide/ajouter-votre-equipe/#breadcrumb"
+      },
+      "dateModified": "2026-11-12",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://loungeos.app/images/screens/loungeos-help-fr-staff-new.webp"
+      }
+    },
+    {
+      "@type": "TechArticle",
+      "@id": "https://loungeos.app/fr/aide/ajouter-votre-equipe/#article",
+      "headline": "Ajouter votre équipe, les rôles et les codes PIN",
+      "description": "Ajoutez serveurs, caissiers, chefs, barmans, gestionnaires de stock et comptables dans LoungeOS, donnez à chacun un rôle et un code PIN, et voyez qui a fait quoi.",
+      "inLanguage": "fr",
+      "dateModified": "2026-11-12",
+      "datePublished": "2026-11-12",
+      "author": {
+        "@id": "https://loungeos.app/#organization"
+      },
+      "publisher": {
+        "@id": "https://loungeos.app/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://loungeos.app/fr/aide/ajouter-votre-equipe/#webpage"
+      },
+      "image": "https://loungeos.app/images/screens/loungeos-help-fr-staff-new.webp",
+      "about": {
+        "@id": "https://loungeos.app/#software"
+      },
+      "proficiencyLevel": "Beginner"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://loungeos.app/fr/aide/ajouter-votre-equipe/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Accueil",
+          "item": "https://loungeos.app/fr/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Équipe, rôles et codes PIN",
+          "item": "https://loungeos.app/fr/aide/ajouter-votre-equipe/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://loungeos.app/fr/aide/ajouter-votre-equipe/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Un serveur a oublié son code PIN. Que faire ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Ouvrez <strong>Personnel<\/strong>, modifiez la personne et tapez un nouveau <strong>Code PIN de caisse<\/strong>. Il arrive sur la caisse à la synchronisation suivante, en quelques secondes si elle est en ligne.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Puis-je limiter ce que fait un responsable ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Les responsables peuvent tout faire sauf la facturation et les actions réservées au propriétaire. Donnez le rôle Caissier à quelqu’un qui doit encaisser sans changer les prix ni valider les annulations.<\/p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+    </script>
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+      (function (c, l, a, r, i, t, y) {
+        c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
+        t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", "x9n1mwb8c5");
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TNP53ZZW7K"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag("js", new Date());
+      gtag("config", "G-TNP53ZZW7K");
+    </script>
+    <!-- Usercentrics CMP -->
+    <script id="usercentrics-cmp" src="https://app.usercentrics.eu/browser-ui/latest/loader.js" data-settings-id="SSwfY4ZtHuL22V" async></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Aller au contenu</a>
+    <nav class="navbar" id="navbar" aria-label="Navigation principale">
+      <div class="nav-content">
+        <div class="nav-left">
+          <a href="/fr/" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 0.75rem;">
+            <img src="/images/logo/loungeos-logo.svg" alt="LoungeOS" width="148" height="26" class="nav-logo" />
+            <span class="nav-badge">Logiciel de caisse</span>
+          </a>
+        </div>
+
+        <div class="nav-links" id="navLinks">
+          <a href="/fr/">Accueil</a>
+          <a href="/fr/fonctionnalites/">Fonctionnalités</a>
+          <div class="nav-dropdown">
+            <button type="button" class="nav-dropdown-toggle" aria-haspopup="true">Solutions <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+            <div class="nav-dropdown-menu">
+              <a href="/fr/logiciel-caisse-restaurant/">Restaurants</a>
+              <a href="/fr/logiciel-gestion-bar-lounge/">Bars, lounges &amp; boîtes de nuit</a>
+              <a href="/fr/logiciel-caisse-boutique/">Boutiques &amp; supérettes</a>
+              <a href="/hotel-pos/">Hôtels</a>
+              <a href="/fr/cameroun/">Cameroun</a>
+              <a href="/fr/cote-divoire/">Côte d'Ivoire</a>
+              <a href="/fr/senegal/">Sénégal</a>
+              <a href="/fr/afrique/">Afrique francophone</a>
+            </div>
+          </div>
+          <a href="/fr/tarifs/">Tarifs</a>
+          <a href="/fr/telecharger/">Télécharger</a>
+          <div class="nav-dropdown">
+            <button type="button" class="nav-dropdown-toggle" aria-haspopup="true">Ressources <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+            <div class="nav-dropdown-menu">
+              <a href="/blog/">Blog</a>
+              <a href="/fr/faq/">FAQ</a>
+              <a href="/fr/aide/">Centre d'aide</a>
+              <a href="/contact/">Contact</a>
+              <a href="/">English</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-cta" style="display: flex; align-items: center; gap: 1rem">
+          <div class="lang-selector">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 16px; height: 16px" aria-hidden="true"><circle cx="12" cy="12" r="10" /><line x1="2" y1="12" x2="22" y2="12" /><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" /></svg>
+            <select id="customLangSelect" aria-label="Choisir la langue" onchange="changeLanguage(this.value)">
+              <option value="en">English</option>
+              <option value="fr" selected>Français</option>
+              <option value="es">Español</option>
+              <option value="de">Deutsch</option>
+              <option value="zh-CN">中文</option>
+              <option value="ar">العربية</option>
+              <option value="hi">हिन्दी</option>
+              <option value="pt">Português</option>
+              <option value="ru">Русский</option>
+              <option value="ja">日本語</option>
+            </select>
+          </div>
+          <a href="https://app.loungeos.app/login" class="btn btn-primary btn-sm" id="navCtaBtn">Essai gratuit</a>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+    <main id="main-content">
+      <header class="page-hero">
+        <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/fr/">Accueil</a> <span aria-hidden="true">›</span> <span aria-current="page">Équipe, rôles et codes PIN</span></nav>
+        
+        <h1>Ajouter votre équipe, les rôles et les codes PIN</h1>
+        <p class="lead">Chacun a sa propre connexion et un rôle. Le rôle décide de ce qu'il voit, et chaque action sensible est notée dans le journal d'activité à son nom.</p>
+        <div class="article-meta"><span>Pour LoungeOS 2.1.4</span><span>Mis à jour le <time datetime="2026-11-12" data-auto="modified">12 novembre 2026</time></span><span>3 min de lecture</span></div>
+        
+        
+      </header>
+      <article class="content-section">
+        <div class="prose">
+<details class="toc" open><summary>Sur cette page</summary><ul>
+<li><a href="#ajouter-un-membre-de-lequipe">Ajouter un membre de l’équipe</a></li>
+<li><a href="#les-roles">Les rôles</a></li>
+<li><a href="#se-connecter-sur-une-caisse-partagee">Se connecter sur une caisse partagée</a></li>
+<li><a href="#desactiver-quelquun">Désactiver quelqu’un</a></li>
+<li><a href="#le-journal-dactivite">Le journal d’activité</a></li>
+<li><a href="#questions-frequentes">Questions fréquentes</a></li>
+</ul></details>
+<h2 id="ajouter-un-membre-de-lequipe">Ajouter un membre de l’équipe</h2>
+<ol>
+<li>Ouvrez <strong>Personnel</strong> et appuyez sur <strong>Ajouter un membre</strong>. Depuis n’importe quelle page, vous pouvez aussi appuyer sur <strong>+ Nouveau</strong>, puis <strong>Ajouter un employé</strong>.</li>
+<li>Tapez son <strong>Nom</strong>.</li>
+<li><strong>E-mail</strong> : la personne reçoit une invitation et peut ensuite se connecter à l’application web et à l’application mobile avec son propre compte. L’e-mail est facultatif si elle n’utilise que la caisse.</li>
+<li><strong>Code PIN de caisse</strong> : 4 à 6 chiffres pour se connecter sur la caisse. Facultatif, mais changer de personne sur une caisse partagée prend alors deux secondes.</li>
+<li>Choisissez son <strong>Rôle</strong> et, pour les serveurs, sa <strong>Salle assignée</strong>.</li>
+<li>Enregistrez.</li>
+</ol>
+<figure><img alt="Le formulaire d'ajout de personnel LoungeOS avec nom, e-mail, téléphone, code PIN, rôle et salle" decoding="async" height="900" loading="lazy" sizes="(max-width: 800px) 100vw, 960px" src="/images/screens/loungeos-help-fr-staff-new.webp" srcset="/images/screens/loungeos-help-fr-staff-new-800.webp 800w, /images/screens/loungeos-help-fr-staff-new.webp 1440w" width="1440"/><figcaption>L'e-mail pour son propre compte, le code PIN pour la caisse, ou les deux.</figcaption></figure>
+<p>Le nombre de personnes dépend de votre formule : 2 utilisateurs en Starter, 5 en Business, illimité en Pro. Voir <a href="/fr/aide/formules-et-facturation/">Formules et facturation</a>.</p>
+<h2 id="les-roles">Les rôles</h2>
+<div aria-label="Tableau" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>Rôle</th>
+<th>Ce qu’il fait dans LoungeOS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Super Admin (propriétaire)</td>
+<td>Tout, y compris la facturation, les succursales et les sauvegardes</td>
+</tr>
+<tr>
+<td>Responsable</td>
+<td>La gestion quotidienne : personnel, menu, stock, rapports, validations</td>
+</tr>
+<tr>
+<td>Caissier</td>
+<td>Encaisse, prend les paiements sur comptes clients, voit l’écran bar</td>
+</tr>
+<tr>
+<td>Serveur</td>
+<td>Prend les commandes aux tables de sa salle</td>
+</tr>
+<tr>
+<td>Barman</td>
+<td>L’écran bar</td>
+</tr>
+<tr>
+<td>Chef</td>
+<td>L’écran cuisine</td>
+</tr>
+<tr>
+<td>Gestionnaire de stock</td>
+<td>Articles de stock, fournisseurs, réceptions (formule avec stock)</td>
+</tr>
+<tr>
+<td>Comptable</td>
+<td>Dépenses, comptabilité, rapports (formule avec dépenses ou comptabilité)</td>
+</tr>
+</tbody>
+</table></div>
+<p>Le menu latéral, le bouton <strong>+ Nouveau</strong> et la recherche (Ctrl K ou ⌘K) ne montrent que ce que chaque rôle peut ouvrir.</p>
+<figure><img alt="La liste du personnel LoungeOS avec rôles, téléphone, salle et statut" decoding="async" height="900" loading="lazy" sizes="(max-width: 800px) 100vw, 960px" src="/images/screens/loungeos-help-fr-staff.webp" srcset="/images/screens/loungeos-help-fr-staff-800.webp 800w, /images/screens/loungeos-help-fr-staff.webp 1440w" width="1440"/><figcaption>Une équipe d'exemple (noms fictifs).</figcaption></figure>
+<h2 id="se-connecter-sur-une-caisse-partagee">Se connecter sur une caisse partagée</h2>
+<p>Sur la caisse, chacun touche son nom et tape son code PIN. Pour passer la main, déconnectez-vous depuis le menu sous votre photo. Un responsable peut changer le code PIN de n’importe qui dans <strong>Personnel</strong>. Chacun peut choisir son propre code PIN en ligne dans <strong>Mes paramètres</strong>.</p>
+<h2 id="desactiver-quelquun">Désactiver quelqu’un</h2>
+<p>Quand quelqu’un part, ouvrez le menu de sa ligne dans <strong>Personnel</strong> et choisissez <strong>Désactiver</strong>. Il ne peut plus se connecter nulle part, et ses ventes passées restent dans les rapports à son nom.</p>
+<h2 id="le-journal-dactivite">Le journal d’activité</h2>
+<p>Ouvrez <strong>Personnel</strong>, puis l’onglet <strong>Journal d’activité</strong>. Il liste les connexions, les commandes annulées et remboursées, les changements de prix, les ouvertures du tiroir sans vente, les ajustements de stock, les changements de réglages et qui a validé quoi.</p>
+<h2 id="questions-frequentes">Questions fréquentes</h2>
+<h3 id="un-serveur-a-oublie-son-code-pin-que-faire">Un serveur a oublié son code PIN. Que faire ?</h3>
+<p>Ouvrez <strong>Personnel</strong>, modifiez la personne et tapez un nouveau <strong>Code PIN de caisse</strong>. Il arrive sur la caisse à la synchronisation suivante, en quelques secondes si elle est en ligne.</p>
+<h3 id="puis-je-limiter-ce-que-fait-un-responsable">Puis-je limiter ce que fait un responsable ?</h3>
+<p>Les responsables peuvent tout faire sauf la facturation et les actions réservées au propriétaire. Donnez le rôle Caissier à quelqu’un qui doit encaisser sans changer les prix ni valider les annulations.</p>
+<p class="help-steps-note">Bloqué à une étape ? Écrivez à support@loungeos.app ou sur WhatsApp au +237 679 690 703 en précisant la page.</p>
+<p><a href="/fr/aide/">← Tous les articles d'aide</a></p>
+        </div>
+      </article>
+      <section class="related-section">
+        <h2 class="section-title">À lire aussi</h2>
+        <div class="card-grid">
+<a class="post-card" href="/fr/aide/annuler-rembourser-approbation/">
+  <img src="/images/screens/loungeos-help-fr-pos-sent-800.webp" width="800" height="430" alt="Annuler, rembourser et validation" loading="lazy" decoding="async" />
+  <div class="post-card-body">
+    <span class="tag"></span>
+    <h3>Annuler, rembourser et validation</h3>
+    <p>Ce qui demande un responsable, annuler, rembourser, rouvrir, le journal d&#x27;activité.</p>
+    <span class="read-more">En savoir plus →</span>
+  </div>
+</a>
+<a class="post-card" href="/fr/aide/succursales/">
+  <img src="/images/screens/loungeos-help-branches-800.webp" width="800" height="430" alt="Ouvrir et gérer des succursales" loading="lazy" decoding="async" />
+  <div class="post-card-body">
+    <span class="tag"></span>
+    <h3>Ouvrir et gérer des succursales</h3>
+    <p>Ouvrir avec une copie de vos réglages, changer de succursale, comparer, fermer.</p>
+    <span class="read-more">En savoir plus →</span>
+  </div>
+</a>
+<a class="post-card" href="/fr/blog/vols-employes-bar-restaurant/">
+  <img src="/images/screens/loungeos-activity-log-audit-trail-800.webp" width="800" height="430" alt="Journal d&#x27;activité LoungeOS listant les actions des employés avec date et heure" loading="lazy" decoding="async" />
+  <div class="post-card-body">
+    <span class="tag">Prévention des pertes</span>
+    <h3>Vols des employés : 10 techniques et parades</h3>
+    <p>Annulations, sous-facturation, tournées offertes, faux Mobile Money : comment les arrêter.</p>
+    <span class="read-more">Lire le guide →</span>
+  </div>
+</a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-grid footer-grid-wide">
+        <div class="footer-brand">
+          <img src="/images/logo/loungeos-logo-white.svg" alt="LoungeOS" width="159" height="28" class="footer-logo" />
+          <p>Logiciel de caisse et de gestion pour toutes les entreprises qui vendent. Conçu par <a href="https://sigalix.com">Sigalix</a> au Cameroun, utilisé en Afrique et au-delà.</p>
+          <div class="footer-worldwide">
+            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Web, Windows, Mac &amp; Android</span>
+            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Français &amp; anglais</span>
+            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Vente hors ligne sur ordinateur</span>
+          </div>
+          <p class="footer-contact">
+            <a href="mailto:support@loungeos.app">support@loungeos.app</a><br />
+            <a href="mailto:info@sigalix.com">info@sigalix.com</a><br />
+            <a href="tel:+237679690703">+237 679 690 703</a>
+          </p>
+        </div>
+        <div class="footer-col">
+          <h3>Produit</h3>
+          <a href="/fr/fonctionnalites/">Fonctionnalités</a>
+          <a href="/fr/tarifs/">Tarifs</a>
+          <a href="/fr/telecharger/">Télécharger</a>
+          <a href="/fr/faq/">FAQ</a>
+        </div>
+        <div class="footer-col">
+          <h3>Solutions</h3>
+          <a href="/fr/logiciel-caisse-restaurant/">Logiciel de caisse restaurant</a>
+          <a href="/fr/logiciel-gestion-bar-lounge/">Logiciel bar &amp; lounge</a>
+          <a href="/fr/logiciel-caisse-boutique/">Logiciel caisse boutique</a>
+          <a href="/fr/afrique/">Afrique francophone</a>
+        </div>
+        <div class="footer-col">
+          <h3>Pays</h3>
+          <a href="/fr/cameroun/">Cameroun</a>
+          <a href="/fr/cote-divoire/">Côte d'Ivoire</a>
+          <a href="/fr/senegal/">Sénégal</a>
+          <a href="/cameroon/">Cameroon (EN)</a>
+          <a href="/nigeria/">Nigeria (EN)</a>
+          <a href="/ghana/">Ghana (EN)</a>
+        </div>
+        <div class="footer-col">
+          <h3>Ressources</h3>
+          <a href="/blog/">Blog</a>
+          <a href="/fr/aide/">Centre d'aide</a>
+          <a href="/about/">À propos</a>
+          <a href="/contact/">Contact</a>
+          <a href="/privacy.html">Confidentialité</a>
+          <a href="/terms.html">Conditions</a>
+          <a href="/legal.html">Mentions légales</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 LoungeOS. Tous droits réservés.</p>
+        <a href="https://app.loungeos.app/login" class="btn btn-outline-light btn-sm" id="footerCtaBtn">Commencer l'essai gratuit <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg></a>
+      </div>
+    </footer>
+    <div id="google_translate_element" style="display: none"></div>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: "fr", autoDisplay: false },
+          "google_translate_element",
+        );
+      }
+    </script>
+    <script defer type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script defer src="/app.js?v=a7444e90c8"></script>
+  </body>
+</html>

@@ -68,7 +68,7 @@ LoungeOS équipe des établissements dans toutes les villes du pays : **Douala**
 | Business (la plus choisie) | 15 000 FCFA | 150 000 FCFA | 5 utilisateurs, 5 appareils |
 | Pro | 30 000 FCFA | 300 000 FCFA | Utilisateurs illimités, 10 appareils et plus |
 
-Chaque formule commence par un **essai gratuit de 14 jours avec les fonctionnalités Business**, sans paiement à l'avance. Starter comprend la caisse, les stocks, les reçus et les rapports journaliers. Business ajoute les dépenses, la comptabilité, les services (shifts) et le contrôle de caisse (bientôt disponible), les rapports hebdomadaires et mensuels et les alertes par e-mail (bientôt disponible). Pro ajoute le support prioritaire et l'administration avancée ; la gestion de plusieurs établissements et la paie arrivent bientôt.
+Chaque formule commence par un **essai gratuit de 14 jours avec les fonctionnalités Business**, sans paiement à l'avance. Starter comprend la caisse, les tables, les écrans cuisine et bar, les stocks, les comptes clients, les reçus et les rapports journaliers. Business ajoute les dépenses, la comptabilité, les rapports hebdomadaires et mensuels et la [commande par QR code](/fr/fonctionnalites/commande-qr-code/). Pro ajoute [plusieurs succursales](/fr/fonctionnalites/multi-etablissements/), une vue d'ensemble de toutes les succursales et le support prioritaire.
 
 Vous payez sur [account.loungeos.app](https://account.loungeos.app) par MTN Mobile Money, Orange Money, carte ou PayPal, et les factures et reçus vous sont envoyés par e-mail. Voir les [tarifs](/fr/tarifs/).
 

@@ -1,0 +1,732 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer Tabs and Credit Sales POS (Pay Later) | LoungeOS</title>
+    <meta name="description" content="Replace the credit notebook: put sales on a customer&#x27;s tab, see who owes what and since when, take part payments in cash or mobile money. In every plan." />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <link rel="canonical" href="https://loungeos.app/features/customer-tabs/" />
+    <link rel="alternate" hreflang="en" href="https://loungeos.app/features/customer-tabs/" />
+    <link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/fonctionnalites/ventes-a-credit/" />
+    <link rel="alternate" hreflang="x-default" href="https://loungeos.app/features/customer-tabs/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="LoungeOS" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="Customer Tabs and Credit Sales POS (Pay Later)" />
+    <meta property="og:description" content="Replace the credit notebook: put sales on a customer&#x27;s tab, see who owes what and since when, take part payments in cash or mobile money. In every plan." />
+    <meta property="og:image" content="https://loungeos.app/images/og/features-customer-tabs.webp" />
+    <meta property="og:image:secure_url" content="https://loungeos.app/images/og/features-customer-tabs.webp" />
+    <meta property="og:image:type" content="image/webp" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Customer Tabs and Credit Sales POS (Pay Later)" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Customer Tabs and Credit Sales POS (Pay Later)" />
+    <meta name="twitter:description" content="Replace the credit notebook: put sales on a customer&#x27;s tab, see who owes what and since when, take part payments in cash or mobile money. In every plan." />
+    <meta name="twitter:image" content="https://loungeos.app/images/og/features-customer-tabs.webp" />
+    <meta name="twitter:image:alt" content="Customer Tabs and Credit Sales POS (Pay Later)" />
+    <link rel="image_src" href="https://loungeos.app/images/og/features-customer-tabs.webp" />
+    <meta property="og:url" content="https://loungeos.app/features/customer-tabs/" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/style.css?v=c1bda027e5" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="alternate" type="application/rss+xml" title="LoungeOS Blog" href="https://loungeos.app/blog/feed.xml" />
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://loungeos.app/#organization",
+      "name": "LoungeOS",
+      "url": "https://loungeos.app/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://loungeos.app/images/logo/loungeos-icon-512.png",
+        "width": 512,
+        "height": 512
+      },
+      "image": "https://loungeos.app/images/og-loungeos.jpg",
+      "description": "LoungeOS makes point of sale (POS) and business management software for every kind of business that sells: restaurants, bars, lounges, cafés, nightclubs, hotels, retail shops, supermarkets and more. LoungeOS is made by Sigalix.",
+      "email": "info@sigalix.com",
+      "telephone": "+237679690703",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CM"
+      },
+      "areaServed": [
+        "CM",
+        "Africa",
+        "Worldwide"
+      ],
+      "knowsLanguage": [
+        "en",
+        "fr"
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "email": "support@loungeos.app",
+          "telephone": "+237679690703",
+          "availableLanguage": [
+            "English",
+            "French"
+          ]
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "email": "info@sigalix.com",
+          "telephone": "+237689699688",
+          "availableLanguage": [
+            "English",
+            "French"
+          ]
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "billing support",
+          "email": "billing@sigalix.com"
+        }
+      ],
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "Sigalix",
+        "url": "https://sigalix.com",
+        "email": "info@sigalix.com"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://loungeos.app/#website",
+      "url": "https://loungeos.app/",
+      "name": "LoungeOS",
+      "publisher": {
+        "@id": "https://loungeos.app/#organization"
+      },
+      "inLanguage": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://loungeos.app/#software",
+      "name": "LoungeOS",
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "Point of sale (POS) and business management software",
+      "operatingSystem": "Windows 10 and 11 (64-bit), macOS (Apple Silicon and Intel), Android 7.0 or later, any modern web browser",
+      "softwareVersion": "2.1.4",
+      "downloadUrl": "https://loungeos.app/download/",
+      "installUrl": "https://loungeos.app/download/",
+      "url": "https://loungeos.app/",
+      "inLanguage": [
+        "en",
+        "fr"
+      ],
+      "publisher": {
+        "@id": "https://loungeos.app/#organization"
+      },
+      "description": "Business management and point of sale for restaurants, bars, lounges, cafés, nightclubs, hotels, retail shops and supermarkets: POS with tables and orders, kitchen and bar screens, custom payment methods, receipts, inventory, expenses, accounting, staff roles and reports. Web app plus Windows, Mac and Android apps with one account; the Windows and Mac apps keep selling without internet and sync when the connection comes back.",
+      "featureList": [
+        "One LoungeOS account on the web, Windows, Mac and Android, with email and password or Continue with Google",
+        "Setup wizard: business type, name, logo, currency, taxes, payment methods, opening hours and suggested categories",
+        "Point of sale for touch and mouse on any screen size",
+        "Tables and floors, split, move and merge bills, kitchen and bar screens",
+        "QR code table ordering with staff approval",
+        "Customer tabs (pay later) with balances and part payments",
+        "Several branches with a copy of the menu, tables, settings and team",
+        "Android phone app with role-based notifications and a home-screen widget",
+        "Custom payment methods such as cash, MTN Mobile Money, Orange Money, card and bank transfer",
+        "Receipts on 58 mm and 80 mm thermal printers, or PDF, with a print button on every order",
+        "Inventory with stock movements, low-stock alerts and suppliers",
+        "Expenses with your own categories",
+        "Accounting with a chart of accounts and a journal",
+        "Daily, weekly and monthly reports",
+        "Staff roles, permissions, quick PIN on a shared till and an activity log",
+        "Offline selling on the Windows and Mac apps with automatic sync",
+        "Cloud copy of all data and daily full backups",
+        "English and French interface"
+      ],
+      "screenshot": [
+        "https://loungeos.app/images/screens/loungeos-pos-order-screen.webp",
+        "https://loungeos.app/images/screens/loungeos-kitchen-display-system.webp",
+        "https://loungeos.app/images/screens/loungeos-inventory-dashboard.webp"
+      ],
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "14-day free trial (Business features)",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/"
+        },
+        {
+          "@type": "Offer",
+          "name": "Starter monthly",
+          "price": "10",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "10",
+            "priceCurrency": "USD",
+            "billingDuration": "P1M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 1,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Starter yearly",
+          "price": "100",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "100",
+            "priceCurrency": "USD",
+            "billingDuration": "P12M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 12,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Starter monthly (Cameroon)",
+          "price": "6000",
+          "priceCurrency": "XAF",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "6000",
+            "priceCurrency": "XAF",
+            "billingDuration": "P1M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 1,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Starter yearly (Cameroon)",
+          "price": "60000",
+          "priceCurrency": "XAF",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "60000",
+            "priceCurrency": "XAF",
+            "billingDuration": "P12M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 12,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Business monthly",
+          "price": "25",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "25",
+            "priceCurrency": "USD",
+            "billingDuration": "P1M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 1,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Business yearly",
+          "price": "250",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "250",
+            "priceCurrency": "USD",
+            "billingDuration": "P12M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 12,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Business monthly (Cameroon)",
+          "price": "15000",
+          "priceCurrency": "XAF",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "15000",
+            "priceCurrency": "XAF",
+            "billingDuration": "P1M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 1,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Business yearly (Cameroon)",
+          "price": "150000",
+          "priceCurrency": "XAF",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "150000",
+            "priceCurrency": "XAF",
+            "billingDuration": "P12M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 12,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Pro monthly",
+          "price": "50",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "50",
+            "priceCurrency": "USD",
+            "billingDuration": "P1M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 1,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Pro yearly",
+          "price": "500",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "500",
+            "priceCurrency": "USD",
+            "billingDuration": "P12M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 12,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Pro monthly (Cameroon)",
+          "price": "30000",
+          "priceCurrency": "XAF",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "30000",
+            "priceCurrency": "XAF",
+            "billingDuration": "P1M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 1,
+              "unitCode": "MON"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Pro yearly (Cameroon)",
+          "price": "300000",
+          "priceCurrency": "XAF",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loungeos.app/pricing/",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "300000",
+            "priceCurrency": "XAF",
+            "billingDuration": "P12M",
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 12,
+              "unitCode": "MON"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://loungeos.app/features/customer-tabs/#webpage",
+      "url": "https://loungeos.app/features/customer-tabs/",
+      "name": "Customer Tabs and Credit Sales POS (Pay Later) | LoungeOS",
+      "description": "Replace the credit notebook: put sales on a customer's tab, see who owes what and since when, take part payments in cash or mobile money. In every plan.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://loungeos.app/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://loungeos.app/features/customer-tabs/#breadcrumb"
+      },
+      "dateModified": "2026-11-12",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://loungeos.app/images/screens/loungeos-help-customers.webp"
+      },
+      "about": {
+        "@id": "https://loungeos.app/#software"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://loungeos.app/features/customer-tabs/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://loungeos.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Features",
+          "item": "https://loungeos.app/features/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Customer Tabs",
+          "item": "https://loungeos.app/features/customer-tabs/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://loungeos.app/features/customer-tabs/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can a customer pay part now and the rest on the tab?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Yes. In the payment window, press <strong>Two methods<\/strong>: part in cash or mobile money, the rest with Pay later.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it work offline?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Yes, on the Windows and Mac tills. Tab sales and payments made offline sync when the connection is back.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there a step-by-step guide?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Yes: <a href=\"https://loungeos.app/help/pay-later-customer-tabs/\">Customer tabs: pay later<\/a> in the help centre.<\/p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+    </script>
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+      (function (c, l, a, r, i, t, y) {
+        c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
+        t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", "x9n1mwb8c5");
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TNP53ZZW7K"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag("js", new Date());
+      gtag("config", "G-TNP53ZZW7K");
+    </script>
+    <!-- Usercentrics CMP -->
+    <script id="usercentrics-cmp" src="https://app.usercentrics.eu/browser-ui/latest/loader.js" data-settings-id="SSwfY4ZtHuL22V" async></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <nav class="navbar" id="navbar" aria-label="Main Navigation">
+      <div class="nav-content">
+        <div class="nav-left">
+          <a href="/" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 0.75rem;">
+            <img src="/images/logo/loungeos-logo.svg" alt="LoungeOS" width="148" height="26" class="nav-logo" />
+            <span class="nav-badge">POS &amp; Business</span>
+          </a>
+        </div>
+
+        <div class="nav-links" id="navLinks">
+          <a href="/">Home</a>
+          <a href="/features/">Features</a>
+          <div class="nav-dropdown">
+            <button type="button" class="nav-dropdown-toggle" aria-haspopup="true">Solutions <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+            <div class="nav-dropdown-menu">
+              <a href="/restaurant-pos/">Restaurants</a>
+              <a href="/bar-pos/">Bars</a>
+              <a href="/lounge-pos/">Lounges</a>
+              <a href="/nightclub-pos/">Nightclubs</a>
+              <a href="/hotel-pos/">Hotels</a>
+              <a href="/cafe-pos/">Cafés &amp; Fast Food</a>
+              <a href="/retail-pos/">Shops &amp; Mini-Markets</a>
+              <a href="/cameroon/">Cameroon</a>
+              <a href="/africa/">Africa</a>
+            </div>
+          </div>
+          <a href="/pricing/">Pricing</a>
+          <a href="/download/">Download</a>
+          <div class="nav-dropdown">
+            <button type="button" class="nav-dropdown-toggle" aria-haspopup="true">Resources <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+            <div class="nav-dropdown-menu">
+              <a href="/blog/">Blog</a>
+              <a href="/faq/">FAQ</a>
+              <a href="/help/">Help centre</a>
+              <a href="/about/">About</a>
+              <a href="/contact/">Contact</a>
+              <a href="/fr/">Français</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-cta" style="display: flex; align-items: center; gap: 1rem">
+          <div class="lang-selector">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 16px; height: 16px" aria-hidden="true"><circle cx="12" cy="12" r="10" /><line x1="2" y1="12" x2="22" y2="12" /><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" /></svg>
+            <select id="customLangSelect" aria-label="Select Language" onchange="changeLanguage(this.value)">
+              <option value="en" selected>English</option>
+              <option value="fr">Français</option>
+              <option value="es">Español</option>
+              <option value="de">Deutsch</option>
+              <option value="zh-CN">中文</option>
+              <option value="ar">العربية</option>
+              <option value="hi">हिन्दी</option>
+              <option value="pt">Português</option>
+              <option value="ru">Русский</option>
+              <option value="ja">日本語</option>
+            </select>
+          </div>
+          <a href="https://app.loungeos.app/login" class="btn btn-primary btn-sm" id="navCtaBtn">Start free trial</a>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+    <main id="main-content">
+      <header class="page-hero">
+        <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">›</span> <a href="/features/">Features</a> <span aria-hidden="true">›</span> <span aria-current="page">Customer Tabs</span></nav>
+        <p class="section-label">Customer Tabs</p>
+        <h1>Customer tabs: sell on credit without the notebook</h1>
+        <p class="lead">Regulars who pay at the end of the month, a company account, the neighbour who settles on Friday. Put the sale on their tab in two taps, and always know who owes what and since when.</p>
+        
+        <div class="hero-actions">
+          <a href="https://app.loungeos.app/login" class="btn btn-primary btn-lg">Start free trial <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg></a>
+          <a href="/pricing/" class="btn btn-secondary btn-lg">See pricing</a>
+        </div>
+        <p class="trust-line">14-day free trial · No payment up front · Sells offline on Windows and Mac</p>
+        <div class="page-hero-media"><img src="/images/screens/loungeos-help-customers.webp" srcset="/images/screens/loungeos-help-customers-800.webp 800w, /images/screens/loungeos-help-customers.webp 1440w" sizes="(max-width: 1100px) 100vw, 1100px" width="1440" height="900" alt="LoungeOS customer tabs with the total owed, the oldest debt and each customer&#x27;s balance" fetchpriority="high" decoding="async" /></div>
+      </header>
+      <section class="content-section">
+        <div class="prose prose-wide">
+<p>In bars, lounges, snack bars and neighbourhood shops across Africa, credit is part of business. Good customers drink now and pay at the end of the month. The problem is the notebook: pages go missing, amounts are disputed, and nobody knows the total owed until the owner adds it all up.</p>
+<p><strong>Customer tabs</strong> in LoungeOS replace the notebook. They come with every plan.</p>
+<h2 id="put-a-sale-on-a-tab-in-two-taps">Put a sale on a tab in two taps</h2>
+<p>At payment, the cashier presses <strong>Pay later</strong> and picks the customer by name or phone number, or adds a new one. The receipt shows whose tab the sale is on and the total they owe. The sale counts in that day’s sales; the money comes in later.</p>
+<h2 id="know-who-owes-what-and-since-when">Know who owes what, and since when</h2>
+<p>The <strong>Customer tabs</strong> page shows the total owed, how many customers owe money and who has owed the longest. Each customer’s line has their balance, when the debt started and their last activity. Tap a name to see every sale and every payment on the tab.</p>
+<figure><img alt="The LoungeOS customer tabs page with total owed, the oldest debt and balances" decoding="async" height="900" loading="lazy" sizes="(max-width: 800px) 100vw, 960px" src="/images/screens/loungeos-help-customers.webp" srcset="/images/screens/loungeos-help-customers-800.webp 800w, /images/screens/loungeos-help-customers.webp 1440w" width="1440"/><figcaption>Sample customers.</figcaption></figure>
+<p>The dashboard’s <strong>Needs attention</strong> box shows the total owed and the oldest debt every day, so credit never grows quietly.</p>
+<h2 id="take-payments-in-full-or-in-part">Take payments, in full or in part</h2>
+<p>When a customer comes to pay, press <strong>Take payment</strong>, type the amount (all or part of the balance) and choose cash, MTN Mobile Money, Orange Money or any method you use. LoungeOS shows what is left to pay.</p>
+<p>Tab payments count as money taken that day, not as new sales, so your sales are never counted twice. In the accounts, a tab sale goes to receivables and the payment clears it, which is exactly how your accountant wants it.</p>
+<h2 id="control-who-gives-credit">Control who gives credit</h2>
+<ul>
+<li>Only cashiers and managers can take tab payments.</li>
+<li>Only managers can remove a customer; their past sales keep their name.</li>
+<li>Every sale on a tab is linked to the staff member who made it.</li>
+</ul>
+<h2 id="frequently-asked-questions">Frequently asked questions</h2>
+<h3 id="can-a-customer-pay-part-now-and-the-rest-on-the-tab">Can a customer pay part now and the rest on the tab?</h3>
+<p>Yes. In the payment window, press <strong>Two methods</strong>: part in cash or mobile money, the rest with Pay later.</p>
+<h3 id="does-it-work-offline">Does it work offline?</h3>
+<p>Yes, on the Windows and Mac tills. Tab sales and payments made offline sync when the connection is back.</p>
+<h3 id="is-there-a-step-by-step-guide">Is there a step-by-step guide?</h3>
+<p>Yes: <a href="/help/pay-later-customer-tabs/">Customer tabs: pay later</a> in the help centre.</p>
+        </div>
+      </section>
+      <section style="padding: 0 1.5rem 1rem"><div class="cta-box">
+  <h2>Run your next service on LoungeOS</h2>
+  <p>Create your account, answer the setup wizard and your business is ready on day one. Try it free for 14 days with Business features. No payment up front.</p>
+  <div class="cta-actions">
+    <a class="btn btn-primary btn-lg" href="https://app.loungeos.app/login">Start free trial</a>
+    <a class="btn btn-secondary btn-lg" href="/download/">Download for Windows</a>
+  </div>
+</div></section>
+      <section class="related-section">
+        <h2 class="section-title">Explore more</h2>
+        <div class="card-grid">
+<a class="post-card" href="/help/pay-later-customer-tabs/">
+  <img src="/images/screens/loungeos-pos-order-screen-800.webp" width="800" height="430" alt="Customer tabs (pay later)" loading="lazy" decoding="async" />
+  <div class="post-card-body">
+    <span class="tag"></span>
+    <h3>Customer tabs (pay later)</h3>
+    <p>Sell on credit, see who owes what and since when, take tab payments.</p>
+    <span class="read-more">Learn more →</span>
+  </div>
+</a>
+<a class="post-card" href="/blog/customer-credit-tabs-restaurant-bar/">
+  <img src="/images/screens/loungeos-kitchen-display-system-800.webp" width="800" height="430" alt="Customer credit and tabs" loading="lazy" decoding="async" />
+  <div class="post-card-body">
+    <span class="tag">Inventory &amp; finance</span>
+    <h3>Customer credit and tabs</h3>
+    <p>Rules, limits and follow-up for selling on credit, and replacing the notebook.</p>
+    <span class="read-more">Read guide →</span>
+  </div>
+</a>
+<a class="post-card" href="/features/mobile-money-pos/">
+  <img src="/images/screens/loungeos-inventory-dashboard-800.webp" width="800" height="430" alt="Mobile Money &amp; Payments" loading="lazy" decoding="async" />
+  <div class="post-card-body">
+    <span class="tag">Payments &amp; Mobile Money</span>
+    <h3>Mobile Money &amp; Payments</h3>
+    <p>Create your own payment methods, MTN MoMo and Orange Money included. Record references and split one bill across methods.</p>
+    <span class="read-more">Learn more →</span>
+  </div>
+</a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-grid footer-grid-wide">
+        <div class="footer-brand">
+          <img src="/images/logo/loungeos-logo-white.svg" alt="LoungeOS" width="159" height="28" class="footer-logo" />
+          <p>Point of sale and business management for every business that sells. Made by <a href="https://sigalix.com">Sigalix</a>, built in Cameroon, used across Africa and beyond.</p>
+          <div class="footer-worldwide">
+            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Web, Windows, Mac &amp; Android</span>
+            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> English &amp; French</span>
+            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Sells offline on desktop</span>
+          </div>
+          <p class="footer-contact">
+            <a href="mailto:support@loungeos.app">support@loungeos.app</a><br />
+            <a href="mailto:info@sigalix.com">info@sigalix.com</a><br />
+            <a href="tel:+237679690703">+237 679 690 703</a>
+          </p>
+        </div>
+        <div class="footer-col">
+          <h3>Product</h3>
+          <a href="/features/">Features</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/download/">Download</a>
+          <a href="/features/offline-pos/">Offline POS</a>
+          <a href="/features/kitchen-display-system/">Kitchen Display System</a>
+          <a href="/features/inventory-management/">Inventory</a>
+          <a href="/features/restaurant-accounting/">Accounting</a>
+        </div>
+        <div class="footer-col">
+          <h3>Solutions</h3>
+          <a href="/restaurant-pos/">Restaurant POS</a>
+          <a href="/bar-pos/">Bar POS</a>
+          <a href="/lounge-pos/">Lounge POS</a>
+          <a href="/nightclub-pos/">Nightclub POS</a>
+          <a href="/hotel-pos/">Hotel POS</a>
+          <a href="/cafe-pos/">Café &amp; Fast Food POS</a>
+          <a href="/retail-pos/">Retail &amp; Shop POS</a>
+        </div>
+        <div class="footer-col">
+          <h3>Countries</h3>
+          <a href="/cameroon/">Cameroon</a>
+          <a href="/nigeria/">Nigeria</a>
+          <a href="/ghana/">Ghana</a>
+          <a href="/south-africa/">South Africa</a>
+          <a href="/africa/">Africa</a>
+          <a href="/fr/cameroun/">Cameroun (FR)</a>
+          <a href="/fr/cote-divoire/">Côte d'Ivoire (FR)</a>
+          <a href="/fr/senegal/">Sénégal (FR)</a>
+        </div>
+        <div class="footer-col">
+          <h3>Resources</h3>
+          <a href="/blog/">Blog</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/help/">Help centre</a>
+          <a href="/about/">About</a>
+          <a href="/contact/">Contact</a>
+          <a href="/privacy.html">Privacy Policy</a>
+          <a href="/terms.html">Terms of Service</a>
+          <a href="/accessibility.html">Accessibility</a>
+          <a href="/legal.html">Legal</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 LoungeOS. All rights reserved.</p>
+        <a href="https://app.loungeos.app/login" class="btn btn-outline-light btn-sm" id="footerCtaBtn">Start free trial <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg></a>
+      </div>
+    </footer>
+    <div id="google_translate_element" style="display: none"></div>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: "en", autoDisplay: false },
+          "google_translate_element",
+        );
+      }
+    </script>
+    <script defer type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script defer src="/app.js?v=a7444e90c8"></script>
+  </body>
+</html>

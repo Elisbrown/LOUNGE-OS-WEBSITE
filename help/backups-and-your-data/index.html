@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Backups, Restoring Data and Replacing a Till Computer</title>
+    <meta name="description" content="How LoungeOS protects your data: the online copy, daily cloud backups, downloading a backup, restoring one, and moving to a new till computer." />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <link rel="canonical" href="https://loungeos.app/help/backups-and-your-data/" />
+    <link rel="alternate" hreflang="en" href="https://loungeos.app/help/backups-and-your-data/" />
+    <link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/aide/sauvegardes-et-donnees/" />
+    <link rel="alternate" hreflang="x-default" href="https://loungeos.app/help/backups-and-your-data/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="LoungeOS" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="Backups, Restoring Data and Replacing a Till Computer" />
+    <meta property="og:description" content="How LoungeOS protects your data: the online copy, daily cloud backups, downloading a backup, restoring one, and moving to a new till computer." />
+    <meta property="og:image" content="https://loungeos.app/images/og/help-backups-and-your-data.webp" />
+    <meta property="og:image:secure_url" content="https://loungeos.app/images/og/help-backups-and-your-data.webp" />
+    <meta property="og:image:type" content="image/webp" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Backups, Restoring Data and Replacing a Till Computer" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Backups, Restoring Data and Replacing a Till Computer" />
+    <meta name="twitter:description" content="How LoungeOS protects your data: the online copy, daily cloud backups, downloading a backup, restoring one, and moving to a new till computer." />
+    <meta name="twitter:image" content="https://loungeos.app/images/og/help-backups-and-your-data.webp" />
+    <meta name="twitter:image:alt" content="Backups, Restoring Data and Replacing a Till Computer" />
+    <link rel="image_src" href="https://loungeos.app/images/og/help-backups-and-your-data.webp" />
+    <meta property="og:url" content="https://loungeos.app/help/backups-and-your-data/" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/style.css?v=c1bda027e5" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="alternate" type="application/rss+xml" title="LoungeOS Blog" href="https://loungeos.app/blog/feed.xml" />
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://loungeos.app/#organization",
+      "name": "LoungeOS",
+      "url": "https://loungeos.app/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://loungeos.app/images/logo/loungeos-icon-512.png",
+        "width": 512,
+        "height": 512
+      },
+      "image": "https://loungeos.app/images/og-loungeos.jpg",
+      "description": "LoungeOS makes point of sale (POS) and business management software for every kind of business that sells: restaurants, bars, lounges, cafés, nightclubs, hotels, retail shops, supermarkets and more. LoungeOS is made by Sigalix.",
+      "email": "info@sigalix.com",
+      "telephone": "+237679690703",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CM"
+      },
+      "areaServed": [
+        "CM",
+        "Africa",
+        "Worldwide"
+      ],
+      "knowsLanguage": [
+        "en",
+        "fr"
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "email": "support@loungeos.app",
+          "telephone": "+237679690703",
+          "availableLanguage": [
+            "English",
+            "French"
+          ]
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "email": "info@sigalix.com",
+          "telephone": "+237689699688",
+          "availableLanguage": [
+            "English",
+            "French"
+          ]
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "billing support",
+          "email": "billing@sigalix.com"
+        }
+      ],
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "Sigalix",
+        "url": "https://sigalix.com",
+        "email": "info@sigalix.com"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://loungeos.app/#website",
+      "url": "https://loungeos.app/",
+      "name": "LoungeOS",
+      "publisher": {
+        "@id": "https://loungeos.app/#organization"
+      },
+      "inLanguage": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://loungeos.app/help/backups-and-your-data/#webpage",
+      "url": "https://loungeos.app/help/backups-and-your-data/",
+      "name": "Backups, Restoring Data and Replacing a Till Computer",
+      "description": "How LoungeOS protects your data: the online copy, daily cloud backups, downloading a backup, restoring one, and moving to a new till computer.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://loungeos.app/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://loungeos.app/help/backups-and-your-data/#breadcrumb"
+      },
+      "dateModified": "2026-11-12",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://loungeos.app/images/screens/loungeos-help-backup.webp"
+      }
+    },
+    {
+      "@type": "TechArticle",
+      "@id": "https://loungeos.app/help/backups-and-your-data/#article",
+      "headline": "Backups and your data",
+      "description": "How LoungeOS protects your data: the online copy, daily cloud backups, downloading a backup, restoring one, and moving to a new till computer.",
+      "inLanguage": "en",
+      "dateModified": "2026-11-12",
+      "datePublished": "2026-11-12",
+      "author": {
+        "@id": "https://loungeos.app/#organization"
+      },
+      "publisher": {
+        "@id": "https://loungeos.app/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://loungeos.app/help/backups-and-your-data/#webpage"
+      },
+      "image": "https://loungeos.app/images/screens/loungeos-help-backup.webp",
+      "about": {
+        "@id": "https://loungeos.app/#software"
+      },
+      "proficiencyLevel": "Beginner"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://loungeos.app/help/backups-and-your-data/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://loungeos.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Backups and your data",
+          "item": "https://loungeos.app/help/backups-and-your-data/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://loungeos.app/help/backups-and-your-data/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is my data deleted if I stop paying?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>No. LoungeOS becomes read-only and keeps everything. Pay again and you continue where you stopped.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I get all my data out?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Yes: the backup file, plus PDF, Excel and CSV exports of sales, orders, stock and accounts.<\/p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+    </script>
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+      (function (c, l, a, r, i, t, y) {
+        c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
+        t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", "x9n1mwb8c5");
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TNP53ZZW7K"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag("js", new Date());
+      gtag("config", "G-TNP53ZZW7K");
+    </script>
+    <!-- Usercentrics CMP -->
+    <script id="usercentrics-cmp" src="https://app.usercentrics.eu/browser-ui/latest/loader.js" data-settings-id="SSwfY4ZtHuL22V" async></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <nav class="navbar" id="navbar" aria-label="Main Navigation">
+      <div class="nav-content">
+        <div class="nav-left">
+          <a href="/" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 0.75rem;">
+            <img src="/images/logo/loungeos-logo.svg" alt="LoungeOS" width="148" height="26" class="nav-logo" />
+            <span class="nav-badge">POS &amp; Business</span>
+          </a>
+        </div>
+
+        <div class="nav-links" id="navLinks">
+          <a href="/">Home</a>
+          <a href="/features/">Features</a>
+          <div class="nav-dropdown">
+            <button type="button" class="nav-dropdown-toggle" aria-haspopup="true">Solutions <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+            <div class="nav-dropdown-menu">
+              <a href="/restaurant-pos/">Restaurants</a>
+              <a href="/bar-pos/">Bars</a>
+              <a href="/lounge-pos/">Lounges</a>
+              <a href="/nightclub-pos/">Nightclubs</a>
+              <a href="/hotel-pos/">Hotels</a>
+              <a href="/cafe-pos/">Cafés &amp; Fast Food</a>
+              <a href="/retail-pos/">Shops &amp; Mini-Markets</a>
+              <a href="/cameroon/">Cameroon</a>
+              <a href="/africa/">Africa</a>
+            </div>
+          </div>
+          <a href="/pricing/">Pricing</a>
+          <a href="/download/">Download</a>
+          <div class="nav-dropdown">
+            <button type="button" class="nav-dropdown-toggle" aria-haspopup="true">Resources <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+            <div class="nav-dropdown-menu">
+              <a href="/blog/">Blog</a>
+              <a href="/faq/">FAQ</a>
+              <a href="/help/">Help centre</a>
+              <a href="/about/">About</a>
+              <a href="/contact/">Contact</a>
+              <a href="/fr/">Français</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-cta" style="display: flex; align-items: center; gap: 1rem">
+          <div class="lang-selector">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 16px; height: 16px" aria-hidden="true"><circle cx="12" cy="12" r="10" /><line x1="2" y1="12" x2="22" y2="12" /><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" /></svg>
+            <select id="customLangSelect" aria-label="Select Language" onchange="changeLanguage(this.value)">
+              <option value="en" selected>English</option>
+              <option value="fr">Français</option>
+              <option value="es">Español</option>
+              <option value="de">Deutsch</option>
+              <option value="zh-CN">中文</option>
+              <option value="ar">العربية</option>
+              <option value="hi">हिन्दी</option>
+              <option value="pt">Português</option>
+              <option value="ru">Русский</option>
+              <option value="ja">日本語</option>
+            </select>
+          </div>
+          <a href="https://app.loungeos.app/login" class="btn btn-primary btn-sm" id="navCtaBtn">Start free trial</a>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+    <main id="main-content">
+      <header class="page-hero">
+        <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">›</span> <span aria-current="page">Backups and your data</span></nav>
+        
+        <h1>Backups and your data</h1>
+        <p class="lead">Your business lives in two places, on the till and online, and the online copy is backed up every day. Losing a computer does not lose your sales.</p>
+        <div class="article-meta"><span>For LoungeOS 2.1.4</span><span>Updated <time datetime="2026-11-12" data-auto="modified">November 12, 2026</time></span><span>3 min read</span></div>
+        
+        
+      </header>
+      <article class="content-section">
+        <div class="prose">
+<details class="toc" open><summary>On this page</summary><ul>
+<li><a href="#what-protects-your-data">What protects your data</a></li>
+<li><a href="#download-a-backup">Download a backup</a></li>
+<li><a href="#restore-a-backup">Restore a backup</a></li>
+<li><a href="#replace-a-till-computer">Replace a till computer</a></li>
+<li><a href="#uninstalling">Uninstalling</a></li>
+<li><a href="#frequently-asked-questions">Frequently asked questions</a></li>
+</ul></details>
+<h2 id="what-protects-your-data">What protects your data</h2>
+<ol>
+<li><strong>The online copy.</strong> Every till syncs to your business online every few seconds when it has internet.</li>
+<li><strong>Daily cloud backups</strong> of the online data, kept off the server.</li>
+<li><strong>Backups you download</strong> yourself, whenever you want one in your hands.</li>
+</ol>
+<p>Each business is fully separate from every other business: nobody else can see your data.</p>
+<h2 id="download-a-backup">Download a backup</h2>
+<ol>
+<li>Open <strong>Business settings</strong>, then the <strong>Backup &amp; Restore</strong> tab (owner and managers only).</li>
+<li>Under <strong>Manual Backup</strong>, press <strong>Download Backup Now</strong>. Keep the file somewhere safe, such as a USB key or your email.</li>
+</ol>
+<p><strong>Automatic Backups</strong> makes the till save backups on its own (daily by default); <strong>Backup History</strong> keeps the last 5.</p>
+<figure><img alt="LoungeOS Backup &amp; Restore with system status, manual backup, restore and automatic backups" decoding="async" height="900" loading="lazy" sizes="(max-width: 800px) 100vw, 960px" src="/images/screens/loungeos-help-backup.webp" srcset="/images/screens/loungeos-help-backup-800.webp 800w, /images/screens/loungeos-help-backup.webp 1440w" width="1440"/><figcaption>Restore replaces everything on this till: download a fresh backup first.</figcaption></figure>
+<h2 id="restore-a-backup">Restore a backup</h2>
+<p>Under <strong>Restore from Backup</strong>, press <strong>Upload &amp; Restore</strong> and choose the file. Restoring overwrites the data on this till with the backup’s, so only do it when you mean to go back in time, and download a fresh backup first.</p>
+<h2 id="replace-a-till-computer">Replace a till computer</h2>
+<p>You don’t need a backup file when the till was syncing:</p>
+<ol>
+<li><a href="/help/install-loungeos/">Install LoungeOS</a> on the new computer.</li>
+<li>Sign it in to your account. It finds your business online and brings everything down.</li>
+<li>Choose your till PIN. Done.</li>
+</ol>
+<p>In your account at account.loungeos.app, <strong>Devices</strong>, sign out the old computer so it no longer counts against your device limit.</p>
+<h2 id="uninstalling">Uninstalling</h2>
+<p>When you uninstall the Windows app, it asks whether to keep the data on the computer. Your online copy is not affected either way.</p>
+<h2 id="frequently-asked-questions">Frequently asked questions</h2>
+<h3 id="is-my-data-deleted-if-i-stop-paying">Is my data deleted if I stop paying?</h3>
+<p>No. LoungeOS becomes read-only and keeps everything. Pay again and you continue where you stopped.</p>
+<h3 id="can-i-get-all-my-data-out">Can I get all my data out?</h3>
+<p>Yes: the backup file, plus PDF, Excel and CSV exports of sales, orders, stock and accounts.</p>
+<p class="help-steps-note">Stuck on a step? Write to support@loungeos.app or WhatsApp +237 679 690 703 and say which page you are on.</p>
+<p><a href="/help/">← All help articles</a></p>
+        </div>
+      </article>
+      <section class="related-section">
+        <h2 class="section-title">Keep reading</h2>
+        <div class="card-grid">
+<a class="post-card" href="/help/offline-and-sync/">
+  <img src="/images/screens/loungeos-help-pos-cart-800.webp" width="800" height="430" alt="Selling offline and sync" loading="lazy" decoding="async" />
+  <div class="post-card-body">
+    <span class="tag"></span>
+    <h3>Selling offline and sync</h3>
+    <p>What works offline, the sync status, Sync now, the 7-day limit.</p>
+    <span class="read-more">Learn more →</span>
+  </div>
+</a>
+<a class="post-card" href="/help/install-loungeos/">
+  <img src="/images/screens/loungeos-help-till-setup-800.webp" width="800" height="430" alt="Install LoungeOS on Windows, Mac and Android" loading="lazy" decoding="async" />
+  <div class="post-card-body">
+    <span class="tag"></span>
+    <h3>Install LoungeOS on Windows, Mac and Android</h3>
+    <p>Install the till app, sign it in with a code, choose your PIN, add the phone app.</p>
+    <span class="read-more">Learn more →</span>
+  </div>
+</a>
+<a class="post-card" href="/help/troubleshooting/">
+  <img src="/images/screens/loungeos-help-knowledge-base-800.webp" width="800" height="430" alt="Troubleshooting" loading="lazy" decoding="async" />
+  <div class="post-card-body">
+    <span class="tag"></span>
+    <h3>Troubleshooting</h3>
+    <p>Printing, PINs, sync, install warnings, kitchen routing, and how to reach support.</p>
+    <span class="read-more">Learn more →</span>
+  </div>
+</a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-grid footer-grid-wide">
+        <div class="footer-brand">
+          <img src="/images/logo/loungeos-logo-white.svg" alt="LoungeOS" width="159" height="28" class="footer-logo" />
+          <p>Point of sale and business management for every business that sells. Made by <a href="https://sigalix.com">Sigalix</a>, built in Cameroon, used across Africa and beyond.</p>
+          <div class="footer-worldwide">
+            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Web, Windows, Mac &amp; Android</span>
+            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> English &amp; French</span>
+            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Sells offline on desktop</span>
+          </div>
+          <p class="footer-contact">
+            <a href="mailto:support@loungeos.app">support@loungeos.app</a><br />
+            <a href="mailto:info@sigalix.com">info@sigalix.com</a><br />
+            <a href="tel:+237679690703">+237 679 690 703</a>
+          </p>
+        </div>
+        <div class="footer-col">
+          <h3>Product</h3>
+          <a href="/features/">Features</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/download/">Download</a>
+          <a href="/features/offline-pos/">Offline POS</a>
+          <a href="/features/kitchen-display-system/">Kitchen Display System</a>
+          <a href="/features/inventory-management/">Inventory</a>
+          <a href="/features/restaurant-accounting/">Accounting</a>
+        </div>
+        <div class="footer-col">
+          <h3>Solutions</h3>
+          <a href="/restaurant-pos/">Restaurant POS</a>
+          <a href="/bar-pos/">Bar POS</a>
+          <a href="/lounge-pos/">Lounge POS</a>
+          <a href="/nightclub-pos/">Nightclub POS</a>
+          <a href="/hotel-pos/">Hotel POS</a>
+          <a href="/cafe-pos/">Café &amp; Fast Food POS</a>
+          <a href="/retail-pos/">Retail &amp; Shop POS</a>
+        </div>
+        <div class="footer-col">
+          <h3>Countries</h3>
+          <a href="/cameroon/">Cameroon</a>
+          <a href="/nigeria/">Nigeria</a>
+          <a href="/ghana/">Ghana</a>
+          <a href="/south-africa/">South Africa</a>
+          <a href="/africa/">Africa</a>
+          <a href="/fr/cameroun/">Cameroun (FR)</a>
+          <a href="/fr/cote-divoire/">Côte d'Ivoire (FR)</a>
+          <a href="/fr/senegal/">Sénégal (FR)</a>
+        </div>
+        <div class="footer-col">
+          <h3>Resources</h3>
+          <a href="/blog/">Blog</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/help/">Help centre</a>
+          <a href="/about/">About</a>
+          <a href="/contact/">Contact</a>
+          <a href="/privacy.html">Privacy Policy</a>
+          <a href="/terms.html">Terms of Service</a>
+          <a href="/accessibility.html">Accessibility</a>
+          <a href="/legal.html">Legal</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 LoungeOS. All rights reserved.</p>
+        <a href="https://app.loungeos.app/login" class="btn btn-outline-light btn-sm" id="footerCtaBtn">Start free trial <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg></a>
+      </div>
+    </footer>
+    <div id="google_translate_element" style="display: none"></div>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: "en", autoDisplay: false },
+          "google_translate_element",
+        );
+      }
+    </script>
+    <script defer type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script defer src="/app.js?v=a7444e90c8"></script>
+  </body>
+</html>

@@ -2,11 +2,11 @@
 url: /fr/telecharger/
 type: core
 lang: fr
-title: "Télécharger LoungeOS 2.0 pour Windows, Mac et Android"
-description: "Téléchargez LoungeOS 2.0 pour Windows 10 et 11, Mac (Apple Silicon et Intel) et Android, ou utilisez l'application web. Installation, connexion et hors ligne."
+title: "Télécharger LoungeOS 2.1 pour Windows, Mac et Android"
+description: "Téléchargez LoungeOS 2.1 pour Windows 10 et 11, Mac (Apple Silicon et Intel) et Android, ou utilisez l'application web. Installation, connexion et hors ligne."
 h1: "Télécharger LoungeOS pour Windows, Mac et Android"
-label: "Téléchargement · Version 2.0"
-lead: "Installez LoungeOS 2.0 sur Windows, Mac ou Android, ou ouvrez l'application web dans un navigateur récent. Connectez-vous avec votre compte LoungeOS : l'assistant de configuration prépare votre établissement dès le premier jour."
+label: "Téléchargement · Version 2.1.4"
+lead: "Installez LoungeOS 2.1 sur Windows, Mac ou Android, ou ouvrez l'application web dans un navigateur récent. Connectez-vous avec votre compte LoungeOS : l'assistant de configuration prépare votre établissement dès le premier jour."
 image: loungeos-pos-order-screen
 image_alt: "Écran de commande de la caisse LoungeOS"
 card_title: "Télécharger LoungeOS"
@@ -39,7 +39,7 @@ related:
   </div>
   <div class="download-card" data-os="android" id="android">
     <h3>Android</h3>
-    <p>Android 6.0 ou plus récent · Application (.apk)</p>
+    <p>Android 7.0 ou plus récent · Application (.apk)</p>
     <a href="https://github.com/Elisbrown/lounge-os-website/releases/latest/download/LoungeOS-Android.apk" class="btn btn-primary">Télécharger pour Android</a>
   </div>
   <div class="download-card" data-os="web" id="web">
@@ -49,7 +49,7 @@ related:
   </div>
 </div>
 
-Toutes les applications sont en version LoungeOS 2.0 et utilisent le même compte LoungeOS. Vous découvrez LoungeOS ? [Créez votre compte](https://app.loungeos.app) et profitez d'un essai gratuit de 14 jours avec les fonctionnalités Business, sans rien payer à l'avance.
+Toutes les applications sont en version LoungeOS 2.1.4 et utilisent le même compte LoungeOS. Vous découvrez LoungeOS ? [Créez votre compte](https://app.loungeos.app) et profitez d'un essai gratuit de 14 jours avec les fonctionnalités Business, sans rien payer à l'avance.
 
 Le téléchargement ne démarre pas ? Utilisez tout de suite l'[application web](https://app.loungeos.app) ou [contactez-nous](/contact/).
 
@@ -57,10 +57,9 @@ Le téléchargement ne démarre pas ? Utilisez tout de suite l'[application web]
 
 | | Application Windows | Application Mac | Application Android | Application web |
 |---|---|---|---|---|
-| Système | Windows 10 ou 11, 64 bits | Mac Apple Silicon (M1 et plus récent) ou Intel | Android 6.0 ou plus récent | Tout navigateur web récent |
+| Système | Windows 10 ou 11, 64 bits | Mac Apple Silicon (M1 et plus récent) ou Intel | Android 7.0 ou plus récent | Tout navigateur web récent |
 | Fichier | LoungeOS-Setup.exe | LoungeOS-Mac-arm64.dmg (Apple Silicon) ou LoungeOS-Mac-x64.dmg (Intel) | LoungeOS-Android.apk | Rien à installer |
 | Internet | Facultatif : continue de vendre hors ligne et se synchronise au retour de la connexion | Facultatif : continue de vendre hors ligne et se synchronise au retour de la connexion | Obligatoire | Obligatoire |
-| Également requis | — | — | Google Chrome | — |
 
 Les tickets s'impriment sur des imprimantes thermiques 58 mm et 80 mm, ou en PDF. Astuce : un **ordinateur portable** comme poste de caisse continue de fonctionner sur batterie pendant les coupures de courant.
 
@@ -84,9 +83,10 @@ L'application Mac n'est pas encore notarisée par Apple. À la première ouvertu
 
 1. Téléchargez **LoungeOS-Android.apk** avec le bouton Android ci-dessus.
 2. Ouvrez le fichier téléchargé. Quand Android le demande, autorisez l'installation d'applications depuis votre navigateur ou votre gestionnaire de fichiers.
-3. Appuyez sur **Installer**, puis ouvrez **LoungeOS**.
+3. Appuyez sur **Installer**, puis ouvrez **LoungeOS** et connectez-vous. **Continuer avec Google** se termine dans le navigateur du téléphone et vous ramène dans l'application.
+4. Autorisez les notifications quand Android le demande : chacun reçoit les alertes de son rôle (commandes QR des tables, bons cuisine et bar, commandes prêtes, annulations, stock faible).
 
-L'application Android a besoin de Google Chrome et d'une connexion internet.
+L'application Android a besoin d'une connexion internet. **Vous aviez l'ancienne application Android ?** L'application 2.1.4 est une nouvelle application : installez-la, puis désinstallez l'ancienne. Plus de détails dans le [guide de l'application mobile](/fr/aide/application-mobile/).
 
 ### Utiliser l'application web
 
@@ -98,7 +98,7 @@ Chaque personne a un seul compte LoungeOS, qui fonctionne partout : application 
 
 1. **Créez votre compte** sur [app.loungeos.app](https://app.loungeos.app). L'inscription se trouve sur la page de connexion.
 2. **Connectez-vous** avec votre e-mail et votre mot de passe, ou cliquez sur **Continuer avec Google**.
-3. **C'est tout.** Aucune clé ni aucun code à copier. Dans les applications Windows, Mac et Android, il suffit d'ouvrir l'application et de vous connecter.
+3. **Aucune clé de licence.** L'application Android se connecte comme l'application web. Les applications Windows et Mac affichent un code court la première fois : confirmez-le sur account.loungeos.app/link et la caisse est connectée. Pas à pas : [Installer LoungeOS](/fr/aide/installer-loungeos/).
 
 Le propriétaire invite son personnel par e-mail, et chaque employé reçoit son propre rôle et ses permissions. Sur une caisse partagée, le personnel peut changer d'utilisateur avec un code PIN rapide.
 
@@ -145,7 +145,7 @@ Ouvrez le menu Pomme et choisissez **À propos de ce Mac**. Une **Puce** Apple M
 
 ### Faut-il une clé ou un code pour utiliser LoungeOS ?
 
-Non. Installez l'application, ouvrez-la et connectez-vous avec votre compte LoungeOS. Il n'y a rien à copier ni à coller.
+Pas de clé de licence. Installez l'application et connectez-vous avec votre compte LoungeOS. La première fois, une caisse Windows ou Mac affiche un code court à confirmer dans votre compte : vous seul pouvez lier une caisse à votre commerce.
 
 ### Existe-t-il une application pour iPhone ou iPad ?
 

@@ -32,7 +32,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/style.css?v=6530869673" />
+    <link rel="stylesheet" href="/style.css?v=c1bda027e5" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -125,8 +125,8 @@
       "name": "LoungeOS",
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "Point of sale (POS) and business management software",
-      "operatingSystem": "Windows 10 and 11 (64-bit), macOS (Apple Silicon and Intel), Android 6.0 or later, any modern web browser",
-      "softwareVersion": "2.0.0",
+      "operatingSystem": "Windows 10 and 11 (64-bit), macOS (Apple Silicon and Intel), Android 7.0 or later, any modern web browser",
+      "softwareVersion": "2.1.4",
       "downloadUrl": "https://loungeos.app/download/",
       "installUrl": "https://loungeos.app/download/",
       "url": "https://loungeos.app/",
@@ -142,7 +142,11 @@
         "One LoungeOS account on the web, Windows, Mac and Android, with email and password or Continue with Google",
         "Setup wizard: business type, name, logo, currency, taxes, payment methods, opening hours and suggested categories",
         "Point of sale for touch and mouse on any screen size",
-        "Tables and orders, kitchen and bar screens",
+        "Tables and floors, split, move and merge bills, kitchen and bar screens",
+        "QR code table ordering with staff approval",
+        "Customer tabs (pay later) with balances and part payments",
+        "Several branches with a copy of the menu, tables, settings and team",
+        "Android phone app with role-based notifications and a home-screen widget",
         "Custom payment methods such as cash, MTN Mobile Money, Orange Money, card and bank transfer",
         "Receipts on 58 mm and 80 mm thermal printers, or PDF, with a print button on every order",
         "Inventory with stock movements, low-stock alerts and suppliers",
@@ -411,7 +415,7 @@
       "breadcrumb": {
         "@id": "https://loungeos.app/fr/faq/#breadcrumb"
       },
-      "dateModified": "2026-11-11",
+      "dateModified": "2026-11-12",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://loungeos.app/images/screens/loungeos-pos-menu-grid.webp"
@@ -471,7 +475,7 @@
           "name": "Sur quels appareils LoungeOS fonctionne-t-il ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "<p>Dans l’application web sur <a href=\"https://app.loungeos.app\">app.loungeos.app<\/a>, avec tout navigateur récent, et dans les applications pour Windows 10 et 11 (64 bits), Mac (Apple Silicon et Intel) et Android 6.0 ou plus récent. Le même compte LoungeOS fonctionne partout. Voir la page <a href=\"https://loungeos.app/fr/telecharger/\">Télécharger<\/a>.<\/p>"
+            "text": "<p>Dans l’application web sur <a href=\"https://app.loungeos.app\">app.loungeos.app<\/a>, avec tout navigateur récent, et dans les applications pour Windows 10 et 11 (64 bits), Mac (Apple Silicon et Intel) et Android 7.0 ou plus récent. Le même compte LoungeOS fonctionne partout. Voir la page <a href=\"https://loungeos.app/fr/telecharger/\">Télécharger<\/a>.<\/p>"
           }
         },
         {
@@ -479,7 +483,7 @@
           "name": "Existe-t-il une application mobile ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "<p>Oui, pour Android 6.0 ou plus récent. L’application Android a besoin de Google Chrome et d’une connexion internet. Sur iPhone et iPad, ouvrez l’<a href=\"https://app.loungeos.app\">application web<\/a> dans le navigateur. Sur téléphone, une barre de navigation en bas de l’écran, avec un menu « Plus », garde tous les écrans à portée de main.<\/p>"
+            "text": "<p>Oui, pour Android 7.0 ou plus récent. L’application Android a besoin d’une connexion internet. Elle envoie à chacun les notifications de son rôle (commandes QR des tables, bons cuisine et bar, commandes prêtes, annulations, stock faible) et propose un widget d’accueil avec les chiffres du jour. Voir l’<a href=\"https://loungeos.app/fr/fonctionnalites/application-mobile/\">application mobile<\/a>. Sur iPhone et iPad, ouvrez l’<a href=\"https://app.loungeos.app\">application web<\/a> dans le navigateur. Sur téléphone, une barre de navigation en bas de l’écran, avec un menu « Plus », garde tous les écrans à portée de main.<\/p>"
           }
         },
         {
@@ -583,7 +587,7 @@
           "name": "Quelle est la différence entre les formules ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "<p>Starter couvre la caisse, les stocks, les reçus et les rapports journaliers pour 2 utilisateurs sur 2 appareils. Business ajoute les dépenses, la comptabilité, les services et le contrôle de caisse (bientôt disponible), les rapports hebdomadaires et mensuels et les alertes par e-mail (bientôt disponible), pour 5 utilisateurs sur 5 appareils. Pro offre des utilisateurs illimités, 10 appareils et plus, un support prioritaire et l’administration avancée. La gestion de plusieurs établissements et la paie arrivent bientôt sur Pro.<\/p>"
+            "text": "<p>Starter couvre la caisse, les tables, les écrans cuisine et bar, les stocks, les comptes clients, les reçus et les rapports journaliers pour 2 utilisateurs sur 2 appareils. Business ajoute les dépenses, la comptabilité, les rapports hebdomadaires et mensuels et la commande par QR code, pour 5 utilisateurs sur 5 appareils. Pro offre des utilisateurs illimités, 10 appareils et plus, plusieurs succursales avec une vue d’ensemble, et un support prioritaire. Les services et le contrôle de caisse, les alertes par e-mail et la paie arrivent bientôt.<\/p>"
           }
         },
         {
@@ -716,8 +720,7 @@
             <div class="nav-dropdown-menu">
               <a href="/blog/">Blog</a>
               <a href="/fr/faq/">FAQ</a>
-              <a href="/knowledgebase.html">Base de connaissances</a>
-              <a href="/documentation.html">Documentation</a>
+              <a href="/fr/aide/">Centre d'aide</a>
               <a href="/contact/">Contact</a>
               <a href="/">English</a>
             </div>
@@ -771,9 +774,9 @@
 <p>LoungeOS est conçu par <a href="https://sigalix.com">Sigalix</a>, une société de développement de logiciels sur mesure, et développé au Cameroun. L’assistance est assurée en français et en anglais.</p>
 <h2 id="appareils-et-internet">Appareils et internet</h2>
 <h3 id="sur-quels-appareils-loungeos-fonctionne-t-il">Sur quels appareils LoungeOS fonctionne-t-il ?</h3>
-<p>Dans l’application web sur <a href="https://app.loungeos.app">app.loungeos.app</a>, avec tout navigateur récent, et dans les applications pour Windows 10 et 11 (64 bits), Mac (Apple Silicon et Intel) et Android 6.0 ou plus récent. Le même compte LoungeOS fonctionne partout. Voir la page <a href="/fr/telecharger/">Télécharger</a>.</p>
+<p>Dans l’application web sur <a href="https://app.loungeos.app">app.loungeos.app</a>, avec tout navigateur récent, et dans les applications pour Windows 10 et 11 (64 bits), Mac (Apple Silicon et Intel) et Android 7.0 ou plus récent. Le même compte LoungeOS fonctionne partout. Voir la page <a href="/fr/telecharger/">Télécharger</a>.</p>
 <h3 id="existe-t-il-une-application-mobile">Existe-t-il une application mobile ?</h3>
-<p>Oui, pour Android 6.0 ou plus récent. L’application Android a besoin de Google Chrome et d’une connexion internet. Sur iPhone et iPad, ouvrez l’<a href="https://app.loungeos.app">application web</a> dans le navigateur. Sur téléphone, une barre de navigation en bas de l’écran, avec un menu « Plus », garde tous les écrans à portée de main.</p>
+<p>Oui, pour Android 7.0 ou plus récent. L’application Android a besoin d’une connexion internet. Elle envoie à chacun les notifications de son rôle (commandes QR des tables, bons cuisine et bar, commandes prêtes, annulations, stock faible) et propose un widget d’accueil avec les chiffres du jour. Voir l’<a href="/fr/fonctionnalites/application-mobile/">application mobile</a>. Sur iPhone et iPad, ouvrez l’<a href="https://app.loungeos.app">application web</a> dans le navigateur. Sur téléphone, une barre de navigation en bas de l’écran, avec un menu « Plus », garde tous les écrans à portée de main.</p>
 <h3 id="loungeos-fonctionne-t-il-sans-internet">LoungeOS fonctionne-t-il sans internet ?</h3>
 <p>Oui, avec les applications Windows et Mac. Elles gardent les données de votre établissement sur l’ordinateur, continuent de vendre sans internet et se synchronisent automatiquement au retour de la connexion. Après 7 jours sans synchronisation, la caisse passe en lecture seule jusqu’à ce qu’elle se reconnecte ; un avertissement s’affiche pendant les 2 derniers jours. En lecture seule, les commandes passées, les rapports, l’impression et les exports fonctionnent toujours, mais vous ne pouvez plus faire de nouvelles ventes ni de modifications. L’application web et l’application Android ont besoin d’internet.</p>
 <h3 id="quel-materiel-faut-il">Quel matériel faut-il ?</h3>
@@ -801,7 +804,7 @@
 <h3 id="y-a-t-il-un-essai-gratuit">Y a-t-il un essai gratuit ?</h3>
 <p>Oui. Chaque formule commence par un essai gratuit de 14 jours avec les fonctionnalités Business, sans paiement à l’avance. À la fin de l’essai, choisissez Starter, Business ou Pro pour continuer à vendre.</p>
 <h3 id="quelle-est-la-difference-entre-les-formules">Quelle est la différence entre les formules ?</h3>
-<p>Starter couvre la caisse, les stocks, les reçus et les rapports journaliers pour 2 utilisateurs sur 2 appareils. Business ajoute les dépenses, la comptabilité, les services et le contrôle de caisse (bientôt disponible), les rapports hebdomadaires et mensuels et les alertes par e-mail (bientôt disponible), pour 5 utilisateurs sur 5 appareils. Pro offre des utilisateurs illimités, 10 appareils et plus, un support prioritaire et l’administration avancée. La gestion de plusieurs établissements et la paie arrivent bientôt sur Pro.</p>
+<p>Starter couvre la caisse, les tables, les écrans cuisine et bar, les stocks, les comptes clients, les reçus et les rapports journaliers pour 2 utilisateurs sur 2 appareils. Business ajoute les dépenses, la comptabilité, les rapports hebdomadaires et mensuels et la commande par QR code, pour 5 utilisateurs sur 5 appareils. Pro offre des utilisateurs illimités, 10 appareils et plus, plusieurs succursales avec une vue d’ensemble, et un support prioritaire. Les services et le contrôle de caisse, les alertes par e-mail et la paie arrivent bientôt.</p>
 <h3 id="comment-payer">Comment payer ?</h3>
 <p>Sur <a href="https://account.loungeos.app">account.loungeos.app</a>, par Mobile Money (MTN, Orange), carte ou PayPal. Le montant est prélevé en FCFA ; les prix en dollars US sont les mêmes montants convertis. Les factures et les reçus vous sont envoyés par e-mail. Pour toute question de facturation : <a href="mailto:billing@sigalix.com">billing@sigalix.com</a>.</p>
 <h3 id="loungeos-prend-il-une-commission-sur-les-ventes">LoungeOS prend-il une commission sur les ventes ?</h3>
@@ -847,7 +850,7 @@
 <a class="post-card" href="/fr/telecharger/">
   <img src="/images/screens/loungeos-kitchen-display-system-800.webp" width="800" height="430" alt="Télécharger LoungeOS" loading="lazy" decoding="async" />
   <div class="post-card-body">
-    <span class="tag">Téléchargement · Version 2.0</span>
+    <span class="tag">Téléchargement · Version 2.1.4</span>
     <h3>Télécharger LoungeOS</h3>
     <p>Applications Windows, Mac et Android, application web, configuration requise, installation et connexion.</p>
     <span class="read-more">En savoir plus →</span>
@@ -907,8 +910,7 @@
         <div class="footer-col">
           <h3>Ressources</h3>
           <a href="/blog/">Blog</a>
-          <a href="/knowledgebase.html">Base de connaissances</a>
-          <a href="/documentation.html">Documentation</a>
+          <a href="/fr/aide/">Centre d'aide</a>
           <a href="/about/">À propos</a>
           <a href="/contact/">Contact</a>
           <a href="/privacy.html">Confidentialité</a>

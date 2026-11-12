@@ -19,6 +19,7 @@ const SKIP_DIRS = new Set(['.git', '.github', '.agents', '.claude', 'seo', 'scri
 
 // Pages without a hero screenshot get one of these (by slug, else by default)
 const FALLBACK_IMAGE = {
+  help: 'loungeos-help-pos-cart', 'fr-aide': 'loungeos-help-fr-pos-cart',
   home: 'loungeos-pos-order-screen', fr: 'loungeos-tableau-de-bord-francais', blog: 'loungeos-kitchen-display-system',
   privacy: 'loungeos-activity-log-audit-trail', terms: 'loungeos-staff-management', legal: 'loungeos-receipt-configuration',
   accessibility: 'loungeos-currency-settings', documentation: 'loungeos-kitchen-display-system',
@@ -49,6 +50,7 @@ function walk(dir, out = []) {
 
 function pageData(file) {
   const src = fs.readFileSync(file, 'utf8');
+  if (/http-equiv="refresh"/i.test(src)) return null; // redirect stubs share their target's canonical
   const m = (re) => { const r = src.match(re); return r ? decode(r[1].replace(/<[^>]+>/g, '')) : ''; };
   const rel = path.relative(ROOT, file).replace(/\\/g, '/');
   const canonical = m(/<link\s+rel="canonical"\s+href="([^"]+)"/) || '/' + rel.replace(/index\.html$/, '');
@@ -59,7 +61,7 @@ function pageData(file) {
   const img = ((hero + article).match(/\/images\/screens\/(loungeos-[a-z-]+?)(?:-800)?\.webp/) || [])[1]
     || FALLBACK_IMAGE[slug] || FALLBACK_IMAGE.default;
   let title = m(/<h1[^>]*>([\s\S]*?)<\/h1>/) || m(/<meta\s+property="og:title"\s+content="([^"]*)"/) || m(/<title>([^<]*)/);
-  const label = LABEL[slug] || m(/<header class="page-hero">[\s\S]*?<p class="section-label">([\s\S]*?)<\/p>/) || 'LoungeOS';
+  const label = LABEL[slug] || (/^help(-|$)/.test(slug) ? 'Help centre' : /^fr-aide(-|$)/.test(slug) ? "Centre d'aide" : '') || m(/<header class="page-hero">[\s\S]*?<p class="section-label">([\s\S]*?)<\/p>/) || 'LoungeOS';
   const isBlog = /^(fr-)?blog-/.test(slug);
   return { file: rel, slug, lang, img, title, label: isBlog && !/blog/i.test(label) ? (lang === 'fr' ? 'Blog · ' : 'Blog · ') + label : label };
 }
@@ -102,7 +104,7 @@ h1{margin-top:26px;color:#fff;font-weight:800;font-size:${size}px;line-height:1.
 (async () => {
   const only = process.argv.slice(2);
   fs.mkdirSync(OUT, { recursive: true });
-  let pages = walk(ROOT).map(pageData);
+  let pages = walk(ROOT).map(pageData).filter(Boolean);
   if (only.length) pages = pages.filter((p) => only.some((u) => slugFor(u) === p.slug));
   const exe = process.env.CHROMIUM_PATH || (fs.existsSync('/opt/pw-browsers/chromium-1194/chrome-linux/chrome') ? '/opt/pw-browsers/chromium-1194/chrome-linux/chrome' : undefined);
   const browser = await chromium.launch(exe ? { executablePath: exe } : {});

@@ -38,11 +38,11 @@ LoungeOS est conçu par [Sigalix](https://sigalix.com), une société de dévelo
 
 ### Sur quels appareils LoungeOS fonctionne-t-il ?
 
-Dans l'application web sur [app.loungeos.app](https://app.loungeos.app), avec tout navigateur récent, et dans les applications pour Windows 10 et 11 (64 bits), Mac (Apple Silicon et Intel) et Android 6.0 ou plus récent. Le même compte LoungeOS fonctionne partout. Voir la page [Télécharger](/fr/telecharger/).
+Dans l'application web sur [app.loungeos.app](https://app.loungeos.app), avec tout navigateur récent, et dans les applications pour Windows 10 et 11 (64 bits), Mac (Apple Silicon et Intel) et Android 7.0 ou plus récent. Le même compte LoungeOS fonctionne partout. Voir la page [Télécharger](/fr/telecharger/).
 
 ### Existe-t-il une application mobile ?
 
-Oui, pour Android 6.0 ou plus récent. L'application Android a besoin de Google Chrome et d'une connexion internet. Sur iPhone et iPad, ouvrez l'[application web](https://app.loungeos.app) dans le navigateur. Sur téléphone, une barre de navigation en bas de l'écran, avec un menu « Plus », garde tous les écrans à portée de main.
+Oui, pour Android 7.0 ou plus récent. L'application Android a besoin d'une connexion internet. Elle envoie à chacun les notifications de son rôle (commandes QR des tables, bons cuisine et bar, commandes prêtes, annulations, stock faible) et propose un widget d'accueil avec les chiffres du jour. Voir l'[application mobile](/fr/fonctionnalites/application-mobile/). Sur iPhone et iPad, ouvrez l'[application web](https://app.loungeos.app) dans le navigateur. Sur téléphone, une barre de navigation en bas de l'écran, avec un menu « Plus », garde tous les écrans à portée de main.
 
 ### LoungeOS fonctionne-t-il sans internet ?
 
@@ -98,7 +98,7 @@ Oui. Chaque formule commence par un essai gratuit de 14 jours avec les fonctionn
 
 ### Quelle est la différence entre les formules ?
 
-Starter couvre la caisse, les stocks, les reçus et les rapports journaliers pour 2 utilisateurs sur 2 appareils. Business ajoute les dépenses, la comptabilité, les services et le contrôle de caisse (bientôt disponible), les rapports hebdomadaires et mensuels et les alertes par e-mail (bientôt disponible), pour 5 utilisateurs sur 5 appareils. Pro offre des utilisateurs illimités, 10 appareils et plus, un support prioritaire et l'administration avancée. La gestion de plusieurs établissements et la paie arrivent bientôt sur Pro.
+Starter couvre la caisse, les tables, les écrans cuisine et bar, les stocks, les comptes clients, les reçus et les rapports journaliers pour 2 utilisateurs sur 2 appareils. Business ajoute les dépenses, la comptabilité, les rapports hebdomadaires et mensuels et la commande par QR code, pour 5 utilisateurs sur 5 appareils. Pro offre des utilisateurs illimités, 10 appareils et plus, plusieurs succursales avec une vue d'ensemble, et un support prioritaire. Les services et le contrôle de caisse, les alertes par e-mail et la paie arrivent bientôt.
 
 ### Comment payer ?
 

@@ -44,15 +44,19 @@ The Windows and Mac apps also keep the business's data on the computer, keep sel
 | Price per year (2 months free) | US$100 / 60,000 FCFA | US$250 / 150,000 FCFA | US$500 / 300,000 FCFA |
 | Users | 2 | 5 | Unlimited |
 | Devices | 2 | 5 | 10+ |
-| Point of sale, inventory and receipts | ✓ | ✓ | ✓ |
+| Point of sale, tables, kitchen and bar screens, receipts | ✓ | ✓ | ✓ |
+| Inventory and suppliers | ✓ | ✓ | ✓ |
+| [Customer tabs (pay later)](/features/customer-tabs/) | ✓ | ✓ | ✓ |
+| [Android phone app](/features/mobile-app/) with notifications | ✓ | ✓ | ✓ |
 | Daily reports | ✓ | ✓ | ✓ |
 | [Expenses and accounting](/features/restaurant-accounting/) | | ✓ | ✓ |
-| Shifts and cash control (coming soon) | | ✓ | ✓ |
 | Weekly and monthly reports | | ✓ | ✓ |
-| Email alerts (coming soon) | | ✓ | ✓ |
+| [QR code table ordering](/features/qr-code-ordering/) | | ✓ | ✓ |
+| [Several branches](/features/multi-branch/) | | | ✓ |
+| All-branches sales overview | | | ✓ |
 | Priority support | | | ✓ |
-| Advanced admin | | | ✓ |
-| Several branches | | | Coming soon |
+| Shifts and cash control | | Coming soon | Coming soon |
+| Email alerts | | Coming soon | Coming soon |
 | Payroll | | | Coming soon |
 
 Business is the most popular plan. The free trial gives you Business features for 14 days, so you can see which plan you need before you pay.
@@ -85,7 +89,7 @@ In the US, restaurant plans from the big cloud POS brands usually start around *
 
 ## Several branches or custom needs
 
-Support for several branches is coming soon on the Pro plan. LoungeOS is made by [Sigalix](https://sigalix.com), a custom software company. If you need something beyond the Pro plan, write to [info@sigalix.com](mailto:info@sigalix.com) or [contact us](/contact/).
+Several branches come with the Pro plan: open a branch with a copy of your menu, tables, settings and team, and see every branch's sales on one page. See [multi-branch](/features/multi-branch/). LoungeOS is made by [Sigalix](https://sigalix.com), a custom software company. If you need something beyond the Pro plan, write to [info@sigalix.com](mailto:info@sigalix.com) or [contact us](/contact/).
 
 ## Frequently asked questions
 
@@ -95,7 +99,7 @@ Yes. Every plan starts with a 14-day free trial with Business features, and ther
 
 ### Which plan should I choose?
 
-Starter fits 2 users on 2 devices who need the point of sale, inventory, receipts and daily reports. Business adds expenses, accounting, shifts and cash control (coming soon), weekly and monthly reports and email alerts (coming soon) for 5 users on 5 devices. Pro is for larger teams: unlimited users, 10 or more devices, priority support and advanced admin.
+Starter fits 2 users on 2 devices who need the point of sale, tables, kitchen and bar screens, inventory, customer tabs, receipts and daily reports. Business adds expenses, accounting, weekly and monthly reports and QR code table ordering for 5 users on 5 devices. Pro is for larger teams and groups: unlimited users, 10 or more devices, several branches with an all-branches overview, and priority support.
 
 ### Why do I see prices in FCFA or in US$?
 

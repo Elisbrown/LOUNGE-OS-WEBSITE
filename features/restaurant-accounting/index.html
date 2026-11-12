@@ -29,7 +29,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/style.css?v=6530869673" />
+    <link rel="stylesheet" href="/style.css?v=c1bda027e5" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -122,8 +122,8 @@
       "name": "LoungeOS",
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "Point of sale (POS) and business management software",
-      "operatingSystem": "Windows 10 and 11 (64-bit), macOS (Apple Silicon and Intel), Android 6.0 or later, any modern web browser",
-      "softwareVersion": "2.0.0",
+      "operatingSystem": "Windows 10 and 11 (64-bit), macOS (Apple Silicon and Intel), Android 7.0 or later, any modern web browser",
+      "softwareVersion": "2.1.4",
       "downloadUrl": "https://loungeos.app/download/",
       "installUrl": "https://loungeos.app/download/",
       "url": "https://loungeos.app/",
@@ -139,7 +139,11 @@
         "One LoungeOS account on the web, Windows, Mac and Android, with email and password or Continue with Google",
         "Setup wizard: business type, name, logo, currency, taxes, payment methods, opening hours and suggested categories",
         "Point of sale for touch and mouse on any screen size",
-        "Tables and orders, kitchen and bar screens",
+        "Tables and floors, split, move and merge bills, kitchen and bar screens",
+        "QR code table ordering with staff approval",
+        "Customer tabs (pay later) with balances and part payments",
+        "Several branches with a copy of the menu, tables, settings and team",
+        "Android phone app with role-based notifications and a home-screen widget",
         "Custom payment methods such as cash, MTN Mobile Money, Orange Money, card and bank transfer",
         "Receipts on 58 mm and 80 mm thermal printers, or PDF, with a print button on every order",
         "Inventory with stock movements, low-stock alerts and suppliers",
@@ -408,7 +412,7 @@
       "breadcrumb": {
         "@id": "https://loungeos.app/features/restaurant-accounting/#breadcrumb"
       },
-      "dateModified": "2026-11-11",
+      "dateModified": "2026-11-12",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://loungeos.app/images/screens/loungeos-accounting-dashboard.webp"
@@ -450,7 +454,7 @@
           "name": "Why are my financial statements empty after a busy day?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "<p>Sales are posted to the ledger when you click <strong>Sync Accounting Data<\/strong>, not one by one during service. Sync the date range and the statements update.<\/p>"
+            "text": "<p>Each paid sale posts its own entry, so the statements follow the day. If a till sold offline, press <strong>Sync from the till<\/strong> in <strong>Journals<\/strong> once it is back online to post those sales, and <strong>Bring the accounts up to date<\/strong> in Financial Reports refreshes the statements.<\/p>"
           }
         },
         {
@@ -544,8 +548,7 @@
             <div class="nav-dropdown-menu">
               <a href="/blog/">Blog</a>
               <a href="/faq/">FAQ</a>
-              <a href="/knowledgebase.html">Knowledge Base</a>
-              <a href="/documentation.html">Documentation</a>
+              <a href="/help/">Help centre</a>
               <a href="/about/">About</a>
               <a href="/contact/">Contact</a>
               <a href="/fr/">Français</a>
@@ -604,17 +607,15 @@
 <li><strong>Expenses with categories you create</strong>, such as rent, salaries, utilities, marketing and maintenance. Common categories are made for you when the setup wizard asks for your business type.</li>
 <li><strong>Three financial statements</strong>: income statement (P&amp;L), balance sheet and cash-flow statement, for any date range, exported to PDF or CSV</li>
 </ul>
-<h2 id="from-sale-to-statement-in-one-click">From sale to statement in one click</h2>
-<p>LoungeOS deliberately does not post every sale to the ledger in real time, because that would slow the POS during a rush. Instead, the owner or accountant clicks <strong>Sync Accounting Data</strong> and picks a date range. LoungeOS then:</p>
-<ol>
-<li>Reads every <strong>paid POS order</strong> and every recorded <strong>stock-in purchase</strong> in that period.</li>
-<li>Creates balanced journal entries automatically:<ul>
-<li><em>Sales:</em> debit Cash or Bank, credit Sales Revenue</li>
-<li><em>Purchases:</em> debit Inventory or Cost of Goods Sold, credit Cash or Accounts Payable</li>
+<h2 id="from-sale-to-statement-automatically">From sale to statement, automatically</h2>
+<p>Every time a sale is paid, LoungeOS posts its own balanced journal entry, with the order number as the reference. Nobody retypes anything:</p>
+<ul>
+<li><em>A paid sale:</em> debit Cash, Bank or Mobile Money, credit Sales Revenue (and tax if you charge it)</li>
+<li><em>A Pay later sale:</em> debit Accounts Receivable, credit Sales Revenue; the customer’s payment then moves it to cash or mobile money</li>
+<li><em>A refund:</em> the reverse of the sale</li>
+<li><em>An expense:</em> debit the expense account, credit where it was paid from</li>
 </ul>
-</li>
-<li>Updates the financial statements immediately.</li>
-</ol>
+<p>For sales a till made offline, <strong>Sync from the till</strong> in <strong>Journals</strong> posts every sale that has no entry yet. The financial statements update as entries arrive.</p>
 <p>Stock written off as damage, waste or loss in <a href="/features/inventory-management/">inventory</a> is recorded as an expense, so your P&amp;L reflects real losses instead of hiding them.</p>
 <figure><img alt="LoungeOS financial reports page with profit and loss statement and balance sheet date filters and PDF download" decoding="async" height="861" loading="lazy" sizes="(max-width: 800px) 100vw, 960px" src="/images/screens/loungeos-financial-reports.webp" srcset="/images/screens/loungeos-financial-reports-800.webp 800w, /images/screens/loungeos-financial-reports.webp 1600w" width="1600"/><figcaption>Profit &amp; loss, balance sheet and cash flow for any date range, downloadable as PDF.</figcaption></figure>
 <h2 id="built-in-safeguards">Built-in safeguards</h2>
@@ -659,7 +660,7 @@
 <p>LoungeOS accounting is designed for owners and managers who want to see whether the business makes money, and for accountants who want clean, balanced data instead of a shoebox of receipts. It does not replace your accountant or your local tax filings. It gives them accurate numbers to work from. In OHADA countries, your accountant can map LoungeOS accounts to the SYSCOHADA chart when preparing statutory accounts.</p>
 <h2 id="frequently-asked-questions">Frequently asked questions</h2>
 <h3 id="why-are-my-financial-statements-empty-after-a-busy-day">Why are my financial statements empty after a busy day?</h3>
-<p>Sales are posted to the ledger when you click <strong>Sync Accounting Data</strong>, not one by one during service. Sync the date range and the statements update.</p>
+<p>Each paid sale posts its own entry, so the statements follow the day. If a till sold offline, press <strong>Sync from the till</strong> in <strong>Journals</strong> once it is back online to post those sales, and <strong>Bring the accounts up to date</strong> in Financial Reports refreshes the statements.</p>
 <h3 id="can-i-record-expenses-that-dont-come-from-stock">Can I record expenses that don’t come from stock?</h3>
 <p>Yes. Use <strong>Record expense</strong> for rent, salaries, utilities, marketing, maintenance and other costs, with payee, date, payment account and one of your expense categories.</p>
 <h3 id="can-i-export-statements-for-my-accountant-or-bank">Can I export statements for my accountant or bank?</h3>
@@ -762,8 +763,7 @@
           <h3>Resources</h3>
           <a href="/blog/">Blog</a>
           <a href="/faq/">FAQ</a>
-          <a href="/knowledgebase.html">Knowledge Base</a>
-          <a href="/documentation.html">Documentation</a>
+          <a href="/help/">Help centre</a>
           <a href="/about/">About</a>
           <a href="/contact/">Contact</a>
           <a href="/privacy.html">Privacy Policy</a>

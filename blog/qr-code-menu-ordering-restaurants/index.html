@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Code Ordering for Restaurants and Bars: A Practical Guide</title>
+    <meta name="description" content="Should your restaurant or bar let guests order with a QR code? How it works, where it fails, and how to roll it out without losing control of the floor." />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <link rel="canonical" href="https://loungeos.app/blog/qr-code-menu-ordering-restaurants/" />
+    <link rel="alternate" hreflang="en" href="https://loungeos.app/blog/qr-code-menu-ordering-restaurants/" />
+    <link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/blog/commande-qr-code-restaurant/" />
+    <link rel="alternate" hreflang="x-default" href="https://loungeos.app/blog/qr-code-menu-ordering-restaurants/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="LoungeOS" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="QR Code Ordering for Restaurants and Bars: A Practical Guide" />
+    <meta property="og:description" content="Should your restaurant or bar let guests order with a QR code? How it works, where it fails, and how to roll it out without losing control of the floor." />
+    <meta property="og:image" content="https://loungeos.app/images/og/blog-qr-code-menu-ordering-restaurants.webp" />
+    <meta property="og:image:secure_url" content="https://loungeos.app/images/og/blog-qr-code-menu-ordering-restaurants.webp" />
+    <meta property="og:image:type" content="image/webp" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="QR Code Ordering for Restaurants and Bars: A Practical Guide" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="QR Code Ordering for Restaurants and Bars: A Practical Guide" />
+    <meta name="twitter:description" content="Should your restaurant or bar let guests order with a QR code? How it works, where it fails, and how to roll it out without losing control of the floor." />
+    <meta name="twitter:image" content="https://loungeos.app/images/og/blog-qr-code-menu-ordering-restaurants.webp" />
+    <meta name="twitter:image:alt" content="QR Code Ordering for Restaurants and Bars: A Practical Guide" />
+    <link rel="image_src" href="https://loungeos.app/images/og/blog-qr-code-menu-ordering-restaurants.webp" />
+    <meta property="og:url" content="https://loungeos.app/blog/qr-code-menu-ordering-restaurants/" />
+    <meta property="article:published_time" content="2026-11-12" />
+    <meta property="article:modified_time" content="2026-11-12" data-auto="modified" />
+    <meta property="article:section" content="Operations" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/style.css?v=c1bda027e5" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="alternate" type="application/rss+xml" title="LoungeOS Blog" href="https://loungeos.app/blog/feed.xml" />
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://loungeos.app/#organization",
+      "name": "LoungeOS",
+      "url": "https://loungeos.app/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://loungeos.app/images/logo/loungeos-icon-512.png",
+        "width": 512,
+        "height": 512
+      },
+      "image": "https://loungeos.app/images/og-loungeos.jpg",
+      "description": "LoungeOS makes point of sale (POS) and business management software for every kind of business that sells: restaurants, bars, lounges, cafés, nightclubs, hotels, retail shops, supermarkets and more. LoungeOS is made by Sigalix.",
+      "email": "info@sigalix.com",
+      "telephone": "+237679690703",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CM"
+      },
+      "areaServed": [
+        "CM",
+        "Africa",
+        "Worldwide"
+      ],
+      "knowsLanguage": [
+        "en",
+        "fr"
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "email": "support@loungeos.app",
+          "telephone": "+237679690703",
+          "availableLanguage": [
+            "English",
+            "French"
+          ]
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "email": "info@sigalix.com",
+          "telephone": "+237689699688",
+          "availableLanguage": [
+            "English",
+            "French"
+          ]
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "billing support",
+          "email": "billing@sigalix.com"
+        }
+      ],
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "Sigalix",
+        "url": "https://sigalix.com",
+        "email": "info@sigalix.com"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://loungeos.app/#website",
+      "url": "https://loungeos.app/",
+      "name": "LoungeOS",
+      "publisher": {
+        "@id": "https://loungeos.app/#organization"
+      },
+      "inLanguage": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://loungeos.app/blog/qr-code-menu-ordering-restaurants/#webpage",
+      "url": "https://loungeos.app/blog/qr-code-menu-ordering-restaurants/",
+      "name": "QR Code Ordering for Restaurants and Bars: A Practical Guide",
+      "description": "Should your restaurant or bar let guests order with a QR code? How it works, where it fails, and how to roll it out without losing control of the floor.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://loungeos.app/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://loungeos.app/blog/qr-code-menu-ordering-restaurants/#breadcrumb"
+      },
+      "dateModified": "2026-11-12",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://loungeos.app/images/screens/loungeos-help-qr-poster.webp"
+      }
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://loungeos.app/blog/qr-code-menu-ordering-restaurants/#article",
+      "headline": "QR code ordering in restaurants and bars: a practical guide",
+      "description": "Should your restaurant or bar let guests order with a QR code? How it works, where it fails, and how to roll it out without losing control of the floor.",
+      "image": [
+        "https://loungeos.app/images/screens/loungeos-help-qr-poster.webp",
+        "https://loungeos.app/images/og-loungeos.jpg"
+      ],
+      "datePublished": "2026-11-12",
+      "dateModified": "2026-11-12",
+      "author": {
+        "@type": "Organization",
+        "@id": "https://loungeos.app/#organization",
+        "name": "LoungeOS",
+        "url": "https://loungeos.app/about/"
+      },
+      "publisher": {
+        "@id": "https://loungeos.app/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://loungeos.app/blog/qr-code-menu-ordering-restaurants/#webpage"
+      },
+      "inLanguage": "en",
+      "articleSection": "Operations",
+      "wordCount": 623,
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "QR code menu"
+        },
+        {
+          "@type": "Thing",
+          "name": "Table ordering"
+        },
+        {
+          "@type": "Thing",
+          "name": "Restaurant operations"
+        }
+      ],
+      "mentions": {
+        "@id": "https://loungeos.app/#software"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://loungeos.app/blog/qr-code-menu-ordering-restaurants/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://loungeos.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://loungeos.app/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "QR code ordering guide",
+          "item": "https://loungeos.app/blog/qr-code-menu-ordering-restaurants/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://loungeos.app/blog/qr-code-menu-ordering-restaurants/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do guests need to install an app to order with a QR code?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Not with a good system. The menu should open in the phone’s browser after scanning.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I have one QR code per table?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Not necessarily. Per-table codes save the guest one tap but mean printing and replacing a code for every table. A single code where the guest picks the table is easier to manage.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does QR ordering replace waiters?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>No. It removes the waiting, not the service. Waiters still serve, clear, upsell and take payment.<\/p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+    </script>
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+      (function (c, l, a, r, i, t, y) {
+        c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
+        t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", "x9n1mwb8c5");
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TNP53ZZW7K"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag("js", new Date());
+      gtag("config", "G-TNP53ZZW7K");
+    </script>
+    <!-- Usercentrics CMP -->
+    <script id="usercentrics-cmp" src="https://app.usercentrics.eu/browser-ui/latest/loader.js" data-settings-id="SSwfY4ZtHuL22V" async></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <nav class="navbar" id="navbar" aria-label="Main Navigation">
+      <div class="nav-content">
+        <div class="nav-left">
+          <a href="/" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 0.75rem;">
+            <img src="/images/logo/loungeos-logo.svg" alt="LoungeOS" width="148" height="26" class="nav-logo" />
+            <span class="nav-badge">POS &amp; Business</span>
+          </a>
+        </div>
+
+        <div class="nav-links" id="navLinks">
+          <a href="/">Home</a>
+          <a href="/features/">Features</a>
+          <div class="nav-dropdown">
+            <button type="button" class="nav-dropdown-toggle" aria-haspopup="true">Solutions <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+            <div class="nav-dropdown-menu">
+              <a href="/restaurant-pos/">Restaurants</a>
+              <a href="/bar-pos/">Bars</a>
+              <a href="/lounge-pos/">Lounges</a>
+              <a href="/nightclub-pos/">Nightclubs</a>
+              <a href="/hotel-pos/">Hotels</a>
+              <a href="/cafe-pos/">Cafés &amp; Fast Food</a>
+              <a href="/retail-pos/">Shops &amp; Mini-Markets</a>
+              <a href="/cameroon/">Cameroon</a>
+              <a href="/africa/">Africa</a>
+            </div>
+          </div>
+          <a href="/pricing/">Pricing</a>
+          <a href="/download/">Download</a>
+          <div class="nav-dropdown">
+            <button type="button" class="nav-dropdown-toggle" aria-haspopup="true">Resources <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+            <div class="nav-dropdown-menu">
+              <a href="/blog/">Blog</a>
+              <a href="/faq/">FAQ</a>
+              <a href="/help/">Help centre</a>
+              <a href="/about/">About</a>
+              <a href="/contact/">Contact</a>
+              <a href="/fr/">Français</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-cta" style="display: flex; align-items: center; gap: 1rem">
+          <div class="lang-selector">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 16px; height: 16px" aria-hidden="true"><circle cx="12" cy="12" r="10" /><line x1="2" y1="12" x2="22" y2="12" /><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" /></svg>
+            <select id="customLangSelect" aria-label="Select Language" onchange="changeLanguage(this.value)">
+              <option value="en" selected>English</option>
+              <option value="fr">Français</option>
+              <option value="es">Español</option>
+              <option value="de">Deutsch</option>
+              <option value="zh-CN">中文</option>
+              <option value="ar">العربية</option>
+              <option value="hi">हिन्दी</option>
+              <option value="pt">Português</option>
+              <option value="ru">Русский</option>
+              <option value="ja">日本語</option>
+            </select>
+          </div>
+          <a href="https://app.loungeos.app/login" class="btn btn-primary btn-sm" id="navCtaBtn">Start free trial</a>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+    <main id="main-content">
+      <header class="page-hero">
+        <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">›</span> <a href="/blog/">Blog</a> <span aria-hidden="true">›</span> <span aria-current="page">QR code ordering guide</span></nav>
+        <p class="section-label">Operations</p>
+        <h1>QR code ordering in restaurants and bars: a practical guide</h1>
+        <p class="lead">QR menus went from a pandemic stopgap to a way to sell more rounds on a busy terrace. Done well, guests order faster and staff walk less. Done badly, the kitchen gets phantom orders. Here is how to get it right.</p>
+        <div class="article-meta"><span>By <a href="/about/">LoungeOS Team</a></span><span>Published <time datetime="2026-11-12">November 12, 2026</time></span><span>Updated <time datetime="2026-11-12" data-auto="modified">November 12, 2026</time></span><span>3 min read</span></div>
+        
+        
+      </header>
+      <article class="content-section">
+        <div class="prose">
+<figure><img src="/images/screens/loungeos-help-qr-poster.webp" srcset="/images/screens/loungeos-help-qr-poster-800.webp 800w, /images/screens/loungeos-help-qr-poster.webp 1440w" sizes="(max-width: 800px) 100vw, 760px" width="1440" height="900" alt="A LoungeOS menu QR code poster with the business logo and instructions" fetchpriority="high" decoding="async" /></figure>
+<aside class="key-takeaways"><h2>Key takeaways</h2><ul>
+<li>There are three levels: a <strong>QR menu</strong> (read only), <strong>QR ordering with staff approval</strong>, and <strong>fully automatic QR ordering with online payment</strong>.</li>
+<li>In Africa, where guests pay cash or mobile money at the table, <strong>ordering with staff approval</strong> gives most of the benefit with few of the risks.</li>
+<li>The biggest gains are the second and third rounds on terraces and in lounges, where guests wait to catch a waiter's eye.</li>
+<li>Roll out on one area first, keep staff in the loop, and keep the till online during service.</li>
+</ul></aside>
+<details class="toc" open><summary>In this guide</summary><ol>
+<li><a href="#three-kinds-of-qr-code">Three kinds of QR code</a></li>
+<li><a href="#where-qr-ordering-helps-most">Where QR ordering helps most</a></li>
+<li><a href="#where-it-fails">Where it fails</a></li>
+<li><a href="#how-to-roll-it-out">How to roll it out</a></li>
+<li><a href="#how-it-works-in-loungeos">How it works in LoungeOS</a></li>
+<li><a href="#frequently-asked-questions">Frequently asked questions</a></li>
+</ol></details>
+<p>On a Friday night, the most expensive moment in a lounge is the one where a table wants another round and nobody sees them. A QR code on the table fixes that moment. It does not replace waiters, and it should not.</p>
+<h2 id="three-kinds-of-qr-code">Three kinds of QR code</h2>
+<ol>
+<li><strong>QR menu.</strong> The code opens your menu as a web page or PDF. Guests read, then order from a waiter. Cheap and useful, but it does not take orders.</li>
+<li><strong>QR ordering with staff approval.</strong> Guests build their order on the phone, choose their table and send. A waiter or cashier accepts it on the till, then it goes to the kitchen and bar like any order.</li>
+<li><strong>Fully automatic QR ordering.</strong> The order goes straight to the kitchen, often with online card payment.</li>
+</ol>
+<p>The third is common in Europe and the US. In most African venues, guests pay cash or mobile money, and a ghost order that reaches the grill costs real food. The second model is the sweet spot.</p>
+<h2 id="where-qr-ordering-helps-most">Where QR ordering helps most</h2>
+<ul>
+<li><strong>Terraces, rooftops and large lounges</strong>, where waiters cover many tables and guests wait.</li>
+<li><strong>Second and third rounds.</strong> The first order is usually taken by a waiter; repeat drinks are where QR codes shine.</li>
+<li><strong>Busy match nights and events</strong>, when every waiter is running.</li>
+<li><strong>Guests who want to take their time</strong> with photos and prices before ordering.</li>
+</ul>
+<h2 id="where-it-fails">Where it fails</h2>
+<ul>
+<li><strong>Bad Wi-Fi or mobile data</strong> at the table: the menu loads slowly and guests give up.</li>
+<li><strong>Orders nobody watches.</strong> If no one is assigned to the incoming orders, they wait longer than the waiter would have taken.</li>
+<li><strong>Codes that leak.</strong> A photo of the code shared outside lets people “order” from home. Staff approval and a way to retire old codes solve it.</li>
+<li><strong>Menus out of date.</strong> A dish that ran out still shows. Use your POS menu as the source, so stock and availability follow.</li>
+</ul>
+<h2 id="how-to-roll-it-out">How to roll it out</h2>
+<ol>
+<li><strong>Start with one area</strong> (the terrace or the VIP lounge) for a week.</li>
+<li><strong>Name a person</strong> per shift who watches incoming table orders on the till or the phone app.</li>
+<li><strong>Print one clear poster</strong> with your logo: “Scan, choose your table, send. A waiter confirms your order.” Put it on every table and at the bar.</li>
+<li><strong>Keep the menu short and with photos.</strong> Thirty well-photographed items sell better than a hundred lines of text.</li>
+<li><strong>Check the numbers after a week:</strong> average spend per table and number of rounds, against the week before.</li>
+</ol>
+<h2 id="how-it-works-in-loungeos">How it works in LoungeOS</h2>
+<p>LoungeOS has QR ordering with staff approval on the Business and Pro plans. There is one code for the whole business: guests pick their table when they order, so one poster works everywhere. Orders arrive under <strong>From tables</strong> on every till, with a phone notification for waiters. <strong>Take on till</strong> puts the order on the table’s bill and sends it to the kitchen and bar; <strong>Decline</strong> tells the guest straight away. <strong>New code</strong> retires old posters.</p>
+<figure><img alt="Orders from tables on the LoungeOS till with Take on till and Decline" decoding="async" height="900" loading="lazy" sizes="(max-width: 800px) 100vw, 960px" src="/images/screens/loungeos-help-pos-from-tables.webp" srcset="/images/screens/loungeos-help-pos-from-tables-800.webp 800w, /images/screens/loungeos-help-pos-from-tables.webp 1440w" width="1440"/><figcaption>Staff accept each guest order before it reaches the kitchen.</figcaption></figure>
+<p>Guests pay staff the usual way, in cash, mobile money or card, and LoungeOS takes no commission. Step by step: <a href="/help/qr-table-ordering/">QR code table ordering</a>.</p>
+<h2 id="frequently-asked-questions">Frequently asked questions</h2>
+<h3 id="do-guests-need-to-install-an-app-to-order-with-a-qr-code">Do guests need to install an app to order with a QR code?</h3>
+<p>Not with a good system. The menu should open in the phone’s browser after scanning.</p>
+<h3 id="should-i-have-one-qr-code-per-table">Should I have one QR code per table?</h3>
+<p>Not necessarily. Per-table codes save the guest one tap but mean printing and replacing a code for every table. A single code where the guest picks the table is easier to manage.</p>
+<h3 id="does-qr-ordering-replace-waiters">Does QR ordering replace waiters?</h3>
+<p>No. It removes the waiting, not the service. Waiters still serve, clear, upsell and take payment.</p>
+<div class="cta-box">
+  <h2>Run your next service on LoungeOS</h2>
+  <p>Create your account, answer the setup wizard and your business is ready on day one. Try it free for 14 days with Business features. No payment up front.</p>
+  <div class="cta-actions">
+    <a class="btn btn-primary btn-lg" href="https://app.loungeos.app/login">Start free trial</a>
+    <a class="btn btn-secondary btn-lg" href="/download/">Download for Windows</a>
+  </div>
+</div>
+        </div>
+      </article>
+      <section class="related-section">
+        <h2 class="section-title">Keep reading</h2>
+        <div class="card-grid">
+<a class="post-card" href="/features/qr-code-ordering/">
+  <img src="/images/screens/loungeos-help-pos-from-tables-800.webp" width="800" height="430" alt="Orders from tables on the LoungeOS till, each with Take on till and Decline" loading="lazy" decoding="async" />
+  <div class="post-card-body">
+    <span class="tag">QR Code Ordering</span>
+    <h3>QR Code Table Ordering</h3>
+    <p>Guests order from their phone, staff accept on the till. No app to install, no commission.</p>
+    <span class="read-more">Learn more →</span>
+  </div>
+</a>
+<a class="post-card" href="/blog/restaurant-table-management/">
+  <img src="/images/screens/loungeos-table-management-800.webp" width="800" height="430" alt="LoungeOS table layout with available tables, guest capacity and floor" loading="lazy" decoding="async" />
+  <div class="post-card-body">
+    <span class="tag">Operations</span>
+    <h3>Restaurant table management guide</h3>
+    <p>Floor plans, waiter sections, table status, turn times and bill splitting.</p>
+    <span class="read-more">Read guide →</span>
+  </div>
+</a>
+<a class="post-card" href="/blog/lounge-nightclub-management/">
+  <img src="/images/screens/loungeos-floor-management-800.webp" width="800" height="430" alt="LoungeOS floor management with service areas and assigned waiters" loading="lazy" decoding="async" />
+  <div class="post-card-body">
+    <span class="tag">Operations</span>
+    <h3>How to manage a lounge or nightclub</h3>
+    <p>VIP tables, bottle service, events, staff and late-night cash control.</p>
+    <span class="read-more">Read guide →</span>
+  </div>
+</a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-grid footer-grid-wide">
+        <div class="footer-brand">
+          <img src="/images/logo/loungeos-logo-white.svg" alt="LoungeOS" width="159" height="28" class="footer-logo" />
+          <p>Point of sale and business management for every business that sells. Made by <a href="https://sigalix.com">Sigalix</a>, built in Cameroon, used across Africa and beyond.</p>
+          <div class="footer-worldwide">
+            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Web, Windows, Mac &amp; Android</span>
+            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> English &amp; French</span>
+            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Sells offline on desktop</span>
+          </div>
+          <p class="footer-contact">
+            <a href="mailto:support@loungeos.app">support@loungeos.app</a><br />
+            <a href="mailto:info@sigalix.com">info@sigalix.com</a><br />
+            <a href="tel:+237679690703">+237 679 690 703</a>
+          </p>
+        </div>
+        <div class="footer-col">
+          <h3>Product</h3>
+          <a href="/features/">Features</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/download/">Download</a>
+          <a href="/features/offline-pos/">Offline POS</a>
+          <a href="/features/kitchen-display-system/">Kitchen Display System</a>
+          <a href="/features/inventory-management/">Inventory</a>
+          <a href="/features/restaurant-accounting/">Accounting</a>
+        </div>
+        <div class="footer-col">
+          <h3>Solutions</h3>
+          <a href="/restaurant-pos/">Restaurant POS</a>
+          <a href="/bar-pos/">Bar POS</a>
+          <a href="/lounge-pos/">Lounge POS</a>
+          <a href="/nightclub-pos/">Nightclub POS</a>
+          <a href="/hotel-pos/">Hotel POS</a>
+          <a href="/cafe-pos/">Café &amp; Fast Food POS</a>
+          <a href="/retail-pos/">Retail &amp; Shop POS</a>
+        </div>
+        <div class="footer-col">
+          <h3>Countries</h3>
+          <a href="/cameroon/">Cameroon</a>
+          <a href="/nigeria/">Nigeria</a>
+          <a href="/ghana/">Ghana</a>
+          <a href="/south-africa/">South Africa</a>
+          <a href="/africa/">Africa</a>
+          <a href="/fr/cameroun/">Cameroun (FR)</a>
+          <a href="/fr/cote-divoire/">Côte d'Ivoire (FR)</a>
+          <a href="/fr/senegal/">Sénégal (FR)</a>
+        </div>
+        <div class="footer-col">
+          <h3>Resources</h3>
+          <a href="/blog/">Blog</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/help/">Help centre</a>
+          <a href="/about/">About</a>
+          <a href="/contact/">Contact</a>
+          <a href="/privacy.html">Privacy Policy</a>
+          <a href="/terms.html">Terms of Service</a>
+          <a href="/accessibility.html">Accessibility</a>
+          <a href="/legal.html">Legal</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 LoungeOS. All rights reserved.</p>
+        <a href="https://app.loungeos.app/login" class="btn btn-outline-light btn-sm" id="footerCtaBtn">Start free trial <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg></a>
+      </div>
+    </footer>
+    <div id="google_translate_element" style="display: none"></div>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: "en", autoDisplay: false },
+          "google_translate_element",
+        );
+      }
+    </script>
+    <script defer type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script defer src="/app.js?v=a7444e90c8"></script>
+  </body>
+</html>

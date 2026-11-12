@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selling Offline and Sync in LoungeOS (Power and Internet Cuts)</title>
+    <meta name="description" content="How the LoungeOS Windows and Mac tills keep selling without internet, sync when it returns, what the sync status means, and the 7-day offline limit." />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <link rel="canonical" href="https://loungeos.app/help/offline-and-sync/" />
+    <link rel="alternate" hreflang="en" href="https://loungeos.app/help/offline-and-sync/" />
+    <link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/aide/hors-ligne-et-synchronisation/" />
+    <link rel="alternate" hreflang="x-default" href="https://loungeos.app/help/offline-and-sync/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="LoungeOS" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="Selling Offline and Sync in LoungeOS (Power and Internet Cuts)" />
+    <meta property="og:description" content="How the LoungeOS Windows and Mac tills keep selling without internet, sync when it returns, what the sync status means, and the 7-day offline limit." />
+    <meta property="og:image" content="https://loungeos.app/images/og/help-offline-and-sync.webp" />
+    <meta property="og:image:secure_url" content="https://loungeos.app/images/og/help-offline-and-sync.webp" />
+    <meta property="og:image:type" content="image/webp" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Selling Offline and Sync in LoungeOS (Power and Internet Cuts)" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Selling Offline and Sync in LoungeOS (Power and Internet Cuts)" />
+    <meta name="twitter:description" content="How the LoungeOS Windows and Mac tills keep selling without internet, sync when it returns, what the sync status means, and the 7-day offline limit." />
+    <meta name="twitter:image" content="https://loungeos.app/images/og/help-offline-and-sync.webp" />
+    <meta name="twitter:image:alt" content="Selling Offline and Sync in LoungeOS (Power and Internet Cuts)" />
+    <link rel="image_src" href="https://loungeos.app/images/og/help-offline-and-sync.webp" />
+    <meta property="og:url" content="https://loungeos.app/help/offline-and-sync/" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/style.css?v=c1bda027e5" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="alternate" type="application/rss+xml" title="LoungeOS Blog" href="https://loungeos.app/blog/feed.xml" />
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://loungeos.app/#organization",
+      "name": "LoungeOS",
+      "url": "https://loungeos.app/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://loungeos.app/images/logo/loungeos-icon-512.png",
+        "width": 512,
+        "height": 512
+      },
+      "image": "https://loungeos.app/images/og-loungeos.jpg",
+      "description": "LoungeOS makes point of sale (POS) and business management software for every kind of business that sells: restaurants, bars, lounges, cafés, nightclubs, hotels, retail shops, supermarkets and more. LoungeOS is made by Sigalix.",
+      "email": "info@sigalix.com",
+      "telephone": "+237679690703",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CM"
+      },
+      "areaServed": [
+        "CM",
+        "Africa",
+        "Worldwide"
+      ],
+      "knowsLanguage": [
+        "en",
+        "fr"
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "email": "support@loungeos.app",
+          "telephone": "+237679690703",
+          "availableLanguage": [
+            "English",
+            "French"
+          ]
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "email": "info@sigalix.com",
+          "telephone": "+237689699688",
+          "availableLanguage": [
+            "English",
+            "French"
+          ]
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "billing support",
+          "email": "billing@sigalix.com"
+        }
+      ],
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "Sigalix",
+        "url": "https://sigalix.com",
+        "email": "info@sigalix.com"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://loungeos.app/#website",
+      "url": "https://loungeos.app/",
+      "name": "LoungeOS",
+      "publisher": {
+        "@id": "https://loungeos.app/#organization"
+      },
+      "inLanguage": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://loungeos.app/help/offline-and-sync/#webpage",
+      "url": "https://loungeos.app/help/offline-and-sync/",
+      "name": "Selling Offline and Sync in LoungeOS (Power and Internet Cuts)",
+      "description": "How the LoungeOS Windows and Mac tills keep selling without internet, sync when it returns, what the sync status means, and the 7-day offline limit.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://loungeos.app/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://loungeos.app/help/offline-and-sync/#breadcrumb"
+      },
+      "dateModified": "2026-11-12",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://loungeos.app/images/screens/loungeos-help-pos-cart.webp"
+      }
+    },
+    {
+      "@type": "TechArticle",
+      "@id": "https://loungeos.app/help/offline-and-sync/#article",
+      "headline": "Selling offline and sync",
+      "description": "How the LoungeOS Windows and Mac tills keep selling without internet, sync when it returns, what the sync status means, and the 7-day offline limit.",
+      "inLanguage": "en",
+      "dateModified": "2026-11-12",
+      "datePublished": "2026-11-12",
+      "author": {
+        "@id": "https://loungeos.app/#organization"
+      },
+      "publisher": {
+        "@id": "https://loungeos.app/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://loungeos.app/help/offline-and-sync/#webpage"
+      },
+      "image": "https://loungeos.app/images/screens/loungeos-help-pos-cart.webp",
+      "about": {
+        "@id": "https://loungeos.app/#software"
+      },
+      "proficiencyLevel": "Beginner"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://loungeos.app/help/offline-and-sync/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://loungeos.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Selling offline and sync",
+          "item": "https://loungeos.app/help/offline-and-sync/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://loungeos.app/help/offline-and-sync/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Two tills sold the same bottle while offline. What happens?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Both sales are kept, and stock goes down by both. Sales are never lost or overwritten by sync.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I take orders on a tablet when the internet is down?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Yes, if the tablet opens the till in its browser over your Wi-Fi (<code>http://&lt;till address&gt;:2304<\/code>). The web app and the phone app need the internet.<\/p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+    </script>
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+      (function (c, l, a, r, i, t, y) {
+        c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
+        t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", "x9n1mwb8c5");
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TNP53ZZW7K"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag("js", new Date());
+      gtag("config", "G-TNP53ZZW7K");
+    </script>
+    <!-- Usercentrics CMP -->
+    <script id="usercentrics-cmp" src="https://app.usercentrics.eu/browser-ui/latest/loader.js" data-settings-id="SSwfY4ZtHuL22V" async></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <nav class="navbar" id="navbar" aria-label="Main Navigation">
+      <div class="nav-content">
+        <div class="nav-left">
+          <a href="/" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 0.75rem;">
+            <img src="/images/logo/loungeos-logo.svg" alt="LoungeOS" width="148" height="26" class="nav-logo" />
+            <span class="nav-badge">POS &amp; Business</span>
+          </a>
+        </div>
+
+        <div class="nav-links" id="navLinks">
+          <a href="/">Home</a>
+          <a href="/features/">Features</a>
+          <div class="nav-dropdown">
+            <button type="button" class="nav-dropdown-toggle" aria-haspopup="true">Solutions <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+            <div class="nav-dropdown-menu">
+              <a href="/restaurant-pos/">Restaurants</a>
+              <a href="/bar-pos/">Bars</a>
+              <a href="/lounge-pos/">Lounges</a>
+              <a href="/nightclub-pos/">Nightclubs</a>
+              <a href="/hotel-pos/">Hotels</a>
+              <a href="/cafe-pos/">Cafés &amp; Fast Food</a>
+              <a href="/retail-pos/">Shops &amp; Mini-Markets</a>
+              <a href="/cameroon/">Cameroon</a>
+              <a href="/africa/">Africa</a>
+            </div>
+          </div>
+          <a href="/pricing/">Pricing</a>
+          <a href="/download/">Download</a>
+          <div class="nav-dropdown">
+            <button type="button" class="nav-dropdown-toggle" aria-haspopup="true">Resources <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+            <div class="nav-dropdown-menu">
+              <a href="/blog/">Blog</a>
+              <a href="/faq/">FAQ</a>
+              <a href="/help/">Help centre</a>
+              <a href="/about/">About</a>
+              <a href="/contact/">Contact</a>
+              <a href="/fr/">Français</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-cta" style="display: flex; align-items: center; gap: 1rem">
+          <div class="lang-selector">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 16px; height: 16px" aria-hidden="true"><circle cx="12" cy="12" r="10" /><line x1="2" y1="12" x2="22" y2="12" /><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" /></svg>
+            <select id="customLangSelect" aria-label="Select Language" onchange="changeLanguage(this.value)">
+              <option value="en" selected>English</option>
+              <option value="fr">Français</option>
+              <option value="es">Español</option>
+              <option value="de">Deutsch</option>
+              <option value="zh-CN">中文</option>
+              <option value="ar">العربية</option>
+              <option value="hi">हिन्दी</option>
+              <option value="pt">Português</option>
+              <option value="ru">Русский</option>
+              <option value="ja">日本語</option>
+            </select>
+          </div>
+          <a href="https://app.loungeos.app/login" class="btn btn-primary btn-sm" id="navCtaBtn">Start free trial</a>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+    <main id="main-content">
+      <header class="page-hero">
+        <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">›</span> <span aria-current="page">Selling offline and sync</span></nav>
+        
+        <h1>Selling offline and sync</h1>
+        <p class="lead">The Windows and Mac tills keep everything on the computer and sell through internet cuts. When the connection comes back, they sync on their own.</p>
+        <div class="article-meta"><span>For LoungeOS 2.1.4</span><span>Updated <time datetime="2026-11-12" data-auto="modified">November 12, 2026</time></span><span>3 min read</span></div>
+        
+        
+      </header>
+      <article class="content-section">
+        <div class="prose">
+<details class="toc" open><summary>On this page</summary><ul>
+<li><a href="#two-copies-of-your-data">Two copies of your data</a></li>
+<li><a href="#what-works-without-internet">What works without internet</a></li>
+<li><a href="#the-sync-status">The sync status</a></li>
+<li><a href="#the-7-day-limit">The 7-day limit</a></li>
+<li><a href="#power-cuts">Power cuts</a></li>
+<li><a href="#frequently-asked-questions">Frequently asked questions</a></li>
+</ul></details>
+<h2 id="two-copies-of-your-data">Two copies of your data</h2>
+<p>Every business has two copies: one on each Windows or Mac till, and one online. They sync every few seconds when there is internet. The web app and the phone app work on the online copy.</p>
+<h2 id="what-works-without-internet">What works without internet</h2>
+<p>On the <strong>Windows and Mac apps</strong>, everything you need during service:</p>
+<ul>
+<li>taking orders, sending them to the kitchen and bar screens, printing tickets and receipts,</li>
+<li>payments in every method, Pay later tabs, refunds and approvals with a manager’s PIN,</li>
+<li>stock coming off at each sale, receiving deliveries, expenses,</li>
+<li>the dashboard and reports for what this till recorded.</li>
+</ul>
+<p>Phones, tablets and kitchen screens can keep working too, by opening the till in their browser over your Wi-Fi (<code>http://&lt;till address&gt;:2304</code>, see the <a href="/download/#connect-other-devices">download page</a>).</p>
+<p>What needs internet: the web app and the phone app, guest orders from the QR code, phone notifications, and seeing other tills’ sales.</p>
+<h2 id="the-sync-status">The sync status</h2>
+<p>The cloud icon at the top of the till tells you where you stand:</p>
+<ul>
+<li><strong>Up to date</strong>: everything is sent.</li>
+<li><strong>Syncing…</strong></li>
+<li><strong>Offline: changes are kept on this till</strong>, with how many changes are waiting.</li>
+<li><strong>Not connected yet</strong> or <strong>Connect this till</strong>: the till is not linked to your business online (see <a href="/help/install-loungeos/">Install LoungeOS</a>).</li>
+<li><strong>Sync problem</strong>: open it for details.</li>
+</ul>
+<p>Press <strong>Sync now</strong> to send right away after the connection comes back. You never need to press it during normal service.</p>
+<h2 id="the-7-day-limit">The 7-day limit</h2>
+<p>A till that has not synced for 7 days becomes read-only: you can look at everything, but you can’t record new sales until it reconnects. Connecting once, even through a phone hotspot for a minute, is enough to reset it. Nothing is ever deleted.</p>
+<p>The same read-only mode applies when a subscription ends, until it is renewed.</p>
+<h2 id="power-cuts">Power cuts</h2>
+<p>A laptop as the till rides through short power cuts on its battery. With a desktop computer, put the computer, the router and the receipt printer on a small UPS. Everything recorded before the power went is saved on the till.</p>
+<h2 id="frequently-asked-questions">Frequently asked questions</h2>
+<h3 id="two-tills-sold-the-same-bottle-while-offline-what-happens">Two tills sold the same bottle while offline. What happens?</h3>
+<p>Both sales are kept, and stock goes down by both. Sales are never lost or overwritten by sync.</p>
+<h3 id="can-i-take-orders-on-a-tablet-when-the-internet-is-down">Can I take orders on a tablet when the internet is down?</h3>
+<p>Yes, if the tablet opens the till in its browser over your Wi-Fi (<code>http://&lt;till address&gt;:2304</code>). The web app and the phone app need the internet.</p>
+<p class="help-steps-note">Stuck on a step? Write to support@loungeos.app or WhatsApp +237 679 690 703 and say which page you are on.</p>
+<p><a href="/help/">← All help articles</a></p>
+        </div>
+      </article>
+      <section class="related-section">
+        <h2 class="section-title">Keep reading</h2>
+        <div class="card-grid">
+<a class="post-card" href="/help/backups-and-your-data/">
+  <img src="/images/screens/loungeos-help-backup-800.webp" width="800" height="430" alt="Backups and your data" loading="lazy" decoding="async" />
+  <div class="post-card-body">
+    <span class="tag"></span>
+    <h3>Backups and your data</h3>
+    <p>Online copy, daily backups, download and restore, replace a till computer.</p>
+    <span class="read-more">Learn more →</span>
+  </div>
+</a>
+<a class="post-card" href="/blog/run-a-restaurant-during-power-and-internet-outages/">
+  <img src="/images/screens/loungeos-pos-menu-grid-800.webp" width="800" height="430" alt="LoungeOS point of sale menu grid that keeps selling without internet" loading="lazy" decoding="async" />
+  <div class="post-card-body">
+    <span class="tag">Operations</span>
+    <h3>Running a restaurant through power and internet outages</h3>
+    <p>Backup power, POS, payments, kitchen and food safety: the complete checklist.</p>
+    <span class="read-more">Read guide →</span>
+  </div>
+</a>
+<a class="post-card" href="/features/offline-pos/">
+  <img src="/images/screens/loungeos-pos-order-screen-800.webp" width="800" height="430" alt="Offline POS" loading="lazy" decoding="async" />
+  <div class="post-card-body">
+    <span class="tag">Offline POS</span>
+    <h3>Offline POS</h3>
+    <p>Windows and Mac tills keep selling without internet, with phones on your Wi-Fi, and sync when the connection comes back.</p>
+    <span class="read-more">Learn more →</span>
+  </div>
+</a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-grid footer-grid-wide">
+        <div class="footer-brand">
+          <img src="/images/logo/loungeos-logo-white.svg" alt="LoungeOS" width="159" height="28" class="footer-logo" />
+          <p>Point of sale and business management for every business that sells. Made by <a href="https://sigalix.com">Sigalix</a>, built in Cameroon, used across Africa and beyond.</p>
+          <div class="footer-worldwide">
+            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Web, Windows, Mac &amp; Android</span>
+            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> English &amp; French</span>
+            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Sells offline on desktop</span>
+          </div>
+          <p class="footer-contact">
+            <a href="mailto:support@loungeos.app">support@loungeos.app</a><br />
+            <a href="mailto:info@sigalix.com">info@sigalix.com</a><br />
+            <a href="tel:+237679690703">+237 679 690 703</a>
+          </p>
+        </div>
+        <div class="footer-col">
+          <h3>Product</h3>
+          <a href="/features/">Features</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/download/">Download</a>
+          <a href="/features/offline-pos/">Offline POS</a>
+          <a href="/features/kitchen-display-system/">Kitchen Display System</a>
+          <a href="/features/inventory-management/">Inventory</a>
+          <a href="/features/restaurant-accounting/">Accounting</a>
+        </div>
+        <div class="footer-col">
+          <h3>Solutions</h3>
+          <a href="/restaurant-pos/">Restaurant POS</a>
+          <a href="/bar-pos/">Bar POS</a>
+          <a href="/lounge-pos/">Lounge POS</a>
+          <a href="/nightclub-pos/">Nightclub POS</a>
+          <a href="/hotel-pos/">Hotel POS</a>
+          <a href="/cafe-pos/">Café &amp; Fast Food POS</a>
+          <a href="/retail-pos/">Retail &amp; Shop POS</a>
+        </div>
+        <div class="footer-col">
+          <h3>Countries</h3>
+          <a href="/cameroon/">Cameroon</a>
+          <a href="/nigeria/">Nigeria</a>
+          <a href="/ghana/">Ghana</a>
+          <a href="/south-africa/">South Africa</a>
+          <a href="/africa/">Africa</a>
+          <a href="/fr/cameroun/">Cameroun (FR)</a>
+          <a href="/fr/cote-divoire/">Côte d'Ivoire (FR)</a>
+          <a href="/fr/senegal/">Sénégal (FR)</a>
+        </div>
+        <div class="footer-col">
+          <h3>Resources</h3>
+          <a href="/blog/">Blog</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/help/">Help centre</a>
+          <a href="/about/">About</a>
+          <a href="/contact/">Contact</a>
+          <a href="/privacy.html">Privacy Policy</a>
+          <a href="/terms.html">Terms of Service</a>
+          <a href="/accessibility.html">Accessibility</a>
+          <a href="/legal.html">Legal</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 LoungeOS. All rights reserved.</p>
+        <a href="https://app.loungeos.app/login" class="btn btn-outline-light btn-sm" id="footerCtaBtn">Start free trial <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg></a>
+      </div>
+    </footer>
+    <div id="google_translate_element" style="display: none"></div>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: "en", autoDisplay: false },
+          "google_translate_element",
+        );
+      }
+    </script>
+    <script defer type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script defer src="/app.js?v=a7444e90c8"></script>
+  </body>
+</html>

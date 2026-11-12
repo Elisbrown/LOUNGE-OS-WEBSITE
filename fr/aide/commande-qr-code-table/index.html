@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="fr" data-no-autolang>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mettre en place la commande par QR code à table dans LoungeOS</title>
+    <meta name="description" content="Laissez vos clients commander depuis leur table avec un seul QR code : activation, affiche, commandes acceptées ou refusées en caisse. Business et Pro." />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <link rel="canonical" href="https://loungeos.app/fr/aide/commande-qr-code-table/" />
+    <link rel="alternate" hreflang="en" href="https://loungeos.app/help/qr-table-ordering/" />
+    <link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/aide/commande-qr-code-table/" />
+    <link rel="alternate" hreflang="x-default" href="https://loungeos.app/help/qr-table-ordering/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="LoungeOS" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:title" content="Mettre en place la commande par QR code à table dans LoungeOS" />
+    <meta property="og:description" content="Laissez vos clients commander depuis leur table avec un seul QR code : activation, affiche, commandes acceptées ou refusées en caisse. Business et Pro." />
+    <meta property="og:image" content="https://loungeos.app/images/og/fr-aide-commande-qr-code-table.webp" />
+    <meta property="og:image:secure_url" content="https://loungeos.app/images/og/fr-aide-commande-qr-code-table.webp" />
+    <meta property="og:image:type" content="image/webp" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Mettre en place la commande par QR code à table dans LoungeOS" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Mettre en place la commande par QR code à table dans LoungeOS" />
+    <meta name="twitter:description" content="Laissez vos clients commander depuis leur table avec un seul QR code : activation, affiche, commandes acceptées ou refusées en caisse. Business et Pro." />
+    <meta name="twitter:image" content="https://loungeos.app/images/og/fr-aide-commande-qr-code-table.webp" />
+    <meta name="twitter:image:alt" content="Mettre en place la commande par QR code à table dans LoungeOS" />
+    <link rel="image_src" href="https://loungeos.app/images/og/fr-aide-commande-qr-code-table.webp" />
+    <meta property="og:url" content="https://loungeos.app/fr/aide/commande-qr-code-table/" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/style.css?v=c1bda027e5" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="alternate" type="application/rss+xml" title="LoungeOS Blog" href="https://loungeos.app/blog/feed.xml" />
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://loungeos.app/#organization",
+      "name": "LoungeOS",
+      "url": "https://loungeos.app/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://loungeos.app/images/logo/loungeos-icon-512.png",
+        "width": 512,
+        "height": 512
+      },
+      "image": "https://loungeos.app/images/og-loungeos.jpg",
+      "description": "LoungeOS makes point of sale (POS) and business management software for every kind of business that sells: restaurants, bars, lounges, cafés, nightclubs, hotels, retail shops, supermarkets and more. LoungeOS is made by Sigalix.",
+      "email": "info@sigalix.com",
+      "telephone": "+237679690703",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CM"
+      },
+      "areaServed": [
+        "CM",
+        "Africa",
+        "Worldwide"
+      ],
+      "knowsLanguage": [
+        "en",
+        "fr"
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "email": "support@loungeos.app",
+          "telephone": "+237679690703",
+          "availableLanguage": [
+            "English",
+            "French"
+          ]
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "email": "info@sigalix.com",
+          "telephone": "+237689699688",
+          "availableLanguage": [
+            "English",
+            "French"
+          ]
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "billing support",
+          "email": "billing@sigalix.com"
+        }
+      ],
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "Sigalix",
+        "url": "https://sigalix.com",
+        "email": "info@sigalix.com"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://loungeos.app/#website",
+      "url": "https://loungeos.app/",
+      "name": "LoungeOS",
+      "publisher": {
+        "@id": "https://loungeos.app/#organization"
+      },
+      "inLanguage": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://loungeos.app/fr/aide/commande-qr-code-table/#webpage",
+      "url": "https://loungeos.app/fr/aide/commande-qr-code-table/",
+      "name": "Mettre en place la commande par QR code à table dans LoungeOS",
+      "description": "Laissez vos clients commander depuis leur table avec un seul QR code : activation, affiche, commandes acceptées ou refusées en caisse. Business et Pro.",
+      "inLanguage": "fr",
+      "isPartOf": {
+        "@id": "https://loungeos.app/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://loungeos.app/fr/aide/commande-qr-code-table/#breadcrumb"
+      },
+      "dateModified": "2026-11-12",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://loungeos.app/images/screens/loungeos-help-fr-pos-from-tables.webp"
+      }
+    },
+    {
+      "@type": "TechArticle",
+      "@id": "https://loungeos.app/fr/aide/commande-qr-code-table/#article",
+      "headline": "Commande par QR code à table",
+      "description": "Laissez vos clients commander depuis leur table avec un seul QR code : activation, affiche, commandes acceptées ou refusées en caisse. Business et Pro.",
+      "inLanguage": "fr",
+      "dateModified": "2026-11-12",
+      "datePublished": "2026-11-12",
+      "author": {
+        "@id": "https://loungeos.app/#organization"
+      },
+      "publisher": {
+        "@id": "https://loungeos.app/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://loungeos.app/fr/aide/commande-qr-code-table/#webpage"
+      },
+      "image": "https://loungeos.app/images/screens/loungeos-help-fr-pos-from-tables.webp",
+      "about": {
+        "@id": "https://loungeos.app/#software"
+      },
+      "proficiencyLevel": "Beginner"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://loungeos.app/fr/aide/commande-qr-code-table/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Accueil",
+          "item": "https://loungeos.app/fr/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Commande par QR code à table",
+          "item": "https://loungeos.app/fr/aide/commande-qr-code-table/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://loungeos.app/fr/aide/commande-qr-code-table/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Les clients peuvent-ils payer depuis leur téléphone ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Non. LoungeOS ne traite pas les paiements. Les clients paient le personnel en espèces, mobile money ou carte comme d’habitude, et le caissier l’enregistre.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quelqu’un peut-il commander depuis chez lui avec une photo du code ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Il devrait quand même choisir une table, et le personnel accepte chaque commande avant qu’elle parte. Si cela arrive, appuyez sur <strong>Nouveau code<\/strong> et réimprimez.<\/p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ça marche si la caisse est hors ligne ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>La commande du client va sur LoungeOS en ligne : une caisse sans internet ne la reçoit qu’au retour de la connexion. Gardez la caisse en ligne pendant le service si vous utilisez la commande par QR code.<\/p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+    </script>
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+      (function (c, l, a, r, i, t, y) {
+        c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
+        t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", "x9n1mwb8c5");
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TNP53ZZW7K"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag("js", new Date());
+      gtag("config", "G-TNP53ZZW7K");
+    </script>
+    <!-- Usercentrics CMP -->
+    <script id="usercentrics-cmp" src="https://app.usercentrics.eu/browser-ui/latest/loader.js" data-settings-id="SSwfY4ZtHuL22V" async></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Aller au contenu</a>
+    <nav class="navbar" id="navbar" aria-label="Navigation principale">
+      <div class="nav-content">
+        <div class="nav-left">
+          <a href="/fr/" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 0.75rem;">
+            <img src="/images/logo/loungeos-logo.svg" alt="LoungeOS" width="148" height="26" class="nav-logo" />
+            <span class="nav-badge">Logiciel de caisse</span>
+          </a>
+        </div>
+
+        <div class="nav-links" id="navLinks">
+          <a href="/fr/">Accueil</a>
+          <a href="/fr/fonctionnalites/">Fonctionnalités</a>
+          <div class="nav-dropdown">
+            <button type="button" class="nav-dropdown-toggle" aria-haspopup="true">Solutions <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+            <div class="nav-dropdown-menu">
+              <a href="/fr/logiciel-caisse-restaurant/">Restaurants</a>
+              <a href="/fr/logiciel-gestion-bar-lounge/">Bars, lounges &amp; boîtes de nuit</a>
+              <a href="/fr/logiciel-caisse-boutique/">Boutiques &amp; supérettes</a>
+              <a href="/hotel-pos/">Hôtels</a>
+              <a href="/fr/cameroun/">Cameroun</a>
+              <a href="/fr/cote-divoire/">Côte d'Ivoire</a>
+              <a href="/fr/senegal/">Sénégal</a>
+              <a href="/fr/afrique/">Afrique francophone</a>
+            </div>
+          </div>
+          <a href="/fr/tarifs/">Tarifs</a>
+          <a href="/fr/telecharger/">Télécharger</a>
+          <div class="nav-dropdown">
+            <button type="button" class="nav-dropdown-toggle" aria-haspopup="true">Ressources <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+            <div class="nav-dropdown-menu">
+              <a href="/blog/">Blog</a>
+              <a href="/fr/faq/">FAQ</a>
+              <a href="/fr/aide/">Centre d'aide</a>
+              <a href="/contact/">Contact</a>
+              <a href="/">English</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-cta" style="display: flex; align-items: center; gap: 1rem">
+          <div class="lang-selector">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 16px; height: 16px" aria-hidden="true"><circle cx="12" cy="12" r="10" /><line x1="2" y1="12" x2="22" y2="12" /><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" /></svg>
+            <select id="customLangSelect" aria-label="Choisir la langue" onchange="changeLanguage(this.value)">
+              <option value="en">English</option>
+              <option value="fr" selected>Français</option>
+              <option value="es">Español</option>
+              <option value="de">Deutsch</option>
+              <option value="zh-CN">中文</option>
+              <option value="ar">العربية</option>
+              <option value="hi">हिन्दी</option>
+              <option value="pt">Português</option>
+              <option value="ru">Русский</option>
+              <option value="ja">日本語</option>
+            </select>
+          </div>
+          <a href="https://app.loungeos.app/login" class="btn btn-primary btn-sm" id="navCtaBtn">Essai gratuit</a>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+    <main id="main-content">
+      <header class="page-hero">
+        <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/fr/">Accueil</a> <span aria-hidden="true">›</span> <span aria-current="page">Commande par QR code à table</span></nav>
+        
+        <h1>Commande par QR code à table</h1>
+        <p class="lead">Le client scanne un QR code, voit votre menu avec prix et photos, choisit sa table, ajoute une note et envoie. Le personnel vérifie la commande en caisse avant qu'elle parte en cuisine ou au bar.</p>
+        <div class="article-meta"><span>Pour LoungeOS 2.1.4</span><span>Mis à jour le <time datetime="2026-11-12" data-auto="modified">12 novembre 2026</time></span><span>3 min de lecture</span></div>
+        
+        
+      </header>
+      <article class="content-section">
+        <div class="prose">
+<details class="toc" open><summary>Sur cette page</summary><ul>
+<li><a href="#1-activez-la">1. Activez-la</a></li>
+<li><a href="#2-imprimez-le-qr-code-du-menu">2. Imprimez le QR code du menu</a></li>
+<li><a href="#3-ce-que-voit-le-client">3. Ce que voit le client</a></li>
+<li><a href="#4-prenez-la-commande-en-caisse">4. Prenez la commande en caisse</a></li>
+<li><a href="#questions-frequentes">Questions fréquentes</a></li>
+</ul></details>
+<p>La commande depuis la table est incluse dans les formules <strong>Business</strong> et <strong>Pro</strong> (et pendant l’essai gratuit). Elle demande que les <strong>Tables</strong> soient activées, et la caisse doit avoir internet pour recevoir les commandes des clients.</p>
+<h2 id="1-activez-la">1. Activez-la</h2>
+<ol>
+<li>Ouvrez <strong>Paramètres de l’entreprise</strong>, <strong>Général</strong>.</li>
+<li>Sous <strong>Commande depuis la table (QR code)</strong>, activez <strong>Permettre aux clients de commander depuis leur table</strong>.</li>
+<li>Enregistrez.</li>
+</ol>
+<figure><img alt="Paramètres de l'entreprise LoungeOS avec la commande depuis la table activée" decoding="async" height="900" loading="lazy" sizes="(max-width: 800px) 100vw, 960px" src="/images/screens/loungeos-help-fr-config-selforder-on.webp" srcset="/images/screens/loungeos-help-fr-config-selforder-on-800.webp 800w, /images/screens/loungeos-help-fr-config-selforder-on.webp 1440w" width="1440"/><figcaption>Désactivée, le code affiche un message qui invite le client à appeler un membre du personnel.</figcaption></figure>
+<h2 id="2-imprimez-le-qr-code-du-menu">2. Imprimez le QR code du menu</h2>
+<ol>
+<li>Appuyez sur <strong>Imprimer le QR code du menu</strong>.</li>
+<li>Choisissez la langue de l’affiche (<strong>English</strong> ou <strong>Français</strong>) et modifiez le <strong>Titre</strong> et les <strong>Instructions</strong> si vous voulez.</li>
+<li>Appuyez sur <strong>Imprimer</strong>, ou téléchargez-la en <strong>PDF</strong> ou <strong>PNG</strong> pour l’imprimerie.</li>
+</ol>
+<figure><img alt="L'affiche QR code du menu LoungeOS avec le logo du commerce et les instructions" decoding="async" height="900" loading="lazy" sizes="(max-width: 800px) 100vw, 960px" src="/images/screens/loungeos-help-fr-qr-poster.webp" srcset="/images/screens/loungeos-help-fr-qr-poster-800.webp 800w, /images/screens/loungeos-help-fr-qr-poster.webp 1440w" width="1440"/><figcaption>Un seul code pour tout le commerce, avec votre logo en haut.</figcaption></figure>
+<p>Il y a un code pour tout le commerce, pas un par table : le client choisit sa table en commandant. Posez-le sur chaque table, sur la carte et au bar. <strong>Nouveau code</strong> désactive les codes déjà imprimés (par exemple si une photo du code a circulé à l’extérieur).</p>
+<h2 id="3-ce-que-voit-le-client">3. Ce que voit le client</h2>
+<p>Pas d’application, pas de connexion. Le client scanne le code avec l’appareil photo de son téléphone :</p>
+<ol>
+<li>Il voit votre menu avec photos et prix, en français ou en anglais, et ajoute ce qu’il veut.</li>
+<li><strong>Voir la commande</strong>, puis <strong>Choisissez votre table</strong> et une note (« poisson bien cuit, s’il vous plaît »).</li>
+<li>Il envoie et voit <strong>Envoyée au personnel</strong>, puis si elle est acceptée ou refusée.</li>
+</ol>
+<div class="phone-row"><figure><img alt="Le menu client sur un téléphone après le scan du QR code" class="shot-tall" decoding="async" height="1558" loading="lazy" src="/images/screens/loungeos-help-fr-phone-guest-menu.webp" width="720"/><figcaption>Le menu</figcaption></figure><figure><img alt="La commande du client avec la table choisie et une note" class="shot-tall" decoding="async" height="1558" loading="lazy" src="/images/screens/loungeos-help-fr-phone-guest-cart-filled.webp" width="720"/><figcaption>Table et note</figcaption></figure><figure><img alt="Commande envoyée au personnel sur le téléphone du client" class="shot-tall" decoding="async" height="1558" loading="lazy" src="/images/screens/loungeos-help-fr-phone-guest-sent.webp" width="720"/><figcaption>Envoyée</figcaption></figure></div>
+<p>Les clients paient le personnel comme d’habitude à la fin.</p>
+<h2 id="4-prenez-la-commande-en-caisse">4. Prenez la commande en caisse</h2>
+<p>Les commandes des clients arrivent sur toutes les caisses et en ligne sous <strong>Des tables</strong>, avec un compteur et une alerte. Les serveurs qui ont l’application mobile reçoivent une notification.</p>
+<ol>
+<li>Appuyez sur <strong>Des tables</strong>. Chaque commande montre la table, les articles, la note du client et le total.</li>
+<li>Appuyez sur <strong>Prendre sur la caisse</strong> : la commande va sur l’addition de cette table. Vérifiez-la puis envoyez-la comme toute commande (stock, bons cuisine et bar et validations fonctionnent comme d’habitude).</li>
+<li>Ou appuyez sur <strong>Refuser</strong> si vous ne pouvez pas la servir. La page du client l’indique.</li>
+</ol>
+<figure><img alt="Commandes des tables dans la caisse LoungeOS avec Prendre sur la caisse et Refuser" decoding="async" height="900" loading="lazy" sizes="(max-width: 800px) 100vw, 960px" src="/images/screens/loungeos-help-fr-pos-from-tables.webp" srcset="/images/screens/loungeos-help-fr-pos-from-tables-800.webp 800w, /images/screens/loungeos-help-fr-pos-from-tables.webp 1440w" width="1440"/><figcaption>Le personnel vérifie chaque commande client avant qu'elle arrive en cuisine.</figcaption></figure>
+<h2 id="questions-frequentes">Questions fréquentes</h2>
+<h3 id="les-clients-peuvent-ils-payer-depuis-leur-telephone">Les clients peuvent-ils payer depuis leur téléphone ?</h3>
+<p>Non. LoungeOS ne traite pas les paiements. Les clients paient le personnel en espèces, mobile money ou carte comme d’habitude, et le caissier l’enregistre.</p>
+<h3 id="quelquun-peut-il-commander-depuis-chez-lui-avec-une-photo-du-code">Quelqu’un peut-il commander depuis chez lui avec une photo du code ?</h3>
+<p>Il devrait quand même choisir une table, et le personnel accepte chaque commande avant qu’elle parte. Si cela arrive, appuyez sur <strong>Nouveau code</strong> et réimprimez.</p>
+<h3 id="ca-marche-si-la-caisse-est-hors-ligne">Ça marche si la caisse est hors ligne ?</h3>
+<p>La commande du client va sur LoungeOS en ligne : une caisse sans internet ne la reçoit qu’au retour de la connexion. Gardez la caisse en ligne pendant le service si vous utilisez la commande par QR code.</p>
+<p class="help-steps-note">Bloqué à une étape ? Écrivez à support@loungeos.app ou sur WhatsApp au +237 679 690 703 en précisant la page.</p>
+<p><a href="/fr/aide/">← Tous les articles d'aide</a></p>
+        </div>
+      </article>
+      <section class="related-section">
+        <h2 class="section-title">À lire aussi</h2>
+        <div class="card-grid">
+<a class="post-card" href="/fr/aide/tables-et-salles/">
+  <img src="/images/screens/loungeos-help-fr-floor-plan-800.webp" width="800" height="430" alt="Tables, salles et plan de salle" loading="lazy" decoding="async" />
+  <div class="post-card-body">
+    <span class="tag"></span>
+    <h3>Tables, salles et plan de salle</h3>
+    <p>Salles, tables, places, serveurs par salle, état des tables.</p>
+    <span class="read-more">En savoir plus →</span>
+  </div>
+</a>
+<a class="post-card" href="/fr/aide/application-mobile/">
+  <img src="/images/screens/loungeos-help-fr-phone-trio-800.webp" width="800" height="430" alt="L&#x27;appli mobile : notifications et widget" loading="lazy" decoding="async" />
+  <div class="post-card-body">
+    <span class="tag"></span>
+    <h3>L&#x27;appli mobile : notifications et widget</h3>
+    <p>Notifications par rôle, widget d&#x27;accueil, scan des codes-barres à l&#x27;appareil photo.</p>
+    <span class="read-more">En savoir plus →</span>
+  </div>
+</a>
+<a class="post-card" href="/fr/fonctionnalites/commande-qr-code/">
+  <img src="/images/screens/loungeos-help-fr-qr-poster-800.webp" width="800" height="430" alt="L&#x27;affiche QR code du menu LoungeOS avec le logo du commerce et les instructions" loading="lazy" decoding="async" />
+  <div class="post-card-body">
+    <span class="tag">Commande QR code</span>
+    <h3>Commande par QR code à table</h3>
+    <p>Le client commande depuis son téléphone, l&#x27;équipe accepte en caisse. Sans appli, sans commission.</p>
+    <span class="read-more">En savoir plus →</span>
+  </div>
+</a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-grid footer-grid-wide">
+        <div class="footer-brand">
+          <img src="/images/logo/loungeos-logo-white.svg" alt="LoungeOS" width="159" height="28" class="footer-logo" />
+          <p>Logiciel de caisse et de gestion pour toutes les entreprises qui vendent. Conçu par <a href="https://sigalix.com">Sigalix</a> au Cameroun, utilisé en Afrique et au-delà.</p>
+          <div class="footer-worldwide">
+            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Web, Windows, Mac &amp; Android</span>
+            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Français &amp; anglais</span>
+            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Vente hors ligne sur ordinateur</span>
+          </div>
+          <p class="footer-contact">
+            <a href="mailto:support@loungeos.app">support@loungeos.app</a><br />
+            <a href="mailto:info@sigalix.com">info@sigalix.com</a><br />
+            <a href="tel:+237679690703">+237 679 690 703</a>
+          </p>
+        </div>
+        <div class="footer-col">
+          <h3>Produit</h3>
+          <a href="/fr/fonctionnalites/">Fonctionnalités</a>
+          <a href="/fr/tarifs/">Tarifs</a>
+          <a href="/fr/telecharger/">Télécharger</a>
+          <a href="/fr/faq/">FAQ</a>
+        </div>
+        <div class="footer-col">
+          <h3>Solutions</h3>
+          <a href="/fr/logiciel-caisse-restaurant/">Logiciel de caisse restaurant</a>
+          <a href="/fr/logiciel-gestion-bar-lounge/">Logiciel bar &amp; lounge</a>
+          <a href="/fr/logiciel-caisse-boutique/">Logiciel caisse boutique</a>
+          <a href="/fr/afrique/">Afrique francophone</a>
+        </div>
+        <div class="footer-col">
+          <h3>Pays</h3>
+          <a href="/fr/cameroun/">Cameroun</a>
+          <a href="/fr/cote-divoire/">Côte d'Ivoire</a>
+          <a href="/fr/senegal/">Sénégal</a>
+          <a href="/cameroon/">Cameroon (EN)</a>
+          <a href="/nigeria/">Nigeria (EN)</a>
+          <a href="/ghana/">Ghana (EN)</a>
+        </div>
+        <div class="footer-col">
+          <h3>Ressources</h3>
+          <a href="/blog/">Blog</a>
+          <a href="/fr/aide/">Centre d'aide</a>
+          <a href="/about/">À propos</a>
+          <a href="/contact/">Contact</a>
+          <a href="/privacy.html">Confidentialité</a>
+          <a href="/terms.html">Conditions</a>
+          <a href="/legal.html">Mentions légales</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 LoungeOS. Tous droits réservés.</p>
+        <a href="https://app.loungeos.app/login" class="btn btn-outline-light btn-sm" id="footerCtaBtn">Commencer l'essai gratuit <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg></a>
+      </div>
+    </footer>
+    <div id="google_translate_element" style="display: none"></div>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: "fr", autoDisplay: false },
+          "google_translate_element",
+        );
+      }
+    </script>
+    <script defer type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script defer src="/app.js?v=a7444e90c8"></script>
+  </body>
+</html>

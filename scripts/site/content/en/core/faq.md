@@ -42,11 +42,11 @@ The app is available in English and French. The website can be read in ten langu
 
 ### Where does LoungeOS run?
 
-In the web app at [app.loungeos.app](https://app.loungeos.app), in any modern browser, and in apps for Windows 10 and 11 (64-bit), Mac (Apple Silicon and Intel) and Android 6.0 or later. The same LoungeOS account works on all of them. See the [download page](/download/).
+In the web app at [app.loungeos.app](https://app.loungeos.app), in any modern browser, and in apps for Windows 10 and 11 (64-bit), Mac (Apple Silicon and Intel) and Android 7.0 or later. The same LoungeOS account works on all of them. See the [download page](/download/).
 
 ### Is there a mobile app?
 
-Yes, for Android 6.0 or later. The Android app needs Google Chrome and an internet connection. On iPhone and iPad, open the [web app](https://app.loungeos.app) in the browser. On phones, a bottom navigation bar with a "More" sheet keeps every screen in reach.
+Yes, for Android 7.0 or later. The Android app needs an internet connection. It sends each person notifications for their role (table QR orders, kitchen and bar tickets, orders ready, cancellations, low stock) and has a home-screen widget with today's figures. See the [phone app](/features/mobile-app/). On iPhone and iPad, open the [web app](https://app.loungeos.app) in the browser. On phones, a bottom navigation bar with a "More" sheet keeps every screen in reach.
 
 ### Does LoungeOS work without internet?
 
@@ -106,7 +106,7 @@ Yes. Every plan starts with a 14-day free trial with Business features, and ther
 
 ### What is the difference between the plans?
 
-Starter covers the point of sale, inventory, receipts and daily reports for 2 users on 2 devices. Business adds expenses, accounting, shifts and cash control (coming soon), weekly and monthly reports and email alerts (coming soon), for 5 users on 5 devices. Pro gives unlimited users, 10 or more devices, priority support and advanced admin. Several branches and payroll are coming soon on Pro.
+Starter covers the point of sale, tables, kitchen and bar screens, inventory, customer tabs, receipts and daily reports for 2 users on 2 devices. Business adds expenses, accounting, weekly and monthly reports and QR code table ordering, for 5 users on 5 devices. Pro gives unlimited users, 10 or more devices, several branches with an all-branches overview, and priority support. Shifts and cash control, email alerts and payroll are coming soon.
 
 ### How do I pay?
 
@@ -144,7 +144,7 @@ Yes, on the Business and Pro plans. You get expenses with categories you create 
 
 ### Can I manage several branches?
 
-Several branches are coming soon on the Pro plan. If you need something now, write to [info@sigalix.com](mailto:info@sigalix.com) or [contact us](/contact/).
+Yes, on the Pro plan. Open a branch with a copy of your menu, tables, settings and team; each branch keeps its own sales, stock and tills, and the Branches page shows today's sales of every branch. See [multi-branch](/features/multi-branch/) and the [step-by-step guide](/help/branches/).
 
 ## Security and data
 

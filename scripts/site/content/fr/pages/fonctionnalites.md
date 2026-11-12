@@ -26,7 +26,7 @@ Vous utilisez le même compte LoungeOS partout, avec votre e-mail et un mot de p
 
 - **Application Windows** pour Windows 10 et 11 (64 bits)
 - **Application Mac** pour Mac Apple Silicon (M1 et plus récent) et Intel
-- **Application Android** pour Android 6.0 ou plus récent (elle a besoin de Google Chrome et d'internet)
+- **Application Android** pour Android 7.0 ou plus récent (elle a besoin d'internet), avec notifications par rôle et widget d'accueil
 - **Application web** sur [app.loungeos.app](https://app.loungeos.app), dans tout navigateur récent
 
 Sur téléphone, une barre de navigation en bas de l'écran, avec un menu « Plus », garde tous les écrans à portée de main. Le nombre d'utilisateurs et d'appareils dépend de votre [formule](/fr/tarifs/). Voir la page [Télécharger](/fr/telecharger/).
@@ -75,7 +75,16 @@ Chaque établissement crée ses propres moyens de paiement : espèces avec calcu
 
 ## Dépenses et comptabilité
 
-Avec les formules Business et Pro, vous enregistrez vos **dépenses dans les catégories que vous créez** (les plus courantes sont créées pour vous) et tenez une comptabilité en **partie double** avec plan de comptes et journal. Un clic sur *Synchroniser les données comptables* transforme les ventes et les achats de stock en écritures équilibrées. Vous obtenez le **compte de résultat**, le **bilan** et le **tableau des flux de trésorerie**, exportables en PDF ou CSV. Votre comptable peut rapprocher les comptes du plan SYSCOHADA.
+Avec les formules Business et Pro, vous enregistrez vos **dépenses dans les catégories que vous créez** (les plus courantes sont créées pour vous) et tenez une comptabilité en **partie double** avec plan de comptes et journal. Chaque vente payée, paiement sur compte client, remboursement et dépense passe automatiquement son écriture équilibrée. Vous obtenez le **compte de résultat**, le **bilan** et le **tableau des flux de trésorerie**, exportables en PDF ou CSV. Votre comptable peut rapprocher les comptes du plan SYSCOHADA.
+
+## Nouveautés de la version 2.1
+
+- **[Commande par QR code à table](/fr/fonctionnalites/commande-qr-code/)** : le client commande depuis son téléphone, l'équipe accepte en caisse (Business et Pro).
+- **[Comptes clients](/fr/fonctionnalites/ventes-a-credit/)** : vendre à crédit avec Payer plus tard, voir qui doit quoi et depuis quand.
+- **[Plusieurs succursales](/fr/fonctionnalites/multi-etablissements/)** : ouvrir un établissement avec une copie de vos réglages et comparer les ventes (Pro).
+- **[Application Android](/fr/fonctionnalites/application-mobile/)** : notifications selon le rôle et widget avec les chiffres du jour.
+
+Chaque fonction est expliquée pas à pas, avec captures d'écran, dans le [centre d'aide](/fr/aide/).
 
 ## Paramétrage dès le premier jour
 
