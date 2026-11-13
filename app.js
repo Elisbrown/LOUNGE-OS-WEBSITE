@@ -777,3 +777,112 @@ gtBannerObserver.observe(document.documentElement, { childList: true, subtree: t
     }
   }, true);
 })();
+
+// --- Setup help after a download ---
+// When someone downloads an app, the download starts as usual and a card offers
+// help with installing and setting up: a big WhatsApp button, or "No thanks".
+// "No thanks" hides it for the rest of the visit. Text follows the page language.
+(function () {
+  var fr = (document.documentElement.lang || '').slice(0, 2) === 'fr';
+  var T = fr ? {
+    title: "Besoin d'aide pour installer ou configurer LoungeOS ?",
+    body: "Écrivez-nous sur WhatsApp au +237 679 690 703 ou appelez le même numéro. Nous vous aidons en français et en anglais : installation des applications, assistant de configuration, menu ou produits, imprimantes et comptes du personnel.",
+    yes: "J'ai besoin d'aide pour installer et configurer",
+    no: "Non merci, je m'en occupe",
+    call: "Ou appelez le +237 679 690 703",
+    close: 'Fermer',
+    pill: "Besoin d'aide pour l'installation ?",
+    msg: function (p) { return "Bonjour, je viens de télécharger LoungeOS" + (p ? ' pour ' + p : '') + " et j'ai besoin d'aide pour l'installer et le configurer pour mon commerce."; }
+  } : {
+    title: 'Need help installing or setting up LoungeOS?',
+    body: 'Message us on WhatsApp +237 679 690 703 or call the same number. We help in English and French with installing the apps, the setup wizard, your menu or products, printers and staff accounts.',
+    yes: 'I need help installing and configuring',
+    no: "No thanks, I've got it covered",
+    call: 'Or call +237 679 690 703',
+    close: 'Close',
+    pill: 'Need help installing?',
+    msg: function (p) { return 'Hello, I just downloaded LoungeOS' + (p ? ' for ' + p : '') + ' and I need help installing and setting it up for my business.'; }
+  };
+  var KEY = 'loungeos-setup-help-dismissed';
+  function dismissed() { try { return sessionStorage.getItem(KEY) === '1'; } catch (e) { return false; } }
+  function platformOf(file) {
+    if (/\.exe$/i.test(file)) return 'Windows';
+    if (/\.dmg$/i.test(file)) return 'Mac';
+    if (/\.apk$/i.test(file)) return 'Android';
+    return '';
+  }
+  function track(name, params) {
+    try { if (typeof window.gtag === 'function') window.gtag('event', name, params); } catch (e) {}
+  }
+  var card = null;
+  function close(remember) {
+    if (!card) return;
+    if (remember) { try { sessionStorage.setItem(KEY, '1'); } catch (e) {} }
+    card.remove();
+    card = null;
+    document.removeEventListener('keydown', onKey);
+  }
+  function onKey(e) { if (e.key === 'Escape') close(false); }
+  function show(platform, force) {
+    if (card || (!force && dismissed())) return;
+    card = document.createElement('div');
+    card.className = 'setup-help-toast';
+    card.setAttribute('role', 'dialog');
+    card.setAttribute('aria-live', 'polite');
+    card.setAttribute('aria-labelledby', 'setupHelpTitle');
+    var wa = 'https://wa.me/237679690703?text=' + encodeURIComponent(T.msg(platform));
+    card.innerHTML =
+      '<button type="button" class="setup-help-close" aria-label="' + T.close + '">&times;</button>' +
+      '<p class="setup-help-title" id="setupHelpTitle"></p>' +
+      '<p class="setup-help-body"></p>' +
+      '<a class="setup-help-yes" target="_blank" rel="noopener"></a>' +
+      '<a class="setup-help-call" href="tel:+237679690703"></a>' +
+      '<button type="button" class="setup-help-no"></button>';
+    card.querySelector('.setup-help-title').textContent = T.title;
+    card.querySelector('.setup-help-body').textContent = T.body;
+    var yes = card.querySelector('.setup-help-yes');
+    yes.textContent = T.yes;
+    yes.href = wa;
+    card.querySelector('.setup-help-call').textContent = T.call;
+    card.querySelector('.setup-help-no').textContent = T.no;
+    yes.addEventListener('click', function () {
+      track('setup_help_click', { method: 'whatsapp', platform: platform || 'other', page_path: location.pathname });
+      close(true);
+    });
+    card.querySelector('.setup-help-call').addEventListener('click', function () {
+      track('setup_help_click', { method: 'phone', platform: platform || 'other', page_path: location.pathname });
+    });
+    card.querySelector('.setup-help-no').addEventListener('click', function () {
+      track('setup_help_declined', { platform: platform || 'other', page_path: location.pathname });
+      close(true);
+    });
+    card.querySelector('.setup-help-close').addEventListener('click', function () { close(false); });
+    document.addEventListener('keydown', onKey);
+    document.body.appendChild(card);
+    setTimeout(function () { if (yes) yes.focus({ preventScroll: true }); }, 50);
+  }
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href]');
+    if (!a) return;
+    var href = a.getAttribute('href') || '';
+    if (!/releases\/(latest\/)?download\//.test(href)) return;
+    // The download continues normally; the card appears on top of the page.
+    show(platformOf(href.split('/').pop()));
+  });
+
+  // Small button that is always there, just above the privacy (cookie) button
+  // in the bottom-left corner. It opens the same card, even after "No thanks".
+  if (!document.querySelector('.setup-help-pill')) {
+    var pill = document.createElement('button');
+    pill.type = 'button';
+    pill.className = 'setup-help-pill';
+    pill.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg><span></span>';
+    pill.querySelector('span').textContent = T.pill;
+    pill.addEventListener('click', function () {
+      track('setup_help_open', { source: 'pill', page_path: location.pathname });
+      if (card) { close(false); return; }
+      show('', true);
+    });
+    document.body.appendChild(pill);
+  }
+})();
