@@ -791,6 +791,7 @@ gtBannerObserver.observe(document.documentElement, { childList: true, subtree: t
     no: "Non merci, je m'en occupe",
     call: "Ou appelez le +237 679 690 703",
     close: 'Fermer',
+    pill: "Besoin d'aide pour l'installation ?",
     msg: function (p) { return "Bonjour, je viens de télécharger LoungeOS" + (p ? ' pour ' + p : '') + " et j'ai besoin d'aide pour l'installer et le configurer pour mon commerce."; }
   } : {
     title: 'Need help installing or setting up LoungeOS?',
@@ -799,6 +800,7 @@ gtBannerObserver.observe(document.documentElement, { childList: true, subtree: t
     no: "No thanks, I've got it covered",
     call: 'Or call +237 679 690 703',
     close: 'Close',
+    pill: 'Need help installing?',
     msg: function (p) { return 'Hello, I just downloaded LoungeOS' + (p ? ' for ' + p : '') + ' and I need help installing and setting it up for my business.'; }
   };
   var KEY = 'loungeos-setup-help-dismissed';
@@ -821,8 +823,8 @@ gtBannerObserver.observe(document.documentElement, { childList: true, subtree: t
     document.removeEventListener('keydown', onKey);
   }
   function onKey(e) { if (e.key === 'Escape') close(false); }
-  function show(platform) {
-    if (card || dismissed()) return;
+  function show(platform, force) {
+    if (card || (!force && dismissed())) return;
     card = document.createElement('div');
     card.className = 'setup-help-toast';
     card.setAttribute('role', 'dialog');
@@ -867,4 +869,20 @@ gtBannerObserver.observe(document.documentElement, { childList: true, subtree: t
     // The download continues normally; the card appears on top of the page.
     show(platformOf(href.split('/').pop()));
   });
+
+  // Small button that is always there, just above the privacy (cookie) button
+  // in the bottom-left corner. It opens the same card, even after "No thanks".
+  if (!document.querySelector('.setup-help-pill')) {
+    var pill = document.createElement('button');
+    pill.type = 'button';
+    pill.className = 'setup-help-pill';
+    pill.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg><span></span>';
+    pill.querySelector('span').textContent = T.pill;
+    pill.addEventListener('click', function () {
+      track('setup_help_open', { source: 'pill', page_path: location.pathname });
+      if (card) { close(false); return; }
+      show('', true);
+    });
+    document.body.appendChild(pill);
+  }
 })();

@@ -4035,3 +4035,31 @@ body.menu-open .locale-banner {
 @media (max-width: 600px) {
   .setup-help-toast { right: 0.75rem; left: 0.75rem; width: auto; bottom: 4.75rem; }
 }
+
+/* Always-visible "Need help installing?" button, above the privacy button (bottom left) */
+.setup-help-pill {
+  position: fixed;
+  left: 40px;
+  bottom: 96px;
+  z-index: 1390;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  max-width: calc(100vw - 80px);
+  padding: 0.5rem 0.85rem;
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-pill);
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.14);
+  font: 600 0.8125rem/1.2 var(--font-stack);
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.setup-help-pill:hover { transform: translateY(-1px); box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18); }
+.setup-help-pill:focus-visible { outline: 3px solid #128c7e; outline-offset: 3px; }
+.setup-help-pill svg { width: 16px; height: 16px; flex-shrink: 0; color: #25d366; }
+.setup-help-pill span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+@media (max-width: 600px) {
+  .setup-help-pill { left: 24px; bottom: 84px; }
+}
