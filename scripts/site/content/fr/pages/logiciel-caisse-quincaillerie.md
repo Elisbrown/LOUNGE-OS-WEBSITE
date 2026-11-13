@@ -16,6 +16,7 @@ card_desc: "Stocks, crédit aux entrepreneurs et livraisons fournisseurs pour qu
 alternates:
   en: /hardware-store-pos/
 related:
+  - /fr/blog/logiciel-caisse-quincaillerie-guide/
   - /fr/fonctionnalites/ventes-a-credit/
   - /fr/blog/logiciel-gestion-stock-cameroun/
   - /fr/tarifs/

@@ -15,6 +15,7 @@ card_desc: "Barcode sales, stock counts and supplier records for pharmacies and 
 alternates:
   fr: /fr/logiciel-gestion-pharmacie/
 related:
+  - /blog/pharmacy-pos-software-guide/
   - /features/inventory-management/
   - /features/loss-prevention/
   - /features/offline-pos/

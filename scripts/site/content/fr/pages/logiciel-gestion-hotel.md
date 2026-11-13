@@ -16,6 +16,7 @@ card_desc: "Restaurant, bar, room service et banquets d'un hôtel sur une seule 
 alternates:
   en: /hotel-pos/
 related:
+  - /fr/blog/logiciel-caisse-restaurant-hotel/
   - /fr/fonctionnalites/multi-etablissements/
   - /fr/fonctionnalites/commande-qr-code/
   - /fr/tarifs/

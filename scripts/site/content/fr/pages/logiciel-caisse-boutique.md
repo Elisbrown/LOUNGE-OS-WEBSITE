@@ -14,6 +14,7 @@ card_desc: "Codes-barres, stock et ventes à crédit pour les boutiques de vête
 alternates:
   en: /retail-pos/
 related:
+  - /fr/blog/meilleur-logiciel-caisse-boutique/
   - /fr/fonctionnalites/
   - /fr/tarifs/
   - /fr/cameroun/

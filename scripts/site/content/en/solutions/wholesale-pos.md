@@ -15,6 +15,7 @@ card_desc: "Stock counts, customer credit and branches for wholesalers and drink
 alternates:
   fr: /fr/logiciel-gestion-commerce-de-gros/
 related:
+  - /blog/wholesale-distribution-pos-software/
   - /features/customer-tabs/
   - /features/inventory-management/
   - /features/multi-branch/

@@ -13,6 +13,7 @@ card_desc: "Restaurant, bar, pool bar and room service on one system with F&B ac
 alternates:
   fr: /fr/logiciel-gestion-hotel/
 related:
+  - /blog/hotel-restaurant-bar-pos/
   - /features/restaurant-accounting/
   - /features/table-management/
   - /lounge-pos/

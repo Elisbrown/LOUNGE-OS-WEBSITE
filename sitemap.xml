@@ -13,7 +13,7 @@
   </url>
   <url>
     <loc>https://loungeos.app/accessibility.html</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-12</lastmod>
   </url>
   <url>
     <loc>https://loungeos.app/africa/</loc>
@@ -43,11 +43,32 @@
     <lastmod>2026-11-13</lastmod>
   </url>
   <url>
+    <loc>https://loungeos.app/blog/best-pos-for-cafes-fast-food/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://loungeos.app/blog/best-pos-for-cafes-fast-food/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/blog/meilleur-logiciel-caisse-snack-fast-food/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/blog/best-pos-for-cafes-fast-food/"/>
+  </url>
+  <url>
+    <loc>https://loungeos.app/blog/best-pos-for-retail-shops/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://loungeos.app/blog/best-pos-for-retail-shops/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/blog/meilleur-logiciel-caisse-boutique/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/blog/best-pos-for-retail-shops/"/>
+  </url>
+  <url>
     <loc>https://loungeos.app/blog/best-pos-systems-cameroon/</loc>
     <lastmod>2026-11-13</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://loungeos.app/blog/best-pos-systems-cameroon/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/blog/meilleur-logiciel-caisse-cameroun/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/blog/best-pos-systems-cameroon/"/>
+  </url>
+  <url>
+    <loc>https://loungeos.app/blog/best-supermarket-pos-software/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://loungeos.app/blog/best-supermarket-pos-software/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/blog/meilleur-logiciel-caisse-supermarche/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/blog/best-supermarket-pos-software/"/>
   </url>
   <url>
     <loc>https://loungeos.app/blog/cloud-vs-offline-pos/</loc>
@@ -71,6 +92,20 @@
   <url>
     <loc>https://loungeos.app/blog/food-cost-percentage-formula/</loc>
     <lastmod>2026-11-13</lastmod>
+  </url>
+  <url>
+    <loc>https://loungeos.app/blog/hardware-store-pos-software/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://loungeos.app/blog/hardware-store-pos-software/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/blog/logiciel-caisse-quincaillerie-guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/blog/hardware-store-pos-software/"/>
+  </url>
+  <url>
+    <loc>https://loungeos.app/blog/hotel-restaurant-bar-pos/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://loungeos.app/blog/hotel-restaurant-bar-pos/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/blog/logiciel-caisse-restaurant-hotel/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/blog/hotel-restaurant-bar-pos/"/>
   </url>
   <url>
     <loc>https://loungeos.app/blog/how-to-choose-a-restaurant-pos-system/</loc>
@@ -108,6 +143,13 @@
   <url>
     <loc>https://loungeos.app/blog/odoo-pos-alternatives/</loc>
     <lastmod>2026-11-13</lastmod>
+  </url>
+  <url>
+    <loc>https://loungeos.app/blog/pharmacy-pos-software-guide/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://loungeos.app/blog/pharmacy-pos-software-guide/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/blog/logiciel-gestion-pharmacie-guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/blog/pharmacy-pos-software-guide/"/>
   </url>
   <url>
     <loc>https://loungeos.app/blog/pos-user-permissions-voids-discounts/</loc>
@@ -186,6 +228,13 @@
   <url>
     <loc>https://loungeos.app/blog/what-is-a-kitchen-display-system/</loc>
     <lastmod>2026-11-13</lastmod>
+  </url>
+  <url>
+    <loc>https://loungeos.app/blog/wholesale-distribution-pos-software/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://loungeos.app/blog/wholesale-distribution-pos-software/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/blog/logiciel-gestion-commerce-de-gros-guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/blog/wholesale-distribution-pos-software/"/>
   </url>
   <url>
     <loc>https://loungeos.app/blog/zoho-pos-alternatives/</loc>
@@ -528,8 +577,36 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/blog/manage-multiple-restaurant-branches/"/>
   </url>
   <url>
+    <loc>https://loungeos.app/fr/blog/logiciel-caisse-quincaillerie-guide/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://loungeos.app/blog/hardware-store-pos-software/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/blog/logiciel-caisse-quincaillerie-guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/blog/hardware-store-pos-software/"/>
+  </url>
+  <url>
     <loc>https://loungeos.app/fr/blog/logiciel-caisse-restaurant-afrique/</loc>
     <lastmod>2026-11-13</lastmod>
+  </url>
+  <url>
+    <loc>https://loungeos.app/fr/blog/logiciel-caisse-restaurant-hotel/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://loungeos.app/blog/hotel-restaurant-bar-pos/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/blog/logiciel-caisse-restaurant-hotel/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/blog/hotel-restaurant-bar-pos/"/>
+  </url>
+  <url>
+    <loc>https://loungeos.app/fr/blog/logiciel-gestion-commerce-de-gros-guide/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://loungeos.app/blog/wholesale-distribution-pos-software/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/blog/logiciel-gestion-commerce-de-gros-guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/blog/wholesale-distribution-pos-software/"/>
+  </url>
+  <url>
+    <loc>https://loungeos.app/fr/blog/logiciel-gestion-pharmacie-guide/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://loungeos.app/blog/pharmacy-pos-software-guide/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/blog/logiciel-gestion-pharmacie-guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/blog/pharmacy-pos-software-guide/"/>
   </url>
   <url>
     <loc>https://loungeos.app/fr/blog/logiciel-gestion-stock-cameroun/</loc>
@@ -543,11 +620,32 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/blog/loungeos-vs-loyverse/"/>
   </url>
   <url>
+    <loc>https://loungeos.app/fr/blog/meilleur-logiciel-caisse-boutique/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://loungeos.app/blog/best-pos-for-retail-shops/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/blog/meilleur-logiciel-caisse-boutique/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/blog/best-pos-for-retail-shops/"/>
+  </url>
+  <url>
     <loc>https://loungeos.app/fr/blog/meilleur-logiciel-caisse-cameroun/</loc>
     <lastmod>2026-11-13</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://loungeos.app/blog/best-pos-systems-cameroon/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/blog/meilleur-logiciel-caisse-cameroun/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/blog/best-pos-systems-cameroon/"/>
+  </url>
+  <url>
+    <loc>https://loungeos.app/fr/blog/meilleur-logiciel-caisse-snack-fast-food/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://loungeos.app/blog/best-pos-for-cafes-fast-food/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/blog/meilleur-logiciel-caisse-snack-fast-food/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/blog/best-pos-for-cafes-fast-food/"/>
+  </url>
+  <url>
+    <loc>https://loungeos.app/fr/blog/meilleur-logiciel-caisse-supermarche/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://loungeos.app/blog/best-supermarket-pos-software/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/blog/meilleur-logiciel-caisse-supermarche/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/blog/best-supermarket-pos-software/"/>
   </url>
   <url>
     <loc>https://loungeos.app/fr/blog/vols-employes-bar-restaurant/</loc>
@@ -878,7 +976,7 @@
   </url>
   <url>
     <loc>https://loungeos.app/legal.html</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-12</lastmod>
   </url>
   <url>
     <loc>https://loungeos.app/lounge-pos/</loc>
@@ -911,7 +1009,7 @@
   </url>
   <url>
     <loc>https://loungeos.app/privacy.html</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-12</lastmod>
   </url>
   <url>
     <loc>https://loungeos.app/restaurant-pos/</loc>
@@ -947,7 +1045,7 @@
   </url>
   <url>
     <loc>https://loungeos.app/terms.html</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-12</lastmod>
   </url>
   <url>
     <loc>https://loungeos.app/wholesale-pos/</loc>

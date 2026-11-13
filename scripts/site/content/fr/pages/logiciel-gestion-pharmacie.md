@@ -16,6 +16,7 @@ card_desc: "Ventes par code-barres, stocks et fournisseurs pour pharmacies et pa
 alternates:
   en: /pharmacy-pos/
 related:
+  - /fr/blog/logiciel-gestion-pharmacie-guide/
   - /fr/blog/logiciel-gestion-stock-cameroun/
   - /fr/tarifs/
   - /fr/fonctionnalites/
