@@ -13,6 +13,7 @@ card_desc: "Quick counter orders, packaging stock and mobile money on minimal ha
 alternates:
   fr: /fr/logiciel-caisse-fast-food/
 related:
+  - /blog/best-pos-for-cafes-fast-food/
   - /blog/restaurant-pos-hardware-guide/
   - /blog/restaurant-inventory-management-guide/
   - /features/mobile-money-pos/

@@ -16,6 +16,7 @@ card_desc: "Commandes au comptoir rapides, écran cuisine et stock pour fast-foo
 alternates:
   en: /cafe-pos/
 related:
+  - /fr/blog/meilleur-logiciel-caisse-snack-fast-food/
   - /fr/fonctionnalites/commande-qr-code/
   - /fr/blog/coupures-courant-internet-restaurant/
   - /fr/tarifs/

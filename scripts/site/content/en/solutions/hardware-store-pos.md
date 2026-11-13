@@ -15,6 +15,7 @@ card_desc: "Stock counts, builder credit and supplier deliveries for hardware an
 alternates:
   fr: /fr/logiciel-caisse-quincaillerie/
 related:
+  - /blog/hardware-store-pos-software/
   - /features/inventory-management/
   - /features/customer-tabs/
   - /features/multi-branch/

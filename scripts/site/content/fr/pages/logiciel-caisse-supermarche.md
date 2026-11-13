@@ -16,6 +16,7 @@ card_desc: "Encaissement par code-barres, plusieurs caisses et stocks pour super
 alternates:
   en: /supermarket-pos/
 related:
+  - /fr/blog/meilleur-logiciel-caisse-supermarche/
   - /fr/blog/logiciel-gestion-stock-cameroun/
   - /fr/tarifs/
   - /fr/fonctionnalites/

@@ -13,6 +13,7 @@ card_desc: "Barcode sales, stock counts and customer credit for clothing, shoe a
 alternates:
   fr: /fr/logiciel-caisse-boutique/
 related:
+  - /blog/best-pos-for-retail-shops/
   - /features/inventory-management/
   - /features/customer-tabs/
   - /supermarket-pos/

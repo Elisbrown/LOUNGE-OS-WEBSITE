@@ -15,6 +15,7 @@ card_desc: "Fast barcode checkout, several tills and stock counts for supermarke
 alternates:
   fr: /fr/logiciel-caisse-supermarche/
 related:
+  - /blog/best-supermarket-pos-software/
   - /features/inventory-management/
   - /features/offline-pos/
   - /features/loss-prevention/

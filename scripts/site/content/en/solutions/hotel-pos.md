@@ -13,6 +13,7 @@ card_desc: "Restaurant, bar, pool bar and room service on one system with F&B ac
 alternates:
   fr: /fr/logiciel-gestion-hotel/
 related:
+  - /blog/hotel-restaurant-bar-pos/
   - /features/restaurant-accounting/
   - /features/table-management/
   - /lounge-pos/
@@ -25,6 +26,8 @@ pains:
   - ["Banquets and events on paper", "Conference lunches and weddings get priced on paper and the stock used is never counted."]
 features_title: "One POS for every food and drink outlet in your hotel"
 features:
+  - ["calendar", "Rooms and bookings", "See every room as free, occupied, arriving, leaving or to clean, and book on a two-week calendar. Walk-ins in one step."]
+  - ["credit", "Charge to room", "Put a restaurant or bar sale on the bill of a checked-in guest. The bill shows nights, charges, deposits and payments."]
   - ["layers", "Every outlet in one place", "Each outlet is a service area with its own tables and staff, and reports show all of them together."]
   - ["kitchen", "Kitchen and bar screens", "Orders from the restaurant, bar and room service go to the right screen."]
   - ["calendar", "Events and banquets", "Plan conferences, weddings and themed nights in the events calendar."]
@@ -32,9 +35,6 @@ features:
   - ["book", "Expenses and accounting", "Record expenses and follow the accounts of the food and drink side."]
   - ["users", "Staff and roles", "Each staff member has a role and a PIN. Managers approve cancels and refunds."]
 soon:
-  - "Rooms, bookings and a room calendar"
-  - "Check-in and check-out with a guest register"
-  - "Charge to room and guest folios"
   - "Housekeeping on the phone app"
 ---
 
@@ -48,7 +48,11 @@ Food from any outlet goes to the [kitchen display](/features/kitchen-display-sys
 
 ## Room service
 
-Create a *Room service* area with one "table" per floor or per room range. Orders follow the same kitchen flow and can be paid on delivery in cash, by card or by mobile money. LoungeOS does not currently post charges to a hotel property management system (PMS) folio. LoungeOS is made by [Sigalix](https://sigalix.com), a custom software company. If you need room-charge integration, write to [info@sigalix.com](mailto:info@sigalix.com) or [contact us](/contact/).
+Create a *Room service* area with one "table" per floor or per room range. Orders follow the same kitchen flow and can be paid on delivery in cash, by card or by mobile money, or put on the guest's bill with **Charge to room**. Charge to room only works for a guest who is checked in now.
+
+## Rooms, bookings and check-out
+
+The **Rooms** screen shows every room as free, occupied, arriving, leaving today, to clean or out of order, with a two-week booking calendar. Check-in records the guest register details (ID document, nationality, address, where the guest comes from and goes next), ready to print or download for the authorities. The guest's bill shows the room nights, anything charged from the till, deposits and payments. At check-out the nights stayed are added, the room is marked to clean, and check-out waits until the bill is paid unless a manager lets the guest leave owing.
 
 ## F&B stock and accounting
 
@@ -70,7 +74,7 @@ The setup wizard asks for the hotel's currency, for example XAF, the taxes that 
 
 ### Can LoungeOS manage hotel rooms and reservations?
 
-No. LoungeOS is a POS and management system for food and beverage outlets. Room bookings stay in your hotel management software.
+Yes, since version 2.3.0: rooms, bookings, walk-ins, check-in with a guest register, guest bills with deposits, check-out and charge to room from the till.
 
 ### Can each outlet have different staff?
 

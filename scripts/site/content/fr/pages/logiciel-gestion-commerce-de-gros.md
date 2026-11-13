@@ -16,6 +16,7 @@ card_desc: "Stocks, crédit clients et succursales pour grossistes et dépôts d
 alternates:
   en: /wholesale-pos/
 related:
+  - /fr/blog/logiciel-gestion-commerce-de-gros-guide/
   - /fr/fonctionnalites/ventes-a-credit/
   - /fr/fonctionnalites/multi-etablissements/
   - /fr/tarifs/
