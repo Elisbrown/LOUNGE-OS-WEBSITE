@@ -110,6 +110,12 @@ Write down every task that failed. If any of them is something your team does ev
 
 [[cta]]
 
+## More POS comparisons
+
+Switching from another system? See the alternatives to each major POS, with prices checked on each vendor's own site.
+
+[[cards:/blog/square-pos-alternatives/,/blog/toast-pos-alternatives/,/blog/lightspeed-alternatives/,/blog/zoho-pos-alternatives/,/blog/sambapos-alternatives/,/blog/touchbistro-alternatives/,/blog/epos-now-alternatives/,/blog/clover-pos-alternatives/,/blog/loyverse-alternatives/,/blog/odoo-pos-alternatives/]]
+
 ## Frequently asked questions
 
 ### What is the best POS system that works without internet?

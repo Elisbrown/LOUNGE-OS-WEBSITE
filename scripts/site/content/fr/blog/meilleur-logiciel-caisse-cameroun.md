@@ -103,6 +103,12 @@ Ils sont populaires à l'étranger et apparaissent dans les classements internat
 
 Plus de détails dans [bien choisir un logiciel de caisse en Afrique](/fr/blog/logiciel-caisse-restaurant-afrique/).
 
+## Autres comparatifs
+
+Vous changez de logiciel ? Voici les alternatives aux principales caisses, prix vérifiés sur le site de chaque éditeur.
+
+[[cards:/fr/blog/alternatives-a-square/,/fr/blog/alternatives-a-lightspeed/,/fr/blog/alternatives-a-zoho-pos/,/fr/blog/alternatives-a-sambapos/,/fr/blog/loungeos-ou-loyverse/]]
+
 ## Questions fréquentes
 
 ### Quel est le meilleur logiciel de caisse pour un bar au Cameroun ?

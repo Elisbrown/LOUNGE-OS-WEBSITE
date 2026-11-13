@@ -13,7 +13,7 @@
   </url>
   <url>
     <loc>https://loungeos.app/accessibility.html</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-13</lastmod>
   </url>
   <url>
     <loc>https://loungeos.app/africa/</loc>
@@ -54,11 +54,19 @@
     <lastmod>2026-11-13</lastmod>
   </url>
   <url>
+    <loc>https://loungeos.app/blog/clover-pos-alternatives/</loc>
+    <lastmod>2026-11-13</lastmod>
+  </url>
+  <url>
     <loc>https://loungeos.app/blog/customer-credit-tabs-restaurant-bar/</loc>
     <lastmod>2026-11-13</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://loungeos.app/blog/customer-credit-tabs-restaurant-bar/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/blog/cahier-de-credit-clients-bar/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/blog/customer-credit-tabs-restaurant-bar/"/>
+  </url>
+  <url>
+    <loc>https://loungeos.app/blog/epos-now-alternatives/</loc>
+    <lastmod>2026-11-13</lastmod>
   </url>
   <url>
     <loc>https://loungeos.app/blog/food-cost-percentage-formula/</loc>
@@ -67,6 +75,13 @@
   <url>
     <loc>https://loungeos.app/blog/how-to-choose-a-restaurant-pos-system/</loc>
     <lastmod>2026-11-13</lastmod>
+  </url>
+  <url>
+    <loc>https://loungeos.app/blog/lightspeed-alternatives/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://loungeos.app/blog/lightspeed-alternatives/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/blog/alternatives-a-lightspeed/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/blog/lightspeed-alternatives/"/>
   </url>
   <url>
     <loc>https://loungeos.app/blog/lounge-nightclub-management/</loc>
@@ -147,8 +162,37 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/blog/run-a-restaurant-during-power-and-internet-outages/"/>
   </url>
   <url>
+    <loc>https://loungeos.app/blog/sambapos-alternatives/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://loungeos.app/blog/sambapos-alternatives/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/blog/alternatives-a-sambapos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/blog/sambapos-alternatives/"/>
+  </url>
+  <url>
+    <loc>https://loungeos.app/blog/square-pos-alternatives/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://loungeos.app/blog/square-pos-alternatives/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/blog/alternatives-a-square/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/blog/square-pos-alternatives/"/>
+  </url>
+  <url>
+    <loc>https://loungeos.app/blog/toast-pos-alternatives/</loc>
+    <lastmod>2026-11-13</lastmod>
+  </url>
+  <url>
+    <loc>https://loungeos.app/blog/touchbistro-alternatives/</loc>
+    <lastmod>2026-11-13</lastmod>
+  </url>
+  <url>
     <loc>https://loungeos.app/blog/what-is-a-kitchen-display-system/</loc>
     <lastmod>2026-11-13</lastmod>
+  </url>
+  <url>
+    <loc>https://loungeos.app/blog/zoho-pos-alternatives/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://loungeos.app/blog/zoho-pos-alternatives/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/blog/alternatives-a-zoho-pos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/blog/zoho-pos-alternatives/"/>
   </url>
   <url>
     <loc>https://loungeos.app/cafe-pos/</loc>
@@ -419,6 +463,34 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://loungeos.app/help/tables-and-floors/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/aide/tables-et-salles/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/help/tables-and-floors/"/>
+  </url>
+  <url>
+    <loc>https://loungeos.app/fr/blog/alternatives-a-lightspeed/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://loungeos.app/blog/lightspeed-alternatives/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/blog/alternatives-a-lightspeed/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/blog/lightspeed-alternatives/"/>
+  </url>
+  <url>
+    <loc>https://loungeos.app/fr/blog/alternatives-a-sambapos/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://loungeos.app/blog/sambapos-alternatives/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/blog/alternatives-a-sambapos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/blog/sambapos-alternatives/"/>
+  </url>
+  <url>
+    <loc>https://loungeos.app/fr/blog/alternatives-a-square/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://loungeos.app/blog/square-pos-alternatives/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/blog/alternatives-a-square/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/blog/square-pos-alternatives/"/>
+  </url>
+  <url>
+    <loc>https://loungeos.app/fr/blog/alternatives-a-zoho-pos/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://loungeos.app/blog/zoho-pos-alternatives/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/blog/alternatives-a-zoho-pos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/blog/zoho-pos-alternatives/"/>
   </url>
   <url>
     <loc>https://loungeos.app/fr/blog/application-caisse-android/</loc>
@@ -806,7 +878,7 @@
   </url>
   <url>
     <loc>https://loungeos.app/legal.html</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-13</lastmod>
   </url>
   <url>
     <loc>https://loungeos.app/lounge-pos/</loc>
@@ -839,7 +911,7 @@
   </url>
   <url>
     <loc>https://loungeos.app/privacy.html</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-13</lastmod>
   </url>
   <url>
     <loc>https://loungeos.app/restaurant-pos/</loc>
@@ -875,7 +947,7 @@
   </url>
   <url>
     <loc>https://loungeos.app/terms.html</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-13</lastmod>
   </url>
   <url>
     <loc>https://loungeos.app/wholesale-pos/</loc>
