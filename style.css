@@ -408,6 +408,39 @@ button {
   color: var(--text-secondary);
 }
 
+.hero-benefits a.hero-benefit,
+a.trust-badge {
+  text-decoration: none;
+  transition: color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.hero-benefits a.hero-benefit:hover,
+.hero-benefits a.hero-benefit:focus-visible {
+  color: var(--text-primary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+a.trust-badge:hover,
+a.trust-badge:focus-visible {
+  color: var(--text-primary);
+  border-color: var(--text-primary);
+}
+
+.hero-subnote {
+  margin: -2rem 0 3rem;
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+  text-align: center;
+}
+
+.hero-subnote a {
+  color: var(--text-primary);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .hero-benefit .icon {
   width: 20px;
   height: 20px;
@@ -2998,7 +3031,8 @@ body.menu-open .locale-banner {
   flex-wrap: wrap;
 }
 
-.billing-toggle [data-billing] {
+.billing-toggle [data-billing],
+.billing-toggle .yearly-badge {
   cursor: pointer;
 }
 
