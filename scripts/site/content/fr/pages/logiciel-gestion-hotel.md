@@ -5,14 +5,14 @@ type: industry
 biz_type: hotel
 pricing_name: "les hôtels et auberges"
 title: "Logiciel hôtel : restaurant, bar et room service | LoungeOS"
-description: "Une caisse pour tous les points de vente d'un hôtel : restaurant, bar, room service, banquets. Stocks, comptabilité et personnel. Chambres bientôt."
+description: "Chambres, réservations, arrivées et départs, facturation sur la chambre, et une caisse pour le restaurant, le bar et le room service de votre hôtel."
 h1: "Une seule caisse pour tous les points de vente de votre hôtel"
 label: "Logiciel hôtel"
 lead: "Restaurant, bar, piscine et room service : chaque point de vente a ses tables, son équipe et ses écrans, et vous voyez tout dans un seul rapport."
 image: loungeos-help-fr-floor-plan
 image_alt: "Plan de salle LoungeOS en français avec zones, tables et personnel affecté"
 card_title: "Hôtels & auberges"
-card_desc: "Restaurant, bar, room service et banquets d'un hôtel sur une seule caisse. Chambres bientôt."
+card_desc: "Chambres, réservations, facturation sur la chambre, restaurant, bar et room service sur une seule caisse."
 alternates:
   en: /hotel-pos/
 related:
@@ -27,6 +27,8 @@ pains:
   - ["Banquets et événements sur papier", "Déjeuners de conférence et mariages sont chiffrés sur papier, et le stock utilisé n'est jamais compté."]
 features_title: "Une caisse pour chaque point de vente de votre hôtel"
 features:
+  - ["calendar", "Chambres et réservations", "Chaque chambre libre, occupée, en arrivée, en départ ou à nettoyer, et un calendrier de deux semaines. Clients de passage en une étape."]
+  - ["credit", "Facturation sur la chambre", "Mettez une vente du restaurant ou du bar sur la note d'un client présent. La note montre nuits, consommations, acomptes et paiements."]
   - ["layers", "Tous les points de vente au même endroit", "Chaque point de vente est une zone avec ses tables et son équipe, et les rapports les regroupent."]
   - ["kitchen", "Écrans cuisine et bar", "Les commandes du restaurant, du bar et du room service vont au bon écran."]
   - ["calendar", "Événements et banquets", "Préparez conférences, mariages et soirées à thème dans le calendrier des événements."]
@@ -34,9 +36,6 @@ features:
   - ["book", "Dépenses et comptabilité", "Enregistrez les dépenses et suivez les comptes de la restauration."]
   - ["users", "Personnel et rôles", "Chaque employé a un rôle et un code PIN. Les responsables valident annulations et remboursements."]
 soon:
-  - "Chambres, réservations et calendrier des chambres"
-  - "Arrivées et départs avec registre des voyageurs"
-  - "Facturation sur la chambre et notes clients"
   - "Ménage des chambres sur l'application mobile"
 ---
 
@@ -48,7 +47,7 @@ Créez une zone par point de vente : restaurant, bar, terrasse, piscine. Chaque 
 
 ## Room service
 
-Créez une zone *Room service* avec une « table » par étage ou par groupe de chambres. Les commandes suivent le même circuit cuisine et se paient à la livraison, en espèces, par carte ou mobile money. La facturation directe sur la chambre arrive avec la gestion des chambres (voir *Bientôt disponible* plus haut).
+Créez une zone *Room service* avec une « table » par étage ou par groupe de chambres. Les commandes suivent le même circuit cuisine et se paient à la livraison, en espèces, par carte ou mobile money. Elles peuvent aussi aller sur la note du client avec **Facturer sur la chambre**, pour un client arrivé et pas encore parti.
 
 ## Stock et comptabilité de la restauration
 
@@ -60,15 +59,15 @@ Le calendrier des événements aide l'équipe à préparer les conférences, mar
 
 [[cta]]
 
-## Ce que LoungeOS ne fait pas encore
+## Chambres, réservations, arrivées et départs
 
-LoungeOS ne gère pas encore les chambres, les réservations, les arrivées et départs, ni la facturation sur la chambre. C'est la prochaine grande étape après la mise à jour des commerces. En attendant, LoungeOS gère très bien la restauration de l'hôtel à côté de votre logiciel de réservation.
+L'écran **Chambres** montre chaque chambre libre, occupée, en arrivée, en départ, à nettoyer ou hors service, avec un calendrier des réservations sur deux semaines. L'arrivée enregistre le registre des voyageurs (pièce d'identité, nationalité, adresse, provenance et destination), prêt à imprimer ou à télécharger pour les autorités. La note du client réunit les nuits, les consommations facturées depuis la caisse, les acomptes et les paiements. Au départ, les nuits passées sont ajoutées, la chambre passe à nettoyer, et le départ attend le règlement, sauf si un responsable laisse partir le client avec un solde.
 
 ## Questions fréquentes
 
 ### LoungeOS gère-t-il les chambres et les réservations ?
 
-Pas encore. Chambres, réservations, arrivées et départs avec registre des voyageurs et facturation sur la chambre sont en cours de développement.
+Oui, depuis la version 2.3.0 : chambres, réservations, clients de passage, arrivée avec registre des voyageurs, note client avec acomptes, départ et facturation sur la chambre depuis la caisse.
 
 ### Chaque point de vente peut-il avoir son propre personnel ?
 

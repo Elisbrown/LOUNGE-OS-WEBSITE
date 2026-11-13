@@ -878,11 +878,11 @@ BUSINESS_TYPES = [
 FAMILY_LINE = {
     "en": {"all": "Point of sale (POS) for any kind of business",
            "food": "Point of sale (POS), tables, kitchen and bar screens",
-           "hotel": "Point of sale for the restaurant and bar (rooms and bookings coming soon)",
+           "hotel": "Rooms, bookings and charge to room, with the restaurant and bar till",
            "shop": "Point of sale (POS) with barcode scanning"},
     "fr": {"all": "Caisse (point de vente) pour tout type d'activité",
            "food": "Caisse, tables, écrans cuisine et bar",
-           "hotel": "Caisse du restaurant et du bar (chambres et réservations bientôt disponibles)",
+           "hotel": "Chambres, réservations et facturation sur la chambre, avec la caisse du restaurant et du bar",
            "shop": "Caisse avec lecture des codes-barres"},
 }
 
