@@ -29,6 +29,10 @@ TODAY = dt.date(2026, 10, 8)
 APP_VERSION = "2.1.4"
 SIGNUP = "https://app.loungeos.app/login"  # sign-up is on the sign-in page
 WIN_DOWNLOAD = "/download/"
+# Support line for installation and setup help (WhatsApp or phone)
+SUPPORT_PHONE = "+237 679 690 703"
+SUPPORT_LINK = ('<a href="https://wa.me/237679690703" target="_blank" rel="noopener">WhatsApp '
+                + SUPPORT_PHONE + '</a> (<a href="tel:+237679690703">call</a>)')
 # Hand-maintained pages that generated pages may reference as hreflang alternates
 MANUAL_PAGES = {"/", "/solutions/", "/fr/solutions/"}
 LENIENT = bool(os.environ.get("LENIENT"))
@@ -45,6 +49,7 @@ T = {
         "home": "Home", "blog": "Blog", "start_trial": "Start free trial",
         "see_pricing": "See pricing",
         "trust": "14-day free trial · No payment up front · Sells offline on Windows and Mac",
+        "setup_help": "Need help installing or setting up LoungeOS for your business? Message or call us on",
         "by": "By", "team": "LoungeOS Team", "published": "Published",
         "updated": "Updated", "min_read": "min read", "takeaways": "Key takeaways",
         "toc": "In this guide", "related": "Keep reading", "explore": "Explore more",
@@ -62,6 +67,7 @@ T = {
         "home": "Accueil", "blog": "Blog", "start_trial": "Essai gratuit",
         "see_pricing": "Voir les tarifs",
         "trust": "Essai gratuit de 14 jours · Sans paiement à l'avance · Vente hors ligne sur Windows et Mac",
+        "setup_help": "Besoin d'aide pour installer ou configurer LoungeOS pour votre commerce ? Écrivez-nous ou appelez le",
         "by": "Par", "team": "l'équipe LoungeOS", "published": "Publié le",
         "updated": "Mis à jour le", "min_read": "min de lecture", "takeaways": "Points clés",
         "toc": "Dans ce guide", "related": "À lire aussi", "explore": "Découvrir aussi",
@@ -1436,7 +1442,8 @@ def hero_html(page, crumbs, minutes=None):
           <a href="{SIGNUP}" class="btn btn-primary btn-lg">{t['start_trial']} {ARROW}</a>
           <a href="{sec_url}" class="btn btn-secondary btn-lg">{sec_label}</a>
         </div>
-        <p class="trust-line">{t['trust']}</p>""" if not page.get("no_hero_cta") else ""
+        <p class="trust-line">{t['trust']}</p>
+        <p class="help-line">{t['setup_help']} {SUPPORT_LINK}</p>""" if not page.get("no_hero_cta") else ""
         media = ""
         if page.get("image") and not page.get("no_hero_image"):
             media = f'<div class="page-hero-media">{img_tag(page["image"], page.get("image_alt", page["h1"]), hero=True, sizes="(max-width: 1100px) 100vw, 1100px")}</div>'

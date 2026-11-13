@@ -51,6 +51,8 @@ related:
 
 Toutes les applications sont en version LoungeOS 2.1.4 et utilisent le même compte LoungeOS. Vous découvrez LoungeOS ? [Créez votre compte](https://app.loungeos.app) et profitez d'un essai gratuit de 14 jours avec les fonctionnalités Business, sans rien payer à l'avance.
 
+**Besoin d'aide pour installer ou configurer LoungeOS pour votre commerce ?** Écrivez-nous sur [WhatsApp au +237 679 690 703](https://wa.me/237679690703) ou [appelez le même numéro](tel:+237679690703). Nous vous aidons en français et en anglais : installation des applications, assistant de configuration, menu ou produits, imprimantes et comptes du personnel.
+
 Le téléchargement ne démarre pas ? Utilisez tout de suite l'[application web](https://app.loungeos.app) ou [contactez-nous](/contact/).
 
 ## Configuration requise

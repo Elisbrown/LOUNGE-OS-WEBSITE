@@ -52,6 +52,8 @@ Every app is LoungeOS 2.1.4 and uses the same LoungeOS account. New to LoungeOS?
 
 If a download does not start, you can use the [web app](https://app.loungeos.app) right away or [contact us](/contact/).
 
+**Need help installing or setting up LoungeOS for your business?** Message us on [WhatsApp +237 679 690 703](https://wa.me/237679690703) or [call the same number](tel:+237679690703). We help in English and French with installing the apps, the setup wizard, your menu or products, printers and staff accounts.
+
 ## System requirements
 
 | | Windows app | Mac app | Android app | Web app |
