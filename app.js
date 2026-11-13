@@ -353,6 +353,9 @@
     toggle.querySelectorAll('[data-billing]').forEach(function (label) {
       label.addEventListener('click', function () { setBilling(label.dataset.billing); });
     });
+    // The "2 months free" badge belongs to the yearly option; visitors click it too
+    var badge = toggle.querySelector('.yearly-badge');
+    if (badge) badge.addEventListener('click', function () { setBilling('yearly'); });
   });
 
   function applyCountryPricing(geo) {
@@ -580,7 +583,10 @@
     anchor.addEventListener('click', function (e) {
       var targetId = this.getAttribute('href');
       if (targetId === '#') return;
-      var target = document.querySelector(targetId);
+      // getElementById, not querySelector: ids like "5-setup" are valid in HTML
+      // but not as CSS selectors, and querySelector throws on them.
+      var target = null;
+      try { target = document.getElementById(decodeURIComponent(targetId.slice(1))); } catch (err) { target = null; }
       if (target) {
         e.preventDefault();
         var navHeight = document.querySelector('.navbar').offsetHeight || 56;
