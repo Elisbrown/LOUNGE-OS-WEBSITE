@@ -61,9 +61,9 @@ The Windows and Mac apps also keep the business's data on the computer, keep sel
 | [Several branches](/features/multi-branch/) | | | ✓ |
 | All-branches sales overview | | | ✓ |
 | Priority support | | | ✓ |
-| Shifts and cash control | | Coming soon | Coming soon |
+| Shifts and cash control | | ✓ | ✓ |
+| Payroll and payslips | | | ✓ |
 | Email alerts | | Coming soon | Coming soon |
-| Payroll | | | Coming soon |
 
 Business is the most popular plan. The free trial gives you Business features for 14 days, so you can see which plan you need before you pay.
 

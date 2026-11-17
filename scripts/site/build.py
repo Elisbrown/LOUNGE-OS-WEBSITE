@@ -845,17 +845,17 @@ PLAN_FEATURES = {
         "starter": ["Point of sale (POS)", "Inventory and suppliers",
                     "Customer tabs (pay later)", "Receipts", "Daily reports"],
         "business": ["Everything in Starter", "Expenses and accounting", "Weekly and monthly reports",
-                     "QR code table ordering", "Shifts and cash control (coming soon)"],
+                     "QR code table ordering", "Shifts and cash control"],
         "pro": ["Everything in Business", "Several branches", "All-branches sales overview",
-                "Priority support", "Payroll (coming soon)"],
+                "Priority support", "Payroll and payslips"],
     },
     "fr": {
         "starter": ["Caisse (point de vente)", "Stocks et fournisseurs",
                     "Comptes clients (payer plus tard)", "Reçus", "Rapports journaliers"],
         "business": ["Tout ce que propose Starter", "Dépenses et comptabilité", "Rapports hebdomadaires et mensuels",
-                     "Commande par QR code à table", "Services et contrôle de caisse (bientôt disponible)"],
+                     "Commande par QR code à table", "Services et contrôle de caisse"],
         "pro": ["Tout ce que propose Business", "Plusieurs succursales", "Vue des ventes de toutes les succursales",
-                "Support prioritaire", "Paie (bientôt disponible)"],
+                "Support prioritaire", "Paie et bulletins de paie"],
     },
 }
 

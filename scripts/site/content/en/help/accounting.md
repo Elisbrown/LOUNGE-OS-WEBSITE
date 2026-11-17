@@ -61,7 +61,7 @@ Each one has **Download PDF**, in English or French with your logo. If the numbe
 
 ### Is this a full accounting package?
 
-It covers what a restaurant, bar or shop needs day to day, in double entry, with statements your accountant can use. For tax filings and payroll your accountant still prepares the declarations; payroll is not in LoungeOS yet.
+It covers what a restaurant, bar or shop needs day to day, in double entry, with statements your accountant can use. Your accountant still prepares the tax and social security declarations. On Pro, payroll posts wages, deductions and salary advances to the accounts for you.
 
 ### Why is profit different from sales minus expenses?
 

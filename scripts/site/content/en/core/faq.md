@@ -106,7 +106,7 @@ Yes. Every plan starts with a 14-day free trial with Business features, and ther
 
 ### What is the difference between the plans?
 
-Starter covers the point of sale, tables, kitchen and bar screens, inventory, customer tabs, receipts and daily reports for 2 users on 2 devices. Business adds expenses, accounting, weekly and monthly reports and QR code table ordering, for 5 users on 5 devices. Pro gives unlimited users, 10 or more devices, several branches with an all-branches overview, and priority support. Shifts and cash control, email alerts and payroll are coming soon.
+Starter covers the point of sale, tables, kitchen and bar screens, inventory, customer tabs, receipts and daily reports for 2 users on 2 devices. Business adds expenses, accounting, weekly and monthly reports, QR code table ordering and shifts with cash control, for 5 users on 5 devices. Pro gives unlimited users, 10 or more devices, several branches with an all-branches overview, payroll with payslips, and priority support. Email alerts are coming soon.
 
 ### How do I pay?
 

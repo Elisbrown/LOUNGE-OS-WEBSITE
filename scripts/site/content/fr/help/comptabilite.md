@@ -64,7 +64,7 @@ Chacun se télécharge en PDF, en français ou en anglais, avec votre logo. Si l
 
 ### Est-ce un logiciel de comptabilité complet ?
 
-Il couvre ce dont un restaurant, un bar ou une boutique a besoin au quotidien, en partie double, avec des états que votre comptable peut utiliser. Pour les déclarations fiscales et la paie, votre comptable prépare toujours les déclarations ; la paie n'est pas encore dans LoungeOS.
+Il couvre ce dont un restaurant, un bar ou une boutique a besoin au quotidien, en partie double, avec des états que votre comptable peut utiliser. Votre comptable prépare toujours les déclarations fiscales et sociales. Avec Pro, la paie passe les salaires, les retenues et les avances sur salaire en comptabilité pour vous.
 
 ### Pourquoi le bénéfice diffère-t-il des ventes moins les dépenses ?
 
