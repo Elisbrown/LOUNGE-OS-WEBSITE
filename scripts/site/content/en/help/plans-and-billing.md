@@ -39,7 +39,7 @@ related:
 
 Prices: Starter US$10, Business US$25, Pro US$50 a month (in Cameroon 6,000, 15,000 and 30,000 FCFA). Paying for a year costs 10 months: 2 months free. Current prices are always on the [pricing page](/pricing/) and in your account.
 
-Shifts and cash control, email alerts and payroll are coming and are not in the app yet.
+Shifts and cash control come with Business and Pro, payroll with Pro. Email alerts are coming and are not in the app yet.
 
 ## The free trial
 

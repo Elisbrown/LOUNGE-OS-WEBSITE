@@ -61,9 +61,9 @@ Les applications Windows et Mac gardent aussi les données de l'entreprise sur l
 | [Plusieurs succursales](/fr/fonctionnalites/multi-etablissements/) | | | ✓ |
 | Vue des ventes de toutes les succursales | | | ✓ |
 | Support prioritaire | | | ✓ |
-| Services et contrôle de caisse | | Bientôt disponible | Bientôt disponible |
+| Services et contrôle de caisse | | ✓ | ✓ |
+| Paie et bulletins de paie | | | ✓ |
 | Alertes par e-mail | | Bientôt disponible | Bientôt disponible |
-| Paie | | | Bientôt disponible |
 
 Business est la formule la plus choisie. L'essai gratuit vous donne les fonctionnalités Business pendant 14 jours : vous voyez quelle formule vous convient avant de payer.
 

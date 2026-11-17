@@ -97,7 +97,7 @@ Odoo has a free Community edition you host yourself and paid editions with more 
 
 ### Does LoungeOS replace Odoo accounting?
 
-For a restaurant, bar or shop, often yes: journals, chart of accounts, P&L, balance sheet and cash flow are built in. Payroll is not in LoungeOS yet.
+For a restaurant, bar or shop, often yes: journals, chart of accounts, P&L, balance sheet and cash flow are built in. Payroll with payslips is included on Pro.
 
 ### Which is better for a restaurant in Cameroon?
 

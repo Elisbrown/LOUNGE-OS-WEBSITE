@@ -40,7 +40,7 @@ related:
 
 Prix : Starter 6 000 FCFA, Business 15 000 FCFA, Pro 30 000 FCFA par mois (10, 25 et 50 US$). Payer à l'année coûte 10 mois : 2 mois offerts. Les prix à jour sont toujours sur la [page Tarifs](/fr/tarifs/) et dans votre compte.
 
-La gestion des services et du fond de caisse, les alertes par e-mail et la paie arrivent bientôt et ne sont pas encore dans l'application.
+La gestion des services et du fond de caisse est incluse dans Business et Pro, la paie dans Pro. Les alertes par e-mail arrivent bientôt et ne sont pas encore dans l'application.
 
 ## L'essai gratuit
 
