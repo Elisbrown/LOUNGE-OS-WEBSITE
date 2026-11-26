@@ -873,7 +873,7 @@ PLAN_FEATURES = {
                     "Comptes clients (payer plus tard)", "Reçus", "Rapports journaliers"],
         "business": ["Tout ce que propose Starter", "Dépenses et comptabilité", "Rapports hebdomadaires et mensuels",
                      "Commande par QR code à table", "Services et contrôle de caisse"],
-        "pro": ["Tout ce que propose Business", "Plusieurs succursales", "Vue des ventes de toutes les succursales",
+        "pro": ["Tout ce que propose Business", "Plusieurs sites", "Vue des ventes de tous les sites",
                 "Support prioritaire", "Paie et bulletins de paie"],
     },
 }
@@ -1638,7 +1638,7 @@ def build_page(page, by_url, pages):
 
 HELP_SECTIONS = {
     "en": ["Get started", "Selling", "Products and stock", "Money and reports", "Team and branches", "Account, data and troubleshooting"],
-    "fr": ["Bien démarrer", "Vendre", "Produits et stocks", "Argent et rapports", "Équipe et succursales", "Compte, données et dépannage"],
+    "fr": ["Bien démarrer", "Vendre", "Produits et stocks", "Argent et rapports", "Équipe et sites", "Compte, données et dépannage"],
 }
 
 
@@ -1661,7 +1661,7 @@ def help_index(pages, by_url, lang):
         "url": url, "lang": lang, "type": "help-index", "alternates": {"en": "/help/", "fr": "/fr/aide/"},
         "title": ("Centre d'aide LoungeOS : guides pas à pas avec captures" if fr else
                   "LoungeOS Help Centre: Step-by-Step Guides with Screenshots"),
-        "description": ("Guides pas à pas pour LoungeOS : installation, caisse, cuisine et bar, commande par QR code, stocks, dépenses, comptabilité, succursales et application mobile."
+        "description": ("Guides pas à pas pour LoungeOS : installation, caisse, cuisine et bar, commande par QR code, stocks, dépenses, comptabilité, sites et application mobile."
                         if fr else
                         "Step-by-step LoungeOS guides with screenshots: setup, the till, kitchen and bar, QR table ordering, stock, expenses, accounting, branches and the phone app."),
         "h1": "Centre d'aide LoungeOS" if fr else "LoungeOS Help Centre",

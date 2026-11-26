@@ -28,7 +28,7 @@ There are two kinds of data in LoungeOS:
 - **Account:** your name, email address, mobile number and password. With **Continue with Google**, Google sends us your name and email address; we never see your Google password.
 - **Business data:** your business name, logo, type, currency, taxes, payment methods and opening hours, your products, prices, orders, sales, tables, stock, suppliers, expenses, accounting entries and reports.
 - **People your business records:** staff names, emails, roles and PINs, shifts, cash counts, salaries and payslips; customer names, phone numbers and tab balances; hotel guests and bookings, including the guest register details you enter; and the name, phone number and delivery address a guest gives when ordering from your QR code or online menu.
-- **Uploaded files:** logos, product photos and documents you upload or pick with **Find a photo**.
+- **Uploaded files:** logos, product photos and documents you upload.
 - **Billing:** your plan, invoices, receipts and payment status. Card and Mobile Money details are entered on our payment provider's page, not stored by us.
 - **Devices and security:** the devices signed in to your account, the app version, sign-ins and failed sign-ins with the time, browser or device type and an approximate location worked out from the IP address (never GPS), and crash reports. We use this to count devices for your plan, keep tills in sync and spot suspicious sign-ins. Owners see it under **Security & devices**.
 - **Activity log:** who did what in your business (for example a void, a refund or a price change), so owners can check their team.
@@ -61,7 +61,6 @@ These companies process data for us, only to provide their service:
 | Clerk | Sign-in, passwords and Continue with Google |
 | Google | Continue with Google; push notifications and crash reports in the Android app (Firebase); web analytics on this website |
 | TaraMoney | Subscription payments by Mobile Money, card and PayPal |
-| Serper, Pexels, Open Food Facts | Photo search when you use **Find a photo** (only the search words are sent) |
 | Microsoft Clarity, Usercentrics, ipapi | This website only: visit analytics, cookie consent and an approximate country for prices and language |
 
 Some of these providers process data outside Cameroon, including in the European Union and the United States, under their own security and privacy commitments.

@@ -20,7 +20,7 @@ LoungeOS est conçu et exploité par [Sigalix](https://sigalix.com), Cameroun. E
 
 ## 2. Votre compte et votre équipe
 
-Chaque personne se connecte avec son propre compte LoungeOS. Le propriétaire invite son personnel par e-mail et donne un rôle à chacun ; sur une caisse partagée, le personnel change d'utilisateur avec un code PIN. Vous êtes responsable de ce qui se passe sous vos comptes, des rôles donnés à votre personnel et de la confidentialité des mots de passe et codes PIN. Un compte propriétaire peut gérer plusieurs établissements (succursales), selon la formule.
+Chaque personne se connecte avec son propre compte LoungeOS. Le propriétaire invite son personnel par e-mail et donne un rôle à chacun ; sur une caisse partagée, le personnel change d'utilisateur avec un code PIN. Vous êtes responsable de ce qui se passe sous vos comptes, des rôles donnés à votre personnel et de la confidentialité des mots de passe et codes PIN. Un compte propriétaire peut gérer plusieurs établissements (sites), selon la formule.
 
 ## 3. Essai gratuit
 

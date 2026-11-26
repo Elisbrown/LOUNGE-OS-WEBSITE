@@ -45,7 +45,7 @@ Vous tenez plutôt une supérette ou une épicerie ? Voir le [logiciel de caisse
 ## Encaisser au comptoir
 
 - **Lecture des codes-barres.** Branchez une douchette USB sur la caisse et scannez un produit pour l'ajouter à la vente. Vous pouvez aussi taper le code dans la recherche et appuyer sur Entrée. Chaque code-barres appartient à un seul produit : impossible de l'attribuer deux fois par erreur.
-- **Recherche et photos.** Trouvez un produit par son nom ou touchez sa photo sur l'écran tactile. LoungeOS peut vous trouver une photo libre de droits, ou vous ajoutez la vôtre.
+- **Recherche et photos.** Trouvez un produit par son nom ou touchez sa photo sur l'écran tactile. Ajoutez la photo de chaque produit depuis votre téléphone.
 - **Vos moyens de paiement.** Espèces avec la monnaie à rendre, MTN Mobile Money, Orange Money, carte, virement ou tout moyen que vous créez. Une vente peut être réglée avec deux moyens.
 - **Reçus et tiroir-caisse.** Reçus thermiques 58 mm ou 80 mm, ou en PDF. Une imprimante avec port tiroir peut ouvrir le tiroir-caisse après chaque vente en espèces.
 

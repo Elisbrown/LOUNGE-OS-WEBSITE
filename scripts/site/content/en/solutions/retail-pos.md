@@ -44,7 +44,7 @@ Running a mini-market or grocery instead? See the [supermarket POS](/supermarket
 ## Selling at the counter
 
 - **Barcode scanning.** Plug a USB barcode scanner into the till and scan a label to add the item. You can also type the code in the search box and press Enter. Each barcode belongs to one product, so a code cannot be given to two items by mistake.
-- **Search and photos.** Find an item by name, or tap its picture on the touch screen. LoungeOS can find a free photo for a product, or you upload your own.
+- **Search and photos.** Find an item by name, or tap its picture on the touch screen. Add each product's photo from your phone.
 - **Your payment methods.** Cash with the change shown, MTN Mobile Money, Orange Money, card, bank transfer or any method you create, and one sale can be split between two methods. See [mobile money POS](/features/mobile-money-pos/).
 - **Receipts and cash drawer.** 58 mm or 80 mm thermal receipts, or a PDF. A receipt printer with a drawer port can open the cash drawer after each cash sale.
 

@@ -98,7 +98,7 @@ Oui. Chaque formule commence par un essai gratuit de 14 jours avec les fonctionn
 
 ### Quelle est la différence entre les formules ?
 
-Starter couvre la caisse, les tables, les écrans cuisine et bar, les stocks, les comptes clients, les reçus et les rapports journaliers pour 2 utilisateurs sur 2 appareils. Business ajoute les dépenses, la comptabilité, les rapports hebdomadaires et mensuels, la commande par QR code et les services avec contrôle de caisse, pour 5 utilisateurs sur 5 appareils. Pro offre des utilisateurs illimités, 10 appareils et plus, plusieurs succursales avec une vue d'ensemble, la paie avec bulletins de paie, et un support prioritaire. Les alertes par e-mail arrivent bientôt.
+Starter couvre la caisse, les tables, les écrans cuisine et bar, les stocks, les comptes clients, les reçus et les rapports journaliers pour 2 utilisateurs sur 2 appareils. Business ajoute les dépenses, la comptabilité, les rapports hebdomadaires et mensuels, la commande par QR code et les services avec contrôle de caisse, pour 5 utilisateurs sur 5 appareils. Pro offre des utilisateurs illimités, 10 appareils et plus, plusieurs sites avec une vue d'ensemble, la paie avec bulletins de paie, et un support prioritaire. Les alertes par e-mail arrivent bientôt.
 
 ### Comment payer ?
 

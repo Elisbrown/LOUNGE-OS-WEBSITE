@@ -58,8 +58,8 @@ Les applications Windows et Mac gardent aussi les données de l'entreprise sur l
 | Dépenses et comptabilité | | ✓ | ✓ |
 | Rapports hebdomadaires et mensuels | | ✓ | ✓ |
 | [Commande par QR code à table](/fr/fonctionnalites/commande-qr-code/) | | ✓ | ✓ |
-| [Plusieurs succursales](/fr/fonctionnalites/multi-etablissements/) | | | ✓ |
-| Vue des ventes de toutes les succursales | | | ✓ |
+| [Plusieurs sites](/fr/fonctionnalites/multi-etablissements/) | | | ✓ |
+| Vue des ventes de tous les sites | | | ✓ |
 | Support prioritaire | | | ✓ |
 | Services et contrôle de caisse | | ✓ | ✓ |
 | Paie et bulletins de paie | | | ✓ |
@@ -91,7 +91,7 @@ Payez chaque mois, ou payez l'année en une fois et profitez de 2 mois offerts :
 
 ## Plusieurs établissements ou besoins sur mesure
 
-Plusieurs succursales sont incluses dans la formule Pro : ouvrez une succursale avec une copie du menu, des tables, des réglages et de l'équipe, et voyez les ventes de toutes sur une page. Voir [multi-établissements](/fr/fonctionnalites/multi-etablissements/). LoungeOS est conçu par [Sigalix](https://sigalix.com), une entreprise de logiciels sur mesure. Pour un besoin qui dépasse la formule Pro, écrivez à [info@sigalix.com](mailto:info@sigalix.com) ou [contactez-nous](/contact/).
+Plusieurs sites sont inclus dans la formule Pro : ouvrez un site avec une copie du menu, des tables, des réglages et de l'équipe, et voyez les ventes de tous sur une page. Voir [multi-établissements](/fr/fonctionnalites/multi-etablissements/). LoungeOS est conçu par [Sigalix](https://sigalix.com), une entreprise de logiciels sur mesure. Pour un besoin qui dépasse la formule Pro, écrivez à [info@sigalix.com](mailto:info@sigalix.com) ou [contactez-nous](/contact/).
 
 ## Questions fréquentes
 
@@ -101,7 +101,7 @@ Oui. Chaque formule commence par un essai gratuit de 14 jours avec les fonctionn
 
 ### Quelle formule choisir ?
 
-Starter convient à 2 utilisateurs sur 2 appareils qui ont besoin de la caisse, des tables, des écrans cuisine et bar, des stocks, des comptes clients, des reçus et des rapports journaliers. Business ajoute les dépenses, la comptabilité, les rapports hebdomadaires et mensuels et la commande par QR code, pour 5 utilisateurs sur 5 appareils. Pro s'adresse aux équipes et groupes plus grands : utilisateurs illimités, 10 appareils et plus, plusieurs succursales avec une vue d'ensemble, et support prioritaire.
+Starter convient à 2 utilisateurs sur 2 appareils qui ont besoin de la caisse, des tables, des écrans cuisine et bar, des stocks, des comptes clients, des reçus et des rapports journaliers. Business ajoute les dépenses, la comptabilité, les rapports hebdomadaires et mensuels et la commande par QR code, pour 5 utilisateurs sur 5 appareils. Pro s'adresse aux équipes et groupes plus grands : utilisateurs illimités, 10 appareils et plus, plusieurs sites avec une vue d'ensemble, et support prioritaire.
 
 ### Pourquoi les prix s'affichent-ils en FCFA ou en dollars US ?
 

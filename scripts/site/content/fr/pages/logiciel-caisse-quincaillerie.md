@@ -32,7 +32,7 @@ features:
   - ["truck", "Fournisseurs et livraisons", "Enregistrez chaque livraison et son fournisseur, et voyez la valeur du stock."]
   - ["package", "Stocks et alertes", "Chaque vente sort du stock, et les alertes de stock bas vous disent quoi recommander."]
   - ["shield", "Prix modifiés par un responsable", "Les vendeurs ne changent ni les prix ni les ventes sans le code PIN d'un responsable."]
-  - ["branch", "Plusieurs magasins", "Chaque magasin est une succursale avec son stock et son équipe, côte à côte avec la formule Pro."]
+  - ["branch", "Plusieurs magasins", "Chaque magasin est un site avec son stock et son équipe, côte à côte avec la formule Pro."]
 soon:
   - "Unités et lots : vendre une vis ou la boîte, un carreau ou le carton"
   - "Devis, factures et bons de livraison pour les entrepreneurs"

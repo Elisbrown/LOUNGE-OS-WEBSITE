@@ -72,6 +72,6 @@ Les rapports sur plus d'un jour (semaine, mois) sont inclus dans les formules **
 
 Parce que votre journée se termine à 04:00. Changez-le dans **Paramètres de l'entreprise** si vous fermez plus tôt ou plus tard.
 
-### Puis-je voir toutes mes succursales ensemble ?
+### Puis-je voir tous mes sites ensemble ?
 
-Oui, en formule Pro : **Succursales** montre les ventes du jour de chaque succursale et le total. Voir [Succursales](/fr/aide/succursales/).
+Oui, en formule Pro : **Sites** montre les ventes du jour de chaque site et le total. Voir [Sites](/fr/aide/succursales/).

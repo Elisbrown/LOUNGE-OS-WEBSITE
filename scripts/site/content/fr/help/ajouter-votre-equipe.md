@@ -2,7 +2,7 @@
 url: /fr/aide/ajouter-votre-equipe/
 type: help
 lang: fr
-section: "Équipe et succursales"
+section: "Équipe et sites"
 order: 1
 title: "Ajouter le personnel, les rôles et les codes PIN dans LoungeOS"
 description: "Ajoutez serveurs, caissiers, chefs, barmans, gestionnaires de stock et comptables dans LoungeOS, donnez à chacun un rôle et un code PIN, et voyez qui a fait quoi."
@@ -38,7 +38,7 @@ Le nombre de personnes dépend de votre formule : 2 utilisateurs en Starter, 5 e
 
 | Rôle | Ce qu'il fait dans LoungeOS |
 |---|---|
-| Super Admin (propriétaire) | Tout, y compris la facturation, les succursales et les sauvegardes |
+| Super Admin (propriétaire) | Tout, y compris la facturation, les sites et les sauvegardes |
 | Responsable | La gestion quotidienne : personnel, menu, stock, rapports, validations |
 | Caissier | Encaisse, prend les paiements sur comptes clients, voit l'écran bar |
 | Serveur | Prend les commandes aux tables de sa salle |

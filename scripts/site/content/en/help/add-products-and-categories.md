@@ -33,7 +33,7 @@ To add one, press **Add Category**, type the name, choose Kitchen or Bar and sav
 ## Add a product
 
 1. Open **Menu** (or **Products**) and press **Add Menu Item**. From any page you can also press **+ New**, then **Add product**.
-2. **Photo**: press **Add a photo** to upload one, or **Find a photo** to search free photos you can use without credit, starting with the product's name.
+2. **Photo**: press **Add a photo** to upload one from your phone or computer.
 3. **Name** and **Price**.
 4. **Barcode** (optional): scan it with the scanner or type it. The same barcode can't be on two things.
 5. **Quantity**: leave it empty if you don't count this product (a dish cooked to order). Type a number for things you count, such as bottles: the till then takes one off at each sale and warns you when it runs out.

@@ -81,7 +81,7 @@ Avec les formules Business et Pro, vous enregistrez vos **dépenses dans les cat
 
 - **[Commande par QR code à table](/fr/fonctionnalites/commande-qr-code/)** : le client commande depuis son téléphone, l'équipe accepte en caisse (Business et Pro).
 - **[Comptes clients](/fr/fonctionnalites/ventes-a-credit/)** : vendre à crédit avec Payer plus tard, voir qui doit quoi et depuis quand.
-- **[Plusieurs succursales](/fr/fonctionnalites/multi-etablissements/)** : ouvrir un établissement avec une copie de vos réglages et comparer les ventes (Pro).
+- **[Plusieurs sites](/fr/fonctionnalites/multi-etablissements/)** : ouvrir un établissement avec une copie de vos réglages et comparer les ventes (Pro).
 - **[Application Android](/fr/fonctionnalites/application-mobile/)** : notifications selon le rôle et widget avec les chiffres du jour.
 
 Chaque fonction est expliquée pas à pas, avec captures d'écran, dans le [centre d'aide](/fr/aide/).

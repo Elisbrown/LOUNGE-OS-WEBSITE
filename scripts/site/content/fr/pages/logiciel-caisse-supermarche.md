@@ -59,7 +59,7 @@ Chaque caissier se connecte avec son propre compte et change d'utilisateur sur u
 
 ## Plusieurs magasins
 
-Chaque magasin est une succursale avec son stock et son équipe. La formule Pro montre les ventes de toutes les succursales côte à côte.
+Chaque magasin est un site avec son stock et son équipe. La formule Pro montre les ventes de tous les sites côte à côte.
 
 [[cta]]
 

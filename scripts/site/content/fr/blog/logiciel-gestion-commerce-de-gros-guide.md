@@ -54,7 +54,7 @@ Transparence : nous éditons LoungeOS. Nous disons quand un autre produit convie
 
 - **Comptes clients** avec paiements partiels et soldes.
 - **Cartons et colis** comme produits, avec alertes de stock.
-- **Plusieurs dépôts** en succursales, côte à côte sur Pro.
+- **Plusieurs dépôts** en sites, côte à côte sur Pro.
 - **Espèces, Mobile Money et virements**, paiements fractionnés.
 - **Dépenses et comptabilité en partie double** sur Business et Pro.
 
@@ -72,4 +72,4 @@ Oui. Chaque vente à crédit va sur le compte du client, les paiements partiels 
 
 ### LoungeOS gère-t-il plusieurs dépôts ?
 
-Oui. Chaque dépôt est une succursale avec son stock et son équipe, côte à côte sur la formule Pro.
+Oui. Chaque dépôt est un site avec son stock et son équipe, côte à côte sur la formule Pro.

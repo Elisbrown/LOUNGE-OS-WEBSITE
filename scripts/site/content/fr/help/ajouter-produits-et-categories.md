@@ -34,7 +34,7 @@ Pour en ajouter une, appuyez sur **Ajouter une catégorie**, tapez le nom, chois
 ## Ajouter un produit
 
 1. Ouvrez **Menu** (ou **Produits**) et appuyez sur **Ajouter un article**. Depuis n'importe quelle page, vous pouvez aussi appuyer sur **+ Nouveau**, puis **Ajouter un produit**.
-2. **Photo** : appuyez sur **Ajouter une photo** pour envoyer la vôtre, ou sur **Trouver une photo** pour chercher des photos libres de droits, en commençant par le nom du produit.
+2. **Photo** : appuyez sur **Ajouter une photo** pour envoyer la vôtre depuis votre téléphone ou votre ordinateur.
 3. **Nom** et **Prix**.
 4. **Code-barres** (facultatif) : scannez-le ou tapez-le. Un même code-barres ne peut pas être sur deux articles.
 5. **Quantité** : laissez vide si vous ne comptez pas ce produit (un plat cuisiné à la commande). Tapez un nombre pour ce que vous comptez, comme les bouteilles : la caisse en retire une à chaque vente et vous prévient quand il n'y en a plus.
