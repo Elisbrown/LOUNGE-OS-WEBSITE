@@ -288,8 +288,8 @@ LLMS_HEADER = """# LoungeOS
 > LoungeOS is point of sale (POS) and business management software for every kind of business that sells: restaurants, bars, lounges, cafés, nightclubs, hotels, retail shops, supermarkets and more. It is made by Sigalix (https://sigalix.com) and built in Cameroon. It runs in the web app at https://app.loungeos.app and as Windows, Mac and Android apps, with one LoungeOS account everywhere. The Windows and Mac apps keep selling without internet and sync when the connection comes back.
 
 Key facts:
-- Version 2.1.4. English and French interface. Help centre with step-by-step guides: https://loungeos.app/help/ (French: https://loungeos.app/fr/aide/).
-- Where it runs: the web app in any modern browser (https://app.loungeos.app); Windows 10 and 11 (64-bit); Mac (Apple Silicon and Intel); Android 7.0 or later. Downloads: https://loungeos.app/download/. Phones and tablets on the same Wi-Fi can use a Windows or Mac till through their browser. The web app and the Android app need internet.
+- Version {version} (the latest release: {release_url}). English and French interface. Help centre with step-by-step guides: https://loungeos.app/help/ (French: https://loungeos.app/fr/aide/).
+- Where it runs: the web app in any modern browser (https://app.loungeos.app); Windows 10 and 11 (64-bit); Mac (Apple Silicon and Intel); Android 7.0 or later. Downloads: https://loungeos.app/download/. Phones and tablets on the same Wi-Fi can use a Windows or Mac till through their browser. The web app and the Android app keep taking orders when the internet drops (for the person already signed in) and send them when it is back.
 - Account: one LoungeOS account per person, with email and password or Continue with Google. A setup wizard asks for the business type, name, logo, currency, taxes, payment methods and opening hours, and suggests categories to tick. No licence keys: a Windows or Mac till signs in by showing a short code that the owner confirms at account.loungeos.app/link. The owner invites staff by email; staff can also use a quick PIN on a shared till. Roles and permissions per staff member.
 - Modules: POS for touch and mouse on any screen size, tables and orders, kitchen and bar screens, payment methods each business creates (cash, MTN Mobile Money, Orange Money, card, bank transfer and others), receipts on 58 mm and 80 mm thermal printers or as PDF, inventory with stock movements and low-stock alerts, suppliers, expenses with your own categories, accounting (chart of accounts, journal), reports, staff roles and an activity log, a cloud copy of all data with daily full backups. Also: customer tabs (pay later) with balances and part payments; QR code table ordering where guests order from their phone and staff accept on the till (Business and Pro); several branches with a copy of the menu, tables, settings and team, and an all-branches sales overview (Pro); an Android app with notifications by role and a home-screen widget.
 - Offline: a Windows or Mac till keeps selling without internet and syncs automatically when it is back online. After 7 days without syncing it becomes read-only until it reconnects, with a warning during the last 2 days. Read-only means past orders, reports, printing and exports still work, but no new sales or edits. When a subscription ends, LoungeOS becomes read-only until it is renewed. Nothing is ever deleted.
@@ -312,7 +312,11 @@ def write_llms(pages):
         ("Guides (English)", lambda u: u.startswith(SITE + "/blog/") and u != SITE + "/blog/"),
         ("En français", lambda u: u.startswith(SITE + "/fr/")),
     ]
-    out = [LLMS_HEADER]
+    try:
+        rel = json.load(open(os.path.join(ROOT, "scripts", "site", "release.json"), encoding="utf-8"))
+    except (OSError, ValueError):
+        rel = {"version": "", "url": "https://github.com/Elisbrown/lounge-os-website/releases/latest"}
+    out = [LLMS_HEADER.replace("{version}", rel["version"]).replace("{release_url}", rel["url"])]
     seen = set()
     for name, test in groups:
         items = [p for p in sorted(pages, key=lambda p: p["url"]) if test(p["url"]) and p["url"] not in seen]

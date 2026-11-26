@@ -1,12 +1,14 @@
 name: SEO refresh
 
-# Regenerates sitemap.xml (lastmod from git history), blog/feed.xml, robots.txt,
+# Writes the latest release's version on the site, regenerates sitemap.xml (lastmod from git history), blog/feed.xml, robots.txt,
 # llms.txt, on-page "updated" dates and the ?v= versions on style.css/app.js
 # links, commits them, then notifies IndexNow
 # (Bing, Yandex and others; Bing's index also feeds ChatGPT and Copilot search).
 on:
   push:
     branches: [main]
+  release:
+    types: [published] # a new LoungeOS version: write it on the site
   schedule:
     - cron: "17 4 * * *" # daily safety net
   workflow_dispatch:
@@ -24,6 +26,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          # a release event checks out its tag; the site is committed on main
+          ref: ${{ github.event_name == 'release' && 'main' || '' }}
           fetch-depth: 0 # full history: lastmod comes from each page's last commit
 
       - uses: actions/setup-python@v5
@@ -33,14 +37,20 @@ jobs:
       # Plan prices (and each business type's own price) are set by admin on
       # account.loungeos.app. Browsers read them live; this copies them into the
       # static pages and JSON-LD offers that search engines read.
-      - name: Copy live plan prices and rebuild the pages when they changed
+      # The version written on the site (download page, homepage, help centre,
+      # JSON-LD, llms.txt) comes from this repository's latest release.
+      - name: Copy live plan prices and the latest version, rebuild the pages when they changed
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           pip install --quiet markdown pyyaml beautifulsoup4
           set +e
           python3 scripts/site/sync_prices.py
-          code=$?
+          prices=$?
+          python3 scripts/site/sync_version.py
+          version=$?
           set -e
-          if [ "$code" = "10" ]; then python3 scripts/site/build.py; fi
+          if [ "$prices" = "10" ] || [ "$version" = "10" ]; then python3 scripts/site/build.py; fi
 
       - name: Regenerate sitemap, feed, robots.txt, llms.txt, page dates and asset versions
         run: python3 scripts/seo_update.py --indexnow-file "$RUNNER_TEMP/indexnow-urls.txt"

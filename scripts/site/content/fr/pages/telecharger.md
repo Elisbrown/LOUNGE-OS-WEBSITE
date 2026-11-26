@@ -2,11 +2,11 @@
 url: /fr/telecharger/
 type: core
 lang: fr
-title: "Télécharger LoungeOS 2.1 pour Windows, Mac et Android"
-description: "Téléchargez LoungeOS 2.1 pour Windows 10 et 11, Mac (Apple Silicon et Intel) et Android, ou utilisez l'application web. Installation, connexion et hors ligne."
-h1: "Télécharger LoungeOS pour Windows, Mac et Android"
-label: "Téléchargement · Version 2.1.4"
-lead: "Installez LoungeOS 2.1 sur Windows, Mac ou Android, ou ouvrez l'application web dans un navigateur récent. Connectez-vous avec votre compte LoungeOS : l'assistant de configuration prépare votre établissement dès le premier jour."
+title: "Télécharger LoungeOS pour Windows, Mac, Android et le web"
+description: "Téléchargez LoungeOS pour Windows 10 et 11, Mac (Apple Silicon et Intel) et Android, ou ouvrez l'application web. Un seul compte sur tous vos appareils."
+h1: "Télécharger LoungeOS"
+label: "Téléchargement"
+lead: "Un seul compte LoungeOS fonctionne sur tous vos appareils. Installez l'application sur votre caisse, ou ouvrez-la dans votre navigateur."
 image: loungeos-pos-order-screen
 image_alt: "Écran de commande de la caisse LoungeOS"
 card_title: "Télécharger LoungeOS"
@@ -21,142 +21,114 @@ related:
   - /fr/fonctionnalites/
 ---
 
-<div class="download-cards" style="margin-top:0">
-  <div class="download-card selected" data-os="windows" id="windows">
-    <h3>Windows</h3>
-    <p>Windows 10 et 11 (64 bits) · Installateur (.exe)</p>
-    <a href="https://github.com/Elisbrown/lounge-os-website/releases/latest/download/LoungeOS-Setup.exe" class="btn btn-primary">Télécharger pour Windows</a>
-  </div>
-  <div class="download-card" data-os="mac-apple-silicon" id="mac-apple-silicon">
-    <h3>Mac (Apple Silicon)</h3>
-    <p>M1 et plus récent · Image disque (.dmg)</p>
-    <a href="https://github.com/Elisbrown/lounge-os-website/releases/latest/download/LoungeOS-Mac-arm64.dmg" class="btn btn-primary">Télécharger pour Apple Silicon</a>
-  </div>
-  <div class="download-card" data-os="mac-intel" id="mac-intel">
-    <h3>Mac (Intel)</h3>
-    <p>Processeur Intel · Image disque (.dmg)</p>
-    <a href="https://github.com/Elisbrown/lounge-os-website/releases/latest/download/LoungeOS-Mac-x64.dmg" class="btn btn-primary">Télécharger pour Mac Intel</a>
-  </div>
-  <div class="download-card" data-os="android" id="android">
-    <h3>Android</h3>
-    <p>Android 7.0 ou plus récent · Application (.apk)</p>
-    <a href="https://github.com/Elisbrown/lounge-os-website/releases/latest/download/LoungeOS-Android.apk" class="btn btn-primary">Télécharger pour Android</a>
-  </div>
-  <div class="download-card" data-os="web" id="web">
-    <h3>Application web</h3>
-    <p>Tout navigateur récent · Rien à installer</p>
-    <a href="https://app.loungeos.app" class="btn btn-primary">Ouvrir l'application web</a>
-  </div>
+<p class="dl-release">Dernière version {{version}} · <a href="{{release_url}}" target="_blank" rel="noopener">Notes de version</a></p>
+
+<div class="download-cards dl-grid">
+<div class="download-card selected" data-os="windows" id="windows">
+<span class="recommended-badge">Pour cet appareil</span>
+<svg class="os-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg>
+<h3>Windows</h3>
+<p>Windows 10 et 11, 64 bits</p>
+<a href="https://github.com/Elisbrown/lounge-os-website/releases/latest/download/LoungeOS-Setup.exe" class="btn btn-primary">Télécharger</a>
+</div>
+<div class="download-card" data-os="mac" id="mac">
+<span class="recommended-badge">Pour cet appareil</span>
+<svg class="os-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+<h3>Mac</h3>
+<p>Apple Silicon (M1 et plus récent)</p>
+<a href="https://github.com/Elisbrown/lounge-os-website/releases/latest/download/LoungeOS-Mac-x64.dmg" class="dl-alt">Mac Intel ? Téléchargez ici</a>
+<a href="https://github.com/Elisbrown/lounge-os-website/releases/latest/download/LoungeOS-Mac-arm64.dmg" class="btn btn-primary">Télécharger</a>
+</div>
+<div class="download-card" data-os="android" id="android">
+<span class="recommended-badge">Pour cet appareil</span>
+<svg class="os-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+<h3>Android</h3>
+<p>Android 7.0 ou plus récent</p>
+<a href="https://github.com/Elisbrown/lounge-os-website/releases/latest/download/LoungeOS-Android.apk" class="btn btn-primary">Télécharger</a>
+</div>
+<div class="download-card" data-os="web" id="web">
+<span class="recommended-badge">Pour cet appareil</span>
+<svg class="os-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+<h3>Application web</h3>
+<p>Tout navigateur, rien à installer</p>
+<a href="https://app.loungeos.app" class="btn btn-primary">Ouvrir l'application web</a>
+</div>
 </div>
 
-Toutes les applications sont en version LoungeOS 2.1.4 et utilisent le même compte LoungeOS. Vous découvrez LoungeOS ? [Créez votre compte](https://app.loungeos.app) et profitez d'un essai gratuit de 14 jours avec les fonctionnalités Business, sans rien payer à l'avance.
+<p class="dl-note">Essai gratuit de 14 jours, sans rien payer à l'avance. Besoin d'aide pour installer ? <a href="https://wa.me/237679690703" target="_blank" rel="noopener">WhatsApp +237 679 690 703</a>, en français ou en anglais.</p>
 
-**Besoin d'aide pour installer ou configurer LoungeOS pour votre commerce ?** Écrivez-nous sur [WhatsApp au +237 679 690 703](https://wa.me/237679690703) ou [appelez le même numéro](tel:+237679690703). Nous vous aidons en français et en anglais : installation des applications, assistant de configuration, menu ou produits, imprimantes et comptes du personnel.
+## Démarrer en trois étapes
 
-Le téléchargement ne démarre pas ? Utilisez tout de suite l'[application web](https://app.loungeos.app) ou [contactez-nous](/contact/).
+1. **Installez l'application** de votre appareil, ou ouvrez l'[application web](https://app.loungeos.app).
+2. **Connectez-vous ou créez votre compte** avec votre e-mail ou **Continuer avec Google**. Aucune clé de licence : les applications Windows et Mac affichent un code court la première fois, à confirmer sur account.loungeos.app/link.
+3. **Répondez à l'assistant de configuration** : type d'activité, nom et logo, devise, taxes et moyens de paiement. Ajoutez ensuite vos produits et invitez votre personnel.
+
+<div class="dl-guides" markdown="1">
+
+<details id="installer-sur-windows" markdown="1">
+<summary>Installer sur Windows</summary>
+
+1. Téléchargez **LoungeOS-Setup.exe** et double-cliquez dessus.
+2. Suivez l'installateur. LoungeOS s'ouvre à la fin, avec un raccourci sur le bureau.
+
+Si Windows SmartScreen affiche un avertissement, choisissez *Informations complémentaires*, puis *Exécuter quand même*. Téléchargez LoungeOS uniquement depuis cette page.
+
+</details>
+
+<details id="installer-sur-mac" markdown="1">
+<summary>Installer sur Mac</summary>
+
+1. **Quel fichier ?** Dans le menu Pomme, ouvrez **À propos de ce Mac**. **Puce** Apple M1 ou plus récente : Apple Silicon. **Processeur** Intel : Mac Intel.
+2. Ouvrez le **.dmg** et faites glisser **LoungeOS** dans **Applications**.
+3. La première fois, macOS peut refuser de l'ouvrir car l'application n'est pas encore notarisée. Ouvrez **Réglages Système > Confidentialité et sécurité** et cliquez sur **Ouvrir quand même**.
+
+</details>
+
+<details id="installer-sur-android" markdown="1">
+<summary>Installer sur Android</summary>
+
+1. Téléchargez **LoungeOS-Android.apk** et ouvrez-le. Autorisez l'installation depuis votre navigateur quand Android le demande.
+2. Appuyez sur **Installer**, ouvrez LoungeOS et connectez-vous.
+3. Autorisez les notifications pour que chacun reçoive les alertes de son rôle.
+
+Vous aviez l'ancienne application Android ? Installez celle-ci, puis désinstallez l'ancienne. Plus de détails dans le [guide de l'application mobile](/fr/aide/application-mobile/).
+
+</details>
+
+<details id="connecter-dautres-appareils" markdown="1">
+<summary>Téléphones et tablettes sur le même Wi-Fi qu'une caisse Windows ou Mac</summary>
+
+1. Mettez l'ordinateur et les téléphones ou tablettes sur le **même Wi-Fi**.
+2. Autorisez le **port 2304** dans le pare-feu de l'ordinateur et relevez son adresse IP locale, par exemple `192.168.1.15`.
+3. Sur chaque téléphone ou tablette, ouvrez `http://192.168.1.15:2304` dans le navigateur.
+
+Astuce : donnez une adresse IP fixe à l'ordinateur dans votre routeur pour qu'elle ne change jamais. Tout appareil peut aussi simplement ouvrir l'[application web](https://app.loungeos.app).
+
+</details>
+
+</div>
 
 ## Configuration requise
 
-| | Application Windows | Application Mac | Application Android | Application web |
-|---|---|---|---|---|
-| Système | Windows 10 ou 11, 64 bits | Mac Apple Silicon (M1 et plus récent) ou Intel | Android 7.0 ou plus récent | Tout navigateur web récent |
-| Fichier | LoungeOS-Setup.exe | LoungeOS-Mac-arm64.dmg (Apple Silicon) ou LoungeOS-Mac-x64.dmg (Intel) | LoungeOS-Android.apk | Rien à installer |
-| Internet | Facultatif : continue de vendre hors ligne et se synchronise au retour de la connexion | Facultatif : continue de vendre hors ligne et se synchronise au retour de la connexion | Obligatoire | Obligatoire |
+| | Il faut | Sans internet |
+|---|---|---|
+| **Windows** | Windows 10 ou 11, 64 bits | Continue de vendre, synchronise ensuite |
+| **Mac** | Apple Silicon (M1 et plus récent) ou Intel | Continue de vendre, synchronise ensuite |
+| **Android** | Android 7.0 ou plus récent | Continue de prendre les commandes, les envoie ensuite |
+| **Application web** | Tout navigateur récent | Continue de prendre les commandes une fois ouverte, les envoie ensuite |
 
-Les tickets s'impriment sur des imprimantes thermiques 58 mm et 80 mm, ou en PDF. Astuce : un **ordinateur portable** comme poste de caisse continue de fonctionner sur batterie pendant les coupures de courant.
-
-## Installer LoungeOS
-
-### Installer sur Windows
-
-1. Téléchargez **LoungeOS-Setup.exe** avec le bouton Windows ci-dessus.
-2. Double-cliquez sur le fichier et suivez l'assistant d'installation. Vous pouvez choisir le dossier d'installation.
-3. LoungeOS s'ouvre à la fin de l'installation. Ensuite, ouvrez-le depuis le raccourci du bureau ou le menu Démarrer.
-
-### Installer sur Mac
-
-1. **Choisissez le bon fichier.** Ouvrez le menu Pomme et choisissez **À propos de ce Mac**. Si vous voyez **Puce** avec Apple M1 ou plus récent, prenez le téléchargement Apple Silicon. Si vous voyez **Processeur** avec Intel, prenez le téléchargement Intel.
-2. Ouvrez le fichier **.dmg** téléchargé et faites glisser **LoungeOS** dans votre dossier **Applications**.
-3. Ouvrez **LoungeOS** depuis Applications.
-
-L'application Mac n'est pas encore notarisée par Apple. À la première ouverture, macOS peut donc indiquer qu'elle ne peut pas être ouverte. Ouvrez **Réglages Système > Confidentialité et sécurité** et cliquez sur **Ouvrir quand même** (ou faites un clic droit sur l'application et choisissez **Ouvrir**).
-
-### Installer sur Android
-
-1. Téléchargez **LoungeOS-Android.apk** avec le bouton Android ci-dessus.
-2. Ouvrez le fichier téléchargé. Quand Android le demande, autorisez l'installation d'applications depuis votre navigateur ou votre gestionnaire de fichiers.
-3. Appuyez sur **Installer**, puis ouvrez **LoungeOS** et connectez-vous. **Continuer avec Google** se termine dans le navigateur du téléphone et vous ramène dans l'application.
-4. Autorisez les notifications quand Android le demande : chacun reçoit les alertes de son rôle (commandes QR des tables, bons cuisine et bar, commandes prêtes, annulations, stock faible).
-
-L'application Android a besoin d'une connexion internet. **Vous aviez l'ancienne application Android ?** L'application 2.1.4 est une nouvelle application : installez-la, puis désinstallez l'ancienne. Plus de détails dans le [guide de l'application mobile](/fr/aide/application-mobile/).
-
-### Utiliser l'application web
-
-Ouvrez [app.loungeos.app](https://app.loungeos.app) dans un navigateur récent. Il n'y a rien à installer. L'application web a besoin d'une connexion internet.
-
-## Se connecter avec votre compte LoungeOS
-
-Chaque personne a un seul compte LoungeOS, qui fonctionne partout : application web, Windows, Mac et Android.
-
-1. **Créez votre compte** sur [app.loungeos.app](https://app.loungeos.app). L'inscription se trouve sur la page de connexion.
-2. **Connectez-vous** avec votre e-mail et votre mot de passe, ou cliquez sur **Continuer avec Google**.
-3. **Aucune clé de licence.** L'application Android se connecte comme l'application web. Les applications Windows et Mac affichent un code court la première fois : confirmez-le sur account.loungeos.app/link et la caisse est connectée. Pas à pas : [Installer LoungeOS](/fr/aide/installer-loungeos/).
-
-Le propriétaire invite son personnel par e-mail, et chaque employé reçoit son propre rôle et ses permissions. Sur une caisse partagée, le personnel peut changer d'utilisateur avec un code PIN rapide.
-
-Votre formule, vos factures et vos paiements se gèrent sur [account.loungeos.app](https://account.loungeos.app). Consultez les [tarifs](/fr/tarifs/) pour voir le contenu de chaque formule.
-
-## Configurer votre établissement
-
-Après la création de votre compte, un assistant de configuration vous demande :
-
-- votre type d'activité : restaurant, bar, lounge, café, boîte de nuit, hôtel, boutique, supermarché et plus encore
-- le nom et le logo de votre établissement
-- votre devise et vos taxes
-- vos moyens de paiement, par exemple espèces, MTN Mobile Money, Orange Money, carte ou virement bancaire
-- vos horaires d'ouverture
-
-Il vous propose ensuite des catégories pour votre menu, votre stock et vos dépenses. Cochez celles dont vous avez besoin : LoungeOS est configuré dès le premier jour. Ajoutez ensuite vos produits et vos prix, créez vos tables si vous servez à table, puis invitez votre personnel.
-
-## Connecter d'autres appareils
-
-**L'application web fonctionne partout.** Tout appareil équipé d'un navigateur récent et d'internet peut ouvrir [app.loungeos.app](https://app.loungeos.app). Le nombre d'utilisateurs et d'appareils dépend de votre [formule](/fr/tarifs/).
-
-**Les téléphones et tablettes sur le même Wi-Fi** peuvent aussi utiliser l'application Windows ou Mac depuis leur navigateur, par le réseau local :
-
-1. Vérifiez que l'ordinateur où tourne LoungeOS et les téléphones ou tablettes sont sur le **même réseau Wi-Fi**.
-2. Relevez l'adresse IP locale de l'ordinateur, par exemple `192.168.1.15`.
-3. Autorisez les connexions entrantes sur le **port 2304** dans le pare-feu de l'ordinateur.
-4. Sur chaque téléphone ou tablette, ouvrez le navigateur et allez à `http://192.168.1.15:2304` (avec l'adresse IP de votre ordinateur).
-
-Astuce : attribuez une adresse IP fixe à l'ordinateur dans les réglages de votre routeur pour que l'adresse ne change jamais.
-
-## Travailler hors ligne
-
-- **Les applications Windows et Mac continuent de vendre sans internet.** Les données de votre établissement sont aussi conservées sur l'ordinateur, et tout se synchronise automatiquement au retour de la connexion.
-- **Après 7 jours sans synchronisation, la caisse passe en lecture seule** jusqu'à ce qu'elle se reconnecte. Un avertissement s'affiche pendant les 2 derniers jours.
-- **En lecture seule**, les commandes passées, les rapports, l'impression et les exports fonctionnent toujours, mais vous ne pouvez plus faire de nouvelles ventes ni de modifications.
-- **L'application Android et l'application web ont besoin d'internet.**
-- **Rien n'est jamais supprimé.** Toutes vos données ont aussi une copie dans le cloud, avec une sauvegarde complète chaque jour. Si un abonnement prend fin, LoungeOS passe en lecture seule jusqu'à son renouvellement.
+Les tickets s'impriment sur des imprimantes thermiques 58 mm et 80 mm, ou en PDF. Une tablette ou un téléphone continue de vendre hors ligne seulement pour la personne déjà connectée. Après 7 jours sans synchronisation, un appareil passe en lecture seule jusqu'à sa reconnexion. Rien n'est jamais supprimé : vos données ont aussi une copie dans le cloud, sauvegardée chaque jour. Voir toutes les [fonctionnalités](/fr/fonctionnalites/).
 
 ## Questions fréquentes
 
-### Quel téléchargement Mac me faut-il ?
+### Faut-il une clé de licence ?
 
-Ouvrez le menu Pomme et choisissez **À propos de ce Mac**. Une **Puce** Apple M1 ou plus récente signifie Apple Silicon : prenez LoungeOS-Mac-arm64.dmg. Un **Processeur** Intel signifie un Mac Intel : prenez LoungeOS-Mac-x64.dmg.
-
-### Faut-il une clé ou un code pour utiliser LoungeOS ?
-
-Pas de clé de licence. Installez l'application et connectez-vous avec votre compte LoungeOS. La première fois, une caisse Windows ou Mac affiche un code court à confirmer dans votre compte : vous seul pouvez lier une caisse à votre commerce.
+Non. Installez l'application et connectez-vous avec votre compte LoungeOS. Une nouvelle caisse Windows ou Mac affiche un code court à confirmer dans votre compte : vous seul pouvez lier une caisse à votre commerce.
 
 ### Existe-t-il une application pour iPhone ou iPad ?
 
-Il n'y a pas d'application iPhone ou iPad à télécharger. Ouvrez l'[application web](https://app.loungeos.app) dans le navigateur, ou utilisez une application Windows ou Mac par votre Wi-Fi (voir [Connecter d'autres appareils](/fr/telecharger/#connecter-dautres-appareils)).
-
-### Windows SmartScreen affiche un avertissement pour l'installateur. Est-ce sûr ?
-
-Téléchargez LoungeOS uniquement depuis cette page. Si Windows SmartScreen affiche un avertissement pour une nouvelle version, choisissez *Informations complémentaires*, puis *Exécuter quand même*. [Contactez-nous](/contact/) en cas de doute.
+Pas à télécharger. Ouvrez l'[application web](https://app.loungeos.app) dans Safari, ou utilisez une caisse Windows ou Mac par votre Wi-Fi.
 
 ### Que deviennent mes données si mon abonnement prend fin ?
 
-Rien n'est supprimé. LoungeOS passe en lecture seule, sur le web et sur vos caisses, jusqu'au renouvellement. Vous pouvez toujours consulter les commandes passées et les rapports, imprimer et exporter.
+Rien n'est supprimé. LoungeOS passe en lecture seule jusqu'au renouvellement : vous pouvez toujours consulter les commandes passées et les rapports, imprimer et exporter.
