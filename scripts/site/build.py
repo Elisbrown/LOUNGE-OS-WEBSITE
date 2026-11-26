@@ -482,8 +482,8 @@ FOOTER = {
                       ("Nigeria (EN)", "/nigeria/"), ("Ghana (EN)", "/ghana/")]),
             ("Ressources", [("Blog", "/blog/"), ("Centre d'aide", "/fr/aide/"),
                             ("À propos", "/about/"),
-                            ("Contact", "/contact/"), ("Confidentialité", "/privacy.html"),
-                            ("Conditions", "/terms.html"), ("Mentions légales", "/legal.html")]),
+                            ("Contact", "/contact/"), ("Confidentialité", "/fr/confidentialite/"),
+                            ("Conditions", "/fr/conditions/"), ("Mentions légales", "/fr/mentions-legales/")]),
         ],
         "rights": "Tous droits réservés.",
         "cta": "Commencer l'essai gratuit",
@@ -1766,7 +1766,7 @@ def main():
         if u not in by_url and u not in MANUAL_PAGES and not os.path.exists(os.path.join(repo, u.strip("/"), "index.html")):
             raise SystemExit(f"menu link {u} not found")
     # Hand-edited pages get the same menu as the generated ones
-    for name in ("index.html", "accessibility.html", "legal.html", "privacy.html", "terms.html"):
+    for name in ("index.html", "accessibility.html"):
         path = os.path.join(repo, name)
         h = open(path, encoding="utf-8").read()
         h2 = re.sub(r'    <a class="skip-link".*?</nav>', lambda m: nav_html("en"), h, count=1, flags=re.S)

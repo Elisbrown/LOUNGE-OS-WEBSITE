@@ -662,6 +662,20 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/cameroon/"/>
   </url>
   <url>
+    <loc>https://loungeos.app/fr/conditions/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://loungeos.app/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/conditions/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/terms.html"/>
+  </url>
+  <url>
+    <loc>https://loungeos.app/fr/confidentialite/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://loungeos.app/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/confidentialite/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/privacy.html"/>
+  </url>
+  <url>
     <loc>https://loungeos.app/fr/cote-divoire/</loc>
     <lastmod>2026-11-26</lastmod>
   </url>
@@ -769,6 +783,13 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://loungeos.app/pharmacy-pos/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/logiciel-gestion-pharmacie/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/pharmacy-pos/"/>
+  </url>
+  <url>
+    <loc>https://loungeos.app/fr/mentions-legales/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://loungeos.app/legal.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/mentions-legales/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/legal.html"/>
   </url>
   <url>
     <loc>https://loungeos.app/fr/senegal/</loc>
@@ -977,6 +998,9 @@
   <url>
     <loc>https://loungeos.app/legal.html</loc>
     <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://loungeos.app/legal.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/mentions-legales/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/legal.html"/>
   </url>
   <url>
     <loc>https://loungeos.app/lounge-pos/</loc>
@@ -1010,6 +1034,9 @@
   <url>
     <loc>https://loungeos.app/privacy.html</loc>
     <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://loungeos.app/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/confidentialite/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/privacy.html"/>
   </url>
   <url>
     <loc>https://loungeos.app/restaurant-pos/</loc>
@@ -1046,6 +1073,9 @@
   <url>
     <loc>https://loungeos.app/terms.html</loc>
     <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://loungeos.app/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://loungeos.app/fr/conditions/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://loungeos.app/terms.html"/>
   </url>
   <url>
     <loc>https://loungeos.app/wholesale-pos/</loc>
