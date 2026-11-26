@@ -32,8 +32,7 @@ features:
   - ["package", "Stock and alerts", "Every sale comes off stock, and low-stock alerts tell you what to reorder."]
   - ["shield", "Price changes need a manager", "Sellers can't change prices or cancel sales without a manager's PIN."]
   - ["branch", "Several shops", "Each shop is a branch with its own stock and team, side by side on the Pro plan."]
-soon:
-  - "Units and packs: sell one screw or the whole box, one tile or the carton"
+  - ["layers", "Units and packs", "Sell one screw or the whole box, one tile or the carton. One stock count covers both, and each pack has its own price and barcode."]
 ---
 
 A **hardware store POS** has to handle many small items, big trade orders and a lot of credit. LoungeOS gives a hardware or building-materials store a barcode till, stock counts, supplier records, customer tabs and staff controls. When you choose *Hardware store* in the setup wizard, LoungeOS suggests categories such as Tools, Building materials, Electrical, Plumbing, Paint and Fasteners.
@@ -56,9 +55,13 @@ Every item sold comes off the stock count. Deliveries, breakages and corrections
 
 ## What LoungeOS does not do yet
 
-Today each item is sold by the unit at one price. Selling the same product as a single piece or a full box, formal quotes and delivery notes, and trade price tiers are being built now and listed under *Coming next* above.
+LoungeOS does not make formal quotes or delivery notes, and it has no separate price list for trade customers: a manager changes the price on a sale with their PIN. Every sale gives a printed or PDF receipt.
 
 ## Frequently asked questions
+
+### Can I sell one piece and a whole pack of the same product?
+
+Yes. Add **packs** to a product, for example *Box of 100*, with the number of units in each, its price and its barcode. The till asks *one piece or a pack*, or you scan the pack's barcode. Selling a pack takes its units from the product's one stock count.
 
 ### Can I sell items that have no barcode?
 

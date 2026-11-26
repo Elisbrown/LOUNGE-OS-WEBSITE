@@ -34,8 +34,7 @@ features:
   - ["wallet", "Mobile money et espèces", "Espèces, MTN Mobile Money, Orange Money, carte ou assurance comme moyen de paiement à vous."]
   - ["chart", "Rapport des ventes du jour", "Ventes et argent encaissé par moyen de paiement, consultables sur le web ou le téléphone."]
   - ["calendar", "Lots et dates de péremption", "Notez le numéro de lot et la date de péremption de chaque livraison. LoungeOS vous prévient avant l'expiration et vend le lot le plus ancien d'abord."]
-soon:
-  - "Unités et boîtes : vendre une plaquette ou la boîte entière"
+  - ["layers", "Unités et lots", "Vendez une plaquette ou la boîte entière. Un seul stock couvre les deux, et chaque lot a son prix et son code-barres."]
 ---
 
 Un **logiciel de pharmacie** doit être rapide au comptoir et exact sur le stock. LoungeOS donne à une pharmacie ou parapharmacie une caisse avec code-barres, des stocks avec alertes, des fiches fournisseurs, des comptes pour le personnel et un rapport des ventes du jour. Quand vous choisissez *Pharmacie* dans l'assistant de configuration, LoungeOS propose des catégories comme Médicaments, Vitamines et compléments, Matériel médical, Hygiène et beauté et Soins bébé.
@@ -58,9 +57,13 @@ Chaque employé a son compte et son code PIN. Annulations, remboursements et cha
 
 ## Ce que LoungeOS ne fait pas encore
 
-LoungeOS suit les **numéros de lot et les dates de péremption** : vous les saisissez à l'arrivée d'une livraison, la page *Dates de péremption* montre ce qui est périmé et ce qui le sera bientôt, et les ventes sortent d'abord du lot le plus ancien. LoungeOS est un outil de caisse et de stock : il ne vérifie pas les ordonnances ni les interactions et ne remplace pas les registres exigés par votre autorité de tutelle.
+LoungeOS est un outil de caisse et de stock : il ne vérifie pas les ordonnances ni les interactions et ne remplace pas les registres exigés par votre autorité de tutelle.
 
 ## Questions fréquentes
+
+### Puis-je vendre à l'unité et par lot le même produit ?
+
+Oui. Ajoutez des **lots** à un produit, par exemple *Boîte de 10 plaquettes*, avec le nombre d'unités, le prix et le code-barres de chacun. La caisse demande *à l'unité ou un lot*, ou vous scannez le code-barres du lot. Un lot vendu prend ses unités dans le stock unique du produit.
 
 ### Puis-je scanner les codes-barres déjà présents sur les boîtes ?
 

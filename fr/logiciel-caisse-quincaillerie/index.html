@@ -670,7 +670,8 @@
         "Fournisseurs et livraisons",
         "Stocks et alertes",
         "Prix modifiés par un responsable",
-        "Plusieurs magasins"
+        "Plusieurs magasins",
+        "Unités et lots"
       ],
       "screenshot": "https://loungeos.app/images/screens/loungeos-till-hardware.webp"
     },
@@ -718,6 +719,14 @@
       "@type": "FAQPage",
       "@id": "https://loungeos.app/fr/logiciel-caisse-quincaillerie/#faq",
       "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Puis-je vendre à l’unité et par lot le même produit ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Oui. Ajoutez des <strong>lots<\/strong> à un produit, par exemple <em>Boîte de 100<\/em>, avec le nombre d’unités, le prix et le code-barres de chacun. La caisse demande <em>à l’unité ou un lot<\/em>, ou vous scannez le code-barres du lot. Un lot vendu prend ses unités dans le stock unique du produit.<\/p>"
+          }
+        },
         {
           "@type": "Question",
           "name": "Puis-je vendre des articles sans code-barres ?",
@@ -948,14 +957,9 @@
 <div class="feat-card"><svg class="ind-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg><h3>Stocks et alertes</h3><p>Chaque vente sort du stock, et les alertes de stock bas vous disent quoi recommander.</p></div>
 <div class="feat-card"><svg class="ind-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg><h3>Prix modifiés par un responsable</h3><p>Les vendeurs ne changent ni les prix ni les ventes sans le code PIN d'un responsable.</p></div>
 <div class="feat-card"><svg class="ind-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3v12"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></svg><h3>Plusieurs magasins</h3><p>Chaque magasin est un site avec son stock et son équipe, côte à côte avec la formule Pro.</p></div>
+<div class="feat-card"><svg class="ind-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></svg><h3>Unités et lots</h3><p>Vendez une vis ou la boîte, un carreau ou le carton. Un seul stock couvre les deux, et chaque lot a son prix et son code-barres.</p></div>
           </div>
-          <div class="soon-box">
-            <h3><svg class="ind-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Bientôt disponible</h3>
-            <ul>
-<li>Unités et lots : vendre une vis ou la boîte, un carreau ou le carton</li>
-            </ul>
-            <p>Pas encore dans l'application. Nous le disons ici pour que vous choisissiez en connaissance de cause.</p>
-          </div>
+          
         </div>
       </section>
       <section class="ind-band ind-pricing" id="pricing">
@@ -1040,8 +1044,10 @@
 </div>
 </div>
 <h2 id="ce-que-loungeos-ne-fait-pas-encore">Ce que LoungeOS ne fait pas encore</h2>
-<p>Aujourd’hui, chaque article se vend à l’unité à un seul prix. La vente d’un même produit à la pièce ou à la boîte, les devis et bons de livraison, et les grilles de prix professionnelles sont en cours de développement (voir <em>Bientôt disponible</em> plus haut).</p>
+<p>LoungeOS ne fait pas de devis ni de bons de livraison, et n’a pas de grille de prix à part pour les professionnels : un responsable modifie le prix d’une vente avec son code PIN. Chaque vente donne un reçu imprimé ou PDF.</p>
 <h2 id="questions-frequentes">Questions fréquentes</h2>
+<h3 id="puis-je-vendre-a-lunite-et-par-lot-le-meme-produit">Puis-je vendre à l’unité et par lot le même produit ?</h3>
+<p>Oui. Ajoutez des <strong>lots</strong> à un produit, par exemple <em>Boîte de 100</em>, avec le nombre d’unités, le prix et le code-barres de chacun. La caisse demande <em>à l’unité ou un lot</em>, ou vous scannez le code-barres du lot. Un lot vendu prend ses unités dans le stock unique du produit.</p>
 <h3 id="puis-je-vendre-des-articles-sans-code-barres">Puis-je vendre des articles sans code-barres ?</h3>
 <p>Oui. Trouvez-les par nom ou par catégorie sur la caisse, ou imprimez vos propres codes-barres et ajoutez-les aux produits.</p>
 <h3 id="puis-je-faire-credit-aux-entrepreneurs">Puis-je faire crédit aux entrepreneurs ?</h3>

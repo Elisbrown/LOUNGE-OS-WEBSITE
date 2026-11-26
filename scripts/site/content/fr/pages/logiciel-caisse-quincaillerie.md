@@ -33,8 +33,7 @@ features:
   - ["package", "Stocks et alertes", "Chaque vente sort du stock, et les alertes de stock bas vous disent quoi recommander."]
   - ["shield", "Prix modifiés par un responsable", "Les vendeurs ne changent ni les prix ni les ventes sans le code PIN d'un responsable."]
   - ["branch", "Plusieurs magasins", "Chaque magasin est un site avec son stock et son équipe, côte à côte avec la formule Pro."]
-soon:
-  - "Unités et lots : vendre une vis ou la boîte, un carreau ou le carton"
+  - ["layers", "Unités et lots", "Vendez une vis ou la boîte, un carreau ou le carton. Un seul stock couvre les deux, et chaque lot a son prix et son code-barres."]
 ---
 
 Un **logiciel de caisse pour quincaillerie** doit gérer beaucoup de petits articles, de grosses commandes professionnelles et beaucoup de crédit. LoungeOS donne à une quincaillerie ou un magasin de matériaux une caisse avec code-barres, des stocks, des fiches fournisseurs, des comptes clients et des contrôles pour le personnel. Quand vous choisissez *Quincaillerie* dans l'assistant de configuration, LoungeOS propose des catégories comme Outillage, Matériaux de construction, Électricité, Plomberie, Peinture et Visserie.
@@ -57,9 +56,13 @@ Chaque article vendu sort du stock. Livraisons, casse et corrections sont enregi
 
 ## Ce que LoungeOS ne fait pas encore
 
-Aujourd'hui, chaque article se vend à l'unité à un seul prix. La vente d'un même produit à la pièce ou à la boîte, les devis et bons de livraison, et les grilles de prix professionnelles sont en cours de développement (voir *Bientôt disponible* plus haut).
+LoungeOS ne fait pas de devis ni de bons de livraison, et n'a pas de grille de prix à part pour les professionnels : un responsable modifie le prix d'une vente avec son code PIN. Chaque vente donne un reçu imprimé ou PDF.
 
 ## Questions fréquentes
+
+### Puis-je vendre à l'unité et par lot le même produit ?
+
+Oui. Ajoutez des **lots** à un produit, par exemple *Boîte de 100*, avec le nombre d'unités, le prix et le code-barres de chacun. La caisse demande *à l'unité ou un lot*, ou vous scannez le code-barres du lot. Un lot vendu prend ses unités dans le stock unique du produit.
 
 ### Puis-je vendre des articles sans code-barres ?
 
