@@ -62,7 +62,7 @@ LoungeOS est un logiciel de caisse et de gestion développé au Cameroun par Sig
 - **L'argent** : espèces, MTN Mobile Money, Orange Money et carte prêts, chacun pouvant exiger la référence ; deux moyens sur une addition ; [comptes clients](/fr/fonctionnalites/ventes-a-credit/) pour le crédit.
 - **Le contrôle** : PIN du responsable pour annulations, remboursements et changements de prix, et journal d'activité.
 - **Le prix** : 6 000, 15 000 ou 30 000 FCFA par mois, essai gratuit de 14 jours, payé par mobile money ou carte. Support WhatsApp au +237 679 690 703.
-- **En plus** : [commande par QR code](/fr/fonctionnalites/commande-qr-code/), [succursales](/fr/fonctionnalites/multi-etablissements/), comptabilité et [application Android](/fr/fonctionnalites/application-mobile/) avec notifications.
+- **En plus** : [commande par QR code](/fr/fonctionnalites/commande-qr-code/), [sites](/fr/fonctionnalites/multi-etablissements/), comptabilité et [application Android](/fr/fonctionnalites/application-mobile/) avec notifications.
 
 **Limites** : pas encore d'application iPhone (on utilise l'application web), pas de paiement par carte intégré, et pas encore d'articles au poids pour les supermarchés.
 

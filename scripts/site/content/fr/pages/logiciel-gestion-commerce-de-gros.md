@@ -12,7 +12,7 @@ lead: "De gros volumes, des clients réguliers à crédit et des livraisons tous
 image: loungeos-till-wholesale
 image_alt: "Caisse LoungeOS d'un grossiste avec les catégories Boissons, Produits alimentaires, Entretien et Cartons et lots"
 card_title: "Commerce de gros & dépôts"
-card_desc: "Stocks, crédit clients et succursales pour grossistes et dépôts de boissons ou de vivres."
+card_desc: "Stocks, crédit clients et sites pour grossistes et dépôts de boissons ou de vivres."
 alternates:
   en: /wholesale-pos/
 related:
@@ -30,16 +30,14 @@ features:
   - ["credit", "Crédit et soldes clients", "Mettez les ventes sur l'ardoise du client, enregistrez les paiements partiels et voyez ce que chacun doit."]
   - ["package", "Stock en cartons et lots", "Vendez cartons et lots comme produits, chaque vente sort du stock, avec alertes de stock bas."]
   - ["truck", "Fournisseurs et livraisons", "Enregistrez les livraisons par fournisseur et voyez la valeur du stock."]
-  - ["branch", "Plusieurs dépôts", "Chaque dépôt est une succursale avec son stock et son équipe. Pro les montre côte à côte."]
+  - ["branch", "Plusieurs dépôts", "Chaque dépôt est un site avec son stock et son équipe. Pro les montre côte à côte."]
   - ["wallet", "Mobile money, espèces et virements", "Encaissez espèces, mobile money, virements ou vos propres moyens, et partagez les paiements."]
   - ["book", "Dépenses et comptabilité", "Enregistrez les dépenses et suivez les comptes avec les formules Business et Pro."]
 soon:
   - "Unités et lots sur un même produit : la bouteille, le pack ou le carton"
-  - "Grilles de prix et groupes de clients (détaillants, bars, clients de passage)"
-  - "Devis, factures et bons de livraison"
 ---
 
-Un **logiciel de commerce de gros** doit suivre de grosses commandes, beaucoup de clients à crédit et un stock qui bouge au carton. LoungeOS donne aux grossistes, distributeurs et dépôts de boissons ou de vivres une caisse rapide, des stocks, des fiches fournisseurs, des comptes clients avec paiements partiels et des succursales. Quand vous choisissez *Commerce de gros* dans l'assistant de configuration, LoungeOS propose des catégories comme Boissons, Produits alimentaires, Entretien, Hygiène et beauté et Cartons et lots.
+Un **logiciel de commerce de gros** doit suivre de grosses commandes, beaucoup de clients à crédit et un stock qui bouge au carton. LoungeOS donne aux grossistes, distributeurs et dépôts de boissons ou de vivres une caisse rapide, des stocks, des fiches fournisseurs, des comptes clients avec paiements partiels et des sites. Quand vous choisissez *Commerce de gros* dans l'assistant de configuration, LoungeOS propose des catégories comme Boissons, Produits alimentaires, Entretien, Hygiène et beauté et Cartons et lots.
 
 ## Le crédit client, bien tenu
 
@@ -51,7 +49,7 @@ Créez vos cartons et lots comme produits. Chaque vente sort du stock, et chaque
 
 ## Plusieurs dépôts
 
-Chaque dépôt est une succursale avec son stock, son équipe et ses rapports. Avec la formule Pro, vous voyez les ventes de toutes les succursales côte à côte. Voir [plusieurs établissements](/fr/fonctionnalites/multi-etablissements/).
+Chaque dépôt est un site avec son stock, son équipe et ses rapports. Avec la formule Pro, vous voyez les ventes de tous les sites côte à côte. Voir [plusieurs établissements](/fr/fonctionnalites/multi-etablissements/).
 
 [[cta]]
 
@@ -71,7 +69,7 @@ Aujourd'hui, vous créez deux produits, par exemple « Bière 65 cl » et « Cas
 
 ### Puis-je donner des prix différents selon les clients ?
 
-Pas encore automatiquement. Les grilles de prix et groupes de clients arrivent dans la prochaine mise à jour. Aujourd'hui, un responsable peut modifier le prix d'une vente avec son code PIN.
+Pas automatiquement. Un responsable peut modifier le prix d'une vente avec son code PIN, et le journal d'activité garde la modification.
 
 ### Fonctionne-t-il sans internet ?
 

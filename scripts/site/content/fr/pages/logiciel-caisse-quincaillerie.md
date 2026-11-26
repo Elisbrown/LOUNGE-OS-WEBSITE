@@ -32,11 +32,9 @@ features:
   - ["truck", "Fournisseurs et livraisons", "Enregistrez chaque livraison et son fournisseur, et voyez la valeur du stock."]
   - ["package", "Stocks et alertes", "Chaque vente sort du stock, et les alertes de stock bas vous disent quoi recommander."]
   - ["shield", "Prix modifiés par un responsable", "Les vendeurs ne changent ni les prix ni les ventes sans le code PIN d'un responsable."]
-  - ["branch", "Plusieurs magasins", "Chaque magasin est une succursale avec son stock et son équipe, côte à côte avec la formule Pro."]
+  - ["branch", "Plusieurs magasins", "Chaque magasin est un site avec son stock et son équipe, côte à côte avec la formule Pro."]
 soon:
   - "Unités et lots : vendre une vis ou la boîte, un carreau ou le carton"
-  - "Devis, factures et bons de livraison pour les entrepreneurs"
-  - "Grilles de prix pour les clients professionnels"
 ---
 
 Un **logiciel de caisse pour quincaillerie** doit gérer beaucoup de petits articles, de grosses commandes professionnelles et beaucoup de crédit. LoungeOS donne à une quincaillerie ou un magasin de matériaux une caisse avec code-barres, des stocks, des fiches fournisseurs, des comptes clients et des contrôles pour le personnel. Quand vous choisissez *Quincaillerie* dans l'assistant de configuration, LoungeOS propose des catégories comme Outillage, Matériaux de construction, Électricité, Plomberie, Peinture et Visserie.
@@ -73,7 +71,7 @@ Oui. Utilisez Payer plus tard et choisissez le client. Son ardoise montre chaque
 
 ### Puis-je faire des devis et des factures ?
 
-Vous pouvez donner un reçu PDF aujourd'hui. Les devis, factures et bons de livraison arrivent dans la prochaine mise à jour, avec les formules Business et Pro.
+Vous pouvez donner un reçu imprimé ou PDF pour chaque vente. Le câble, le tuyau et la corde se vendent au mètre, au centimètre près.
 
 ### Fonctionne-t-il sans internet ?
 

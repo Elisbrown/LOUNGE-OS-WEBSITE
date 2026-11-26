@@ -34,7 +34,7 @@ Pour en ajouter une, appuyez sur **Ajouter une catégorie**, tapez le nom, chois
 ## Ajouter un produit
 
 1. Ouvrez **Menu** (ou **Produits**) et appuyez sur **Ajouter un article**. Depuis n'importe quelle page, vous pouvez aussi appuyer sur **+ Nouveau**, puis **Ajouter un produit**.
-2. **Photo** : appuyez sur **Ajouter une photo** pour envoyer la vôtre, ou sur **Trouver une photo** pour chercher des photos libres de droits, en commençant par le nom du produit.
+2. **Photo** : appuyez sur **Ajouter une photo** pour envoyer la vôtre depuis votre téléphone ou votre ordinateur.
 3. **Nom** et **Prix**.
 4. **Code-barres** (facultatif) : scannez-le ou tapez-le. Un même code-barres ne peut pas être sur deux articles.
 5. **Quantité** : laissez vide si vous ne comptez pas ce produit (un plat cuisiné à la commande). Tapez un nombre pour ce que vous comptez, comme les bouteilles : la caisse en retire une à chaque vente et vous prévient quand il n'y en a plus.
@@ -45,6 +45,12 @@ Pour en ajouter une, appuyez sur **Ajouter une catégorie**, tapez le nom, chois
 Le produit apparaît aussitôt sur la caisse, sur toutes les caisses et tous les téléphones, avec sa photo.
 
 [[figure:loungeos-help-fr-meals|La liste du menu LoungeOS avec photos, catégories, prix et stock|La liste du menu : recherche, filtre par catégorie ou statut, modification sur place.]]
+
+## Tailles, couleurs et vente au poids
+
+- **Tailles et couleurs.** Activez *Tailles et couleurs* dans la fiche du produit et listez les choix, par exemple S, M, L et Noir, Bleu. Chaque combinaison a son stock, son code-barres et son prix s'il est différent, et la caisse demande laquelle est vendue.
+- **Au poids ou à la mesure.** Sous *Vendu*, choisissez kg, g, l, ml, m ou cm au lieu de *À la pièce*, et donnez le prix pour une unité. En caisse, vous saisissez la quantité, par exemple 1,250 kg, ou vous scannez l'étiquette de votre balance.
+- **Lots et dates de péremption.** Activez les dates de péremption dans les *Paramètres*, puis saisissez le lot et sa date à chaque réception de stock. Voir [stocks et fournisseurs](/fr/aide/stocks-et-fournisseurs/).
 
 ## Modifier ou masquer un produit
 

@@ -45,10 +45,21 @@ How many people you can add depends on your plan: 2 users on Starter, 5 on Busin
 | Chef | The kitchen screen |
 | Stock Manager | Stock items, suppliers, receiving stock (needs a plan with stock) |
 | Accountant | Expenses, accounting, reports (needs a plan with expenses or accounting) |
+| Housekeeper | The housekeeping screen of a hotel: their rooms to clean and problems to report |
 
 The side menu, the **+ New** button and search (Ctrl K or ⌘K) only show what each role can open.
 
 [[figure:loungeos-help-staff|The LoungeOS staff list with roles, phone, assigned floor and status|Viona Lounge's team (sample names).]]
+
+## Change what a role can do
+
+Each role starts with the access in the table above. To change it, open **Staff**, then **Roles and access**:
+
+- Open a role and switch features on or off, for example let cashiers record expenses or stop waiters from seeing reports.
+- Make your own role, for example *Supervisor*, and choose its features.
+- For one person only, open their staff card and give or take away a feature without changing the whole role.
+
+The owner can do everything and decides whether managers may change roles and access. Nobody can give a feature that the plan does not include.
 
 ## Sign in on a shared till
 

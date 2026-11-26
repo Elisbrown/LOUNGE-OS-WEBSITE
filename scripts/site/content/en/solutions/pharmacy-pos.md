@@ -32,8 +32,8 @@ features:
   - ["users", "Staff accounts and PINs", "Each staff member signs in with a PIN. Cancels and price changes need the pharmacist in charge."]
   - ["wallet", "Mobile money and cash", "Cash, MTN Mobile Money, Orange Money, card or insurance as your own payment method."]
   - ["chart", "Daily sales report", "Sales and money taken by payment method, from anywhere on the web or phone app."]
+  - ["calendar", "Batches and expiry dates", "Record the batch number and expiry date of each delivery. LoungeOS warns you before medicines expire and sells the oldest batch first."]
 soon:
-  - "Batch numbers and expiry dates, with alerts before products expire"
   - "Units and packs: sell a blister or the whole box"
 ---
 
@@ -57,7 +57,7 @@ Each staff member has their own account and PIN. Cancels, refunds and price chan
 
 ## What LoungeOS does not do yet
 
-LoungeOS does not yet track **batch numbers and expiry dates**, which many pharmacies need. That is being built now and listed under *Coming next* above. LoungeOS is a point of sale and stock tool: it does not check prescriptions or drug interactions and does not replace the records your regulator asks you to keep. If expiry tracking is a must on day one, [tell us](/contact/) before you choose.
+LoungeOS tracks **batch numbers and expiry dates**: you enter them when a delivery arrives, the *Expiry dates* page shows what has expired and what expires soon, and sales take from the oldest batch first. LoungeOS is a point of sale and stock tool: it does not check prescriptions or drug interactions and does not replace the records your regulator asks you to keep.
 
 ## Frequently asked questions
 
@@ -67,7 +67,7 @@ Yes. Any USB or Bluetooth scanner that types like a keyboard works. Scan the box
 
 ### Does LoungeOS track expiry dates?
 
-Not yet. Batches and expiry dates, with alerts before products expire, are coming in the next update.
+Yes. Enter the batch number and expiry date when you receive a delivery. LoungeOS lists what expires soon, warns you on the dashboard, sells the oldest batch first and lets you write off expired medicines as a loss.
 
 ### Can I record insurance or company payments?
 

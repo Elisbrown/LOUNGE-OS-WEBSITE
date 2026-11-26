@@ -33,7 +33,7 @@ To add one, press **Add Category**, type the name, choose Kitchen or Bar and sav
 ## Add a product
 
 1. Open **Menu** (or **Products**) and press **Add Menu Item**. From any page you can also press **+ New**, then **Add product**.
-2. **Photo**: press **Add a photo** to upload one, or **Find a photo** to search free photos you can use without credit, starting with the product's name.
+2. **Photo**: press **Add a photo** to upload one from your phone or computer.
 3. **Name** and **Price**.
 4. **Barcode** (optional): scan it with the scanner or type it. The same barcode can't be on two things.
 5. **Quantity**: leave it empty if you don't count this product (a dish cooked to order). Type a number for things you count, such as bottles: the till then takes one off at each sale and warns you when it runs out.
@@ -44,6 +44,12 @@ To add one, press **Add Category**, type the name, choose Kitchen or Bar and sav
 The product appears on the till straight away, on every till and phone, with its photo.
 
 [[figure:loungeos-help-meals|The LoungeOS menu list with photos, categories, prices and stock|The menu list: search, filter by category or status, edit in place.]]
+
+## Sizes, colours and selling by weight
+
+- **Sizes and colours.** Turn on *Sizes and colours* in the product form and list the choices, for example S, M, L and Black, Blue. Each combination has its own stock, barcode and price if it differs, and the till asks which one is being sold.
+- **By weight or measure.** Under *Sold*, choose kg, g, l, ml, m or cm instead of *By the piece*, and give the price for one. At the till you type the quantity, for example 1.250 kg, or scan the label printed by your scale.
+- **Batches and expiry dates.** Turn on expiry dates in *Settings*, then enter the batch and its date each time you receive stock. See [stock and suppliers](/help/stock-and-suppliers/).
 
 ## Change or hide a product
 

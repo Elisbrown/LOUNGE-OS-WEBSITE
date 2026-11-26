@@ -27,7 +27,7 @@ related:
 |---|---|---|---|
 | Utilisateurs | 2 | 5 | Illimité |
 | Appareils (caisses, ordinateurs, téléphones) | 2 | 5 | 10 |
-| Succursales | 1 | 1 | Plusieurs |
+| Sites | 1 | 1 | Plusieurs |
 | Caisse, tables, écrans cuisine et bar, reçus | ✓ | ✓ | ✓ |
 | Stock et fournisseurs | ✓ | ✓ | ✓ |
 | Comptes clients (payer plus tard) | ✓ | ✓ | ✓ |
@@ -35,7 +35,7 @@ related:
 | Rapports de la semaine et du mois | | ✓ | ✓ |
 | Dépenses et comptabilité | | ✓ | ✓ |
 | Commande par QR code à table | | ✓ | ✓ |
-| Vue des ventes de toutes les succursales | | | ✓ |
+| Vue des ventes de tous les sites | | | ✓ |
 | Support prioritaire | | | ✓ |
 
 Prix : Starter 6 000 FCFA, Business 15 000 FCFA, Pro 30 000 FCFA par mois (10, 25 et 50 US$). Payer à l'année coûte 10 mois : 2 mois offerts. Les prix à jour sont toujours sur la [page Tarifs](/fr/tarifs/) et dans votre compte.

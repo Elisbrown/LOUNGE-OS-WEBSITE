@@ -2,7 +2,7 @@
 url: /fr/aide/ajouter-votre-equipe/
 type: help
 lang: fr
-section: "Équipe et succursales"
+section: "Équipe et sites"
 order: 1
 title: "Ajouter le personnel, les rôles et les codes PIN dans LoungeOS"
 description: "Ajoutez serveurs, caissiers, chefs, barmans, gestionnaires de stock et comptables dans LoungeOS, donnez à chacun un rôle et un code PIN, et voyez qui a fait quoi."
@@ -38,7 +38,7 @@ Le nombre de personnes dépend de votre formule : 2 utilisateurs en Starter, 5 e
 
 | Rôle | Ce qu'il fait dans LoungeOS |
 |---|---|
-| Super Admin (propriétaire) | Tout, y compris la facturation, les succursales et les sauvegardes |
+| Super Admin (propriétaire) | Tout, y compris la facturation, les sites et les sauvegardes |
 | Responsable | La gestion quotidienne : personnel, menu, stock, rapports, validations |
 | Caissier | Encaisse, prend les paiements sur comptes clients, voit l'écran bar |
 | Serveur | Prend les commandes aux tables de sa salle |
@@ -46,10 +46,21 @@ Le nombre de personnes dépend de votre formule : 2 utilisateurs en Starter, 5 e
 | Chef | L'écran cuisine |
 | Gestionnaire de stock | Articles de stock, fournisseurs, réceptions (formule avec stock) |
 | Comptable | Dépenses, comptabilité, rapports (formule avec dépenses ou comptabilité) |
+| Agent d'entretien | L'écran Ménage d'un hôtel : ses chambres à faire et les problèmes à signaler |
 
 Le menu latéral, le bouton **+ Nouveau** et la recherche (Ctrl K ou ⌘K) ne montrent que ce que chaque rôle peut ouvrir.
 
 [[figure:loungeos-help-fr-staff|La liste du personnel LoungeOS avec rôles, téléphone, salle et statut|Une équipe d'exemple (noms fictifs).]]
+
+## Modifier ce qu'un rôle peut faire
+
+Chaque rôle démarre avec les accès du tableau ci-dessus. Pour les changer, ouvrez **Personnel**, puis **Rôles et accès** :
+
+- Ouvrez un rôle et activez ou désactivez des fonctions, par exemple laisser les caissiers noter les dépenses ou empêcher les serveurs de voir les rapports.
+- Créez votre propre rôle, par exemple *Superviseur*, et choisissez ses fonctions.
+- Pour une seule personne, ouvrez sa fiche et donnez ou retirez une fonction sans toucher au rôle.
+
+Le propriétaire peut tout faire et décide si les gérants peuvent modifier les rôles et les accès. Personne ne peut donner une fonction que la formule n'inclut pas.
 
 ## Se connecter sur une caisse partagée
 

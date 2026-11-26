@@ -52,6 +52,10 @@ Pour toute une livraison, appuyez sur **Recevoir du stock** (ou **+ Nouveau**, *
 
 [[figure:loungeos-help-fr-stock-receive|La fenêtre Entrée de stock groupée de LoungeOS avec les articles à cocher|Cochez les articles livrés, puis tapez quantités et coûts.]]
 
+## Lots et dates de péremption
+
+Pour les aliments, les boissons et les médicaments, saisissez le **numéro de lot** et la **date de péremption** à la réception d'une livraison. La page **Dates de péremption** liste ce qui est périmé et ce qui le sera bientôt, et le tableau de bord vous prévient. Les ventes sortent d'abord du lot le plus ancien. Sortez un lot périmé d'un geste : il quitte le stock et il est noté comme une perte.
+
 ## Sorties, pertes et ajustements
 
 Depuis le menu d'un article, enregistrez une **Sortie de stock** (utilisé en cuisine), une **Perte** ou un **Dommage** (avec la raison), ou un ajustement après un comptage. Chaque mouvement est gardé avec qui l'a fait et quand. **Exporter les mouvements** les télécharge pour les dates voulues.

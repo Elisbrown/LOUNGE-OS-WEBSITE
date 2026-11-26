@@ -739,7 +739,7 @@
           "name": "Puis-je donner des prix différents selon les clients ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "<p>Pas encore automatiquement. Les grilles de prix et groupes de clients arrivent dans la prochaine mise à jour. Aujourd’hui, un responsable peut modifier le prix d’une vente avec son code PIN.<\/p>"
+            "text": "<p>Pas automatiquement. Un responsable peut modifier le prix d’une vente avec son code PIN, et le journal d’activité garde la modification.<\/p>"
           }
         },
         {
@@ -945,7 +945,7 @@
 <div class="feat-card"><svg class="ind-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/></svg><h3>Crédit et soldes clients</h3><p>Mettez les ventes sur l'ardoise du client, enregistrez les paiements partiels et voyez ce que chacun doit.</p></div>
 <div class="feat-card"><svg class="ind-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg><h3>Stock en cartons et lots</h3><p>Vendez cartons et lots comme produits, chaque vente sort du stock, avec alertes de stock bas.</p></div>
 <div class="feat-card"><svg class="ind-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.62l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></svg><h3>Fournisseurs et livraisons</h3><p>Enregistrez les livraisons par fournisseur et voyez la valeur du stock.</p></div>
-<div class="feat-card"><svg class="ind-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3v12"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></svg><h3>Plusieurs dépôts</h3><p>Chaque dépôt est une succursale avec son stock et son équipe. Pro les montre côte à côte.</p></div>
+<div class="feat-card"><svg class="ind-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3v12"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></svg><h3>Plusieurs dépôts</h3><p>Chaque dépôt est un site avec son stock et son équipe. Pro les montre côte à côte.</p></div>
 <div class="feat-card"><svg class="ind-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"/><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"/></svg><h3>Mobile money, espèces et virements</h3><p>Encaissez espèces, mobile money, virements ou vos propres moyens, et partagez les paiements.</p></div>
 <div class="feat-card"><svg class="ind-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"/></svg><h3>Dépenses et comptabilité</h3><p>Enregistrez les dépenses et suivez les comptes avec les formules Business et Pro.</p></div>
           </div>
@@ -953,8 +953,6 @@
             <h3><svg class="ind-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Bientôt disponible</h3>
             <ul>
 <li>Unités et lots sur un même produit : la bouteille, le pack ou le carton</li>
-<li>Grilles de prix et groupes de clients (détaillants, bars, clients de passage)</li>
-<li>Devis, factures et bons de livraison</li>
             </ul>
             <p>Pas encore dans l'application. Nous le disons ici pour que vous choisissiez en connaissance de cause.</p>
           </div>
@@ -1009,8 +1007,8 @@
     <div class="price-savings" hidden>Vous économisez 100 $ US</div>
     <ul class="price-features"><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Utilisateurs illimités, 10 appareils et plus</li>
 <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Tout ce que propose Business</li>
-<li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Plusieurs succursales</li>
-<li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Vue des ventes de toutes les succursales</li>
+<li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Plusieurs sites</li>
+<li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Vue des ventes de tous les sites</li>
 <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Support prioritaire</li>
 <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Paie et bulletins de paie</li></ul>
     <a href="https://app.loungeos.app/login" class="btn btn-primary">Commencer l'essai gratuit</a>
@@ -1022,13 +1020,13 @@
       </section>
       <section class="content-section">
         <div class="prose prose-wide">
-<p>Un <strong>logiciel de commerce de gros</strong> doit suivre de grosses commandes, beaucoup de clients à crédit et un stock qui bouge au carton. LoungeOS donne aux grossistes, distributeurs et dépôts de boissons ou de vivres une caisse rapide, des stocks, des fiches fournisseurs, des comptes clients avec paiements partiels et des succursales. Quand vous choisissez <em>Commerce de gros</em> dans l’assistant de configuration, LoungeOS propose des catégories comme Boissons, Produits alimentaires, Entretien, Hygiène et beauté et Cartons et lots.</p>
+<p>Un <strong>logiciel de commerce de gros</strong> doit suivre de grosses commandes, beaucoup de clients à crédit et un stock qui bouge au carton. LoungeOS donne aux grossistes, distributeurs et dépôts de boissons ou de vivres une caisse rapide, des stocks, des fiches fournisseurs, des comptes clients avec paiements partiels et des sites. Quand vous choisissez <em>Commerce de gros</em> dans l’assistant de configuration, LoungeOS propose des catégories comme Boissons, Produits alimentaires, Entretien, Hygiène et beauté et Cartons et lots.</p>
 <h2 id="le-credit-client-bien-tenu">Le crédit client, bien tenu</h2>
 <p>Mettez une vente sur l’ardoise d’un client avec <em>Payer plus tard</em>. La vente compte le jour où elle est faite, et la page <em>Comptes clients</em> montre le solde de chaque client. Enregistrez les paiements partiels en espèces, mobile money ou virement. Voir les <a href="/fr/fonctionnalites/ventes-a-credit/">ventes à crédit</a>.</p>
 <h2 id="le-stock-au-carton">Le stock au carton</h2>
 <p>Créez vos cartons et lots comme produits. Chaque vente sort du stock, et chaque livraison, casse et correction est enregistrée avec un nom et une heure. Les alertes de stock bas vous disent quoi recommander.</p>
 <h2 id="plusieurs-depots">Plusieurs dépôts</h2>
-<p>Chaque dépôt est une succursale avec son stock, son équipe et ses rapports. Avec la formule Pro, vous voyez les ventes de toutes les succursales côte à côte. Voir <a href="/fr/fonctionnalites/multi-etablissements/">plusieurs établissements</a>.</p>
+<p>Chaque dépôt est un site avec son stock, son équipe et ses rapports. Avec la formule Pro, vous voyez les ventes de tous les sites côte à côte. Voir <a href="/fr/fonctionnalites/multi-etablissements/">plusieurs établissements</a>.</p>
 <div class="cta-box">
 <h2>Faites tourner votre commerce avec LoungeOS</h2>
 <p>Créez votre compte, répondez à l'assistant de configuration et votre activité est prête dès le premier jour. Essai gratuit de 14 jours avec les fonctionnalités Business, sans paiement à l'avance.</p>
@@ -1045,7 +1043,7 @@
 <h3 id="puis-je-vendre-la-meme-boisson-a-la-bouteille-et-au-casier">Puis-je vendre la même boisson à la bouteille et au casier ?</h3>
 <p>Aujourd’hui, vous créez deux produits, par exemple « Bière 65 cl » et « Casier de 12 bières ». Les relier pour qu’un seul stock couvre les deux arrive dans la prochaine mise à jour.</p>
 <h3 id="puis-je-donner-des-prix-differents-selon-les-clients">Puis-je donner des prix différents selon les clients ?</h3>
-<p>Pas encore automatiquement. Les grilles de prix et groupes de clients arrivent dans la prochaine mise à jour. Aujourd’hui, un responsable peut modifier le prix d’une vente avec son code PIN.</p>
+<p>Pas automatiquement. Un responsable peut modifier le prix d’une vente avec son code PIN, et le journal d’activité garde la modification.</p>
 <h3 id="fonctionne-t-il-sans-internet">Fonctionne-t-il sans internet ?</h3>
 <p>Oui, sur les applications Windows et Mac. Les ventes sont enregistrées sur la caisse et se synchronisent au retour de la connexion.</p>
         </div>
@@ -1096,11 +1094,11 @@
   </div>
 </a>
 <a class="post-card" href="/fr/fonctionnalites/multi-etablissements/">
-  <img src="/images/screens/loungeos-help-branches-800.webp" width="800" height="430" alt="La page Succursales de LoungeOS avec trois succursales, leurs ventes du jour et le total" loading="lazy" decoding="async" />
+  <img src="/images/screens/loungeos-help-branches-800.webp" width="800" height="430" alt="La page Sites de LoungeOS avec trois sites, leurs ventes du jour et le total" loading="lazy" decoding="async" />
   <div class="post-card-body">
     <span class="tag">Multi-établissements</span>
     <h3>Gestion multi-établissements</h3>
-    <p>Ouvrir une succursale avec une copie de vos réglages, comparer les ventes. Formule Pro.</p>
+    <p>Ouvrir un site avec une copie de vos réglages, comparer les ventes. Formule Pro.</p>
     <span class="read-more">En savoir plus →</span>
   </div>
 </a>

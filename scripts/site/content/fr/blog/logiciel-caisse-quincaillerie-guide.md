@@ -56,7 +56,7 @@ Transparence : nous éditons LoungeOS. Nous disons quand un autre produit convie
 - **Crédit des entrepreneurs :** ventes sur compte client et paiements partiels.
 - **Changements de prix et annulations validés par code PIN du gérant.**
 - **Stock, fournisseurs et valeur du stock.**
-- **Plusieurs magasins** en succursales, côte à côte sur Pro.
+- **Plusieurs magasins** en sites, côte à côte sur Pro.
 
 **Bientôt :** unités et colis (une vis ou la boîte), devis, factures et bons de livraison, prix pour professionnels.
 
@@ -72,4 +72,4 @@ Oui. La vente va sur le compte du client, les paiements partiels sont enregistr�
 
 ### LoungeOS gère-t-il plusieurs quincailleries ?
 
-Oui. Chaque magasin est une succursale avec son stock et son équipe, côte à côte sur la formule Pro.
+Oui. Chaque magasin est un site avec son stock et son équipe, côte à côte sur la formule Pro.

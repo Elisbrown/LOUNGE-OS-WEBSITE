@@ -28,7 +28,7 @@ LoungeOS contient deux types de données :
 - **Compte :** votre nom, votre adresse e-mail, votre numéro de mobile et votre mot de passe. Avec **Continuer avec Google**, Google nous transmet votre nom et votre e-mail ; nous ne voyons jamais votre mot de passe Google.
 - **Données de l'établissement :** nom, logo, type d'activité, devise, taxes, moyens de paiement et horaires, vos produits, prix, commandes, ventes, tables, stocks, fournisseurs, dépenses, écritures comptables et rapports.
 - **Personnes enregistrées par votre établissement :** nom, e-mail, rôle et code PIN du personnel, sessions de caisse, comptages, salaires et bulletins de paie ; nom, téléphone et solde des clients à crédit ; voyageurs et réservations de l'hôtel, y compris les informations du registre que vous saisissez ; nom, téléphone et adresse de livraison qu'un client donne en commandant via votre QR code ou votre menu en ligne.
-- **Fichiers :** logos, photos de produits et documents que vous téléversez ou choisissez avec **Trouver une photo**.
+- **Fichiers :** logos, photos de produits et documents que vous téléversez.
 - **Facturation :** votre formule, vos factures, reçus et l'état des paiements. Les données de carte et de Mobile Money sont saisies sur la page de notre prestataire de paiement, nous ne les conservons pas.
 - **Appareils et sécurité :** les appareils connectés à votre compte, la version de l'application, les connexions et tentatives échouées avec l'heure, le type de navigateur ou d'appareil et une localisation approximative déduite de l'adresse IP (jamais le GPS), et les rapports de plantage. Cela sert à compter les appareils de votre formule, synchroniser les caisses et repérer les connexions suspectes. Le propriétaire les voit dans **Sécurité et appareils**.
 - **Journal d'activité :** qui a fait quoi dans votre établissement (par exemple une annulation, un remboursement ou un changement de prix), pour que le propriétaire puisse contrôler son équipe.
@@ -61,7 +61,6 @@ Ces entreprises traitent des données pour nous, uniquement pour fournir leur se
 | Clerk | Connexion, mots de passe et Continuer avec Google |
 | Google | Continuer avec Google ; notifications et rapports de plantage de l'application Android (Firebase) ; statistiques de ce site |
 | TaraMoney | Paiement des abonnements par Mobile Money, carte et PayPal |
-| Serper, Pexels, Open Food Facts | Recherche de photos avec **Trouver une photo** (seuls les mots recherchés sont envoyés) |
 | Microsoft Clarity, Usercentrics, ipapi | Ce site uniquement : statistiques de visite, consentement aux cookies et pays approximatif pour les prix et la langue |
 
 Certains de ces prestataires traitent des données hors du Cameroun, notamment dans l'Union européenne et aux États-Unis, selon leurs propres engagements de sécurité et de confidentialité.

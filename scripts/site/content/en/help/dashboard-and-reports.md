@@ -65,6 +65,10 @@ Download it with **Download PDF**, **Excel** or **CSV**, in English or French.
 
 Reports over more than one day (weekly and monthly) come with the **Business** and **Pro** plans. On Starter a single day works, and longer periods show what to upgrade.
 
+## Reports that fit your business
+
+The dashboard and the sales report change with the kind of business you chose. A restaurant sees tables, the kitchen and where sales were made. A shop sees the sizes and colours that sold and its best customers. A supermarket, cold store or pharmacy sees what was sold by weight and what expires soon. A hotel sees occupancy, arrivals, departures and room revenue. The PDF, Excel and CSV downloads carry the same sections.
+
 ## Frequently asked questions
 
 ### Why do sales after midnight count for yesterday?

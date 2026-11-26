@@ -670,7 +670,9 @@
         "Stocks et fournisseurs",
         "Mobile money et espèces",
         "Annulations validées par un responsable",
-        "Vente hors ligne"
+        "Vente hors ligne",
+        "Vente au poids",
+        "Lots et dates de péremption"
       ],
       "screenshot": "https://loungeos.app/images/screens/loungeos-till-supermarket.webp"
     },
@@ -739,7 +741,7 @@
           "name": "Puis-je vendre les fruits et légumes au poids ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "<p>Pas encore. La vente au poids avec codes-barres de balance arrive dans la prochaine mise à jour. En attendant, vendez des lots fixes, par exemple « Tomates 1 kg ».<\/p>"
+            "text": "<p>Oui. Choisissez <em>kg<\/em>, <em>g<\/em>, <em>l<\/em> ou <em>m<\/em> comme mode de vente du produit et donnez le prix pour une unité. En caisse, le caissier saisit le poids, par exemple 1,250 kg, et le prix est calculé. Si votre balance imprime des étiquettes à code-barres, scannez l’étiquette et le poids ou le prix est lu dessus. Le stock baisse du poids exact vendu. Les poissonneries et boucheries utilisent la même fonction pour le poisson et la viande.<\/p>"
           }
         },
         {
@@ -747,7 +749,7 @@
           "name": "Le logiciel suit-il les dates de péremption ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "<p>Pas encore. Les lots et dates de péremption avec alertes arrivent dans la prochaine mise à jour.<\/p>"
+            "text": "<p>Oui. À la réception d’une livraison, saisissez le numéro de lot et la date de péremption. La page <strong>Dates de péremption<\/strong> liste ce qui est périmé et ce qui le sera bientôt, le tableau de bord vous prévient, et les ventes sortent d’abord du lot le plus ancien. Le stock périmé est sorti d’un geste et compté comme une perte.<\/p>"
           }
         },
         {
@@ -956,14 +958,13 @@
 <div class="feat-card"><svg class="ind-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"/><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"/></svg><h3>Mobile money et espèces</h3><p>Espèces avec rendu de monnaie, MTN Mobile Money, Orange Money, carte ou vos propres moyens, et paiements partagés.</p></div>
 <div class="feat-card"><svg class="ind-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg><h3>Annulations validées par un responsable</h3><p>Annulations, remboursements et changements de prix demandent le code PIN d'un responsable.</p></div>
 <div class="feat-card"><svg class="ind-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h.01"/><path d="M8.5 16.43a5 5 0 0 1 7 0"/><path d="M2 8.82a15 15 0 0 1 4.18-2.65"/><path d="M19 12.86a10 10 0 0 0-2.27-1.62"/><path d="M5 12.86a10 10 0 0 1 5.17-2.69"/><path d="M10.71 5.05A16 16 0 0 1 22 8.82"/><line x1="2" x2="22" y1="2" y2="22"/></svg><h3>Vente hors ligne</h3><p>Les caisses Windows et Mac continuent d'encaisser sans internet et se synchronisent ensuite.</p></div>
+<div class="feat-card"><svg class="ind-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/><path d="M8 7v10"/><path d="M12 7v10"/><path d="M16 7v10"/></svg><h3>Vente au poids</h3><p>Viande, poisson, fruits et légumes au kilo, au gramme près. Saisissez le poids ou scannez l'étiquette de votre balance.</p></div>
+<div class="feat-card"><svg class="ind-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg><h3>Lots et dates de péremption</h3><p>Notez le lot et la date de péremption à chaque livraison. LoungeOS vous prévient avant l'expiration et vend le plus ancien d'abord.</p></div>
           </div>
           <div class="soon-box">
             <h3><svg class="ind-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Bientôt disponible</h3>
             <ul>
-<li>Vente au poids avec codes-barres de balance (fruits, légumes, viande)</li>
-<li>Lots et dates de péremption, avec alertes avant expiration</li>
 <li>Unités et lots : vendre la bouteille ou le casier entier</li>
-<li>Promotions et prix happy hour</li>
             </ul>
             <p>Pas encore dans l'application. Nous le disons ici pour que vous choisissiez en connaissance de cause.</p>
           </div>
@@ -1018,8 +1019,8 @@
     <div class="price-savings" hidden>Vous économisez 100 $ US</div>
     <ul class="price-features"><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Utilisateurs illimités, 10 appareils et plus</li>
 <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Tout ce que propose Business</li>
-<li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Plusieurs succursales</li>
-<li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Vue des ventes de toutes les succursales</li>
+<li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Plusieurs sites</li>
+<li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Vue des ventes de tous les sites</li>
 <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Support prioritaire</li>
 <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg> Paie et bulletins de paie</li></ul>
     <a href="https://app.loungeos.app/login" class="btn btn-primary">Commencer l'essai gratuit</a>
@@ -1044,7 +1045,7 @@
 <h2 id="chaque-caisse-sous-controle">Chaque caisse sous contrôle</h2>
 <p>Chaque caissier se connecte avec son propre compte et change d’utilisateur sur une caisse partagée avec un code PIN. Annulations, remboursements et changements de prix demandent un responsable. Le rapport du jour montre la recette par moyen de paiement, consultable partout dans l’<a href="https://app.loungeos.app">application web</a> ou l’application mobile.</p>
 <h2 id="plusieurs-magasins">Plusieurs magasins</h2>
-<p>Chaque magasin est une succursale avec son stock et son équipe. La formule Pro montre les ventes de toutes les succursales côte à côte.</p>
+<p>Chaque magasin est un site avec son stock et son équipe. La formule Pro montre les ventes de tous les sites côte à côte.</p>
 <div class="cta-box">
 <h2>Faites tourner votre commerce avec LoungeOS</h2>
 <p>Créez votre compte, répondez à l'assistant de configuration et votre activité est prête dès le premier jour. Essai gratuit de 14 jours avec les fonctionnalités Business, sans paiement à l'avance.</p>
@@ -1061,9 +1062,9 @@
 <h3 id="puis-je-utiliser-plusieurs-caisses-en-meme-temps">Puis-je utiliser plusieurs caisses en même temps ?</h3>
 <p>Oui. Starter couvre 2 appareils, Business 5 et Pro 10 ou plus. Toutes les caisses vendent dans le même stock et les mêmes rapports.</p>
 <h3 id="puis-je-vendre-les-fruits-et-legumes-au-poids">Puis-je vendre les fruits et légumes au poids ?</h3>
-<p>Pas encore. La vente au poids avec codes-barres de balance arrive dans la prochaine mise à jour. En attendant, vendez des lots fixes, par exemple « Tomates 1 kg ».</p>
+<p>Oui. Choisissez <em>kg</em>, <em>g</em>, <em>l</em> ou <em>m</em> comme mode de vente du produit et donnez le prix pour une unité. En caisse, le caissier saisit le poids, par exemple 1,250 kg, et le prix est calculé. Si votre balance imprime des étiquettes à code-barres, scannez l’étiquette et le poids ou le prix est lu dessus. Le stock baisse du poids exact vendu. Les poissonneries et boucheries utilisent la même fonction pour le poisson et la viande.</p>
 <h3 id="le-logiciel-suit-il-les-dates-de-peremption">Le logiciel suit-il les dates de péremption ?</h3>
-<p>Pas encore. Les lots et dates de péremption avec alertes arrivent dans la prochaine mise à jour.</p>
+<p>Oui. À la réception d’une livraison, saisissez le numéro de lot et la date de péremption. La page <strong>Dates de péremption</strong> liste ce qui est périmé et ce qui le sera bientôt, le tableau de bord vous prévient, et les ventes sortent d’abord du lot le plus ancien. Le stock périmé est sorti d’un geste et compté comme une perte.</p>
 <h3 id="fonctionne-t-il-sans-internet">Fonctionne-t-il sans internet ?</h3>
 <p>Oui, sur les applications Windows et Mac. Les ventes sont enregistrées sur la caisse et se synchronisent au retour de la connexion.</p>
         </div>

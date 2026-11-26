@@ -670,7 +670,8 @@
         "Customer tabs",
         "Stock and suppliers",
         "Mobile money and cash",
-        "Receipts and cash drawer"
+        "Receipts and cash drawer",
+        "Sizes and colours"
       ],
       "screenshot": "https://loungeos.app/images/screens/loungeos-till-retail.webp"
     },
@@ -728,10 +729,10 @@
         },
         {
           "@type": "Question",
-          "name": "How do I handle sizes and colours today?",
+          "name": "How do I handle sizes and colours?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "<p>Create one product per size or colour, each with its own barcode, for example “T-shirt white M”. Grouping sizes and colours under one product is coming in the next update.<\/p>"
+            "text": "<p>Create one product, turn on <strong>Sizes and colours<\/strong> and list the choices. Each combination, for example “T-shirt white M”, gets its own stock and barcode, and the till asks which one is being sold.<\/p>"
           }
         },
         {
@@ -965,15 +966,9 @@
 <div class="feat-card"><svg class="ind-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg><h3>Stock and suppliers</h3><p>Every sale comes off the stock count, with low-stock alerts and supplier records.</p></div>
 <div class="feat-card"><svg class="ind-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"/><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"/></svg><h3>Mobile money and cash</h3><p>Cash with change shown, MTN Mobile Money, Orange Money, card, or split between two methods.</p></div>
 <div class="feat-card"><svg class="ind-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 9V3a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6"/><rect x="6" y="14" width="12" height="8" rx="1"/></svg><h3>Receipts and cash drawer</h3><p>58 mm or 80 mm receipts or a PDF, and the cash drawer opens after a cash sale.</p></div>
+<div class="feat-card"><svg class="ind-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></svg><h3>Sizes and colours</h3><p>One product with all its sizes and colours. Each one has its own stock, barcode and, if you want, its own price.</p></div>
           </div>
-          <div class="soon-box">
-            <h3><svg class="ind-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Coming next</h3>
-            <ul>
-<li>Sizes and colours on one product (S to XXL, shoes 36 to 46, kids' sizes)</li>
-<li>Promotions and sale prices</li>
-            </ul>
-            <p>Not in the app yet. We say so here, so you can decide with the facts.</p>
-          </div>
+          
         </div>
       </section>
       <section class="ind-band ind-pricing" id="pricing">
@@ -1043,7 +1038,7 @@
 <h2 id="selling-at-the-counter">Selling at the counter</h2>
 <ul>
 <li><strong>Barcode scanning.</strong> Plug a USB barcode scanner into the till and scan a label to add the item. You can also type the code in the search box and press Enter. Each barcode belongs to one product, so a code cannot be given to two items by mistake.</li>
-<li><strong>Search and photos.</strong> Find an item by name, or tap its picture on the touch screen. LoungeOS can find a free photo for a product, or you upload your own.</li>
+<li><strong>Search and photos.</strong> Find an item by name, or tap its picture on the touch screen. Add each product’s photo from your phone.</li>
 <li><strong>Your payment methods.</strong> Cash with the change shown, MTN Mobile Money, Orange Money, card, bank transfer or any method you create, and one sale can be split between two methods. See <a href="/features/mobile-money-pos/">mobile money POS</a>.</li>
 <li><strong>Receipts and cash drawer.</strong> 58 mm or 80 mm thermal receipts, or a PDF. A receipt printer with a drawer port can open the cash drawer after each cash sale.</li>
 </ul>
@@ -1055,7 +1050,8 @@
 <li><strong>Low-stock alerts</strong> tell you what to reorder before the shelf is empty, and items that run out are greyed out at the till.</li>
 <li>Keep your <strong>suppliers</strong> in one place and see the value of the stock you hold. More in <a href="/features/inventory-management/">inventory management</a>.</li>
 </ul>
-<p>Today each size or colour is its own product with its own barcode, for example <em>Sneaker black 42</em>. Sizes and colours grouped on one product are coming in the next update.</p>
+<h2 id="sizes-and-colours-on-one-product">Sizes and colours on one product</h2>
+<p>Turn on <strong>Sizes and colours</strong> when you add a product and type the choices, for example S, M, L, XL and Black, White, Blue. LoungeOS makes every combination, and each one has its own stock count, its own barcode and its own price if it differs. At the till, the seller taps the product and picks the size and colour, or scans the label of that exact piece. A combination that is sold out is greyed out. The sales report shows which sizes and colours sell best, so you reorder the right ones.</p>
 <h2 id="control-when-you-are-not-in-the-shop">Control when you are not in the shop</h2>
 <ul>
 <li>Each seller has their own account, and on a shared till they switch with a quick PIN.</li>
@@ -1076,8 +1072,8 @@
 <h2 id="frequently-asked-questions">Frequently asked questions</h2>
 <h3 id="which-barcode-scanners-work-with-loungeos">Which barcode scanners work with LoungeOS?</h3>
 <p>Any USB or Bluetooth scanner that types the code like a keyboard, which is most scanners sold for shops. Plug it in, open the till and scan.</p>
-<h3 id="how-do-i-handle-sizes-and-colours-today">How do I handle sizes and colours today?</h3>
-<p>Create one product per size or colour, each with its own barcode, for example “T-shirt white M”. Grouping sizes and colours under one product is coming in the next update.</p>
+<h3 id="how-do-i-handle-sizes-and-colours">How do I handle sizes and colours?</h3>
+<p>Create one product, turn on <strong>Sizes and colours</strong> and list the choices. Each combination, for example “T-shirt white M”, gets its own stock and barcode, and the till asks which one is being sold.</p>
 <h3 id="can-i-sell-on-credit-to-my-regular-customers">Can I sell on credit to my regular customers?</h3>
 <p>Yes. Choose Pay later at checkout and pick the customer. The Customer tabs page shows what each customer owes, and you record their payments when they come in.</p>
 <h3 id="how-many-tills-can-i-use">How many tills can I use?</h3>
