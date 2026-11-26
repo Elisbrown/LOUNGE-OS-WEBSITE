@@ -701,6 +701,121 @@
 
 })();
 
+/* ---------- 7b. LANGUAGE MENU ----------
+   The native <select id="customLangSelect"> stays in the page (it holds the value
+   and works without JavaScript) but is hidden behind a branded button and menu in
+   the style of the Product and Solutions menus. English and French are real pages;
+   the others are machine translated. */
+(function () {
+  var select = document.getElementById('customLangSelect');
+  if (!select || select.dataset.enhanced) return;
+  select.dataset.enhanced = '1';
+  var wrap = select.closest('.lang-selector');
+  var fr = (document.documentElement.lang || 'en').toLowerCase().indexOf('fr') === 0;
+  var CODES = { en: 'EN', fr: 'FR', es: 'ES', de: 'DE', 'zh-CN': 'ZH', ar: 'AR', hi: 'HI', pt: 'PT', ru: 'RU', ja: 'JA' };
+  var MAIN = ['en', 'fr'];
+
+  var btn = document.createElement('button');
+  btn.type = 'button';
+  btn.className = 'lang-btn';
+  btn.setAttribute('aria-haspopup', 'listbox');
+  btn.setAttribute('aria-expanded', 'false');
+  btn.setAttribute('aria-label', select.getAttribute('aria-label') || 'Language');
+  var globe = wrap.querySelector('svg');
+  if (globe) btn.appendChild(globe);
+  var label = document.createElement('span');
+  label.className = 'lang-btn-label';
+  btn.appendChild(label);
+
+  var menu = document.createElement('div');
+  menu.className = 'lang-menu';
+  menu.setAttribute('role', 'listbox');
+  menu.id = 'langMenu';
+  menu.hidden = true;
+  btn.setAttribute('aria-controls', menu.id);
+
+  function addGroup(title) {
+    var h = document.createElement('p');
+    h.className = 'lang-menu-title';
+    h.textContent = title;
+    menu.appendChild(h);
+  }
+  var items = [];
+  function addItem(opt) {
+    var it = document.createElement('button');
+    it.type = 'button';
+    it.className = 'lang-item';
+    it.setAttribute('role', 'option');
+    it.dataset.value = opt.value;
+    it.innerHTML = '<span class="lang-code"></span><span class="lang-name"></span>';
+    it.querySelector('.lang-code').textContent = CODES[opt.value] || opt.value.toUpperCase();
+    it.querySelector('.lang-name').textContent = opt.textContent;
+    it.addEventListener('click', function () { choose(opt.value); });
+    menu.appendChild(it);
+    items.push(it);
+  }
+  var opts = Array.prototype.slice.call(select.options);
+  opts.filter(function (o) { return MAIN.indexOf(o.value) >= 0; }).forEach(addItem);
+  var others = opts.filter(function (o) { return MAIN.indexOf(o.value) < 0; });
+  if (others.length) {
+    addGroup(fr ? 'Traduction automatique' : 'Machine translated');
+    others.forEach(addItem);
+  }
+
+  select.classList.add('lang-native');
+  select.tabIndex = -1;
+  select.setAttribute('aria-hidden', 'true');
+  wrap.classList.add('enhanced');
+  wrap.appendChild(btn);
+  wrap.appendChild(menu);
+
+  function sync() {
+    var v = select.value;
+    label.textContent = CODES[v] || v.toUpperCase();
+    items.forEach(function (it) {
+      var on = it.dataset.value === v;
+      it.classList.toggle('active', on);
+      it.setAttribute('aria-selected', on ? 'true' : 'false');
+    });
+  }
+  function open() {
+    menu.hidden = false;
+    btn.setAttribute('aria-expanded', 'true');
+    var cur = menu.querySelector('.lang-item.active') || items[0];
+    if (cur) cur.focus();
+  }
+  function close(focusBtn) {
+    if (menu.hidden) return;
+    menu.hidden = true;
+    btn.setAttribute('aria-expanded', 'false');
+    if (focusBtn) btn.focus();
+  }
+  function choose(v) {
+    close(true);
+    if (v === select.value) return;
+    select.value = v;
+    sync();
+    if (typeof window.changeLanguage === 'function') window.changeLanguage(v);
+  }
+  btn.addEventListener('click', function () { menu.hidden ? open() : close(); });
+  menu.addEventListener('keydown', function (e) {
+    var i = items.indexOf(document.activeElement);
+    if (e.key === 'ArrowDown') { e.preventDefault(); (items[i + 1] || items[0]).focus(); }
+    else if (e.key === 'ArrowUp') { e.preventDefault(); (items[i - 1] || items[items.length - 1]).focus(); }
+    else if (e.key === 'Escape') { e.preventDefault(); close(true); }
+    else if (e.key === 'Tab') close();
+  });
+  btn.addEventListener('keydown', function (e) {
+    if (e.key === 'ArrowDown' && menu.hidden) { e.preventDefault(); open(); }
+  });
+  document.addEventListener('click', function (e) { if (!wrap.contains(e.target)) close(); });
+  select.addEventListener('change', sync);
+  // app.js may set the value itself (auto language); keep the label in step
+  var last = select.value;
+  setInterval(function () { if (select.value !== last) { last = select.value; sync(); } }, 500);
+  sync();
+})();
+
 /* ---------- 8. CUSTOM GOOGLE TRANSLATE ---------- */
 window.changeLanguage = function(lang) {
     if (lang === 'fr') {
