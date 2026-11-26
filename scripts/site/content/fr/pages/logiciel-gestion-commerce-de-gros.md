@@ -28,13 +28,11 @@ pains:
 features_title: "Ce que LoungeOS fait pour un grossiste"
 features:
   - ["credit", "Crédit et soldes clients", "Mettez les ventes sur l'ardoise du client, enregistrez les paiements partiels et voyez ce que chacun doit."]
-  - ["package", "Stock en cartons et lots", "Vendez cartons et lots comme produits, chaque vente sort du stock, avec alertes de stock bas."]
+  - ["package", "Unités, lots et cartons", "Vendez la bouteille, le pack ou le carton d'un même produit. Un seul stock les couvre tous, avec alertes de stock bas."]
   - ["truck", "Fournisseurs et livraisons", "Enregistrez les livraisons par fournisseur et voyez la valeur du stock."]
   - ["branch", "Plusieurs dépôts", "Chaque dépôt est un site avec son stock et son équipe. Pro les montre côte à côte."]
   - ["wallet", "Mobile money, espèces et virements", "Encaissez espèces, mobile money, virements ou vos propres moyens, et partagez les paiements."]
   - ["book", "Dépenses et comptabilité", "Enregistrez les dépenses et suivez les comptes avec les formules Business et Pro."]
-soon:
-  - "Unités et lots sur un même produit : la bouteille, le pack ou le carton"
 ---
 
 Un **logiciel de commerce de gros** doit suivre de grosses commandes, beaucoup de clients à crédit et un stock qui bouge au carton. LoungeOS donne aux grossistes, distributeurs et dépôts de boissons ou de vivres une caisse rapide, des stocks, des fiches fournisseurs, des comptes clients avec paiements partiels et des sites. Quand vous choisissez *Commerce de gros* dans l'assistant de configuration, LoungeOS propose des catégories comme Boissons, Produits alimentaires, Entretien, Hygiène et beauté et Cartons et lots.
@@ -45,7 +43,7 @@ Mettez une vente sur l'ardoise d'un client avec *Payer plus tard*. La vente comp
 
 ## Le stock au carton
 
-Créez vos cartons et lots comme produits. Chaque vente sort du stock, et chaque livraison, casse et correction est enregistrée avec un nom et une heure. Les alertes de stock bas vous disent quoi recommander.
+Créez le produit une fois et ajoutez ses **lots**, par exemple *Pack de 6* et *Carton de 24*, chacun avec son prix et son code-barres. Un carton vendu prend 24 dans le stock unique du produit, donc la bouteille et le carton ne se contredisent jamais. Chaque vente sort du stock, et chaque livraison, casse et correction est enregistrée avec un nom et une heure. Les alertes de stock bas vous disent quoi recommander.
 
 ## Plusieurs dépôts
 
@@ -55,7 +53,7 @@ Chaque dépôt est un site avec son stock, son équipe et ses rapports. Avec la 
 
 ## Ce que LoungeOS ne fait pas encore
 
-Aujourd'hui, un carton et une bouteille sont deux produits avec chacun leur stock. Les unités et lots sur un même produit, les grilles de prix par type de client, et les factures et bons de livraison sont en cours de développement (voir *Bientôt disponible* plus haut).
+LoungeOS n'a pas de grilles de prix par type de client et ne fait pas de devis, de factures ni de bons de livraison. Un responsable peut modifier le prix d'une vente avec son code PIN, et chaque vente donne un reçu imprimé ou PDF.
 
 ## Questions fréquentes
 
@@ -65,7 +63,7 @@ Oui. Enregistrez chaque paiement sur l'ardoise du client ; le solde se met à jo
 
 ### Puis-je vendre la même boisson à la bouteille et au casier ?
 
-Aujourd'hui, vous créez deux produits, par exemple « Bière 65 cl » et « Casier de 12 bières ». Les relier pour qu'un seul stock couvre les deux arrive dans la prochaine mise à jour.
+Oui. Créez « Bière 65 cl » une fois et ajoutez un lot « Casier de 12 » avec son prix et son code-barres. La caisse demande à l'unité ou un lot, et un seul stock couvre les deux.
 
 ### Puis-je donner des prix différents selon les clients ?
 

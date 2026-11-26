@@ -672,7 +672,8 @@
         "Annulations validées par un responsable",
         "Vente hors ligne",
         "Vente au poids",
-        "Lots et dates de péremption"
+        "Lots et dates de péremption",
+        "Unités et lots"
       ],
       "screenshot": "https://loungeos.app/images/screens/loungeos-till-supermarket.webp"
     },
@@ -720,6 +721,14 @@
       "@type": "FAQPage",
       "@id": "https://loungeos.app/fr/logiciel-caisse-supermarche/#faq",
       "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Puis-je vendre à l’unité et par lot le même produit ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Oui. Ajoutez des <strong>lots<\/strong> à un produit, par exemple <em>Casier de 12<\/em>, avec le nombre d’unités, le prix et le code-barres de chacun. La caisse demande <em>à l’unité ou un lot<\/em>, ou vous scannez le code-barres du lot. Un lot vendu prend ses unités dans le stock unique du produit.<\/p>"
+          }
+        },
         {
           "@type": "Question",
           "name": "Quelles douchettes code-barres fonctionnent avec LoungeOS ?",
@@ -960,14 +969,9 @@
 <div class="feat-card"><svg class="ind-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h.01"/><path d="M8.5 16.43a5 5 0 0 1 7 0"/><path d="M2 8.82a15 15 0 0 1 4.18-2.65"/><path d="M19 12.86a10 10 0 0 0-2.27-1.62"/><path d="M5 12.86a10 10 0 0 1 5.17-2.69"/><path d="M10.71 5.05A16 16 0 0 1 22 8.82"/><line x1="2" x2="22" y1="2" y2="22"/></svg><h3>Vente hors ligne</h3><p>Les caisses Windows et Mac continuent d'encaisser sans internet et se synchronisent ensuite.</p></div>
 <div class="feat-card"><svg class="ind-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/><path d="M8 7v10"/><path d="M12 7v10"/><path d="M16 7v10"/></svg><h3>Vente au poids</h3><p>Viande, poisson, fruits et légumes au kilo, au gramme près. Saisissez le poids ou scannez l'étiquette de votre balance.</p></div>
 <div class="feat-card"><svg class="ind-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg><h3>Lots et dates de péremption</h3><p>Notez le lot et la date de péremption à chaque livraison. LoungeOS vous prévient avant l'expiration et vend le plus ancien d'abord.</p></div>
+<div class="feat-card"><svg class="ind-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></svg><h3>Unités et lots</h3><p>Vendez la bouteille ou le casier entier. Un seul stock couvre les deux, et chaque lot a son prix et son code-barres.</p></div>
           </div>
-          <div class="soon-box">
-            <h3><svg class="ind-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Bientôt disponible</h3>
-            <ul>
-<li>Unités et lots : vendre la bouteille ou le casier entier</li>
-            </ul>
-            <p>Pas encore dans l'application. Nous le disons ici pour que vous choisissiez en connaissance de cause.</p>
-          </div>
+          
         </div>
       </section>
       <section class="ind-band ind-pricing" id="pricing">
@@ -1055,8 +1059,10 @@
 </div>
 </div>
 <h2 id="ce-que-loungeos-ne-fait-pas-encore">Ce que LoungeOS ne fait pas encore</h2>
-<p>LoungeOS convient aujourd’hui aux commerces qui vendent des produits emballés à l’unité. La vente au poids, les lots et dates de péremption, et la vente d’une bouteille ou d’un casier depuis le même produit sont en cours de développement (voir <em>Bientôt disponible</em> plus haut). Si vous avez un rayon frais ou besoin des dates de péremption dès le premier jour, <a href="/contact/">écrivez-nous</a> avant de choisir.</p>
+<p>LoungeOS ne gère pas de promotions automatiques ni de prix happy hour, et n’imprime pas d’étiquettes de rayon. Il lit les étiquettes imprimées par votre balance, mais ne se connecte pas à la balance elle-même. Si l’un de ces points est indispensable dès le premier jour, <a href="/contact/">écrivez-nous</a> avant de choisir.</p>
 <h2 id="questions-frequentes">Questions fréquentes</h2>
+<h3 id="puis-je-vendre-a-lunite-et-par-lot-le-meme-produit">Puis-je vendre à l’unité et par lot le même produit ?</h3>
+<p>Oui. Ajoutez des <strong>lots</strong> à un produit, par exemple <em>Casier de 12</em>, avec le nombre d’unités, le prix et le code-barres de chacun. La caisse demande <em>à l’unité ou un lot</em>, ou vous scannez le code-barres du lot. Un lot vendu prend ses unités dans le stock unique du produit.</p>
 <h3 id="quelles-douchettes-code-barres-fonctionnent-avec-loungeos">Quelles douchettes code-barres fonctionnent avec LoungeOS ?</h3>
 <p>Toute douchette USB ou Bluetooth qui tape le code comme un clavier, ce qui est le cas de la plupart des modèles vendus pour les commerces.</p>
 <h3 id="puis-je-utiliser-plusieurs-caisses-en-meme-temps">Puis-je utiliser plusieurs caisses en même temps ?</h3>

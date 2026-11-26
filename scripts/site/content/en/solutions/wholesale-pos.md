@@ -27,13 +27,11 @@ pains:
 features_title: "What LoungeOS does for a wholesaler"
 features:
   - ["credit", "Customer credit and balances", "Put sales on a customer's tab, record part payments and see what each customer owes."]
-  - ["package", "Stock in cartons and packs", "Sell cartons and packs as products, with every sale coming off stock and low-stock alerts."]
+  - ["package", "Units, packs and cartons", "Sell the bottle, the pack or the carton of one product. One stock count covers them all, with low-stock alerts."]
   - ["truck", "Suppliers and deliveries", "Record deliveries by supplier and see the value of the stock you hold."]
   - ["branch", "Several depots", "Each depot is a branch with its own stock and team. Pro shows them side by side."]
   - ["wallet", "Mobile money, cash and transfers", "Take cash, mobile money, bank transfers or your own methods, and split payments."]
   - ["book", "Expenses and accounting", "Record expenses and follow the accounts on the Business and Pro plans."]
-soon:
-  - "Units and packs on one product: sell the bottle, the pack or the carton"
 ---
 
 A **wholesale POS** has to keep up with large orders, many customers on credit and stock that moves by the carton. LoungeOS gives wholesalers, distributors and drinks or food depots a fast till, stock counts, supplier records, customer tabs with part payments and branches. When you choose *Wholesale* in the setup wizard, LoungeOS suggests categories such as Beverages, Food products, Household, Personal care and Cartons and packs.
@@ -44,7 +42,7 @@ Put a sale on a customer's tab with *Pay later*. The sale counts the day it was 
 
 ## Stock by the carton
 
-Create your cartons and packs as products. Every sale comes off stock, and every delivery, breakage and correction is recorded with a name and a time. Low-stock alerts tell you what to reorder. See [inventory management](/features/inventory-management/).
+Create a product once and add its **packs**, for example *Pack of 6* and *Carton of 24*, each with its price and barcode. Selling a carton takes 24 from the product's one stock count, so the bottle and the carton never disagree. Every sale comes off stock, and every delivery, breakage and correction is recorded with a name and a time. Low-stock alerts tell you what to reorder. See [inventory management](/features/inventory-management/).
 
 ## Several depots
 
@@ -54,7 +52,7 @@ Each depot is a branch with its own stock, team and reports. On the Pro plan you
 
 ## What LoungeOS does not do yet
 
-Today a carton and a single bottle are two separate products with their own stock. Units and packs on one product, price tiers for different kinds of customers, and invoices and delivery notes are being built now and listed under *Coming next* above.
+LoungeOS has no separate price lists for different kinds of customers, and it does not make quotes, invoices or delivery notes. A manager can change the price on a sale with their PIN, and every sale gives a printed or PDF receipt.
 
 ## Frequently asked questions
 
@@ -64,7 +62,7 @@ Yes. Record each payment against the customer's tab; the balance updates straigh
 
 ### Can I sell the same drink by the bottle and by the crate?
 
-Today you create two products, for example "Beer 65 cl" and "Beer crate of 12". Linking them so one stock count covers both is coming in the next update.
+Yes. Create "Beer 65 cl" once and add a pack called "Crate of 12" with its own price and barcode. The till asks one piece or a pack, and one stock count covers both.
 
 ### Can I give different prices to different customers?
 

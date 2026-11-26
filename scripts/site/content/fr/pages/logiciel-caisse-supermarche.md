@@ -35,8 +35,7 @@ features:
   - ["wifi-off", "Vente hors ligne", "Les caisses Windows et Mac continuent d'encaisser sans internet et se synchronisent ensuite."]
   - ["scan", "Vente au poids", "Viande, poisson, fruits et légumes au kilo, au gramme près. Saisissez le poids ou scannez l'étiquette de votre balance."]
   - ["calendar", "Lots et dates de péremption", "Notez le lot et la date de péremption à chaque livraison. LoungeOS vous prévient avant l'expiration et vend le plus ancien d'abord."]
-soon:
-  - "Unités et lots : vendre la bouteille ou le casier entier"
+  - ["layers", "Unités et lots", "Vendez la bouteille ou le casier entier. Un seul stock couvre les deux, et chaque lot a son prix et son code-barres."]
 ---
 
 Un **logiciel de caisse pour supermarché** doit être rapide à la caisse, juste sur le stock et strict sur l'argent. LoungeOS le fait pour les supérettes, épiceries, alimentations et dépôts de boissons. Quand vous choisissez *Supermarché ou épicerie* dans l'assistant de configuration, LoungeOS propose des catégories comme Épicerie, Boissons, Produits laitiers et œufs, Fruits et légumes, Boulangerie, Entretien et Hygiène et beauté, et masque les écrans de restaurant.
@@ -64,9 +63,13 @@ Chaque magasin est un site avec son stock et son équipe. La formule Pro montre 
 
 ## Ce que LoungeOS ne fait pas encore
 
-LoungeOS convient aujourd'hui aux commerces qui vendent des produits emballés à l'unité. La vente au poids, les lots et dates de péremption, et la vente d'une bouteille ou d'un casier depuis le même produit sont en cours de développement (voir *Bientôt disponible* plus haut). Si vous avez un rayon frais ou besoin des dates de péremption dès le premier jour, [écrivez-nous](/contact/) avant de choisir.
+LoungeOS ne gère pas de promotions automatiques ni de prix happy hour, et n'imprime pas d'étiquettes de rayon. Il lit les étiquettes imprimées par votre balance, mais ne se connecte pas à la balance elle-même. Si l'un de ces points est indispensable dès le premier jour, [écrivez-nous](/contact/) avant de choisir.
 
 ## Questions fréquentes
+
+### Puis-je vendre à l'unité et par lot le même produit ?
+
+Oui. Ajoutez des **lots** à un produit, par exemple *Casier de 12*, avec le nombre d'unités, le prix et le code-barres de chacun. La caisse demande *à l'unité ou un lot*, ou vous scannez le code-barres du lot. Un lot vendu prend ses unités dans le stock unique du produit.
 
 ### Quelles douchettes code-barres fonctionnent avec LoungeOS ?
 

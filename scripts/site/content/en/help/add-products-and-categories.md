@@ -49,6 +49,7 @@ The product appears on the till straight away, on every till and phone, with its
 
 - **Sizes and colours.** Turn on *Sizes and colours* in the product form and list the choices, for example S, M, L and Black, Blue. Each combination has its own stock, barcode and price if it differs, and the till asks which one is being sold.
 - **By weight or measure.** Under *Sold*, choose kg, g, l, ml, m or cm instead of *By the piece*, and give the price for one. At the till you type the quantity, for example 1.250 kg, or scan the label printed by your scale.
+- **Units and packs.** Turn on *Units and packs* and add each pack, for example *Crate of 12*: its name, how many units it holds, its price and its barcode. The till asks one piece or a pack, and a pack sold takes its units from the product's stock.
 - **Batches and expiry dates.** Turn on expiry dates in *Settings*, then enter the batch and its date each time you receive stock. See [stock and suppliers](/help/stock-and-suppliers/).
 
 ## Change or hide a product

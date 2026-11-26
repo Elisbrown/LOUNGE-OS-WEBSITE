@@ -34,8 +34,7 @@ features:
   - ["wifi-off", "Keeps selling offline", "The Windows and Mac tills keep checking out without internet and sync when it comes back."]
   - ["scan", "Sell by weight", "Meat, fish, fruit and vegetables by the kilo, to the gram. Type the weight or scan the label your scale prints."]
   - ["calendar", "Batches and expiry dates", "Record the batch and expiry date at each delivery. LoungeOS warns you before products expire and sells the oldest first."]
-soon:
-  - "Units and packs: sell a bottle or the whole crate"
+  - ["layers", "Units and packs", "Sell a bottle or the whole crate. One stock count covers both, and each pack has its own price and barcode."]
 ---
 
 A **supermarket POS** has to be fast at the checkout, right about stock and strict about cash. LoungeOS does that for mini-markets, groceries, convenience stores and drinks depots. When you choose *Supermarket or grocery* in the setup wizard, LoungeOS suggests categories such as Groceries, Beverages, Dairy and eggs, Fruits and vegetables, Bakery, Household and Personal care, and hides the restaurant screens you do not need.
@@ -63,9 +62,13 @@ Each shop is a branch with its own stock and team. The Pro plan shows all branch
 
 ## What LoungeOS does not do yet
 
-LoungeOS works today for shops that sell packaged goods by the unit. Products sold by weight, batches and expiry dates, and selling a single bottle or a whole crate from the same product are being built now and listed under *Coming next* above. If you run a fresh counter or need expiry tracking on day one, [tell us](/contact/) before you choose.
+LoungeOS does not run automatic promotions or happy-hour prices, and it does not print shelf labels. It reads the labels your scale prints but does not connect to the scale itself. If one of these is a must on day one, [tell us](/contact/) before you choose.
 
 ## Frequently asked questions
+
+### Can I sell one piece and a whole pack of the same product?
+
+Yes. Add **packs** to a product, for example *Crate of 12*, with the number of units in each, its price and its barcode. The till asks *one piece or a pack*, or you scan the pack's barcode. Selling a pack takes its units from the product's one stock count.
 
 ### Which barcode scanners work with LoungeOS?
 

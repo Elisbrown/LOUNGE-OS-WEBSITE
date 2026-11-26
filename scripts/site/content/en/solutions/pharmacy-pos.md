@@ -33,8 +33,7 @@ features:
   - ["wallet", "Mobile money and cash", "Cash, MTN Mobile Money, Orange Money, card or insurance as your own payment method."]
   - ["chart", "Daily sales report", "Sales and money taken by payment method, from anywhere on the web or phone app."]
   - ["calendar", "Batches and expiry dates", "Record the batch number and expiry date of each delivery. LoungeOS warns you before medicines expire and sells the oldest batch first."]
-soon:
-  - "Units and packs: sell a blister or the whole box"
+  - ["layers", "Units and packs", "Sell a blister or the whole box. One stock count covers both, and each pack has its own price and barcode."]
 ---
 
 A **pharmacy POS** has to be quick at the counter and exact about stock. LoungeOS gives a pharmacy or drugstore a barcode till, stock counts with low-stock alerts, supplier records, staff accounts and a daily sales report. When you choose *Pharmacy* in the setup wizard, LoungeOS suggests categories such as Medicines, Vitamins and supplements, Medical supplies, Personal care and Baby care, and hides the restaurant screens.
@@ -57,9 +56,13 @@ Each staff member has their own account and PIN. Cancels, refunds and price chan
 
 ## What LoungeOS does not do yet
 
-LoungeOS tracks **batch numbers and expiry dates**: you enter them when a delivery arrives, the *Expiry dates* page shows what has expired and what expires soon, and sales take from the oldest batch first. LoungeOS is a point of sale and stock tool: it does not check prescriptions or drug interactions and does not replace the records your regulator asks you to keep.
+LoungeOS is a point of sale and stock tool: it does not check prescriptions or drug interactions and does not replace the records your regulator asks you to keep.
 
 ## Frequently asked questions
+
+### Can I sell one piece and a whole pack of the same product?
+
+Yes. Add **packs** to a product, for example *Box of 10 blisters*, with the number of units in each, its price and its barcode. The till asks *one piece or a pack*, or you scan the pack's barcode. Selling a pack takes its units from the product's one stock count.
 
 ### Can I scan the barcodes already on medicine boxes?
 
