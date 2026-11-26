@@ -26,7 +26,14 @@ from seo_update import social_tags, version_links  # noqa: E402
 CONTENT = os.path.join(HERE, "content")
 SITE = "https://loungeos.app"
 TODAY = dt.date(2026, 10, 8)
-APP_VERSION = "2.1.4"
+# The latest LoungeOS release, copied from GitHub by sync_version.py (never edit by
+# hand). Markdown and front matter can write {{version}}; the homepage and
+# llms.txt get it too. Browsers refresh [data-app-version] live (app.js).
+try:
+    RELEASE = json.load(open(os.path.join(HERE, "release.json"), encoding="utf-8"))
+except (OSError, ValueError):
+    RELEASE = {"version": "2.5.3", "published": "", "url": "https://github.com/Elisbrown/lounge-os-website/releases/latest"}
+APP_VERSION = RELEASE["version"]
 SIGNUP = "https://app.loungeos.app/login"  # sign-up is on the sign-in page
 WIN_DOWNLOAD = "/download/"
 # Support line for installation and setup help (WhatsApp or phone)
@@ -97,6 +104,14 @@ def esc(s):
 
 
 # ---------------------------------------------------------------- data
+def with_version(text):
+    """{{version}} -> the latest release, wrapped so app.js can refresh it live.
+    {{version_plain}} -> the bare number (for attributes and JSON)."""
+    return (text.replace("{{version_plain}}", APP_VERSION)
+            .replace("{{version}}", f'<span data-app-version>{APP_VERSION}</span>')
+            .replace("{{release_url}}", RELEASE["url"]))
+
+
 def load_pages():
     pages = []
     for root, _, files in os.walk(CONTENT):
@@ -108,7 +123,10 @@ def load_pages():
             if not m:
                 raise SystemExit(f"missing front matter: {f}")
             meta = yaml.safe_load(m.group(1))
-            meta["body_md"] = m.group(2)
+            for k, v in meta.items():
+                if isinstance(v, str):
+                    meta[k] = with_version(v)
+            meta["body_md"] = with_version(m.group(2))
             meta["src"] = f
             meta.setdefault("lang", "en")
             meta.setdefault("type", "page")
@@ -1642,9 +1660,9 @@ def help_index(pages, by_url, lang):
         "url": url, "lang": lang, "type": "help-index", "alternates": {"en": "/help/", "fr": "/fr/aide/"},
         "title": ("Centre d'aide LoungeOS : guides pas à pas avec captures" if fr else
                   "LoungeOS Help Centre: Step-by-Step Guides with Screenshots"),
-        "description": ("Guides pas à pas pour LoungeOS 2.1 : installation, caisse, cuisine et bar, commande par QR code, stocks, dépenses, comptabilité, succursales et application mobile."
+        "description": ("Guides pas à pas pour LoungeOS : installation, caisse, cuisine et bar, commande par QR code, stocks, dépenses, comptabilité, succursales et application mobile."
                         if fr else
-                        "Step-by-step LoungeOS 2.1 guides with screenshots: setup, the till, kitchen and bar, QR table ordering, stock, expenses, accounting, branches and the phone app."),
+                        "Step-by-step LoungeOS guides with screenshots: setup, the till, kitchen and bar, QR table ordering, stock, expenses, accounting, branches and the phone app."),
         "h1": "Centre d'aide LoungeOS" if fr else "LoungeOS Help Centre",
         "lead": ("Chaque guide suit l'application telle qu'elle est aujourd'hui (version " + APP_VERSION + "), avec des captures de l'établissement de démonstration Viona Lounge à Buea. Les chiffres et les noms du personnel sont des exemples."
                  if fr else
@@ -1758,6 +1776,9 @@ def main():
     h = open(home, encoding="utf-8").read()
     h2 = re.sub(r"(<!-- type-tiles:start -->).*?(\s*<!-- type-tiles:end -->)",
                 lambda m: m.group(1) + "\n" + type_tiles("en") + m.group(2), h, flags=re.S)
+    # ... and the latest release's version
+    h2 = re.sub(r'("softwareVersion":\s*")[^"]*(")', lambda m: m.group(1) + APP_VERSION + m.group(2), h2)
+    h2 = re.sub(r"(<span data-app-version>)[^<]*(</span>)", lambda m: m.group(1) + APP_VERSION + m.group(2), h2)
     if h2 != h:
         open(home, "w", encoding="utf-8").write(h2)
     for lang in ("en", "fr"):

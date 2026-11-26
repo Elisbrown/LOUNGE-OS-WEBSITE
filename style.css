@@ -4063,3 +4063,158 @@ body.menu-open .locale-banner {
 @media (max-width: 600px) {
   .setup-help-pill { left: 24px; bottom: 84px; }
 }
+
+/* Download page: four calm cards. Only the card for the visitor's device has a
+   filled button; the others are outlined (app.js moves .selected). */
+.dl-release {
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin: 0 0 1.25rem;
+}
+
+.prose .download-cards.dl-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  max-width: none;
+  margin: 0 0 1.25rem;
+}
+
+.dl-grid .download-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.75rem 1.25rem 1.5rem;
+  border-width: 1px;
+  border-color: var(--border-medium);
+  min-width: 0;
+}
+
+.dl-grid .download-card.selected {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  border-color: var(--text-primary);
+  box-shadow: 0 0 0 1px var(--text-primary);
+}
+
+.dl-grid .download-card.selected p {
+  color: var(--text-secondary);
+}
+
+.dl-grid .download-card .os-icon {
+  width: 32px;
+  height: 32px;
+  margin: 0 auto 0.75rem;
+  color: var(--text-primary);
+}
+
+.prose .dl-grid .download-card h3 {
+  font-size: 1.125rem;
+  margin: 0 0 0.25rem;
+}
+
+.dl-grid .download-card p {
+  margin: 0 0 1.25rem;
+  font-size: 0.8125rem;
+  line-height: 1.4;
+}
+
+.dl-grid .download-card .btn {
+  margin-top: auto;
+  width: 100%;
+  font-size: 0.875rem;
+  padding: 0.7rem 1rem;
+}
+
+.prose .dl-grid .download-card .btn-primary,
+.prose .dl-grid .download-card.selected .btn-primary {
+  background: var(--bg-dark);
+  color: #fff;
+  text-decoration: none;
+}
+
+.prose .dl-grid .download-card:not(.selected) .btn-primary {
+  background: transparent;
+  color: var(--text-primary);
+  box-shadow: inset 0 0 0 1.5px var(--border-medium);
+}
+
+.prose .dl-grid .download-card:not(.selected) .btn-primary:hover {
+  box-shadow: inset 0 0 0 1.5px var(--text-primary);
+  background: var(--bg-secondary);
+}
+
+.prose .dl-grid .dl-alt {
+  margin: -0.75rem 0 1rem;
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+}
+
+.dl-note {
+  text-align: center;
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+  margin: 0 auto 2.5rem;
+  max-width: 640px;
+}
+
+.dl-guides {
+  border-top: 1px solid var(--border-light);
+  margin: 1.5rem 0 0;
+}
+
+.dl-guides details {
+  border-bottom: 1px solid var(--border-light);
+}
+
+.dl-guides summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 1rem 2rem 1rem 0;
+  font-weight: 600;
+  position: relative;
+}
+
+.dl-guides summary::-webkit-details-marker {
+  display: none;
+}
+
+.dl-guides summary::after {
+  content: "+";
+  position: absolute;
+  right: 0.25rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+}
+
+.dl-guides details[open] summary::after {
+  content: "\2212";
+}
+
+.dl-guides details > :not(summary) {
+  margin-top: 0;
+}
+
+.dl-guides details[open] {
+  padding-bottom: 0.75rem;
+}
+
+@media (max-width: 1024px) {
+  .prose .download-cards.dl-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .prose .download-cards.dl-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dl-grid .download-card {
+    padding: 1.25rem 1rem;
+  }
+}

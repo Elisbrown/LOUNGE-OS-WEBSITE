@@ -128,7 +128,9 @@
     if (!cards.length) return;
     var active = selectedOS || detectedOS;
     // 'mac' (chip unknown) matches both Mac cards
-    function matches(os, target) { return os === target || (target === 'mac' && os.indexOf('mac-') === 0); }
+    function matches(os, target) {
+      return os === target || (target === 'mac' && os.indexOf('mac-') === 0) || (os === 'mac' && target.indexOf('mac') === 0);
+    }
     var hasActive = cards.some(function (c) { return matches(c.dataset.os, active); });
     cards.forEach(function (card) {
       card.classList.toggle('recommended', matches(card.dataset.os, detectedOS));
@@ -157,6 +159,42 @@
       updateDownloadCards();
     });
   });
+
+
+  // Latest version: the pages are rebuilt when a release is published, and this
+  // also reads the latest release live so a new version shows straight away.
+  var versionEls = document.querySelectorAll('[data-app-version]');
+  if (versionEls.length && window.fetch) {
+    var showVersion = function (v) {
+      if (!/^\d+\.\d+\.\d+$/.test(v || '')) return;
+      versionEls.forEach(function (el) { el.textContent = v; });
+    };
+    var cachedVersion = null;
+    try { cachedVersion = sessionStorage.getItem('loungeos-latest-version'); } catch (e) {}
+    if (cachedVersion) showVersion(cachedVersion);
+    else {
+      fetch('https://api.github.com/repos/Elisbrown/lounge-os-website/releases/latest', { headers: { Accept: 'application/vnd.github+json' } })
+        .then(function (r) { return r.ok ? r.json() : null; })
+        .then(function (rel) {
+          var m = rel && String(rel.tag_name || rel.name || '').match(/\d+\.\d+\.\d+/);
+          if (!m) return;
+          showVersion(m[0]);
+          try { sessionStorage.setItem('loungeos-latest-version', m[0]); } catch (e) {}
+        })
+        .catch(function () {});
+    }
+  }
+
+
+  // A link to a folded section (#connect-other-devices) opens it
+  function openHashDetails() {
+    var id = decodeURIComponent((location.hash || '').slice(1));
+    var el = id && document.getElementById(id);
+    var d = el && (el.tagName === 'DETAILS' ? el : el.closest && el.closest('details'));
+    if (d) { d.open = true; el.scrollIntoView(); }
+  }
+  openHashDetails();
+  window.addEventListener('hashchange', openHashDetails);
 
 
   /* ---------- 3. PRICING & LOCALIZATION ---------- */
