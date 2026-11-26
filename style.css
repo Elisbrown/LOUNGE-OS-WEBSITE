@@ -4429,3 +4429,9 @@ body.menu-open .locale-banner {
     display: none;
   }
 }
+
+/* The open phone menu is not covered by the floating help and WhatsApp buttons */
+body.menu-open .wa-float,
+body.menu-open .setup-help-pill {
+  display: none;
+}
