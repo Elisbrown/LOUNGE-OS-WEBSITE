@@ -4379,3 +4379,53 @@ body.menu-open .locale-banner {
     width: min(240px, calc(100vw - 24px));
   }
 }
+
+/* Phone and tablet menu: Home link, and real buttons for sign-up and log in */
+@media (max-width: 1024px) {
+  .nav-cta .nav-login {
+    display: inline-flex;
+    align-items: center;
+    height: 34px;
+    padding: 0 0.9rem;
+    border-radius: var(--radius-pill);
+    box-shadow: inset 0 0 0 1px var(--border-medium);
+  }
+
+  .nav-mobile-cta {
+    position: sticky;
+    bottom: 0;
+    z-index: 2;
+    margin-top: 1.25rem !important;
+    padding: 0.75rem 0 calc(0.75rem + env(safe-area-inset-bottom));
+    background: var(--bg-primary);
+  }
+
+  .nav-links .nav-mobile-cta a.btn {
+    display: flex;
+    align-items: center;
+    min-height: 52px;
+    border-radius: var(--radius-pill);
+  }
+
+  .nav-links .nav-mobile-cta a.btn-secondary {
+    border: 0;
+    box-shadow: inset 0 0 0 1.5px var(--text-primary);
+    color: var(--text-primary);
+  }
+}
+
+@media (max-width: 640px) {
+  .nav-mobile-cta {
+    grid-template-columns: 1fr !important;
+  }
+
+  .nav-cta .nav-login {
+    display: none;
+  }
+}
+
+@media (min-width: 1025px) {
+  .nav-links a.nav-home {
+    display: none;
+  }
+}

@@ -403,6 +403,7 @@ def nav_html(lang):
         </div>
 
         <div class="nav-links" id="navLinks">
+          <a class="nav-plain nav-home" href="{home}">{'Accueil' if lang == 'fr' else 'Home'}</a>
 {menus}
 {links}
           <div class="nav-mobile-cta">
