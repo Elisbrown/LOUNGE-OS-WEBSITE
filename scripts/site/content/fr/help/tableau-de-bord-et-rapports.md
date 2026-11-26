@@ -66,6 +66,10 @@ Téléchargez-le en **PDF**, **Excel** ou **CSV**, en français ou en anglais.
 
 Les rapports sur plus d'un jour (semaine, mois) sont inclus dans les formules **Business** et **Pro**. En Starter, une seule journée fonctionne, et les périodes plus longues indiquent quelle formule choisir.
 
+## Des rapports adaptés à votre activité
+
+Le tableau de bord et le rapport des ventes changent selon le type d'activité choisi. Un restaurant voit les tables, la cuisine et où les ventes ont été faites. Une boutique voit les tailles et couleurs vendues et ses meilleurs clients. Un supermarché, une poissonnerie ou une pharmacie voit ce qui a été vendu au poids et ce qui expire bientôt. Un hôtel voit le taux d'occupation, les arrivées, les départs et le revenu des chambres. Les téléchargements PDF, Excel et CSV reprennent les mêmes sections.
+
 ## Questions fréquentes
 
 ### Pourquoi les ventes après minuit comptent-elles pour la veille ?

@@ -35,8 +35,6 @@ features:
   - ["book", "Dépenses et comptabilité", "Enregistrez les dépenses et suivez les comptes avec les formules Business et Pro."]
 soon:
   - "Unités et lots sur un même produit : la bouteille, le pack ou le carton"
-  - "Grilles de prix et groupes de clients (détaillants, bars, clients de passage)"
-  - "Devis, factures et bons de livraison"
 ---
 
 Un **logiciel de commerce de gros** doit suivre de grosses commandes, beaucoup de clients à crédit et un stock qui bouge au carton. LoungeOS donne aux grossistes, distributeurs et dépôts de boissons ou de vivres une caisse rapide, des stocks, des fiches fournisseurs, des comptes clients avec paiements partiels et des sites. Quand vous choisissez *Commerce de gros* dans l'assistant de configuration, LoungeOS propose des catégories comme Boissons, Produits alimentaires, Entretien, Hygiène et beauté et Cartons et lots.
@@ -71,7 +69,7 @@ Aujourd'hui, vous créez deux produits, par exemple « Bière 65 cl » et « Cas
 
 ### Puis-je donner des prix différents selon les clients ?
 
-Pas encore automatiquement. Les grilles de prix et groupes de clients arrivent dans la prochaine mise à jour. Aujourd'hui, un responsable peut modifier le prix d'une vente avec son code PIN.
+Pas automatiquement. Un responsable peut modifier le prix d'une vente avec son code PIN, et le journal d'activité garde la modification.
 
 ### Fonctionne-t-il sans internet ?
 

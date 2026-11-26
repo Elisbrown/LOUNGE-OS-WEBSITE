@@ -670,7 +670,8 @@
         "Fournisseurs et livraisons",
         "Comptes et codes PIN",
         "Mobile money et espèces",
-        "Rapport des ventes du jour"
+        "Rapport des ventes du jour",
+        "Lots et dates de péremption"
       ],
       "screenshot": "https://loungeos.app/images/screens/loungeos-till-pharmacy.webp"
     },
@@ -731,7 +732,7 @@
           "name": "LoungeOS suit-il les dates de péremption ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "<p>Pas encore. Les lots et dates de péremption, avec alertes avant expiration, arrivent dans la prochaine mise à jour.<\/p>"
+            "text": "<p>Oui. Saisissez le numéro de lot et la date de péremption à la réception d’une livraison. LoungeOS liste ce qui expire bientôt, vous prévient sur le tableau de bord, vend le lot le plus ancien d’abord et vous laisse sortir les médicaments périmés comme une perte.<\/p>"
           }
         },
         {
@@ -948,11 +949,11 @@
 <div class="feat-card"><svg class="ind-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg><h3>Comptes et codes PIN</h3><p>Chaque employé se connecte avec un code PIN. Annulations et changements de prix demandent le pharmacien responsable.</p></div>
 <div class="feat-card"><svg class="ind-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"/><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"/></svg><h3>Mobile money et espèces</h3><p>Espèces, MTN Mobile Money, Orange Money, carte ou assurance comme moyen de paiement à vous.</p></div>
 <div class="feat-card"><svg class="ind-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg><h3>Rapport des ventes du jour</h3><p>Ventes et argent encaissé par moyen de paiement, consultables sur le web ou le téléphone.</p></div>
+<div class="feat-card"><svg class="ind-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg><h3>Lots et dates de péremption</h3><p>Notez le numéro de lot et la date de péremption de chaque livraison. LoungeOS vous prévient avant l'expiration et vend le lot le plus ancien d'abord.</p></div>
           </div>
           <div class="soon-box">
             <h3><svg class="ind-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Bientôt disponible</h3>
             <ul>
-<li>Numéros de lot et dates de péremption, avec alertes avant expiration</li>
 <li>Unités et boîtes : vendre une plaquette ou la boîte entière</li>
             </ul>
             <p>Pas encore dans l'application. Nous le disons ici pour que vous choisissiez en connaissance de cause.</p>
@@ -1041,12 +1042,12 @@
 </div>
 </div>
 <h2 id="ce-que-loungeos-ne-fait-pas-encore">Ce que LoungeOS ne fait pas encore</h2>
-<p>LoungeOS ne suit pas encore les <strong>numéros de lot et les dates de péremption</strong>, dont beaucoup de pharmacies ont besoin. C’est en cours de développement (voir <em>Bientôt disponible</em> plus haut). LoungeOS est un outil de caisse et de stock : il ne vérifie pas les ordonnances ni les interactions et ne remplace pas les registres exigés par votre autorité de tutelle. Si le suivi des dates de péremption est indispensable dès le premier jour, <a href="/contact/">écrivez-nous</a> avant de choisir.</p>
+<p>LoungeOS suit les <strong>numéros de lot et les dates de péremption</strong> : vous les saisissez à l’arrivée d’une livraison, la page <em>Dates de péremption</em> montre ce qui est périmé et ce qui le sera bientôt, et les ventes sortent d’abord du lot le plus ancien. LoungeOS est un outil de caisse et de stock : il ne vérifie pas les ordonnances ni les interactions et ne remplace pas les registres exigés par votre autorité de tutelle.</p>
 <h2 id="questions-frequentes">Questions fréquentes</h2>
 <h3 id="puis-je-scanner-les-codes-barres-deja-presents-sur-les-boites">Puis-je scanner les codes-barres déjà présents sur les boîtes ?</h3>
 <p>Oui. Toute douchette USB ou Bluetooth qui tape comme un clavier fonctionne. Scannez la boîte une fois en créant le produit, puis chaque scan l’ajoute à la vente.</p>
 <h3 id="loungeos-suit-il-les-dates-de-peremption">LoungeOS suit-il les dates de péremption ?</h3>
-<p>Pas encore. Les lots et dates de péremption, avec alertes avant expiration, arrivent dans la prochaine mise à jour.</p>
+<p>Oui. Saisissez le numéro de lot et la date de péremption à la réception d’une livraison. LoungeOS liste ce qui expire bientôt, vous prévient sur le tableau de bord, vend le lot le plus ancien d’abord et vous laisse sortir les médicaments périmés comme une perte.</p>
 <h3 id="puis-je-enregistrer-les-paiements-dassurance">Puis-je enregistrer les paiements d’assurance ?</h3>
 <p>Vous pouvez créer vos propres moyens de paiement, par exemple un par assureur, pour que le rapport du jour montre ce qui a été payé de chaque façon. LoungeOS n’envoie pas de demandes de remboursement aux assureurs.</p>
 <h3 id="fonctionne-t-il-sans-internet">Fonctionne-t-il sans internet ?</h3>

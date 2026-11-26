@@ -46,6 +46,12 @@ Le produit apparaît aussitôt sur la caisse, sur toutes les caisses et tous les
 
 [[figure:loungeos-help-fr-meals|La liste du menu LoungeOS avec photos, catégories, prix et stock|La liste du menu : recherche, filtre par catégorie ou statut, modification sur place.]]
 
+## Tailles, couleurs et vente au poids
+
+- **Tailles et couleurs.** Activez *Tailles et couleurs* dans la fiche du produit et listez les choix, par exemple S, M, L et Noir, Bleu. Chaque combinaison a son stock, son code-barres et son prix s'il est différent, et la caisse demande laquelle est vendue.
+- **Au poids ou à la mesure.** Sous *Vendu*, choisissez kg, g, l, ml, m ou cm au lieu de *À la pièce*, et donnez le prix pour une unité. En caisse, vous saisissez la quantité, par exemple 1,250 kg, ou vous scannez l'étiquette de votre balance.
+- **Lots et dates de péremption.** Activez les dates de péremption dans les *Paramètres*, puis saisissez le lot et sa date à chaque réception de stock. Voir [stocks et fournisseurs](/fr/aide/stocks-et-fournisseurs/).
+
 ## Modifier ou masquer un produit
 
 - Appuyez sur **Modifier** sur sa ligne pour changer le prix, la photo ou la catégorie. Un nouveau prix s'applique aux nouvelles commandes seulement.

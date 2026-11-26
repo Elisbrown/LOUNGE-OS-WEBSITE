@@ -34,8 +34,6 @@ features:
   - ["branch", "Several shops", "Each shop is a branch with its own stock and team, side by side on the Pro plan."]
 soon:
   - "Units and packs: sell one screw or the whole box, one tile or the carton"
-  - "Quotes, invoices and delivery notes for builders"
-  - "Price tiers for trade customers"
 ---
 
 A **hardware store POS** has to handle many small items, big trade orders and a lot of credit. LoungeOS gives a hardware or building-materials store a barcode till, stock counts, supplier records, customer tabs and staff controls. When you choose *Hardware store* in the setup wizard, LoungeOS suggests categories such as Tools, Building materials, Electrical, Plumbing, Paint and Fasteners.
@@ -72,7 +70,7 @@ Yes. Use Pay later and pick the customer. Their tab shows each purchase and each
 
 ### Can I make quotes and invoices?
 
-You can give a PDF receipt today. Quotes, invoices and delivery notes are coming in the next update on the Business and Pro plans.
+You can give a printed or PDF receipt for every sale. Cable, pipe and rope can be sold by the metre, to the centimetre.
 
 ### Does it work without internet?
 

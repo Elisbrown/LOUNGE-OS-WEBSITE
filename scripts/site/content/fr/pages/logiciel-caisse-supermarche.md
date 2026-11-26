@@ -33,11 +33,10 @@ features:
   - ["wallet", "Mobile money et espèces", "Espèces avec rendu de monnaie, MTN Mobile Money, Orange Money, carte ou vos propres moyens, et paiements partagés."]
   - ["shield", "Annulations validées par un responsable", "Annulations, remboursements et changements de prix demandent le code PIN d'un responsable."]
   - ["wifi-off", "Vente hors ligne", "Les caisses Windows et Mac continuent d'encaisser sans internet et se synchronisent ensuite."]
+  - ["scan", "Vente au poids", "Viande, poisson, fruits et légumes au kilo, au gramme près. Saisissez le poids ou scannez l'étiquette de votre balance."]
+  - ["calendar", "Lots et dates de péremption", "Notez le lot et la date de péremption à chaque livraison. LoungeOS vous prévient avant l'expiration et vend le plus ancien d'abord."]
 soon:
-  - "Vente au poids avec codes-barres de balance (fruits, légumes, viande)"
-  - "Lots et dates de péremption, avec alertes avant expiration"
   - "Unités et lots : vendre la bouteille ou le casier entier"
-  - "Promotions et prix happy hour"
 ---
 
 Un **logiciel de caisse pour supermarché** doit être rapide à la caisse, juste sur le stock et strict sur l'argent. LoungeOS le fait pour les supérettes, épiceries, alimentations et dépôts de boissons. Quand vous choisissez *Supermarché ou épicerie* dans l'assistant de configuration, LoungeOS propose des catégories comme Épicerie, Boissons, Produits laitiers et œufs, Fruits et légumes, Boulangerie, Entretien et Hygiène et beauté, et masque les écrans de restaurant.
@@ -79,11 +78,11 @@ Oui. Starter couvre 2 appareils, Business 5 et Pro 10 ou plus. Toutes les caisse
 
 ### Puis-je vendre les fruits et légumes au poids ?
 
-Pas encore. La vente au poids avec codes-barres de balance arrive dans la prochaine mise à jour. En attendant, vendez des lots fixes, par exemple « Tomates 1 kg ».
+Oui. Choisissez *kg*, *g*, *l* ou *m* comme mode de vente du produit et donnez le prix pour une unité. En caisse, le caissier saisit le poids, par exemple 1,250 kg, et le prix est calculé. Si votre balance imprime des étiquettes à code-barres, scannez l'étiquette et le poids ou le prix est lu dessus. Le stock baisse du poids exact vendu. Les poissonneries et boucheries utilisent la même fonction pour le poisson et la viande.
 
 ### Le logiciel suit-il les dates de péremption ?
 
-Pas encore. Les lots et dates de péremption avec alertes arrivent dans la prochaine mise à jour.
+Oui. À la réception d'une livraison, saisissez le numéro de lot et la date de péremption. La page **Dates de péremption** liste ce qui est périmé et ce qui le sera bientôt, le tableau de bord vous prévient, et les ventes sortent d'abord du lot le plus ancien. Le stock périmé est sorti d'un geste et compté comme une perte.
 
 ### Fonctionne-t-il sans internet ?
 

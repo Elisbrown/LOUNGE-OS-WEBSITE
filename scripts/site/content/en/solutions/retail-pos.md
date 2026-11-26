@@ -32,9 +32,7 @@ features:
   - ["package", "Stock and suppliers", "Every sale comes off the stock count, with low-stock alerts and supplier records."]
   - ["wallet", "Mobile money and cash", "Cash with change shown, MTN Mobile Money, Orange Money, card, or split between two methods."]
   - ["printer", "Receipts and cash drawer", "58 mm or 80 mm receipts or a PDF, and the cash drawer opens after a cash sale."]
-soon:
-  - "Sizes and colours on one product (S to XXL, shoes 36 to 46, kids' sizes)"
-  - "Promotions and sale prices"
+  - ["layers", "Sizes and colours", "One product with all its sizes and colours. Each one has its own stock, barcode and, if you want, its own price."]
 ---
 
 A **boutique POS** has three jobs: ring up a sale fast, keep the stock count right and show the owner what was sold and by whom. LoungeOS does all three for clothing stores, shoe shops, bag and accessory shops, beauty shops and phone accessory stalls. When you choose *Clothes, shoes or boutique* as your business type in the setup wizard, LoungeOS talks about **products** instead of a menu, suggests categories such as Clothing, Shoes, Bags and Accessories, and turns off the restaurant parts you do not need, such as tables and the kitchen screen.
@@ -58,7 +56,9 @@ Many boutiques let regular customers take an item now and pay later. In LoungeOS
 - **Low-stock alerts** tell you what to reorder before the shelf is empty, and items that run out are greyed out at the till.
 - Keep your **suppliers** in one place and see the value of the stock you hold. More in [inventory management](/features/inventory-management/).
 
-Today each size or colour is its own product with its own barcode, for example *Sneaker black 42*. Sizes and colours grouped on one product are coming in the next update.
+## Sizes and colours on one product
+
+Turn on **Sizes and colours** when you add a product and type the choices, for example S, M, L, XL and Black, White, Blue. LoungeOS makes every combination, and each one has its own stock count, its own barcode and its own price if it differs. At the till, the seller taps the product and picks the size and colour, or scans the label of that exact piece. A combination that is sold out is greyed out. The sales report shows which sizes and colours sell best, so you reorder the right ones.
 
 ## Control when you are not in the shop
 
@@ -79,9 +79,9 @@ The Windows and Mac apps keep selling without internet and sync when the connect
 
 Any USB or Bluetooth scanner that types the code like a keyboard, which is most scanners sold for shops. Plug it in, open the till and scan.
 
-### How do I handle sizes and colours today?
+### How do I handle sizes and colours?
 
-Create one product per size or colour, each with its own barcode, for example "T-shirt white M". Grouping sizes and colours under one product is coming in the next update.
+Create one product, turn on **Sizes and colours** and list the choices. Each combination, for example "T-shirt white M", gets its own stock and barcode, and the till asks which one is being sold.
 
 ### Can I sell on credit to my regular customers?
 

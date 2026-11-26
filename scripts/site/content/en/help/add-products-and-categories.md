@@ -45,6 +45,12 @@ The product appears on the till straight away, on every till and phone, with its
 
 [[figure:loungeos-help-meals|The LoungeOS menu list with photos, categories, prices and stock|The menu list: search, filter by category or status, edit in place.]]
 
+## Sizes, colours and selling by weight
+
+- **Sizes and colours.** Turn on *Sizes and colours* in the product form and list the choices, for example S, M, L and Black, Blue. Each combination has its own stock, barcode and price if it differs, and the till asks which one is being sold.
+- **By weight or measure.** Under *Sold*, choose kg, g, l, ml, m or cm instead of *By the piece*, and give the price for one. At the till you type the quantity, for example 1.250 kg, or scan the label printed by your scale.
+- **Batches and expiry dates.** Turn on expiry dates in *Settings*, then enter the batch and its date each time you receive stock. See [stock and suppliers](/help/stock-and-suppliers/).
+
 ## Change or hide a product
 
 - Press **Edit** on its row to change the price, photo or category. Price changes apply to new orders only.

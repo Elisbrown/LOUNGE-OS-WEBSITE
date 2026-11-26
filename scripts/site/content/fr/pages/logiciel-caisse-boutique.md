@@ -33,9 +33,7 @@ features:
   - ["package", "Stocks et fournisseurs", "Chaque vente sort du stock, avec alertes de stock bas et fiches fournisseurs."]
   - ["wallet", "Mobile money et espèces", "Espèces avec rendu de monnaie, MTN Mobile Money, Orange Money, carte, ou paiement partagé entre deux moyens."]
   - ["printer", "Reçus et tiroir-caisse", "Reçus 58 mm ou 80 mm ou PDF, et le tiroir s'ouvre après une vente en espèces."]
-soon:
-  - "Tailles et couleurs sur un même produit (S à XXL, pointures 36 à 46, tailles enfant)"
-  - "Promotions et prix soldés"
+  - ["layers", "Tailles et couleurs", "Un seul produit avec toutes ses tailles et couleurs. Chacune a son stock, son code-barres et, si vous voulez, son prix."]
 ---
 
 Un **logiciel de caisse pour boutique** doit faire trois choses : encaisser vite, garder un stock juste et montrer au patron ce qui a été vendu, et par qui. LoungeOS le fait pour les boutiques de vêtements, de chaussures, de sacs et d'accessoires, les boutiques de beauté et les stands d'accessoires de téléphone. Quand vous choisissez *Vêtements, chaussures ou boutique* comme type d'activité dans l'assistant de configuration, LoungeOS parle de **produits** et non de menu, propose des catégories comme Vêtements, Chaussures, Sacs et Accessoires, et masque ce qui ne sert qu'aux restaurants, comme les tables et l'écran cuisine.
@@ -59,7 +57,9 @@ Beaucoup de boutiques font crédit à leurs clients fidèles. Dans LoungeOS, vou
 - Les **alertes de stock bas** vous disent quoi recommander avant que le rayon soit vide, et les produits épuisés sont grisés à la caisse.
 - Vos **fournisseurs** sont au même endroit, et vous voyez la valeur du stock que vous détenez.
 
-Aujourd'hui, chaque taille ou couleur est un produit avec son propre code-barres, par exemple *Basket noire 42*. Les tailles et couleurs regroupées sur un même produit arrivent dans la prochaine mise à jour.
+## Tailles et couleurs sur un même produit
+
+Activez **Tailles et couleurs** en créant un produit et saisissez les choix, par exemple S, M, L, XL et Noir, Blanc, Bleu. LoungeOS crée chaque combinaison, avec son stock, son code-barres et son prix s'il est différent. En caisse, le vendeur touche le produit et choisit la taille et la couleur, ou scanne l'étiquette de la pièce. Une combinaison épuisée est grisée. Le rapport des ventes montre les tailles et couleurs qui partent le mieux, pour recommander les bonnes.
 
 ## Le contrôle, même absent
 
@@ -87,6 +87,6 @@ Oui. Choisissez Payer plus tard à l'encaissement et sélectionnez le client. La
 
 Starter couvre 2 utilisateurs sur 2 appareils, Business 5 utilisateurs sur 5 appareils et Pro un nombre illimité d'utilisateurs sur 10 appareils ou plus. Chaque formule commence par un essai gratuit de 14 jours avec les fonctionnalités Business. Voir les [tarifs](/fr/tarifs/).
 
-### Comment gérer les tailles et les couleurs aujourd'hui ?
+### Comment gérer les tailles et les couleurs ?
 
-Créez un produit par taille ou par couleur, chacun avec son code-barres, par exemple « T-shirt blanc M ». Le regroupement des tailles et couleurs sous un même produit arrive dans la prochaine mise à jour.
+Créez un seul produit, activez **Tailles et couleurs** et listez les choix. Chaque combinaison, par exemple « T-shirt blanc M », a son stock et son code-barres, et la caisse demande laquelle est vendue.

@@ -34,8 +34,6 @@ features:
   - ["book", "Expenses and accounting", "Record expenses and follow the accounts on the Business and Pro plans."]
 soon:
   - "Units and packs on one product: sell the bottle, the pack or the carton"
-  - "Price tiers and customer groups (retailers, bars, walk-in)"
-  - "Quotes, invoices and delivery notes"
 ---
 
 A **wholesale POS** has to keep up with large orders, many customers on credit and stock that moves by the carton. LoungeOS gives wholesalers, distributors and drinks or food depots a fast till, stock counts, supplier records, customer tabs with part payments and branches. When you choose *Wholesale* in the setup wizard, LoungeOS suggests categories such as Beverages, Food products, Household, Personal care and Cartons and packs.
@@ -70,7 +68,7 @@ Today you create two products, for example "Beer 65 cl" and "Beer crate of 12". 
 
 ### Can I give different prices to different customers?
 
-Not automatically yet. Price tiers and customer groups are coming in the next update. Today a manager can change the price on a sale with their PIN.
+Not automatically. A manager can change the price on a sale with their PIN, and the activity log keeps the change.
 
 ### Does it work without internet?
 

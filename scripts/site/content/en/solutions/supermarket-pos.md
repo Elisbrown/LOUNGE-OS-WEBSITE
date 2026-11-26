@@ -32,11 +32,10 @@ features:
   - ["wallet", "Mobile money and cash", "Cash with change shown, MTN Mobile Money, Orange Money, card or your own methods, and split payments."]
   - ["shield", "Cancels need a manager", "Voids, refunds and price changes need a manager's PIN, and the activity log shows who did what."]
   - ["wifi-off", "Keeps selling offline", "The Windows and Mac tills keep checking out without internet and sync when it comes back."]
+  - ["scan", "Sell by weight", "Meat, fish, fruit and vegetables by the kilo, to the gram. Type the weight or scan the label your scale prints."]
+  - ["calendar", "Batches and expiry dates", "Record the batch and expiry date at each delivery. LoungeOS warns you before products expire and sells the oldest first."]
 soon:
-  - "Sell by weight with scale barcodes (fruit, vegetables, meat)"
-  - "Batches and expiry dates, with alerts before products expire"
   - "Units and packs: sell a bottle or the whole crate"
-  - "Promotions and happy-hour prices"
 ---
 
 A **supermarket POS** has to be fast at the checkout, right about stock and strict about cash. LoungeOS does that for mini-markets, groceries, convenience stores and drinks depots. When you choose *Supermarket or grocery* in the setup wizard, LoungeOS suggests categories such as Groceries, Beverages, Dairy and eggs, Fruits and vegetables, Bakery, Household and Personal care, and hides the restaurant screens you do not need.
@@ -78,11 +77,11 @@ Yes. Starter covers 2 devices, Business 5 and Pro 10 or more. Every till sells i
 
 ### Can I sell fruit and vegetables by weight?
 
-Not yet. Selling by weight with scale barcodes is coming in the next update. Until then you can sell fixed packs, for example "Tomatoes 1 kg".
+Yes. Choose *kg*, *g*, *l* or *m* as the way a product is sold and give the price for one. At the till the cashier types the weight, for example 1.250 kg, and the price is worked out. If your scale prints barcode labels, scan the label and the weight or the price is read from it. Stock goes down by the exact weight sold. Cold stores and butchers use the same feature for fish and meat.
 
 ### Does it track expiry dates?
 
-Not yet. Batches and expiry dates with alerts are coming in the next update.
+Yes. When you receive a delivery, enter the batch number and the expiry date. The **Expiry dates** page lists what has expired and what expires soon, the dashboard warns you, and sales take from the oldest batch first. Expired stock is written off in one tap and counted as a loss.
 
 ### Does it keep working without internet?
 

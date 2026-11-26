@@ -46,10 +46,21 @@ Le nombre de personnes dépend de votre formule : 2 utilisateurs en Starter, 5 e
 | Chef | L'écran cuisine |
 | Gestionnaire de stock | Articles de stock, fournisseurs, réceptions (formule avec stock) |
 | Comptable | Dépenses, comptabilité, rapports (formule avec dépenses ou comptabilité) |
+| Agent d'entretien | L'écran Ménage d'un hôtel : ses chambres à faire et les problèmes à signaler |
 
 Le menu latéral, le bouton **+ Nouveau** et la recherche (Ctrl K ou ⌘K) ne montrent que ce que chaque rôle peut ouvrir.
 
 [[figure:loungeos-help-fr-staff|La liste du personnel LoungeOS avec rôles, téléphone, salle et statut|Une équipe d'exemple (noms fictifs).]]
+
+## Modifier ce qu'un rôle peut faire
+
+Chaque rôle démarre avec les accès du tableau ci-dessus. Pour les changer, ouvrez **Personnel**, puis **Rôles et accès** :
+
+- Ouvrez un rôle et activez ou désactivez des fonctions, par exemple laisser les caissiers noter les dépenses ou empêcher les serveurs de voir les rapports.
+- Créez votre propre rôle, par exemple *Superviseur*, et choisissez ses fonctions.
+- Pour une seule personne, ouvrez sa fiche et donnez ou retirez une fonction sans toucher au rôle.
+
+Le propriétaire peut tout faire et décide si les gérants peuvent modifier les rôles et les accès. Personne ne peut donner une fonction que la formule n'inclut pas.
 
 ## Se connecter sur une caisse partagée
 

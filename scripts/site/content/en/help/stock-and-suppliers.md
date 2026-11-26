@@ -51,6 +51,10 @@ For a whole delivery, press **Receive stock** (or **+ New**, **Receive stock**):
 
 [[figure:loungeos-help-stock-receive|The Bulk Stock In window in LoungeOS with stock items to tick|Tick the items of the delivery, then type quantities and costs.]]
 
+## Batches and expiry dates
+
+For food, drinks and medicines, enter the **batch number** and **expiry date** when you receive a delivery. The **Expiry dates** page lists what has expired and what expires soon, and the dashboard warns you. Sales take from the oldest batch first. Write off an expired batch in one tap: it leaves the stock and is recorded as a loss.
+
 ## Stock out, waste and adjustments
 
 From an item's menu, record **Stock out** (used in the kitchen), **Waste** or **Damage** (with a reason), or an adjustment after a count. Every movement is kept with who did it and when. **Export movements** downloads them for any dates.

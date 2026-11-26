@@ -670,7 +670,9 @@
         "Stock and suppliers",
         "Mobile money and cash",
         "Cancels need a manager",
-        "Keeps selling offline"
+        "Keeps selling offline",
+        "Sell by weight",
+        "Batches and expiry dates"
       ],
       "screenshot": "https://loungeos.app/images/screens/loungeos-till-supermarket.webp"
     },
@@ -739,7 +741,7 @@
           "name": "Can I sell fruit and vegetables by weight?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "<p>Not yet. Selling by weight with scale barcodes is coming in the next update. Until then you can sell fixed packs, for example “Tomatoes 1 kg”.<\/p>"
+            "text": "<p>Yes. Choose <em>kg<\/em>, <em>g<\/em>, <em>l<\/em> or <em>m<\/em> as the way a product is sold and give the price for one. At the till the cashier types the weight, for example 1.250 kg, and the price is worked out. If your scale prints barcode labels, scan the label and the weight or the price is read from it. Stock goes down by the exact weight sold. Cold stores and butchers use the same feature for fish and meat.<\/p>"
           }
         },
         {
@@ -747,7 +749,7 @@
           "name": "Does it track expiry dates?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "<p>Not yet. Batches and expiry dates with alerts are coming in the next update.<\/p>"
+            "text": "<p>Yes. When you receive a delivery, enter the batch number and the expiry date. The <strong>Expiry dates<\/strong> page lists what has expired and what expires soon, the dashboard warns you, and sales take from the oldest batch first. Expired stock is written off in one tap and counted as a loss.<\/p>"
           }
         },
         {
@@ -957,14 +959,13 @@
 <div class="feat-card"><svg class="ind-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"/><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"/></svg><h3>Mobile money and cash</h3><p>Cash with change shown, MTN Mobile Money, Orange Money, card or your own methods, and split payments.</p></div>
 <div class="feat-card"><svg class="ind-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg><h3>Cancels need a manager</h3><p>Voids, refunds and price changes need a manager's PIN, and the activity log shows who did what.</p></div>
 <div class="feat-card"><svg class="ind-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h.01"/><path d="M8.5 16.43a5 5 0 0 1 7 0"/><path d="M2 8.82a15 15 0 0 1 4.18-2.65"/><path d="M19 12.86a10 10 0 0 0-2.27-1.62"/><path d="M5 12.86a10 10 0 0 1 5.17-2.69"/><path d="M10.71 5.05A16 16 0 0 1 22 8.82"/><line x1="2" x2="22" y1="2" y2="22"/></svg><h3>Keeps selling offline</h3><p>The Windows and Mac tills keep checking out without internet and sync when it comes back.</p></div>
+<div class="feat-card"><svg class="ind-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/><path d="M8 7v10"/><path d="M12 7v10"/><path d="M16 7v10"/></svg><h3>Sell by weight</h3><p>Meat, fish, fruit and vegetables by the kilo, to the gram. Type the weight or scan the label your scale prints.</p></div>
+<div class="feat-card"><svg class="ind-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg><h3>Batches and expiry dates</h3><p>Record the batch and expiry date at each delivery. LoungeOS warns you before products expire and sells the oldest first.</p></div>
           </div>
           <div class="soon-box">
             <h3><svg class="ind-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Coming next</h3>
             <ul>
-<li>Sell by weight with scale barcodes (fruit, vegetables, meat)</li>
-<li>Batches and expiry dates, with alerts before products expire</li>
 <li>Units and packs: sell a bottle or the whole crate</li>
-<li>Promotions and happy-hour prices</li>
             </ul>
             <p>Not in the app yet. We say so here, so you can decide with the facts.</p>
           </div>
@@ -1062,9 +1063,9 @@
 <h3 id="can-i-use-several-tills-at-the-same-time">Can I use several tills at the same time?</h3>
 <p>Yes. Starter covers 2 devices, Business 5 and Pro 10 or more. Every till sells into the same stock and the same reports.</p>
 <h3 id="can-i-sell-fruit-and-vegetables-by-weight">Can I sell fruit and vegetables by weight?</h3>
-<p>Not yet. Selling by weight with scale barcodes is coming in the next update. Until then you can sell fixed packs, for example “Tomatoes 1 kg”.</p>
+<p>Yes. Choose <em>kg</em>, <em>g</em>, <em>l</em> or <em>m</em> as the way a product is sold and give the price for one. At the till the cashier types the weight, for example 1.250 kg, and the price is worked out. If your scale prints barcode labels, scan the label and the weight or the price is read from it. Stock goes down by the exact weight sold. Cold stores and butchers use the same feature for fish and meat.</p>
 <h3 id="does-it-track-expiry-dates">Does it track expiry dates?</h3>
-<p>Not yet. Batches and expiry dates with alerts are coming in the next update.</p>
+<p>Yes. When you receive a delivery, enter the batch number and the expiry date. The <strong>Expiry dates</strong> page lists what has expired and what expires soon, the dashboard warns you, and sales take from the oldest batch first. Expired stock is written off in one tap and counted as a loss.</p>
 <h3 id="does-it-keep-working-without-internet">Does it keep working without internet?</h3>
 <p>Yes, on the Windows and Mac apps. Sales are saved on the till and sync when the connection comes back. See <a href="/features/offline-pos/">offline POS</a>.</p>
         </div>

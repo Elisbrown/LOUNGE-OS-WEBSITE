@@ -33,8 +33,8 @@ features:
   - ["users", "Comptes et codes PIN", "Chaque employé se connecte avec un code PIN. Annulations et changements de prix demandent le pharmacien responsable."]
   - ["wallet", "Mobile money et espèces", "Espèces, MTN Mobile Money, Orange Money, carte ou assurance comme moyen de paiement à vous."]
   - ["chart", "Rapport des ventes du jour", "Ventes et argent encaissé par moyen de paiement, consultables sur le web ou le téléphone."]
+  - ["calendar", "Lots et dates de péremption", "Notez le numéro de lot et la date de péremption de chaque livraison. LoungeOS vous prévient avant l'expiration et vend le lot le plus ancien d'abord."]
 soon:
-  - "Numéros de lot et dates de péremption, avec alertes avant expiration"
   - "Unités et boîtes : vendre une plaquette ou la boîte entière"
 ---
 
@@ -58,7 +58,7 @@ Chaque employé a son compte et son code PIN. Annulations, remboursements et cha
 
 ## Ce que LoungeOS ne fait pas encore
 
-LoungeOS ne suit pas encore les **numéros de lot et les dates de péremption**, dont beaucoup de pharmacies ont besoin. C'est en cours de développement (voir *Bientôt disponible* plus haut). LoungeOS est un outil de caisse et de stock : il ne vérifie pas les ordonnances ni les interactions et ne remplace pas les registres exigés par votre autorité de tutelle. Si le suivi des dates de péremption est indispensable dès le premier jour, [écrivez-nous](/contact/) avant de choisir.
+LoungeOS suit les **numéros de lot et les dates de péremption** : vous les saisissez à l'arrivée d'une livraison, la page *Dates de péremption* montre ce qui est périmé et ce qui le sera bientôt, et les ventes sortent d'abord du lot le plus ancien. LoungeOS est un outil de caisse et de stock : il ne vérifie pas les ordonnances ni les interactions et ne remplace pas les registres exigés par votre autorité de tutelle.
 
 ## Questions fréquentes
 
@@ -68,7 +68,7 @@ Oui. Toute douchette USB ou Bluetooth qui tape comme un clavier fonctionne. Scan
 
 ### LoungeOS suit-il les dates de péremption ?
 
-Pas encore. Les lots et dates de péremption, avec alertes avant expiration, arrivent dans la prochaine mise à jour.
+Oui. Saisissez le numéro de lot et la date de péremption à la réception d'une livraison. LoungeOS liste ce qui expire bientôt, vous prévient sur le tableau de bord, vend le lot le plus ancien d'abord et vous laisse sortir les médicaments périmés comme une perte.
 
 ### Puis-je enregistrer les paiements d'assurance ?
 
